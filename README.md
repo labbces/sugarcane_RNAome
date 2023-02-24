@@ -1,2 +1,2 @@
-# sugarcane_RNAome
-sugarcane_RNAome
+# sugarcaneRNAome
+[Sugarcane RNAome wiki](https://github.com/felipevzps/sugarcaneRNAome/wiki)
