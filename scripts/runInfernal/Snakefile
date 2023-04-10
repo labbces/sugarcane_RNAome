@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+
+#RUN
+#snakemake -np -s Snakefile --cores 16
+
+#DAG
+#snakemake -s Snakefile --dag | dot -Tsvg > dag.svg
+
+configfile: "config.yaml"
+
+import pandas as pd
+import yaml
+
+genotypes = pd.read_csv("genotypes.csv")
+parts = pd.read_csv("parts.csv")
+
+cmscan = config["cmscan"]
+cm = config["cm"]
+clanin = config["clanin"]
+
+rule all:
+	input:
+		expand("results/{genotype}/{genotype}.part-{part}.cmscan.tblout", genotype=genotypes, part=parts),
+		expand("results/{genotype}/{genotype}.part-{part}.cmscan.out", genotype=genotypes, part=parts)
+		
+rule infernal:
+	input:
+		expand("data/{{genotype}}/{{genotype}}_transcriptome.cpc_ncrnas.part-{{part}}.fa", genotype=genotypes, part=parts)
+	output:
+		tblout = expand("results/{{genotype}}/{{genotype}}.part-{{part}}.cmscan.tblout", genotype=genotypes, part=parts),
+		out =    expand("results/{{genotype}}/{{genotype}}.part-{{part}}.cmscan.out", genotype=genotypes, part=parts)
+	threads: 8
+	log:
+		expand("logs/{{genotype}}/{{genotype}}.part-{{part}}.log", genotype=genotypes, part=parts)
+	shell:
+		"{cmscan} -Z 17.574263 --cut_ga --rfam --nohmmonly --cpu {threads} --tblout {output.tblout} -o {output.out} --fmt 2 --clanin {clanin} {cm} {input}"
