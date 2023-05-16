@@ -1,0 +1,93 @@
+#!/usr/bin/env python
+
+#RUN - par128
+#snakemake -p -s Snakefile --cores 128
+
+#DAG
+#snakemake -s Snakefile --dag | dot -Tsvg > dag.svg
+
+configfile: "config.yaml"
+
+import pandas as pd
+import yaml
+
+#lista_genotipos=["B1","B2","Co06022","Co8021","CoV92102","CP74-2005","F1-Bulk-1","F1-Bulk-2","FN95-1702","GN18","GT96-167","GUC10","GUC2","GXU-34140","GXU-34176","KQ08-2850","KQB07-23863","KQB07-23990","KQB07-24619","KQB07-24739","KQB08-32953","KQB09-20432","KQB09-20620","KQB09-23137","LCP85-384","MS6847","MT11-610","Q200","Q241","QA02-1009","QA96-1749","QBYN04-26041","QC02-402","QN05-1460","QN05-1509","QN05-1743","QN05-803","QS99-2014","RB72454","RB855156","ROC20","ROC22","ROC26","SP80-3280","T1","T2","TUC717","US851008"]
+
+lista_genotipos = ["B1"]
+
+cd_hit_est = config["cd-hit-est"]
+txCdsPredict = config["txCdsPredict"]
+feature_extraction = config["feature_extraction"]
+weka_jar = config["weka_jar"]
+RNAplonc_model = config["RNAplonc_model"]
+FilterResults = config["FilterResults"]
+
+rule all:
+    input:
+        expand("../results/RNAplonc_lncRNAs/{genotype}_RNAplonc_lncRNAs.txt", genotype=lista_genotipos)
+
+rule cdhitest:
+    input:
+        "../../1_sugarcaneTranscriptomes/{genotype}_transcriptome.fasta"
+    output:
+        "../results/cd-hit/{genotype}_transcriptome_cd-hit08.fasta"
+    threads: 1
+    resources:
+        load=1
+    shell:
+        """
+	{cd_hit_est} -i {input[0]} -o {output[0]} -c 0.8
+	"""
+rule txCdsPredict:
+    input:
+        "../results/cd-hit/{genotype}_transcriptome_cd-hit08.fasta"
+    output:
+        "../results/txCdsPredict/{genotype}_transcriptome_cd-hit08_cds.fasta"
+    threads: 1
+    resources:
+        load=1
+    shell:
+        """
+        {txCdsPredict} {input[0]} {output[0]}
+        """
+
+rule feature_extraction:
+    input:
+        "../results/cd-hit/{genotype}_transcriptome_cd-hit08.fasta",
+        "../results/txCdsPredict/{genotype}_transcriptome_cd-hit08_cds.fasta"
+    output:
+        "../results/feature_extraction/{genotype}_transcriptome_cd-hit08_cds.arff"
+    threads: 1
+    resources:
+        load=1
+    shell:
+        """
+        perl {feature_extraction} {input[0]} {input[1]} > {output[0]}
+        """
+
+rule RNAplonc:
+    input:
+        "../results/feature_extraction/{genotype}_transcriptome_cd-hit08_cds.arff"
+    output:
+        "../results/RNAplonc/{genotype}_transcriptome_rnaplonc.txt"
+    threads: 1
+    resources:
+        load=1
+    shell:
+        """
+        java -cp {weka_jar} weka.classifiers.trees.REPTree -l {RNAplonc_model} -T {input[0]} -p 0 > {output[0]}
+        """
+
+rule filter_result:
+    input:
+        "../results/txCdsPredict/{genotype}_transcriptome_cd-hit08_cds.fasta",
+        "../results/RNAplonc/{genotype}_transcriptome_rnaplonc.txt"
+    output:
+        "../results/RNAplonc_lncRNAs/{genotype}_RNAplonc_lncRNAs.txt"
+    threads: 1
+    resources:
+        load=1
+    shell:
+        """
+        python3 {FilterResults} -c {input[0]} -r {input[1]} -o {output[0]} -p 0.5 -t 1
+        """
