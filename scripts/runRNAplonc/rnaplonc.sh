@@ -8,4 +8,4 @@ module load CD-HIT/4.8.1
 module load miniconda3
 conda activate /home/felipe.peres/.conda/envs/snakemake-tutorial/envs/snakemake_conekt
 
-snakemake -p -s Snakefile --resources load=5 --cluster "qsub -q all.q -V -cwd -pe smp {threads}" --jobs 5 --latency-wait 250
+snakemake -p -s Snakefile --resources load=7 --cluster "qsub -q all.q -V -cwd -pe smp {threads}" --jobs 5 --latency-wait 250

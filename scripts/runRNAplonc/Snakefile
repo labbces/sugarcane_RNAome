@@ -28,15 +28,15 @@ rule all:
 
 rule cdhitest:
     input:
-        "../../1_sugarcaneTranscriptomes/{genotype}_transcriptome.fasta"
+        "../../3_noncodingSequences/results/{genotype}_transcriptome.cpc_ncrnas.fa"
     output:
         "../results/cd-hit/{genotype}_transcriptome_cd-hit08.fasta"
-    threads: 1
+    threads: 7
     resources:
         load=1
     shell:
         """
-	{cd_hit_est} -i {input[0]} -o {output[0]} -c 0.8
+	{cd_hit_est} -i {input[0]} -o {output[0]} -c 0.8 -t {threads}
 	"""
 rule txCdsPredict:
     input:
