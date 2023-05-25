@@ -26,7 +26,7 @@ extractRNAploncNonCodingSequences = config["extractRNAploncNonCodingSequences"]
 
 rule all:
     input:
-        expand("{genotype}_rnaplonc_ncrnas.fa", genotype=lista_genotipos, part=parts)
+        expand("../../3_noncodingSequences/results/{genotype}_transcriptome.cpc_ncrnas_rnaplonc_ncrnas.fa", genotype=lista_genotipos, part=parts)
 
 rule split_input:
     input:
@@ -97,7 +97,7 @@ rule filter_result:
 
 rule concatenate_result:
     input:
-        parts = expand("../results/RNAplonc_lncRNAs_filtered/{genotype}_{part}_RNAplonc_lncRNAs.txt", genotype=lista_genotipos, part=parts)
+        parts = expand("../results/RNAplonc_lncRNAs_filtered/{{genotype}}_{part}_RNAplonc_lncRNAs.txt", genotype=lista_genotipos, part=parts)
     output:
         final = "../results/RNAplonc_lncRNAs_filtered_final/{genotype}_RNAplonc_lncRNAs.txt",
         mod = "../results/RNAplonc_lncRNAs_filtered_final/{genotype}_RNAplonc_lncRNAs.mod.txt"
@@ -116,8 +116,8 @@ rule extract_ncrnas:
     input:
         "../results/RNAplonc_lncRNAs_filtered_final/{genotype}_RNAplonc_lncRNAs.mod.txt",
         "../../3_noncodingSequences/results/{genotype}_transcriptome.cpc_ncrnas.fa"
-    output:
-        "{genotype}_rnaplonc_ncrnas.fa"
+    output: 
+        "../../3_noncodingSequences/results/{genotype}_transcriptome.cpc_ncrnas_rnaplonc_ncrnas.fa"
     threads: 1
     resources:
         load=1

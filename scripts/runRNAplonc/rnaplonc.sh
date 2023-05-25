@@ -4,7 +4,6 @@
 #$ -cwd
 #$ -pe smp 1
 
-module load CD-HIT/4.8.1
 module load miniconda3
 conda activate /home/felipe.peres/.conda/envs/snakemake-tutorial/envs/snakemake_conekt
 

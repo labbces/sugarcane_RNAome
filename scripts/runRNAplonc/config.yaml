@@ -3,4 +3,4 @@ feature_extraction: /Storage/data1/felipe.peres/Sugarcane_ncRNA/softwareInstalla
 weka_jar: /Storage/data1/felipe.peres/Sugarcane_ncRNA/softwareInstallation/RNAplonc/RNAplonc/weka.jar
 RNAplonc_model: /Storage/data1/felipe.peres/Sugarcane_ncRNA/softwareInstallation/RNAplonc/RNAplonc/RNAplonc.model
 FilterResults: /Storage/data1/felipe.peres/Sugarcane_ncRNA/softwareInstallation/RNAplonc/RNAplonc/FilterResults.py
-extractRNAploncNonCodingSequences: extractRNAploncNonCodingSequences.py
+extractRNAploncNonCodingSequences: ./extractRNAploncNonCodingSequences.py

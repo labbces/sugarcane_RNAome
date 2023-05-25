@@ -11,7 +11,7 @@ args = parser.parse_args()
 rnaploncout = args.rnaploncout
 transcriptome_file = args.transcriptome_file
 
-output_file = transcriptome_file[:-5] + "_rnaplonc_ncrnas.fa"
+output_file = transcriptome_file[:-3] + "_rnaplonc_ncrnas.fa"
 
 #RNAploncout = RNAplonc result in table format (delimited by tab):
 #example file
