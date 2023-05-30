@@ -1,0 +1,8 @@
+default-resources: [load=1]
+
+software:
+        ffq: ~/.conda/envs/snakemake-tutorial/envs/snakemake_conekt/bin/ffq
+        salmon: /Storage/progs/salmon-1.8.0_linux_x86_64/bin/salmon
+        filter_salmon_output: ./filter_salmon_output.py
+        jq: ./jq-linux64
+        parse_filter: ./parse_filters.py
