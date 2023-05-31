@@ -1,0 +1,197 @@
+#!/usr/bin/env python
+
+#Usage
+
+# snakemake -np -k --resources load=10 -s Snakefile --cluster "qsub -q all.q -V -cwd -l h={params.server} -pe smp {threads}" --jobs 10
+
+configfile: "config.yaml"
+
+import pandas as pd
+from pandas.errors import EmptyDataError
+import yaml
+import os
+
+GENOTYPE='48_genotypes'
+SEQTYPE='PAIRED'
+samples = pd.read_csv(GENOTYPE+'_samples.csv')
+reference_transcriptome = "/Storage/data1/riano/Sugarcane/Pantranscriptome/Assemblies/CD-HIT_" + GENOTYPE + "_transcriptome_salmonInx/"
+
+ffq = config["software"]["ffq"]
+salmon = config["software"]["salmon"]
+filter_salmon_output = config["software"]["filter_salmon_output"]
+jq = config["software"]["jq"]
+parse_filter = config["software"]["parse_filter"]
+
+rule all:
+	input:
+                #"preliminar_report.tsv"
+                #expand("preliminar_report.tsv", genotype=GENOTYPE, seqtype=SEQTYPE, sample=samples),
+	        #expand("{genotype}_{seqtype}_srrlist_LowMapping_LowReads.csv", sample=samples, genotype=GENOTYPE, seqtype=SEQTYPE)
+		expand("{genotype}_{seqtype}_quantmerge.txt", genotype=GENOTYPE, seqtype=SEQTYPE)
+
+rule download_fastq:
+	priority: 2
+	output:
+		R1 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_1.fastq.gz",
+		R2 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.fastq.gz"
+	threads: 1
+	resources:
+		load=3
+	params:
+		genotype="{genotype}",
+		server="figsrv"
+	log:
+		"datasets_{genotype}/logs/download_fastq/{sample}.log"
+	shell:
+		"""
+		cd datasets_{params.genotype}/1_raw_reads_in_fastq_format && \
+		{ffq} --ftp {wildcards.sample} | grep -Eo '\"url\": \"[^\"]*\"' | grep -o '\"[^\"]*\"$' | xargs wget && \
+		cd -
+		"""
+
+rule salmon_index:
+	priority: 1
+	input:
+		transcriptome=reference_transcriptome
+	output:
+		salmon_index = "/Storage/data1/riano/Sugarcane/Pantranscriptome/Assemblies/CD-HIT_{genotype}_transcriptome_salmonInx/"
+	params:
+		server="figsrv"
+	resources:
+		load=1
+	threads: 1
+	log:
+		"datasets_{genotype}/logs/salmon/index/{genotype}.log"
+	shell:
+		"/usr/bin/time -v {salmon} index -t {input.transcriptome} -p {threads} -i {output.salmon_index} 2> {log}"
+
+rule salmon_quant:
+	priority: 1
+	input:
+		salmon_index = "/Storage/data1/riano/Sugarcane/Pantranscriptome/Assemblies/CD-HIT_{genotype}_transcriptome_salmonInx/",
+		R1 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_1.fastq.gz",
+		R2 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.fastq.gz"
+	output:
+		"datasets_{genotype}/2_salmon/quant/{sample}/aux_info/meta_info.json",
+		"datasets_{genotype}/2_salmon/quant/{sample}/quant.sf"
+	params:
+		server="figsrv",
+		genotype="{genotype}"	
+	resources:
+		load=1
+	threads: 1
+	log:
+		"datasets_{genotype}/logs/salmon/quant/{sample}.log"
+	shell:
+		"""
+		/usr/bin/time -v {salmon} quant -i {input.salmon_index} -l A -1 {input.R1} -2 {input.R2} -o datasets_{params.genotype}/2_salmon/quant/{wildcards.sample} -p {threads} 2> {log}
+		"""
+
+rule filter_stranded:
+	priority: 1
+	input:
+		stranded = expand("datasets_{genotype}/2_salmon/quant/{sample}/aux_info/meta_info.json", genotype=GENOTYPE, sample=samples)
+	output:
+		lib = "datasets_{genotype}/2_salmon/quant/{genotype}_{seqtype}_srrlist.csv"
+	threads: 1
+	resources:
+		load=1
+	params:
+		genotype="{genotype}",
+		server="figsrv",
+		seqtype="{seqtype}"
+#	log:
+#		"datasets_{genotype}/logs/filter_stranded/{genotype}.log"
+	shell:
+		"""
+		{jq} -r '.library_types[]' {input.stranded} > datasets_{params.genotype}/2_salmon/quant/lib.txt && \
+		ls datasets_{params.genotype}/2_salmon/quant/ | grep RR > datasets_{params.genotype}/2_salmon/quant/id.txt && \
+		paste datasets_{params.genotype}/2_salmon/quant/id.txt datasets_{params.genotype}/2_salmon/quant/lib.txt -d, > datasets_{params.genotype}/2_salmon/quant/stranded_status.csv && \
+		cut -f1 -d, datasets_{params.genotype}/2_salmon/quant/stranded_status.csv | paste -s -d, > datasets_{params.genotype}/2_salmon/quant/new_samples.csv && \
+		cp datasets_{params.genotype}/2_salmon/quant/new_samples.csv datasets_{params.genotype}/2_salmon/quant/{params.genotype}_{params.seqtype}_srrlist.csv		
+		"""
+
+def get_filter_stranded_samples(wildcards):
+	#this file is created by filter_stranded (rule above)
+	try:
+		with open(f"datasets_{wildcards.genotype}/2_salmon/quant/{wildcards.genotype}_{wildcards.seqtype}_srrlist.csv", "r") as f1:
+			stranded_samples = pd.read_csv(f1)
+		return stranded_samples
+	except EmptyDataError:
+		print("Empty file - {f1}")
+
+rule filter_low_mapping_reads:
+	priority: 1
+	input:
+		expand("datasets_{genotype}/2_salmon/quant/{genotype}_{seqtype}_srrlist.csv",genotype=GENOTYPE, seqtype=SEQTYPE),
+		expand("datasets_{genotype}/2_salmon/quant/{sample}/quant.sf", genotype=GENOTYPE, sample=samples),
+		expand("datasets_{genotype}/2_salmon/quant/{sample}/aux_info/meta_info.json", genotype=GENOTYPE, sample=samples)
+	output:
+                "{genotype}_{seqtype}_filter_stats.txt",
+		"{genotype}_{seqtype}_srrlist_LowMapping_LowReads.csv"#, genotype=GENOTYPE, seqtype=SEQTYPE)
+	threads: 1
+	params:
+		server="figsrv",
+		seqtype="{seqtype}",
+		genotype="{genotype}",
+		stranded_samples=get_filter_stranded_samples
+	resources:
+		load=1
+#	 log:
+#		 expand("datasets_{genotype}/logs/filter_low_mapping/{genotype}_filter.log", genotype=GENOTYPE)
+	shell:
+		"""
+		{filter_salmon_output} --genotype {params.genotype} --stranded_samples datasets_{params.genotype}/2_salmon/quant/{params.genotype}_{params.seqtype}_srrlist.csv
+		"""
+
+def get_filter_low_mapping_samples(wildcards):
+	salmon_path = f"datasets_{wildcards.genotype}/2_salmon/quant/"
+	filter_file = f"{wildcards.genotype}_{wildcards.seqtype}_srrlist_LowMapping_LowReads.csv"
+	try:
+		with open(filter_file, "r") as f2:
+			filter_low_mapping_samples = list(pd.read_csv(f2))
+			file_paths = [os.path.join(salmon_path, sample) for sample in filter_low_mapping_samples]
+		return ' '.join(file_paths)
+	except EmptyDataError:
+		print(f"Empty file - {filter_file}")
+
+rule generate_preliminar_report:
+    priority: 1
+    input: 
+            accessions = expand("{genotype}.db_accessions_mod.txt", genotype=GENOTYPE),
+            paired_srrlist = expand("{genotype}_{seqtype}_srrlist_LowMapping_LowReads.csv",genotype=GENOTYPE, seqtype=SEQTYPE),
+            filter_stats = expand("{genotype}_{seqtype}_filter_stats.txt", genotype=GENOTYPE, seqtype=SEQTYPE),
+    output:
+            "preliminar_report.tsv"
+    threads: 1
+    resources:
+            load = 1
+    params: 
+            server="figsrv"
+    shell:
+            """
+            sed 's/,/\n/g' {input.accessions} >> {input.accessions}.temp && \
+            sed 's/,/\n/g' {input.paired_srrlist} >> {input.paired_srrlist}.temp && \
+            sed 's/\t/,/g' {input.filter_stats} >> {input.filter_stats}.temp && \
+            {parse_filter} --accessions {input.accessions}.temp --paired_srrlist {input.paired_srrlist}.temp --filter_stats {input.filter_stats}.temp
+            """
+
+rule generate_expression_matrix:
+	priority: 1
+	input:
+		expand("{genotype}_{seqtype}_srrlist_LowMapping_LowReads.csv", genotype=GENOTYPE, seqtype=SEQTYPE),
+	output:
+		"{genotype}_{seqtype}_quantmerge.txt"
+	threads: 1
+	resources:
+		load=10
+	params:
+		genotype="{genotype}",
+		seqtype="{seqtype}",
+		server="figsrv",
+		datasets = expand("datasets_{genotype}/2_salmon/quant/", genotype=GENOTYPE),
+		filter_low_mapping_samples=get_filter_low_mapping_samples
+	shell:
+		"""
+		/usr/bin/time -v {salmon} quantmerge --quants {params.filter_low_mapping_samples} -o {params.genotype}_{params.seqtype}_quantmerge.txt
+		"""
