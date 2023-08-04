@@ -13,16 +13,14 @@ list_file = args.list_file
 
 output_file = "putative_ncRNA_consensus.fa"
 
-# Read the file containing sequences to extract
-sequences_to_extract = []
+# Read the file containing sequences to extract and create a set to speed up membership verification
+sequences_to_extract_set = set()
 with open(list_file, "r") as list_f:
     for line in list_f:
         sequence = line.strip()
-        sequences_to_extract.append(sequence)
+        sequences_to_extract_set.add(sequence)
 
-# Open files and extract sequences
 with open(transcriptome_file, "r") as fin, open(output_file, "w") as fout:
     for record in SeqIO.parse(fin, "fasta"):
-        if record.id in sequences_to_extract:
+        if record.id in sequences_to_extract_set:
             SeqIO.write(record, fout, "fasta")
-
