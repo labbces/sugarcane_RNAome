@@ -7,18 +7,22 @@ import argparse
 
 def ler_identificadores_de_arquivo(nome_arquivo):
     with open(nome_arquivo, 'r') as arquivo:
-        # le o conteudo do arquivo e retorna uma lista com os identificadores
+        # Le o conteudo do arquivo e retorna uma lista com os identificadores
         identificadores = arquivo.read().strip().split(',')
     return identificadores
 
 def encontrar_consenso(lista1, lista2, lista3):
-    # Converte as listas em conjuntos (sets)
+    # Cria um conjunto com os identificadores de cada lista para encontrar o consenso de forma eficiente
     set1 = set(lista1)
     set2 = set(lista2)
     set3 = set(lista3)
 
     # Encontra a intersecao dos tres conjuntos
-    consenso = set1.intersection(set2, set3)
+    consenso_set = set1.intersection(set2, set3)
+
+    # Cria a lista consenso mantendo a ordem original dos identificadores
+    consenso = [identificador for identificador in lista1 if identificador in consenso_set]
+
     return consenso
 
 def salvar_identificadores_em_arquivo(identificadores, nome_arquivo):
