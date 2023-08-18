@@ -38,7 +38,7 @@ rule download_fastq:
 		R2 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.fastq.gz"
 	threads: 1
 	resources:
-		load=2
+		load=3
 	params:
 		genotype="{genotype}",
 		server="figsrv"
@@ -48,7 +48,8 @@ rule download_fastq:
 	shell:
 		"""
 		cd datasets_{params.genotype}/1_raw_reads_in_fastq_format && \
-		{ffq} --ftp {wildcards.sample} | grep -Eo '\"url\": \"[^\"]*\"' | grep -o '\"[^\"]*\"$' | xargs wget > {log} 2>&1
+		{ffq} --ftp {wildcards.sample} | grep -Eo '\"url\": \"[^\"]*\"' | grep -o '\"[^\"]*\"$' | xargs wget && \
+		cd -
 		"""
 
 rule bbduk:
