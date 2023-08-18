@@ -16,9 +16,6 @@ SEQTYPE='PAIRED'
 samples = pd.read_csv(GENOTYPE+'_samples.csv')
 reference_transcriptome = "/Storage/data1/riano/Sugarcane/Pantranscriptome/Assemblies/CD-HIT_48_genotypes_transcriptome_salmonInx/"
 
-# testando pipeline completo contra seu proprio transcriptoma
-reference_transcriptome = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/7_salmon/transcriptomes/"+GENOTYPE+"_transcriptome.fasta"
-
 ffq = config["software"]["ffq"]
 bbduk = config["software"]["bbduk"]
 salmon = config["software"]["salmon"]

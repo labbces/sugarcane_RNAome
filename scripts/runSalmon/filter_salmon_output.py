@@ -23,13 +23,13 @@ out_file = open(genotype + '_' + seqtype + '_filter_stats.txt', 'a')
 out_file.write(f'Sample\tMapping Rate\tPerc Low TPM\n')
 out_file.close()
 
-for path2salmon in os.listdir('datasets_'+ genotype +'/2_salmon/quant/'):
+for path2salmon in os.listdir('datasets_'+ genotype +'/3_salmon/quant/'):
     if path2salmon in paired_samples_list[0]:
         sample_name = path2salmon.replace('_quant','')
-        f = open('datasets_'+ genotype +'/2_salmon/quant/' + path2salmon + '/aux_info/meta_info.json')
+        f = open('datasets_'+ genotype +'/3_salmon/quant/' + path2salmon + '/aux_info/meta_info.json')
         #print("f: ", f)
         data = json.load(f)
-        f2 = open('datasets_'+ genotype +'/2_salmon/quant/' + path2salmon + '/quant.sf')
+        f2 = open('datasets_'+ genotype +'/3_salmon/quant/' + path2salmon + '/quant.sf')
         #print("f2: ", f2)
         count_transcripts = 0
         low_tpm = 0
@@ -45,7 +45,7 @@ for path2salmon in os.listdir('datasets_'+ genotype +'/2_salmon/quant/'):
         perc_low_tpm = (low_tpm / count_transcripts) * 100
         out_file.write(f'{sample_name}\t{data["percent_mapped"]}\t{perc_low_tpm}\n')
         out_file.close()
-        if (data['percent_mapped'] >= 0.1) and (perc_low_tpm <= 99): #40 e 60
+        if (data['percent_mapped'] >= 40) and (perc_low_tpm <= 60): #40 e 60
             pass
             #print(sample_name, data['percent_mapped'], perc_low_tpm)
         else:
