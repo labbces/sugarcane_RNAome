@@ -11,9 +11,18 @@ from pandas.errors import EmptyDataError
 import yaml
 import os
 
-GENOTYPE='Q200'
-SEQTYPE='PAIRED'
+# capturando o nome do arquivo "_samples.csv" na pasta de execucao
+sample_file = [file for file in os.listdir() if file.endswith('_samples.csv')][0]
+
+# extraindo o genotipo do nome do arquivo "_samples.csv"
+GENOTYPE = os.path.splitext(sample_file)[0].replace('_samples', '')
+
+# extraindo samples separadas por virgula
 samples = pd.read_csv(GENOTYPE+'_samples.csv')
+
+# informando SEQTYPE
+SEQTYPE='PAIRED'
+
 reference_transcriptome = "/Storage/data1/riano/Sugarcane/Pantranscriptome/Assemblies/CD-HIT_48_genotypes_transcriptome_salmonInx/"
 
 ffq = config["software"]["ffq"]
