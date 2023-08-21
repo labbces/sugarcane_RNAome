@@ -115,11 +115,11 @@ rule count_raw_sequences:
 	name: "count_raw_sequences"
 	shell:
 		"""
-		zcat {input.R1} | grep -c "@SRR" > {output.R1_rawstats} 2>> {log}
+		zcat {input.R1} | grep -c -E "@(SRR|ERR)" > {output.R1_rawstats} 2>> {log}
 		echo "sequences: $(cat {output.R1_rawstats})" > {output.R1_rawstats} 2>> {log}
 		rm {input.R1} 2>> {log} 
 		
-		zcat {input.R2} | grep -c "@SRR" > {output.R2_rawstats} 2>> {log}
+		zcat {input.R2} | grep -c -E "@(SRR|ERR)" > {output.R2_rawstats} 2>> {log}
 		echo "sequences: $(cat {output.R2_rawstats})" > {output.R2_rawstats} 2>> {log}
 		rm {input.R2} 2>> {log}
 		"""
@@ -198,11 +198,11 @@ rule count_trimmed_sequences:
 	name: "count_trimmed_sequences"
 	shell:
 		"""
-		zcat {input.R1} | grep -c "@SRR" > {output.R1_trimmedstats} 2>> {log}
+		zcat {input.R1} | grep -c -E "@(SRR|ERR)" > {output.R1_trimmedstats} 2>> {log}
 		echo "sequences: $(cat {output.R1_trimmedstats})" > {output.R1_trimmedstats} 2>> {log}
 		rm {input.R1} 2>> {log}
 
-		zcat {input.R2} | grep -c "@SRR" > {output.R2_trimmedstats} 2>> {log}
+		zcat {input.R2} | grep -c -E "@(SRR|ERR)" > {output.R2_trimmedstats} 2>> {log}
 		echo "sequences: $(cat {output.R2_trimmedstats})" > {output.R2_trimmedstats} 2>> {log}
 		rm {input.R2} 2>> {log}
 		"""
@@ -231,7 +231,7 @@ rule filter_stranded:
 	shell:
 		"""
 		{jq} -r '.library_types[]' {input.meta_info} > datasets_{params.genotype}/3_salmon/quant/lib.txt 2>> {log}
-		ls datasets_{wildcards.genotype}/3_salmon/quant/ | grep SRR > datasets_{params.genotype}/3_salmon/quant/id.txt 2>> {log}
+		ls datasets_{wildcards.genotype}/3_salmon/quant/ | grep -E "(SRR|ERR)" > datasets_{params.genotype}/3_salmon/quant/id.txt 2>> {log}
 		paste datasets_{params.genotype}/3_salmon/quant/id.txt datasets_{params.genotype}/3_salmon/quant/lib.txt -d, > datasets_{params.genotype}/3_salmon/quant/stranded_status.csv 2>> {log}
 		grep .S datasets_{params.genotype}/3_salmon/quant/stranded_status.csv > datasets_{params.genotype}/3_salmon/quant/stranded_samples.csv 2>> {log}
 		cut -f1 -d, datasets_{params.genotype}/3_salmon/quant/stranded_samples.csv | paste -s -d, > datasets_{params.genotype}/3_salmon/quant/{params.genotype}_{params.seqtype}_srrlist.csv 2>> {log}
