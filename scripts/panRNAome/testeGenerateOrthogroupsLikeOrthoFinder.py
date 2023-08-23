@@ -3,10 +3,9 @@
 from collections import defaultdict
 
 # Leitura do arquivo de entrada
-input_file = "head_DB_clust.tsv"
-output_file = "head_DB_clust_Orthogroups.tsv"
+input_file = "DB_clust.tsv"
+output_file = "DB_clust_Orthogroups.tsv"
 
-# Dicionário para armazenar os Orthogroups, seus genótipos e transcritos associados
 orthogroups = defaultdict(lambda: defaultdict(list))
 genotypes = set()
 
@@ -26,13 +25,13 @@ sorted_genotypes = sorted(genotypes)
 # Criação do novo formato e impressão
 output_lines = ["Orthogroup\t" + "\t".join(sorted_genotypes)]
 
-for orthogroup, genotypes_dict in orthogroups.items():
+for idx, (orthogroup, genotypes_dict) in enumerate(orthogroups.items(), start=1):
     genotype_elements = []
     for genotype in sorted_genotypes:
         elements = genotypes_dict.get(genotype, [])
         elements_str = ",".join(elements)
         genotype_elements.append(elements_str)
-    output_lines.append("{}\t{}".format(orthogroup, "\t".join(genotype_elements)))
+    output_lines.append("OG{}\t{}".format(idx, "\t".join(genotype_elements)))
 
 with open(output_file, "w") as file:
     file.write("\n".join(output_lines))
