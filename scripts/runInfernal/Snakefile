@@ -33,4 +33,4 @@ rule infernal:
 	log:
 		expand("logs/{{genotype}}/{{genotype}}.part-{{part}}.log", genotype=genotypes, part=parts)
 	shell:
-		"{cmscan} -Z 17.574263 --cut_ga --rfam --nohmmonly --cpu {threads} --tblout {output.tblout} -o {output.out} --fmt 2 --clanin {clanin} {cm} {input}"
+		"{cmscan} -Z 12.423724 --cut_ga --rfam --nohmmonly --cpu {threads} --tblout {output.tblout} -o {output.out} --fmt 2 --clanin {clanin} {cm} {input}"
