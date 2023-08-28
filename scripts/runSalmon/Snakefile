@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
-#Usage
-
-#snakemake -p -k --resources load=6 -s Snakefile --cluster "qsub -q all.q -V -cwd -l h={params.server} -pe smp {threads}" --jobs 6 --jobname "{rulename}.{jobid}"
+#Usage:
+#snakemake -p -k --resources load=6 -s Snakefile --rerun-incomplete --cluster "qsub -q all.q -V -cwd -pe smp {threads}" --jobs 6 --jobname "{rulename}.{jobid}"
 
 configfile: "config.yaml"
 
@@ -47,7 +46,7 @@ rule download_fastq:
 		R2 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.fastq.gz"
 	threads: 1
 	resources:
-		load=3
+		load=6
 	params:
 		genotype="{genotype}",
 		server="figsrv"
@@ -78,9 +77,9 @@ rule bbduk:
 		stats = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.stats"
 	log:
 		"datasets_{genotype}/logs/bbduk/{sample}.log"
-	threads: 5
+	threads: 4
 	resources:
-		load=2
+		load=3
 	params:
 		server="figsrv"
 	name: "bbduk"
@@ -171,14 +170,14 @@ rule salmon_quant:
 		server="figsrv",
 		genotype="{genotype}"	
 	resources:
-		load=1
-	threads: 1
+		load=6
+	threads: 6
 	log:
 		"datasets_{genotype}/logs/salmon/quant/{sample}.log"
 	name: "salmon_quant"
 	shell:
 		"""
-		/usr/bin/time -v {salmon} quant -i {input.salmon_index} -l A -1 {input.R1} -2 {input.R2} -o datasets_{params.genotype}/3_salmon/quant/{wildcards.sample} > {log} 2>&1
+		/usr/bin/time -v {salmon} quant -p {threads} -i {input.salmon_index} -l A -1 {input.R1} -2 {input.R2} -o datasets_{params.genotype}/3_salmon/quant/{wildcards.sample} > {log} 2>&1
 		"""
 
 rule count_trimmed_sequences:
