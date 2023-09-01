@@ -1,11 +1,11 @@
 #read raw matrix
-HOME_DIR = "/home/felipe/Documents/SugarcaneCoExpression/hoang"
+HOME_DIR = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Hoang/code/"
 setwd(HOME_DIR)
 
 #rm(list = ls())
 
 # expression matrix in TPM
-raw <- read.table("head1000000_hoang_merged_quant_counts.txt", head = T, row.names = 1)
+raw <- read.table("hoang_merged_quant_counts.txt", head = T, row.names = 1)
 
 #convertendo valores em inteiros
 raw <- round(raw)
@@ -14,17 +14,16 @@ row_data <- read.table("metadata.txt")
 colnames(raw) <- row_data$V2
 
 #> install.packages(c("HiClimR", "wesanderson", "WGCNA"))
-
 library(dplyr)
 library(tidyr)
 
 ## make a raw PCA for quality control, in this part we don't want to aggregate replicates
 library(ggplot2)
 library(ggrepel)
-library(DESeq2) 
-library(WGCNA) #instalar
+library(DESeq2)
+#library(WGCNA)
+library(WGCNA, lib.loc = "/Storage/data1/jorge.munoz/NRGSC.new/libraries")
 library(tibble)
-
 
 raw.good <- raw[goodGenes(t(raw)),]
 raw.vst <- vst(as.matrix(raw.good))
@@ -58,4 +57,5 @@ pca_plot <- raw.pca$x %>%
         axis.line = element_line(colour = "black"))
 
 # Salve o PCA como um arquivo PNG
-ggsave("pca_plot.png", pca_plot, width = 20, height = 16, units = "in", dpi = 300)
+ggsave("hoang_pca_plot.png", pca_plot, width = 20, height = 16, units = "in", dpi = 300)
+
