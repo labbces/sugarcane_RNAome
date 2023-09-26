@@ -17,7 +17,7 @@ files <- file.path(HOME_DIR, "smallData", samples$run, "quant_non-coding.sf")
 all(file.exists(files))
 
 # Set tx2gene file (clusters from MMSeqs2)
-tx2gene <- read.table(file.path(HOME_DIR, "tx2gene_smallData_non-coding.txt"), header = FALSE, sep = "\t")
+tx2gene <- read.table(file.path(HOME_DIR, "tx2gene_smallData.txt"), header = FALSE, sep = "\t")
 tx2gene
 
 # Organize columns for tx2gene format (transcript ID     group)
@@ -26,6 +26,10 @@ tx2gene
 
 library(tximport)
 txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
+names(txi)
+head(txi$counts)
+
+
 
 # expression matrix in TPM
 raw <- read.table("hoang_merged_quant_counts.txt", head = T, row.names = 1)
