@@ -1,8 +1,31 @@
-#read raw matrix
+# Reset R variables
+rm(list = ls())
+
+# Configure directory
 HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 setwd(HOME_DIR)
 
-#rm(list = ls())
+# List files in home directory
+list.files(HOME_DIR)
+
+# Read samples file 
+samples <- read.table(file.path(HOME_DIR, "samples.txt"), header = TRUE)
+samples
+
+# Set quant.sf files 
+files <- file.path(HOME_DIR, "smallData", samples$run, "quant_non-coding.sf")
+all(file.exists(files))
+
+# Set tx2gene file (clusters from MMSeqs2)
+tx2gene <- read.table(file.path(HOME_DIR, "tx2gene_smallData_non-coding.txt"), header = FALSE, sep = "\t")
+tx2gene
+
+# Organize columns for tx2gene format (transcript ID     group)
+tx2gene <- tx2gene[, c(3,2)]
+tx2gene
+
+library(tximport)
+txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
 
 # expression matrix in TPM
 raw <- read.table("hoang_merged_quant_counts.txt", head = T, row.names = 1)
