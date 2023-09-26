@@ -49,3 +49,33 @@ hist(txi$cv, breaks = 50, main = "Coefficient of Variation Distribution",
 
 # Close the PNG device to save the plot
 dev.off()
+
+# Trying PCA
+# Code from biostars.org/p/9560363
+
+library(DESeq2)
+
+# Create DESeqDataSet from txi
+dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ 1)
+dds
+
+# Run variance stabilizing transformation on the counts
+#object <- vst(dds)
+#object
+
+# Calculate the variance for each gene
+rv <- rowVars(assay(dds))
+
+# Top n genes by variance to keep
+ntop <- 500
+
+# Select the ntop genes by variance
+select <- order(rv, decreasing = TRUE)[seq_len(min(ntop, length(rv)))]
+
+# Perform a PCA on the data in assay(x) for the selected genes
+pca <- prcomp(t(assay(dds)[select,]))
+pca
+
+# Loading for the first two PCs
+loadings <- pca$rotation[, seq_len(2)]
+loadings
