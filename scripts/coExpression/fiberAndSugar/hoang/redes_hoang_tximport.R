@@ -1,5 +1,5 @@
 #read raw matrix
-HOME_DIR = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Hoang/code/"
+HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 setwd(HOME_DIR)
 
 #rm(list = ls())
