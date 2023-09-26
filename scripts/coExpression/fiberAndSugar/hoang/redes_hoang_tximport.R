@@ -37,11 +37,14 @@ txi$cv <- cv
 names(txi)
 print(txi$cv)
 
+# Saving txi file with CV
+write.table(txi, file = "txi_with_cv.tsv", sep = "\t", row.names = FALSE)
+
 # Open a PNG device for saving the plot
-png(filename = "cv_histogram.png", width = 800, height = 600)
+png(filename = "small_cv_histogram.png", width = 800, height = 600)
 
 # Plot a histogram of the Coefficient of Variation (CV)
-hist(txi$cv, breaks = 20, main = "Coefficient of Variation Distribution",
+hist(txi$cv, breaks = 50, main = "Coefficient of Variation Distribution",
      xlab = "Coefficient of Variation (%)", ylab = "Frequency")
 
 # Close the PNG device to save the plot
