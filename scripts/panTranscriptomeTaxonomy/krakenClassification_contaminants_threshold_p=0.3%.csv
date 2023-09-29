@@ -1,0 +1,35 @@
+%,reads,reads taxon,rank,ID,species
+76.92,12513783,46158,R1,131567,  cellular organisms
+76.62,12465660,20278,D,2759,    Eukaryota
+76.5,12444935,2128,K,33090,      Viridiplantae
+76.48,12442478,0,P,35493,        Streptophyta
+76.48,12442478,0,P1,131221,          Streptophytina
+76.48,12442478,1605,P2,3193,            Embryophyta
+76.47,12440873,0,P3,58023,              Tracheophyta
+76.47,12440873,0,P4,78536,                Euphyllophyta
+76.47,12440873,0,P5,58024,                  Spermatophyta
+76.47,12440873,2409,C,3398,                    Magnoliopsida
+76.46,12438462,93193,C1,1437183,                      Mesangiospermae
+75.84,12339016,0,C2,4447,                        Liliopsida
+75.84,12339016,3505,C3,1437197,                          Petrosaviidae
+75.82,12335510,11538,C4,4734,                            commelinids
+75.75,12323943,2386,O,38820,                              Poales
+75.74,12321551,205335,F,4479,                                Poaceae
+74.2,12070936,0,F1,147370,                                  PACMAD clade
+74.2,12070936,464038,F2,147369,                                    Panicoideae
+69.57,11317901,0,F3,1648033,                                      Andropogonodae
+69.57,11317901,651029,F4,147429,                                        Andropogoneae
+61.31,9973862,0,F5,1648028,                                          Sorghinae
+61.31,9973862,0,G,4557,                                            Sorghum
+61.31,9973862,9973862,S,4558,                                              Sorghum bicolor
+4.26,693010,0,F5,1648029,                                          Tripsacinae
+4.26,693010,0,G,4575,                                            Zea
+4.26,693010,693010,S,4577,                                              Zea mays
+1.78,288997,0,F3,1648036,                                      Panicodae
+1.78,288997,73547,F4,147428,                                        Paniceae
+0.96,156207,0,F5,1293365,                                          Panicinae
+0.96,156207,32826,G,4539,                                            Panicum
+0.71,116269,0,G1,2100771,                                              Panicum sect. Hiantes
+0.71,116269,116269,S,38727,                                                Panicum virgatum
+0.36,59243,0,F5,1293361,                                          Cenchrinae
+0.36,59243,50231,G,4554,                                            Setaria
