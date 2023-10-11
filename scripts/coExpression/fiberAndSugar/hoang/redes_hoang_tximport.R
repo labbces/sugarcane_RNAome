@@ -3,6 +3,8 @@ rm(list = ls())
 
 # Configure directory
 HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
+# PC CENA
+HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 setwd(HOME_DIR)
 
 # List files in home directory
@@ -60,8 +62,8 @@ dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ 1)
 dds
 
 # Run variance stabilizing transformation on the counts
-#object <- vst(dds)
-#object
+object <- vst(dds)
+object
 
 # Calculate the variance for each gene
 rv <- rowVars(assay(dds))
