@@ -3,6 +3,7 @@ rm(list = ls())
 
 # Configure directory
 HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
+
 # PC CENA
 HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 setwd(HOME_DIR)
@@ -12,9 +13,8 @@ list.files(HOME_DIR)
 
 # Read samples file 
 samples <- read.table(file.path(HOME_DIR, "samples.txt"), header = TRUE)
-samples
 
-# Set quant.sf files 
+#Set quant.sf files
 files <- file.path(HOME_DIR, "smallData", samples$run, "quant.sf")
 all(file.exists(files))
 
@@ -27,7 +27,9 @@ tx2gene <- tx2gene[, c(3,2)]
 tx2gene
 
 library(tximport)
+# Dont merge top and bottom
 txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
+
 names(txi)
 head(txi$counts)
 
