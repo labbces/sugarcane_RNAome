@@ -1,7 +1,12 @@
 # Reset R variables
 rm(list = ls())
 
-# Configure directory
+# Read DESeq2 tutorial
+vignette("DESeq2")
+
+##### Configure directory #####
+
+# Notebook
 HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 
 # PC CENA
@@ -11,15 +16,19 @@ setwd(HOME_DIR)
 # List files in home directory
 list.files(HOME_DIR)
 
+###############################
+
+##### Import files: samples, tx2gene file, quantification matrix #####
+
 # Read samples file 
-samples <- read.table(file.path(HOME_DIR, "samples.txt"), header = TRUE)
+samples <- read.table(file.path(HOME_DIR, "metadata_toCollapse.txt"), header = TRUE) #samples.txt
 
 #Set quant.sf files
 files <- file.path(HOME_DIR, "smallData", samples$run, "quant.sf")
 all(file.exists(files))
 
 # Set tx2gene file (clusters from MMSeqs2)
-tx2gene <- read.table(file.path(HOME_DIR, "tx2gene_smallData.txt"), header = FALSE, sep = "\t")
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
 tx2gene
 
 # Organize columns for tx2gene format (transcript ID     group)
@@ -27,13 +36,17 @@ tx2gene <- tx2gene[, c(3,2)]
 tx2gene
 
 library(tximport)
-# Dont merge top and bottom
+
+# Import quantification matrix with tximport
 txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
 
 names(txi)
 head(txi$counts)
 
-# Calculate the Coefficient of Variation (CV) for each gene
+######################################################################
+
+##### Calculate the Coefficient of Variation (CV) for each gene #####
+
 cv <- apply(txi$counts, 1, function(x) sd(x) / mean(x) * 100)
 
 # Add the CV as a new column to txi object
@@ -54,8 +67,7 @@ hist(txi$cv, breaks = 50, main = "Coefficient of Variation Distribution",
 # Close the PNG device to save the plot
 dev.off()
 
-# Trying PCA
-# Code from biostars.org/p/9560363
+#####################################################################
 
 library(DESeq2)
 
@@ -63,11 +75,74 @@ library(DESeq2)
 dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ 1)
 dds
 
+##### collapseReplicates (tratando como se fossem technical replicates) #####
+
+?collapseReplicates
+
+ddsColl <- collapseReplicates(dds, dds$sample, dds$run)
+
+# examine the colData and column names of the collapsed data
+colData(ddsColl)
+ddsColl
+
+##### collapseReplicates (tratando como se fossem technical replicates) #####
+
+##### Pre-filtering #####
+
+# In the tutorial they removed rows that have at least 10 reads total
+
+keep <- rowSums(counts(ddsColl)) >= 1
+dds <- ddsColl[keep,]
+dds
+# 921 rows left
+
+# I want to remove rows with more than 80% of zeros
+
+# Calcular a proporção de zeros em cada linha
+zero_prop <- rowSums(counts(dds) == 0) / ncol(counts(dds))
+
+# Defina um limite de 80% para zeros
+threshold <- 0.80
+
+# Selecione linhas com menos de 80% de zeros
+keep <- zero_prop <= threshold
+dds <- dds[keep,]
+dds
+# 8 rows left
+
+#########################
+
 # Run variance stabilizing transformation on the counts
-object <- vst(dds)
+object <- vst(dds, nsub = 500)
 object
 
+?vst
+
+##### Effects of transformations on the variance #####
+
+# shifted logarithm transformation - log2(n + 1)
+ntd <- normTransform(dds)
+
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("vsn")
+
+library("vsn")
+
+meanSdPlot(assay(ntd))
+
+# variance stabilizing transformation
+
+meanSdPlot(assay(object))
+
+##### Effects of transformations on the variance #####
+
+# Trying PCA
+# Code from biostars.org/p/9560363
+
 # Calculate the variance for each gene
+# The assay function is used to extract the matrix of normalized values.
 rv <- rowVars(assay(dds))
 
 # Top n genes by variance to keep
