@@ -127,7 +127,7 @@ se
 # Plot PCA
 
 # the call to DESeqTransform() is needed to trigger our plotPCA method.
-plotPCA( DESeqTransform( se ),intgroup="run" )
+plotPCA( DESeqTransform( se ),intgroup="sample" )
 
 pcaData <- plotPCA( DESeqTransform( se ),intgroup="run", returnData=TRUE)
 percentVar <- round(100 * attr(pcaData, "percentVar"))
