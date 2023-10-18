@@ -112,11 +112,16 @@ dds
 
 #########################
 
-# Run variance stabilizing transformation on the counts
+##### Run variance stabilizing transformation on the counts ####
+
 object <- vst(dds)
 object
 
 ?vst
+
+################################################################
+
+##### Plotar PCA sem VST #####
 
 # Nao consegui aplicar o vst hoje... (18/10)
 # Using shifted log of normalized counts
@@ -137,6 +142,8 @@ ggplot(pcaData, aes(PC1, PC2, shape=run, color = run)) +
   ylab(paste0("PC2: ",percentVar[2],"% variance")) + 
   coord_fixed()
 
+##############################
+
 ##### Effects of transformations on the variance #####
 
 # shifted logarithm transformation - log2(n + 1)
@@ -155,7 +162,7 @@ meanSdPlot(assay(ntd))
 
 meanSdPlot(assay(object))
 
-##### Effects of transformations on the variance #####
+######################################################
 
 ### plot PCA
 
