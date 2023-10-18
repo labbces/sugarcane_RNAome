@@ -113,10 +113,29 @@ dds
 #########################
 
 # Run variance stabilizing transformation on the counts
-object <- vst(dds, nsub = 500)
+object <- vst(dds)
 object
 
 ?vst
+
+# Nao consegui aplicar o vst hoje... (18/10)
+# Using shifted log of normalized counts
+se <- SummarizedExperiment(log2(counts(ddsColl, normalized=FALSE) + 1),
+                           colData=colData(ddsColl))
+se
+
+# Plot PCA
+
+# the call to DESeqTransform() is needed to trigger our plotPCA method.
+plotPCA( DESeqTransform( se ),intgroup="run" )
+
+pcaData <- plotPCA( DESeqTransform( se ),intgroup="run", returnData=TRUE)
+percentVar <- round(100 * attr(pcaData, "percentVar"))
+ggplot(pcaData, aes(PC1, PC2, shape=run, color = run)) +
+  geom_point(size=3) +
+  xlab(paste0("PC1: ",percentVar[1],"% variance")) +
+  ylab(paste0("PC2: ",percentVar[2],"% variance")) + 
+  coord_fixed()
 
 ##### Effects of transformations on the variance #####
 
@@ -138,6 +157,12 @@ meanSdPlot(assay(object))
 
 ##### Effects of transformations on the variance #####
 
+### plot PCA
+
+?plotPCA 
+plotPCA(dds, intgroup=c("sample", "runsCollapsed"))
+
+###
 # Trying PCA
 # Code from biostars.org/p/9560363
 
