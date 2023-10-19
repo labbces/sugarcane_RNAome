@@ -110,8 +110,8 @@ threshold <- 0.80
 
 # Selecione linhas com menos de 80% de zeros
 keep <- zero_prop <= threshold
-dds <- dds[keep,]
-dds
+ddsColl <- ddsColl[keep,]
+ddsColl
 # 8 rows left
 
 #########################
