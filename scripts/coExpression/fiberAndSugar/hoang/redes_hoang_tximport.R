@@ -106,8 +106,16 @@ threshold <- 0.80
 
 # Selecione linhas com menos de 80% de zeros
 keep <- zero_prop <= threshold
-dds <- dds[keep,]
-dds
+ddsColl <- ddsColl[keep,]
+head(ddsColl)
+rownames(ddsColl)
+colnames(ddsColl)
+
+gene_de_interesse <- "OG1388542"
+
+counts_gene_interesse <- counts(ddsColl)[gene_de_interesse, ]
+print(counts_gene_interesse)
+
 # 8 rows left
 
 #########################
