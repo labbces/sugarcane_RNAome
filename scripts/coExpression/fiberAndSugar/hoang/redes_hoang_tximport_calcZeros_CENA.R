@@ -32,7 +32,7 @@ files <- file.path(HOME_DIR, "../data", samples$run, "quant.sf")
 all(file.exists(files))
 
 # Set tx2gene file (clusters from MMSeqs2)
-tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8.tsv"), header = FALSE, sep = "\t")
 tx2gene
 
 # Organize columns for tx2gene format (transcript ID     group)
@@ -103,15 +103,15 @@ ddsColl
 # I want to remove rows with more than 80% of zeros
 
 # Calcular a proporção de zeros em cada linha
-zero_prop <- rowSums(counts(dds) == 0) / ncol(counts(dds))
+zero_prop <- rowSums(counts(ddsColl) == 0) / ncol(counts(ddsColl))
 
 # Defina um limite de 80% para zeros
 threshold <- 0.80
 
 # Selecione linhas com menos de 80% de zeros
 keep <- zero_prop <= threshold
-ddsColl <- ddsColl[keep,]
-ddsColl
+keep_ddsColl <- ddsColl[keep,]
+keep_ddsColl
 # 8 rows left
 
 #########################
