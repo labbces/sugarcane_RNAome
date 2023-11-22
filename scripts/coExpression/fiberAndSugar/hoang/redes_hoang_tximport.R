@@ -143,13 +143,49 @@ dds_vst <- varianceStabilizingTransformation(dds_pseudo)
 # Insira o pseudocount na tabela de transformação
 dds_vst$pseudocount <- pseudocount
 dds_vst$sample
+dds_vst$sample
 
 ################################################################
 
 ##### Plotar PCA com VST #####
+library(ggplot2)
 
-plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
+pca_plot <- plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
+print(pca_plot)
 
+# Salve o plot em um arquivo PNG
+ggsave("plot_pca_withoutTissues.png", pca_plot)
+
+##### TESTANDO SIMBOLOS PARA TOP E BOTTOM #####
+
+library(viridisLite)
+library(viridis)
+colors <- viridis::viridis(40) #40 cores
+
+# Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
+dds_vst$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", dds_vst$sample)
+dds_vst$internode_type
+dds_vst$sample
+
+# Plot PCA usando ggplot2 para personalização adicional
+pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "internode_type", returnData = TRUE)
+
+# Personalize o gráfico
+pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$sample, shape = internode_type)) +
+  geom_point(size = 3) +
+  labs(title = "PCA Plot",
+       x = paste0("PC1 (", round(100 * pca_data$percentVar[1], 1), "%)"),
+       y = paste0("PC2 (", round(100 * pca_data$percentVar[2], 1), "%)")) +
+  theme_minimal()
+
+# Adicione uma escala de cores manualmente para corresponder aos shapes
+pca_plot <- pca_plot + scale_color_manual(values = colors, name = "Sample")
+
+# Exiba o gráfico
+print(pca_plot)
+ggsave("plot_pca_withTissues.png", pca_plot)
+
+################################################
 ##### Plotar PCA sem VST #####
 
 # Using shifted log of normalized counts
