@@ -154,7 +154,7 @@ pca_plot <- plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
 print(pca_plot)
 
 # Salve o plot em um arquivo PNG
-ggsave("plot_pca_withoutTissues.png", pca_plot)
+ggsave("plot_pca_vst_withoutTissues.png", pca_plot)
 
 ##### TESTANDO SIMBOLOS PARA TOP E BOTTOM #####
 
@@ -183,7 +183,7 @@ pca_plot <- pca_plot + scale_color_manual(values = colors, name = "Sample")
 
 # Exiba o gráfico
 print(pca_plot)
-ggsave("plot_pca_withTissues.png", pca_plot)
+ggsave("plot_pca_vst_withTissues.png", pca_plot)
 
 ################################################
 ##### Plotar PCA sem VST #####
@@ -196,9 +196,10 @@ se
 # Plot PCA
 
 # the call to DESeqTransform() is needed to trigger our plotPCA method.
-plotPCA( DESeqTransform( se ),intgroup="sample" )
+pca_plot <- plotPCA( DESeqTransform( se ),intgroup="sample" )
+print(pca_plot)
+ggsave("plot_pca_SE_withoutTissues.png", pca_plot)
 
-library(ggplot2)
 
 pcaData <- plotPCA( DESeqTransform( se ),intgroup="run", returnData=TRUE)
 percentVar <- round(100 * attr(pcaData, "percentVar"))
