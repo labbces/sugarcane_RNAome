@@ -122,16 +122,36 @@ print(counts_gene_interesse)
 
 ##### Run variance stabilizing transformation on the counts ####
 
-object <- vst(dds)
-object
-
 ?vst
+
+# Adicione um pseudocount de 1 a todas as contagens
+pseudocount <- 1
+dds_counts <- counts(ddsColl)
+dds_counts_pseudo <- dds_counts + pseudocount
+
+# Crie um novo objeto DESeqDataSet com as contagens ajustadas
+dds_pseudo <- DESeqDataSetFromMatrix(countData = dds_counts_pseudo,
+                                     colData = colData(ddsColl),
+                                     design = ~ 1)
+
+# Execute a transformação VST diretamente no objeto DESeqDataSet
+dds_vst <- varianceStabilizingTransformation(dds_pseudo)
+#-- note: fitType='parametric', but the dispersion trend was not well captured by the
+#function: y = a/x + b, and a local regression fit was automatically substituted.
+#specify fitType='local' or 'mean' to avoid this message next time.
+
+# Insira o pseudocount na tabela de transformação
+dds_vst$pseudocount <- pseudocount
+dds_vst$sample
 
 ################################################################
 
+##### Plotar PCA com VST #####
+
+plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
+
 ##### Plotar PCA sem VST #####
 
-# Nao consegui aplicar o vst hoje... (18/10)
 # Using shifted log of normalized counts
 se <- SummarizedExperiment(log2(counts(ddsColl, normalized=FALSE) + 1),
                            colData=colData(ddsColl))
@@ -141,6 +161,8 @@ se
 
 # the call to DESeqTransform() is needed to trigger our plotPCA method.
 plotPCA( DESeqTransform( se ),intgroup="sample" )
+
+library(ggplot2)
 
 pcaData <- plotPCA( DESeqTransform( se ),intgroup="run", returnData=TRUE)
 percentVar <- round(100 * attr(pcaData, "percentVar"))
