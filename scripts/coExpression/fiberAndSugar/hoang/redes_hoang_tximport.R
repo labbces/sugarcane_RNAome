@@ -156,7 +156,7 @@ print(pca_plot)
 # Salve o plot em um arquivo PNG
 ggsave("plot_pca_vst_withoutTissues.png", pca_plot)
 
-##### TESTANDO SIMBOLOS PARA TOP E BOTTOM #####
+##### Plot diferenciando tecidos top e bottom #####
 
 library(viridisLite)
 library(viridis)
