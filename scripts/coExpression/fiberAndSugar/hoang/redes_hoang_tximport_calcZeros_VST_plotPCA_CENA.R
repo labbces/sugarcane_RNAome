@@ -181,7 +181,7 @@ counts_matrix_vst <- assay(dds_vst)
 # Salvar a matriz em um arquivo CSV
 
 print("saving vst without 80 zeros matrix")
-write.csv(counts_matrix_vst, file = "Hoang2017_tpm_vst_without80zeros.txt")
+write.table(counts_matrix_vst, file = "Hoang2017_tpm_vst_without80zeros.txt", sep = "\t", quote = FALSE)
 
 # Plot PCA usando ggplot2 para personalização adicional
 pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "internode_type", returnData = TRUE)
