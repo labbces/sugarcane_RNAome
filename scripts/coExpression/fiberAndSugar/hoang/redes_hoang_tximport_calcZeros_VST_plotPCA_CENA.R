@@ -18,6 +18,7 @@ HOME_DIR = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-exp
 setwd(HOME_DIR)
 
 # List files in home directory
+print("List files in home directory")
 list.files(HOME_DIR)
 
 ###############################
@@ -29,14 +30,17 @@ samples <- read.table(file.path(HOME_DIR, "metadata_toCollapse.txt"), header = T
 
 #Set quant.sf files
 files <- file.path(HOME_DIR, "../data", samples$run, "quant.sf")
+print("All file exists")
 all(file.exists(files))
 
 # Set tx2gene file (clusters from MMSeqs2)
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8.tsv"), header = FALSE, sep = "\t")
+print("tx2gene file (clusters from MMSeqs2)")
 tx2gene
 
 # Organize columns for tx2gene format (transcript ID     group)
 tx2gene <- tx2gene[, c(3,2)]
+print("New tx2gene -> transcript ID    group")
 tx2gene
 
 library(tximport)
@@ -44,7 +48,10 @@ library(tximport)
 # Import quantification matrix with tximport
 txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
 
+print("names txi")
 names(txi)
+
+print("head txi")
 head(txi$counts)
 
 ######################################################################
@@ -77,6 +84,8 @@ library(DESeq2)
 
 # Create DESeqDataSet from txi
 dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ 1)
+
+print("dds object")
 dds
 
 ##### collapseReplicates (tratando como se fossem technical replicates) #####
@@ -86,7 +95,10 @@ dds
 ddsColl <- collapseReplicates(dds, dds$sample, dds$run)
 
 # examine the colData and column names of the collapsed data
+print("columns from collapsed dds (ddsColl)")
 colData(ddsColl)
+
+print("complete ddsColl object")
 ddsColl
 
 ##### collapseReplicates (tratando como se fossem technical replicates) #####
@@ -111,6 +123,8 @@ threshold <- 0.80
 # Selecione linhas com menos de 80% de zeros
 keep <- zero_prop <= threshold
 keep_ddsColl <- ddsColl[keep,]
+
+print("keep_ddsColl object")
 keep_ddsColl
 
 #########################
@@ -135,6 +149,8 @@ dds_vst <- varianceStabilizingTransformation(dds_pseudo)
 
 # Insira o pseudocount na tabela de transformação
 dds_vst$pseudocount <- pseudocount
+
+print("dds_vst samples")
 dds_vst$sample
 
 ##### Plotar PCA com VST #####
@@ -151,7 +167,11 @@ colors <- viridis::viridis(40) #40 cores
 
 # Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
 dds_vst$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", dds_vst$sample)
+
+print("dds_vst internode types")
 dds_vst$internode_type
+
+print("dds_vst samples")
 dds_vst$sample
 
 # Extrair matriz de counts ajustadas apos VST
@@ -159,6 +179,8 @@ counts_matrix_vst <- assay(dds_vst)
 
 # As colunas sao as samples colapsadas e as linhas sao os grupos de non-coding
 # Salvar a matriz em um arquivo CSV
+
+print("saving vst without 80 zeros matrix")
 write.csv(counts_matrix_vst, file = "Hoang2017_tpm_vst_without80zeros.txt")
 
 # Plot PCA usando ggplot2 para personalização adicional
@@ -184,7 +206,7 @@ ggsave("plot_pca_vst_withTissues.png", pca_plot)
 # Using shifted log of normalized counts
 se <- SummarizedExperiment(log2(counts(ddsColl, normalized=FALSE) + 1),
                            colData=colData(ddsColl))
-se
+#se
 
 # Plot PCA
 
