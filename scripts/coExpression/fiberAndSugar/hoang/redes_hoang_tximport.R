@@ -143,7 +143,9 @@ dds_vst <- varianceStabilizingTransformation(dds_pseudo)
 # Insira o pseudocount na tabela de transformação
 dds_vst$pseudocount <- pseudocount
 dds_vst$sample
-dds_vst$sample
+dds_vst$run
+# Extrair a matriz de contagens ajustadas após o VST
+assay(dds_vst)
 
 ################################################################
 
