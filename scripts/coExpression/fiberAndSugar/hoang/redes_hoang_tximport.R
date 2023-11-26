@@ -145,7 +145,10 @@ dds_vst$pseudocount <- pseudocount
 dds_vst$sample
 dds_vst$run
 # Extrair a matriz de contagens ajustadas após o VST
-assay(dds_vst)
+counts_matrix_vst <- assay(dds_vst)
+
+# Salvar a matriz 
+write.table(counts_matrix_vst, file = "small_counts_matrix_vst.txt", sep = "\t", quote = FALSE)
 
 ################################################################
 
