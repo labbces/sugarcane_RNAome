@@ -154,6 +154,13 @@ dds_vst$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", dds_vst$sampl
 dds_vst$internode_type
 dds_vst$sample
 
+# Extrair matriz de counts ajustadas apos VST
+counts_matrix_vst <- assay(dds_vst)
+
+# As colunas sao as samples colapsadas e as linhas sao os grupos de non-coding
+# Salvar a matriz em um arquivo CSV
+write.csv(counts_matrix_vst, file = "Hoang2017_tpm_vst_without80zeros.txt")
+
 # Plot PCA usando ggplot2 para personalização adicional
 pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "internode_type", returnData = TRUE)
 
