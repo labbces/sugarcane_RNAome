@@ -157,7 +157,7 @@ dds_vst$sample
 library(ggplot2)
 
 pca_plot_withoutTissues <- plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
-ggsave("plot_pca_vst_withoutTissues.png", pca_plot_withoutTissues)
+ggsave("plot_pca_vst_withoutTissues.png", pca_plot_withoutTissues, bg = "white")
 
 ##### Plot diferenciando tecidos top e bottom #####
 
@@ -205,7 +205,7 @@ pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$genotype, sha
 
 # Saving PCA
 print("saving PCA as: plot_pca_vst_withTissues.png")
-ggsave("plot_pca_vst_withTissues.png", pca_plot)
+ggsave("plot_pca_vst_withTissues.png", pca_plot, bg = "white")
 
 ################################################
 ##### Plotar PCA sem VST #####
@@ -219,6 +219,6 @@ se <- SummarizedExperiment(log2(counts(ddsColl, normalized=FALSE) + 1),
 
 # the call to DESeqTransform() is needed to trigger our plotPCA method.
 pca_plot_se <- plotPCA( DESeqTransform( se ),intgroup="sample" )
-ggsave("plot_pca_SE_withoutTissues.png", pca_plot_se)
+ggsave("plot_pca_SE_withoutTissues.png", pca_plot_se, bg = "white")
 
 ##########################
