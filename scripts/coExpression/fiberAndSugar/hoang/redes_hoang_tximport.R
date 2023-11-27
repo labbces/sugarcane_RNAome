@@ -155,6 +155,8 @@ write.table(counts_matrix_vst, file = "small_counts_matrix_vst.txt", sep = "\t",
 ##### Plotar PCA com VST #####
 library(ggplot2)
 
+# Just to work with same names in plot
+dds_vst <- ddsColl
 pca_plot <- plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
 print(pca_plot)
 
@@ -170,24 +172,33 @@ colors <- viridis::viridis(40) #40 cores
 # Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
 dds_vst$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", dds_vst$sample)
 dds_vst$internode_type
+
+# Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo
+dds_vst$genotype <- sub("^(.*?)_.*", "\\1", dds_vst$sample)
+dds_vst$genotype
+
 dds_vst$sample
 
 # Plot PCA usando ggplot2 para personalização adicional
 pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "internode_type", returnData = TRUE)
+print(pca_data)
+
+percentVar <- round(100 * attr(pcaData, "percentVar"))
 
 # Personalize o gráfico
-pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$sample, shape = internode_type)) +
-  geom_point(size = 3) +
-  labs(title = "PCA Plot",
-       x = paste0("PC1 (", round(100 * pca_data$percentVar[1], 1), "%)"),
-       y = paste0("PC2 (", round(100 * pca_data$percentVar[2], 1), "%)")) +
+pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$genotype, shape = internode_type, label = dds_vst$genotype)) +
+  geom_point(size = 2) +
+  geom_text(nudge_y = 2, check_overlap = FALSE, size = 2) + 
+  labs(title = "PCA - Hoang2017 Contrasting Genotypes in Fiber and Sugar",
+       x = paste0("PC1: ",percentVar[1],"% variance"),
+       y = paste0("PC2: ",percentVar[2],"% variance"),
+       color = "Genotype",
+       shape = "Internode Type") +
   theme_minimal()
-
-# Adicione uma escala de cores manualmente para corresponder aos shapes
-pca_plot <- pca_plot + scale_color_manual(values = colors, name = "Sample")
 
 # Exiba o gráfico
 print(pca_plot)
+
 ggsave("plot_pca_vst_withTissues.png", pca_plot)
 
 ################################################
@@ -207,7 +218,9 @@ ggsave("plot_pca_SE_withoutTissues.png", pca_plot)
 
 
 pcaData <- plotPCA( DESeqTransform( se ),intgroup="run", returnData=TRUE)
+
 percentVar <- round(100 * attr(pcaData, "percentVar"))
+
 ggplot(pcaData, aes(PC1, PC2, shape=run, color = run)) +
   geom_point(size=3) +
   xlab(paste0("PC1: ",percentVar[1],"% variance")) +
