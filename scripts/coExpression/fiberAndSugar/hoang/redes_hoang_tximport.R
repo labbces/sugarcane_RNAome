@@ -1,3 +1,10 @@
+library(ggplot2)
+library(ggrepel)
+library(viridisLite)
+library(viridis)
+library(tximport)
+library(DESeq2)
+
 # Reset R variables
 rm(list = ls())
 
@@ -35,8 +42,6 @@ tx2gene
 tx2gene <- tx2gene[, c(3,2)]
 tx2gene
 
-library(tximport)
-
 # Import quantification matrix with tximport
 txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
 
@@ -68,8 +73,6 @@ hist(txi$cv, breaks = 50, main = "Coefficient of Variation Distribution",
 dev.off()
 
 #####################################################################
-
-library(DESeq2)
 
 # Create DESeqDataSet from txi
 dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ 1)
@@ -152,21 +155,13 @@ write.table(counts_matrix_vst, file = "small_counts_matrix_vst.txt", sep = "\t",
 
 ################################################################
 
-##### Plotar PCA com VST #####
-library(ggplot2)
+##### Plotando PCA #####
 
-# Just to work with same names in plot
+# Just to work with same names in plot (gambiarra temporaria)
 dds_vst <- ddsColl
-pca_plot <- plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
-print(pca_plot)
 
-# Salve o plot em um arquivo PNG
-ggsave("plot_pca_vst_withoutTissues.png", pca_plot)
+# Plot PCA diferenciando tecidos top e bottom
 
-##### Plot diferenciando tecidos top e bottom #####
-
-library(viridisLite)
-library(viridis)
 colors <- viridis::viridis(40) #40 cores
 
 # Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
@@ -183,15 +178,18 @@ dds_vst$sample
 pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "internode_type", returnData = TRUE)
 print(pca_data)
 
-percentVar <- round(100 * attr(pcaData, "percentVar"))
+percentVar <- round(100 * attr(pca_data, "percentVar"))
 
-# Personalize o gráfico
 pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$genotype, shape = internode_type, label = dds_vst$genotype)) +
   geom_point(size = 2) +
-  geom_text(nudge_y = 2, check_overlap = FALSE, size = 2) + 
+  geom_text_repel(
+    box.padding = 0.1, point.padding = 0.1,
+    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
+    size = 2
+  ) +
   labs(title = "PCA - Hoang2017 Contrasting Genotypes in Fiber and Sugar",
-       x = paste0("PC1: ",percentVar[1],"% variance"),
-       y = paste0("PC2: ",percentVar[2],"% variance"),
+       x = paste0("PC1: ", percentVar[1], "% variance"),
+       y = paste0("PC2: ", percentVar[2], "% variance"),
        color = "Genotype",
        shape = "Internode Type") +
   theme_minimal()
