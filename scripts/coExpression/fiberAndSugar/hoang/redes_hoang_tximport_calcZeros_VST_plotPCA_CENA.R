@@ -156,8 +156,8 @@ dds_vst$sample
 ##### Plotar PCA com VST #####
 library(ggplot2)
 
-pca_plot <- plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
-ggsave("plot_pca_vst_withoutTissues.png", pca_plot)
+pca_plot_withoutTissues <- plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
+ggsave("plot_pca_vst_withoutTissues.png", pca_plot_withoutTissues)
 
 ##### Plot diferenciando tecidos top e bottom #####
 
@@ -181,23 +181,30 @@ counts_matrix_vst <- assay(dds_vst)
 # Salvar a matriz em um arquivo CSV
 
 print("saving vst without 80 zeros matrix")
-write.table(counts_matrix_vst, file = "Hoang2017_tpm_vst_without80zeros.txt", sep = "\t", quote = FALSE)
+#write.table(counts_matrix_vst, file = "Hoang2017_tpm_vst_without80zeros.txt", sep = "\t", quote = FALSE)
 
 # Plot PCA usando ggplot2 para personalização adicional
 pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "internode_type", returnData = TRUE)
 
-# Personalize o gráfico
-pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$sample, shape = internode_type)) +
-  geom_point(size = 3) +
-  labs(title = "PCA Plot",
-       x = paste0("PC1 (", round(100 * pca_data$percentVar[1], 1), "%)"),
-       y = paste0("PC2 (", round(100 * pca_data$percentVar[2], 1), "%)")) +
+# Calculando a variância explicada por PC1 e PC2
+percentVar <- round(100 * attr(pca_data, "percentVar"))
+
+pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$genotype, shape = internode_type, label = dds_vst$genotype)) +
+  geom_point(size = 2) +
+  geom_text_repel(
+    box.padding = 0.1, point.padding = 0.1,
+    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
+    size = 2
+  ) +
+  labs(title = "PCA - Hoang2017 Contrasting Genotypes in Fiber and Sugar",
+       x = paste0("PC1: ", percentVar[1], "% variance"),
+       y = paste0("PC2: ", percentVar[2], "% variance"),
+       color = "Genotype",
+       shape = "Internode Type") +
   theme_minimal()
 
-# Adicione uma escala de cores manualmente para corresponder aos shapes
-pca_plot <- pca_plot + scale_color_manual(values = colors, name = "Sample")
-
-# salvar o gráfico
+# Saving PCA
+print("saving PCA as: plot_pca_vst_withTissues.png")
 ggsave("plot_pca_vst_withTissues.png", pca_plot)
 
 ################################################
@@ -211,7 +218,7 @@ se <- SummarizedExperiment(log2(counts(ddsColl, normalized=FALSE) + 1),
 # Plot PCA
 
 # the call to DESeqTransform() is needed to trigger our plotPCA method.
-pca_plot <- plotPCA( DESeqTransform( se ),intgroup="sample" )
-ggsave("plot_pca_SE_withoutTissues.png", pca_plot)
+pca_plot_se <- plotPCA( DESeqTransform( se ),intgroup="sample" )
+ggsave("plot_pca_SE_withoutTissues.png", pca_plot_se)
 
 ##########################
