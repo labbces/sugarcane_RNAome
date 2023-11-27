@@ -197,7 +197,7 @@ pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$genotype, sha
 # Exiba o gráfico
 print(pca_plot)
 
-ggsave("plot_pca_vst_withTissues.png", pca_plot)
+ggsave("plot_pca_vst_withTissues.png", pca_plot, bg = "white")
 
 ################################################
 ##### Plotar PCA sem VST #####
