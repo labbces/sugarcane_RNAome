@@ -168,6 +168,10 @@ colors <- viridis::viridis(40) #40 cores
 # Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
 dds_vst$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", dds_vst$sample)
 
+# Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo
+dds_vst$genotype <- sub("^(.*?)_.*", "\\1", dds_vst$sample)
+dds_vst$genotype
+
 print("dds_vst internode types")
 dds_vst$internode_type
 
