@@ -164,7 +164,7 @@ dds_vst <- ddsColl
 
 colors <- viridis::viridis(12) #40 cores
 
-# Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
+# Adicione uma coluna ao seu DataFrame de amostras indicando grupo de biomassa
 dds_vst$biomass_group <- sub(".*_(high|low)-biomass$", "\\1", dds_vst$sample)
 dds_vst$biomass_group
 
