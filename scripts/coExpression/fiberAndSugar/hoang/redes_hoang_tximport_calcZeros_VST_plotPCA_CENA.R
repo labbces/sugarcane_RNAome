@@ -1,3 +1,10 @@
+library(ggplot2)
+library(ggrepel)
+library(viridisLite)
+library(viridis)
+library(tximport)
+library(DESeq2)
+
 # Reset R variables
 ##rm(list = ls())
 
@@ -43,8 +50,6 @@ tx2gene <- tx2gene[, c(3,2)]
 print("New tx2gene -> transcript ID    group")
 tx2gene
 
-library(tximport)
-
 # Import quantification matrix with tximport
 txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
 
@@ -79,8 +84,6 @@ head(txi$counts)
 ##dev.off()
 
 #####################################################################
-
-library(DESeq2)
 
 # Create DESeqDataSet from txi
 dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ 1)
@@ -154,15 +157,12 @@ print("dds_vst samples")
 dds_vst$sample
 
 ##### Plotar PCA com VST #####
-library(ggplot2)
 
 pca_plot_withoutTissues <- plotPCA( DESeqTransform( dds_vst ),intgroup="sample" )
 ggsave("plot_pca_vst_withoutTissues.png", pca_plot_withoutTissues, bg = "white")
 
 ##### Plot diferenciando tecidos top e bottom #####
 
-library(viridisLite)
-library(viridis)
 colors <- viridis::viridis(40) #40 cores
 
 # Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
