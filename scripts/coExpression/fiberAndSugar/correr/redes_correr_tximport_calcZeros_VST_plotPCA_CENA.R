@@ -43,12 +43,12 @@ all(file.exists(files))
 # Set tx2gene file (clusters from MMSeqs2)
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8.tsv"), header = FALSE, sep = "\t")
 print("tx2gene file (clusters from MMSeqs2)")
-tx2gene
+#tx2gene
 
 # Organize columns for tx2gene format (transcript ID     group)
 tx2gene <- tx2gene[, c(3,2)]
 print("New tx2gene -> transcript ID    group")
-tx2gene
+#tx2gene
 
 # Import quantification matrix with tximport
 txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
@@ -163,17 +163,18 @@ ggsave("plot_pca_vst_withoutTissues.png", pca_plot_withoutTissues, bg = "white")
 
 ##### Plot diferenciando tecidos top e bottom #####
 
-colors <- viridis::viridis(40) #40 cores
+colors <- viridis::viridis(12) #40 cores
 
-# Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
-dds_vst$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", dds_vst$sample)
+# Adicione uma coluna ao seu DataFrame de amostras indicando grupo de biomassa
+dds_vst$biomass_group <- sub(".*_(high|low)-biomass$", "\\1", dds_vst$sample)
+dds_vst$biomass_group
 
 # Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo
 dds_vst$genotype <- sub("^(.*?)_.*", "\\1", dds_vst$sample)
 dds_vst$genotype
 
-print("dds_vst internode types")
-dds_vst$internode_type
+print("dds_vst biomass groups")
+dds_vst$biomass_group
 
 print("dds_vst samples")
 dds_vst$sample
@@ -185,26 +186,27 @@ counts_matrix_vst <- assay(dds_vst)
 # Salvar a matriz em um arquivo CSV
 
 print("saving vst without 80 zeros matrix")
-#write.table(counts_matrix_vst, file = "Hoang2017_tpm_vst_without80zeros.txt", sep = "\t", quote = FALSE)
+write.table(counts_matrix_vst, file = "Correr2020_tpm_vst_without80zeros.txt", sep = "\t", quote = FALSE)
 
 # Plot PCA usando ggplot2 para personalização adicional
-pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "internode_type", returnData = TRUE)
+pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "biomass_group", returnData = TRUE)
 
 # Calculando a variância explicada por PC1 e PC2
 percentVar <- round(100 * attr(pca_data, "percentVar"))
 
-pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$genotype, shape = internode_type, label = dds_vst$genotype)) +
+# remvido shape = biomass_group
+pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = biomass_group, label = dds_vst$genotype)) +
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
     segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
     size = 2
   ) +
-  labs(title = "PCA - Hoang2017 Contrasting Genotypes in Fiber and Sugar",
+  labs(title = "PCA - Correr2020 Contrasting Genotypes in Fiber and Sugar",
        x = paste0("PC1: ", percentVar[1], "% variance"),
        y = paste0("PC2: ", percentVar[2], "% variance"),
-       color = "Genotype",
-       shape = "Internode Type") +
+       color = "Biomass Group",
+       shape = "Biomass Group") +
   theme_minimal()
 
 # Saving PCA
