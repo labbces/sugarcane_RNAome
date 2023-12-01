@@ -3,7 +3,7 @@
 #$ -q all.q
 #$ -V
 #$ -cwd
-#$ -pe smp 1
+#$ -pe smp 5
 
 module load Python/3.7.2
 
