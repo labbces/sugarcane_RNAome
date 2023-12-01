@@ -1,0 +1,24 @@
+PCCs calculated and saved as Hoang2017_tpm_vst_without80zeros_500_network.txt and Hoang2017_tpm_vst_without80zeros_500_mcl_out.txt.
+	Command being timed: "python3 pcc.py Hoang2017_tpm_vst_without80zeros_500.txt Hoang2017_tpm_vst_without80zeros_500_network.txt Hoang2017_tpm_vst_without80zeros_500_mcl_out.txt"
+	User time (seconds): 12.51
+	System time (seconds): 69.92
+	Percent of CPU this job got: 1563%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 25312
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 37
+	Minor (reclaiming a frame) page faults: 13555
+	Voluntary context switches: 1142
+	Involuntary context switches: 16073544
+	Swaps: 0
+	File system inputs: 91288
+	File system outputs: 1280
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
