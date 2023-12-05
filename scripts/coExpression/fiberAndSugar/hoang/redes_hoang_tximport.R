@@ -28,10 +28,10 @@ list.files(HOME_DIR)
 ##### Import files: samples, tx2gene file, quantification matrix #####
 
 # Read samples file 
-samples <- read.table(file.path(HOME_DIR, "metadata_toCollapse.txt"), header = TRUE) #samples.txt
+samples <- read.table(file.path(HOME_DIR, 'infos_hoang_metadata.tsv'), header = TRUE, skip = 1, sep = '\t')
 
 #Set quant.sf files
-files <- file.path(HOME_DIR, "smallData", samples$run, "quant.sf")
+files <- file.path(HOME_DIR, "smallData", samples$Accession, "quant.sf")
 all(file.exists(files))
 
 # Set tx2gene file (clusters from MMSeqs2)
@@ -60,10 +60,10 @@ names(txi)
 print(txi$cv)
 
 # Saving txi file with CV
-write.table(txi, file = "txi_with_cv.tsv", sep = "\t", row.names = FALSE)
+write.table(txi, file = "QuantificationMatrix_CoefficientVariation.tsv", sep = "\t", row.names = FALSE)
 
 # Open a PNG device for saving the plot
-png(filename = "small_cv_histogram.png", width = 800, height = 600)
+png(filename = "QuantificationMatrix_CoefficientVariation.png", width = 800, height = 600)
 
 # Plot a histogram of the Coefficient of Variation (CV)
 hist(txi$cv, breaks = 50, main = "Coefficient of Variation Distribution",
@@ -82,11 +82,14 @@ dds
 
 ?collapseReplicates
 
-ddsColl <- collapseReplicates(dds, dds$sample, dds$run)
+ddsColl <- collapseReplicates(dds, dds$Run, dds$Accession)
 
 # examine the colData and column names of the collapsed data
 colData(ddsColl)
+colnames(ddsColl)
 ddsColl
+
+ddsColl$runsCollapsed
 
 ##### collapseReplicates (tratando como se fossem technical replicates) #####
 
@@ -110,6 +113,7 @@ threshold <- 0.80
 # Selecione linhas com menos de 80% de zeros
 keep <- zero_prop <= threshold
 ddsColl <- ddsColl[keep,]
+
 head(ddsColl)
 rownames(ddsColl)
 colnames(ddsColl)
@@ -123,6 +127,70 @@ print(counts_gene_interesse)
 
 #########################
 
+##### Calculate the Coefficient of Variation (CV) for each gene #####
+
+counts(ddsColl)
+dim(counts(ddsColl))
+
+cv_after_zeros_removal <- apply(counts(ddsColl), 1, function(x) sd(x) / mean(x) * 100)
+cv_after_zeros_removal
+
+# Add the CV as a new column to ddsColl object
+
+dim(ddsColl)
+length(ddsColl$cv)
+
+ddsColl
+
+colData(ddsColl)$cv <- cv_after_zeros_removal
+colData(ddsColl)
+
+# Open a PNG device for saving the plot
+png(filename = "QuantificationMatrix_CoefficientVariation_afterZerosRemoval.png", width = 800, height = 600)
+
+# Plot a histogram of the Coefficient of Variation (CV)
+hist(cv_after_zeros_removal, breaks = 50, main = "Coefficient of Variation Distribution after Zeros Removal",
+     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+
+# Close the PNG device to save the plot
+dev.off()
+
+#####################################################################
+
+##### Remove genes with less than 140% cv
+
+colData(ddsColl)$cv
+colData(ddsColl)$cv >= 140
+
+dds_after_cv_filter <- ddsColl[rownames(ddsColl)[cv_after_zeros_removal >= 140],]
+dds_after_cv_filter
+
+colData(dds_after_cv_filter)
+counts(dds_after_cv_filter)
+######
+
+##### calculate cv again after 140% cv removal
+counts(dds_after_cv_filter)
+dim(counts(dds_after_cv_filter))
+
+cv_after_cv_removal <- apply(counts(dds_after_cv_filter), 1, function(x) sd(x) / mean(x) * 100)
+cv_after_cv_removal
+
+# Open a PNG device for saving the plot
+png(filename = "QuantificationMatrix_CoefficientVariation_afterZerosRemoval_afterLowCVRemoval.png", width = 800, height = 600)
+
+# Plot a histogram of the Coefficient of Variation (CV)
+hist(cv_after_cv_removal, breaks = 50, main = "Coefficient of Variation Distribution after Zeros Removal and Low CV Removal",
+     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+
+# Close the PNG device to save the plot
+dev.off()
+
+###### calculate cv again after 140% cv removal
+
+#####################################################################
+
+####
 ##### Run variance stabilizing transformation on the counts ####
 
 ?vst
@@ -158,21 +226,22 @@ write.table(counts_matrix_vst, file = "small_counts_matrix_vst.txt", sep = "\t",
 ##### Plotando PCA #####
 
 # Just to work with same names in plot (gambiarra temporaria)
-dds_vst <- ddsColl
+
+dds_vst <- dds_after_cv_filter
 
 # Plot PCA diferenciando tecidos top e bottom
 
 colors <- viridis::viridis(40) #40 cores
 
 # Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
-dds_vst$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", dds_vst$sample)
+dds_vst$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", dds_vst$Run)
 dds_vst$internode_type
 
 # Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo
-dds_vst$genotype <- sub("^(.*?)_.*", "\\1", dds_vst$sample)
+dds_vst$genotype <- sub("^(.*?)_.*", "\\1", dds_vst$Run)
 dds_vst$genotype
 
-dds_vst$sample
+dds_vst$Run
 
 # Plot PCA usando ggplot2 para personalização adicional
 pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "internode_type", returnData = TRUE)
