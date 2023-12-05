@@ -33,7 +33,7 @@ list.files(HOME_DIR)
 ##### Import files: samples, tx2gene file, quantification matrix #####
 
 # Read samples file 
-samples <- read.table(file.path(HOME_DIR, "metadata_toCollapse.txt"), header = TRUE) #samples.txt
+samples <- read.table(file.path(HOME_DIR, "infos_correr_metadata.tsv"), header = TRUE) #samples.txt
 
 #Set quant.sf files
 files <- file.path(HOME_DIR, "../data", samples$run, "quant.sf")
