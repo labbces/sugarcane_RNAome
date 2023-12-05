@@ -141,11 +141,18 @@ dev.off()
 
 ##### Remove genes with less than 140% cv
 
-dds_after_cv_filter <- ddsColl[rownames(keep_ddsColl)[cv_after_zeros_removal >= 140],]
-dds_after_cv_filter
+print('removing degraded samples')
+keep_ddsColl <- keep_ddsColl[, keep_ddsColl$X..Trimmed <= 30]
 
-colData(dds_after_cv_filter)
-counts(dds_after_cv_filter)
+#run first time and test if everything is ok to procced to next steps - removal of low cv
+keep_ddsColl <- dds_after_cv_filter
+
+##print('removing low cv genes')
+##dds_after_cv_filter <- keep_ddsColl[rownames(keep_ddsColl)[cv_after_zeros_removal >= 140],]
+##dds_after_cv_filter
+
+##colData(dds_after_cv_filter)
+##counts(dds_after_cv_filter)
 
 ##### calculate cv again after 140% cv removal
 ##counts(dds_after_cv_filter)
