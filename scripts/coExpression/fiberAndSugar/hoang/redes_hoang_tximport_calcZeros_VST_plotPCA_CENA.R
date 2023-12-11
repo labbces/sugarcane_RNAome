@@ -5,52 +5,52 @@ library(viridis)
 library(tximport)
 library(DESeq2)
 
-# Reset R variables
-##rm(list = ls())
+# *** Reset R variables ***
+rm(list = ls())
 
-# Read DESeq2 tutorial
+# *** Read DESeq2 tutorial ***
 #vignette("DESeq2")
 
-##### Configure directory #####
+# *** Configure directory ***
 
-# Notebook
-##HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
+# *** Notebook ***
+HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 
-# PC CENA
+# *** PC CENA ***
 ##HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 ##setwd(HOME_DIR)
 
-# Configure directory
+# *** Configure directory ***
 HOME_DIR = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Hoang/code"
 setwd(HOME_DIR)
 
-# List files in home directory
+# *** List files in home directory ***
 print("List files in home directory")
 list.files(HOME_DIR)
 
-###############################
+# *** Import files: samples, tx2gene file, quantification matrix ***
 
-##### Import files: samples, tx2gene file, quantification matrix #####
-
-# Read samples file 
+# *** Read samples file *** 
 samples <- read.table(file.path(HOME_DIR, 'infos_hoang_metadata.tsv'), header = TRUE, skip = 1, sep = '\t')
 
-#Set quant.sf files
+# *** Set quant.sf files ***
 files <- file.path(HOME_DIR, "../data", samples$Accession, "quant.sf")
+files <- file.path(HOME_DIR, "smallData", samples$Accession, "quant.sf") #
 print("All file exists")
 all(file.exists(files))
 
-# Set tx2gene file (clusters from MMSeqs2)
+# *** Set tx2gene file (clusters from MMSeqs2) ***
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8.tsv"), header = FALSE, sep = "\t")
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t") #
 print("tx2gene file (clusters from MMSeqs2)")
 tx2gene
 
-# Organize columns for tx2gene format (transcript ID     group)
+# *** Organize columns for tx2gene format (transcript ID     group) ***
 tx2gene <- tx2gene[, c(3,2)]
 print("New tx2gene -> transcript ID    group")
 tx2gene
 
-# Import quantification matrix with tximport
+# *** Import quantification matrix with tximport ***
 txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
 
 print("names txi")
@@ -59,157 +59,156 @@ names(txi)
 print("head txi")
 head(txi$counts)
 
-######################################################################
+# *** Calculate the Coefficient of Variation (CV) for each gene ***
 
-##### Calculate the Coefficient of Variation (CV) for each gene #####
-
+print('calculating cv for raw matrix counts')
 cv <- apply(txi$counts, 1, function(x) sd(x) / mean(x) * 100)
 
-# Add the CV as a new column to txi object
+# *** Add the CV as a new column to txi object ***
 txi$cv <- cv
 names(txi)
+print('cv for raw matrix counts')
 print(txi$cv)
 
-# Saving txi file with CV
-write.table(txi, file = "QuantificationMatrix_CoefficientVariation.tsv", sep = "\t", row.names = FALSE)
+# *** Saving txi file with CV ***
+print('saving cv for raw matrix counts to file: QuantificationMatrix_CoefficientVariation.tsv')
+#write.table(txi, file = "QuantificationMatrix_CoefficientVariation.tsv", sep = "\t", row.names = FALSE)
 
-# Open a PNG device for saving the plot
+# *** Open a PNG device for saving the plot ***
+print('saving cv plot for raw matrix counts to file: QuantificationMatrix_CoefficientVariation.png')
 png(filename = "QuantificationMatrix_CoefficientVariation.png", width = 800, height = 600)
 
-# Plot a histogram of the Coefficient of Variation (CV)
-hist(txi$cv, breaks = 100, main = "Coefficient of Variation Distribution",
+# *** Plot a histogram of the Coefficient of Variation (CV) ***
+hist(txi$cv, breaks = 100, main = "Coefficient of Variation Distribution (raw matrix)",
      xlab = "Coefficient of Variation (%)", ylab = "Frequency")
 
-# Close the PNG device to save the plot
+# *** Close the PNG device to save the plot ***
 dev.off()
 
-#####################################################################
-
-# Create DESeqDataSet from txi
+# *** Create DESeqDataSet from txi ***
 dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ 1)
 
 print("dds object")
 dds
 
-##### collapseReplicates (tratando como se fossem technical replicates) #####
-
-##?collapseReplicates
+# *** collapseReplicates (tratando como se fossem technical replicates) ***
 
 ddsColl <- collapseReplicates(dds, dds$Run, dds$Accession)
+ddsColl
 
-# examine the colData and column names of the collapsed data
+# *** Examine the colData and column names of the collapsed data ***
 print("columns from collapsed dds (ddsColl)")
 colData(ddsColl)
 
 print("complete ddsColl object")
 ddsColl
 
-##### collapseReplicates (tratando como se fossem technical replicates) #####
+# *** Remove degraded samples (30% or more trimmed by bbduk) ***
 
-# Calcular a proporção de zeros em cada linha
-zero_prop <- rowSums(counts(dds) == 0) / ncol(counts(dds))
+print('removing degraded samples')
+withoutDegradedSamples_ddsColl <- ddsColl[, ddsColl$X..Trimmed <= 30]
 
-# Defina um limite de 80% para zeros
+# *** Remove genes with more than 80% zeros ***
+
+# *** Calcular a proporção de zeros em cada linha ***
+zero_prop <- rowSums(counts(withoutDegradedSamples_ddsColl) == 0) / ncol(counts(withoutDegradedSamples_ddsColl))
+
+# *** Define zeros threshold ***
 threshold <- 0.80
 
-# Selecione linhas com menos de 80% de zeros
+# *** Select genes with less than 80% de zeros ***
 keep <- zero_prop <= threshold
-keep_ddsColl <- ddsColl[keep,]
+withoutDegradedSamplesAndZeros_ddsColl <- withoutDegradedSamples_ddsColl[keep,]
 
-print("keep_ddsColl object")
-keep_ddsColl
+print("withoutDegradedSamplesAndZeros_ddsColl object")
+withoutDegradedSamplesAndZeros_ddsColl
 
-#########################
+# *** Calculate the Coefficient of Variation (CV) after degraded samples and zeros removal ***
 
-##### Calculate the Coefficient of Variation (CV) for each gene #####
+print('calculating cv after degraded samples and zeros removal ...')
+cv_after_zeros_removal <- apply(counts(withoutDegradedSamplesAndZeros_ddsColl), 1, function(x) sd(x) / mean(x) * 100)
 
-print('calculating cv after zeros removal ...')
-cv_after_zeros_removal <- apply(counts(keep_ddsColl), 1, function(x) sd(x) / mean(x) * 100)
+# *** Add the CV as a new row to ddsColl object ***
+colData(withoutDegradedSamplesAndZeros_ddsColl)
 
-# Add the CV as a new column to ddsColl object
-colData(keep_ddsColl)$cv <- cv_after_zeros_removal
+rowData(withoutDegradedSamplesAndZeros_ddsColl)$cv <- cv_after_zeros_removal
 
-# Open a PNG device for saving the plot
-png(filename = "QuantificationMatrix_CoefficientVariation_afterZerosRemoval.png", width = 800, height = 600)
+colData(withoutDegradedSamplesAndZeros_ddsColl)
+rowData(withoutDegradedSamplesAndZeros_ddsColl)
 
-# Plot a histogram of the Coefficient of Variation (CV)
+# *** Open a PNG device for saving the plot ***
+print('saving cv plot after degraded samples and zeros removal to file: QuantificationMatrix_CoefficientVariation_afterDegradedSamplesAndZerosRemoval.png')
+png(filename = "QuantificationMatrix_CoefficientVariation_afterDegradedSamplesAndZerosRemoval.png", width = 800, height = 600)
+
+# *** Plot a histogram of the Coefficient of Variation (CV) ***
 hist(cv_after_zeros_removal, breaks = 50, main = "Coefficient of Variation Distribution after Zeros Removal",
      xlab = "Coefficient of Variation (%)", ylab = "Frequency")
 
-# Close the PNG device to save the plot
+# *** Close the PNG device to save the plot ***
 dev.off()
 
-##### Remove genes with less than 140% cv
+# *** Remove genes with less than 140% cv ***
+print('removing low cv genes (less than 140%)')
+dds_after_filters <- withoutDegradedSamplesAndZeros_ddsColl[rownames(withoutDegradedSamplesAndZeros_ddsColl)[cv_after_zeros_removal >= 140],]
+dds_after_filters
 
-print('removing degraded samples')
-keep_ddsColl <- keep_ddsColl[, keep_ddsColl$X..Trimmed <= 30]
+colData(dds_after_filters)
+rowData(dds_after_filters)
 
-#run first time and test if everything is ok to procced to next steps - removal of low cv
-keep_ddsColl <- dds_after_cv_filter
+# *** calculate cv again after 140% cv removal ***
+counts(dds_after_filters)
+dim(counts(dds_after_filters))
 
-##print('removing low cv genes')
-##dds_after_cv_filter <- keep_ddsColl[rownames(keep_ddsColl)[cv_after_zeros_removal >= 140],]
-##dds_after_cv_filter
+cv_after_cv_removal <- apply(counts(dds_after_filters), 1, function(x) sd(x) / mean(x) * 100)
+cv_after_cv_removal
 
-##colData(dds_after_cv_filter)
-##counts(dds_after_cv_filter)
+# *** Open a PNG device for saving the plot ***
+print('saving cv plot after degraded samples, zeros and low cv removal to file: QuantificationMatrix_CoefficientVariation_afterDegradedSamplesAndZerosAndLowCVRemoval.png')
+png(filename = "QuantificationMatrix_CoefficientVariation_afterDegradedSamplesAndZerosAndLowCVRemoval.png", width = 800, height = 600)
 
-##### calculate cv again after 140% cv removal
-##counts(dds_after_cv_filter)
-##dim(counts(dds_after_cv_filter))
+# *** Plot a histogram of the Coefficient of Variation (CV) ***
+hist(cv_after_cv_removal, breaks = 50, main = "Coefficient of Variation Distribution after Zeros Removal and Low CV Removal",
+     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
 
-##cv_after_cv_removal <- apply(counts(dds_after_cv_filter), 1, function(x) sd(x) / mean(x) * 100)
-##cv_after_cv_removal
+# *** Close the PNG device to save the plot ***
+dev.off()
 
-# Open a PNG device for saving the plot
-##png(filename = "QuantificationMatrix_CoefficientVariation_afterZerosRemoval_afterLowCVRemoval.png", width = 800, height = 600)
+# *** Run variance stabilizing transformation on the counts ***
 
-# Plot a histogram of the Coefficient of Variation (CV)
-##hist(cv_after_cv_removal, breaks = 50, main = "Coefficient of Variation Distribution after Zeros Removal and Low CV Removal",
-##     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
-
-# Close the PNG device to save the plot
-##dev.off()
-
-###### calculate cv again after 140% cv removal
-
-##### Run variance stabilizing transformation on the counts ####
-
-# Adicione um pseudocount de 1 a todas as contagens
+# *** Adicione um pseudocount de 1 a todas as contagens ***
 pseudocount <- 1
-dds_counts <- counts(dds_after_cv_filter)
+dds_counts <- counts(dds_after_filters)
 dds_counts_pseudo <- dds_counts + pseudocount
 
-# Crie um novo objeto DESeqDataSet com as contagens ajustadas
+# *** Crie um novo objeto DESeqDataSet com as contagens ajustadas ***
 dds_pseudo <- DESeqDataSetFromMatrix(countData = dds_counts_pseudo,
-                                     colData = colData(dds_after_cv_filter),
+                                     colData = colData(dds_after_filters),
                                      design = ~ 1)
 
-# Execute a transformação VST diretamente no objeto DESeqDataSet
+# *** Execute a transformação VST diretamente no objeto DESeqDataSet ***
 dds_vst <- varianceStabilizingTransformation(dds_pseudo)
 #-- note: fitType='parametric', but the dispersion trend was not well captured by the
 #function: y = a/x + b, and a local regression fit was automatically substituted.
 #specify fitType='local' or 'mean' to avoid this message next time.
 
-# Insira o pseudocount na tabela de transformação
+# *** Insira o pseudocount na tabela de transformação ***
 dds_vst$pseudocount <- pseudocount
 
 print("dds_vst samples")
 dds_vst$Accession
 
-##### Plotar PCA com VST #####
-
+# *** Plotar PCA com VST ***
 pca_plot_withoutTissues <- plotPCA( DESeqTransform( dds_vst ),intgroup="Accession" )
+print(pca_plot_withoutTissues)
 ggsave("plot_pca_vst_withoutTissues.png", pca_plot_withoutTissues, bg = "white")
 
-##### Plot diferenciando tecidos top e bottom #####
-
+# *** Plot diferenciando tecidos top e bottom ***
 colors <- viridis::viridis(40) #40 cores
 
-# Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom
+# *** Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom ***
 dds_vst$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", dds_vst$Run)
 
-# Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo
+# *** Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo ***
 dds_vst$genotype <- sub("^(.*?)_.*", "\\1", dds_vst$Run)
 dds_vst$genotype
 
@@ -219,19 +218,19 @@ dds_vst$internode_type
 print("dds_vst samples")
 dds_vst$Run
 
-# Extrair matriz de counts ajustadas apos VST
+# *** Extrair matriz de counts ajustadas apos VST ***
 counts_matrix_vst <- assay(dds_vst)
 
-# As colunas sao as samples colapsadas e as linhas sao os grupos de non-coding
-# Salvar a matriz em um arquivo CSV
+# *** Salvar a matriz em um arquivo CSV ***
+# OBS: As colunas sao as samples colapsadas e as linhas sao os grupos de non-coding
 
-print("saving vst without 80 zeros matrix")
+print("saving vst after filters")
 #write.table(counts_matrix_vst, file = "Hoang2017_tpm_vst_without80zeros.txt", sep = "\t", quote = FALSE)
 
-# Plot PCA usando ggplot2 para personalização adicional
+# *** Plot PCA usando ggplot2 para personalização adicional ***
 pca_data <- plotPCA(DESeqTransform(dds_vst), intgroup = "internode_type", returnData = TRUE)
 
-# Calculando a variância explicada por PC1 e PC2
+# *** Calculando a variância explicada por PC1 e PC2 ***
 percentVar <- round(100 * attr(pca_data, "percentVar"))
 
 pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$genotype, shape = internode_type, label = dds_vst$genotype)) +
@@ -248,22 +247,20 @@ pca_plot <- ggplot(pca_data, aes(x = PC1, y = PC2, color = dds_vst$genotype, sha
        shape = "Internode Type") +
   theme_minimal()
 
-# Saving PCA
+# *** Saving PCA ***
+print(pca_plot) #
 print("saving PCA as: plot_pca_vst_withTissues.png")
 ggsave("plot_pca_vst_withTissues.png", pca_plot, bg = "white")
 
-################################################
-##### Plotar PCA sem VST #####
+# *** Plotar PCA sem VST -> Using shifted log of normalized counts ***
 
-# Using shifted log of normalized counts
+# *** Using shifted log of normalized counts ***
 se <- SummarizedExperiment(log2(counts(dds_pseudo, normalized=FALSE) + 1),
                            colData=colData(dds_pseudo))
-#se
+colData(se)
 
-# Plot PCA
-
-# the call to DESeqTransform() is needed to trigger our plotPCA method.
-pca_plot_se <- plotPCA( DESeqTransform( se ),intgroup="sample" )
+# *** Plot PCA ***
+# OBS: the call to DESeqTransform() is needed to trigger our plotPCA method.
+pca_plot_se <- plotPCA( DESeqTransform( se ),intgroup="Accession" )
+print(pca_plot_se) # 
 ggsave("plot_pca_SE_withoutTissues.png", pca_plot_se, bg = "white")
-
-##########################
