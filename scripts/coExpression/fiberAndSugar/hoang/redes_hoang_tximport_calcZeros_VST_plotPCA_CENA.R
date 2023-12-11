@@ -106,6 +106,7 @@ ddsColl
 
 print('removing degraded samples')
 withoutDegradedSamples_ddsColl <- ddsColl[, ddsColl$X..Trimmed <= 30]
+withoutDegradedSamples_ddsColl
 
 # *** Remove genes with more than 80% zeros ***
 
