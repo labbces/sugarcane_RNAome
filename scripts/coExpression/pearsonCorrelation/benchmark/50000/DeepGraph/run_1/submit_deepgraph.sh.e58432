@@ -1,0 +1,23 @@
+	Command being timed: "./deepgraph_pearsonCorrelation.py -i Hoang2017_tpm_vst_without80zeros_50000.txt"
+	User time (seconds): 25416.17
+	System time (seconds): 532.45
+	Percent of CPU this job got: 442%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:37:40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40186736
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 274341035
+	Voluntary context switches: 755195
+	Involuntary context switches: 196221
+	Swaps: 0
+	File system inputs: 103800
+	File system outputs: 32271160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
