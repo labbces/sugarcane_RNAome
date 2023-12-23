@@ -21,7 +21,7 @@ library(DESeq2)
 # *** Configure directory ***
 
 # *** My laptop ***
-HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
+#HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 
 # *** PC CENA ***
 #HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
@@ -42,15 +42,13 @@ samples <- read.table(file.path(HOME_DIR, 'infos_hoang_metadata.tsv'), header = 
 
 # *** Set quant.sf files ***
 files <- file.path(HOME_DIR, "../data", samples$Accession, "quant.sf")
-files <- file.path(HOME_DIR, "smallData", samples$Accession, "quant.sf")
+#files <- file.path(HOME_DIR, "smallData", samples$Accession, "quant.sf")
 print("All file exists")
 all(file.exists(files))
 
-# *** Set tx2gene file (clusters from MMSeqs2) ***
-tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8.tsv"), header = FALSE, sep = "\t")
-tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
-tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_smallData.tsv"), header = FALSE, sep = "\t")
-
+# *** Set tx2gene file (clusters from MMSeqs2 and OrthoFinder) ***
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable.tsv"), header = FALSE, sep = "\t")
+#tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
 print("tx2gene file (clusters from MMSeqs2)")
 tx2gene
 
@@ -131,8 +129,12 @@ print('saving cv plot after VST normalization to file: QuantificationMatrix_Coef
 png(filename = "QuantificationMatrix_CoefficientVariation_afterVST.png", width = 800, height = 600)
 
 # *** Plot a histogram of the Coefficient of Variation (CV) ***
-hist(cv_after_vst, breaks = 50, main = "Coefficient of Variation Distribution after VST normalization",
-     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+#hist(cv_after_vst, breaks = 50, main = "Coefficient of Variation Distribution after VST normalization",
+#     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+
+# *** Plot histogram with log transformation on X axis
+hist(log(cv_after_vst + 1), breaks = 50, main = "Coefficient of Variation Distribution after VST normalization",
+     xlab = "Log(Coefficient of Variation + 1)", ylab = "Frequency")
 
 # *** Close the PNG device to save the plot ***
 dev.off()
@@ -177,8 +179,12 @@ print('saving cv plot after degraded samples and zeros removal to file: Quantifi
 png(filename = "QuantificationMatrix_CoefficientVariation_afterDegradedSamplesAndZerosRemoval.png", width = 800, height = 600)
 
 # *** Plot a histogram of the Coefficient of Variation (CV) ***
-hist(cv_after_zeros_removal, breaks = 50, main = "Coefficient of Variation Distribution after Degraded Samples and Zeros Removal",
-     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+#hist(cv_after_zeros_removal, breaks = 50, main = "Coefficient of Variation Distribution after Degraded Samples and Zeros Removal",
+#     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+
+# *** Plot histogram with log transformation on X axis
+hist(log(cv_after_zeros_removal + 1), breaks = 50, main = "Coefficient of Variation Distribution after Degraded Samples and Zeros Removal",
+     xlab = "Log(Coefficient of Variation + 1)", ylab = "Frequency")
 
 # *** Close the PNG device to save the plot ***
 dev.off()
@@ -190,7 +196,7 @@ dev.off()
 sorted_genes <- order(rowData(withoutDegradedSamplesAndZeros_ddsColl)$cv, decreasing = TRUE)
 
 # *** Calculate the index for the top 20% *** 
-top_20_percent_index <- round(length(sorted_genes) * 0.01) #1%
+top_20_percent_index <- round(length(sorted_genes) * 0.20) #20%
 
 # *** Select the top 20% genes ***
 top_20_percent_genes <- rownames(withoutDegradedSamplesAndZeros_ddsColl)[sorted_genes[1:top_20_percent_index]]
@@ -217,8 +223,13 @@ print('saving cv plot after keeping only the top 20% genes based on CV: Quantifi
 png(filename = "QuantificationMatrix_CoefficientVariation_top20CV.png", width = 800, height = 600)
 
 # *** Plot a histogram of the Coefficient of Variation (CV) ***
-hist(cv_after_cv_filter, breaks = 50, main = "Coefficient of Variation Distribution - top 20% genes based on CV",
-     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+#hist(cv_after_cv_filter, breaks = 50, main = "Coefficient of Variation Distribution - top 20% genes based on CV",
+#     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+
+# *** Plot histogram with log transformation on X axis
+hist(log(cv_after_cv_filter + 1), breaks = 50, main = "Coefficient of Variation Distribution - top 20% genes based on CV",
+     xlab = "Log(Coefficient of Variation + 1)", ylab = "Frequency")
+
 
 # *** Close the PNG device to save the plot ***
 dev.off()
