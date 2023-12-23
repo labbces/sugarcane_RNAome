@@ -16,12 +16,12 @@ library(DESeq2)
 # *** 8 - Plot PCA
 
 # *** Reset R variables ***
-#rm(list = ls())
+rm(list = ls())
 
 # *** Configure directory ***
 
 # *** My laptop ***
-#HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo"
+HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo"
 
 # *** PC CENA ***
 #HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo"
@@ -42,13 +42,15 @@ samples <- read.table(file.path(HOME_DIR, 'infos_perlo_metadata.tsv'), header = 
 
 # *** Set quant.sf files ***
 files <- file.path(HOME_DIR, "../data", samples$Accession, "quant.sf")
-#files <- file.path(HOME_DIR, "smallData", samples$Accession, "quant.sf")
+files <- file.path(HOME_DIR, "smallData", samples$Accession, "quant.sf")
 print("All file exists")
 all(file.exists(files))
 
 # *** Set tx2gene file (clusters from MMSeqs2) ***
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8.tsv"), header = FALSE, sep = "\t")
 #tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_smallData.tsv"), header = FALSE, sep = "\t")
+
 print("tx2gene file (clusters from MMSeqs2)")
 tx2gene
 
@@ -109,6 +111,7 @@ dds_vst$pseudocount <- pseudocount
 
 print("dds_vst samples")
 dds_vst$Accession
+assay(dds_vst)
 
 # *** 2 - Plot Coefficient of Variation (CV) for each gene after VST normalization
 
