@@ -133,7 +133,7 @@ png(filename = "QuantificationMatrix_CoefficientVariation_afterVST.png", width =
 #     xlab = "Coefficient of Variation", ylab = "Frequency")
 
 # *** Plot histogram with log transformation on X axis
-hist(log(cv_after_vst + 1), breaks = 50, main = "Coefficient of Variation Distribution after VST normalization",
+hist(log(cv_after_vst), breaks = 50, main = "Coefficient of Variation Distribution after VST normalization",
      xlab = "Log(Coefficient of Variation)", ylab = "Frequency")
 
 # *** Add a text annotation for the count of CVs equal to zero ***
@@ -184,7 +184,7 @@ png(filename = "QuantificationMatrix_CoefficientVariation_afterDegradedSamplesAn
 
 # *** Plot a histogram of the Coefficient of Variation (CV) ***
 #hist(cv_after_zeros_removal, breaks = 50, main = "Coefficient of Variation Distribution after Degraded Samples and Zeros Removal",
-#     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+#     xlab = "Coefficient of Variation", ylab = "Frequency")
 
 # *** Plot histogram with log transformation on X axis
 hist(log(cv_after_zeros_removal), breaks = 50, main = "Coefficient of Variation Distribution after Degraded Samples and Zeros Removal",
@@ -232,7 +232,7 @@ png(filename = "QuantificationMatrix_CoefficientVariation_top20CV.png", width = 
 
 # *** Plot a histogram of the Coefficient of Variation (CV) ***
 #hist(cv_after_cv_filter, breaks = 50, main = "Coefficient of Variation Distribution - top 20% genes based on CV",
-#     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+#     xlab = "Coefficient of Variation", ylab = "Frequency")
 
 # *** Plot histogram with log transformation on X axis
 hist(log(cv_after_cv_filter), breaks = 50, main = "Coefficient of Variation Distribution - top 20% genes based on CV",
