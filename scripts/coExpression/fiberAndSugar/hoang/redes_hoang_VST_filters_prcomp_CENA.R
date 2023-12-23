@@ -49,7 +49,7 @@ all(file.exists(files))
 # *** Set tx2gene file (clusters from MMSeqs2 and OrthoFinder) ***
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable.tsv"), header = FALSE, sep = "\t")
 #tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
-print("tx2gene file (clusters from MMSeqs2)")
+print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
 
 # *** Organize columns for tx2gene format (transcript ID     group) ***
@@ -115,7 +115,7 @@ dds_vst$Accession
 # *** Calculate the Coefficient of Variation (CV) 
 
 print('calculating cv after vst transformation ...')
-cv_after_vst <- apply(assay(dds_vst), 1, function(x) sd(x) / mean(x) * 100)
+cv_after_vst <- apply(assay(dds_vst), 1, function(x) sd(x) / mean(x))
 
 # *** Add the CV as a new row to ddsColl object ***
 colData(dds_vst)
@@ -130,11 +130,15 @@ png(filename = "QuantificationMatrix_CoefficientVariation_afterVST.png", width =
 
 # *** Plot a histogram of the Coefficient of Variation (CV) ***
 #hist(cv_after_vst, breaks = 50, main = "Coefficient of Variation Distribution after VST normalization",
-#     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
+#     xlab = "Coefficient of Variation", ylab = "Frequency")
 
 # *** Plot histogram with log transformation on X axis
 hist(log(cv_after_vst + 1), breaks = 50, main = "Coefficient of Variation Distribution after VST normalization",
-     xlab = "Log(Coefficient of Variation + 1)", ylab = "Frequency")
+     xlab = "Log(Coefficient of Variation)", ylab = "Frequency")
+
+# *** Add a text annotation for the count of CVs equal to zero ***
+count_zero_cv <- sum(cv_after_vst == 0)
+text(0, 0, sprintf("CVs = 0: %d", count_zero_cv), adj = c(0, 1), col = "red", cex = 1.2)
 
 # *** Close the PNG device to save the plot ***
 dev.off()
@@ -165,7 +169,7 @@ withoutDegradedSamplesAndZeros_ddsColl
 # *** Calculate the Coefficient of Variation (CV) after degraded samples and zeros removal ***
 
 print('calculating cv after degraded samples and zeros removal ...')
-cv_after_zeros_removal <- apply(assay(withoutDegradedSamplesAndZeros_ddsColl), 1, function(x) sd(x) / mean(x) * 100)
+cv_after_zeros_removal <- apply(assay(withoutDegradedSamplesAndZeros_ddsColl), 1, function(x) sd(x) / mean(x))
 
 # *** Add the CV as a new row to ddsColl object ***
 colData(withoutDegradedSamplesAndZeros_ddsColl)
@@ -183,8 +187,12 @@ png(filename = "QuantificationMatrix_CoefficientVariation_afterDegradedSamplesAn
 #     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
 
 # *** Plot histogram with log transformation on X axis
-hist(log(cv_after_zeros_removal + 1), breaks = 50, main = "Coefficient of Variation Distribution after Degraded Samples and Zeros Removal",
+hist(log(cv_after_zeros_removal), breaks = 50, main = "Coefficient of Variation Distribution after Degraded Samples and Zeros Removal",
      xlab = "Log(Coefficient of Variation + 1)", ylab = "Frequency")
+
+# *** Add a text annotation for the count of CVs equal to zero ***
+count_zero_cv <- sum(cv_after_zeros_removal == 0)
+text(0, 0, sprintf("CVs = 0: %d", count_zero_cv), adj = c(0, 1), col = "red", cex = 1.2)
 
 # *** Close the PNG device to save the plot ***
 dev.off()
@@ -209,7 +217,7 @@ ddsColl_top_20_percent
 # *** 7 - Plot CV of filtered samples (genes with most variance - top 20%)
 
 print('calculating cv after keep only top 20% genes based on CV ...')
-cv_after_cv_filter <- apply(assay(ddsColl_top_20_percent), 1, function(x) sd(x) / mean(x) * 100)
+cv_after_cv_filter <- apply(assay(ddsColl_top_20_percent), 1, function(x) sd(x) / mean(x))
 
 # *** Add the CV as a new row to ddsColl object ***
 #colData(ddsColl_top_20_percent)
@@ -227,9 +235,12 @@ png(filename = "QuantificationMatrix_CoefficientVariation_top20CV.png", width = 
 #     xlab = "Coefficient of Variation (%)", ylab = "Frequency")
 
 # *** Plot histogram with log transformation on X axis
-hist(log(cv_after_cv_filter + 1), breaks = 50, main = "Coefficient of Variation Distribution - top 20% genes based on CV",
-     xlab = "Log(Coefficient of Variation + 1)", ylab = "Frequency")
+hist(log(cv_after_cv_filter), breaks = 50, main = "Coefficient of Variation Distribution - top 20% genes based on CV",
+     xlab = "Log(Coefficient of Variation)", ylab = "Frequency")
 
+# *** Add a text annotation for the count of CVs equal to zero ***
+count_zero_cv <- sum(cv_after_cv_filter == 0)
+text(0, 0, sprintf("CVs = 0: %d", count_zero_cv), adj = c(0, 1), col = "red", cex = 1.2)
 
 # *** Close the PNG device to save the plot ***
 dev.off()
