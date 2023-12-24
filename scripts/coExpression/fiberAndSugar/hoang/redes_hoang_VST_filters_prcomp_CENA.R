@@ -188,7 +188,7 @@ png(filename = "QuantificationMatrix_CoefficientVariation_afterDegradedSamplesAn
 
 # *** Plot histogram with log transformation on X axis
 hist(log(cv_after_zeros_removal), breaks = 50, main = "Coefficient of Variation Distribution after Degraded Samples and Zeros Removal",
-     xlab = "Log(Coefficient of Variation + 1)", ylab = "Frequency")
+     xlab = "Log(Coefficient of Variation)", ylab = "Frequency")
 
 # *** Add a text annotation for the count of CVs equal to zero ***
 count_zero_cv <- sum(cv_after_zeros_removal == 0)

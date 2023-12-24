@@ -16,12 +16,12 @@ library(DESeq2)
 # *** 8 - Plot PCA
 
 # *** Reset R variables ***
-rm(list = ls())
+#rm(list = ls())
 
 # *** Configure directory ***
 
 # *** My laptop ***
-HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo"
+#HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo"
 
 # *** PC CENA ***
 #HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo"

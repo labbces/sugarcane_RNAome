@@ -16,7 +16,7 @@ library(DESeq2)
 # *** 8 - Plot PCA
 
 # *** Reset R variables ***
-rm(list = ls())
+#rm(list = ls())
 
 # *** Configure directory ***
 
