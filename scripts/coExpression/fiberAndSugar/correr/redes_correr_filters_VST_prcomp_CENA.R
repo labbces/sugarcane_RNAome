@@ -320,7 +320,7 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = ddsColl_top_20_perc
     segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
     size = 3, color = "black" # Definir a cor do texto do rótulo como preto
   ) +
-  labs(title = "PCA - Correr2022 Contrasting Genotypes in Fiber and Sugar",
+  labs(title = "PCA - Correr2020 Contrasting Genotypes in Fiber and Sugar",
        x = paste0("PC1 ", "(",percentVar[1], "%)"),
        y = paste0("PC2 ", "(",percentVar[2], "%)"),
        color = "Groups") +
