@@ -49,7 +49,7 @@ print("All file exists")
 all(file.exists(files))
 
 # *** Set tx2gene file (clusters from OrthoFinder and MMSeqs2) ***
-tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable.tsv"), header = FALSE, sep = "\t")
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen.tsv"), header = FALSE, sep = "\t")
 #tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
 #print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
