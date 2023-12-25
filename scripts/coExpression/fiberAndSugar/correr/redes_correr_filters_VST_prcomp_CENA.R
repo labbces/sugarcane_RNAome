@@ -262,6 +262,9 @@ write.table(counts_matrix_vst_top20, file = "Correr2020_counts_filters_VST_top20
 print('calculating cv after keep only top 20% genes based on CV ...')
 cv_after_cv_filter <- apply(assay(ddsColl_top_20_percent), 1, function(x) sd(x) / mean(x))
 
+print("saving CV of the top20% genes")
+write.table(cv_after_cv_filter, file = "Correr2020_top20CV.txt", sep = "\t", quote = FALSE)
+
 # *** Add the CV as a new row to ddsColl object ***
 #colData(ddsColl_top_20_percent)
 rowData(ddsColl_top_20_percent)$cv <- cv_after_cv_filter
