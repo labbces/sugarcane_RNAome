@@ -50,7 +50,7 @@ all(file.exists(files))
 
 # *** Set tx2gene file (clusters from OrthoFinder and MMSeqs2) ***
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable.tsv"), header = FALSE, sep = "\t")
-tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
+#tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
 #print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
 
@@ -290,7 +290,8 @@ pca_scores <- as.data.frame(pca_result$x)
 
 
 # *** Adicione uma coluna ao seu DataFrame de amostras indicando grupo de biomassa ***
-ddsColl_top_20_percent$biomass_group <- sub(".*_(high|low)-biomass$", "\\1", ddsColl_top_20_percent$Run)
+#ddsColl_top_20_percent$biomass_group <- sub(".*_(high|low)-biomass$", "\\1", ddsColl_top_20_percent$Run)
+ddsColl_top_20_percent$biomass_group <- sub(".*_(high|low)", "\\1", ddsColl_top_20_percent$Run)
 ddsColl_top_20_percent$biomass_group
 
 # Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo
@@ -310,21 +311,32 @@ pca_scores$genotype <- ddsColl_top_20_percent$genotype
 pca_scores$biomass_group <- ddsColl_top_20_percent$biomass_group
 
 # *** Plotar PCA usando ggplot2 ***
-percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2))
+percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
 
 pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = ddsColl_top_20_percent$biomass_group, label = ddsColl_top_20_percent$genotype)) +
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
     segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
-    size = 2
+    size = 3, color = "black" # Definir a cor do texto do rótulo como preto
   ) +
   labs(title = "PCA - Correr2022 Contrasting Genotypes in Fiber and Sugar",
-       x = paste0("PC1: ", percentVar[1], "% variance"),
-       y = paste0("PC2: ", percentVar[2], "% variance"),
-       color = "Biomass") +
-       #stat_ellipse(geom = "polygon", level=0.95, alpha=0.2) # add ellipse
-  theme_minimal()
+       x = paste0("PC1 ", "(",percentVar[1], "%)"),
+       y = paste0("PC2 ", "(",percentVar[2], "%)"),
+       color = "Groups") +
+       stat_ellipse(geom = "polygon", level=0.95, alpha=0.1, aes(fill = ddsColl_top_20_percent$biomass_group), color=NA, show.legend = FALSE) + # add ellipse with 95% confidence intervals
+  theme_classic() +
+  theme(
+    axis.line = element_blank(),  # Linha dos eixos X e Y
+    panel.grid.major = element_line(color = alpha("gray", 0.2)),  # Remover linhas de grade principais
+    panel.grid.minor = element_line(color = alpha("gray", 0.2)),  # Remover linhas de grade secundárias
+    panel.border = element_rect(color = "transparent", fill = NA),  # Cor da borda do painel
+    plot.background = element_rect(fill = "white"),  # Cor do fundo do gráfico
+  ) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +  # Adicionar linha pontilhada no eixo x
+  geom_vline(xintercept = 0, linetype = "dashed", color = "black")   # Adicionar linha pontilhada no eixo y
+  
+print(pca_plot)
 
 # *** Saving PCA ***
 #print(pca_plot)
