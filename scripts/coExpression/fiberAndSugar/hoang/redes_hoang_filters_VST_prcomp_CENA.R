@@ -317,19 +317,29 @@ pca_scores$internode_type <- ddsColl_top_20_percent$internode_type
 # *** Plotar PCA usando ggplot2 ***
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
 
-pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = ddsColl_top_20_percent$sugar_content, shape = internode_type, label = ddsColl_top_20_percent$genotype)) +
+pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = ddsColl_top_20_percent$genotype, shape = ddsColl_top_20_percent$internode_type, label = ddsColl_top_20_percent$genotype)) +
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
     segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
-    size = 2
+    size = 3, color = "black",  # Definir a cor do texto do rótulo como preto
   ) +
   labs(title = "PCA - Hoang2017 Contrasting Genotypes in Fiber and Sugar",
-       x = paste0("PC1: ", percentVar[1], "% variance"),
-       y = paste0("PC2: ", percentVar[2], "% variance"),
-       color = "Groups",
+       x = paste0("PC1 ", "(", percentVar[1], "%)"),
+       y = paste0("PC2 ", "(", percentVar[2], "%)"),
+       color = "Genotype",
        shape = "Internode Type") +
-  theme_minimal()
+  stat_ellipse(geom = "polygon", level=0.95, alpha=0.1, aes(fill = ddsColl_top_20_percent$internode_type), color=NA, show.legend = FALSE) + # add ellipse with 95% confidence intervals
+  theme_classic() +
+  theme(
+    axis.line = element_blank(),  # Linha dos eixos X e Y
+    panel.grid.major = element_line(color = alpha("gray", 0.2)),  # Remover linhas de grade principais
+    panel.grid.minor = element_line(color = alpha("gray", 0.2)),  # Remover linhas de grade secundárias
+    panel.border = element_rect(color = "transparent", fill = NA),  # Cor da borda do painel
+    plot.background = element_rect(fill = "white"),  # Cor do fundo do gráfico
+  ) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +  # Adicionar linha pontilhada no eixo x
+  geom_vline(xintercept = 0, linetype = "dashed", color = "black")   # Adicionar linha pontilhada no eixo y
 
 # *** Saving PCA ***
 #print(pca_plot)
@@ -363,6 +373,6 @@ pca_sugar_content_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = ddsCo
   geom_vline(xintercept = 0, linetype = "dashed", color = "black")   # Adicionar linha pontilhada no eixo y
 
 # *** Saving PCA ***
-print(pca_sugar_content_plot)
+#print(pca_sugar_content_plot)
 print("saving PCA of sugar content as: plot_pca_sugar_content_withTissues.png")
 ggsave("plot_pca_sugar_content_withTissues.png", pca_sugar_content_plot, bg = "white")
