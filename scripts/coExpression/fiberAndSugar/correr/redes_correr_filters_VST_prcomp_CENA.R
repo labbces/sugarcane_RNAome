@@ -336,8 +336,6 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = ddsColl_top_20_perc
   geom_hline(yintercept = 0, linetype = "dashed", color = "black") +  # Adicionar linha pontilhada no eixo x
   geom_vline(xintercept = 0, linetype = "dashed", color = "black")   # Adicionar linha pontilhada no eixo y
   
-print(pca_plot)
-
 # *** Saving PCA ***
 #print(pca_plot)
 print("saving PCA as: plot_pca_vst_withTissues.png")
