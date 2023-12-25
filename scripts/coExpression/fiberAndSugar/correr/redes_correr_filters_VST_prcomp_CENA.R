@@ -248,6 +248,15 @@ ddsColl_top_20_percent <- dds_vst[top_20_percent_genes, ]
 print("Now, ddsColl_top_20_percent contains only the top 20% genes based on CV")
 ddsColl_top_20_percent
 
+# *** Extrair matriz de counts ajustadas apos VST para os top20% genes ***
+counts_matrix_vst_top20 <- assay(ddsColl_top_20_percent)
+
+# *** Salvar a matriz em um arquivo CSV ***
+# OBS: As colunas sao as samples colapsadas e as linhas sao os grupos de non-coding
+
+print("saving counts matrix of top20% genes based on CV after VST")
+write.table(counts_matrix_vst_top20, file = "Correr2020_counts_filters_VST_top20CV.txt", sep = "\t", quote = FALSE)
+
 # *** 8 - Plot CV of filtered samples (genes with most variance - top 20%)
 
 print('calculating cv after keep only top 20% genes based on CV ...')
