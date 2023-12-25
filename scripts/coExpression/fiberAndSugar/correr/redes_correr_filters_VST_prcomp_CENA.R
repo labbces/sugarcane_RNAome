@@ -50,8 +50,8 @@ all(file.exists(files))
 
 # *** Set tx2gene file (clusters from OrthoFinder and MMSeqs2) ***
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable.tsv"), header = FALSE, sep = "\t")
-#tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
-print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptomeClassificationTable_0.8_smallData.tsv"), header = FALSE, sep = "\t")
+#print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
 
 # *** Organize columns for tx2gene format (transcript ID     group) ***
@@ -323,6 +323,7 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = ddsColl_top_20_perc
        x = paste0("PC1: ", percentVar[1], "% variance"),
        y = paste0("PC2: ", percentVar[2], "% variance"),
        color = "Biomass") +
+       #stat_ellipse(geom = "polygon", level=0.95, alpha=0.2) # add ellipse
   theme_minimal()
 
 # *** Saving PCA ***
