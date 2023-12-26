@@ -4,13 +4,21 @@ library(ggplot2)
 rm(list = ls())
 
 DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang/AnalysisCV"
+DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/correr/AnalysisCV"
+DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo/AnalysisCV"
+
 setwd(DIR)
 
 # Leia os coeficientes de variação
-genes <- read.table("Hoang2017_top20CV.txt", header = TRUE)
+genes <- read.table(file.path(DIR,"Hoang2017_top20CV.txt"), header = TRUE)
+genes <- read.table(file.path(DIR,"/Correr2020_top20CV.txt"), header = TRUE)
+genes <- read.table(file.path(DIR,"Perlo2022_top20CV.txt"), header = TRUE)
+
 
 # Leia a matriz de quantificação
-quantification_matrix <- read.table('Hoang2017_counts_filters_VST_top20CV.txt', header = TRUE, row.names = 1, check.names = FALSE)
+quantification_matrix <- read.table(file.path(DIR,'Hoang2017_counts_filters_VST_top20CV.txt'), header = TRUE, row.names = 1, check.names = FALSE)
+quantification_matrix <- read.table(file.path(DIR,'Correr2020_counts_filters_VST_top20CV.txt'), header = TRUE, row.names = 1, check.names = FALSE)
+quantification_matrix <- read.table(file.path(DIR,'Perlo2022_counts_filters_VST_top20CV.txt'), header = TRUE, row.names = 1, check.names = FALSE)
 
 # Divida os genes em quartis
 genes$Quartil <- cut(genes$CV, breaks = quantile(genes$CV, probs = seq(0, 1, 0.25), na.rm = TRUE), include.lowest = TRUE, labels = FALSE)
