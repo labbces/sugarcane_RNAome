@@ -1,3 +1,0 @@
-- [ ]  Transformar quantificação em CPM (Counts per milion)
-- [ ]  Criar script para gerar gráfico 3D da quantificação dos genomas
-- [ ]  Plotar quantificação dos genoma
