@@ -1,8 +1,9 @@
 library(tximport)
 library(reshape2)
 library(ggplot2)
+library(htmlwidgets)
 
-rm(list=ls())
+#rm(list=ls())
 
 #DIR="/home/felipe/Documents/sequenceConservation_test_combine_matrix"
 DIR="/Storage/data1/felipe.peres/Sugarcane_ncRNA/11_lncRNASequenceConservation/GenomicReads/PLOT/smallTeste"
@@ -83,27 +84,29 @@ colnames(countsOrigin)
 
 fig <- plot_ly(countsOrigin, x = ~CPM_SSPO, y = ~CPM_SOFF, z = ~CPM_SBAR, color = ~Origin)
 
-fig <- plot_ly(countsOrigin[which(countsOrigin$CPM_SBAR < 200 &
-                                    countsOrigin$CPM_SSPO < 200 & 
-                                    countsOrigin$CPM_SOFF < 200 &
-                                    (countsOrigin$CPM_SOFF > 1 |
-                                       countsOrigin$CPM_SSPO > 1 |
-                                       countsOrigin$CPM_SBAR > 1)),], x = ~CPM_SSPO,
-               y = ~CPM_SOFF,
-               z = ~CPM_SBAR,
-               color = ~Origin)
+#fig <- plot_ly(countsOrigin[which(countsOrigin$CPM_SBAR < 200 &
+#                                    countsOrigin$CPM_SSPO < 200 & 
+#                                    countsOrigin$CPM_SOFF < 200 &
+#                                    (countsOrigin$CPM_SOFF > 1 |
+#                                       countsOrigin$CPM_SSPO > 1 |
+#                                       countsOrigin$CPM_SBAR > 1)),], x = ~CPM_SSPO,
+#               y = ~CPM_SOFF,
+#               z = ~CPM_SBAR,
+#               color = ~Origin)
 
 fig <- fig %>% add_markers()
 
 fig <- fig %>% layout(scene = list(xaxis = list(type = "log",title = 'S. spontaneum'),
                                    yaxis = list(type = "log",title = 'S. officinarum'),
-                                   zaxis = list(type = "log",title = 'S. barberi')))
+                                   zaxis = list(type = "log",title = 'S. bicolor')))
 #fig
 #save_image(fig, file="speciesOfOriginPanRNAome.pdf",scale=6)
 #save_image(fig, file="speciesOfOriginPanRNAome.svg",scale=6)
 
-orca(fig, "speciesOfOriginPanRNAome.png")
-orca(fig, "speciesOfOriginPanRNAome.svg")
+saveWidget(fig, "speciesOfOriginPanRNAome.html")
+
+#orca(fig, "speciesOfOriginPanRNAome.png")
+#orca(fig, "speciesOfOriginPanRNAome.svg")
 
 ggplot(as.data.frame(countsOrigin),aes(x=Fraction_SBAR)) +
   theme_bw()+
@@ -165,7 +168,7 @@ ggplot(as.data.frame(countsOrigin),aes(x=CPM_SOFF, y=CPM_SSPO)) +
   scale_y_log10()+
   scale_colour_manual(values = "blue")
 
-write.table(countsOrigin, sep = "\t", file = "speciesOfOriginPanTranscriptome-Combined.csv")
+#write.table(countsOrigin, sep = "\t", file = "speciesOfOriginPanTranscriptome-Combined.csv")
 
 #tx2gene<-read.delim("txp.group.tsv",sep=',',header=T)
 #head(tx2gene)
