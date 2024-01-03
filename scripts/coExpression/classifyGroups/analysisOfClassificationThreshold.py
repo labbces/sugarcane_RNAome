@@ -7,14 +7,18 @@ def classify_group(classifications, threshold):
     total_genes = len(classifications)
     protein_coding_genes = classifications.count('protein-coding')
     non_coding_genes = classifications.count('non-coding')
+    protein_and_non_coding_genes = classifications.count('protein and non-coding')
     
     protein_coding_percentage = (protein_coding_genes / total_genes) * 100
     non_coding_percentage = (non_coding_genes / total_genes) * 100
+    protein_and_non_coding_percentage = (protein_and_non_coding_genes / total_genes) * 100
 
     if protein_coding_percentage >= threshold:
         return 'protein-coding'
     elif non_coding_percentage >= threshold:
         return 'non-coding'
+    elif protein_and_non_coding_percentage >= threshold:
+        return 'protein and non-coding'
     else:
         return 'unknown'
 
@@ -45,7 +49,7 @@ for threshold in thresholds:
 
     labels, values = zip(*classification_counts.items())
     fig, ax = plt.subplots()
-    ax.bar(labels, values, color=['blue', 'green', 'orange'])
+    ax.bar(labels, values, color=['blue', 'green', 'orange', 'gray'])
     ax.set_ylabel('Count')
     ax.set_title(f'Distribution of Classifications by PanRNAome Group ({threshold}% threshold)')
     plt.tight_layout()
