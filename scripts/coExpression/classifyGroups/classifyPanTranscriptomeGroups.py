@@ -19,10 +19,6 @@ with open('panTranscriptome_panRNAomeClassificationTable_hyphen.tsv', 'r') as in
     for line in input_file:
         gene = line.split('\t')[2].strip()
 
-        if gene in classified_genes:
-            classified_genes[gene] += 1
-            continue
-
         if gene in common_genes:
             classification = 'protein and non-coding'
             coding_non_coding += 1 
@@ -39,14 +35,28 @@ with open('panTranscriptome_panRNAomeClassificationTable_hyphen.tsv', 'r') as in
             classification = 'unknown'
             unknown += 1
         
-        classified_genes[gene] = 1
-        
+        if gene not in classified_genes:
+            classified_genes[gene] = {'classification': classification, 'count': 0}
+      
+        classified_genes[gene]['count'] += 1
         output_file.write(line.strip() + '\t' + classification + '\n')
 
-print(f"protein and non-coding sequences: {coding_non_coding}")
-print(f"protein-coding sequences: {protein_coding}")
-print(f"non-coding sequences: {non_coding}")
-print(f"unknown sequences: {unknown}")
+def print_metric(classification, label):
+    unique_genes = set(gene for gene, info in classified_genes.items() if info['classification'] == classification)
+    print(f"{label}: {len(unique_genes)}")
+
+print("### FINISHED GROUPS CLASSIFICATION")
+print("\n")
+print_metric('protein and non-coding', 'protein and non-coding sequences')
+print_metric('protein-coding', 'protein-coding sequences')
+print_metric('non-coding', 'non-coding sequences')
+print_metric('unknown', 'unknown sequences')
+
 print('\n')
 print("Total classified genes:", len(classified_genes))
-print("Total lines processed (classified_genes.values()):", sum(classified_genes.values()))
+print("Total lines processed (classified_genes['count']):", sum(info['count'] for info in classified_genes.values()))
+
+print("\n")
+
+total_duplicates = sum(info['count'] -1 for info in classified_genes.values() if info['count'] > 1)
+print(f"Total duplicates: {total_duplicates}")
