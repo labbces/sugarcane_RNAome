@@ -6,7 +6,7 @@ library(wesanderson)
 
 rm(list=ls())
 
-DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/moduleHeatmap/Correr/CNC"
+DIR = "/home/felipe/Documents/exploring_Jorge_heatmaps/Correr/CNC/heatmap_per_module"
 setwd(DIR)
 
 # Read modules
@@ -14,7 +14,6 @@ Nmods <- read.table("all_mods.txt", header = F)
 colnames(Nmods) <- "Mod No"
 
 # files
-# this repo have only a small subset of vst counts
 modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated.csv"
 vst_path <- "Correr2020_counts_filters_VST_top20CV.txt"
 metadata_path <-"infos_correr_metadata.tsv"
@@ -46,7 +45,8 @@ annotation_col <- sample_table
 
 #Remova Duplicatas em annotation_col
 unique_annotation_col <- unique(annotation_col[, c("Group", "Genotype", "Condition")])
-anot <- select(unique_annotation_col, "Group","Genotype", "Condition")
+#anot <- select(unique_annotation_col, "Group","Genotype", "Condition")
+anot <- select(unique_annotation_col,"Genotype", "Condition")
 
 for (i in Nmods$'Mod No'){
   assign(paste0("module", i, "_dat"), vst[rownames(eval(as.name(paste0("Module",i)))),])
@@ -69,7 +69,7 @@ df <- do.call("rbind", dat_list)
 rownames(anot) <- colnames(df)
 
 # heat map with mean values for column i.e media por modulo
-png("all_hp_samples.png", res = 300, width = 10*800, height = 10*2850)
+png("all_30_hp_samples.png", res = 300, width = 10*800, height = 10*2850)
 
 pheatmap(df,
          main ="Nitrogen Modules" ,
