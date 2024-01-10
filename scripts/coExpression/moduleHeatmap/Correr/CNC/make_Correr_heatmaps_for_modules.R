@@ -7,7 +7,7 @@ library(RColorBrewer)
 
 rm(list=ls())
 
-DIR = "/home/felipe/Documents/exploring_Jorge_heatmaps/Correr/CNC/heatmap_per_module"
+DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/moduleHeatmap/Correr/CNC"
 setwd(DIR)
 
 # *** Read file for modules numbers (1,2,3,4,5 ...) *** 
