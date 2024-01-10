@@ -3,6 +3,7 @@ library(DESeq2)
 library(pheatmap)
 library(viridis)
 library(wesanderson)
+library(RColorBrewer)
 
 rm(list=ls())
 
@@ -87,16 +88,18 @@ anot <- merged_df[order(match(colnames(df), merged_df$Genotype)), ]
 rownames(anot) <- colnames(df)
 
 # *** Plot heatmap with mean values for column (i.e. mean for each module)
-png("meanOf30ModulesHeatmap.png", res = 300, width = 10*800, height = 10*2850)
+#png("meanOf30ModulesHeatmap.png", res = 300, width = 10*800, height = 10*2850)
+png("meanOf30ModulesHeatmap.png", res = 300, width = 800, height = 2850)
 
 pheatmap(df,
          main ="Contrasting Genotypes (CNC Modules)" ,
          scale = "row",
          annotation_col = anot,
          show_rownames = T,
-         col = inferno(299),
+         col = colorRampPalette(brewer.pal(11, "RdYlGn"))(299),
          cluster_cols = T,
          cluster_rows = T,
          cellwidth = NA,
-         cellheight = 8)
+         cellheight = 8,
+         angle_col = 0)
 dev.off()
