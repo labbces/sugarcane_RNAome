@@ -1,14 +1,22 @@
 library(tximport)
 library(reshape2)
 library(ggplot2)
+library(plotly)
 library(htmlwidgets)
 
-install.packages("orca")
-library(orca)
+install.packages('reticulate')
+library(reticulate)
+
+reticulate::install_miniconda()
+reticulate::conda_install('r-reticulate', 'python-kaleido')
+reticulate::conda_install('r-reticulate', 'plotly', channel = 'plotly')
+reticulate::use_miniconda('r-reticulate')
 
 rm(list=ls())
 
-DIR="/home/felipe/Documents/sequenceConservation_test_combine_matrix/completeDataset"
+getwd()
+
+DIR="C:/Users/PC/Desktop/sequenceConservation"
 #DIR="/Storage/data1/felipe.peres/Sugarcane_ncRNA/11_lncRNASequenceConservation/GenomicReads/PLOT"
 
 setwd(DIR)
@@ -74,50 +82,69 @@ countsOrigin[rownames(countsOrigin[which(is.na(countsOrigin$Origin)),]),'Origin'
 
 #countsOrigin['evm.model.uti_cns_0018261.2',]
 
+colnames(countsOrigin)
+
 table(countsOrigin$Origin, useNA = 'always')*100/sum(table(countsOrigin$Origin, useNA = 'always'))
 countsOrigin[which(is.na(countsOrigin$Origin)),]
 summary(countsOrigin$CPM_SBAR)
+
+# Desativar a notação científica
+options(scipen = 999)
 
 quantile(countsOrigin$CPM_SBAR, c(.1,.2,.5,.8,.9,.99))
 quantile(countsOrigin$CPM_SSPO, c(.1,.2,.5,.8,.9,.99))
 quantile(countsOrigin$CPM_SOFF, c(.1,.2,.5,.8,.9,.99))
 
-library(plotly)
 colnames(countsOrigin)
+head(countsOrigin$Origin)
+print(unique(countsOrigin$Origin))
+
+count_per_origin <- table(countsOrigin$Origin)
+print(count_per_origin)
 
 # Log base 10 transformation
 countsOrigin$log10_CPM_SOFF <- log10(countsOrigin$CPM_SOFF)
 countsOrigin$log10_CPM_SSPO <- log10(countsOrigin$CPM_SSPO)
 countsOrigin$log10_CPM_SBAR <- log10(countsOrigin$CPM_SBAR)
 
-#fig <- plot_ly(countsOrigin, x = ~CPM_SSPO, y = ~CPM_SOFF, z = ~CPM_SBAR, color = ~Origin)
 
+#subsample
+subsample_size <- 100
+subsample_countsOrigin <- countsOrigin[sample(nrow(countsOrigin), subsample_size), ]
+fig <- plot_ly(subsample_countsOrigin, x = ~log10_CPM_SSPO, y = ~log10_CPM_SOFF, z = ~log10_CPM_SBAR, color = ~Origin)
+fig <- fig %>% add_markers()
+fig <- fig %>% layout(scene = list(xaxis = list(type = "log", title = 'S. spontaneum'),
+                                   yaxis = list(type = "log", title = 'S. officinarum'),
+                                   zaxis = list(type = "log", title = 'S. barberi')))
+fig
+
+# complete
+fig <- plot_ly(countsOrigin, x = ~CPM_SSPO, y = ~CPM_SOFF, z = ~CPM_SBAR, color = ~Origin)
+
+# complete log
 fig <- plot_ly(countsOrigin, x = ~log10_CPM_SSPO, y = ~log10_CPM_SOFF, z = ~log10_CPM_SBAR, color = ~Origin)
 
-fig <- plot_ly(countsOrigin[which((countsOrigin$CPM_SOFF > 0.8 |
-                                       countsOrigin$CPM_SSPO > 0.8 |
-                                       countsOrigin$CPM_SBAR > 0.8)),], x = ~log10_CPM_SSPO,
+# filtering CPM
+fig <- plot_ly(countsOrigin[which((countsOrigin$CPM_SOFF > 0.5 |
+                                       countsOrigin$CPM_SSPO > 0.5 |
+                                       countsOrigin$CPM_SBAR > 0.5)),], x = ~log10_CPM_SSPO,
                y = ~log10_CPM_SOFF,
                z = ~log10_CPM_SBAR,
                color = ~Origin)
 
 fig <- fig %>% add_markers()
 
-fig <- fig %>% layout(scene = list(xaxis = list(type = "log", title = 'S. barberi (log10 CPM)'),
-                                   yaxis = list(type = "log", title = 'S. officinarum (log10 CPM)'),
-                                   zaxis = list(type = "log", title = 'S. spontaneum (log10 CPM)')))
+fig <- fig %>% layout(scene = list(xaxis = list(title = 'S. spontaneum (log10 CPM)'),
+                                   yaxis = list(title = 'S. officinarum (log10 CPM)'),
+                                   zaxis = list(title = 'S. barberi (log10 CPM)')))
 
-
-
-
-
-
-orca(fig, file = "speciesOfOriginPanRNAome.pdf", width = 1200, height = 800)
 
 save_image(fig, file="speciesOfOriginPanRNAome.pdf",scale=6)
 save_image(fig, file="speciesOfOriginPanRNAome.svg",scale=6)
 
 #saveWidget(fig, "speciesOfOriginPanRNAome_log10.html")
+
+
 
 #ggplot(as.data.frame(countsOrigin),aes(x=Fraction_SBAR)) +
 #  theme_bw()+
