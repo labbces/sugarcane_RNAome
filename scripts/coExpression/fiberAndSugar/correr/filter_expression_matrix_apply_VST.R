@@ -36,8 +36,8 @@ list.files(HOME_DIR)
 samples <- read.table(file.path(HOME_DIR, 'infos_correr_metadata.tsv'), header = TRUE, sep = '\t')
 
 # Set quant.sf files
-#files <- file.path(HOME_DIR, "../../data", samples$Accession, "quant.sf")
-files <- file.path(HOME_DIR, "smallData", samples$Accession, "quant.sf")
+files <- file.path(HOME_DIR, "../../data", samples$Accession, "quant.sf")
+#files <- file.path(HOME_DIR, "smallData", samples$Accession, "quant.sf")
 
 print("All file exists")
 all(file.exists(files))
