@@ -1,5 +1,7 @@
 library(tximport)
 library(DESeq2)
+library(ggplot2)
+library(ggrepel)
 
 # *** Pipeline ***
 # 1 - Remove degraded samples (30% + trimmed)
@@ -8,6 +10,7 @@ library(DESeq2)
 # 4 - Calculate and plot CV after VST
 # 5 - Save expression matrix (filtered + VST)
 # 6 - Save CV for each gene (filtered + VST)
+# 7 - Plot PCA
 
 # *** Reset R variables ***
 
@@ -162,8 +165,70 @@ expression_matrix_vst <- assay(dds_vst)
 # Save expression matrix in a csv file
 # OBS: Columns are collapsed samples and lines are genes
 print("saving expresion matrix after VST")
-write.table(counts_matrix_vst_top20, file = "Correr2020_counts_filters_VST.txt", sep = "\t", quote = FALSE)
+write.table(expression_matrix_vst, file = "Correr2020_counts_filters_VST.txt", sep = "\t", quote = FALSE)
 
 # *** 6 - Save CV for each gene (filtered + VST)
+cv_data <- data.frame(Gene = rownames(dds_vst), CV = cv_after_vst)
+cv_data <- cv_data[order(cv_data$CV, decreasing = TRUE), ]
+
 print("saving CV for each gene")
-write.table(cv_after_cv_filter, file = "Correr2020_counts_filters_VST_CV.txt", sep = "\t", quote = FALSE)
+write.table(cv_data, file = "Correr2020_counts_filters_VST_CV.txt", sep = "\t", quote = FALSE, row.names = FALSE)
+
+# *** 7 - Plot PCA ***
+
+# Calculate PCA with all genes using prcomp
+pca_result <- prcomp(t(assay(dds_vst)), scale. = TRUE)
+
+# Get PC scores
+pca_scores <- as.data.frame(pca_result$x)
+
+# Add biomass column
+dds_vst$biomass_group <- sub(".*_(high|low)", "\\1", dds_vst$Run)
+dds_vst$biomass_group
+
+# Add genotype column
+dds_vst$genotype <- sub("^(.*?)_.*", "\\1", dds_vst$Run)
+dds_vst$genotype
+
+print("ddsColl_top_20_percent genotypes")
+dds_vst$genotype
+
+print("ddsColl_top_20_percent internode types")
+dds_vst$biomass_group
+
+print("ddsColl_top_20_percent samples")
+dds_vst$Run
+
+pca_scores$genotype <- dds_vst$genotype
+pca_scores$biomass_group <- dds_vst$biomass_group
+
+# Plot PCA using ggplot2
+percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
+
+pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = dds_vst$biomass_group, label = dds_vst$genotype)) +
+  geom_point(size = 2) +
+  geom_text_repel(
+    box.padding = 0.1, point.padding = 0.1,
+    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
+    size = 3, color = "black" # Definir a cor do texto do rótulo como preto
+  ) +
+  labs(title = "PCA - Correr2020 Contrasting Genotypes in Fiber and Sugar",
+       x = paste0("PC1 ", "(",percentVar[1], "%)"),
+       y = paste0("PC2 ", "(",percentVar[2], "%)"),
+       color = "Groups") +
+  stat_ellipse(geom = "polygon", level=0.95, alpha=0.1, aes(fill = dds_vst$biomass_group), color=NA, show.legend = FALSE) + # add ellipse with 95% confidence intervals
+  theme_classic() +
+  theme(
+    axis.line = element_blank(),  # Linha dos eixos X e Y
+    panel.grid.major = element_line(color = alpha("gray", 0.2)),  # Remover linhas de grade principais
+    panel.grid.minor = element_line(color = alpha("gray", 0.2)),  # Remover linhas de grade secundárias
+    panel.border = element_rect(color = "transparent", fill = NA),  # Cor da borda do painel
+    plot.background = element_rect(fill = "white"),  # Cor do fundo do gráfico
+  ) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +  # Adicionar linha pontilhada no eixo x
+  geom_vline(xintercept = 0, linetype = "dashed", color = "black")   # Adicionar linha pontilhada no eixo y
+
+# Saving PCA
+#print(pca_plot)
+print("saving PCA as: Correr2020_CNC_VST_PCA_withTissues.png")
+ggsave("Correr2020_CNC_VST_PCA_withTissues.png", pca_plot, bg = "white")
