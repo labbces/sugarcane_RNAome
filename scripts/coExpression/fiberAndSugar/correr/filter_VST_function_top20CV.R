@@ -1,8 +1,8 @@
 # *** Pipeline ***
 # 1 - Import samples, VST expression matrix, tx2gene, cv
-# 3 - Filter matrix by function (coding or non-coding)
-# 4 - Filter matrix by top 20% CV
-# 5 - Plot PCA (coding and non-coding)
+# 2 - Filter matrix by function (coding or non-coding)
+# 3 - Filter matrix by top 20% CV
+# 4 - Plot PCA (coding and non-coding)
 
 # *** Reset R variables ***
 
@@ -36,7 +36,7 @@ tx2gene
 
 cv <- read.table(file.path(HOME_DIR, "Correr2020_counts_filters_VST_CV.txt"))
 
-# *** 3 - Filter matrix by function (coding or non-coding) ***
+# *** 2 - Filter matrix by function (coding or non-coding) ***
 
 # Filter VST matrix for protein-coding genes
 coding_genes <- intersect(rownames(vst_matrix), tx2gene$V2[tx2gene$V4 %in% c("protein-coding", "protein and non-coding")])
@@ -48,7 +48,7 @@ noncoding_genes <- intersect(rownames(vst_matrix), tx2gene$V2[tx2gene$V4 == "non
 vst_matrix_noncoding <- vst_matrix[noncoding_genes, ]
 #write.table(vst_matrix_noncoding, file = file.path(HOME_DIR, "Correr2020_counts_filters_VST_noncoding.txt"), sep = "\t", quote = FALSE)
 
-# *** 4 - Filter matrix by top 20% CV *** 
+# *** 3 - Filter matrix by top 20% CV *** 
 
 genes_cv <- cv$V1
 cv_values <- cv$V2
@@ -68,7 +68,7 @@ vst_matrix_noncoding_top <- vst_matrix_noncoding[top_genes_noncoding, ]
 write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Correr2020_counts_filters_VST_coding_top20CV.txt"), sep = "\t", quote = FALSE)
 write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Correr2020_counts_filters_VST_noncoding_top20CV.txt"), sep = "\t", quote = FALSE)
 
-# *** 5 - Plot PCA (coding) ***
+# *** 4 - Plot PCA (coding) ***
 
 # Calculate PCA with all genes using prcomp
 pca_result <- prcomp(t(vst_matrix_coding_top), scale. = TRUE)
