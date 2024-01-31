@@ -14,10 +14,10 @@ library(ggrepel)
 # *** Configure directory ***
 
 # My laptop
-#HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/correr"
+#HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo"
 
 # PC CENA
-#HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/correr"
+#HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo"
 #setwd(HOME_DIR)
 
 # Cluster
@@ -29,6 +29,7 @@ setwd(HOME_DIR)
 # Read samples file 
 samples <- read.table(file.path(HOME_DIR, 'infos_perlo_metadata.tsv'), header = TRUE, sep = '\t')
 
+#vst_matrix <- read.table(file.path(HOME_DIR, "10k_Perlo2022_counts_filters_VST.txt"))
 vst_matrix <- read.table(file.path(HOME_DIR, "Perlo2022_counts_filters_VST.txt"))
 
 # Set tx2gene file (clusters from OrthoFinder and MMSeqs2)
@@ -37,6 +38,7 @@ tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificat
 print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
 
+#cv <- read.table(file.path(HOME_DIR, "10k_Perlo2022_counts_filters_VST_CV.txt"))
 cv <- read.table(file.path(HOME_DIR, "Perlo2022_counts_filters_VST_CV.txt"))
 
 # *** 3 - Filter matrix by function (coding or non-coding) ***
@@ -79,53 +81,16 @@ pca_result <- prcomp(t(vst_matrix_coding_top), scale. = TRUE)
 # Get PC scores
 pca_scores <- as.data.frame(pca_result$x)
 
-# *** Adicionar informações de genótipo e internode type ao DataFrame ***
+pca_scores$genotype <- sub(".*_([^_]+)$", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^(Internode_(?:\\d+|Ex\\.\\d+))_\\d+\\.weeks_.*", "\\1", rownames(pca_scores))
+pca_scores$replicate <- sub(".*_(\\d+\\.weeks)_.*", "\\1", rownames(pca_scores))
+pca_scores$stage <- paste(pca_scores$internode_type, pca_scores$replicate, sep = " ")
 
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando o internode_type ***
-samples$internode_type <- sub("^.*?_(\\S+)_\\d+-weeks.*$", "\\1", samples$Run)
-#samples$internode_type
-
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando a replicate ***
-#samples$replicate <- sub("^.*?_([^_]+)_\\S+$", "\\1", samples$Run) # Capturing just "5", "8" and "Ex-5"
-samples$replicate <- sub("^.*?_([^_]+_\\d+-weeks)_\\S+$", "\\1", samples$Run)
-#samples$replicate
-
-# Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo
-samples$genotype <- sub("^.*_(\\S+)$", "\\1", samples$Run)
-#samples$genotype
-
-print("dds_vst genotypes")
-samples$genotype
-
-print("dds_vst replicates")
-samples$replicate
-
-print("dds_vst internode type")
-samples$internode_type
-
-print("dds_vst samples")
-samples$Run
-
-unique_genotypes <- unique(samples$genotype)
-unique_genotypes_fixed <- gsub("[-–]", ".", unique_genotypes)
-pca_scores$genotype <- rep(unique_genotypes_fixed, each = nrow(pca_scores) / length(unique_genotypes_fixed))
-
-unique_replicate <- unique(samples$replicate)
-unique_replicate_fixed <- gsub("[-–]", ".", unique_replicate)
-pca_scores$replicate <- rep(unique_replicate_fixed, each = nrow(pca_scores) / length(unique_replicate_fixed))
-
-unique_internode_type <- unique(samples$internode_type)
-unique_internode_type_fixed <- gsub("[-–]", ".", unique_internode_type)
-pca_scores$internode_type <- rep(unique_internode_type_fixed, each = nrow(pca_scores) / length(unique_internode_type_fixed))
-##
-pca_scores$genotype <- samples$genotype
-pca_scores$replicate <- samples$replicate
-pca_scores$internode_type <- samples$internode_type
 
 # *** Plotar PCA usando ggplot2 ***
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
 
-pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$replicate, label = pca_scores$genotype)) +
+pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$stage, label = pca_scores$genotype)) +
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
@@ -136,7 +101,7 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$replicat
        x = paste0("PC1 ", "(", percentVar[1], "%)"),
        y = paste0("PC2 ", "(", percentVar[2], "%)"),
        color = "Stage") +
-  stat_ellipse(geom = "polygon", level=0.95, alpha=0.1, aes(fill = pca_scores$replicate), color=NA, show.legend = FALSE) + # add ellipse with 95% confidence intervals
+  stat_ellipse(geom = "polygon", level=0.95, alpha=0.1, aes(fill = pca_scores$stage), color=NA, show.legend = FALSE) + # add ellipse with 95% confidence intervals
   theme_classic() +
   theme(
     axis.line = element_blank(),  # Linha dos eixos X e Y
@@ -161,53 +126,15 @@ pca_result <- prcomp(t(vst_matrix_noncoding_top), scale. = TRUE)
 # Get PC scores
 pca_scores <- as.data.frame(pca_result$x)
 
-# *** Adicionar informações de genótipo e internode type ao DataFrame ***
-
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando o internode_type ***
-samples$internode_type <- sub("^.*?_(\\S+)_\\d+-weeks.*$", "\\1", samples$Run)
-#samples$internode_type
-
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando a replicate ***
-#samples$replicate <- sub("^.*?_([^_]+)_\\S+$", "\\1", samples$Run) # Capturing just "5", "8" and "Ex-5"
-samples$replicate <- sub("^.*?_([^_]+_\\d+-weeks)_\\S+$", "\\1", samples$Run)
-#samples$replicate
-
-# Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo
-samples$genotype <- sub("^.*_(\\S+)$", "\\1", samples$Run)
-#samples$genotype
-
-print("dds_vst genotypes")
-samples$genotype
-
-print("dds_vst replicates")
-samples$replicate
-
-print("dds_vst internode type")
-samples$internode_type
-
-print("dds_vst samples")
-samples$Run
-
-unique_genotypes <- unique(samples$genotype)
-unique_genotypes_fixed <- gsub("[-–]", ".", unique_genotypes)
-pca_scores$genotype <- rep(unique_genotypes_fixed, each = nrow(pca_scores) / length(unique_genotypes_fixed))
-
-unique_replicate <- unique(samples$replicate)
-unique_replicate_fixed <- gsub("[-–]", ".", unique_replicate)
-pca_scores$replicate <- rep(unique_replicate_fixed, each = nrow(pca_scores) / length(unique_replicate_fixed))
-
-unique_internode_type <- unique(samples$internode_type)
-unique_internode_type_fixed <- gsub("[-–]", ".", unique_internode_type)
-pca_scores$internode_type <- rep(unique_internode_type_fixed, each = nrow(pca_scores) / length(unique_internode_type_fixed))
-##
-pca_scores$genotype <- samples$genotype
-pca_scores$replicate <- samples$replicate
-pca_scores$internode_type <- samples$internode_type
+pca_scores$genotype <- sub(".*_([^_]+)$", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^(Internode_(?:\\d+|Ex\\.\\d+))_\\d+\\.weeks_.*", "\\1", rownames(pca_scores))
+pca_scores$replicate <- sub(".*_(\\d+\\.weeks)_.*", "\\1", rownames(pca_scores))
+pca_scores$stage <- paste(pca_scores$internode_type, pca_scores$replicate, sep = " ")
 
 # *** Plotar PCA usando ggplot2 ***
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
 
-pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$replicate, label = pca_scores$genotype)) +
+pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$stage, label = pca_scores$genotype)) +
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
@@ -218,7 +145,7 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$replicat
        x = paste0("PC1 ", "(", percentVar[1], "%)"),
        y = paste0("PC2 ", "(", percentVar[2], "%)"),
        color = "Stage") +
-  stat_ellipse(geom = "polygon", level=0.95, alpha=0.1, aes(fill = pca_scores$replicate), color=NA, show.legend = FALSE) + # add ellipse with 95% confidence intervals
+  stat_ellipse(geom = "polygon", level=0.95, alpha=0.1, aes(fill = pca_scores$stage), color=NA, show.legend = FALSE) + # add ellipse with 95% confidence intervals
   theme_classic() +
   theme(
     axis.line = element_blank(),  # Linha dos eixos X e Y
