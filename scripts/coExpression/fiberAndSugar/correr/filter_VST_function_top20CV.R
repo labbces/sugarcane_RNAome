@@ -1,3 +1,6 @@
+library(ggplot2)
+library(ggrepel)
+
 # *** Pipeline ***
 # 1 - Import samples, VST expression matrix, tx2gene, cv
 # 2 - Filter matrix by function (coding or non-coding)
@@ -18,7 +21,7 @@
 #setwd(HOME_DIR)
 
 # Cluster
-HOME_DIR = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Correr/code/coding"
+HOME_DIR = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Correr/code/updated_filters/CNC"
 setwd(HOME_DIR)
 
 # *** 1 - Import samples, VST expression matrix, tx2gene, cv ***
@@ -29,7 +32,7 @@ samples <- read.table(file.path(HOME_DIR, 'infos_correr_metadata.tsv'), header =
 vst_matrix <- read.table(file.path(HOME_DIR, "Correr2020_counts_filters_VST.txt"))
 
 # Set tx2gene file (clusters from OrthoFinder and MMSeqs2)
-tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv", header = FALSE, sep = "\t"))
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv"), header = FALSE, sep = "\t")
 #tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class_smallData.tsv"), header = FALSE, sep = "\t")
 print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
