@@ -70,8 +70,8 @@ top_genes_noncoding <- head(genes_cv[genes_cv %in% rownames(vst_matrix_noncoding
 vst_matrix_noncoding_top <- vst_matrix_noncoding[top_genes_noncoding, ]
 
 # Save top 20% VST expression matrix
-write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_coding_top20CV.txt"), sep = "\t", quote = FALSE)
-write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_noncoding_top20CV.txt"), sep = "\t", quote = FALSE)
+#write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_coding_top20CV.txt"), sep = "\t", quote = FALSE)
+#write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_noncoding_top20CV.txt"), sep = "\t", quote = FALSE)
 
 # *** 4 - Plot PCA (coding) ***
 
@@ -82,7 +82,11 @@ pca_result <- prcomp(t(vst_matrix_coding_top), scale. = TRUE)
 pca_scores <- as.data.frame(pca_result$x)
 
 pca_scores$genotype <- sub("^(.*?)_.*", "\\1", rownames(pca_scores))
-pca_scores$sugar_content <- sub("^.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+
+pca_scores$sugar_content <- sub(".*_high.sugar_.*", "high", rownames(pca_scores))
+pca_scores$sugar_content <- sub(".*_low.sugar_.*", "low", pca_scores$sugar_content)
+pca_scores$sugar_content <- sub(".*_none_.*", "none", pca_scores$sugar_content)
+
 pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
@@ -164,7 +168,11 @@ pca_result <- prcomp(t(vst_matrix_noncoding_top), scale. = TRUE)
 pca_scores <- as.data.frame(pca_result$x)
 
 pca_scores$genotype <- sub("^(.*?)_.*", "\\1", rownames(pca_scores))
-pca_scores$sugar_content <- sub("^.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+
+pca_scores$sugar_content <- sub(".*_high.sugar_.*", "high", rownames(pca_scores))
+pca_scores$sugar_content <- sub(".*_low.sugar_.*", "low", pca_scores$sugar_content)
+pca_scores$sugar_content <- sub(".*_none_.*", "none", pca_scores$sugar_content)
+
 pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
