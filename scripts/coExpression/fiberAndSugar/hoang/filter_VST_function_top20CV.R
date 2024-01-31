@@ -27,8 +27,9 @@ setwd(HOME_DIR)
 # *** 1 - Import samples, VST expression matrix, tx2gene, cv ***
 
 # Read samples file 
-samples <- read.table(file.path(HOME_DIR, 'infos_hoang_metadata.tsv'), header = TRUE, sep = '\t')
+samples <- read.table(file.path(HOME_DIR, 'infos_hoang_metadata.tsv'), header = TRUE, skip=1, sep = '\t')
 
+#vst_matrix <- read.table(file.path(HOME_DIR, "10k_Hoang2017_counts_filters_VST.txt"))
 vst_matrix <- read.table(file.path(HOME_DIR, "Hoang2017_counts_filters_VST.txt"))
 
 # Set tx2gene file (clusters from OrthoFinder and MMSeqs2)
@@ -37,6 +38,7 @@ tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificat
 print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
 
+#cv <- read.table(file.path(HOME_DIR, "new10k_Hoang2017_counts_filters_VST_CV.txt"))
 cv <- read.table(file.path(HOME_DIR, "Hoang2017_counts_filters_VST_CV.txt"))
 
 # *** 2 - Filter matrix by function (coding or non-coding) ***
@@ -79,40 +81,9 @@ pca_result <- prcomp(t(vst_matrix_coding_top), scale. = TRUE)
 # Get PC scores
 pca_scores <- as.data.frame(pca_result$x)
 
-# *** Adicionar informações de genótipo e internode type ao DataFrame ***
-
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom ***
-samples$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", samples$Run)
-
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando sugar content ***
-samples$sugar_content <- sub("^.*?_(.*?)_.*", "\\1", samples$Run)
-
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo ***
-samples$genotype <- sub("^(.*?)_.*", "\\1", samples$Run)
-
-print("samples genotypes")
-samples$genotype
-
-print("samples sugar content")
-samples$sugar_content
-
-print("samples internode types")
-samples$internode_type
-
-print("samples samples")
-samples$Run
-
-unique_genotypes <- unique(samples$genotype)
-unique_genotypes_fixed <- gsub("[-–]", ".", unique_genotypes)
-pca_scores$genotype <- rep(unique_genotypes_fixed, each = nrow(pca_scores) / length(unique_genotypes_fixed))
-
-unique_sugar_content <- unique(samples$sugar_content)
-unique_sugar_content_fixed <- gsub("[-–]", ".", unique_sugar_content)
-pca_scores$sugar_content <- rep(unique_sugar_content_fixed, each = nrow(pca_scores) / length(unique_sugar_content_fixed))
-
-unique_internode_type <- unique(samples$internode_type)
-unique_internode_type_fixed <- gsub("[-–]", ".", unique_internode_type)
-pca_scores$internode_type <- rep(unique_internode_type_fixed, each = nrow(pca_scores) / length(unique_internode_type_fixed))
+pca_scores$genotype <- sub("^(.*?)_.*", "\\1", rownames(pca_scores))
+pca_scores$sugar_content <- sub("^.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
@@ -148,7 +119,7 @@ ggsave("Hoang2017_VST_PCA_withTissues_coding_top20CV.png", pca_plot, bg = "white
 
 # *** PCA of sugar content - coding
 
-pca_sugar_content_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$sugar_content, shape = internode_type, label = pca_scores$genotype)) +
+pca_sugar_content_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$sugar_content, shape = pca_scores$internode_type, label = pca_scores$genotype)) +
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
@@ -172,6 +143,13 @@ pca_sugar_content_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_s
   geom_hline(yintercept = 0, linetype = "dashed", color = "black") +  # Adicionar linha pontilhada no eixo x
   geom_vline(xintercept = 0, linetype = "dashed", color = "black")   # Adicionar linha pontilhada no eixo y
 
+# Adicionar escalas manuais para sugar_content e internode_type
+pca_sugar_content_plot <- pca_sugar_content_plot +
+  scale_color_manual(name = "Groups", values = c("high" = "red", "low" = "blue", "none" = "green"),
+                     labels = c("high" = "High Sugar", "low" = "Low Sugar", "none" = "none")) +
+  scale_shape_manual(name = "Internode Type", values = c("bottom" = 16, "top" = 17),
+                     labels = c("bottom" = "Bottom", "top" = "Top"))
+
 # *** Saving PCA ***
 #print(pca_sugar_content_plot)
 print("saving PCA of sugar content as: Hoang2017_VST_PCA_sugarContent_coding_top20CV.png")
@@ -185,40 +163,9 @@ pca_result <- prcomp(t(vst_matrix_noncoding_top), scale. = TRUE)
 # Get PC scores
 pca_scores <- as.data.frame(pca_result$x)
 
-# *** Adicionar informações de genótipo e internode type ao DataFrame ***
-
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando se é top ou bottom ***
-samples$internode_type <- sub(".*_(top|bottom)-internode$", "\\1", samples$Run)
-
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando sugar content ***
-samples$sugar_content <- sub("^.*?_(.*?)_.*", "\\1", samples$Run)
-
-# *** Adicione uma coluna ao seu DataFrame de amostras indicando o nome do genótipo ***
-samples$genotype <- sub("^(.*?)_.*", "\\1", samples$Run)
-
-print("samples genotypes")
-samples$genotype
-
-print("samples sugar content")
-samples$sugar_content
-
-print("samples internode types")
-samples$internode_type
-
-print("samples samples")
-samples$Run
-
-unique_genotypes <- unique(samples$genotype)
-unique_genotypes_fixed <- gsub("[-–]", ".", unique_genotypes)
-pca_scores$genotype <- rep(unique_genotypes_fixed, each = nrow(pca_scores) / length(unique_genotypes_fixed))
-
-unique_sugar_content <- unique(samples$sugar_content)
-unique_sugar_content_fixed <- gsub("[-–]", ".", unique_sugar_content)
-pca_scores$sugar_content <- rep(unique_sugar_content_fixed, each = nrow(pca_scores) / length(unique_sugar_content_fixed))
-
-unique_internode_type <- unique(samples$internode_type)
-unique_internode_type_fixed <- gsub("[-–]", ".", unique_internode_type)
-pca_scores$internode_type <- rep(unique_internode_type_fixed, each = nrow(pca_scores) / length(unique_internode_type_fixed))
+pca_scores$genotype <- sub("^(.*?)_.*", "\\1", rownames(pca_scores))
+pca_scores$sugar_content <- sub("^.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
@@ -277,6 +224,13 @@ pca_sugar_content_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_s
   ) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "black") +  # Adicionar linha pontilhada no eixo x
   geom_vline(xintercept = 0, linetype = "dashed", color = "black")   # Adicionar linha pontilhada no eixo y
+
+# Adicionar escalas manuais para sugar_content e internode_type
+pca_sugar_content_plot <- pca_sugar_content_plot +
+  scale_color_manual(name = "Groups", values = c("high" = "red", "low" = "blue", "none" = "green"),
+                     labels = c("high" = "High Sugar", "low" = "Low Sugar", "none" = "none")) +
+  scale_shape_manual(name = "Internode Type", values = c("bottom" = 16, "top" = 17),
+                     labels = c("bottom" = "Bottom", "top" = "Top"))
 
 # *** Saving PCA ***
 #print(pca_sugar_content_plot)
