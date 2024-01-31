@@ -26,7 +26,7 @@ library(ggrepel)
 #setwd(HOME_DIR)
 
 # Cluster
-HOME_DIR = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Hoang/code/coding"
+HOME_DIR = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Hoang/code/updated_filters/CNC"
 setwd(HOME_DIR)
 
 # List files in home directory
@@ -36,10 +36,10 @@ list.files(HOME_DIR)
 # *** Import files: samples, tx2gene file, expression matrix ***
 
 # Read samples file 
-samples <- read.table(file.path(HOME_DIR, 'infos_hoang_metadata.tsv'), header = TRUE, sep = '\t')
+samples <- read.table(file.path(HOME_DIR, 'infos_hoang_metadata.tsv'), header = TRUE, skip = 1, sep = '\t')
 
 # Set quant.sf files
-files <- file.path(HOME_DIR, "../../data", samples$Accession, "quant.sf")
+files <- file.path(HOME_DIR, "../../../data", samples$Accession, "quant.sf")
 #files <- file.path(HOME_DIR, "smallData", samples$Accession, "quant.sf")
 
 print("All file exists")
@@ -47,7 +47,7 @@ all(file.exists(files))
 
 # Set tx2gene file (clusters from OrthoFinder and MMSeqs2)
 #tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen.tsv"), header = FALSE, sep = "\t")
-tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv", header = FALSE, sep = "\t"))
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv"), header = FALSE, sep = "\t")
 #tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class_smallData.tsv"), header = FALSE, sep = "\t")
 #print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
