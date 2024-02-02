@@ -5,14 +5,13 @@ import numpy as np
 import sys
 
 
-def pcc(filename, output, mcl_output):
+def pcc(filename, mcl_output):
     """
     Reads an htseq-count matrix, calculated the PCC (Pearson Correlation) for all pairs. It will return a text file with
     all correlated genes and a mcl but also genemania/cytoscape compatible file
     containing all gene pairs with a correlation of 0.7 or better.
 
     :param filename: path to input, a htseq-count matrix file
-    :param output: Matrix output, for each gene it prints all co-expressed genes
     :param mcl_output: Mcl compatible output
     """
     # Read Matrix and store nominators and denominators
@@ -50,8 +49,8 @@ def pcc(filename, output, mcl_output):
     nominators = np.array(nominators)
     denominators = np.array(denominators)
 
-    # Calculate PCC and write output
-    with open(output, 'w') as fout, open(mcl_output, 'w') as mcl_out:
+    # Calculate PCC and write mcl_output
+    with open(mcl_output, 'w') as mcl_out:
         print("Database OK.\nCalculating Pearson Correlation Coefficient and ranks.\n")
         for i, (nom, denom, gene) in enumerate(zip(nominators, denominators, genes), start=1):
             print("Calculated PCC values for sequence:%s, %d out of %d." % (gene, i, len(nominators)))
@@ -67,22 +66,19 @@ def pcc(filename, output, mcl_output):
             # sort by absolute pcc value
             data.sort(key=lambda x: x['score'], reverse=True)
 
-            fout.writelines(gene + ": " + '\t'.join([s['string'] for s in data]) + "\n")
-
             for s in data:
                 # Keep scores > 0.7 substract 0.7 from result to remap values to [0,0.3] as this is important for mcl
                 if s['score'] > 0.7:
                     print(gene, s['gene'], s['score'] - 0.7, sep='\t', file=mcl_out)
 
-    print("PCCs calculated and saved as %s and %s." % (output, mcl_output), file=sys.stderr)
+    print("PCCs calculated and saved as %s." % (mcl_output), file=sys.stderr)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="./pcc.py")
 
     parser.add_argument('input', help='path to input')
-    parser.add_argument('output', help='path to ranked output')
     parser.add_argument('mcl_output', help='path to mcl compatible output')
 
     args = parser.parse_args()
 
-    pcc(args.input, args.output, args.mcl_output)
+    pcc(args.input, args.mcl_output)
