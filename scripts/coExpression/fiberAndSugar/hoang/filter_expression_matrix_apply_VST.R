@@ -311,8 +311,8 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = dds_vst$genotype, s
 
 # *** Saving PCA ***
 #print(pca_plot)
-print("saving PCA as: plot_pca_vst_withTissues.png")
-ggsave("plot_pca_vst_withTissues.png", pca_plot, bg = "white")
+print("saving PCA as: Hoang2017_CNC_VST_PCA_withTissues.png")
+ggsave("Hoang2017_CNC_VST_PCA_withTissues.png", pca_plot, bg = "white")
 
 # *** PCA of sugar content
 
@@ -342,5 +342,5 @@ pca_sugar_content_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = dds_v
 
 # Saving PCA
 #print(pca_plot)
-print("saving PCA as: Hoang2017_CNC_VST_PCA_withTissues.png")
-ggsave("Hoang2017_CNC_VST_PCA_withTissues.png", pca_plot, bg = "white")
+print("saving PCA as: Hoang2017_CNC_VST_PCA_sugarContent")
+ggsave("Hoang2017_CNC_VST_PCA_sugarContent", pca_plot, bg = "white")
