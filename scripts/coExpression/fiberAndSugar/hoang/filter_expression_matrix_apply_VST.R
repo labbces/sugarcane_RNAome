@@ -9,7 +9,7 @@ library(ggrepel)
 # 3 - Run Variance Stabilizing Transformation on the counts
 # 4 - Calculate and plot CV after VST
 # 5 - Save expression matrix (filtered + VST)
-# 6 - Save CV for each gene (filtered + VST)
+# 6 - Save CV for each gene (filtered + VST - Gene CV Function)
 # 7 - Plot PCA
 
 # *** Reset R variables ***
@@ -19,11 +19,10 @@ library(ggrepel)
 # *** Configure directory ***
 
 # My laptop
-#HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/correr"
+#HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 
 # PC CENA
-#HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/correr"
-#setwd(HOME_DIR)
+#HOME_DIR = "/home/felipevzps/Documentos/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang"
 
 # Cluster
 HOME_DIR = "/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Hoang/code/updated_filters/CNC"
@@ -46,10 +45,9 @@ print("All file exists")
 all(file.exists(files))
 
 # Set tx2gene file (clusters from OrthoFinder and MMSeqs2)
-#tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen.tsv"), header = FALSE, sep = "\t")
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv"), header = FALSE, sep = "\t")
 #tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class_smallData.tsv"), header = FALSE, sep = "\t")
-#print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
+print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
 
 # Organize columns for tx2gene format (transcript ID     gene)
@@ -141,11 +139,11 @@ colData(dds_vst)
 rowData(dds_vst)$cv <- cv_after_vst
 
 # Open a PNG device for saving the plot
-print('saving cv plot after VST normalization to file: ExpressionMatrix_CoefficientVariation_afterVST.png')
-png(filename = "ExpressionMatrix_CoefficientVariation_afterVST.png", width = 800, height = 600)
+print('saving cv plot after VST normalization to file: CNC_ExpressionMatrix_CoefficientVariation_afterVST.png')
+png(filename = "CNC_ExpressionMatrix_CoefficientVariation_afterVST.png", width = 800, height = 600)
 
 # Plot a histogram of the Coefficient of Variation (CV)
-hist(cv_after_vst, breaks = 50, main = "Coefficient of Variation Distribution after VST normalization",
+hist(cv_after_vst, breaks = 50, main = "Coefficient of Variation Distribution after VST normalization (CNC)",
      xlab = "Coefficient of Variation", ylab = "Frequency")
 
 # Plot histogram with log transformation on X axis
@@ -165,14 +163,89 @@ expression_matrix_vst <- assay(dds_vst)
 # Save expression matrix in a csv file
 # OBS: Columns are collapsed samples and lines are genes
 print("saving expresion matrix after VST")
-write.table(expression_matrix_vst, file = "Hoang2017_counts_filters_VST.txt", sep = "\t", quote = FALSE)
+write.table(expression_matrix_vst, file = "CNC_Hoang2017_counts_filters_VST.txt", sep = "\t", quote = FALSE)
 
 # *** 6 - Save CV for each gene (filtered + VST)
 cv_data <- data.frame(Gene = rownames(dds_vst), CV = cv_after_vst)
 cv_data <- cv_data[order(cv_data$CV, decreasing = TRUE), ]
 
+# Load tx2gene file again
+tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv"), header = FALSE, sep = "\t")
+#tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class_smallData.tsv"), header = FALSE, sep = "\t")
+
+# Mapping function to gene (based on transcript function)
+gene_functions <- character()
+
+for (gene_id in cv_data$Gene) {
+  # Find functions associated with all transcripts 
+  functions <- tx2gene$V4[tx2gene$V2 == gene_id]
+  
+  # Set predominant function for each gene
+  if ("protein and non-coding" %in% functions) {
+    function_gene <- "protein-coding"
+  } else if ("protein-coding" %in% functions) {
+    function_gene <- "protein-coding"
+  } else if ("non-coding" %in% functions) {
+    function_gene <- "non-coding"
+  }
+  
+  # Add gene function to vector gene_functions
+  gene_functions <- c(gene_functions, function_gene)
+}
+
+# Add gene function to cv_data
+cv_data$Function <- gene_functions
+
+# Mapping classification to gene (based on transcript function)
+gene_classification <- character()
+
+for (gene_id in cv_data$Gene) {
+  # Find classications associated with all transcripts
+  classifications <- tx2gene$V1[tx2gene$V2 == gene_id]
+  
+  # Set predominant classification for each gene 
+  if ("Accessory" %in% classifications) {
+    classification_gene <- "Accessory"
+  } else if ("Soft-core" %in% classifications) {
+    classification_gene <- "Soft-core"
+  } else if ("Hard-core" %in% classifications) {
+    classification_gene <- "Hard-core"
+  } else if ("Exclusive" %in% classifications) {
+    classification_gene <- "Exclusive"
+  }
+  
+  # Add gene function to vector gene_functions
+  gene_classification <- c(gene_classification, classification_gene)
+}
+
+# Add gene classification to cv_data
+cv_data$Classification <- gene_classification
+
+# Save CV for each gene
 print("saving CV for each gene")
 write.table(cv_data, file = "Hoang2017_counts_filters_VST_CV.txt", sep = "\t", quote = FALSE, row.names = FALSE)
+
+# Plot histogram for protein-coding genes
+png(filename = "protein-coding_ExpressionMatrix_CoefficientVariation_afterVST.png", width = 800, height = 600)
+
+hist(cv_data$CV[cv_data$Function == "protein-coding"], breaks = 50, main = "Coefficient of Variation Distribution after VST normalization (protein-coding)",
+     xlab = "Coefficient of Variation", ylab = "Frequency")
+
+count_zero_cv_protein <- sum(cv_data$CV[cv_data$Function == "protein-coding"] == 0)
+
+text(0, 0, sprintf("CVs = 0: %d", count_zero_cv_protein), adj = c(0, 1), col = "red", cex = 1.2)
+dev.off()
+
+# Plot histogram for non-coding genes
+png(filename = "non-coding_ExpressionMatrix_CoefficientVariation_afterVST.png", width = 800, height = 600)
+
+hist(cv_data$CV[cv_data$Function == "non-coding"], breaks = 50, main = "Coefficient of Variation Distribution after VST normalization (non-coding)",
+     xlab = "Coefficient of Variation", ylab = "Frequency")
+
+count_zero_cv_noncoding <- sum(cv_data$CV[cv_data$Function == "non-coding"] == 0)
+
+text(0, 0, sprintf("CVs = 0: %d", count_zero_cv_noncoding), adj = c(0, 1), col = "red", cex = 1.2)
+dev.off()
 
 # *** 7 - Plot PCA ***
 
