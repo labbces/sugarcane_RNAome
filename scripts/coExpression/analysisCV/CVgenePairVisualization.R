@@ -6,7 +6,7 @@ rm(list = ls())
 DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang/AnalysisCV/top20CV"
 DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang/AnalysisCV/top50CV"
 
-DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/correr/AnalysisCV/top20CV"
+DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/correr/top20CV"
 DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/correr/AnalysisCV/top50CV"
 
 DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/perlo/AnalysisCV/top20CV"
@@ -51,17 +51,23 @@ names(percent_quartis) <- c("Min CV", "25%", "50%", "75%", "Max CV")
 print(percent_quartis)
 
 # Define o número de pares de genes desejados por quartil
-n_pairs_per_quartil <- 6
+n_pairs_per_quartil <- 4
 
 # Gere pares de genes aleatórios para cada quartil
 random_gene_pairs <- lapply(split(genes, genes$Quartil), function(subset) {
   sample(subset$Gene, size = 2 * n_pairs_per_quartil, replace = TRUE)
 })
 
-# Crie os gráficos com ggplot2
-library(ggplot2)
-
 percent_range <- c("0-25%", "25-50%", "50-75%", "75-100%")
+
+# Extrair as condições das colunas
+conditions <- sub(".*_", "", colnames(quantification_matrix))
+
+# Ordenar as colunas de acordo com as condições
+ordered_columns <- colnames(quantification_matrix)[order(conditions)]
+
+# Aplicar a nova ordem às colunas
+gene_pair_quantification_ordered <- quantification_matrix[, ordered_columns]
 
 for (i in seq_along(random_gene_pairs)) {
   matrix_gene_pairs <- matrix(random_gene_pairs[[i]], ncol = 2, byrow = TRUE)
@@ -70,10 +76,11 @@ for (i in seq_along(random_gene_pairs)) {
   
   for (j in seq_len(n_pairs_per_quartil)) {
     gene_pair <- matrix_gene_pairs[j, ]
-    gene_pair_quantification <- quantification_matrix[gene_pair, ]
+    gene_pair_quantification <- gene_pair_quantification_ordered[gene_pair, ]
     
     # Obtenha as cores dinamicamente
     gene_labels <- rownames(gene_pair_quantification)
+    
     # Crie uma tabela de dados onde cada linha representa uma combinação de gene e condição
     plot_data <- data.frame(
       Condition = rep(colnames(gene_pair_quantification), each = 1),
@@ -83,14 +90,29 @@ for (i in seq_along(random_gene_pairs)) {
       Gene_Color2 = gene_labels[2]
     )
     
-    plot <- ggplot(plot_data, aes(x = Condition)) +
-      geom_point(aes(y = Counts_Gene1, color = Gene_Color1), shape = 1) +
-      geom_point(aes(y = Counts_Gene2, color = Gene_Color2), shape = 2) +
-      labs(title = paste("Q", i, "(", percent_range[i], ")", '- Gene Pair', j, "(top 50% CV)"),
+    plot_data$Condition <- factor(plot_data$Condition, levels = unique(plot_data$Condition))
+    
+    # Encontrar os índices onde a condição muda
+    mudanca_condicao <- which(diff(grepl("low", plot_data$Condition)) != 0) + 0.5
+    
+    plot <- ggplot(plot_data, aes(x = plot_data$Condition)) +
+      geom_point(aes(y = Counts_Gene1, color = Gene_Color1), position = position_jitter(width = 0.2), shape = 1) +
+      geom_point(aes(y = Counts_Gene2, color = Gene_Color2), position = position_jitter(width = 0.2), shape = 2) +
+      geom_vline(xintercept = mudanca_condicao, linetype="dashed", color = "red") +  # Adiciona a linha vertical
+      
+      labs(title = paste("Q", i, "(", percent_range[i], ")", '- Gene Pair', j, "(top 20% CV)"),
            x = 'Samples',
            y = 'Counts (VST)',
            color = "Genes") +
-      theme_minimal() +
+      theme_classic() +
+      theme(
+        axis.line = element_line(color="black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_rect(color = "transparent", fill = NA),
+        plot.background = element_rect(fill = "white"),
+        plot.title = element_text(hjust = 0.5)
+      ) +
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
     
     plots[[length(plots) + 1]] <- plot
