@@ -102,7 +102,7 @@ for (i in seq_along(random_gene_pairs)) {
       
       labs(title = paste("Q", i, "(", percent_range[i], ")", '- Gene Pair', j, "(top 20% CV)"),
            x = 'Samples',
-           y = 'Counts (VST)',
+           y = 'Expression Level (VST)',
            color = "Genes") +
       theme_classic() +
       theme(
