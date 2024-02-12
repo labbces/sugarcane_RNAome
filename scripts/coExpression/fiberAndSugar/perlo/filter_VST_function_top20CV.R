@@ -57,30 +57,25 @@ noncoding_genes <- intersect(rownames(vst_matrix), tx2gene$V2[tx2gene$V4 == "non
 vst_matrix_noncoding <- vst_matrix[noncoding_genes, ]
 #write.table(vst_matrix_noncoding, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_noncoding.txt"), sep = "\t", quote = FALSE)
 
-# *** 3 - Filter matrix by top 20% CV *** 
+# *** 3 - Filter matrix by CV > 2.0 *** 
 
 genes_cv <- cv$V1
 cv_values <- cv$V2
 
-# Keep 20% CNC, protein and non-coding
-num_genes_to_keep_CNC <- round(0.2 * nrow(vst_matrix_CNC))
-num_genes_to_keep_coding <- round(0.2 * nrow(vst_matrix_coding))
-num_genes_to_keep_noncoding <- round(0.2 * nrow(vst_matrix_noncoding))
-
-# Get top genes (top CV for CNC, coding and non-coding)
-top_genes_CNC <- head(genes_cv[genes_cv %in% rownames(vst_matrix_CNC)][order(cv_values[genes_cv %in% rownames(vst_matrix_CNC)], decreasing = TRUE)], num_genes_to_keep_CNC)
+# Filter genes with CV > 2.0 for CNC, coding and non-coding
+top_genes_CNC <- genes_cv[cv_values > 0.6 & genes_cv %in% rownames(vst_matrix_CNC)]
 vst_matrix_CNC_top <- vst_matrix_CNC[top_genes_CNC, ]
 
-top_genes_coding <- head(genes_cv[genes_cv %in% rownames(vst_matrix_coding)][order(cv_values[genes_cv %in% rownames(vst_matrix_coding)], decreasing = TRUE)], num_genes_to_keep_coding)
+top_genes_coding <- genes_cv[cv_values > 0.6 & genes_cv %in% rownames(vst_matrix_coding)]
 vst_matrix_coding_top <- vst_matrix_coding[top_genes_coding, ]
 
-top_genes_noncoding <- head(genes_cv[genes_cv %in% rownames(vst_matrix_noncoding)][order(cv_values[genes_cv %in% rownames(vst_matrix_noncoding)], decreasing = TRUE)], num_genes_to_keep_noncoding)
+top_genes_noncoding <- genes_cv[cv_values > 0.6 & genes_cv %in% rownames(vst_matrix_noncoding)]
 vst_matrix_noncoding_top <- vst_matrix_noncoding[top_genes_noncoding, ]
 
-# Save top 20% VST expression matrix
-#write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_CNC_top20CV.txt"), sep = "\t", quote = FALSE)
-#write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_coding_top20CV.txt"), sep = "\t", quote = FALSE)
-#write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_noncoding_top20CV.txt"), sep = "\t", quote = FALSE)
+# Save filtered VST expression matrix
+# write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_CNC_CV_above2.txt"), sep = "\t", quote = FALSE)
+# write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_coding_CV_above2.txt"), sep = "\t", quote = FALSE)
+# write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_noncoding_CV_above2.txt"), sep = "\t", quote = FALSE)
 
 # *** 4 - Plot PCA (CNC) ***
 
