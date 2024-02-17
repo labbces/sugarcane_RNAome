@@ -17,4 +17,5 @@ in=`ls -1 *_mcl.txt`
 out=pearson_mcl/
 
 mkdir $out
-mcl $in -I ${num[${m}]} -te 1 --abc -analyze y -o ${out}out.${num[${m}]} 
+
+/usr/bin/time -v mcl $in -I ${num[${m}]} -te 1 --abc -analyze y -o ${out}out.${num[${m}]} 
