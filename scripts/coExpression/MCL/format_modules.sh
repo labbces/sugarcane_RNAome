@@ -5,22 +5,25 @@
 #$ -V
 #$ -pe smp 1
 
-IN_FILE=`ls -1 *_mcl.txt`
-OUT_FILE=pearson_mcl/out
+#IN_FILE=`ls -1 out.*`
+OUT_FILE=formated/out
+
 num=($(LC_NUMERIC="en_US.UTF-8". seq 1.3 0.5 6))
 
+mkdir formated
 # Get counts in each cluster
 for i in "${num[@]}"
 do
 	echo $i
-	awk -F' ' '{print NF}' ${OUT_FILE}.${i} > ${OUT_FILE}.${i}.number
+	awk -F' ' '{print NF}' out.${i} > ${OUT_FILE}.${i}.number
 done
 
 # Reformat modules output
+#dir=formated
+#cd $dir
 
-dir=pearson_mcl
-cd $dir
-for file in $(ls $dir | grep -v number | grep -v formated)
+#for file in $(ls $dir | grep -v number | grep -v formated)
+for file in $(ls out* | grep -v number | grep -v formated)
 do
 	echo $file	
 	rm -fv ${dir}/${file}.formated.csv
@@ -31,4 +34,4 @@ do
         	let count++
 	done
 done
-cd -
+#cd -
