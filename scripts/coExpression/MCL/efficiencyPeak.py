@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-file = pd.read_csv("../fiberAndSugar/perlo/MCL/CNC/clminfo.csv", sep=',', index_col=False)
+file = pd.read_csv("../fiberAndSugar/correr/MCL/CNC/clminfo.csv", sep=',', index_col=False)
 file['inflation'] = file['source-name'].str.extract('(\d+\.\d+)')
 
 fig, axs = plt.subplots(1, 3, figsize=(12, 5)) # create figure with subplots
