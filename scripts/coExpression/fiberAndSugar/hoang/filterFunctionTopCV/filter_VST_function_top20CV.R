@@ -1,6 +1,12 @@
 library(ggplot2)
 library(ggrepel)
 
+args <- commandArgs(trailingOnly = TRUE)
+
+if (length(args) != 2) {
+  stop("Usage: Rscript filter_VST_function_topCV.R cv_threshold")
+}
+
 # *** Pipeline ***
 # 1 - Import samples, VST expression matrix, tx2gene, cv
 # 2 - Filter matrix by function (CNC, coding and non-coding)
@@ -61,21 +67,22 @@ vst_matrix_noncoding <- vst_matrix[noncoding_genes, ]
 
 genes_cv <- cv$V1
 cv_values <- cv$V2
+threshold_cv <- as.numeric(args[1])
 
 # Filter genes with CV > 2.0 for CNC, coding and non-coding
-top_genes_CNC <- genes_cv[cv_values > 1.2 & genes_cv %in% rownames(vst_matrix_CNC)]
+top_genes_CNC <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_CNC)]
 vst_matrix_CNC_top <- vst_matrix_CNC[top_genes_CNC, ]
 
-top_genes_coding <- genes_cv[cv_values > 1.2 & genes_cv %in% rownames(vst_matrix_coding)]
+top_genes_coding <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_coding)]
 vst_matrix_coding_top <- vst_matrix_coding[top_genes_coding, ]
 
-top_genes_noncoding <- genes_cv[cv_values > 1.2 & genes_cv %in% rownames(vst_matrix_noncoding)]
+top_genes_noncoding <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_noncoding)]
 vst_matrix_noncoding_top <- vst_matrix_noncoding[top_genes_noncoding, ]
 
 # Save filtered VST expression matrix
-write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_CNC_CV_above1.2.txt"), sep = "\t", quote = FALSE)
-write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_coding_CV_above1.2.txt"), sep = "\t", quote = FALSE)
-write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_noncoding_CV_above1.2.txt"), sep = "\t", quote = FALSE)
+#write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_CNC_CV_above1.2.txt"), sep = "\t", quote = FALSE)
+#write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_coding_CV_above1.2.txt"), sep = "\t", quote = FALSE)
+#write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_noncoding_CV_above1.2.txt"), sep = "\t", quote = FALSE)
 
 # *** 4 - Plot PCA (CNC) ***
 
@@ -122,8 +129,9 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$genotype
 
 # Saving PCA
 #print(pca_plot)
-print("saving PCA as: Hoang2017_VST_PCA_withTissues_CNC_top20CV.png")
-ggsave("Hoang2017_VST_PCA_withTissues_CNC_top20CV.png", pca_plot, bg = "white")
+output_filename <- paste0("Hoang2017_VST_PCA_withTissues_CNC_", threshold_cv, ".png")
+print("Saving CNC PCA Tissues")
+ggsave(output_filename, pca_plot, bg = "white")
 
 # *** 4 - PCA of sugar content (CNC)
 
@@ -160,8 +168,9 @@ pca_sugar_content_plot <- pca_sugar_content_plot +
 
 # *** Saving PCA ***
 #print(pca_sugar_content_plot)
-print("saving PCA of sugar content as: Hoang2017_VST_PCA_sugarContent_CNC_top20CV.png")
-ggsave("Hoang2017_VST_PCA_sugarContent_CNC_top20CV.png", pca_sugar_content_plot, bg = "white")
+print("Saving CNC PCA of sugar content")
+output_filename <- paste0("Hoang2017_VST_PCA_sugarContent_CNC_", threshold_cv, ".png")
+ggsave(output_filename, pca_plot, bg = "white")
 
 # *** 4 - Plot PCA (coding) ***
 
@@ -208,8 +217,10 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$genotype
 
 # Saving PCA
 #print(pca_plot)
-print("saving PCA as: Hoang2017_VST_PCA_withTissues_coding_top20CV.png")
-ggsave("Hoang2017_VST_PCA_withTissues_coding_top20CV.png", pca_plot, bg = "white")
+print("Saving coding PCA Tissues")
+output_filename <- paste0("Hoang2017_VST_PCA_withTissues_coding_", threshold_cv, ".png")
+ggsave(output_filename, pca_plot, bg = "white")
+
 
 # *** 4 - PCA of sugar content (coding)
 
@@ -246,8 +257,9 @@ pca_sugar_content_plot <- pca_sugar_content_plot +
 
 # *** Saving PCA ***
 #print(pca_sugar_content_plot)
-print("saving PCA of sugar content as: Hoang2017_VST_PCA_sugarContent_coding_top20CV.png")
-ggsave("Hoang2017_VST_PCA_sugarContent_coding_top20CV.png", pca_sugar_content_plot, bg = "white")
+print("Saving coding PCA of sugar content")
+output_filename <- paste0("Hoang2017_VST_PCA_sugarContent_coding_", threshold_cv, ".png")
+ggsave(output_filename, pca_plot, bg = "white")
 
 # *** 4 - Plot PCA (non-coding) ***
 
@@ -294,8 +306,9 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$genotype
 
 # Saving PCA
 #print(pca_plot)
-print("saving PCA as: Hoang2017_VST_PCA_withTissues_noncoding_top20CV.png")
-ggsave("Hoang2017_VST_PCA_withTissues_noncoding_top20CV.png", pca_plot, bg = "white")
+print("Saving non-coding PCA Tissues")
+output_filename <- paste0("Hoang2017_VST_PCA_withTissues_noncoding_", threshold_cv, ".png")
+ggsave(output_filename, pca_plot, bg = "white")
 
 # *** 4 - PCA of sugar content (non-coding)
 
@@ -332,5 +345,6 @@ pca_sugar_content_plot <- pca_sugar_content_plot +
 
 # *** Saving PCA ***
 #print(pca_sugar_content_plot)
-print("saving PCA of sugar content as: Hoang2017_VST_PCA_sugarContent_noncoding_top20CV.png")
-ggsave("Hoang2017_VST_PCA_sugarContent_noncoding_top20CV.png", pca_sugar_content_plot, bg = "white")
+print("Saving CNC PCA of sugar content")
+output_filename <- paste0("Hoang2017_VST_PCA_sugarContent_noncoding_", threshold_cv, ".png")
+ggsave(output_filename, pca_plot, bg = "white")
