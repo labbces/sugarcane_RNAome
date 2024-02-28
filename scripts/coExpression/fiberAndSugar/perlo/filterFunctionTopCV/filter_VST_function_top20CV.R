@@ -1,6 +1,12 @@
 library(ggplot2)
 library(ggrepel)
 
+args <- commandArgs(trailingOnly = TRUE)
+
+if (length(args) != 2) {
+  stop("Usage: Rscript filter_VST_function_topCV.R cv_threshold")
+}
+
 # *** Pipeline ***
 # 1 - Import samples, VST expression matrix, tx2gene, cv
 # 2 - Filter matrix by function (CNC, coding and non-coding)
@@ -61,6 +67,7 @@ vst_matrix_noncoding <- vst_matrix[noncoding_genes, ]
 
 genes_cv <- cv$V1
 cv_values <- cv$V2
+threshold_cv <- as.numeric(args[1])
 
 # Filter genes with CV > 2.0 for CNC, coding and non-coding
 top_genes_CNC <- genes_cv[cv_values > 0.6 & genes_cv %in% rownames(vst_matrix_CNC)]
@@ -118,10 +125,10 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$stage, l
 
 # Saving PCA
 #print(pca_plot)
-print("saving PCA as: Perlo2022_VST_PCA_withTissues_CNC_top20CV.png")
-ggsave("Perlo2022_VST_PCA_withTissues_CNC_top20CV.png", pca_plot, bg = "white")
+output_filename <- paste0("Perlo2022_VST_PCA_withTissues_CNC_", threshold_cv, ".png")
+print("Saving CNC PCA Tissues")
+ggsave(output_filename, pca_plot, bg = "white")
 
-## aa
 # *** 4 - Plot PCA (coding) ***
 
 # Calculate PCA with all genes using prcomp
@@ -163,8 +170,9 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$stage, l
 
 # Saving PCA
 #print(pca_plot)
-print("saving PCA as: Perlo2022_VST_PCA_withTissues_coding_top20CV.png")
-ggsave("Perlo2022_VST_PCA_withTissues_coding_top20CV.png", pca_plot, bg = "white")
+output_filename <- paste0("Perlo2022_VST_PCA_withTissues_coding_", threshold_cv, ".png")
+print("Saving coding PCA Tissues")
+ggsave(output_filename, pca_plot, bg = "white")
 
 # *** 4 - Plot PCA (non-coding) ***
 
@@ -207,5 +215,6 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$stage, l
 
 # Saving PCA
 #print(pca_plot)
-print("saving PCA as: Perlo2022_VST_PCA_withTissues_noncoding_top20CV.png")
-ggsave("Perlo2022_VST_PCA_withTissues_noncoding_top20CV.png", pca_plot, bg = "white")
+output_filename <- paste0("Perlo2022_VST_PCA_withTissues_noncoding_", threshold_cv, ".png")
+print("Saving non-coding PCA Tissues")
+ggsave(output_filename, pca_plot, bg = "white")
