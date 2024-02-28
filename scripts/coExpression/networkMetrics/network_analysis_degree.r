@@ -1,21 +1,25 @@
 library(igraph, lib.loc="/Storage/data1/jorge.munoz/NRGSC.new/libraries")
 
+args <- commandArgs(trailingOnly = TRUE)
 
-network_file="Perlo2022_mcl_out.txt"
+if (length(args) != 1) {
+  stop("Usage: Rscript network_analysis_degree.r network_file")
+}
 
-adjacency_list <- read.table(network_file, header = F)
+# Read input
+network_file <- args[1]
+
+adjacency_list <- read.table(network_file, header = FALSE)
 colnames(adjacency_list) <- c("V1", "V2", "weight")
 
-G <- simplify(graph_from_data_frame(adjacency_list, directed = F), remove.multiple = T)
+G <- simplify(graph_from_data_frame(adjacency_list, directed = FALSE), remove.multiple = TRUE)
 
+# Calculating and writing degree
 names <- V(G)[order(degree(G), decreasing = TRUE)]
 hub <- degree(G)[names]
 names(hub) <- names(degree(G)[names])
 hub <- as.data.frame(hub)
-write.table(rownames(hub), "Perlo2022_mcl_out_degree.tsv", col.names = F, quote = F, row.names = F)
 
-names_b <- V(G)[order(betweenness(G), decreasing = TRUE)]
-hub_b <- betweenness(G)[names]
-names_b(hub_b) <- names(betweenness(G)[names_b])
-hub_b <- as.data.frame(hub_b)
-write.table(rownames(hub_b), "Perlo2022_mcl_out_betweenness.tsv", col.names = F, quote = F, row.names = F)
+degree_output <- paste0(tools::file_path_sans_ext(network_file), "_degree.tsv")
+
+write.table(rownames(hub), degree_output, col.names = FALSE, quote = FALSE, row.names = FALSE)

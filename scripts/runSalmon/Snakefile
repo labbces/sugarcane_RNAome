@@ -24,6 +24,7 @@ SEQTYPE='PAIRED'
 
 reference_transcriptome = "/Storage/data1/riano/Sugarcane/Pantranscriptome/Assemblies/CD-HIT_48_genotypes_transcriptome_salmonInx/"
 
+fastq_dump = config["software"]["fastq-dump"]
 ffq = config["software"]["ffq"]
 bbduk = config["software"]["bbduk"]
 salmon = config["software"]["salmon"]
@@ -36,6 +37,7 @@ rule all:
 		"preliminar_report.tsv",
 		expand("{genotype}_{seqtype}_quantmerge.txt", genotype=GENOTYPE, seqtype=SEQTYPE)
 
+'''
 rule download_fastq:
 	"""
 	Baixa os arquivos brutos (fastq.gz) das leituras 1 e 2 das amostras do genotipo {params.genotype}.
@@ -59,6 +61,25 @@ rule download_fastq:
 		{ffq} --ftp {wildcards.sample} | grep -Eo '\"url\": \"[^\"]*\"' | grep -o '\"[^\"]*\"$' | xargs wget && \
 		cd -
 		"""
+'''
+
+rule download_fastq:
+	"""
+	Baixa arquivos brutos (fq) das leituras 1 e 2 - com fastq dump
+	"""
+	output:
+		R1 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_1.fastq",
+		R2 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.fastq"
+	threads: 1
+	resources:
+		load=2
+	params:
+		genotype="{genotype}",
+		server="figsrv"
+	log:
+		"datasets_{genotype}/logs/download_fastq/{sample}.log"
+	shell:
+		"{fastq_dump} --defline-seq '@$sn[_$rn]/$ri' --split-files {wildcards.sample} -O datasets_{params.genotype}/1_raw_reads_in_fastq_format 2> {log}"
 
 rule bbduk:
 	"""
@@ -68,11 +89,11 @@ rule bbduk:
 	"""
 	priority: 1
 	input:
-		R1 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_1.fastq.gz",
-		R2 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.fastq.gz"
+		R1 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_1.fastq",
+		R2 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.fastq"
 	output:
-		R1 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R1.fastq.gz",
-		R2 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R2.fastq.gz",
+		R1 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R1.fastq",
+		R2 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R2.fastq",
 		refstats = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.refstats",
 		stats = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.stats"
 	log:
@@ -105,10 +126,10 @@ rule count_raw_sequences:
 	"""
 	priority: 1
 	input:
-		R1 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_1.fastq.gz",
-		R2 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.fastq.gz",
-		R1_trimmed = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R1.fastq.gz",
-		R2_trimmed = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R2.fastq.gz"
+		R1 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_1.fastq",
+		R2 = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.fastq",
+		R1_trimmed = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R1.fastq",
+		R2_trimmed = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R2.fastq"
 	output:
 		R1_rawstats = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_1.stats.txt",
 		R2_rawstats = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.stats.txt"
@@ -161,8 +182,8 @@ rule salmon_quant:
 	priority: 1
 	input:
 		salmon_index = "/Storage/data1/riano/Sugarcane/Pantranscriptome/Assemblies/CD-HIT_48_genotypes_transcriptome_salmonInx/",
-                R1 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R1.fastq.gz",
-                R2 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R2.fastq.gz"
+                R1 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R1.fastq",
+                R2 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R2.fastq"
 	output:
 		"datasets_{genotype}/3_salmon/quant/{sample}/aux_info/meta_info.json",
 		"datasets_{genotype}/3_salmon/quant/{sample}/quant.sf"
@@ -170,7 +191,7 @@ rule salmon_quant:
 		server="figsrv",
 		genotype="{genotype}"	
 	resources:
-		load=6
+		load=3
 	threads: 6
 	log:
 		"datasets_{genotype}/logs/salmon/quant/{sample}.log"
@@ -187,8 +208,8 @@ rule count_trimmed_sequences:
 	"""
 	priority: 1
 	input:
-		R1 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R1.fastq.gz",
-		R2 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R2.fastq.gz",
+		R1 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R1.fastq",
+		R2 = "datasets_{genotype}/2_trimmed_reads/{sample}.trimmed.R2.fastq",
 		salmon_quant = "datasets_{genotype}/3_salmon/quant/{sample}/quant.sf",
 		R1_rawstats = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_1.stats.txt",
 		R2_rawstats = "datasets_{genotype}/1_raw_reads_in_fastq_format/{sample}_2.stats.txt"
