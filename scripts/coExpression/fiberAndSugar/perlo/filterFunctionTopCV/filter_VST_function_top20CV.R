@@ -110,7 +110,7 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$stage, l
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
-    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
+    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 50,
     size = 3, color = "black" # Definir a cor do texto do rótulo como preto
   ) +
   labs(title = "PCA - Perlo2022 Contrasting Genotypes in Fiber and Sugar (CNC)",
@@ -156,7 +156,7 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$stage, l
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
-    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
+    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 50,
     size = 3, color = "black" # Definir a cor do texto do rótulo como preto
   ) +
   labs(title = "PCA - Perlo2022 Contrasting Genotypes in Fiber and Sugar (protein-coding)",
@@ -202,7 +202,7 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$stage, l
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
-    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 15,
+    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 50,
     size = 3, color = "black" # Definir a cor do texto do rótulo como preto
   ) +
   labs(title = "PCA - Perlo2022 Contrasting Genotypes in Fiber and Sugar (non-coding)",
