@@ -3,7 +3,7 @@ library(ggrepel)
 
 args <- commandArgs(trailingOnly = TRUE)
 
-if (length(args) != 2) {
+if (length(args) != 1) {
   stop("Usage: Rscript filter_VST_function_topCV.R cv_threshold")
 }
 
