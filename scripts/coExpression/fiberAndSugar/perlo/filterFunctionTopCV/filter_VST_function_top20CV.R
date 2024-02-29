@@ -34,8 +34,8 @@ setwd(HOME_DIR)
 # Read samples file 
 samples <- read.table(file.path(HOME_DIR, 'infos_perlo_metadata.tsv'), header = TRUE, sep = '\t')
 
-#vst_matrix <- read.table(file.path(HOME_DIR, "10k_Perlo2022_counts_filters_VST.txt"))
-vst_matrix <- read.table(file.path(HOME_DIR, "Perlo2022_counts_filters_VST.txt"))
+#vst_matrix <- read.table(file.path(HOME_DIR, "10k_Perlo2022_counts_filters_VST.txt"), check.names = FALSE)
+vst_matrix <- read.table(file.path(HOME_DIR, "Perlo2022_counts_filters_VST.txt"), check.names = FALSE)
 
 # Set tx2gene file (clusters from OrthoFinder and MMSeqs2)
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv"), header = FALSE, sep = "\t")
@@ -68,21 +68,26 @@ vst_matrix_noncoding <- vst_matrix[noncoding_genes, ]
 genes_cv <- cv$V1
 cv_values <- cv$V2
 threshold_cv <- as.numeric(args[1])
+#threshold_cv <- 1
 
 # Filter genes with CV > 2.0 for CNC, coding and non-coding
-top_genes_CNC <- genes_cv[cv_values > 0.6 & genes_cv %in% rownames(vst_matrix_CNC)]
+top_genes_CNC <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_CNC)]
 vst_matrix_CNC_top <- vst_matrix_CNC[top_genes_CNC, ]
 
-top_genes_coding <- genes_cv[cv_values > 0.6 & genes_cv %in% rownames(vst_matrix_coding)]
+top_genes_coding <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_coding)]
 vst_matrix_coding_top <- vst_matrix_coding[top_genes_coding, ]
 
-top_genes_noncoding <- genes_cv[cv_values > 0.6 & genes_cv %in% rownames(vst_matrix_noncoding)]
+top_genes_noncoding <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_noncoding)]
 vst_matrix_noncoding_top <- vst_matrix_noncoding[top_genes_noncoding, ]
 
 # Save filtered VST expression matrix
-write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_CNC_CV_above0.6.txt"), sep = "\t", quote = FALSE)
-write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_coding_CV_above0.6.txt"), sep = "\t", quote = FALSE)
-write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Perlo2022_counts_filters_VST_noncoding_CV_above0.6.txt"), sep = "\t", quote = FALSE)
+output_matrix_CNC <- paste0("Perlo2022_counts_filters_VST_CNC_CV_above_", threshold_cv, ".txt")
+output_matrix_coding <- paste0("Perlo2022_counts_filters_VST_coding_CV_above_", threshold_cv, ".txt")
+output_matrix_noncoding <- paste0("Perlo2022_counts_filters_VST_noncoding_CV_above_", threshold_cv, ".txt")
+
+write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, output_matrix_CNC), sep = "\t", quote = FALSE)
+write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, output_matrix_coding), sep = "\t", quote = FALSE)
+write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, output_matrix_noncoding), sep = "\t", quote = FALSE)
 
 # *** 4 - Plot PCA (CNC) ***
 
@@ -93,8 +98,9 @@ pca_result <- prcomp(t(vst_matrix_CNC_top), scale. = TRUE)
 pca_scores <- as.data.frame(pca_result$x)
 
 pca_scores$genotype <- sub(".*_([^_]+)$", "\\1", rownames(pca_scores))
-pca_scores$internode_type <- sub("^(Internode_(?:\\d+|Ex\\.\\d+))_\\d+\\.weeks_.*", "\\1", rownames(pca_scores))
-pca_scores$replicate <- sub(".*_(\\d+\\.weeks)_.*", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^.*(Internode(?:_\\d+)?(?:_Ex-\\d+)?)_.*", "\\1", rownames(pca_scores))
+pca_scores$replicate <- sub(".*_(\\d+-weeks)_.*", "\\1", rownames(pca_scores))
+
 pca_scores$stage <- paste(pca_scores$internode_type, pca_scores$replicate, sep = " ")
 
 # *** Plotar PCA usando ggplot2 ***
@@ -138,8 +144,9 @@ pca_result <- prcomp(t(vst_matrix_coding_top), scale. = TRUE)
 pca_scores <- as.data.frame(pca_result$x)
 
 pca_scores$genotype <- sub(".*_([^_]+)$", "\\1", rownames(pca_scores))
-pca_scores$internode_type <- sub("^(Internode_(?:\\d+|Ex\\.\\d+))_\\d+\\.weeks_.*", "\\1", rownames(pca_scores))
-pca_scores$replicate <- sub(".*_(\\d+\\.weeks)_.*", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^.*(Internode(?:_\\d+)?(?:_Ex-\\d+)?)_.*", "\\1", rownames(pca_scores))
+pca_scores$replicate <- sub(".*_(\\d+-weeks)_.*", "\\1", rownames(pca_scores))
+
 pca_scores$stage <- paste(pca_scores$internode_type, pca_scores$replicate, sep = " ")
 
 # *** Plotar PCA usando ggplot2 ***
@@ -183,8 +190,9 @@ pca_result <- prcomp(t(vst_matrix_noncoding_top), scale. = TRUE)
 pca_scores <- as.data.frame(pca_result$x)
 
 pca_scores$genotype <- sub(".*_([^_]+)$", "\\1", rownames(pca_scores))
-pca_scores$internode_type <- sub("^(Internode_(?:\\d+|Ex\\.\\d+))_\\d+\\.weeks_.*", "\\1", rownames(pca_scores))
-pca_scores$replicate <- sub(".*_(\\d+\\.weeks)_.*", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^.*(Internode(?:_\\d+)?(?:_Ex-\\d+)?)_.*", "\\1", rownames(pca_scores))
+pca_scores$replicate <- sub(".*_(\\d+-weeks)_.*", "\\1", rownames(pca_scores))
+
 pca_scores$stage <- paste(pca_scores$internode_type, pca_scores$replicate, sep = " ")
 
 # *** Plotar PCA usando ggplot2 ***
