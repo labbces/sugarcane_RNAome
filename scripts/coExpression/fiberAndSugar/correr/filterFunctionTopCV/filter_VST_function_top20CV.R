@@ -102,8 +102,11 @@ pca_scores$biomass_group <- sub(".*_([^_]+)$", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
+print("PCs")
+print(percentVar)
 
-pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$biomass_group, label = pca_scores$genotype)) +
+# Plot PC1 vs PC3
+pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC3, color = pca_scores$biomass_group, label = pca_scores$genotype)) +
   geom_point(size = 2) +
   geom_text_repel(
     box.padding = 0.1, point.padding = 0.1,
@@ -112,7 +115,7 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$biomass_
   ) +
   labs(title = "PCA - Correr2020 Contrasting Genotypes in Fiber and Sugar (CNC)",
        x = paste0("PC1 ", "(",percentVar[1], "%)"),
-       y = paste0("PC2 ", "(",percentVar[2], "%)"),
+       y = paste0("PC3 ", "(",percentVar[3], "%)"),
        color = "Groups") +
   stat_ellipse(geom = "polygon", level=0.95, alpha=0.1, aes(fill = pca_scores$biomass_group), color=NA, show.legend = FALSE) + # add ellipse with 95% confidence intervals
   theme_classic() +
@@ -128,9 +131,40 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$biomass_
 
 # Saving PCA
 #print(pca_plot)
-output_filename <- paste0("Correr2020_VST_PCA_withTissues_CNC_", threshold_cv, ".png")
+output_filename <- paste0("Correr2020_VST_PCA_withTissues_CNC_PC1vsPC3", threshold_cv, ".png")
 print("Saving CNC PCA Tissues")
 ggsave(output_filename, pca_plot, bg = "white")
+
+# Plot PC2 vs PC3
+pca_plot <- ggplot(pca_scores, aes(x = PC2, y = PC3, color = pca_scores$biomass_group, label = pca_scores$genotype)) +
+  geom_point(size = 2) +
+  geom_text_repel(
+    box.padding = 0.1, point.padding = 0.1,
+    segment.color = "black", segment.size = 0.1, segment.alpha = 0.5, max.overlaps = 50,
+    size = 3, color = "black" # Definir a cor do texto do rótulo como preto
+  ) +
+  labs(title = "PCA - Correr2020 Contrasting Genotypes in Fiber and Sugar (CNC)",
+       x = paste0("PC2 ", "(",percentVar[2], "%)"),
+       y = paste0("PC3 ", "(",percentVar[3], "%)"),
+       color = "Groups") +
+  stat_ellipse(geom = "polygon", level=0.95, alpha=0.1, aes(fill = pca_scores$biomass_group), color=NA, show.legend = FALSE) + # add ellipse with 95% confidence intervals
+  theme_classic() +
+  theme(
+    axis.line = element_blank(),  # Linha dos eixos X e Y
+    panel.grid.major = element_line(color = alpha("gray", 0.2)),  # Remover linhas de grade principais
+    panel.grid.minor = element_line(color = alpha("gray", 0.2)),  # Remover linhas de grade secundárias
+    panel.border = element_rect(color = "transparent", fill = NA),  # Cor da borda do painel
+    plot.background = element_rect(fill = "white"),  # Cor do fundo do gráfico
+  ) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +  # Adicionar linha pontilhada no eixo x
+  geom_vline(xintercept = 0, linetype = "dashed", color = "black")   # Adicionar linha pontilhada no eixo y
+
+# Saving PCA
+#print(pca_plot)
+output_filename <- paste0("Correr2020_VST_PCA_withTissues_CNC_PC2vsPC3", threshold_cv, ".png")
+print("Saving CNC PCA Tissues")
+ggsave(output_filename, pca_plot, bg = "white")
+######
 
 # *** 4 - Plot PCA (coding) ***
 
@@ -171,9 +205,10 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$biomass_
 
 # Saving PCA
 #print(pca_plot)
-output_filename <- paste0("Correr2020_VST_PCA_withTissues_coding_", threshold_cv, ".png")
-print("Saving noncoding PCA Tissues")
-ggsave(output_filename, pca_plot, bg = "white")
+
+##output_filename <- paste0("Correr2020_VST_PCA_withTissues_coding_", threshold_cv, ".png")
+##print("Saving noncoding PCA Tissues")
+##ggsave(output_filename, pca_plot, bg = "white")
 
 # *** 4 - Plot PCA (non-coding) ***
 
@@ -214,6 +249,7 @@ pca_plot <- ggplot(pca_scores, aes(x = PC1, y = PC2, color = pca_scores$biomass_
 
 # Saving PCA
 #print(pca_plot)
-output_filename <- paste0("Correr2020_VST_PCA_withTissues_noncoding_", threshold_cv, ".png")
-print("Saving noncoding PCA Tissues")
-ggsave(output_filename, pca_plot, bg = "white")
+
+##output_filename <- paste0("Correr2020_VST_PCA_withTissues_noncoding_", threshold_cv, ".png")
+##print("Saving noncoding PCA Tissues")
+##ggsave(output_filename, pca_plot, bg = "white")
