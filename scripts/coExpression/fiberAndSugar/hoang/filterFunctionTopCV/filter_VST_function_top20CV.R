@@ -35,7 +35,8 @@ setwd(HOME_DIR)
 samples <- read.table(file.path(HOME_DIR, 'infos_hoang_metadata.tsv'), header = TRUE, skip=1, sep = '\t')
 
 #vst_matrix <- read.table(file.path(HOME_DIR, "10k_Hoang2017_counts_filters_VST.txt"))
-vst_matrix <- read.table(file.path(HOME_DIR, "Hoang2017_counts_filters_VST.txt"))
+#vst_matrix <- read.table(file.path(HOME_DIR, "10k_Hoang2017_counts_filters_VST.txt"), check.names = FALSE)
+vst_matrix <- read.table(file.path(HOME_DIR, "Hoang2017_counts_filters_VST.txt"), check.names = FALSE)
 
 # Set tx2gene file (clusters from OrthoFinder and MMSeqs2)
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv"), header = FALSE, sep = "\t")
@@ -68,6 +69,7 @@ vst_matrix_noncoding <- vst_matrix[noncoding_genes, ]
 genes_cv <- cv$V1
 cv_values <- cv$V2
 threshold_cv <- as.numeric(args[1])
+#threshold_cv <- 1
 
 # Filter genes with CV > 2.0 for CNC, coding and non-coding
 top_genes_CNC <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_CNC)]
@@ -80,10 +82,13 @@ top_genes_noncoding <- genes_cv[cv_values > threshold_cv & genes_cv %in% rowname
 vst_matrix_noncoding_top <- vst_matrix_noncoding[top_genes_noncoding, ]
 
 # Save filtered VST expression matrix
-#write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_CNC_CV_above1.2.txt"), sep = "\t", quote = FALSE)
-#write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_coding_CV_above1.2.txt"), sep = "\t", quote = FALSE)
-#write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Hoang2017_counts_filters_VST_noncoding_CV_above1.2.txt"), sep = "\t", quote = FALSE)
+output_matrix_CNC <- paste0("Hoang2017_counts_filters_VST_CNC_CV_above_", threshold_cv, ".txt")
+output_matrix_coding <- paste0("Hoang2017_counts_filters_VST_coding_CV_above_", threshold_cv, ".txt")
+output_matrix_noncoding <- paste0("Hoang2017_counts_filters_VST_noncoding_CV_above_", threshold_cv, ".txt")
 
+write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, output_matrix_CNC), sep = "\t", quote = FALSE)
+write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, output_matrix_coding), sep = "\t", quote = FALSE)
+write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, output_matrix_noncoding), sep = "\t", quote = FALSE)
 # *** 4 - Plot PCA (CNC) ***
 
 # Calculate PCA with all genes using prcomp
@@ -98,7 +103,8 @@ pca_scores$sugar_content <- sub(".*_high.sugar_.*", "high", rownames(pca_scores)
 pca_scores$sugar_content <- sub(".*_low.sugar_.*", "low", pca_scores$sugar_content)
 pca_scores$sugar_content <- sub(".*_none_.*", "none", pca_scores$sugar_content)
 
-pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+#pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^.*?_.*?_(top|bottom)-internode.*", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
@@ -186,7 +192,8 @@ pca_scores$sugar_content <- sub(".*_high.sugar_.*", "high", rownames(pca_scores)
 pca_scores$sugar_content <- sub(".*_low.sugar_.*", "low", pca_scores$sugar_content)
 pca_scores$sugar_content <- sub(".*_none_.*", "none", pca_scores$sugar_content)
 
-pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+#pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^.*?_.*?_(top|bottom)-internode.*", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
@@ -275,7 +282,8 @@ pca_scores$sugar_content <- sub(".*_high.sugar_.*", "high", rownames(pca_scores)
 pca_scores$sugar_content <- sub(".*_low.sugar_.*", "low", pca_scores$sugar_content)
 pca_scores$sugar_content <- sub(".*_none_.*", "none", pca_scores$sugar_content)
 
-pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+#pca_scores$internode_type <- sub("^.*?_.*?_(.*?)\\..*", "\\1", rownames(pca_scores))
+pca_scores$internode_type <- sub("^.*?_.*?_(top|bottom)-internode.*", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
