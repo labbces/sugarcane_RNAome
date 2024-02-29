@@ -34,7 +34,8 @@ setwd(HOME_DIR)
 # Read samples file 
 samples <- read.table(file.path(HOME_DIR, 'infos_correr_metadata.tsv'), header = TRUE, sep = '\t')
 
-vst_matrix <- read.table(file.path(HOME_DIR, "Correr2020_counts_filters_VST.txt"))
+#vst_matrix <- read.table(file.path(HOME_DIR, "10k_Correr2020_counts_filters_VST.txt"), check.names = FALSE)
+vst_matrix <- read.table(file.path(HOME_DIR, "Correr2020_counts_filters_VST.txt"), check.names = FALSE)
 
 # Set tx2gene file (clusters from OrthoFinder and MMSeqs2)
 tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv"), header = FALSE, sep = "\t")
@@ -42,6 +43,7 @@ tx2gene <- read.table(file.path(HOME_DIR, "panTranscriptome_panRNAomeClassificat
 print("tx2gene file (clusters from MMSeqs2 + OrthoFinder)")
 tx2gene
 
+#cv <- read.table(file.path(HOME_DIR, "10k_Correr2020_counts_filters_VST_CV.txt"))
 cv <- read.table(file.path(HOME_DIR, "Correr2020_counts_filters_VST_CV.txt"))
 
 # *** 2 - Filter matrix by function (CNC, coding and non-coding) ***
@@ -66,21 +68,26 @@ vst_matrix_noncoding <- vst_matrix[noncoding_genes, ]
 genes_cv <- cv$V1
 cv_values <- cv$V2
 threshold_cv <- as.numeric(args[1])
+#threshold_cv <- 1
 
 # Filter genes with CV > 2.0 for CNC, coding and non-coding
-top_genes_CNC <- genes_cv[cv_values > 2.0 & genes_cv %in% rownames(vst_matrix_CNC)]
+top_genes_CNC <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_CNC)]
 vst_matrix_CNC_top <- vst_matrix_CNC[top_genes_CNC, ]
 
-top_genes_coding <- genes_cv[cv_values > 2.0 & genes_cv %in% rownames(vst_matrix_coding)]
+top_genes_coding <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_coding)]
 vst_matrix_coding_top <- vst_matrix_coding[top_genes_coding, ]
 
-top_genes_noncoding <- genes_cv[cv_values > 2.0 & genes_cv %in% rownames(vst_matrix_noncoding)]
+top_genes_noncoding <- genes_cv[cv_values > threshold_cv & genes_cv %in% rownames(vst_matrix_noncoding)]
 vst_matrix_noncoding_top <- vst_matrix_noncoding[top_genes_noncoding, ]
 
 # Save filtered VST expression matrix
-write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, "Correr2020_counts_filters_VST_CNC_CV_above2.txt"), sep = "\t", quote = FALSE)
-write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, "Correr2020_counts_filters_VST_coding_CV_above2.txt"), sep = "\t", quote = FALSE)
-write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, "Correr2020_counts_filters_VST_noncoding_CV_above2.txt"), sep = "\t", quote = FALSE)
+output_matrix_CNC <- paste0("Correr2020_counts_filters_VST_CNC_CV_above_", threshold_cv, ".txt")
+output_matrix_coding <- paste0("Correr2020_counts_filters_VST_coding_CV_above_", threshold_cv, ".txt")
+output_matrix_noncoding <- paste0("Correr2020_counts_filters_VST_noncoding_CV_above_", threshold_cv, ".txt")
+
+write.table(vst_matrix_CNC_top, file = file.path(HOME_DIR, output_matrix_CNC), sep = "\t", quote = FALSE)
+write.table(vst_matrix_coding_top, file = file.path(HOME_DIR, output_matrix_coding), sep = "\t", quote = FALSE)
+write.table(vst_matrix_noncoding_top, file = file.path(HOME_DIR, output_matrix_noncoding), sep = "\t", quote = FALSE)
 
 # *** 4 - Plot PCA (CNC) ***
 
@@ -90,30 +97,8 @@ pca_result <- prcomp(t(vst_matrix_CNC_top), scale. = TRUE)
 # Get PC scores
 pca_scores <- as.data.frame(pca_result$x)
 
-# Add biomass column
-samples$biomass_group <- sub(".*_(high|low)", "\\1", samples$Run)
-samples$biomass_group
-
-# Add genotype column
-samples$genotype <- sub("^(.*?)_.*", "\\1", samples$Run)
-samples$genotype
-
-print("ddsColl_top_20_percent genotypes")
-samples$genotype
-
-print("ddsColl_top_20_percent internode types")
-samples$biomass_group
-
-print("ddsColl_top_20_percent samples")
-samples$Run
-
-unique_genotypes <- unique(samples$genotype)
-unique_genotypes_fixed <- gsub("[-–]", ".", unique_genotypes)
-pca_scores$genotype <- rep(unique_genotypes_fixed, each = nrow(pca_scores) / length(unique_genotypes_fixed))
-
-unique_biomass_groups <- unique(samples$biomass_group)
-unique_biomass_groups_fixed <- gsub("[-–]", ".", unique_biomass_groups)
-pca_scores$biomass_group <- rep(unique_biomass_groups_fixed, each = nrow(pca_scores) / length(unique_biomass_groups_fixed))
+pca_scores$genotype <- sub("^([^_]+).*", "\\1", rownames(pca_scores))
+pca_scores$biomass_group <- sub(".*_([^_]+)$", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
@@ -155,30 +140,8 @@ pca_result <- prcomp(t(vst_matrix_coding_top), scale. = TRUE)
 # Get PC scores
 pca_scores <- as.data.frame(pca_result$x)
 
-# Add biomass column
-samples$biomass_group <- sub(".*_(high|low)", "\\1", samples$Run)
-samples$biomass_group
-
-# Add genotype column
-samples$genotype <- sub("^(.*?)_.*", "\\1", samples$Run)
-samples$genotype
-
-print("ddsColl_top_20_percent genotypes")
-samples$genotype
-
-print("ddsColl_top_20_percent internode types")
-samples$biomass_group
-
-print("ddsColl_top_20_percent samples")
-samples$Run
-
-unique_genotypes <- unique(samples$genotype)
-unique_genotypes_fixed <- gsub("[-–]", ".", unique_genotypes)
-pca_scores$genotype <- rep(unique_genotypes_fixed, each = nrow(pca_scores) / length(unique_genotypes_fixed))
-
-unique_biomass_groups <- unique(samples$biomass_group)
-unique_biomass_groups_fixed <- gsub("[-–]", ".", unique_biomass_groups)
-pca_scores$biomass_group <- rep(unique_biomass_groups_fixed, each = nrow(pca_scores) / length(unique_biomass_groups_fixed))
+pca_scores$genotype <- sub("^([^_]+).*", "\\1", rownames(pca_scores))
+pca_scores$biomass_group <- sub(".*_([^_]+)$", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
@@ -220,30 +183,8 @@ pca_result <- prcomp(t(vst_matrix_noncoding_top), scale. = TRUE)
 # Get PC scores
 pca_scores <- as.data.frame(pca_result$x)
 
-# Add biomass column
-samples$biomass_group <- sub(".*_(high|low)", "\\1", samples$Run)
-samples$biomass_group
-
-# Add genotype column
-samples$genotype <- sub("^(.*?)_.*", "\\1", samples$Run)
-samples$genotype
-
-print("ddsColl_top_20_percent genotypes")
-samples$genotype
-
-print("ddsColl_top_20_percent internode types")
-samples$biomass_group
-
-print("ddsColl_top_20_percent samples")
-samples$Run
-
-unique_genotypes <- unique(samples$genotype)
-unique_genotypes_fixed <- gsub("[-–]", ".", unique_genotypes)
-pca_scores$genotype <- rep(unique_genotypes_fixed, each = nrow(pca_scores) / length(unique_genotypes_fixed))
-
-unique_biomass_groups <- unique(samples$biomass_group)
-unique_biomass_groups_fixed <- gsub("[-–]", ".", unique_biomass_groups)
-pca_scores$biomass_group <- rep(unique_biomass_groups_fixed, each = nrow(pca_scores) / length(unique_biomass_groups_fixed))
+pca_scores$genotype <- sub("^([^_]+).*", "\\1", rownames(pca_scores))
+pca_scores$biomass_group <- sub(".*_([^_]+)$", "\\1", rownames(pca_scores))
 
 # Plot PCA using ggplot2
 percentVar <- round(100 * pca_result$sdev^2 / sum(pca_result$sdev^2), 1)
