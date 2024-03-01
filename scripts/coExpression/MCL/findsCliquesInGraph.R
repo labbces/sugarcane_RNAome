@@ -8,8 +8,8 @@ HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/MCL"
 setwd(HOME_DIR)
 
 # cluster similarities
-data <- read.table("../fiberAndSugar/correr/MCL/CNC/clusterSimilarity/Correr_clusteringSimilarities.tsv", header = TRUE, sep = "\t")
-data <- read.table("../fiberAndSugar/hoang/MCL/CNC/clusterSimilarity/Hoang_clusteringSimilarities.tsv", header = TRUE, sep = "\t")
+#data <- read.table("../fiberAndSugar/correr/MCL/CNC/clusterSimilarity/Correr_clusteringSimilarities.tsv", header = TRUE, sep = "\t")
+#data <- read.table("../fiberAndSugar/hoang/MCL/CNC/clusterSimilarity/Hoang_clusteringSimilarities.tsv", header = TRUE, sep = "\t")
 data <- read.table("../fiberAndSugar/perlo/MCL/CNC/clusterSimilarity/Perlo_clusteringSimilarities.tsv", header = TRUE, sep = "\t")
 
 # *** Jaccard coefficient ***
