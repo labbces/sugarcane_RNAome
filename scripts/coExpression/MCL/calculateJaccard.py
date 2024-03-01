@@ -7,10 +7,12 @@ from itertools import combinations
 parser = argparse.ArgumentParser(description="Calculate Jaccard Index between clusters from MCL")
 parser.add_argument("-d", dest="directory", type=str, metavar="clusters_directory", help="Directory containing clusters from MCL", required=True)
 parser.add_argument("-o", dest="output", type=str, metavar="output_clusteringsJaccardIndex.tsv", help="output name", required=True)
+parser.add_argument("-t", dest="threshold", type=float, metavar="threshold < int >", help="0.5", required=True)
 
 args = parser.parse_args()
 directory = args.directory
 output = args.output + "_clusteringsJaccardIndex.tsv"
+threshold = args.threshold
 
 # load clusters from file
 def load_clusters(filename):
@@ -46,7 +48,7 @@ total_calculations = 0
 total_combinations = sum(len(cluster_sets[i]) * len(cluster_sets[j]) for i, j in combinations(range(len(cluster_sets)), 2))
 
 print(f'Total clusters combinations: {total_combinations}')
-
+print(f'Saving clusters with Jaccard Coefficient > {threshold}\n')
 with open(output, "w") as output_file:
     output_file.write("cluster_1\tcluster_2\tJaccard_Index\n")
     for i, (clusters1, filename1) in enumerate(zip(cluster_sets, cluster_filenames), start=1):
@@ -54,8 +56,10 @@ with open(output, "w") as output_file:
             for idx1, cluster1 in enumerate(clusters1, start=1):
                 for idx2, cluster2 in enumerate(clusters2, start=1):
                     similarity = jaccard(cluster1, cluster2)
-                    output_file.write(f"{filename1}_{idx1}\t{filename2}_{idx2}\t{similarity}\n")
                     total_calculations += 1
+                    
+                    if similarity > threshold:
+                        output_file.write(f"{filename1}_{idx1}\t{filename2}_{idx2}\t{similarity}\n")
 
                     progress_percentage = total_calculations / total_combinations * 100
                     print(f"Jaccard Indices calculated for clusters: {total_calculations}/{total_combinations} - {progress_percentage:.2f}%", end="\r")
