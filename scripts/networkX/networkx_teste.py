@@ -1,7 +1,7 @@
 import networkx as nx
 import plotly.graph_objects as go
 
-file_path = '1000_Perlo2022_mcl_out_I2.0.txt'
+file_path = '/home/felipe/Documents/ecoli-co-expression-network/results/cliques_overlap.txt'
 
 G = nx.Graph()
 
@@ -10,10 +10,14 @@ with open(file_path, 'r') as file:
         nodes = line.strip().split('\t')
 
         # If there is only one gene in the cluster, add it as an isolate node
-        if len(nodes) == 1:
-            G.add_node(nodes[0])
-        elif len(nodes) >= 2:
-            G.add_edges_from([(nodes[i], nodes[i + 1]) for i in range(len(nodes) - 1)])
+        #if len(nodes) == 1:
+            #G.add_node(nodes[0])
+        #elif len(nodes) >= 2:    
+
+        # If there is only one gene in the cluster, skip it
+        if len(nodes) < 2:
+            continue
+        G.add_edges_from([(nodes[i], nodes[i + 1]) for i in range(len(nodes) - 1)])
 
 # Get node positions with spring layout
 pos = nx.spring_layout(G)
