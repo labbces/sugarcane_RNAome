@@ -5,6 +5,7 @@ rm(list = ls())
 library(igraph)
 
 HOME_DIR = "D://GitHub/sugarcane_RNAome/scripts/coExpression/MCL"
+HOME_DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/MCL"
 setwd(HOME_DIR)
 
 # cluster similarities
