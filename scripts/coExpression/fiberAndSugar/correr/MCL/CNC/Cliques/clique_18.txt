@@ -1,0 +1,47 @@
+OG1126437	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2857141	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG0574049	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2495294	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2326283	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2413561	disjoint	out.5.8_21
+OG609409	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG0118526	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2465655	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2962783	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG313808	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG910976	disjoint	out.5.8_21, out.5.3_20
+OG2366210	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2642440	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG3249676	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2367470	disjoint	out.5.8_21, out.4.8_21, out.5.3_20
+OG2421810	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2325703	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG1099857	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2297863	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG3207725	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG801386	disjoint	out.5.8_21, out.5.3_20
+OG1338961	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG995484	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG0229255	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG3117059	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG0376245	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG916574	disjoint	out.5.8_21, out.4.8_21, out.5.3_20
+OG0452980	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG0436460	disjoint	out.5.8_21, out.4.8_21, out.5.3_20
+OG552417	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2481461	disjoint	out.5.8_21, out.5.3_20
+OG701937	disjoint	out.5.8_21, out.4.8_21, out.5.3_20
+OG1162654	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG525707	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG3353938	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG1969322	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG3016074	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG0347359	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG668225	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2851721	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2827581	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG2205291	disjoint	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.5.3_20
+OG0242681	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG688629	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG1087517	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20
+OG289283	intersection	out.3.8_20, out.5.8_21, out.4.8_21, out.4.3_20, out.3.3_18, out.2.8_18, out.5.3_20

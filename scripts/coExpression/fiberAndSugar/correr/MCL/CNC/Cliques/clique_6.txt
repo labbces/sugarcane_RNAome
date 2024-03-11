@@ -1,0 +1,12 @@
+OG1332659	intersection	out.4.3_27, out.5.8_30, out.4.8_28, out.3.8_27, out.5.3_28
+OG1273122	intersection	out.4.3_27, out.5.8_30, out.4.8_28, out.3.8_27, out.5.3_28
+OG293511	disjoint	out.5.8_30, out.5.3_28
+OG0073424	intersection	out.4.3_27, out.5.8_30, out.4.8_28, out.3.8_27, out.5.3_28
+OG2996111	disjoint	out.4.3_27, out.5.8_30, out.4.8_28, out.5.3_28
+OG117483	intersection	out.4.3_27, out.5.8_30, out.4.8_28, out.3.8_27, out.5.3_28
+OG0212303	intersection	out.4.3_27, out.5.8_30, out.4.8_28, out.3.8_27, out.5.3_28
+OG0364021	intersection	out.4.3_27, out.5.8_30, out.4.8_28, out.3.8_27, out.5.3_28
+OG2764576	disjoint	out.5.8_30
+OG2012931	intersection	out.4.3_27, out.5.8_30, out.4.8_28, out.3.8_27, out.5.3_28
+OG2594242	disjoint	out.4.3_27, out.5.8_30, out.4.8_28, out.5.3_28
+OG1545426	intersection	out.4.3_27, out.5.8_30, out.4.8_28, out.3.8_27, out.5.3_28

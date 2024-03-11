@@ -1,0 +1,5 @@
+OG1175559	disjoint	out.4.8_33, out.5.8_35, out.4.3_32, out.3.8_32, out.5.3_33
+OG0148230	intersection	out.4.8_33, out.5.8_35, out.4.3_32, out.3.8_32, out.3.3_30, out.5.3_33
+OG1382986	intersection	out.4.8_33, out.5.8_35, out.4.3_32, out.3.8_32, out.3.3_30, out.5.3_33
+OG1651272	intersection	out.4.8_33, out.5.8_35, out.4.3_32, out.3.8_32, out.3.3_30, out.5.3_33
+OG1919272	disjoint	out.4.8_33, out.5.8_35, out.5.3_33

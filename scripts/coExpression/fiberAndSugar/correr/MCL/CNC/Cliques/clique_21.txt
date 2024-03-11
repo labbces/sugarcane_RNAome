@@ -1,0 +1,23 @@
+OG408675	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG1535700	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG2883682	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG0113792	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG537841	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG0599706	disjoint	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.5.3_26
+OG1285014	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG2601830	disjoint	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.5.3_26
+OG694688	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG1377680	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG296747	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG0301690	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG1951046	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG2288887	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG848346	disjoint	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.5.3_26
+OG2002472	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG0181731	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG48215	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG1308140	disjoint	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.5.3_26
+OG300721	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG2114303	disjoint	out.5.8_27, out.4.8_26, out.4.3_25, out.5.3_26
+OG905673	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
+OG1165281	intersection	out.3.8_25, out.5.8_27, out.4.8_26, out.4.3_25, out.3.3_24, out.2.8_22, out.5.3_26
