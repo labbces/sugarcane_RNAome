@@ -7,7 +7,7 @@ library(RColorBrewer)
 
 rm(list=ls())
 
-DIR = "/home/felipe/Documents/exploring_Jorge_heatmaps/Correr/CNC/heatmap_per_module"
+DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/moduleHeatmap/Correr/CNC"
 setwd(DIR)
 
 # *** Read file for modules numbers (1,2,3,4,5 ...) *** 
@@ -17,12 +17,28 @@ colnames(Nmods) <- "Mod No"
 
 # *** Read formated modules ***
 modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated.csv"
-modules <- read.table(modules_path, row.names = 1, header = F)
-colnames(modules) <- c("module_No")
+# formated cliques
+modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated_cliques.csv"
+
+# TODO: Check duplicate genes in first column
+#modules <- read.table(modules_path, row.names = 1, header = F)
+modules <- read.table(modules_path, header = F)
+# Verificar e remover linhas duplicadas
+modules <- modules[!duplicated(modules$V1), ]
+# Atribuir os valores da primeira coluna como nomes de linha
+row.names(modules) <- modules$V1
+# Remover a primeira coluna dos dados
+modules <- modules[, -1]
+modules <- modules[, c(2,1)]
+# end TODO
+
+#colnames(modules) <- c("module_No")
+colnames(modules) <- c("module_No", "classification")
+
 modules$gene <- rownames(modules)
 
 # *** Read filtered VST matrix ***
-vst_path <- "Correr2020_counts_filters_VST_top20CV.txt"
+vst_path <- "Correr2020_counts_filters_VST_CNC_CV_above2.txt"
 # Define first column as index
 vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE) #encoding = "UTF-8", check.names = FALSE
 
