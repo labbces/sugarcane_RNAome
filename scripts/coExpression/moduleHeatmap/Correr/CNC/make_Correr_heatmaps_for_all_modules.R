@@ -16,7 +16,7 @@ Nmods <- read.table("all_mods.txt", header = F)
 colnames(Nmods) <- "Mod No"
 
 # *** Read formated modules ***
-modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated.csv"
+#modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated.csv"
 # formated cliques
 modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated_cliques.csv"
 
@@ -92,8 +92,7 @@ for (i in Nmods[,1]){
   #colnames(df) <- colnames(vst)
   
   # heat map with mean values for column i.e media por modulo
-  #png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5.5*800, height = 5*2850) # Too big
-  png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*800, height = 3*800)
+  png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*800, height = 5*2850) # Too big
   pheatmap(df,
            main =paste0("Genotypes contrasting in biomass production (CNC Module ",i, ")", sep = "") ,
            scale = "row",

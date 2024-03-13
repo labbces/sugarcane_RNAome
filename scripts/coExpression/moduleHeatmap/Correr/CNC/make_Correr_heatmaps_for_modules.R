@@ -15,7 +15,7 @@ Nmods <- read.table("all_mods.txt", header = F)
 colnames(Nmods) <- "Mod No"
 
 # *** Read formated modules ***
-modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated.csv"
+#modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated.csv"
 # formated cliques
 modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated_cliques.csv"
 
