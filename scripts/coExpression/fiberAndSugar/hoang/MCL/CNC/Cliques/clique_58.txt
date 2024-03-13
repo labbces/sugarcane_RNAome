@@ -1,0 +1,19 @@
+OG1770144	disjoint	out.4.8_108, out.5.3_110
+OG0461549	disjoint	out.5.8_116, out.5.3_110
+OG3133458	disjoint	out.4.8_108, out.5.3_110
+OG3068107	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG0246343	disjoint	out.4.8_108, out.5.3_110
+OG974277	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG0412597	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG3116707	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG2442470	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG0078918	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG0159091	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG524145	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG0464732	disjoint	out.5.3_110
+OG0165470	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG0094442	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG1898745	disjoint	out.4.8_108, out.5.3_110
+OG0095508	intersection	out.5.8_116, out.4.8_108, out.5.3_110
+OG1615029	disjoint	out.4.8_108, out.5.3_110
+OG0444151	intersection	out.5.8_116, out.4.8_108, out.5.3_110

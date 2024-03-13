@@ -1,0 +1,5 @@
+OG1230802	intersection	out.3.3_109, out.4.3_117, out.3.8_116, out.2.8_95, out.2.3_79, out.5.3_128, out.5.8_144, out.4.8_120
+OG0155788	intersection	out.3.3_109, out.4.3_117, out.3.8_116, out.2.8_95, out.2.3_79, out.5.3_128, out.5.8_144, out.4.8_120
+OG994033	disjoint	out.2.8_95
+OG1712977	disjoint	out.2.8_95
+OG0299194	intersection	out.3.3_109, out.4.3_117, out.3.8_116, out.2.8_95, out.2.3_79, out.5.3_128, out.5.8_144, out.4.8_120

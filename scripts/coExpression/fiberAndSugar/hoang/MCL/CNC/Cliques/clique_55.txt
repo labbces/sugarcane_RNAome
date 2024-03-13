@@ -1,0 +1,4 @@
+OG2822808	intersection	out.5.8_131, out.4.8_145, out.5.3_121
+OG0340393	intersection	out.5.8_131, out.4.8_145, out.5.3_121
+OG0306249	disjoint	out.5.8_131, out.5.3_121
+OG2181838	disjoint	out.5.8_131, out.5.3_121

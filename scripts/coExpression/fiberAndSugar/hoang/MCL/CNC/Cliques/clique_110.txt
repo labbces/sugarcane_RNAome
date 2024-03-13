@@ -1,0 +1,4 @@
+OG0470032	disjoint	out.5.3_132, out.4.8_122
+OG0195087	disjoint	out.5.8_157
+OG421049	intersection	out.5.8_157, out.4.3_136, out.5.3_132, out.4.8_122
+OG0363976	intersection	out.5.8_157, out.4.3_136, out.5.3_132, out.4.8_122

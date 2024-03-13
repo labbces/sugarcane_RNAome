@@ -1,0 +1,5 @@
+OG1645799	intersection	out.4.8_115, out.5.8_135, out.5.3_123
+OG3321942	disjoint	out.5.8_135, out.5.3_123
+OG0135390	intersection	out.4.8_115, out.5.8_135, out.5.3_123
+OG0265057	disjoint	out.4.8_115
+OG1291827	intersection	out.4.8_115, out.5.8_135, out.5.3_123

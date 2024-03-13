@@ -1,0 +1,7 @@
+OG0468618	disjoint	out.5.8_123, out.5.3_116, out.4.8_112
+OG235712	intersection	out.5.8_123, out.4.3_113, out.5.3_116, out.4.8_112
+OG0337331	intersection	out.5.8_123, out.4.3_113, out.5.3_116, out.4.8_112
+OG0202167	intersection	out.5.8_123, out.4.3_113, out.5.3_116, out.4.8_112
+OG2235772	intersection	out.5.8_123, out.4.3_113, out.5.3_116, out.4.8_112
+OG2504642	disjoint	out.5.8_123, out.5.3_116, out.4.8_112
+OG492654	intersection	out.5.8_123, out.4.3_113, out.5.3_116, out.4.8_112
