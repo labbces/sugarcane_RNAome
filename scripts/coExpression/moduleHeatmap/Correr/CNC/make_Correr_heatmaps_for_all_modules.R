@@ -12,7 +12,7 @@ setwd(DIR)
 
 # *** Read file for modules numbers (1,2,3,4,5 ...) *** 
 Nmods <- read.table("all_mods.txt", header = F)
-Nmods <- read.table("one_mods.txt", header = F)
+#Nmods <- read.table("one_mods.txt", header = F)
 colnames(Nmods) <- "Mod No"
 
 # *** Read formated modules ***
@@ -85,14 +85,17 @@ for (i in Nmods[,1]){
   # *** Reorder the rows of 'anot' based on the order of 'Genotypes' ***
   merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE)
   anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
+  # Force the use of "-" in the rownames instead of "."
+  colnames(df) <- gsub("\\.", "-", colnames(df))
   # Update 'anot' rownames -> Genotypes + Groups in names
   rownames(anot) <- colnames(df)
-  colnames(df) <- colnames(vst)
+  #colnames(df) <- colnames(vst)
   
   # heat map with mean values for column i.e media por modulo
-  png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5.5*800, height = 5*2850)
+  #png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5.5*800, height = 5*2850) # Too big
+  png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*800, height = 3*800)
   pheatmap(df,
-           main =paste0("Genotypess contrasting in biomass production (CNC Module ",i, ")", sep = "") ,
+           main =paste0("Genotypes contrasting in biomass production (CNC Module ",i, ")", sep = "") ,
            scale = "row",
            annotation_col = anot,
            show_rownames = T,
