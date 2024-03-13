@@ -107,6 +107,8 @@ merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes",
 
 anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
 
+# Force the use of "-" in the rownames instead of "."
+colnames(df) <- gsub("\\.", "-", colnames(df))
 # Update 'anot' rownames -> Genotypes + Groups in names
 rownames(anot) <- colnames(df)
 
@@ -114,10 +116,11 @@ rownames(anot) <- colnames(df)
 my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)
 
 # *** Plot heatmap with mean values for column (i.e. mean for each module)
-png("meanOf30ModulesHeatmap.png", res = 300, width = 10*800, height = 10*2850)
+#png("meanOf40ModulesHeatmap.png", res = 300, width = 10*800, height = 10*2850) # Too big
+png("meanOf40ModulesHeatmap.png", res = 300, width = 5*800, height = 3*800)
 
 pheatmap(df,
-         main ="Genotypess contrasting in biomass production (CNC Modules)" ,
+         main ="Genotypes contrasting in biomass production (CNC Modules)" ,
          scale = "row",
          annotation_col = anot,
          show_rownames = T,
