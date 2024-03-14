@@ -41,9 +41,9 @@ vst_path <- "Hoang2017_counts_filters_VST_CNC_CV_above1.2.txt"
 vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE) #encoding = "UTF-8", check.names = FALSE
 
 # Extract only the first name before the hyphen in row names
-colnames(vst) <- sub("^([^_]+)_.*", "\\1", colnames(vst))
+#colnames(vst) <- sub("^([^_]+)_.*", "\\1", colnames(vst))
 # This regular expression pattern looks for a lowercase letter followed by an uppercase letter and inserts a space between them
-colnames(vst) <- sub("([a-z])([A-Z])", "\\1 \\2", colnames(vst))
+#colnames(vst) <- sub("([a-z])([A-Z])", "\\1 \\2", colnames(vst))
 
 # *** Read metadata ***
 metadata_path <-"infos_hoang_metadata.tsv"
