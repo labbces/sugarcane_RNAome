@@ -42,11 +42,11 @@ sample_table$Replicate <- as.factor((sample_table$Replicate))
 sample_table$Genotypes <- sub("^.*_(\\S+)$", "\\1", metadata$Run)                  # genotype (last name after underscore)
 sample_table$Genotypes <- as.factor((sample_table$Genotypes))
 
-sample_table$Group <- as.factor(paste(sample_table$Replicate, sep=''))             # Group (Genotypes and Groups)
+sample_table$Group <- as.factor(paste(sample_table$Replicate, sep=''))             # group (Genotypes and Groups)
 
 annotation_col <- sample_table
 
-unique_annotation_col <- distinct(annotation_col, Genotypes, Internode, Replicate) # Remove duplicates in annotation_col (metadata)
+unique_annotation_col <- distinct(annotation_col, Genotypes, Internode, Replicate) # remove duplicates in annotation_col (metadata)
 
 anot <- select(unique_annotation_col, Genotypes, Internode, Replicate)             # annotation columns
 
@@ -69,8 +69,8 @@ for (i in Nmods[,1]){
   # update 'anot' rownames -> Genotypes + Groups in names
   rownames(anot) <- colnames(df)
 
-  # pheatmap with mean values for column (mean module expression) 
-  png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*1500, height = 5*2850) # Too big
+  # pheatmap with mean values for column (mean condition expression) 
+  png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*1500, height = 5*2850)
   pheatmap(df,
            main =paste0("Genotypes contrasting in biomass production (CNC Module ",i, ")", sep = "") ,
            scale = "row",
