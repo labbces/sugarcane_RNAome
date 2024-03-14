@@ -42,9 +42,9 @@ vst_path <- "Perlo2022_counts_filters_VST_CNC_CV_above0.6.txt"
 vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE) #encoding = "UTF-8", check.names = FALSE
 
 # Extract only the first name before the hyphen in row names
-colnames(vst) <- sub("^([^_]+)_.*", "\\1", colnames(vst))
+#colnames(vst) <- sub("^([^_]+)_.*", "\\1", colnames(vst))
 # This regular expression pattern looks for a lowercase letter followed by an uppercase letter and inserts a space between them
-colnames(vst) <- sub("([a-z])([A-Z])", "\\1 \\2", colnames(vst))
+#colnames(vst) <- sub("([a-z])([A-Z])", "\\1 \\2", colnames(vst))
 
 # *** Read metadata ***
 metadata_path <-"infos_perlo_metadata.tsv"
@@ -63,7 +63,8 @@ sample_table$Genotypes <- sub("^.*_(\\S+)$", "\\1", metadata$Run)
 sample_table$Genotypes <- as.factor((sample_table$Genotypes))
 
 # Group (Genotypes and Groups)
-sample_table$Group <- as.factor(paste(sample_table$Genotypes, ' ', sample_table$Groups, ' ', sample_table$Sugar, sep=''))
+#sample_table$Group <- as.factor(paste(sample_table$Genotypes, ' ', sample_table$Groups, ' ', sample_table$Sugar, sep=''))
+sample_table$Group <- as.factor(paste(sample_table$Replicate, sep=''))
 
 annotation_col <- sample_table
 
@@ -82,7 +83,12 @@ for (i in Nmods[,1]){
   merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE)
   anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
   # Force the use of "-" in the rownames instead of "."
+  colnames(df) <- gsub("Internode_", "", colnames(df))
+  
+  colnames(df) <- gsub("-weeks_", "_", colnames(df))
+  
   colnames(df) <- gsub("\\.", "-", colnames(df))
+  
   # Update 'anot' rownames -> Genotypes + Groups in names
   rownames(anot) <- colnames(df)
   #colnames(df) <- colnames(vst)

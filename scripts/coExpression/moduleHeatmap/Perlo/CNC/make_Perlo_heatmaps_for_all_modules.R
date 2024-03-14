@@ -40,10 +40,12 @@ vst_path <- "Perlo2022_counts_filters_VST_CNC_CV_above0.6.txt"
 # Define first column as index
 vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE) #encoding = "UTF-8", check.names = FALSE
 
+### prolema está em como eu transformo o colnames do vst - evitar para ver como fica
 # Extract only the first name before the hyphen in row names
-colnames(vst) <- sub("^([^_]+)_.*", "\\1", colnames(vst))
+#colnames(vst) <- sub("^([^_]+)_.*", "\\1", colnames(vst))
 # This regular expression pattern looks for a lowercase letter followed by an uppercase letter and inserts a space between them
-colnames(vst) <- sub("([a-z])([A-Z])", "\\1 \\2", colnames(vst))
+#colnames(vst) <- sub("([a-z])([A-Z])", "\\1 \\2", colnames(vst))
+###
 
 # *** Read metadata ***
 metadata_path <-"infos_perlo_metadata.tsv"
@@ -70,7 +72,9 @@ sample_table$Genotypes <- as.factor((sample_table$Genotypes))
 #sample_table$Genotypes <- sub("([a-z])([A-Z])", "\\1 \\2", sample_table$Genotypes)
 
 # Group (Genotypes and Groups)
-sample_table$Group <- as.factor(paste(sample_table$Genotypes, ' ', sample_table$Groups, ' ', sample_table$Replicate, sep=''))
+#sample_table$Group <- as.factor(paste(sample_table$Genotypes, ' ', sample_table$Groups, ' ', sample_table$Replicate, sep=''))
+#sample_table$Group <- as.factor(paste(sample_table$Groups, ' ', sample_table$Replicate, sep=''))
+sample_table$Group <- as.factor(paste(sample_table$Replicate, sep=''))
 
 annotation_col <- sample_table
 
@@ -108,17 +112,19 @@ merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes",
 anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
 
 # Force the use of "-" in the rownames instead of "."
+colnames(df) <- gsub("Internode_", "", colnames(df))
+colnames(df) <- gsub("-weeks_", "_", colnames(df))
 colnames(df) <- gsub("\\.", "-", colnames(df))
+
 # Update 'anot' rownames -> Genotypes + Groups in names
 rownames(anot) <- colnames(df)
-#rownames anot falhou e nao sei pq .. vr se plota e voltar aqui
 
 # red (-) black (0) green (+)
 my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)
 
 # *** Plot heatmap with mean values for column (i.e. mean for each module)
 #png("meanOf40ModulesHeatmap.png", res = 300, width = 10*800, height = 10*2850) # Too big
-png("meanOf40ModulesHeatmap.png", res = 300, width = 5*800, height = 3*800)
+png("meanOf40ModulesHeatmap.png", res = 300, width = 10*1500, height = 5*800)
 
 pheatmap(df,
          main ="Genotypes contrasting in biomass production (CNC Modules)" ,
