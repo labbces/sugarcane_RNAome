@@ -10,83 +10,55 @@ rm(list=ls())
 DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/moduleHeatmap/Hoang/CNC"
 setwd(DIR)
 
-# *** Read file for modules numbers (1,2,3,4,5 ...) *** 
-Nmods <- read.table("all_mods.txt", header = F)
+#TODO: change to filtered_modules.txt
+Nmods <- read.table("all_mods.txt", header = F)                                    # read file with modules numbers (1,2,3,4,5 ...) 
 colnames(Nmods) <- "Mod No"
 
-# *** Read formated modules ***
-#modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated.csv"
-# formated cliques
-modules_path <- "Hoang2017_counts_filters_VST_topCV_mcl_formated_cliques.csv"
+modules_path <- "Hoang2017_counts_filters_VST_topCV_mcl_formated_cliques.csv"      # read formated modules (cliques)
 
-# TODO: Check duplicate genes in first column
-#modules <- read.table(modules_path, row.names = 1, header = F) # Only works with unique gene names in first column
-
-modules <- read.table(modules_path, header = F)
-# Verificar e remover linhas duplicadas
+modules <- read.table(modules_path, header = F)                                    # remove duplicates from the first column
 modules <- modules[!duplicated(modules$V1), ]
-# Atribuir os valores da primeira coluna como nomes de linha
-row.names(modules) <- modules$V1
-# Remover a primeira coluna dos dados
-modules <- modules[, -1]
-modules <- modules[, c(2,1)]
-# end TODO
 
-#colnames(modules) <- c("module_No")
+row.names(modules) <- modules$V1                                                   # set rownames as first column
+modules <- modules[, -1]                                                           # remove first column
+modules <- modules[, c(2,1)]                                                       # reorder columns
+
 colnames(modules) <- c("module_No", "classification")
 
-# *** Read filtered VST matrix ***
-vst_path <- "Hoang2017_counts_filters_VST_CNC_CV_above1.2.txt"
-# Define first column as index
-vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE) #encoding = "UTF-8", check.names = FALSE
+vst_path <- "Hoang2017_counts_filters_VST_CNC_CV_above1.2.txt"                     # read filtered VST matrix
+vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE)     # define first column as index
 
-# Extract only the first name before the hyphen in row names
-#colnames(vst) <- sub("^([^_]+)_.*", "\\1", colnames(vst))
-# This regular expression pattern looks for a lowercase letter followed by an uppercase letter and inserts a space between them
-#colnames(vst) <- sub("([a-z])([A-Z])", "\\1 \\2", colnames(vst))
+metadata_path <-"infos_hoang_metadata.tsv"                                         # read metadata 
+metadata <- read.table(metadata_path, sep = "\t", header = T, skip = 1)
 
-# *** Read metadata ***
-metadata_path <-"infos_hoang_metadata.tsv"
-metadata <- read.table(metadata_path, sep = "\t", header = T, skip=1)
+sample_table <- metadata                                                           # define groups to plot (Groups, Genotypes)
 
-# *** Make vectors for each interesting module ***
+sample_table$Internode <- sub(".*_(top|bottom)-internode$", "\\1", metadata$Run)   # find internode types (top or bottom)
+sample_table$Internode <- as.factor((sample_table$Internode))
+
+sample_table$Brix <- sub("^.*?_(.*?)_.*", "\\1", metadata$Run)                     # find sugar content (high or low)
+sample_table$Brix <- as.factor((sample_table$Brix))
+
+sample_table$Genotypes <- sub("^(.*?)_.*", "\\1", metadata$Run)                    # find genotype name
+sample_table$Genotypes <- as.factor((sample_table$Genotypes)) 
+
+annotation_col <- sample_table
+
+unique_annotation_col <- distinct(annotation_col, Genotypes, Internode, Brix)      # remove duplicates in annotation_col (metadata)
+
+anot <- select(unique_annotation_col, Genotypes, Internode, Brix)                  # annotation columns
+
+# make annotation vectors for each module 
 for (i in Nmods$'Mod No'){
   assign(paste0("Module", i), modules %>% filter(module_No == i))
 }
 
-# *** Define groups to plot (Groups, Genotypes) ***
-sample_table <- metadata
-
-# Groups
-sample_table$Groups <- sub(".*_(top|bottom)-internode$", "\\1", metadata$Run)
-sample_table$Groups <- as.factor((sample_table$Groups))
-
-# Sugar content
-sample_table$Sugar <- sub("^.*?_(.*?)_.*", "\\1", metadata$Run)
-sample_table$Sugar <- as.factor((sample_table$Sugar))
-
-# Genotypes
-sample_table$Genotypes <- sub("^(.*?)_.*", "\\1", metadata$Run)
-sample_table$Genotypes <- as.factor((sample_table$Genotypes)) 
-
-# This regular expression pattern looks for a lowercase letter followed by an uppercase letter and inserts a space between them
-#sample_table$Genotypes <- sub("([a-z])([A-Z])", "\\1 \\2", sample_table$Genotypes)
-
-# Group (Genotypes and Groups)
-sample_table$Group <- as.factor(paste(sample_table$Genotypes, ' ', sample_table$Groups, ' ', sample_table$Sugar, sep=''))
-
-annotation_col <- sample_table
-
-# Remove duplicates in annotation_col (metadata)
-unique_annotation_col <- distinct(annotation_col, Group, Genotypes, Groups, Sugar)
-anot <- select(unique_annotation_col, Genotypes, Group)
-
-# *** Make vectors for each module ***
+# make expression vectors for each module 
 for (i in Nmods$'Mod No'){
   assign(paste0("module", i, "_dat"), vst[rownames(eval(as.name(paste0("Module",i)))),])
 }
 
-# *** Calculate mean expression for each module ***
+# calculate mean expression for each module
 for (i in Nmods$'Mod No'){
   assign(paste0("dat", i),as.data.frame(t(colMeans(eval(as.name(paste0("module",i, "_dat"))))))) 
   labelling <-get(paste0("dat", i, sep = ""))
@@ -95,33 +67,28 @@ for (i in Nmods$'Mod No'){
   assign(paste0("dat", i, sep= ""), labelling)
 }
 
-# *** Create a list to aggregate all modules *** 
-dat_list <- list()
+dat_list <- list()                                                                 # create a list to aggregate all modules 
 
+# make mean expression vectors for each module 
 for (i in Nmods$'Mod No'){
   dat_list[[i]] <- eval(as.name(paste0("dat",i)))
 }
 
-# *** Create a DataFrame from all modules list ***
-df <- do.call("rbind", dat_list)
+df <- do.call("rbind", dat_list)                                                   # create a DataFrame from all modules list
 
-# *** Reorder the rows of 'anot' based on the order of 'Genotypes' ***
-merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE)
+# reorder the rows of 'anot' based on the order of 'Genotypes'
+merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE) 
 
 anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
 
-# Force the use of "-" in the rownames instead of "."
-colnames(df) <- gsub("\\.", "-", colnames(df))
-# Update 'anot' rownames -> Genotypes + Groups in names
-rownames(anot) <- colnames(df)
-#rownames anot falhou e nao sei pq .. vr se plota e voltar aqui
+colnames(df) <- gsub("\\.", "-", colnames(df))                                     # force the use of "-" in the rownames instead of "."
 
-# red (-) black (0) green (+)
-my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)
+rownames(anot) <- colnames(df)                                                     # update 'anot' rownames -> Genotypes + Groups in names
 
-# *** Plot heatmap with mean values for column (i.e. mean for each module)
-#png("meanOf40ModulesHeatmap.png", res = 300, width = 10*800, height = 10*2850) # Too big
-png("meanOf40ModulesHeatmap.png", res = 300, width = 5*800, height = 3*800)
+my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                  # red (-) black (0) green (+)
+
+# pheatmap with mean values for each module (mean module expression) 
+png("meanOf3ModulesHeatmap.png", res = 300, width = 10*1500, height = 5*800)
 
 pheatmap(df,
          main ="Genotypes contrasting in biomass production (CNC Modules)" ,
