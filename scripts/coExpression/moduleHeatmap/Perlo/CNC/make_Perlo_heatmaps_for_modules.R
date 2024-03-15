@@ -42,33 +42,41 @@ sample_table$Replicate <- as.factor((sample_table$Replicate))
 sample_table$Genotypes <- sub("^.*_(\\S+)$", "\\1", metadata$Run)                  # genotype (last name after underscore)
 sample_table$Genotypes <- as.factor((sample_table$Genotypes))
 
-sample_table$Group <- as.factor(paste(sample_table$Replicate, sep=''))             # group (Genotypes and Groups)
-
 annotation_col <- sample_table
 
-unique_annotation_col <- distinct(annotation_col, Genotypes, Internode, Replicate) # remove duplicates in annotation_col (metadata)
+unique_annotation_col <- distinct(annotation_col, Genotypes, Internode, Replicate, Run) # remove duplicates in annotation_col (metadata)
 
-anot <- select(unique_annotation_col, Genotypes, Internode, Replicate)             # annotation columns
+anot <- select(unique_annotation_col, Genotypes, Internode, Replicate, Run)             # annotation columns
 
 my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                  # red (-) black (0) green (+)
 
 for (i in Nmods[,1]){
-  names <- modules[modules$module_No == i,]
+  names <- modules[modules$module_No == 2,] # debugando - voltar com i
   df <- vst[names$gene,]
   
-  # Reorder the rows of 'anot' based on the order of 'Genotypes'
-  merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE)
-  anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
+  # reorder the rows of 'anot' based on the order of 'Run'
+  merged_df <- merge(anot, data.frame(Run = colnames(df)), by = "Run", all.x = TRUE)
+  anot <- merged_df[order(match(colnames(df), merged_df$Run)), ]
   
-  # Rename colnames(df)
+  # rename colnames(df)
   colnames(df) <- gsub("Internode_([0-9]+)_([0-9]+).weeks_(.*)", "\\1_\\2_\\3", colnames(df))
   colnames(df) <- gsub("Internode_Ex\\.5_37\\.weeks_(.*)", "Ex.5_37_\\1", colnames(df))
-  # Force the use of "-" in the rownames instead of "."
+  # force the use of "-" in the rownames instead of "."
   colnames(df) <- gsub("\\.", "-", colnames(df))
   
+  #TODO: Tem algo muito estranho e nao estou conseguindo alinhar rownames(anot) com colnames(df)
+  # fazer depois do almoço
+  
+  
+  matching_indices <- match(anot$Run, colnames(df))
+  # removing degraded samples from anot (anot$Run)
+  matching_indices <- matching_indices[!is.na(matching_indices)]
+  
+  anot <- anot[matching_indices, ]
+
   # update 'anot' rownames -> Genotypes + Groups in names
   rownames(anot) <- colnames(df)
-
+  
   # pheatmap with mean values for column (mean condition expression) 
   png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*1500, height = 5*2850)
   pheatmap(df,
