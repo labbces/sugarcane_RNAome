@@ -10,6 +10,7 @@ rm(list=ls())
 DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/moduleHeatmap/Perlo/CNC"
 setwd(DIR)
 
+#TODO: change to filtered_modules.txt
 Nmods <- read.table("all_mods.txt", header = F)                                    # read file with modules numbers (1,2,3,4,5 ...) 
 colnames(Nmods) <- "Mod No"
 

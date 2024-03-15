@@ -10,6 +10,7 @@ rm(list=ls())
 DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/moduleHeatmap/Perlo/CNC"
 setwd(DIR)
 
+#TODO: change to filtered_modules.txt
 Nmods <- read.table("all_mods.txt", header = F)                                    # read file with modules numbers (1,2,3,4,5 ...) 
 colnames(Nmods) <- "Mod No"
 
@@ -51,7 +52,7 @@ anot <- select(unique_annotation_col, Genotypes, Internode, Replicate, Run)     
 my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                  # red (-) black (0) green (+)
 
 for (i in Nmods[,1]){
-  names <- modules[modules$module_No == 2,] # debugando - voltar com i
+  names <- modules[modules$module_No == i,]
   df <- vst[names$gene,]
   
   # reorder the rows of 'anot' based on the order of 'Run'
@@ -64,9 +65,7 @@ for (i in Nmods[,1]){
   # force the use of "-" in the rownames instead of "."
   colnames(df) <- gsub("\\.", "-", colnames(df))
   
-  #TODO: Tem algo muito estranho e nao estou conseguindo alinhar rownames(anot) com colnames(df)
-  # fazer depois do almoço
-  
+  #TODO: needs to fix the alignment of rownames(anot) with colnames(df)
   
   matching_indices <- match(anot$Run, colnames(df))
   # removing degraded samples from anot (anot$Run)
