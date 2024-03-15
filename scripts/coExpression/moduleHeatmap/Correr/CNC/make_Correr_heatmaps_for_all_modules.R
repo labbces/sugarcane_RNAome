@@ -10,100 +10,94 @@ rm(list=ls())
 DIR = "/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/moduleHeatmap/Correr/CNC"
 setwd(DIR)
 
-# *** Read file for modules numbers (1,2,3,4,5 ...) *** 
-Nmods <- read.table("all_mods.txt", header = F)
-#Nmods <- read.table("one_mods.txt", header = F)
+#TODO: change to filtered_modules.txt
+Nmods <- read.table("all_mods.txt", header = F)                                    # read file with modules numbers (1,2,3,4,5 ...) 
 colnames(Nmods) <- "Mod No"
 
-# *** Read formated modules ***
-#modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated.csv"
-# formated cliques
-modules_path <- "Correr2020_counts_filters_VST_top20CV_mcl_I2.0.formated_cliques.csv"
+modules_path <- "Correr2020_counts_filters_VST_topCV_mcl_formated_cliques.csv"     # read formated modules (cliques)
 
-# TODO: Check duplicate genes in first column
-#modules <- read.table(modules_path, row.names = 1, header = F)
-modules <- read.table(modules_path, header = F)
-# Verificar e remover linhas duplicadas
+modules <- read.table(modules_path, header = F)                                    # remove duplicates from the first column
 modules <- modules[!duplicated(modules$V1), ]
-# Atribuir os valores da primeira coluna como nomes de linha
-row.names(modules) <- modules$V1
-# Remover a primeira coluna dos dados
-modules <- modules[, -1]
-modules <- modules[, c(2,1)]
-# end TODO
 
-#colnames(modules) <- c("module_No")
+row.names(modules) <- modules$V1                                                   # set rownames as first column
+modules <- modules[, -1]                                                           # remove first column
+modules <- modules[, c(2,1)]                                                       # reorder columns
+
 colnames(modules) <- c("module_No", "classification")
 
-modules$gene <- rownames(modules)
+vst_path <- "Correr2020_counts_filters_VST_CNC_CV_above2.txt"                      # read filtered VST matrix
+vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE)     # define first column as index
 
-# *** Read filtered VST matrix ***
-vst_path <- "Correr2020_counts_filters_VST_CNC_CV_above2.txt"
-# Define first column as index
-vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE) #encoding = "UTF-8", check.names = FALSE
-
-# Extract only the first name before the hyphen in row names
-colnames(vst) <- sub("^([^_]+)_.*", "\\1", colnames(vst))
-# This regular expression pattern looks for a lowercase letter followed by an uppercase letter and inserts a space between them
-colnames(vst) <- sub("([a-z])([A-Z])", "\\1 \\2", colnames(vst))
-
-# *** Read metadata ***
-metadata_path <-"infos_correr_metadata.tsv"
+metadata_path <-"infos_correr_metadata.tsv"                                        # read metadata 
 metadata <- read.table(metadata_path, sep = "\t", header = T)
 
-# *** Define groups to plot (Groups, Genotypes) ***
-sample_table <- metadata
+sample_table <- metadata                                                           # define groups to plot (sugar content, genotypes)
 
-# Groups
-sample_table$Groups <- sub(".*_(high|low)", "\\1", metadata$Run)
-# Sub hyphen for space
-sample_table$Groups <- gsub("-", " ", sample_table$Groups)
-sample_table$Groups <- as.factor((sample_table$Groups))
+sample_table$Brix <- sub(".*_(high|low)", "\\1", metadata$Run)                     # find sugar content (high or low)
+sample_table$Brix <- gsub("-", " ", sample_table$Brix)                             # sub hyphen for space
+sample_table$Brix <- as.factor((sample_table$Brix))
 
-# Genotypes
-sample_table$Genotypes <- sub("^(.*?)_.*", "\\1", metadata$Run)
+sample_table$Genotypes <- sub("^(.*?)_.*", "\\1", metadata$Run)                    # find genotype name
+sample_table$Genotypes <- sub("([a-z])([A-Z])", "\\1 \\2", sample_table$Genotypes) # insert space between uppercase letters
 sample_table$Genotypes <- as.factor((sample_table$Genotypes)) 
-# This regular expression pattern looks for a lowercase letter followed by an uppercase letter and inserts a space between them
-sample_table$Genotypes <- sub("([a-z])([A-Z])", "\\1 \\2", sample_table$Genotypes)
-
-# Group (Genotypes and Groups)
-sample_table$Group <- as.factor(paste(sample_table$Genotypes, ' ', sample_table$Groups, sep=''))
 
 annotation_col <- sample_table
 
-# Remove duplicates in annotation_col (metadata)
-unique_annotation_col <- distinct(annotation_col, Group, Genotypes, Groups)
-anot <- select(unique_annotation_col, Genotypes, Groups)
+unique_annotation_col <- distinct(annotation_col, Genotypes, Brix)                 # remove duplicates in annotation_col (metadata)
 
-# red (-) black (0) green (+)
-my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)
+anot <- select(unique_annotation_col, Genotypes, Brix)                             # annotation columns
 
-for (i in Nmods[,1]){
-  names <- modules[modules$module_No == i,]
-  df <- vst[names$gene,]
-  
-  # *** Reorder the rows of 'anot' based on the order of 'Genotypes' ***
-  merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE)
-  anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
-  # Force the use of "-" in the rownames instead of "."
-  colnames(df) <- gsub("\\.", "-", colnames(df))
-  # Update 'anot' rownames -> Genotypes + Groups in names
-  rownames(anot) <- colnames(df)
-  #colnames(df) <- colnames(vst)
-  
-  # heat map with mean values for column i.e media por modulo
-  png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*800, height = 5*2850) # Too big
-  pheatmap(df,
-           main =paste0("Genotypes contrasting in biomass production (CNC Module ",i, ")", sep = "") ,
-           scale = "row",
-           annotation_col = anot,
-           show_rownames = T,
-           col = my_palette,
-           cluster_cols = T,
-           cluster_rows = T,
-           cellwidth = NA,
-           cellheight = 8,
-           angle_col = 45) 
-  dev.off()
-  print(i)
+# make annotation vectors for each module 
+for (i in Nmods$'Mod No'){
+  assign(paste0("Module", i), modules %>% filter(module_No == i))
 }
+
+# make expression vectors for each module 
+for (i in Nmods$'Mod No'){
+  assign(paste0("module", i, "_dat"), vst[rownames(eval(as.name(paste0("Module",i)))),])
+}
+
+# calculate mean expression for each module
+for (i in Nmods$'Mod No'){
+  assign(paste0("dat", i),as.data.frame(t(colMeans(eval(as.name(paste0("module",i, "_dat"))))))) 
+  labelling <-get(paste0("dat", i, sep = ""))
+  labels <- paste0("Module ", i, sep = "")
+  rownames(labelling) <- labels
+  assign(paste0("dat", i, sep= ""), labelling)
+}
+
+dat_list <- list()                                                                 # create a list to aggregate all modules 
+
+# make mean expression vectors for each module 
+for (i in Nmods$'Mod No'){
+  dat_list[[i]] <- eval(as.name(paste0("dat",i)))
+}
+
+df <- do.call("rbind", dat_list)                                                   # create a DataFrame from all modules list
+
+# reorder the rows of 'anot' based on the order of 'genotypes'
+merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE) 
+
+anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
+
+colnames(df) <- gsub("\\.", "-", colnames(df))                                     # force the use of "-" in the rownames instead of "."
+
+rownames(anot) <- colnames(df)                                                     # update 'anot' rownames -> genotypes + sugar content in names
+
+my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                  # red (-) black (0) green (+)
+
+# pheatmap with mean values for each module (mean module expression) 
+png("meanOf3ModulesHeatmap.png", res = 300, width = 10*1500, height = 5*800)
+
+pheatmap(df,
+         main ="Genotypes contrasting in biomass production (CNC Modules)" ,
+         scale = "row",
+         annotation_col = anot,
+         show_rownames = T,
+         col = my_palette,
+         cluster_cols = T,
+         cluster_rows = T,
+         cellwidth = NA,
+         cellheight = 8,
+         angle_col = 0)
+dev.off()
