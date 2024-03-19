@@ -56,7 +56,7 @@ for (i in Nmods[,1]){
   merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE)
   anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
 
-  # Create annotation row object
+  # create annotation row object
   anot_row <- names[, c("Gene", "Membership", "Classification", "Function")]
   rownames(anot_row) <- names$Gene
   anot_row <- anot_row[, -1]                                                       # remove first column
@@ -65,7 +65,7 @@ for (i in Nmods[,1]){
   # force the use of "-" in the rownames instead of "."
   colnames(df) <- gsub("\\.", "-", colnames(df))
   
-  # update 'anot' rownames -> genotypes + sugar content in names
+  # update 'anot' rownames -> add genotype names
   colnames(df) <- anot$Genotypes
   rownames(anot) <- colnames(df)
   
