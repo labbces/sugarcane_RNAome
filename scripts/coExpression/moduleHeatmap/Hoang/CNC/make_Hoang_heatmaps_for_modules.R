@@ -24,11 +24,11 @@ classification_file <- read.table(classification_path, row.names = 1, header = T
 
 merged_annotation <- merge(modules, classification_file, by.x = "Gene", by.y = "row.names", all.x = TRUE)
 
-vst_path <- "Hoang2017_counts_filters_VST_CNC_CV_above1.2.txt"                     # read filtered VST matrix
+vst_path <- "Hoang2017_counts_filters_VST_CNC_CV_above1.2.txt"                     # filtered VST matrix filename
 vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE)     # define first column as index
 
-metadata_path <-"infos_hoang_metadata.tsv"                                         # read metadata 
-metadata <- read.table(metadata_path, sep = "\t", header = T, skip = 1)
+metadata_path <-"infos_hoang_metadata.tsv"                                          
+metadata <- read.table(metadata_path, sep = "\t", header = T, skip = 1)            # read metadata
 
 sample_table <- metadata                                                           # define groups to plot (Groups, Genotypes)
 
@@ -57,7 +57,7 @@ for (i in Nmods[,1]){
   # force the use of "-" in the rownames instead of "."
   colnames(df) <- gsub("\\.", "-", colnames(df))
   
-  # reorder the rows of 'anot' based on the order of 'Genotypes'
+  # reorder the rows of 'anot' based on the order of 'Run = colnames(df)'
   merged_df <- merge(data.frame(Run = colnames(df)), anot, by = "Run", all.x = TRUE)
   anot_col <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
   
