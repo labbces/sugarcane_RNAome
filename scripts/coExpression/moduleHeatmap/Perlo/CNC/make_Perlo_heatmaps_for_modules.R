@@ -50,7 +50,7 @@ anot <- select(unique_annotation_col, Genotypes, Internode, Replicate, Run)     
 my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                       # red (-) black (0) green (+)
 
 for (i in Nmods[,1]){
-  names <- merged_annotation[merged_annotation$module_No == 2,]
+  names <- merged_annotation[merged_annotation$module_No == i,]
   df <- vst[names$Gene,]
   
   # force the use of "-" in the rownames instead of "."

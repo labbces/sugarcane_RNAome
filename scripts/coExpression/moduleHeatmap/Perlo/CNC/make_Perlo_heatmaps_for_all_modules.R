@@ -16,14 +16,8 @@ colnames(Nmods) <- "Mod No"
 
 modules_path <- "Perlo2022_counts_filters_VST_topCV_mcl_formated_cliques.csv"      # read formated modules (cliques)
 
-modules <- read.table(modules_path, header = F)                                    # remove duplicates from the first column
-modules <- modules[!duplicated(modules$V1), ]
-
-row.names(modules) <- modules$V1                                                   # set rownames as first column
-modules <- modules[, -1]                                                           # remove first column
-modules <- modules[, c(2,1)]                                                       # reorder columns
-
-colnames(modules) <- c("module_No", "classification")
+modules <- read.table(modules_path, header = F)                                    # read file with modules classification
+colnames(modules) <- c("Gene", "Membership", "module_No")                          # rename columns
 
 vst_path <- "Perlo2022_counts_filters_VST_CNC_CV_above0.6.txt"                     # read filtered VST matrix
 vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE)     # define first column as index
@@ -44,9 +38,9 @@ sample_table$Genotypes <- as.factor((sample_table$Genotypes))
 
 annotation_col <- sample_table
 
-unique_annotation_col <- distinct(annotation_col, Genotypes, Internode, Replicate) # remove duplicates in annotation_col (metadata)
+unique_annotation_col <- distinct(annotation_col, Genotypes, Internode, Replicate, Run) # remove duplicates in annotation_col (metadata)
 
-anot <- select(unique_annotation_col, Genotypes, Internode, Replicate)             # annotation columns
+anot <- select(unique_annotation_col, Genotypes, Internode, Replicate, Run)             # annotation columns
 
 # make annotation vectors for each module 
 for (i in Nmods$'Mod No'){
@@ -55,7 +49,12 @@ for (i in Nmods$'Mod No'){
 
 # make expression vectors for each module 
 for (i in Nmods$'Mod No'){
-  assign(paste0("module", i, "_dat"), vst[rownames(eval(as.name(paste0("Module",i)))),])
+  current_module <- modules %>% filter(module_No == i)
+  rownames(current_module) <- current_module$Gene
+  current_module <- current_module[, -1]      
+  
+  module_indices <- rownames(vst) %in% rownames(current_module)
+  assign(paste0("module", i, "_dat"), vst[module_indices, ])
 }
 
 # calculate mean expression for each module
@@ -76,14 +75,15 @@ for (i in Nmods$'Mod No'){
 
 df <- do.call("rbind", dat_list)                                                   # create a DataFrame from all modules list
 
+colnames(df) <- gsub("\\.", "-", colnames(df))                                     # force the use of "-" in the rownames instead of "."
+
 # reorder the rows of 'anot' based on the order of 'Genotypes'
-merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE) 
+merged_df <- merge(data.frame(Run = colnames(df)), anot, by = "Run", all.x = TRUE)
 
 anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
 
-colnames(df) <- gsub("Internode_([0-9]+)_([0-9]+).weeks_(.*)", "\\1_\\2_\\3", colnames(df))  # rename colnames(df)
-colnames(df) <- gsub("Internode_Ex\\.5_37\\.weeks_(.*)", "Ex.5_37_\\1", colnames(df))
-colnames(df) <- gsub("\\.", "-", colnames(df))                                               # force the use of "-" in the rownames instead of "."
+#colnames(df) <- gsub("Internode_([0-9]+)_([0-9]+).weeks_(.*)", "\\1_\\2_\\3", colnames(df))  # rename colnames(df)
+#colnames(df) <- gsub("Internode_Ex\\.5_37\\.weeks_(.*)", "Ex.5_37_\\1", colnames(df))
 
 rownames(anot) <- colnames(df)                                                     # update 'anot' rownames -> Genotypes + Groups in names
 
