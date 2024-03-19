@@ -36,6 +36,7 @@ sample_table$Internode <- sub(".*_(top|bottom)-internode$", "\\1", metadata$Run)
 sample_table$Internode <- as.factor((sample_table$Internode))
 
 sample_table$Brix <- sub("^.*?_(.*?)_.*", "\\1", metadata$Run)                     # find sugar content (high or low)
+sample_table$Brix <- gsub("\\-", " ", sample_table$Brix)
 sample_table$Brix <- as.factor((sample_table$Brix))
 
 sample_table$Genotypes <- sub("^(.*?)_.*", "\\1", metadata$Run)                    # find genotype name
@@ -68,7 +69,8 @@ for (i in Nmods[,1]){
   
   # update 'anot' rownames -> Genotypes + Groups in names
   rownames(anot_col) <- colnames(df)
-  anot_col <- anot_col[, -1]                                                               # remove first column
+  anot_col <- anot_col[, -1]                                                       # remove first column
+  colnames(anot_col) <- c("Genotypes", "Internode", "Sugar Content")
   
   # pheatmap with mean values for column (mean condition expression) 
   png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*800, height = 5*2850)
