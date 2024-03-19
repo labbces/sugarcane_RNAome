@@ -15,16 +15,14 @@ Nmods <- read.table("all_mods.txt", header = F)                                 
 colnames(Nmods) <- "Mod No"
 
 modules_path <- "Perlo2022_counts_filters_VST_topCV_mcl_formated_cliques.csv"      # read formated modules (cliques)
+classification_path <- "Perlo2022_counts_filters_VST_CV_classified.txt"            # filename for annotation file (CV and Function)
 
-modules <- read.table(modules_path, header = F)                                    # remove duplicates from the first column
-modules <- modules[!duplicated(modules$V1), ]
+modules <- read.table(modules_path, header = F)                                    # read file with modules classification
+colnames(modules) <- c("Gene", "Membership", "module_No")                          # rename columns
 
-row.names(modules) <- modules$V1                                                   # set rownames as first column
-modules <- modules[, -1]                                                           # remove first column
-modules <- modules[, c(2,1)]                                                       # reorder columns
+classification_file <- read.table(classification_path, row.names = 1, header = T)  # read file with function and pantranscriptome classfication
 
-colnames(modules) <- c("module_No", "classification")
-modules$gene <- rownames(modules)
+merged_annotation <- merge(modules, classification_file, by.x = "Gene", by.y = "row.names", all.x = TRUE)
 
 vst_path <- "Perlo2022_counts_filters_VST_CNC_CV_above0.6.txt"                     # read filtered VST matrix
 vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE)     # define first column as index
@@ -49,39 +47,36 @@ unique_annotation_col <- distinct(annotation_col, Genotypes, Internode, Replicat
 
 anot <- select(unique_annotation_col, Genotypes, Internode, Replicate, Run)             # annotation columns
 
-my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                  # red (-) black (0) green (+)
+my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                       # red (-) black (0) green (+)
 
 for (i in Nmods[,1]){
-  names <- modules[modules$module_No == i,]
-  df <- vst[names$gene,]
+  names <- merged_annotation[merged_annotation$module_No == 2,]
+  df <- vst[names$Gene,]
   
-  # reorder the rows of 'anot' based on the order of 'Run'
-  merged_df <- merge(anot, data.frame(Run = colnames(df)), by = "Run", all.x = TRUE)
-  anot <- merged_df[order(match(colnames(df), merged_df$Run)), ]
-  
-  # rename colnames(df)
-  colnames(df) <- gsub("Internode_([0-9]+)_([0-9]+).weeks_(.*)", "\\1_\\2_\\3", colnames(df))
-  colnames(df) <- gsub("Internode_Ex\\.5_37\\.weeks_(.*)", "Ex.5_37_\\1", colnames(df))
   # force the use of "-" in the rownames instead of "."
   colnames(df) <- gsub("\\.", "-", colnames(df))
   
-  #TODO: needs to fix the alignment of rownames(anot) with colnames(df)
+  # reorder the rows of 'anot' based on the order of 'Run = colnames(df)'
+  merged_df <- merge(data.frame(Run = colnames(df)), anot, by = "Run", all.x = TRUE)
+  anot_col <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
   
-  matching_indices <- match(anot$Run, colnames(df))
-  # removing degraded samples from anot (anot$Run)
-  matching_indices <- matching_indices[!is.na(matching_indices)]
+  # create annotation row object
+  anot_row <- names[, c("Gene", "Membership", "Classification", "Function")]
+  rownames(anot_row) <- names$Gene
+  anot_row <- anot_row[, -1]                                                       # remove first column
+  colnames(anot_row) <- c("Membership", "Group", "Function")                       # rename row annotation columns  
   
-  anot <- anot[matching_indices, ]
-
   # update 'anot' rownames -> Genotypes + Groups in names
-  rownames(anot) <- colnames(df)
-  
+  rownames(anot_col) <- colnames(df)
+  anot_col <- anot_col[, -1]                                                       # remove first column
+
   # pheatmap with mean values for column (mean condition expression) 
-  png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*1500, height = 5*2850)
+  png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*800, height = 5*2850)
   pheatmap(df,
            main =paste0("Genotypes contrasting in biomass production (CNC Module ",i, ")", sep = "") ,
            scale = "row",
-           annotation_col = anot,
+           annotation_col = anot_col,
+           annotation_row = anot_row,
            show_rownames = T,
            col = my_palette,
            cluster_cols = T,
