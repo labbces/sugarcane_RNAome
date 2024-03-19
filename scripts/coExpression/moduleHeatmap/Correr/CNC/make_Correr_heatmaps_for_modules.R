@@ -49,12 +49,12 @@ anot <- select(unique_annotation_col, Genotypes, Brix)                          
 my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                  # red (-) black (0) green (+)
 
 for (i in Nmods[,1]){
-  names <- merged_annotation[merged_annotation$module_No == 2,]
+  names <- merged_annotation[merged_annotation$module_No == i,]
   df <- vst[names$Gene,]
   
   # reorder the rows of 'anot' based on the order of 'Genotypes'
   merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE)
-  anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
+  anot_col <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
 
   # create annotation row object
   anot_row <- names[, c("Gene", "Membership", "Classification", "Function")]
@@ -67,14 +67,14 @@ for (i in Nmods[,1]){
   
   # update 'anot' rownames -> add genotype names
   colnames(df) <- anot$Genotypes
-  rownames(anot) <- colnames(df)
+  rownames(anot_col) <- colnames(df)
   
   # pheatmap with mean values for column (mean condition expression) 
   png(paste0("module_", i, "_heatmap",".png", sep = ""), res = 300, width = 5*800, height = 5*2850)
   pheatmap(df,
            main =paste0("Genotypes contrasting in biomass production (CNC Module ",i, ")", sep = "") ,
            scale = "row",
-           annotation_col = anot,
+           annotation_col = anot_col,
            annotation_row = anot_row,
            show_rownames = T,
            col = my_palette,
