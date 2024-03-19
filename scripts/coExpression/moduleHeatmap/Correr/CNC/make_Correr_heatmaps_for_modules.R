@@ -24,7 +24,7 @@ classification_file <- read.table(classification_path, row.names = 1, header = T
 
 merged_annotation <- merge(modules, classification_file, by.x = "Gene", by.y = "row.names", all.x = TRUE)
 
-vst_path <- "Correr2020_counts_filters_VST_CNC_CV_above2.txt"                      # read filtered VST matrix
+vst_path <- "Correr2020_counts_filters_VST_CNC_CV_above2.txt"                      # filtered VST matrix filename
 vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE)     # define first column as index
 
 metadata_path <-"infos_correr_metadata.tsv"                                        # metadata file 
