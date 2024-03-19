@@ -5,4 +5,5 @@
 **/*top20CV.txt
 scripts/coExpression/moduleHeatmap/Correr/CNC/Correr2020_counts_filters_VST_CV_classified.txt
 scripts/coExpression/moduleHeatmap/Hoang/CNC/Hoang2017_counts_filters_VST_CNC_CV_above1.2.txt
+scripts/coExpression/moduleHeatmap/Hoang/CNC/Hoang2017_counts_filters_VST_CV_classified.txt
 scripts/coExpression/moduleHeatmap/Perlo/CNC/Perlo2022_counts_filters_VST_CNC_CV_above0.6.txt
