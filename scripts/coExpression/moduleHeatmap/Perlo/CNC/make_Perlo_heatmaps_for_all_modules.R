@@ -82,9 +82,6 @@ merged_df <- merge(data.frame(Run = colnames(df)), anot, by = "Run", all.x = TRU
 
 anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
 
-#colnames(df) <- gsub("Internode_([0-9]+)_([0-9]+).weeks_(.*)", "\\1_\\2_\\3", colnames(df))  # rename colnames(df)
-#colnames(df) <- gsub("Internode_Ex\\.5_37\\.weeks_(.*)", "Ex.5_37_\\1", colnames(df))
-
 rownames(anot) <- colnames(df)                                                     # update 'anot' rownames -> Genotypes + Groups in names
 anot <- anot[, -1]
 
