@@ -86,6 +86,7 @@ anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
 #colnames(df) <- gsub("Internode_Ex\\.5_37\\.weeks_(.*)", "Ex.5_37_\\1", colnames(df))
 
 rownames(anot) <- colnames(df)                                                     # update 'anot' rownames -> Genotypes + Groups in names
+anot <- anot[, -1]
 
 my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                  # red (-) black (0) green (+)
 
@@ -102,5 +103,5 @@ pheatmap(df,
          cluster_rows = T,
          cellwidth = NA,
          cellheight = 8,
-         angle_col = 0)
+         angle_col = 45)
 dev.off()
