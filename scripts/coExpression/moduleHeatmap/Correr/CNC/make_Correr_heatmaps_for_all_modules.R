@@ -16,14 +16,8 @@ colnames(Nmods) <- "Mod No"
 
 modules_path <- "Correr2020_counts_filters_VST_topCV_mcl_formated_cliques.csv"     # read formated modules (cliques)
 
-modules <- read.table(modules_path, header = F)                                    # remove duplicates from the first column
-modules <- modules[!duplicated(modules$V1), ]
-
-row.names(modules) <- modules$V1                                                   # set rownames as first column
-modules <- modules[, -1]                                                           # remove first column
-modules <- modules[, c(2,1)]                                                       # reorder columns
-
-colnames(modules) <- c("module_No", "classification")
+modules <- read.table(modules_path, header = F)                                    # read file with modules classification
+colnames(modules) <- c("Gene", "Membership", "module_No")                          # rename columns
 
 vst_path <- "Correr2020_counts_filters_VST_CNC_CV_above2.txt"                      # read filtered VST matrix
 vst <- read.table(vst_path, header = TRUE, row.names = 1, check.names = FALSE)     # define first column as index
@@ -43,9 +37,9 @@ sample_table$Genotypes <- as.factor((sample_table$Genotypes))
 
 annotation_col <- sample_table
 
-unique_annotation_col <- distinct(annotation_col, Genotypes, Brix)                 # remove duplicates in annotation_col (metadata)
+unique_annotation_col <- distinct(annotation_col, Genotypes, Brix, Run) # remove duplicates in annotation_col (metadata)
 
-anot <- select(unique_annotation_col, Genotypes, Brix)                             # annotation columns
+anot <- select(unique_annotation_col, Genotypes, Brix, Run)             # annotation columns
 
 # make annotation vectors for each module 
 for (i in Nmods$'Mod No'){
@@ -54,7 +48,12 @@ for (i in Nmods$'Mod No'){
 
 # make expression vectors for each module 
 for (i in Nmods$'Mod No'){
-  assign(paste0("module", i, "_dat"), vst[rownames(eval(as.name(paste0("Module",i)))),])
+  current_module <- modules %>% filter(module_No == i)
+  rownames(current_module) <- current_module$Gene
+  current_module <- current_module[, -1]      
+  
+  module_indices <- rownames(vst) %in% rownames(current_module)
+  assign(paste0("module", i, "_dat"), vst[module_indices, ])
 }
 
 # calculate mean expression for each module
@@ -75,14 +74,16 @@ for (i in Nmods$'Mod No'){
 
 df <- do.call("rbind", dat_list)                                                   # create a DataFrame from all modules list
 
-# reorder the rows of 'anot' based on the order of 'genotypes'
-merged_df <- merge(anot, data.frame(Genotypes = colnames(df)), by = "Genotypes", all.x = TRUE) 
+colnames(df) <- gsub("\\.", "-", colnames(df))                                     # force the use of "-" in the rownames instead of "."
+
+# reorder the rows of 'anot' based on the order of 'Genotypes'
+merged_df <- merge(data.frame(Run = colnames(df)), anot, by = "Run", all.x = TRUE)
 
 anot <- merged_df[order(match(colnames(df), merged_df$Genotypes)), ]
 
-colnames(df) <- gsub("\\.", "-", colnames(df))                                     # force the use of "-" in the rownames instead of "."
-
-rownames(anot) <- colnames(df)                                                     # update 'anot' rownames -> genotypes + sugar content in names
+rownames(anot) <- colnames(df)                                                     # update 'anot' rownames -> Genotypes + Groups in names
+anot <- anot[, -1]
+colnames(anot) <- c("Genotypes", "Sugar Content")
 
 my_palette = colorRampPalette(c("red", "black", "green"))(n=1000)                  # red (-) black (0) green (+)
 
@@ -99,5 +100,5 @@ pheatmap(df,
          cluster_rows = T,
          cellwidth = NA,
          cellheight = 8,
-         angle_col = 0)
+         angle_col = 45)
 dev.off()
