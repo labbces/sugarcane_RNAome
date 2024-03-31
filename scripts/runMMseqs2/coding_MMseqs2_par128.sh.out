@@ -1,0 +1,330 @@
+createdb proteinCoding_RNA.fasta DB 
+
+MMseqs Version:       	14.7e284
+Database type         	0
+Shuffle input database	true
+Createdb mode         	0
+Write lookup file     	1
+Offset of numeric ids 	0
+Compressed            	0
+Verbosity             	3
+
+Converting sequences
+[===================================================================================================	1 Mio. sequences processed
+===================================================================================================	2 Mio. sequences processed
+===================================================================================================	3 Mio. sequences processed
+===================================================================================================	4 Mio. sequences processed
+===================================================================================================	5 Mio. sequences processed
+===================================================================================================	6 Mio. sequences processed
+===================================================================================================	7 Mio. sequences processed
+===================================================================================================	8 Mio. sequences processed
+================================================================================================
+Time for merging to DB_h: 0h 0m 1s 946ms
+Time for merging to DB: 0h 0m 7s 388ms
+Database type: Nucleotide
+Time for processing: 0h 3m 14s 63ms
+cluster --threads 128 -s 5.7 --cov-mode 2 --cluster-mode 2 -c 0.8 --min-seq-id 0.8 DB DB_clust /work/fvperes 
+
+MMseqs Version:                     	14.7e284
+Substitution matrix                 	aa:blosum62.out,nucl:nucleotide.out
+Seed substitution matrix            	aa:VTML80.out,nucl:nucleotide.out
+Sensitivity                         	5.7
+k-mer length                        	15
+k-score                             	seq:2147483647,prof:2147483647
+Alphabet size                       	aa:21,nucl:5
+Max sequence length                 	10000
+Max results per query               	20
+Split database                      	0
+Split mode                          	2
+Split memory limit                  	0
+Coverage threshold                  	0.8
+Coverage mode                       	2
+Compositional bias                  	1
+Compositional bias                  	1
+Diagonal scoring                    	false
+Exact k-mer matching                	1
+Mask residues                       	1
+Mask residues probability           	0.9
+Mask lower case residues            	0
+Minimum diagonal score              	15
+Selected taxa                       	
+Include identical seq. id.          	false
+Spaced k-mers                       	1
+Preload mode                        	0
+Pseudo count a                      	substitution:1.100,context:1.400
+Pseudo count b                      	substitution:4.100,context:5.800
+Spaced k-mer pattern                	
+Local temporary path                	
+Threads                             	128
+Compressed                          	0
+Verbosity                           	3
+Add backtrace                       	false
+Alignment mode                      	3
+Alignment mode                      	0
+Allow wrapped scoring               	false
+E-value threshold                   	0.001
+Seq. id. threshold                  	0.8
+Min alignment length                	0
+Seq. id. mode                       	0
+Alternative alignments              	0
+Max reject                          	2147483647
+Max accept                          	2147483647
+Score bias                          	0
+Realign hits                        	false
+Realign score bias                  	-0.2
+Realign max seqs                    	2147483647
+Correlation score weight            	0
+Gap open cost                       	aa:11,nucl:5
+Gap extension cost                  	aa:1,nucl:2
+Zdrop                               	40
+Rescore mode                        	0
+Remove hits by seq. id. and coverage	false
+Sort results                        	0
+Cluster mode                        	2
+Max connected component depth       	1000
+Similarity type                     	2
+Single step clustering              	false
+Cascaded clustering steps           	3
+Cluster reassign                    	false
+Remove temporary files              	false
+Force restart with latest tmp       	false
+MPI runner                          	
+k-mers per sequence                 	21
+Scale k-mers per sequence           	aa:0.000,nucl:0.200
+Adjust k-mer length                 	false
+Shift hash                          	67
+Include only extendable             	false
+Skip repeating k-mers               	false
+
+Set cluster iterations to 3
+linclust DB /work/fvperes/15061991926729425469/clu_redundancy /work/fvperes/15061991926729425469/linclust --cluster-mode 2 --max-iterations 1000 --similarity-type 2 --threads 128 --compressed 0 -v 3 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0.8 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 2 --max-seq-len 10000 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --alph-size aa:21,nucl:5 --kmer-per-seq 21 --spaced-kmer-mode 1 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 1 --mask-prob 0.9 --mask-lower-case 0 -k 0 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --rescore-mode 0 --filter-hits 0 --sort-results 0 --remove-tmp-files 0 --force-reuse 0 
+
+kmermatcher DB /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --alph-size aa:21,nucl:5 --min-seq-id 0.8 --kmer-per-seq 21 --spaced-kmer-mode 1 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 1 --mask-prob 0.9 --mask-lower-case 0 --cov-mode 2 -k 0 -c 0.8 --max-seq-len 10000 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 128 --compressed 0 -v 3 
+
+kmermatcher DB /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --alph-size aa:21,nucl:5 --min-seq-id 0.8 --kmer-per-seq 21 --spaced-kmer-mode 1 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 1 --mask-prob 0.9 --mask-lower-case 0 --cov-mode 2 -k 0 -c 0.8 --max-seq-len 10000 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 128 --compressed 0 -v 3 
+
+Database size: 8960247 type: Nucleotide
+
+Generate k-mers list for 1 split
+[=================================================================] 8.96M 32s 304ms
+
+Adjusted k-mer length 17
+Sort kmer 0h 0m 10s 75ms
+Sort by rep. sequence 0h 0m 1s 285ms
+Time for fill: 0h 0m 3s 475ms
+Time for merging to pref: 0h 0m 0s 3ms
+Time for processing: 0h 1m 18s 603ms
+rescorediagonal DB DB /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref_rescore1 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --rescore-mode 0 --wrapped-scoring 0 --filter-hits 0 -e 0.001 -c 0.8 -a 0 --cov-mode 2 --min-seq-id 0.8 --min-aln-len 0 --seq-id-mode 0 --add-self-matches 0 --sort-results 0 --db-load-mode 0 --threads 128 --compressed 0 -v 3 
+
+[=================================================================] 8.96M 8s 396ms
+Time for merging to pref_rescore1: 0h 0m 4s 155ms
+Time for processing: 0h 2m 15s 419ms
+clust DB /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref_rescore1 /work/fvperes/15061991926729425469/linclust/4274669396149917103/pre_clust --cluster-mode 2 --max-iterations 1000 --similarity-type 2 --threads 128 --compressed 0 -v 3 
+
+Clustering mode: Greedy
+Total time: 0h 0m 1s 792ms
+
+Size of the sequence database: 8960247
+Size of the alignment database: 8960247
+Number of clusters: 6077334
+
+Writing results 0h 0m 1s 14ms
+Time for merging to pre_clust: 0h 0m 0s 0ms
+Time for processing: 0h 0m 3s 785ms
+createsubdb /work/fvperes/15061991926729425469/linclust/4274669396149917103/order_redundancy DB /work/fvperes/15061991926729425469/linclust/4274669396149917103/input_step_redundancy -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy: 0h 0m 0s 0ms
+Time for processing: 0h 0m 2s 148ms
+createsubdb /work/fvperes/15061991926729425469/linclust/4274669396149917103/order_redundancy /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref_filter1 -v 3 --subdb-mode 1 
+
+Time for merging to pref_filter1: 0h 0m 0s 0ms
+Time for processing: 0h 0m 3s 291ms
+filterdb /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref_filter1 /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref_filter2 --filter-file /work/fvperes/15061991926729425469/linclust/4274669396149917103/order_redundancy --threads 128 --compressed 0 -v 3 
+
+Filtering using file(s)
+[=================================================================] 6.08M 2s 206ms
+Time for merging to pref_filter2: 0h 0m 2s 989ms
+Time for processing: 0h 0m 6s 574ms
+align /work/fvperes/15061991926729425469/linclust/4274669396149917103/input_step_redundancy /work/fvperes/15061991926729425469/linclust/4274669396149917103/input_step_redundancy /work/fvperes/15061991926729425469/linclust/4274669396149917103/pref_filter2 /work/fvperes/15061991926729425469/linclust/4274669396149917103/aln --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0.8 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 2 --max-seq-len 10000 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --threads 128 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 6077334 type: Nucleotide
+Target database size: 6077334 type: Nucleotide
+Calculation of alignments
+[=================================================================] 6.08M 18s 485ms
+Time for merging to aln: 0h 0m 2s 554ms
+14079890 alignments calculated
+7792427 sequence pairs passed the thresholds (0.553444 of overall calculated)
+1.282211 hits per query sequence
+Time for processing: 0h 0m 24s 985ms
+clust /work/fvperes/15061991926729425469/linclust/4274669396149917103/input_step_redundancy /work/fvperes/15061991926729425469/linclust/4274669396149917103/aln /work/fvperes/15061991926729425469/linclust/4274669396149917103/clust --cluster-mode 2 --max-iterations 1000 --similarity-type 2 --threads 128 --compressed 0 -v 3 
+
+Clustering mode: Greedy
+Total time: 0h 0m 1s 182ms
+
+Size of the sequence database: 6077334
+Size of the alignment database: 6077334
+Number of clusters: 5085423
+
+Writing results 0h 0m 1s 117ms
+Time for merging to clust: 0h 0m 0s 2ms
+Time for processing: 0h 0m 2s 948ms
+mergeclusters DB /work/fvperes/15061991926729425469/clu_redundancy /work/fvperes/15061991926729425469/linclust/4274669396149917103/pre_clust /work/fvperes/15061991926729425469/linclust/4274669396149917103/clust --threads 128 --compressed 0 -v 3 
+
+Clustering step 1
+[=================================================================] 6.08M 0s 662ms
+Clustering step 2
+[=================================================================] 5.09M 1s 193ms
+Write merged clustering
+[=================================================================] 8.96M 1s 662ms
+Time for merging to clu_redundancy: 0h 0m 2s 238ms
+Time for processing: 0h 0m 5s 28ms
+createsubdb /work/fvperes/15061991926729425469/clu_redundancy DB /work/fvperes/15061991926729425469/input_step_redundancy -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy: 0h 0m 0s 0ms
+Time for processing: 0h 0m 1s 960ms
+extractframes /work/fvperes/15061991926729425469/input_step_redundancy /work/fvperes/15061991926729425469/query_seqs --forward-frames 1 --reverse-frames 1 --create-lookup 0 --threads 128 --compressed 0 -v 3 
+
+[=================================================================] 5.09M 5s 620ms
+Time for merging to query_seqs_h: 0h 0m 3s 282ms
+Time for merging to query_seqs: 0h 0m 9s 782ms
+Time for processing: 0h 0m 21s 904ms
+prefilter /work/fvperes/15061991926729425469/query_seqs /work/fvperes/15061991926729425469/input_step_redundancy /work/fvperes/15061991926729425469/pref --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --seed-sub-mat 'aa:VTML80.out,nucl:nucleotide.out' -s 5.7 -k 15 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 10000 --max-seqs 300 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.8 --cov-mode 2 --comp-bias-corr 0 --comp-bias-corr-scale 1 --diag-score 0 --exact-kmer-matching 1 --mask 1 --mask-prob 0.9 --mask-lower-case 0 --min-ungapped-score 60 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 128 --compressed 0 -v 3 
+
+Query database size: 10170846 type: Nucleotide
+Estimated memory consumption: 82G
+Target database size: 5085423 type: Nucleotide
+Index table k-mer threshold: 0 at k-mer size 15 
+Index table: counting k-mers
+[=================================================================] 5.09M 22s 867ms
+Index table: Masked residues: 73987770
+Index table: fill
+[=================================================================] 5.09M 54s 380ms
+Index statistics
+Entries:          6702905700
+DB size:          46546 MB
+Avg k-mer size:   6.242567
+Top 10 k-mers
+    TTCCGGCGCGACCCC	9155
+    TCGCGCGAGACCACA	8616
+    TGCTGGACAACATTT	8369
+    TTGTGGGAAAGTAGT	8369
+    CGCGCGACAGCACAG	8247
+    CTTCTGGGCAGCTTG	7982
+    TTAATTTGAAAGGGT	7843
+    TAGCACCCAAGTTGG	7713
+    CTACTACCCATCTGG	6780
+    CCTTGTCCAAATTGG	6767
+Time for index table init: 0h 1m 23s 70ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 0
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 10170846
+Target db start 1 to 5085423
+[=================================================================] 10.17M 4m 23s 111ms
+
+0.974351 k-mers per position
+131996 DB matches per sequence
+0 overflows
+0 queries produce too many hits (truncated result)
+124 sequences passed prefiltering per query sequence
+96 median result list length
+96408 sequences with 0 size result lists
+Time for merging to pref: 0h 0m 4s 586ms
+Time for processing: 0h 7m 43s 138ms
+rescorediagonal /work/fvperes/15061991926729425469/query_seqs /work/fvperes/15061991926729425469/input_step_redundancy /work/fvperes/15061991926729425469/pref /work/fvperes/15061991926729425469/aln_ungapped --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --rescore-mode 2 --wrapped-scoring 0 --filter-hits 0 -e 0.001 -c 0.8 -a 0 --cov-mode 2 --min-seq-id 0.8 --min-aln-len 0 --seq-id-mode 0 --add-self-matches 0 --sort-results 0 --db-load-mode 0 --threads 128 --compressed 0 -v 3 
+
+[=================================================================] 10.17M 48s 244ms
+Time for merging to aln_ungapped: 0h 0m 5s 984ms
+Time for processing: 0h 1m 2s 803ms
+subtractdbs /work/fvperes/15061991926729425469/pref /work/fvperes/15061991926729425469/aln_ungapped /work/fvperes/15061991926729425469/pref_subtract --threads 128 --compressed 0 -v 3 
+
+subtractdbs /work/fvperes/15061991926729425469/pref /work/fvperes/15061991926729425469/aln_ungapped /work/fvperes/15061991926729425469/pref_subtract --threads 128 --compressed 0 -v 3 
+
+Remove /work/fvperes/15061991926729425469/aln_ungapped ids from /work/fvperes/15061991926729425469/pref
+[=================================================================] 10.17M 10s 684ms
+Time for merging to pref_subtract: 0h 0m 4s 969ms
+Time for processing: 0h 0m 28s 37ms
+align /work/fvperes/15061991926729425469/query_seqs /work/fvperes/15061991926729425469/input_step_redundancy /work/fvperes/15061991926729425469/pref_subtract /work/fvperes/15061991926729425469/aln_gapped --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0.8 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 2 --max-seq-len 10000 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --threads 128 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 10170846 type: Nucleotide
+Target database size: 5085423 type: Nucleotide
+Calculation of alignments
+[=================================================================] 10.17M 14m 22s 655ms
+Time for merging to aln_gapped: 0h 0m 4s 246ms
+678705975 alignments calculated
+128653993 sequence pairs passed the thresholds (0.189558 of overall calculated)
+12.649291 hits per query sequence
+Time for processing: 0h 14m 38s 76ms
+concatdbs /work/fvperes/15061991926729425469/aln_ungapped /work/fvperes/15061991926729425469/aln_gapped /work/fvperes/15061991926729425469/aln --preserve-keys --take-larger-entry --threads 128 --compressed 0 -v 3 
+
+[=================================================================] 10.17M 4s 477ms
+[=================================================================] 10.17M 8s 272ms
+Time for merging to aln: 0h 0m 11s 710ms
+Time for processing: 0h 0m 32s 55ms
+offsetalignment /work/fvperes/15061991926729425469/input_step_redundancy /work/fvperes/15061991926729425469/query_seqs /work/fvperes/15061991926729425469/input_step_redundancy /work/fvperes/15061991926729425469/input_step_redundancy /work/fvperes/15061991926729425469/aln /work/fvperes/15061991926729425469/aln_off --chain-alignments 0 --merge-query 1 --search-type 3 --threads 128 --compressed 0 --db-load-mode 0 -v 3 
+
+Computing ORF lookup
+Computing contig offsets
+Computing contig lookup
+Time for contig lookup: 0h 0m 0s 631ms
+Writing results to: /work/fvperes/15061991926729425469/aln_off
+[=================================================================] 8.96M 24s 916ms
+
+Time for merging to aln_off: 0h 0m 2s 850ms
+Time for processing: 0h 0m 55s 298ms
+clust /work/fvperes/15061991926729425469/input_step_redundancy /work/fvperes/15061991926729425469/aln_off /work/fvperes/15061991926729425469/clu --cluster-mode 2 --max-iterations 1000 --similarity-type 2 --threads 128 --compressed 0 -v 3 
+
+Clustering mode: Greedy
+Total time: 0h 0m 7s 870ms
+
+Size of the sequence database: 5085423
+Size of the alignment database: 5085423
+Number of clusters: 2994731
+
+Writing results 0h 0m 0s 688ms
+Time for merging to clu: 0h 0m 0s 0ms
+Time for processing: 0h 0m 9s 327ms
+mergeclusters DB DB_clust /work/fvperes/15061991926729425469/clu_redundancy /work/fvperes/15061991926729425469/clu --threads 128 --compressed 0 -v 3 
+
+Clustering step 1
+[=================================================================] 5.09M 0s 585ms
+Clustering step 2
+[=================================================================] 2.99M 1s 55ms
+Write merged clustering
+[=================================================================] 8.96M 1s 569ms
+Time for merging to DB_clust: 0h 0m 1s 614ms
+Time for processing: 0h 0m 4s 886ms
+createsubdb DB_clust DB DB_clust_rep 
+
+MMseqs Version: 	14.7e284
+Subdb mode      	0
+Database ID mode	0
+Verbosity       	3
+
+Time for merging to DB_clust_rep: 0h 0m 0s 173ms
+Time for processing: 0h 0m 6s 596ms
+convert2fasta DB_clust_rep DB_clust_rep.fasta 
+
+MMseqs Version:	14.7e284
+Use header DB	false
+Verbosity    	3
+
+Start writing file to DB_clust_rep.fasta
+Time for processing: 0h 0m 15s 135ms
+createtsv DB DB DB_clust DB_clust.tsv 
+
+MMseqs Version:                 	14.7e284
+First sequence as representative	false
+Target column                   	1
+Add full header                 	false
+Sequence source                 	0
+Database output                 	false
+Threads                         	128
+Compressed                      	0
+Verbosity                       	3
+
+Time for merging to DB_clust.tsv: 0h 0m 2s 237ms
+Time for processing: 0h 0m 7s 721ms
