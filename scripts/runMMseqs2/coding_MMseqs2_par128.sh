@@ -11,7 +11,7 @@ conda activate mmseqs2
 
 cd $PBS_O_WORKDIR
 
-mmseqs createdb putative_ncRNA_consensus.fa DB
+mmseqs createdb proteinCoding_RNA.fasta DB
 
 #DB - transcriptomes database
 #DB_clust - clusterized database
