@@ -52,10 +52,6 @@ def process_transcript_file(transcript_file, transcript_annotations):
                     #print(f"{gene}\t{annotation_str}")
                     output.write(f"{gene}\t{annotation_str}\n")
 
-#annotation_file = 'scripts/coExpression/moduleAnnotation/Correr/CNC/1000GO_universe_annotation_list2'
-#panrnaome_file = 'scripts/coExpression/moduleAnnotation/Correr/CNC/1000panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv'
-#output_file = 'scripts/coExpression/moduleAnnotation/Correr/CNC/GO_annotations_BP_PPV0.7.tsv'
-
 transcript_annotations = process_annotation_file(args.annotation_file)
 process_transcript_file(args.panrnaome_file, transcript_annotations)
 print(f"output saved as {out}")
