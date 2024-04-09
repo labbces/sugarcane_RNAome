@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0071704,organic substance metabolic process,9793,129,104.39,5.5e-05,0.1908
+GO:0008152,metabolic process,10367,134,110.5,7.8e-05,0.1908
+GO:0006807,nitrogen compound metabolic process,8053,110,85.84,0.00014,0.2283
+GO:0034641,cellular nitrogen compound metabolic pro...,4249,66,45.29,0.00035,0.362
+GO:0044238,primary metabolic process,9192,120,97.98,0.00037,0.362
+GO:0046483,heterocycle metabolic process,3959,61,42.2,0.00084,0.6569
+GO:0006725,cellular aromatic compound metabolic pro...,4059,62,43.27,0.00094,0.6569
+GO:1901576,organic substance biosynthetic process,3398,53,36.22,0.00166,0.9588
+GO:1901360,organic cyclic compound metabolic proces...,4161,62,44.35,0.00181,0.9588
+GO:0044249,cellular biosynthetic process,3341,52,35.61,0.00196,0.9588
+GO:0009058,biosynthetic process,3458,53,36.86,0.00246,1
+GO:0044271,cellular nitrogen compound biosynthetic ...,1899,33,20.24,0.00307,1
+GO:0043170,macromolecule metabolic process,7516,98,80.12,0.00389,1
+GO:0006139,nucleobase-containing compound metabolic...,3720,55,39.65,0.00445,1
+GO:0016070,RNA metabolic process,2057,34,21.93,0.00582,1
+GO:1901566,organonitrogen compound biosynthetic pro...,1241,23,13.23,0.00654,1
+GO:0018130,heterocycle biosynthetic process,1465,26,15.62,0.00673,1
+GO:0044237,cellular metabolic process,9270,115,98.81,0.0072,1
+GO:0006549,isoleucine metabolic process,13,2,0.14,0.00816,1
+GO:0009097,isoleucine biosynthetic process,13,2,0.14,0.00816,1
+GO:0046901,tetrahydrofolylpolyglutamate biosyntheti...,13,2,0.14,0.00816,1
+GO:0019438,aromatic compound biosynthetic process,1490,26,15.88,0.00832,1
+GO:0046900,tetrahydrofolylpolyglutamate metabolic p...,14,2,0.15,0.00945,1
+GO:0044281,small molecule metabolic process,1515,26,16.15,0.01022,1
+GO:0034198,cellular response to amino acid starvati...,1,1,0.01,0.01066,1
+GO:0034635,glutathione transport,1,1,0.01,0.01066,1
+GO:0070125,mitochondrial translational elongation,1,1,0.01,0.01066,1
+GO:1990928,response to amino acid starvation,1,1,0.01,0.01066,1
+GO:0042254,ribosome biogenesis,228,7,2.43,0.01125,1
+GO:0010467,gene expression,2170,34,23.13,0.01283,1
+GO:0016053,organic acid biosynthetic process,350,9,3.73,0.01288,1
+GO:0046394,carboxylic acid biosynthetic process,350,9,3.73,0.01288,1
+GO:0044283,small molecule biosynthetic process,486,11,5.18,0.01521,1
+GO:0043549,regulation of kinase activity,49,3,0.52,0.01532,1
+GO:1901564,organonitrogen compound metabolic proces...,5084,68,54.19,0.01536,1
+GO:0090304,nucleic acid metabolic process,3271,47,34.87,0.01558,1
+GO:0006364,rRNA processing,189,6,2.01,0.01588,1
+GO:0016072,rRNA metabolic process,190,6,2.03,0.01626,1
+GO:1901362,organic cyclic compound biosynthetic pro...,1588,26,16.93,0.01784,1
+GO:0042325,regulation of phosphorylation,53,3,0.56,0.01889,1
+GO:0009396,folic acid-containing compound biosynthe...,20,2,0.21,0.01892,1
+GO:0009082,branched-chain amino acid biosynthetic p...,21,2,0.22,0.02077,1
+GO:0006779,porphyrin-containing compound biosynthet...,55,3,0.59,0.02083,1
+GO:0032790,ribosome disassembly,2,1,0.02,0.02121,1
+GO:0015995,chlorophyll biosynthetic process,22,2,0.23,0.02269,1
+GO:0042559,pteridine-containing compound biosynthet...,22,2,0.23,0.02269,1
+GO:0043436,oxoacid metabolic process,867,16,9.24,0.023,1
+GO:0006082,organic acid metabolic process,868,16,9.25,0.02322,1
+GO:0034655,nucleobase-containing compound catabolic...,153,5,1.63,0.02406,1
+GO:0034645,cellular macromolecule biosynthetic proc...,1959,30,20.88,0.02572,1

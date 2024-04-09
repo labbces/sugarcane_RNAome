@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009854,oxidative photosynthetic carbon pathway,2,1,0,0.0043,1
+GO:0000266,mitochondrial fission,4,1,0.01,0.0086,1
+GO:0048544,recognition of pollen,72,2,0.16,0.0105,1
+GO:0008037,cell recognition,73,2,0.16,0.0108,1
+GO:0009875,pollen-pistil interaction,77,2,0.17,0.0119,1
+GO:0006851,mitochondrial calcium ion transmembrane ...,6,1,0.01,0.0129,1
+GO:0009853,photorespiration,6,1,0.01,0.0129,1
+GO:0010390,histone monoubiquitination,6,1,0.01,0.0129,1
+GO:0032204,regulation of telomere maintenance,6,1,0.01,0.0129,1
+GO:0016574,histone ubiquitination,8,1,0.02,0.0171,1
+GO:0070838,divalent metal ion transport,98,2,0.21,0.0189,1
+GO:0006513,protein monoubiquitination,9,1,0.02,0.0192,1
+GO:0016559,peroxisome fission,9,1,0.02,0.0192,1
+GO:0045116,protein neddylation,9,1,0.02,0.0192,1
+GO:0009856,pollination,100,2,0.22,0.0196,1
+GO:0072511,divalent inorganic cation transport,100,2,0.22,0.0196,1
+GO:0044706,multi-multicellular organism process,101,2,0.22,0.02,1
+GO:0032543,mitochondrial translation,10,1,0.02,0.0214,1
+GO:0051443,positive regulation of ubiquitin-protein...,12,1,0.03,0.0256,1
+GO:0009834,plant-type secondary cell wall biogenesi...,13,1,0.03,0.0277,1
+GO:0031398,positive regulation of protein ubiquitin...,13,1,0.03,0.0277,1
+GO:0051438,regulation of ubiquitin-protein transfer...,13,1,0.03,0.0277,1
+GO:0048285,organelle fission,124,2,0.27,0.0292,1
+GO:0006596,polyamine biosynthetic process,14,1,0.03,0.0298,1
+GO:1903322,positive regulation of protein modificat...,14,1,0.03,0.0298,1
+GO:0007064,mitotic sister chromatid cohesion,15,1,0.03,0.0319,1
+GO:0010105,negative regulation of ethylene-activate...,15,1,0.03,0.0319,1
+GO:0070298,negative regulation of phosphorelay sign...,15,1,0.03,0.0319,1
+GO:0051704,multi-organism process,134,2,0.29,0.0337,1
+GO:0007205,protein kinase C-activating G protein-co...,17,1,0.04,0.0361,1
+GO:0031396,regulation of protein ubiquitination,18,1,0.04,0.0381,1
+GO:0006595,polyamine metabolic process,19,1,0.04,0.0402,1
+GO:1903320,regulation of protein modification by sm...,19,1,0.04,0.0402,1
+GO:0006817,phosphate ion transport,21,1,0.05,0.0443,1
+GO:0010104,regulation of ethylene-activated signali...,21,1,0.05,0.0443,1
+GO:0070297,regulation of phosphorelay signal transd...,21,1,0.05,0.0443,1
+GO:0140053,mitochondrial gene expression,22,1,0.05,0.0464,1
+GO:0007062,sister chromatid cohesion,23,1,0.05,0.0485,1
+GO:1902532,negative regulation of intracellular sig...,23,1,0.05,0.0485,1
+GO:0005986,sucrose biosynthetic process,25,1,0.05,0.0526,1
+GO:0006606,protein import into nucleus,27,1,0.06,0.0567,1
+GO:0051276,chromosome organization,683,4,1.47,0.0581,1
+GO:0034504,protein localization to nucleus,28,1,0.06,0.0587,1
+GO:0006635,fatty acid beta-oxidation,29,1,0.06,0.0607,1
+GO:0051170,import into nucleus,29,1,0.06,0.0607,1
+GO:1903830,magnesium ion transmembrane transport,29,1,0.06,0.0607,1
+GO:0009309,amine biosynthetic process,30,1,0.06,0.0628,1
+GO:0042401,cellular biogenic amine biosynthetic pro...,30,1,0.06,0.0628,1
+GO:0009832,plant-type cell wall biogenesis,32,1,0.07,0.0668,1
+GO:0009062,fatty acid catabolic process,33,1,0.07,0.0688,1

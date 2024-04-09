@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006182,cGMP biosynthetic process,1,1,0,0.002,1
+GO:0009187,cyclic nucleotide metabolic process,1,1,0,0.002,1
+GO:0009190,cyclic nucleotide biosynthetic process,1,1,0,0.002,1
+GO:0046068,cGMP metabolic process,1,1,0,0.002,1
+GO:0052652,cyclic purine nucleotide metabolic proce...,1,1,0,0.002,1
+GO:0009877,nodulation,2,1,0,0.0039,1
+GO:0072318,clathrin coat disassembly,4,1,0.01,0.0079,1
+GO:0072319,vesicle uncoating,4,1,0.01,0.0079,1
+GO:0006419,alanyl-tRNA aminoacylation,9,1,0.02,0.0176,1
+GO:0045116,protein neddylation,9,1,0.02,0.0176,1
+GO:0090502,RNA phosphodiester bond hydrolysis, endo...,112,2,0.22,0.0205,1
+GO:0034067,protein localization to Golgi apparatus,12,1,0.02,0.0234,1
+GO:0045053,protein retention in Golgi apparatus,12,1,0.02,0.0234,1
+GO:0045292,mRNA cis splicing, via spliceosome,12,1,0.02,0.0234,1
+GO:0051443,positive regulation of ubiquitin-protein...,12,1,0.02,0.0234,1
+GO:0031398,positive regulation of protein ubiquitin...,13,1,0.03,0.0253,1
+GO:0051438,regulation of ubiquitin-protein transfer...,13,1,0.03,0.0253,1
+GO:1903322,positive regulation of protein modificat...,14,1,0.03,0.0273,1
+GO:0006002,fructose 6-phosphate metabolic process,16,1,0.03,0.0311,1
+GO:0032507,maintenance of protein location in cell,17,1,0.03,0.033,1
+GO:0045185,maintenance of protein location,17,1,0.03,0.033,1
+GO:0031396,regulation of protein ubiquitination,18,1,0.04,0.0349,1
+GO:0006898,receptor-mediated endocytosis,19,1,0.04,0.0368,1
+GO:0046940,nucleoside monophosphate phosphorylation,19,1,0.04,0.0368,1
+GO:0072583,clathrin-dependent endocytosis,19,1,0.04,0.0368,1
+GO:1903320,regulation of protein modification by sm...,19,1,0.04,0.0368,1
+GO:0009117,nucleotide metabolic process,383,3,0.76,0.039,1
+GO:0000375,RNA splicing, via transesterification re...,167,2,0.33,0.0427,1
+GO:0000377,RNA splicing, via transesterification re...,167,2,0.33,0.0427,1
+GO:0006753,nucleoside phosphate metabolic process,397,3,0.78,0.0427,1
+GO:0051261,protein depolymerization,24,1,0.05,0.0463,1
+GO:0051651,maintenance of location in cell,24,1,0.05,0.0463,1
+GO:0044403,symbiotic process,25,1,0.05,0.0482,1
+GO:0090501,RNA phosphodiester bond hydrolysis,182,2,0.36,0.0498,1
+GO:0006897,endocytosis,27,1,0.05,0.0519,1
+GO:0061615,glycolytic process through fructose-6-ph...,28,1,0.06,0.0538,1
+GO:0000373,Group II intron splicing,29,1,0.06,0.0557,1
+GO:0006623,protein targeting to vacuole,29,1,0.06,0.0557,1
+GO:0048646,anatomical structure formation involved ...,29,1,0.06,0.0557,1
+GO:0055086,nucleobase-containing small molecule met...,453,3,0.89,0.059,1
+GO:0008380,RNA splicing,206,2,0.41,0.062,1
+GO:0006396,RNA processing,774,4,1.53,0.0641,1
+GO:0051235,maintenance of location,34,1,0.07,0.065,1
+GO:0031401,positive regulation of protein modificat...,38,1,0.07,0.0723,1
+GO:0051347,positive regulation of transferase activ...,38,1,0.07,0.0723,1
+GO:0009165,nucleotide biosynthetic process,225,2,0.44,0.0723,1
+GO:1901293,nucleoside phosphate biosynthetic proces...,229,2,0.45,0.0746,1
+GO:0032259,methylation,504,3,0.99,0.076,1
+GO:0030488,tRNA methylation,42,1,0.08,0.0796,1
+GO:0009150,purine ribonucleotide metabolic process,240,2,0.47,0.0809,1

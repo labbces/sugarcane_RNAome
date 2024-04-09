@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010200,response to chitin,4,1,0,0.0047,1
+GO:0032469,endoplasmic reticulum calcium ion homeos...,5,1,0.01,0.0058,1
+GO:0006741,NADP biosynthetic process,8,1,0.01,0.0093,1
+GO:0031929,TOR signaling,12,1,0.01,0.014,1
+GO:0000165,MAPK cascade,14,1,0.02,0.0163,1
+GO:0006874,cellular calcium ion homeostasis,14,1,0.02,0.0163,1
+GO:0023014,signal transduction by protein phosphory...,14,1,0.02,0.0163,1
+GO:0055074,calcium ion homeostasis,14,1,0.02,0.0163,1
+GO:0019674,NAD metabolic process,17,1,0.02,0.0197,1
+GO:0016575,histone deacetylation,20,1,0.02,0.0232,1
+GO:0072503,cellular divalent inorganic cation homeo...,20,1,0.02,0.0232,1
+GO:0042592,homeostatic process,206,2,0.24,0.0238,1
+GO:0006476,protein deacetylation,21,1,0.02,0.0243,1
+GO:0019432,triglyceride biosynthetic process,23,1,0.03,0.0266,1
+GO:0019359,nicotinamide nucleotide biosynthetic pro...,24,1,0.03,0.0277,1
+GO:0019363,pyridine nucleotide biosynthetic process,24,1,0.03,0.0277,1
+GO:0035601,protein deacylation,24,1,0.03,0.0277,1
+GO:0046460,neutral lipid biosynthetic process,24,1,0.03,0.0277,1
+GO:0046463,acylglycerol biosynthetic process,24,1,0.03,0.0277,1
+GO:0006641,triglyceride metabolic process,25,1,0.03,0.0289,1
+GO:0006638,neutral lipid metabolic process,26,1,0.03,0.03,1
+GO:0006639,acylglycerol metabolic process,26,1,0.03,0.03,1
+GO:0098732,macromolecule deacylation,26,1,0.03,0.03,1
+GO:0006739,NADP metabolic process,27,1,0.03,0.0312,1
+GO:0035556,intracellular signal transduction,241,2,0.28,0.0318,1
+GO:0072507,divalent inorganic cation homeostasis,31,1,0.04,0.0357,1
+GO:0007033,vacuole organization,33,1,0.04,0.038,1
+GO:0072525,pyridine-containing compound biosyntheti...,36,1,0.04,0.0413,1
+GO:0006875,cellular metal ion homeostasis,44,1,0.05,0.0503,1
+GO:0019362,pyridine nucleotide metabolic process,44,1,0.05,0.0503,1
+GO:0046496,nicotinamide nucleotide metabolic proces...,44,1,0.05,0.0503,1
+GO:0070588,calcium ion transmembrane transport,48,1,0.06,0.0548,1
+GO:0006816,calcium ion transport,50,1,0.06,0.057,1
+GO:0030003,cellular cation homeostasis,52,1,0.06,0.0592,1
+GO:0006873,cellular ion homeostasis,56,1,0.07,0.0636,1
+GO:0010243,response to organonitrogen compound,56,1,0.07,0.0636,1
+GO:0072524,pyridine-containing compound metabolic p...,56,1,0.07,0.0636,1
+GO:0006733,oxidoreduction coenzyme metabolic proces...,59,1,0.07,0.0669,1
+GO:0007165,signal transduction,817,3,0.96,0.0675,1
+GO:0000723,telomere maintenance,60,1,0.07,0.068,1
+GO:0023052,signaling,821,3,0.96,0.0683,1
+GO:0051028,mRNA transport,61,1,0.07,0.0691,1
+GO:0060249,anatomical structure homeostasis,63,1,0.07,0.0713,1
+GO:0032200,telomere organization,64,1,0.07,0.0724,1
+GO:1901698,response to nitrogen compound,64,1,0.07,0.0724,1
+GO:0055082,cellular chemical homeostasis,69,1,0.08,0.0778,1
+GO:0006810,transport,2044,5,2.39,0.081,1
+GO:0055065,metal ion homeostasis,74,1,0.09,0.0832,1
+GO:0051234,establishment of localization,2074,5,2.43,0.0852,1
+GO:0009875,pollen-pistil interaction,77,1,0.09,0.0864,1

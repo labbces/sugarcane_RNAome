@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:1900150,regulation of defense response to fungus,17,3,0.37,0.0058,1
+GO:0006955,immune response,81,6,1.79,0.009,1
+GO:0016569,covalent chromatin modification,223,11,4.92,0.0108,1
+GO:0031347,regulation of defense response,85,6,1.87,0.0112,1
+GO:0016570,histone modification,197,10,4.35,0.0122,1
+GO:0002831,regulation of response to biotic stimulu...,63,5,1.39,0.0126,1
+GO:0034314,Arp2/3 complex-mediated actin nucleation,24,3,0.53,0.0153,1
+GO:0006260,DNA replication,204,10,4.5,0.0153,1
+GO:0098542,defense response to other organism,204,10,4.5,0.0153,1
+GO:0019566,arabinose metabolic process,9,2,0.2,0.0158,1
+GO:0046373,L-arabinose metabolic process,9,2,0.2,0.0158,1
+GO:0002376,immune system process,92,6,2.03,0.0161,1
+GO:0006488,dolichol-linked oligosaccharide biosynth...,25,3,0.55,0.0171,1
+GO:0071902,positive regulation of protein serine/th...,10,2,0.22,0.0194,1
+GO:0050832,defense response to fungus,72,5,1.59,0.0213,1
+GO:0000012,single strand break repair,1,1,0.02,0.0221,1
+GO:0000472,endonucleolytic cleavage to generate mat...,1,1,0.02,0.0221,1
+GO:0000480,endonucleolytic cleavage in 5'-ETS of tr...,1,1,0.02,0.0221,1
+GO:0000967,rRNA 5'-end processing,1,1,0.02,0.0221,1
+GO:0001731,formation of translation preinitiation c...,1,1,0.02,0.0221,1
+GO:0007063,regulation of sister chromatid cohesion,1,1,0.02,0.0221,1
+GO:0009595,detection of biotic stimulus,1,1,0.02,0.0221,1
+GO:0009661,chromoplast organization,1,1,0.02,0.0221,1
+GO:0016045,detection of bacterium,1,1,0.02,0.0221,1
+GO:0016123,xanthophyll biosynthetic process,1,1,0.02,0.0221,1
+GO:0032438,melanosome organization,1,1,0.02,0.0221,1
+GO:0033059,cellular pigmentation,1,1,0.02,0.0221,1
+GO:0033363,secretory granule organization,1,1,0.02,0.0221,1
+GO:0043132,NAD transport,1,1,0.02,0.0221,1
+GO:0043473,pigmentation,1,1,0.02,0.0221,1
+GO:0044211,CTP salvage,1,1,0.02,0.0221,1
+GO:0046950,cellular ketone body metabolic process,1,1,0.02,0.0221,1
+GO:0046951,ketone body biosynthetic process,1,1,0.02,0.0221,1
+GO:0048753,pigment granule organization,1,1,0.02,0.0221,1
+GO:0060155,platelet dense granule organization,1,1,0.02,0.0221,1
+GO:0098543,detection of other organism,1,1,0.02,0.0221,1
+GO:0098581,detection of external biotic stimulus,1,1,0.02,0.0221,1
+GO:1902224,ketone body metabolic process,1,1,0.02,0.0221,1
+GO:1903232,melanosome assembly,1,1,0.02,0.0221,1
+GO:1904143,positive regulation of carotenoid biosyn...,1,1,0.02,0.0221,1
+GO:2000622,regulation of nuclear-transcribed mRNA c...,1,1,0.02,0.0221,1
+GO:0006490,oligosaccharide-lipid intermediate biosy...,28,3,0.62,0.0232,1
+GO:0010020,chloroplast fission,11,2,0.24,0.0234,1
+GO:0043572,plastid fission,11,2,0.24,0.0234,1
+GO:0032101,regulation of response to external stimu...,74,5,1.63,0.0237,1
+GO:0072665,protein localization to vacuole,50,4,1.1,0.0242,1
+GO:0072666,establishment of protein localization to...,50,4,1.1,0.0242,1
+GO:1903830,magnesium ion transmembrane transport,29,3,0.64,0.0254,1
+GO:0045087,innate immune response,77,5,1.7,0.0276,1
+GO:0034067,protein localization to Golgi apparatus,12,2,0.26,0.0277,1

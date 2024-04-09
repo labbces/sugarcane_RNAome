@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016070,RNA metabolic process,2057,29,16.98,0.0025,1
+GO:0001522,pseudouridine synthesis,70,4,0.58,0.0027,1
+GO:0010212,response to ionizing radiation,10,2,0.08,0.0029,1
+GO:0006378,mRNA polyadenylation,13,2,0.11,0.005,1
+GO:0006438,valyl-tRNA aminoacylation,15,2,0.12,0.0066,1
+GO:0006273,lagging strand elongation,1,1,0.01,0.0083,1
+GO:0030322,stabilization of membrane potential,1,1,0.01,0.0083,1
+GO:0034224,cellular response to zinc ion starvation,1,1,0.01,0.0083,1
+GO:0120127,response to zinc ion starvation,1,1,0.01,0.0083,1
+GO:0006399,tRNA metabolic process,359,8,2.96,0.0099,1
+GO:0010467,gene expression,2170,28,17.92,0.0101,1
+GO:0000388,spliceosome conformational change to rel...,2,1,0.02,0.0164,1
+GO:0000448,cleavage in ITS2 between 5.8S rRNA and L...,2,1,0.02,0.0164,1
+GO:0006768,biotin metabolic process,2,1,0.02,0.0164,1
+GO:0009102,biotin biosynthetic process,2,1,0.02,0.0164,1
+GO:0009304,tRNA transcription,2,1,0.02,0.0164,1
+GO:0042391,regulation of membrane potential,2,1,0.02,0.0164,1
+GO:0042797,tRNA transcription by RNA polymerase III,2,1,0.02,0.0164,1
+GO:0051083,'de novo' cotranslational protein foldin...,2,1,0.02,0.0164,1
+GO:0060962,regulation of ribosomal protein gene tra...,2,1,0.02,0.0164,1
+GO:0097036,regulation of plasma membrane sterol dis...,2,1,0.02,0.0164,1
+GO:1904975,response to bleomycin,2,1,0.02,0.0164,1
+GO:2000683,regulation of cellular response to X-ray,2,1,0.02,0.0164,1
+GO:2000685,positive regulation of cellular response...,2,1,0.02,0.0164,1
+GO:0090501,RNA phosphodiester bond hydrolysis,182,5,1.5,0.0176,1
+GO:0034660,ncRNA metabolic process,577,10,4.76,0.0213,1
+GO:0009267,cellular response to starvation,28,2,0.23,0.0222,1
+GO:0009416,response to light stimulus,196,5,1.62,0.0233,1
+GO:1901360,organic cyclic compound metabolic proces...,4161,45,34.35,0.0242,1
+GO:0006294,nucleotide-excision repair, preincision ...,3,1,0.02,0.0246,1
+GO:0010213,non-photoreactive DNA repair,3,1,0.02,0.0246,1
+GO:0031538,negative regulation of anthocyanin metab...,3,1,0.02,0.0246,1
+GO:0071326,cellular response to monosaccharide stim...,3,1,0.02,0.0246,1
+GO:0071331,cellular response to hexose stimulus,3,1,0.02,0.0246,1
+GO:0071333,cellular response to glucose stimulus,3,1,0.02,0.0246,1
+GO:1990641,response to iron ion starvation,3,1,0.02,0.0246,1
+GO:0009314,response to radiation,200,5,1.65,0.0252,1
+GO:0043631,RNA polyadenylation,30,2,0.25,0.0253,1
+GO:0031124,mRNA 3'-end processing,31,2,0.26,0.0269,1
+GO:0009451,RNA modification,354,7,2.92,0.0276,1
+GO:0042594,response to starvation,33,2,0.27,0.0302,1
+GO:0090351,seedling development,33,2,0.27,0.0302,1
+GO:0009617,response to bacterium,83,3,0.69,0.0313,1
+GO:0000393,spliceosomal conformational changes to g...,4,1,0.03,0.0326,1
+GO:0006369,termination of RNA polymerase II transcr...,4,1,0.03,0.0326,1
+GO:0007009,plasma membrane organization,4,1,0.03,0.0326,1
+GO:0010165,response to X-ray,4,1,0.03,0.0326,1
+GO:0071481,cellular response to X-ray,4,1,0.03,0.0326,1
+GO:0071596,ubiquitin-dependent protein catabolic pr...,4,1,0.03,0.0326,1
+GO:0080009,mRNA methylation,4,1,0.03,0.0326,1

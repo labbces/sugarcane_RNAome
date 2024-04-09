@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0051090,regulation of DNA-binding transcription ...,3,3,0.26,0.00066,1
+GO:0015693,magnesium ion transport,34,9,2.96,0.002,1
+GO:0030091,protein repair,12,5,1.05,0.00235,1
+GO:0006646,phosphatidylethanolamine biosynthetic pr...,23,7,2.01,0.00265,1
+GO:0046337,phosphatidylethanolamine metabolic proce...,23,7,2.01,0.00265,1
+GO:1903830,magnesium ion transmembrane transport,29,8,2.53,0.00266,1
+GO:0030422,production of siRNA involved in RNA inte...,13,5,1.13,0.00355,1
+GO:0015074,DNA integration,299,40,26.07,0.00428,1
+GO:0002097,tRNA wobble base modification,20,6,1.74,0.00578,1
+GO:0016032,viral process,5,3,0.44,0.00578,1
+GO:0001172,transcription, RNA-templated,33,8,2.88,0.0063,1
+GO:0010014,meristem initiation,2,2,0.17,0.0076,1
+GO:0043434,response to peptide hormone,2,2,0.17,0.0076,1
+GO:0046786,viral replication complex formation and ...,2,2,0.17,0.0076,1
+GO:0051091,positive regulation of DNA-binding trans...,2,2,0.17,0.0076,1
+GO:0090421,embryonic meristem initiation,2,2,0.17,0.0076,1
+GO:0098609,cell-cell adhesion,2,2,0.17,0.0076,1
+GO:0006979,response to oxidative stress,120,19,10.46,0.00776,1
+GO:0009860,pollen tube growth,10,4,0.87,0.00787,1
+GO:0019915,lipid storage,10,4,0.87,0.00787,1
+GO:0036294,cellular response to decreased oxygen le...,10,4,0.87,0.00787,1
+GO:0071453,cellular response to oxygen levels,10,4,0.87,0.00787,1
+GO:0071456,cellular response to hypoxia,10,4,0.87,0.00787,1
+GO:0070838,divalent metal ion transport,98,16,8.54,0.01041,1
+GO:0071897,DNA biosynthetic process,231,31,20.14,0.01048,1
+GO:0006400,tRNA modification,115,18,10.03,0.01055,1
+GO:0018065,protein-cofactor linkage,6,3,0.52,0.01081,1
+GO:0016441,posttranscriptional gene silencing,36,8,3.14,0.01087,1
+GO:0042221,response to chemical,918,100,80.04,0.01115,1
+GO:0006278,RNA-dependent DNA biosynthetic process,169,24,14.73,0.01177,1
+GO:0072511,divalent inorganic cation transport,100,16,8.72,0.01255,1
+GO:0016246,RNA interference,17,5,1.48,0.01271,1
+GO:0090696,post-embryonic plant organ development,17,5,1.48,0.01271,1
+GO:0006807,nitrogen compound metabolic process,8053,742,702.09,0.01415,1
+GO:0043170,macromolecule metabolic process,7516,695,655.28,0.01437,1
+GO:0009084,glutamine family amino acid biosynthetic...,24,6,2.09,0.01486,1
+GO:0070076,histone lysine demethylation,24,6,2.09,0.01486,1
+GO:0035194,post-transcriptional gene silencing by R...,31,7,2.7,0.0154,1
+GO:0009846,pollen germination,12,4,1.05,0.01611,1
+GO:0010410,hemicellulose metabolic process,32,7,2.79,0.01827,1
+GO:0009636,response to toxic substance,159,22,13.86,0.0203,1
+GO:0042398,cellular modified amino acid biosyntheti...,48,9,4.18,0.02131,1
+GO:0007155,cell adhesion,3,2,0.26,0.02147,1
+GO:0009106,lipoate metabolic process,3,2,0.26,0.02147,1
+GO:0009107,lipoate biosynthetic process,3,2,0.26,0.02147,1
+GO:0017186,peptidyl-pyroglutamic acid biosynthetic ...,3,2,0.26,0.02147,1
+GO:0018199,peptidyl-glutamine modification,3,2,0.26,0.02147,1
+GO:0022610,biological adhesion,3,2,0.26,0.02147,1
+GO:0032544,plastid translation,3,2,0.26,0.02147,1
+GO:0035627,ceramide transport,3,2,0.26,0.02147,1

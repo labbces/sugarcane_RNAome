@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0002757,immune response-activating signal transd...,9,1,0.01,0.0066,1
+GO:0002758,innate immune response-activating signal...,9,1,0.01,0.0066,1
+GO:0002764,immune response-regulating signaling pat...,13,1,0.01,0.0096,1
+GO:0006086,acetyl-CoA biosynthetic process from pyr...,13,1,0.01,0.0096,1
+GO:0008380,RNA splicing,206,2,0.15,0.0097,1
+GO:0002218,activation of innate immune response,15,1,0.01,0.011,1
+GO:0002253,activation of immune response,15,1,0.01,0.011,1
+GO:0006085,acetyl-CoA biosynthetic process,15,1,0.01,0.011,1
+GO:0035384,thioester biosynthetic process,15,1,0.01,0.011,1
+GO:0071616,acyl-CoA biosynthetic process,15,1,0.01,0.011,1
+GO:0045089,positive regulation of innate immune res...,17,1,0.01,0.0125,1
+GO:0051702,interaction with symbiont,17,1,0.01,0.0125,1
+GO:0060548,negative regulation of cell death,18,1,0.01,0.0132,1
+GO:0002684,positive regulation of immune system pro...,19,1,0.01,0.014,1
+GO:0050778,positive regulation of immune response,19,1,0.01,0.014,1
+GO:0009626,plant-type hypersensitive response,22,1,0.02,0.0162,1
+GO:0034050,host programmed cell death induced by sy...,22,1,0.02,0.0162,1
+GO:0044403,symbiotic process,25,1,0.02,0.0183,1
+GO:0043207,response to external biotic stimulus,800,3,0.59,0.0188,1
+GO:0051707,response to other organism,800,3,0.59,0.0188,1
+GO:0006397,mRNA processing,293,2,0.22,0.019,1
+GO:0006084,acetyl-CoA metabolic process,26,1,0.02,0.0191,1
+GO:0033866,nucleoside bisphosphate biosynthetic pro...,26,1,0.02,0.0191,1
+GO:0034030,ribonucleoside bisphosphate biosynthetic...,26,1,0.02,0.0191,1
+GO:0034033,purine nucleoside bisphosphate biosynthe...,26,1,0.02,0.0191,1
+GO:0045088,regulation of innate immune response,26,1,0.02,0.0191,1
+GO:0044419,interspecies interaction between organis...,813,3,0.6,0.0196,1
+GO:0010941,regulation of cell death,29,1,0.02,0.0212,1
+GO:0030048,actin filament-based movement,29,1,0.02,0.0212,1
+GO:0009607,response to biotic stimulus,839,3,0.62,0.0213,1
+GO:0006637,acyl-CoA metabolic process,30,1,0.02,0.022,1
+GO:0035383,thioester metabolic process,30,1,0.02,0.022,1
+GO:0050776,regulation of immune response,31,1,0.02,0.0227,1
+GO:0002682,regulation of immune system process,32,1,0.02,0.0234,1
+GO:0009605,response to external stimulus,895,3,0.66,0.0253,1
+GO:0002833,positive regulation of response to bioti...,35,1,0.03,0.0256,1
+GO:0032103,positive regulation of response to exter...,40,1,0.03,0.0292,1
+GO:0031349,positive regulation of defense response,41,1,0.03,0.0299,1
+GO:0016071,mRNA metabolic process,406,2,0.3,0.0349,1
+GO:0012501,programmed cell death,48,1,0.04,0.0349,1
+GO:0009408,response to heat,50,1,0.04,0.0364,1
+GO:0033865,nucleoside bisphosphate metabolic proces...,55,1,0.04,0.0399,1
+GO:0033875,ribonucleoside bisphosphate metabolic pr...,55,1,0.04,0.0399,1
+GO:0034032,purine nucleoside bisphosphate metabolic...,55,1,0.04,0.0399,1
+GO:0042742,defense response to bacterium,55,1,0.04,0.0399,1
+GO:0008219,cell death,62,1,0.05,0.0449,1
+GO:0002831,regulation of response to biotic stimulu...,63,1,0.05,0.0456,1
+GO:0006950,response to stress,2893,5,2.14,0.0471,1
+GO:0043604,amide biosynthetic process,501,2,0.37,0.0512,1
+GO:0032101,regulation of response to external stimu...,74,1,0.05,0.0534,1

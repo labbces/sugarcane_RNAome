@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0044210,'de novo' CTP biosynthetic process,14,1,0,0.00086,0.9417
+GO:0006241,CTP biosynthetic process,24,1,0,0.00148,0.9417
+GO:0006541,glutamine metabolic process,24,1,0,0.00148,0.9417
+GO:0009208,pyrimidine ribonucleoside triphosphate m...,24,1,0,0.00148,0.9417
+GO:0009209,pyrimidine ribonucleoside triphosphate b...,24,1,0,0.00148,0.9417
+GO:0046036,CTP metabolic process,24,1,0,0.00148,0.9417
+GO:0009147,pyrimidine nucleoside triphosphate metab...,25,1,0,0.00154,0.9417
+GO:0009148,pyrimidine nucleoside triphosphate biosy...,25,1,0,0.00154,0.9417
+GO:0009218,pyrimidine ribonucleotide metabolic proc...,36,1,0,0.00222,1
+GO:0009220,pyrimidine ribonucleotide biosynthetic p...,36,1,0,0.00222,1
+GO:0009064,glutamine family amino acid metabolic pr...,45,1,0,0.00277,1
+GO:0009201,ribonucleoside triphosphate biosynthetic...,50,1,0,0.00308,1
+GO:0009142,nucleoside triphosphate biosynthetic pro...,51,1,0,0.00314,1
+GO:0006220,pyrimidine nucleotide metabolic process,60,1,0,0.0037,1
+GO:0006221,pyrimidine nucleotide biosynthetic proce...,60,1,0,0.0037,1
+GO:0072527,pyrimidine-containing compound metabolic...,79,1,0,0.00487,1
+GO:0072528,pyrimidine-containing compound biosynthe...,79,1,0,0.00487,1
+GO:0009199,ribonucleoside triphosphate metabolic pr...,144,1,0.01,0.00887,1
+GO:0009260,ribonucleotide biosynthetic process,145,1,0.01,0.00893,1
+GO:0046390,ribose phosphate biosynthetic process,146,1,0.01,0.009,1
+GO:0009141,nucleoside triphosphate metabolic proces...,150,1,0.01,0.00924,1
+GO:1901605,alpha-amino acid metabolic process,201,1,0.01,0.01238,1
+GO:0009165,nucleotide biosynthetic process,225,1,0.01,0.01386,1
+GO:1901293,nucleoside phosphate biosynthetic proces...,229,1,0.01,0.01411,1
+GO:0009259,ribonucleotide metabolic process,273,1,0.02,0.01682,1
+GO:0019693,ribose phosphate metabolic process,275,1,0.02,0.01694,1
+GO:0009117,nucleotide metabolic process,383,1,0.02,0.0236,1
+GO:0006753,nucleoside phosphate metabolic process,397,1,0.02,0.02446,1
+GO:0006520,cellular amino acid metabolic process,415,1,0.03,0.02557,1
+GO:1901137,carbohydrate derivative biosynthetic pro...,452,1,0.03,0.02785,1
+GO:0055086,nucleobase-containing small molecule met...,453,1,0.03,0.02791,1
+GO:0090407,organophosphate biosynthetic process,512,1,0.03,0.03155,1
+GO:1901135,carbohydrate derivative metabolic proces...,678,1,0.04,0.04177,1
+GO:0019637,organophosphate metabolic process,765,1,0.05,0.04713,1
+GO:0019752,carboxylic acid metabolic process,844,1,0.05,0.052,1
+GO:0043436,oxoacid metabolic process,867,1,0.05,0.05342,1
+GO:0006082,organic acid metabolic process,868,1,0.05,0.05348,1
+GO:1901566,organonitrogen compound biosynthetic pro...,1241,1,0.08,0.07646,1
+GO:0034654,nucleobase-containing compound biosynthe...,1277,1,0.08,0.07868,1
+GO:0018130,heterocycle biosynthetic process,1465,1,0.09,0.09026,1
+GO:0019438,aromatic compound biosynthetic process,1490,1,0.09,0.09181,1
+GO:0044281,small molecule metabolic process,1515,1,0.09,0.09335,1
+GO:1901362,organic cyclic compound biosynthetic pro...,1588,1,0.1,0.09784,1
+GO:0044271,cellular nitrogen compound biosynthetic ...,1899,1,0.12,0.11701,1
+GO:0006796,phosphate-containing compound metabolic ...,2746,1,0.17,0.16919,1
+GO:0006793,phosphorus metabolic process,2780,1,0.17,0.17129,1
+GO:0044249,cellular biosynthetic process,3341,1,0.21,0.20585,1
+GO:1901576,organic substance biosynthetic process,3398,1,0.21,0.20937,1
+GO:0009058,biosynthetic process,3458,1,0.21,0.21306,1
+GO:0006139,nucleobase-containing compound metabolic...,3720,1,0.23,0.22921,1

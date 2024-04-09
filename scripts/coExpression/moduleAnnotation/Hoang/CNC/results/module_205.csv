@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0042550,photosystem I stabilization,1,1,0,0.0036,1
+GO:0070727,cellular macromolecule localization,781,8,2.84,0.007,1
+GO:0008104,protein localization,783,8,2.85,0.0071,1
+GO:0043207,response to external biotic stimulus,800,8,2.91,0.008,1
+GO:0051707,response to other organism,800,8,2.91,0.008,1
+GO:0044419,interspecies interaction between organis...,813,8,2.96,0.0088,1
+GO:0009607,response to biotic stimulus,839,8,3.05,0.0106,1
+GO:0009750,response to fructose,3,1,0.01,0.0109,1
+GO:0018401,peptidyl-proline hydroxylation to 4-hydr...,3,1,0.01,0.0109,1
+GO:0035494,SNARE complex disassembly,3,1,0.01,0.0109,1
+GO:0090306,spindle assembly involved in meiosis,3,1,0.01,0.0109,1
+GO:0000212,meiotic spindle organization,4,1,0.01,0.0145,1
+GO:0009052,pentose-phosphate shunt, non-oxidative b...,4,1,0.01,0.0145,1
+GO:0015713,phosphoglycerate transmembrane transport,4,1,0.01,0.0145,1
+GO:0034497,protein localization to phagophore assem...,4,1,0.01,0.0145,1
+GO:0042873,aldonate transmembrane transport,4,1,0.01,0.0145,1
+GO:0044804,autophagy of nucleus,4,1,0.01,0.0145,1
+GO:0070973,protein localization to endoplasmic reti...,4,1,0.01,0.0145,1
+GO:0009605,response to external stimulus,895,8,3.25,0.0152,1
+GO:0051656,establishment of organelle localization,52,2,0.19,0.0153,1
+GO:0015031,protein transport,735,7,2.67,0.0168,1
+GO:0033036,macromolecule localization,914,8,3.32,0.017,1
+GO:0000055,ribosomal large subunit export from nucl...,5,1,0.02,0.018,1
+GO:0022411,cellular component disassembly,58,2,0.21,0.0189,1
+GO:0045184,establishment of protein localization,755,7,2.74,0.0191,1
+GO:0051640,organelle localization,59,2,0.21,0.0195,1
+GO:0006952,defense response,1938,13,7.05,0.02,1
+GO:0051641,cellular localization,947,8,3.44,0.0206,1
+GO:0000422,autophagy of mitochondrion,6,1,0.02,0.0216,1
+GO:0061726,mitochondrion disassembly,6,1,0.02,0.0216,1
+GO:0015833,peptide transport,789,7,2.87,0.0237,1
+GO:0042886,amide transport,794,7,2.89,0.0244,1
+GO:0009749,response to glucose,8,1,0.03,0.0287,1
+GO:0019511,peptidyl-proline hydroxylation,8,1,0.03,0.0287,1
+GO:0000054,ribosomal subunit export from nucleus,9,1,0.03,0.0323,1
+GO:0009746,response to hexose,9,1,0.03,0.0323,1
+GO:0010109,regulation of photosynthesis,9,1,0.03,0.0323,1
+GO:0033750,ribosome localization,9,1,0.03,0.0323,1
+GO:0042548,regulation of photosynthesis, light reac...,9,1,0.03,0.0323,1
+GO:0071428,rRNA-containing ribonucleoprotein comple...,9,1,0.03,0.0323,1
+GO:0070925,organelle assembly,80,2,0.29,0.0343,1
+GO:0009233,menaquinone metabolic process,10,1,0.04,0.0358,1
+GO:0009234,menaquinone biosynthetic process,10,1,0.04,0.0358,1
+GO:0009691,cytokinin biosynthetic process,10,1,0.04,0.0358,1
+GO:0034284,response to monosaccharide,10,1,0.04,0.0358,1
+GO:1903008,organelle disassembly,10,1,0.04,0.0358,1
+GO:0006914,autophagy,82,2,0.3,0.0358,1
+GO:0061919,process utilizing autophagic mechanism,82,2,0.3,0.0358,1
+GO:0050896,response to stimulus,3963,21,14.41,0.0359,1
+GO:0018126,protein hydroxylation,11,1,0.04,0.0393,1

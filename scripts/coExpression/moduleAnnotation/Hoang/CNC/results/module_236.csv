@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009073,aromatic amino acid family biosynthetic ...,48,4,0.57,0.0025,1
+GO:0007264,small GTPase mediated signal transductio...,27,3,0.32,0.0039,1
+GO:0042780,tRNA 3'-end processing,10,2,0.12,0.0059,1
+GO:0071103,DNA conformation change,246,8,2.93,0.0093,1
+GO:0046578,regulation of Ras protein signal transdu...,13,2,0.15,0.0101,1
+GO:0051056,regulation of small GTPase mediated sign...,13,2,0.15,0.0101,1
+GO:0031507,heterochromatin assembly,39,3,0.46,0.011,1
+GO:0034401,chromatin organization involved in regul...,39,3,0.46,0.011,1
+GO:0045814,negative regulation of gene expression, ...,39,3,0.46,0.011,1
+GO:0070828,heterochromatin organization,39,3,0.46,0.011,1
+GO:0097549,chromatin organization involved in negat...,39,3,0.46,0.011,1
+GO:0009072,aromatic amino acid family metabolic pro...,73,4,0.87,0.0111,1
+GO:0000105,histidine biosynthetic process,14,2,0.17,0.0117,1
+GO:0006547,histidine metabolic process,14,2,0.17,0.0117,1
+GO:0007265,Ras protein signal transduction,14,2,0.17,0.0117,1
+GO:0052803,imidazole-containing compound metabolic ...,14,2,0.17,0.0117,1
+GO:0006015,5-phosphoribose 1-diphosphate biosynthet...,1,1,0.01,0.0119,1
+GO:0006063,uronic acid metabolic process,1,1,0.01,0.0119,1
+GO:0006858,extracellular transport,1,1,0.01,0.0119,1
+GO:0016259,selenocysteine metabolic process,1,1,0.01,0.0119,1
+GO:0016260,selenocysteine biosynthetic process,1,1,0.01,0.0119,1
+GO:0019586,galacturonate metabolic process,1,1,0.01,0.0119,1
+GO:0032482,Rab protein signal transduction,1,1,0.01,0.0119,1
+GO:0032483,regulation of Rab protein signal transdu...,1,1,0.01,0.0119,1
+GO:0046391,5-phosphoribose 1-diphosphate metabolic ...,1,1,0.01,0.0119,1
+GO:0046396,D-galacturonate metabolic process,1,1,0.01,0.0119,1
+GO:0050688,regulation of defense response to virus,1,1,0.01,0.0119,1
+GO:0097056,selenocysteinyl-tRNA(Sec) biosynthetic p...,1,1,0.01,0.0119,1
+GO:1990428,miRNA transport,1,1,0.01,0.0119,1
+GO:0000162,tryptophan biosynthetic process,15,2,0.18,0.0133,1
+GO:0046219,indolalkylamine biosynthetic process,15,2,0.18,0.0133,1
+GO:0009740,gibberellic acid mediated signaling path...,18,2,0.21,0.019,1
+GO:0045892,negative regulation of transcription, DN...,131,5,1.56,0.0202,1
+GO:1902679,negative regulation of RNA biosynthetic ...,131,5,1.56,0.0202,1
+GO:1903507,negative regulation of nucleic acid-temp...,131,5,1.56,0.0202,1
+GO:0006974,cellular response to DNA damage stimulus,517,12,6.15,0.021,1
+GO:0006568,tryptophan metabolic process,19,2,0.23,0.0211,1
+GO:0006586,indolalkylamine metabolic process,19,2,0.23,0.0211,1
+GO:0030150,protein import into mitochondrial matrix,19,2,0.23,0.0211,1
+GO:0040029,regulation of gene expression, epigeneti...,90,4,1.07,0.0224,1
+GO:0006493,protein O-linked glycosylation,20,2,0.24,0.0232,1
+GO:0042435,indole-containing compound biosynthetic ...,20,2,0.24,0.0232,1
+GO:0006437,tyrosyl-tRNA aminoacylation,2,1,0.02,0.0236,1
+GO:0010235,guard mother cell cytokinesis,2,1,0.02,0.0236,1
+GO:0045739,positive regulation of DNA repair,2,1,0.02,0.0236,1
+GO:0046443,FAD metabolic process,2,1,0.02,0.0236,1
+GO:2001022,positive regulation of response to DNA d...,2,1,0.02,0.0236,1
+GO:0051253,negative regulation of RNA metabolic pro...,139,5,1.65,0.0253,1
+GO:0010558,negative regulation of macromolecule bio...,191,6,2.27,0.0268,1
+GO:2000113,negative regulation of cellular macromol...,191,6,2.27,0.0268,1

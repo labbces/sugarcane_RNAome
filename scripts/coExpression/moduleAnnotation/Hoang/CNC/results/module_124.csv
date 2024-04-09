@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006271,DNA strand elongation involved in DNA re...,6,2,0.1,0.004,1
+GO:0022616,DNA strand elongation,6,2,0.1,0.004,1
+GO:0043647,inositol phosphate metabolic process,63,5,1.06,0.0041,1
+GO:0046855,inositol phosphate dephosphorylation,46,4,0.77,0.0072,1
+GO:0071545,inositol phosphate catabolic process,46,4,0.77,0.0072,1
+GO:0035195,gene silencing by miRNA,8,2,0.13,0.0073,1
+GO:0046856,phosphatidylinositol dephosphorylation,47,4,0.79,0.0078,1
+GO:0046839,phospholipid dephosphorylation,48,4,0.8,0.0084,1
+GO:0046174,polyol catabolic process,49,4,0.82,0.0091,1
+GO:0000380,alternative mRNA splicing, via spliceoso...,9,2,0.15,0.0093,1
+GO:0046838,phosphorylated carbohydrate dephosphoryl...,50,4,0.84,0.0097,1
+GO:0046164,alcohol catabolic process,53,4,0.89,0.0119,1
+GO:1901616,organic hydroxy compound catabolic proce...,55,4,0.92,0.0135,1
+GO:0006404,RNA import into nucleus,1,1,0.02,0.0168,1
+GO:0010234,anther wall tapetum cell fate specificat...,1,1,0.02,0.0168,1
+GO:0043953,protein transport by the Tat complex,1,1,0.02,0.0168,1
+GO:0048448,stamen morphogenesis,1,1,0.02,0.0168,1
+GO:0048455,stamen formation,1,1,0.02,0.0168,1
+GO:0048654,anther morphogenesis,1,1,0.02,0.0168,1
+GO:0048655,anther wall tapetum morphogenesis,1,1,0.02,0.0168,1
+GO:0048656,anther wall tapetum formation,1,1,0.02,0.0168,1
+GO:0048657,anther wall tapetum cell differentiation,1,1,0.02,0.0168,1
+GO:0051316,attachment of spindle microtubules to ki...,1,1,0.02,0.0168,1
+GO:0051455,monopolar spindle attachment to meiosis ...,1,1,0.02,0.0168,1
+GO:0051754,meiotic sister chromatid cohesion, centr...,1,1,0.02,0.0168,1
+GO:0061015,snRNA import into nucleus,1,1,0.02,0.0168,1
+GO:0070601,centromeric sister chromatid cohesion,1,1,0.02,0.0168,1
+GO:0071076,RNA 3' uridylation,1,1,0.02,0.0168,1
+GO:1900262,regulation of DNA-directed DNA polymeras...,1,1,0.02,0.0168,1
+GO:1900264,positive regulation of DNA-directed DNA ...,1,1,0.02,0.0168,1
+GO:1901527,abscisic acid-activated signaling pathwa...,1,1,0.02,0.0168,1
+GO:0019751,polyol metabolic process,98,5,1.64,0.0245,1
+GO:0030036,actin cytoskeleton organization,135,6,2.26,0.0262,1
+GO:0009873,ethylene-activated signaling pathway,39,3,0.65,0.0273,1
+GO:0006012,galactose metabolic process,16,2,0.27,0.0288,1
+GO:0071369,cellular response to ethylene stimulus,41,3,0.69,0.0311,1
+GO:0016458,gene silencing,142,6,2.38,0.0325,1
+GO:0031047,gene silencing by RNA,142,6,2.38,0.0325,1
+GO:0000301,retrograde transport, vesicle recycling ...,2,1,0.03,0.0332,1
+GO:0006528,asparagine metabolic process,2,1,0.03,0.0332,1
+GO:0006529,asparagine biosynthetic process,2,1,0.03,0.0332,1
+GO:0010315,auxin efflux,2,1,0.03,0.0332,1
+GO:0048449,floral organ formation,2,1,0.03,0.0332,1
+GO:0051030,snRNA transport,2,1,0.03,0.0332,1
+GO:0051501,diterpene phytoalexin metabolic process,2,1,0.03,0.0332,1
+GO:0051502,diterpene phytoalexin biosynthetic proce...,2,1,0.03,0.0332,1
+GO:0052314,phytoalexin metabolic process,2,1,0.03,0.0332,1
+GO:0052315,phytoalexin biosynthetic process,2,1,0.03,0.0332,1
+GO:0060964,regulation of gene silencing by miRNA,2,1,0.03,0.0332,1
+GO:0070370,cellular heat acclimation,2,1,0.03,0.0332,1

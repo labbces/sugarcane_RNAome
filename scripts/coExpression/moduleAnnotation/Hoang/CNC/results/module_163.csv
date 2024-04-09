@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0046855,inositol phosphate dephosphorylation,46,3,0.31,0.0036,1
+GO:0071545,inositol phosphate catabolic process,46,3,0.31,0.0036,1
+GO:0046174,polyol catabolic process,49,3,0.33,0.0043,1
+GO:0046838,phosphorylated carbohydrate dephosphoryl...,50,3,0.34,0.0046,1
+GO:0046164,alcohol catabolic process,53,3,0.36,0.0054,1
+GO:1901616,organic hydroxy compound catabolic proce...,55,3,0.37,0.006,1
+GO:0006546,glycine catabolic process,1,1,0.01,0.0067,1
+GO:0019464,glycine decarboxylation via glycine clea...,1,1,0.01,0.0067,1
+GO:0021549,cerebellum development,1,1,0.01,0.0067,1
+GO:0021575,hindbrain morphogenesis,1,1,0.01,0.0067,1
+GO:0021587,cerebellum morphogenesis,1,1,0.01,0.0067,1
+GO:0021680,cerebellar Purkinje cell layer developme...,1,1,0.01,0.0067,1
+GO:0021692,cerebellar Purkinje cell layer morphogen...,1,1,0.01,0.0067,1
+GO:0021695,cerebellar cortex development,1,1,0.01,0.0067,1
+GO:0021696,cerebellar cortex morphogenesis,1,1,0.01,0.0067,1
+GO:0022037,metencephalon development,1,1,0.01,0.0067,1
+GO:0030902,hindbrain development,1,1,0.01,0.0067,1
+GO:0031441,negative regulation of mRNA 3'-end proce...,1,1,0.01,0.0067,1
+GO:0034486,vacuolar transmembrane transport,1,1,0.01,0.0067,1
+GO:0042135,neurotransmitter catabolic process,1,1,0.01,0.0067,1
+GO:0090414,molybdate ion export from vacuole,1,1,0.01,0.0067,1
+GO:1900363,regulation of mRNA polyadenylation,1,1,0.01,0.0067,1
+GO:1900364,negative regulation of mRNA polyadenylat...,1,1,0.01,0.0067,1
+GO:0034219,carbohydrate transmembrane transport,62,3,0.42,0.0084,1
+GO:0043647,inositol phosphate metabolic process,63,3,0.42,0.0087,1
+GO:0016108,tetraterpenoid metabolic process,22,2,0.15,0.0095,1
+GO:0016116,carotenoid metabolic process,22,2,0.15,0.0095,1
+GO:0006730,one-carbon metabolic process,24,2,0.16,0.0112,1
+GO:0016311,dephosphorylation,203,5,1.36,0.0119,1
+GO:0007417,central nervous system development,2,1,0.01,0.0134,1
+GO:0007420,brain development,2,1,0.01,0.0134,1
+GO:0009071,serine family amino acid catabolic proce...,2,1,0.01,0.0134,1
+GO:0031440,regulation of mRNA 3'-end processing,2,1,0.01,0.0134,1
+GO:0050686,negative regulation of mRNA processing,2,1,0.01,0.0134,1
+GO:0060322,head development,2,1,0.01,0.0134,1
+GO:0046434,organophosphate catabolic process,75,3,0.5,0.014,1
+GO:0008643,carbohydrate transport,80,3,0.54,0.0167,1
+GO:0006914,autophagy,82,3,0.55,0.0178,1
+GO:0061919,process utilizing autophagic mechanism,82,3,0.55,0.0178,1
+GO:0044282,small molecule catabolic process,149,4,1,0.0181,1
+GO:0051017,actin filament bundle assembly,31,2,0.21,0.0183,1
+GO:0061572,actin filament bundle organization,31,2,0.21,0.0183,1
+GO:0000304,response to singlet oxygen,3,1,0.02,0.02,1
+GO:0010270,photosystem II oxygen evolving complex a...,3,1,0.02,0.02,1
+GO:0010343,singlet oxygen-mediated programmed cell ...,3,1,0.02,0.02,1
+GO:0010413,glucuronoxylan metabolic process,3,1,0.02,0.02,1
+GO:0010417,glucuronoxylan biosynthetic process,3,1,0.02,0.02,1
+GO:0071452,cellular response to singlet oxygen,3,1,0.02,0.02,1
+GO:0080112,seed growth,3,1,0.02,0.02,1
+GO:0080113,regulation of seed growth,3,1,0.02,0.02,1

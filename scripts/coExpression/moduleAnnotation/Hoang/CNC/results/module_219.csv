@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006560,proline metabolic process,4,2,0.05,0.001,1
+GO:0000491,small nucleolar ribonucleoprotein comple...,5,2,0.07,0.0017,1
+GO:0000492,box C/D snoRNP assembly,5,2,0.07,0.0017,1
+GO:0018205,peptidyl-lysine modification,135,7,1.8,0.0022,1
+GO:0031326,regulation of cellular biosynthetic proc...,577,16,7.68,0.0046,1
+GO:0009134,nucleoside diphosphate catabolic process,8,2,0.11,0.0047,1
+GO:0009889,regulation of biosynthetic process,583,16,7.76,0.0051,1
+GO:0006417,regulation of translation,130,6,1.73,0.0079,1
+GO:2000112,regulation of cellular macromolecule bio...,559,15,7.44,0.008,1
+GO:0010556,regulation of macromolecule biosynthetic...,560,15,7.45,0.0081,1
+GO:0034248,regulation of cellular amide metabolic p...,132,6,1.76,0.0085,1
+GO:0008610,lipid biosynthetic process,672,17,8.94,0.0086,1
+GO:0006325,chromatin organization,413,12,5.5,0.0095,1
+GO:0016569,covalent chromatin modification,223,8,2.97,0.0101,1
+GO:0044255,cellular lipid metabolic process,808,19,10.75,0.0117,1
+GO:0009308,amine metabolic process,67,4,0.89,0.0122,1
+GO:0016109,tetraterpenoid biosynthetic process,13,2,0.17,0.0125,1
+GO:0016117,carotenoid biosynthetic process,13,2,0.17,0.0125,1
+GO:0007231,osmosensory signaling pathway,1,1,0.01,0.0133,1
+GO:0009652,thigmotropism,1,1,0.01,0.0133,1
+GO:0032785,negative regulation of DNA-templated tra...,1,1,0.01,0.0133,1
+GO:0097272,ammonia homeostasis,1,1,0.01,0.0133,1
+GO:0097275,cellular ammonia homeostasis,1,1,0.01,0.0133,1
+GO:0110064,lncRNA catabolic process,1,1,0.01,0.0133,1
+GO:0006629,lipid metabolic process,1054,23,14.03,0.0134,1
+GO:0008299,isoprenoid biosynthetic process,191,7,2.54,0.0141,1
+GO:0010558,negative regulation of macromolecule bio...,191,7,2.54,0.0141,1
+GO:2000113,negative regulation of cellular macromol...,191,7,2.54,0.0141,1
+GO:0051568,histone H3-K4 methylation,14,2,0.19,0.0144,1
+GO:0048523,negative regulation of cellular process,386,11,5.14,0.0145,1
+GO:0009890,negative regulation of biosynthetic proc...,195,7,2.6,0.0157,1
+GO:0031327,negative regulation of cellular biosynth...,195,7,2.6,0.0157,1
+GO:0016570,histone modification,197,7,2.62,0.0165,1
+GO:0010105,negative regulation of ethylene-activate...,15,2,0.2,0.0165,1
+GO:0070298,negative regulation of phosphorelay sign...,15,2,0.2,0.0165,1
+GO:0034404,nucleobase-containing small molecule bio...,41,3,0.55,0.0171,1
+GO:0016114,terpenoid biosynthetic process,157,6,2.09,0.0187,1
+GO:0008272,sulfate transport,16,2,0.21,0.0187,1
+GO:0036092,phosphatidylinositol-3-phosphate biosynt...,16,2,0.21,0.0187,1
+GO:0090407,organophosphate biosynthetic process,512,13,6.81,0.0198,1
+GO:0051171,regulation of nitrogen compound metaboli...,742,17,9.88,0.0209,1
+GO:0032261,purine nucleotide salvage,17,2,0.23,0.021,1
+GO:0043101,purine-containing compound salvage,17,2,0.23,0.021,1
+GO:2000765,regulation of cytoplasmic translation,17,2,0.23,0.021,1
+GO:0016571,histone methylation,79,4,1.05,0.0211,1
+GO:0030258,lipid modification,162,6,2.16,0.0214,1
+GO:0009064,glutamine family amino acid metabolic pr...,45,3,0.6,0.0219,1
+GO:0008654,phospholipid biosynthetic process,258,8,3.43,0.0224,1
+GO:0044106,cellular amine metabolic process,46,3,0.61,0.0232,1
+GO:0006952,defense response,1938,36,25.79,0.0238,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0003341,cilium movement,1,1,0,0.0029,1
+GO:0003352,regulation of cilium movement,1,1,0,0.0029,1
+GO:0060632,regulation of microtubule-based movement,1,1,0,0.0029,1
+GO:0055085,transmembrane transport,712,7,2.06,0.0041,1
+GO:0019252,starch biosynthetic process,38,2,0.11,0.0054,1
+GO:0042795,snRNA transcription by RNA polymerase II,2,1,0.01,0.0058,1
+GO:0009301,snRNA transcription,3,1,0.01,0.0087,1
+GO:0042796,snRNA transcription by RNA polymerase II...,3,1,0.01,0.0087,1
+GO:0005982,starch metabolic process,51,2,0.15,0.0096,1
+GO:0006414,translational elongation,52,2,0.15,0.0099,1
+GO:0009059,macromolecule biosynthetic process,2007,12,5.81,0.0102,1
+GO:0007076,mitotic chromosome condensation,4,1,0.01,0.0115,1
+GO:0006486,protein glycosylation,170,3,0.49,0.0131,1
+GO:0043413,macromolecule glycosylation,170,3,0.49,0.0131,1
+GO:0009101,glycoprotein biosynthetic process,173,3,0.5,0.0137,1
+GO:0034219,carbohydrate transmembrane transport,62,2,0.18,0.0139,1
+GO:0016094,polyprenol biosynthetic process,5,1,0.01,0.0144,1
+GO:0019408,dolichol biosynthetic process,5,1,0.01,0.0144,1
+GO:0009100,glycoprotein metabolic process,184,3,0.53,0.0161,1
+GO:0051270,regulation of cellular component movemen...,6,1,0.02,0.0173,1
+GO:0098781,ncRNA transcription,6,1,0.02,0.0173,1
+GO:0000271,polysaccharide biosynthetic process,191,3,0.55,0.0178,1
+GO:0000719,photoreactive repair,7,1,0.02,0.0201,1
+GO:0070085,glycosylation,201,3,0.58,0.0204,1
+GO:0034645,cellular macromolecule biosynthetic proc...,1959,11,5.67,0.0218,1
+GO:0008643,carbohydrate transport,80,2,0.23,0.0225,1
+GO:0009650,UV protection,8,1,0.02,0.0229,1
+GO:0015740,C4-dicarboxylate transport,8,1,0.02,0.0229,1
+GO:0015743,malate transport,8,1,0.02,0.0229,1
+GO:0019348,dolichol metabolic process,8,1,0.02,0.0229,1
+GO:0006261,DNA-dependent DNA replication,81,2,0.23,0.023,1
+GO:0006835,dicarboxylic acid transport,9,1,0.03,0.0258,1
+GO:0006290,pyrimidine dimer repair,10,1,0.03,0.0286,1
+GO:0016093,polyprenol metabolic process,12,1,0.03,0.0342,1
+GO:0032786,positive regulation of DNA-templated tra...,13,1,0.04,0.037,1
+GO:0071577,zinc ion transmembrane transport,13,1,0.04,0.037,1
+GO:0051179,localization,2126,11,6.16,0.0373,1
+GO:0006829,zinc ion transport,14,1,0.04,0.0398,1
+GO:0005976,polysaccharide metabolic process,276,3,0.8,0.0456,1
+GO:0140352,export from cell,124,2,0.36,0.0501,1
+GO:0030261,chromosome condensation,18,1,0.05,0.0509,1
+GO:0045489,pectin biosynthetic process,18,1,0.05,0.0509,1
+GO:0016051,carbohydrate biosynthetic process,290,3,0.84,0.0515,1
+GO:0071702,organic substance transport,1187,7,3.44,0.0532,1
+GO:0006898,receptor-mediated endocytosis,19,1,0.06,0.0536,1
+GO:0016073,snRNA metabolic process,19,1,0.06,0.0536,1
+GO:0032784,regulation of DNA-templated transcriptio...,19,1,0.06,0.0536,1
+GO:0072583,clathrin-dependent endocytosis,19,1,0.06,0.0536,1
+GO:0018216,peptidyl-arginine methylation,21,1,0.06,0.0591,1
+GO:0006613,cotranslational protein targeting to mem...,22,1,0.06,0.0618,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016579,protein deubiquitination,98,5,0.54,2e-04,0.6604
+GO:0070646,protein modification by small protein re...,104,5,0.57,0.00027,0.6604
+GO:0090333,regulation of stomatal closure,8,2,0.04,0.00081,1
+GO:0090332,stomatal closure,9,2,0.05,0.00104,1
+GO:0009057,macromolecule catabolic process,530,9,2.91,0.00247,1
+GO:0010876,lipid localization,111,4,0.61,0.00324,1
+GO:0002098,tRNA wobble uridine modification,16,2,0.09,0.00339,1
+GO:0006511,ubiquitin-dependent protein catabolic pr...,269,6,1.48,0.00361,1
+GO:0019941,modification-dependent protein catabolic...,276,6,1.51,0.0041,1
+GO:0043632,modification-dependent macromolecule cat...,277,6,1.52,0.00417,1
+GO:0010119,regulation of stomatal movement,18,2,0.1,0.0043,1
+GO:0090305,nucleic acid phosphodiester bond hydroly...,384,7,2.11,0.00514,1
+GO:0002097,tRNA wobble base modification,20,2,0.11,0.0053,1
+GO:0033388,putrescine biosynthetic process from arg...,1,1,0.01,0.00548,1
+GO:0080178,5-carbamoylmethyl uridine residue modifi...,1,1,0.01,0.00548,1
+GO:0051603,proteolysis involved in cellular protein...,300,6,1.65,0.00612,1
+GO:0044257,cellular protein catabolic process,306,6,1.68,0.00672,1
+GO:0006241,CTP biosynthetic process,24,2,0.13,0.00759,1
+GO:0009208,pyrimidine ribonucleoside triphosphate m...,24,2,0.13,0.00759,1
+GO:0009209,pyrimidine ribonucleoside triphosphate b...,24,2,0.13,0.00759,1
+GO:0046036,CTP metabolic process,24,2,0.13,0.00759,1
+GO:0009147,pyrimidine nucleoside triphosphate metab...,25,2,0.14,0.00822,1
+GO:0009148,pyrimidine nucleoside triphosphate biosy...,25,2,0.14,0.00822,1
+GO:0009812,flavonoid metabolic process,26,2,0.14,0.00887,1
+GO:0030163,protein catabolic process,328,6,1.8,0.0093,1
+GO:0010118,stomatal movement,27,2,0.15,0.00955,1
+GO:0048530,fruit morphogenesis,2,1,0.01,0.01094,1
+GO:0051501,diterpene phytoalexin metabolic process,2,1,0.01,0.01094,1
+GO:0051502,diterpene phytoalexin biosynthetic proce...,2,1,0.01,0.01094,1
+GO:0052314,phytoalexin metabolic process,2,1,0.01,0.01094,1
+GO:0052315,phytoalexin biosynthetic process,2,1,0.01,0.01094,1
+GO:0060962,regulation of ribosomal protein gene tra...,2,1,0.01,0.01094,1
+GO:0009056,catabolic process,1051,12,5.76,0.012,1
+GO:0044248,cellular catabolic process,800,10,4.39,0.01208,1
+GO:0072507,divalent inorganic cation homeostasis,31,2,0.17,0.01247,1
+GO:0044265,cellular macromolecule catabolic process,458,7,2.51,0.01288,1
+GO:0070647,protein modification by small protein co...,570,8,3.13,0.0129,1
+GO:0031538,negative regulation of anthocyanin metab...,3,1,0.02,0.01636,1
+GO:0051123,RNA polymerase II preinitiation complex ...,3,1,0.02,0.01636,1
+GO:0009218,pyrimidine ribonucleotide metabolic proc...,36,2,0.2,0.0166,1
+GO:0009220,pyrimidine ribonucleotide biosynthetic p...,36,2,0.2,0.0166,1
+GO:0006281,DNA repair,484,7,2.65,0.01696,1
+GO:0006869,lipid transport,101,3,0.55,0.01806,1
+GO:1901360,organic cyclic compound metabolic proces...,4161,32,22.82,0.01978,1
+GO:0010200,response to chitin,4,1,0.02,0.02176,1
+GO:0006508,proteolysis,878,10,4.81,0.02176,1
+GO:0006139,nucleobase-containing compound metabolic...,3720,29,20.4,0.02332,1
+GO:0006974,cellular response to DNA damage stimulus,517,7,2.84,0.02338,1
+GO:0043170,macromolecule metabolic process,7516,51,41.22,0.02402,1
+GO:0006725,cellular aromatic compound metabolic pro...,4059,31,22.26,0.02433,1

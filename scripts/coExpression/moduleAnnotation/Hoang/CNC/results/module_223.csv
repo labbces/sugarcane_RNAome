@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009298,GDP-mannose biosynthetic process,7,3,0.04,5.5e-06,0.0215
+GO:0019673,GDP-mannose metabolic process,8,3,0.04,8.8e-06,0.0215
+GO:0009646,response to absence of light,6,2,0.03,0.00044,0.5828
+GO:0009791,post-embryonic development,341,8,1.87,0.00056,0.5828
+GO:0045596,negative regulation of cell differentiat...,7,2,0.04,0.00061,0.5828
+GO:0009226,nucleotide-sugar biosynthetic process,35,3,0.19,0.00092,0.5828
+GO:0022603,regulation of anatomical structure morph...,35,3,0.19,0.00092,0.5828
+GO:1905421,regulation of plant organ morphogenesis,9,2,0.05,0.00104,0.5828
+GO:0010026,trichome differentiation,12,2,0.07,0.00189,0.5828
+GO:0045595,regulation of cell differentiation,13,2,0.07,0.00223,0.5828
+GO:0009225,nucleotide-sugar metabolic process,48,3,0.26,0.00231,0.5828
+GO:0050793,regulation of developmental process,176,5,0.97,0.00282,0.5828
+GO:0048608,reproductive structure development,258,6,1.41,0.00294,0.5828
+GO:0061458,reproductive system development,258,6,1.41,0.00294,0.5828
+GO:0006627,protein processing involved in protein t...,15,2,0.08,0.00298,0.5828
+GO:0034982,mitochondrial protein processing,15,2,0.08,0.00298,0.5828
+GO:0042752,regulation of circadian rhythm,16,2,0.09,0.00339,0.5828
+GO:0007005,mitochondrion organization,113,4,0.62,0.00345,0.5828
+GO:0090626,plant epidermis morphogenesis,17,2,0.09,0.00383,0.5828
+GO:0070585,protein localization to mitochondrion,59,3,0.32,0.00415,0.5828
+GO:0072655,establishment of protein localization to...,59,3,0.32,0.00415,0.5828
+GO:0000819,sister chromatid segregation,61,3,0.33,0.00456,0.5828
+GO:0048731,system development,379,7,2.08,0.00479,0.5828
+GO:0003006,developmental process involved in reprod...,287,6,1.57,0.00495,0.5828
+GO:0048856,anatomical structure development,593,9,3.25,0.00517,0.5828
+GO:0009888,tissue development,128,4,0.7,0.00538,0.5828
+GO:0009828,plant-type cell wall loosening,1,1,0.01,0.00548,0.5828
+GO:0010057,trichoblast fate specification,1,1,0.01,0.00548,0.5828
+GO:0010061,regulation of trichoblast fate specifica...,1,1,0.01,0.00548,0.5828
+GO:0010063,positive regulation of trichoblast fate ...,1,1,0.01,0.00548,0.5828
+GO:0010376,stomatal complex formation,1,1,0.01,0.00548,0.5828
+GO:0010454,negative regulation of cell fate commitm...,1,1,0.01,0.00548,0.5828
+GO:0010455,positive regulation of cell fate commitm...,1,1,0.01,0.00548,0.5828
+GO:0032025,response to cobalt ion,1,1,0.01,0.00548,0.5828
+GO:0033591,response to L-ascorbic acid,1,1,0.01,0.00548,0.5828
+GO:0042659,regulation of cell fate specification,1,1,0.01,0.00548,0.5828
+GO:0042660,positive regulation of cell fate specifi...,1,1,0.01,0.00548,0.5828
+GO:0046680,response to DDT,1,1,0.01,0.00548,0.5828
+GO:0048629,trichome patterning,1,1,0.01,0.00548,0.5828
+GO:0071963,establishment or maintenance of cell pol...,1,1,0.01,0.00548,0.5828
+GO:0090628,plant epidermal cell fate specification,1,1,0.01,0.00548,0.5828
+GO:1900032,regulation of trichome patterning,1,1,0.01,0.00548,0.5828
+GO:1900033,negative regulation of trichome patterni...,1,1,0.01,0.00548,0.5828
+GO:1903888,regulation of plant epidermal cell diffe...,1,1,0.01,0.00548,0.5828
+GO:1903890,positive regulation of plant epidermal c...,1,1,0.01,0.00548,0.5828
+GO:1905423,positive regulation of plant organ morph...,1,1,0.01,0.00548,0.5828
+GO:0007275,multicellular organism development,499,8,2.74,0.00604,0.6287
+GO:0048194,Golgi vesicle budding,22,2,0.12,0.0064,0.639
+GO:0090114,COPII-coated vesicle budding,22,2,0.12,0.0064,0.639
+GO:0007062,sister chromatid cohesion,23,2,0.13,0.00698,0.6829

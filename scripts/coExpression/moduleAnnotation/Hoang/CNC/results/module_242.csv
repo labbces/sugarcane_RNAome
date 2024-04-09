@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0007166,cell surface receptor signaling pathway,170,27,14.18,0.00086,1
+GO:0009416,response to light stimulus,196,28,16.35,0.0035,1
+GO:0051094,positive regulation of developmental pro...,39,9,3.25,0.00407,1
+GO:0009314,response to radiation,200,28,16.69,0.00466,1
+GO:0006099,tricarboxylic acid cycle,34,8,2.84,0.00586,1
+GO:0006952,defense response,1938,191,161.68,0.00662,1
+GO:0010638,positive regulation of organelle organiz...,58,11,4.84,0.00773,1
+GO:0016577,histone demethylation,29,7,2.42,0.00843,1
+GO:0051130,positive regulation of cellular componen...,67,12,5.59,0.00881,1
+GO:0050896,response to stimulus,3963,367,330.62,0.00937,1
+GO:0006482,protein demethylation,30,7,2.5,0.01022,1
+GO:0008214,protein dealkylation,30,7,2.5,0.01022,1
+GO:0009070,serine family amino acid biosynthetic pr...,30,7,2.5,0.01022,1
+GO:0051240,positive regulation of multicellular org...,38,8,3.17,0.01173,1
+GO:0006479,protein methylation,124,18,10.34,0.01453,1
+GO:0008213,protein alkylation,124,18,10.34,0.01453,1
+GO:0006563,L-serine metabolic process,25,6,2.09,0.01484,1
+GO:0010162,seed dormancy process,7,3,0.58,0.0157,1
+GO:0022611,dormancy process,7,3,0.58,0.0157,1
+GO:0010114,response to red light,13,4,1.08,0.0187,1
+GO:0000038,very long-chain fatty acid metabolic pro...,3,2,0.25,0.01971,1
+GO:0006102,isocitrate metabolic process,3,2,0.25,0.01971,1
+GO:0009687,abscisic acid metabolic process,3,2,0.25,0.01971,1
+GO:0042761,very long-chain fatty acid biosynthetic ...,3,2,0.25,0.01971,1
+GO:0043288,apocarotenoid metabolic process,3,2,0.25,0.01971,1
+GO:0043966,histone H3 acetylation,3,2,0.25,0.01971,1
+GO:0043970,histone H3-K9 acetylation,3,2,0.25,0.01971,1
+GO:0046916,cellular transition metal ion homeostasi...,27,6,2.25,0.02152,1
+GO:0071695,anatomical structure maturation,27,6,2.25,0.02152,1
+GO:0033169,histone H3-K9 demethylation,20,5,1.67,0.02157,1
+GO:0043455,regulation of secondary metabolic proces...,20,5,1.67,0.02157,1
+GO:0046777,protein autophosphorylation,20,5,1.67,0.02157,1
+GO:0018142,protein-DNA covalent cross-linking,8,3,0.67,0.02358,1
+GO:0018143,nucleic acid-protein covalent cross-link...,8,3,0.67,0.02358,1
+GO:0070201,regulation of establishment of protein l...,8,3,0.67,0.02358,1
+GO:2000762,regulation of phenylpropanoid metabolic ...,14,4,1.17,0.02449,1
+GO:0007154,cell communication,925,94,77.17,0.02507,1
+GO:0048582,positive regulation of post-embryonic de...,28,6,2.34,0.02551,1
+GO:0030003,cellular cation homeostasis,52,9,4.34,0.02675,1
+GO:0055082,cellular chemical homeostasis,69,11,5.76,0.02688,1
+GO:0032535,regulation of cellular component size,61,10,5.09,0.02851,1
+GO:0070988,demethylation,53,9,4.42,0.02992,1
+GO:0021700,developmental maturation,29,6,2.42,0.02996,1
+GO:0009069,serine family amino acid metabolic proce...,37,7,3.09,0.03112,1
+GO:0090066,regulation of anatomical structure size,62,10,5.17,0.03155,1
+GO:0016559,peroxisome fission,9,3,0.75,0.03321,1
+GO:0009765,photosynthesis, light harvesting,46,8,3.84,0.03478,1
+GO:0030838,positive regulation of actin filament po...,46,8,3.84,0.03478,1
+GO:0031334,positive regulation of protein-containin...,46,8,3.84,0.03478,1
+GO:0032273,positive regulation of protein polymeriz...,46,8,3.84,0.03478,1

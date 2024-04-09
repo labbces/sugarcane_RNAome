@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009134,nucleoside diphosphate catabolic process,8,1,0,0.0015,1
+GO:1901292,nucleoside phosphate catabolic process,19,1,0,0.0035,1
+GO:0034404,nucleobase-containing small molecule bio...,41,1,0.01,0.0076,1
+GO:1901575,organic substance catabolic process,939,2,0.17,0.0096,1
+GO:0009056,catabolic process,1051,2,0.19,0.012,1
+GO:0000272,polysaccharide catabolic process,66,1,0.01,0.0122,1
+GO:0046434,organophosphate catabolic process,75,1,0.01,0.0138,1
+GO:0009132,nucleoside diphosphate metabolic process,111,1,0.02,0.0204,1
+GO:0034655,nucleobase-containing compound catabolic...,153,1,0.03,0.028,1
+GO:0046700,heterocycle catabolic process,180,1,0.03,0.0329,1
+GO:0044270,cellular nitrogen compound catabolic pro...,185,1,0.03,0.0338,1
+GO:0016052,carbohydrate catabolic process,196,1,0.04,0.0358,1
+GO:0019439,aromatic compound catabolic process,201,1,0.04,0.0367,1
+GO:1901361,organic cyclic compound catabolic proces...,205,1,0.04,0.0374,1
+GO:0005976,polysaccharide metabolic process,276,1,0.05,0.0502,1
+GO:0006753,nucleoside phosphate metabolic process,397,1,0.07,0.0716,1
+GO:0055086,nucleobase-containing small molecule met...,453,1,0.08,0.0814,1
+GO:0044283,small molecule biosynthetic process,486,1,0.09,0.0872,1
+GO:0009057,macromolecule catabolic process,530,1,0.1,0.0948,1
+GO:0005975,carbohydrate metabolic process,735,1,0.14,0.1298,1
+GO:0019637,organophosphate metabolic process,765,1,0.14,0.1349,1
+GO:0043207,response to external biotic stimulus,800,1,0.15,0.1407,1
+GO:0044248,cellular catabolic process,800,1,0.15,0.1407,1
+GO:0051707,response to other organism,800,1,0.15,0.1407,1
+GO:0044419,interspecies interaction between organis...,813,1,0.15,0.1429,1
+GO:0009607,response to biotic stimulus,839,1,0.16,0.1472,1
+GO:0009605,response to external stimulus,895,1,0.17,0.1565,1
+GO:0034654,nucleobase-containing compound biosynthe...,1277,1,0.24,0.218,1
+GO:0018130,heterocycle biosynthetic process,1465,1,0.27,0.2471,1
+GO:0019438,aromatic compound biosynthetic process,1490,1,0.28,0.2509,1
+GO:0044281,small molecule metabolic process,1515,1,0.28,0.2547,1
+GO:1901362,organic cyclic compound biosynthetic pro...,1588,1,0.29,0.2658,1
+GO:0044271,cellular nitrogen compound biosynthetic ...,1899,1,0.35,0.3116,1
+GO:0006952,defense response,1938,1,0.36,0.3172,1
+GO:0006796,phosphate-containing compound metabolic ...,2746,1,0.51,0.4266,1
+GO:0006793,phosphorus metabolic process,2780,1,0.51,0.4309,1
+GO:0006950,response to stress,2893,1,0.53,0.4451,1
+GO:0044249,cellular biosynthetic process,3341,1,0.62,0.4992,1
+GO:1901576,organic substance biosynthetic process,3398,1,0.63,0.5058,1
+GO:0009058,biosynthetic process,3458,1,0.64,0.5127,1
+GO:0006139,nucleobase-containing compound metabolic...,3720,1,0.69,0.5421,1
+GO:0046483,heterocycle metabolic process,3959,1,0.73,0.5678,1
+GO:0050896,response to stimulus,3963,1,0.73,0.5682,1
+GO:0006725,cellular aromatic compound metabolic pro...,4059,1,0.75,0.5783,1
+GO:1901360,organic cyclic compound metabolic proces...,4161,1,0.77,0.5888,1
+GO:0034641,cellular nitrogen compound metabolic pro...,4249,1,0.79,0.5978,1
+GO:0044238,primary metabolic process,9192,2,1.7,0.599,1
+GO:0071704,organic substance metabolic process,9793,2,1.81,0.6529,1
+GO:0008152,metabolic process,10367,2,1.92,0.7028,1
+GO:0043170,macromolecule metabolic process,7516,1,1.39,0.8453,1
