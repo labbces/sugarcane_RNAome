@@ -3,7 +3,7 @@ library(ggplot2)
 
 rm(list=ls())
 
-setwd("/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Hoang/code/updated_filters/CNC/moduleAnnotation/CNC")
+setwd("/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Perlo/code/updated_filters/CNC/moduleAnnotation/CNC")
 results_path <- "results/"
 
 # create recursive dir
@@ -19,7 +19,7 @@ load_files <- function(){
   geneID2GO <<- readMappings(file = "GO_annotations_BP_PPV0.6.tsv")
   
   # read genes in graph
-  f2 = "Hoang2017_counts_filters_VST_topCV_mcl_formated_cliques.csv"
+  f2 = "Perlo2022_counts_filters_VST_topCV_mcl_formated_cliques.csv"
   ##genes_in_graph <- as.data.frame(rownames(read.table(f2, header =F, row.names=1)))
   
   # temporary -> dealing with duplicates
@@ -192,7 +192,7 @@ anot_modules <- function(Module_no, results_path){
 }
 
 #for (i in 1:dim(table(dynamicMods))){
-for (i in 1:250){ # only for the first 40 modules and module has more than 5 genes
+for (i in 1:19316){ # only for the first 40 modules and module has more than 5 genes
   if(number.clusters[i,1]>=5){
     print(i)
     anot_modules(i,results_path)
