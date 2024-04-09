@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0070646,protein modification by small protein re...,66,18,8.95,0.0024,1
+GO:0016579,protein deubiquitination,61,17,8.27,0.0024,1
+GO:0005984,disaccharide metabolic process,47,14,6.37,0.0029,1
+GO:0009311,oligosaccharide metabolic process,63,17,8.54,0.0035,1
+GO:0140029,exocytic process,9,5,1.22,0.0036,1
+GO:0009313,oligosaccharide catabolic process,10,5,1.36,0.0063,1
+GO:0009615,response to virus,10,5,1.36,0.0063,1
+GO:0046352,disaccharide catabolic process,10,5,1.36,0.0063,1
+GO:0060341,regulation of cellular localization,14,6,1.9,0.007,1
+GO:0000291,nuclear-transcribed mRNA catabolic proce...,7,4,0.95,0.0084,1
+GO:0034427,nuclear-transcribed mRNA catabolic proce...,7,4,0.95,0.0084,1
+GO:0090522,vesicle tethering involved in exocytosis,7,4,0.95,0.0084,1
+GO:0099022,vesicle tethering,7,4,0.95,0.0084,1
+GO:0006903,vesicle targeting,11,5,1.49,0.0103,1
+GO:0051052,regulation of DNA metabolic process,29,9,3.93,0.0119,1
+GO:0009694,jasmonic acid metabolic process,16,6,2.17,0.0146,1
+GO:0051656,establishment of organelle localization,26,8,3.52,0.0183,1
+GO:0000972,transcription-dependent tethering of RNA...,2,2,0.27,0.0184,1
+GO:0009407,toxin catabolic process,2,2,0.27,0.0184,1
+GO:0010167,response to nitrate,2,2,0.27,0.0184,1
+GO:0019217,regulation of fatty acid metabolic proce...,2,2,0.27,0.0184,1
+GO:0034337,RNA folding,2,2,0.27,0.0184,1
+GO:0048508,embryonic meristem development,2,2,0.27,0.0184,1
+GO:0051030,snRNA transport,2,2,0.27,0.0184,1
+GO:0051785,positive regulation of nuclear division,2,2,0.27,0.0184,1
+GO:0070198,protein localization to chromosome, telo...,2,2,0.27,0.0184,1
+GO:0070199,establishment of protein localization to...,2,2,0.27,0.0184,1
+GO:0070200,establishment of protein localization to...,2,2,0.27,0.0184,1
+GO:0070202,regulation of establishment of protein l...,2,2,0.27,0.0184,1
+GO:0070203,regulation of establishment of protein l...,2,2,0.27,0.0184,1
+GO:1904814,regulation of protein localization to ch...,2,2,0.27,0.0184,1
+GO:1904816,positive regulation of protein localizat...,2,2,0.27,0.0184,1
+GO:1904851,positive regulation of establishment of ...,2,2,0.27,0.0184,1
+GO:0010038,response to metal ion,17,6,2.3,0.0201,1
+GO:0016052,carbohydrate catabolic process,171,33,23.18,0.0216,1
+GO:0051648,vesicle localization,13,5,1.76,0.0228,1
+GO:0051650,establishment of vesicle localization,13,5,1.76,0.0228,1
+GO:0005985,sucrose metabolic process,27,8,3.66,0.023,1
+GO:0000018,regulation of DNA recombination,9,4,1.22,0.0241,1
+GO:0005987,sucrose catabolic process,9,4,1.22,0.0241,1
+GO:1903827,regulation of cellular protein localizat...,9,4,1.22,0.0241,1
+GO:0015074,DNA integration,275,49,37.28,0.0258,1
+GO:0009056,catabolic process,738,118,100.05,0.0282,1
+GO:0009853,photorespiration,6,3,0.81,0.0362,1
+GO:0032386,regulation of intracellular transport,6,3,0.81,0.0362,1
+GO:0071941,nitrogen cycle metabolic process,6,3,0.81,0.0362,1
+GO:0006887,exocytosis,46,11,6.24,0.0401,1
+GO:1901575,organic substance catabolic process,666,106,90.29,0.0402,1
+GO:0006310,DNA recombination,186,34,25.22,0.0408,1
+GO:0031123,RNA 3'-end processing,58,13,7.86,0.0439,1

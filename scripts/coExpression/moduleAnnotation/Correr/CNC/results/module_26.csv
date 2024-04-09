@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0034220,ion transmembrane transport,355,4,0.72,0.0053,1
+GO:0010425,DNA methylation on cytosine within a CNG...,3,1,0.01,0.0061,1
+GO:0018027,peptidyl-lysine dimethylation,3,1,0.01,0.0061,1
+GO:0035065,regulation of histone acetylation,3,1,0.01,0.0061,1
+GO:0035067,negative regulation of histone acetylati...,3,1,0.01,0.0061,1
+GO:0036123,histone H3-K9 dimethylation,3,1,0.01,0.0061,1
+GO:0051570,regulation of histone H3-K9 methylation,3,1,0.01,0.0061,1
+GO:0051573,negative regulation of histone H3-K9 met...,3,1,0.01,0.0061,1
+GO:1900109,regulation of histone H3-K9 dimethylatio...,3,1,0.01,0.0061,1
+GO:1900110,negative regulation of histone H3-K9 dim...,3,1,0.01,0.0061,1
+GO:1901983,regulation of protein acetylation,3,1,0.01,0.0061,1
+GO:1901984,negative regulation of protein acetylati...,3,1,0.01,0.0061,1
+GO:2000615,regulation of histone H3-K9 acetylation,3,1,0.01,0.0061,1
+GO:2000616,negative regulation of histone H3-K9 ace...,3,1,0.01,0.0061,1
+GO:2000756,regulation of peptidyl-lysine acetylatio...,3,1,0.01,0.0061,1
+GO:2000757,negative regulation of peptidyl-lysine a...,3,1,0.01,0.0061,1
+GO:0031061,negative regulation of histone methylati...,4,1,0.01,0.0081,1
+GO:0031440,regulation of mRNA 3'-end processing,4,1,0.01,0.0081,1
+GO:0043970,histone H3-K9 acetylation,4,1,0.01,0.0081,1
+GO:0070920,regulation of production of small RNA in...,4,1,0.01,0.0081,1
+GO:0043161,proteasome-mediated ubiquitin-dependent ...,72,2,0.15,0.0092,1
+GO:0006419,alanyl-tRNA aminoacylation,5,1,0.01,0.0101,1
+GO:0031057,negative regulation of histone modificat...,5,1,0.01,0.0101,1
+GO:0043966,histone H3 acetylation,5,1,0.01,0.0101,1
+GO:0050684,regulation of mRNA processing,5,1,0.01,0.0101,1
+GO:1905268,negative regulation of chromatin organiz...,5,1,0.01,0.0101,1
+GO:0031060,regulation of histone methylation,6,1,0.01,0.0121,1
+GO:0051567,histone H3-K9 methylation,6,1,0.01,0.0121,1
+GO:0055075,potassium ion homeostasis,6,1,0.01,0.0121,1
+GO:0010498,proteasomal protein catabolic process,84,2,0.17,0.0124,1
+GO:0031056,regulation of histone modification,7,1,0.01,0.0141,1
+GO:0061647,histone H3-K9 modification,7,1,0.01,0.0141,1
+GO:1902275,regulation of chromatin organization,7,1,0.01,0.0141,1
+GO:0098656,anion transmembrane transport,90,2,0.18,0.0142,1
+GO:0032776,DNA methylation on cytosine,8,1,0.02,0.0161,1
+GO:0060966,regulation of gene silencing by RNA,8,1,0.02,0.0161,1
+GO:0060968,regulation of gene silencing,8,1,0.02,0.0161,1
+GO:0006811,ion transport,503,4,1.02,0.0174,1
+GO:0006850,mitochondrial pyruvate transmembrane tra...,9,1,0.02,0.0181,1
+GO:1901607,alpha-amino acid biosynthetic process,108,2,0.22,0.02,1
+GO:0006848,pyruvate transport,10,1,0.02,0.0201,1
+GO:1901475,pyruvate transmembrane transport,10,1,0.02,0.0201,1
+GO:0055085,transmembrane transport,533,4,1.08,0.0211,1
+GO:0006520,cellular amino acid metabolic process,305,3,0.62,0.023,1
+GO:0000162,tryptophan biosynthetic process,12,1,0.02,0.0241,1
+GO:0046219,indolalkylamine biosynthetic process,12,1,0.02,0.0241,1
+GO:0033169,histone H3-K9 demethylation,13,1,0.03,0.0261,1
+GO:0045036,protein targeting to chloroplast,13,1,0.03,0.0261,1
+GO:0072596,establishment of protein localization to...,13,1,0.03,0.0261,1
+GO:0008652,cellular amino acid biosynthetic process,125,2,0.25,0.0263,1

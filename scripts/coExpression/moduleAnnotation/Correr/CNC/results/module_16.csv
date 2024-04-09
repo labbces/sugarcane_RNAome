@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:1903533,regulation of protein targeting,1,1,0,0.00059,0.5341
+GO:1904215,regulation of protein import into chloro...,1,1,0,0.00059,0.5341
+GO:1904216,positive regulation of protein import in...,1,1,0,0.00059,0.5341
+GO:1904589,regulation of protein import,1,1,0,0.00059,0.5341
+GO:1904591,positive regulation of protein import,1,1,0,0.00059,0.5341
+GO:0032388,positive regulation of intracellular tra...,3,1,0,0.00177,0.8901
+GO:0033157,regulation of intracellular protein tran...,3,1,0,0.00177,0.8901
+GO:0034764,positive regulation of transmembrane tra...,3,1,0,0.00177,0.8901
+GO:0090316,positive regulation of intracellular pro...,3,1,0,0.00177,0.8901
+GO:0051222,positive regulation of protein transport,5,1,0,0.00296,1
+GO:0032386,regulation of intracellular transport,6,1,0,0.00355,1
+GO:0045037,protein import into chloroplast stroma,7,1,0,0.00414,1
+GO:0051223,regulation of protein transport,7,1,0,0.00414,1
+GO:0090087,regulation of peptide transport,7,1,0,0.00414,1
+GO:1903829,positive regulation of cellular protein ...,7,1,0,0.00414,1
+GO:1904951,positive regulation of establishment of ...,7,1,0,0.00414,1
+GO:0070201,regulation of establishment of protein l...,9,1,0.01,0.00531,1
+GO:1903827,regulation of cellular protein localizat...,9,1,0.01,0.00531,1
+GO:0006468,protein phosphorylation,1461,4,0.86,0.00595,1
+GO:0032880,regulation of protein localization,11,1,0.01,0.00649,1
+GO:0034762,regulation of transmembrane transport,11,1,0.01,0.00649,1
+GO:0051050,positive regulation of transport,11,1,0.01,0.00649,1
+GO:0045036,protein targeting to chloroplast,13,1,0.01,0.00767,1
+GO:0072596,establishment of protein localization to...,13,1,0.01,0.00767,1
+GO:0060341,regulation of cellular localization,14,1,0.01,0.00826,1
+GO:0072598,protein localization to chloroplast,14,1,0.01,0.00826,1
+GO:0016310,phosphorylation,1624,4,0.96,0.00876,1
+GO:0065002,intracellular protein transmembrane tran...,29,1,0.02,0.01704,1
+GO:0051049,regulation of transport,34,1,0.02,0.01995,1
+GO:0071806,protein transmembrane transport,34,1,0.02,0.01995,1
+GO:0006914,autophagy,36,1,0.02,0.02111,1
+GO:0061919,process utilizing autophagic mechanism,36,1,0.02,0.02111,1
+GO:0006796,phosphate-containing compound metabolic ...,2096,4,1.24,0.02183,1
+GO:0006793,phosphorus metabolic process,2116,4,1.25,0.02257,1
+GO:0032879,regulation of localization,40,1,0.02,0.02343,1
+GO:0017038,protein import,55,1,0.03,0.0321,1
+GO:0006464,cellular protein modification process,2376,4,1.41,0.03377,1
+GO:0036211,protein modification process,2386,4,1.41,0.03426,1
+GO:0043412,macromolecule modification,2670,4,1.58,0.0502,1
+GO:0006605,protein targeting,93,1,0.06,0.05375,1
+GO:0044267,cellular protein metabolic process,2782,4,1.65,0.05759,1
+GO:0072594,establishment of protein localization to...,117,1,0.07,0.06722,1
+GO:0033365,protein localization to organelle,127,1,0.08,0.07278,1
+GO:0048367,shoot system development,137,1,0.08,0.07831,1
+GO:0019538,protein metabolic process,3134,4,1.85,0.08504,1
+GO:0006457,protein folding,157,1,0.09,0.08929,1
+GO:0048608,reproductive structure development,177,1,0.1,0.10016,1
+GO:0061458,reproductive system development,177,1,0.1,0.10016,1
+GO:0003006,developmental process involved in reprod...,201,1,0.12,0.11305,1
+GO:0009791,post-embryonic development,218,1,0.13,0.12209,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0000959,mitochondrial RNA metabolic process,19,5,0.81,0.00096,1
+GO:0015994,chlorophyll metabolic process,22,5,0.93,0.00195,1
+GO:1900864,mitochondrial RNA modification,7,3,0.3,0.00234,1
+GO:0000963,mitochondrial RNA processing,8,3,0.34,0.00362,1
+GO:0033013,tetrapyrrole metabolic process,49,7,2.08,0.00434,1
+GO:0000079,regulation of cyclin-dependent protein s...,17,4,0.72,0.0049,1
+GO:1904029,regulation of cyclin-dependent protein k...,17,4,0.72,0.0049,1
+GO:0045736,negative regulation of cyclin-dependent ...,9,3,0.38,0.00527,1
+GO:1904030,negative regulation of cyclin-dependent ...,9,3,0.38,0.00527,1
+GO:0006469,negative regulation of protein kinase ac...,10,3,0.42,0.00729,1
+GO:0033673,negative regulation of kinase activity,10,3,0.42,0.00729,1
+GO:0071901,negative regulation of protein serine/th...,10,3,0.42,0.00729,1
+GO:0071900,regulation of protein serine/threonine k...,20,4,0.85,0.00902,1
+GO:0006778,porphyrin-containing compound metabolic ...,43,6,1.82,0.00909,1
+GO:0001933,negative regulation of protein phosphory...,12,3,0.51,0.01254,1
+GO:0042326,negative regulation of phosphorylation,12,3,0.51,0.01254,1
+GO:0051726,regulation of cell cycle,60,7,2.55,0.01311,1
+GO:0080156,mitochondrial mRNA modification,5,2,0.21,0.0165,1
+GO:0033043,regulation of organelle organization,78,8,3.31,0.01726,1
+GO:0006305,DNA alkylation,14,3,0.59,0.01948,1
+GO:0006306,DNA methylation,14,3,0.59,0.01948,1
+GO:0051348,negative regulation of transferase activ...,14,3,0.59,0.01948,1
+GO:0010639,negative regulation of organelle organiz...,25,4,1.06,0.01994,1
+GO:0031400,negative regulation of protein modificat...,25,4,1.06,0.01994,1
+GO:0045859,regulation of protein kinase activity,25,4,1.06,0.01994,1
+GO:0007015,actin filament organization,81,8,3.44,0.02123,1
+GO:0030036,actin cytoskeleton organization,82,8,3.48,0.02269,1
+GO:0048519,negative regulation of biological proces...,405,26,17.18,0.02332,1
+GO:0000373,Group II intron splicing,15,3,0.64,0.0236,1
+GO:0010563,negative regulation of phosphorus metabo...,15,3,0.64,0.0236,1
+GO:0045936,negative regulation of phosphate metabol...,15,3,0.64,0.0236,1
+GO:0055067,monovalent inorganic cation homeostasis,15,3,0.64,0.0236,1
+GO:0002943,tRNA dihydrouridine synthesis,6,2,0.25,0.02405,1
+GO:0055075,potassium ion homeostasis,6,2,0.25,0.02405,1
+GO:0051129,negative regulation of cellular componen...,27,4,1.15,0.0259,1
+GO:0042440,pigment metabolic process,70,7,2.97,0.02844,1
+GO:0006505,GPI anchor metabolic process,41,5,1.74,0.0287,1
+GO:0006506,GPI anchor biosynthetic process,41,5,1.74,0.0287,1
+GO:0051128,regulation of cellular component organiz...,102,9,4.33,0.02904,1
+GO:0043549,regulation of kinase activity,28,4,1.19,0.02923,1
+GO:0046483,heterocycle metabolic process,2937,143,124.61,0.03076,1
+GO:0001932,regulation of protein phosphorylation,29,4,1.23,0.03281,1
+GO:0006725,cellular aromatic compound metabolic pro...,3019,146,128.09,0.03554,1
+GO:0140053,mitochondrial gene expression,18,3,0.76,0.03854,1
+GO:0045786,negative regulation of cell cycle,31,4,1.32,0.04069,1
+GO:0006642,triglyceride mobilization,1,1,0.04,0.04243,1
+GO:0006706,steroid catabolic process,1,1,0.04,0.04243,1
+GO:0006849,plasma membrane pyruvate transport,1,1,0.04,0.04243,1
+GO:0010271,regulation of chlorophyll catabolic proc...,1,1,0.04,0.04243,1
+GO:0010959,regulation of metal ion transport,1,1,0.04,0.04243,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006952,defense response,1299,197,141.52,3.2e-07,0.0014
+GO:0044703,multi-organism reproductive process,32,14,3.49,2.2e-06,0.005
+GO:0019953,sexual reproduction,31,13,3.38,9e-06,0.0136
+GO:0098655,cation transmembrane transport,240,42,26.15,0.0013,0.9793
+GO:0050896,response to stimulus,2822,352,307.43,0.0013,0.9793
+GO:0098662,inorganic cation transmembrane transport,198,36,21.57,0.0014,0.9793
+GO:0007166,cell surface receptor signaling pathway,173,32,18.85,0.0019,0.9793
+GO:0006950,response to stress,1961,251,213.63,0.002,0.9793
+GO:0019748,secondary metabolic process,94,20,10.24,0.0024,0.9793
+GO:0045492,xylan biosynthetic process,15,6,1.63,0.0035,0.9793
+GO:0009698,phenylpropanoid metabolic process,72,16,7.84,0.004,0.9793
+GO:0019853,L-ascorbic acid biosynthetic process,4,3,0.44,0.0047,0.9793
+GO:0061727,methylglyoxal catabolic process to lacta...,4,3,0.44,0.0047,0.9793
+GO:0080050,regulation of seed development,4,3,0.44,0.0047,0.9793
+GO:0006812,cation transport,282,45,30.72,0.0055,0.9793
+GO:0009834,plant-type secondary cell wall biogenesi...,12,5,1.31,0.0063,0.9793
+GO:0090481,pyrimidine nucleotide-sugar transmembran...,12,5,1.31,0.0063,0.9793
+GO:0098660,inorganic ion transmembrane transport,242,39,26.36,0.0079,0.9793
+GO:0055085,transmembrane transport,533,76,58.07,0.0081,0.9793
+GO:0044038,cell wall macromolecule biosynthetic pro...,23,7,2.51,0.0091,0.9793
+GO:0070589,cellular component macromolecule biosynt...,23,7,2.51,0.0091,0.9793
+GO:0070592,cell wall polysaccharide biosynthetic pr...,23,7,2.51,0.0091,0.9793
+GO:0005996,monosaccharide metabolic process,128,23,13.94,0.0107,0.9793
+GO:0002790,peptide secretion,5,3,0.54,0.0109,0.9793
+GO:0006089,lactate metabolic process,5,3,0.54,0.0109,0.9793
+GO:0006828,manganese ion transport,5,3,0.54,0.0109,0.9793
+GO:0007399,nervous system development,5,3,0.54,0.0109,0.9793
+GO:0009306,protein secretion,5,3,0.54,0.0109,0.9793
+GO:0009438,methylglyoxal metabolic process,5,3,0.54,0.0109,0.9793
+GO:0035592,establishment of protein localization to...,5,3,0.54,0.0109,0.9793
+GO:0042182,ketone catabolic process,5,3,0.54,0.0109,0.9793
+GO:0046364,monosaccharide biosynthetic process,5,3,0.54,0.0109,0.9793
+GO:0051596,methylglyoxal catabolic process,5,3,0.54,0.0109,0.9793
+GO:0071421,manganese ion transmembrane transport,5,3,0.54,0.0109,0.9793
+GO:0071692,protein localization to extracellular re...,5,3,0.54,0.0109,0.9793
+GO:0006432,phenylalanyl-tRNA aminoacylation,2,2,0.22,0.0119,0.9793
+GO:0006851,mitochondrial calcium ion transmembrane ...,2,2,0.22,0.0119,0.9793
+GO:0009410,response to xenobiotic stimulus,2,2,0.22,0.0119,0.9793
+GO:0015976,carbon utilization,2,2,0.22,0.0119,0.9793
+GO:0019243,methylglyoxal catabolic process to D-lac...,2,2,0.22,0.0119,0.9793
+GO:0023061,signal release,2,2,0.22,0.0119,0.9793
+GO:0030072,peptide hormone secretion,2,2,0.22,0.0119,0.9793
+GO:0030073,insulin secretion,2,2,0.22,0.0119,0.9793
+GO:0030182,neuron differentiation,2,2,0.22,0.0119,0.9793
+GO:0043279,response to alkaloid,2,2,0.22,0.0119,0.9793
+GO:0046879,hormone secretion,2,2,0.22,0.0119,0.9793
+GO:0046883,regulation of hormone secretion,2,2,0.22,0.0119,0.9793
+GO:0048699,generation of neurons,2,2,0.22,0.0119,0.9793
+GO:0050796,regulation of insulin secretion,2,2,0.22,0.0119,0.9793
+GO:0090276,regulation of peptide hormone secretion,2,2,0.22,0.0119,0.9793

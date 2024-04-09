@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:2000904,regulation of starch metabolic process,2,1,0,0.00068,0.9143
+GO:0006777,Mo-molybdopterin cofactor biosynthetic p...,3,1,0,0.00101,0.9143
+GO:0019720,Mo-molybdopterin cofactor metabolic proc...,3,1,0,0.00101,0.9143
+GO:0043545,molybdopterin cofactor metabolic process,3,1,0,0.00101,0.9143
+GO:0051189,prosthetic group metabolic process,3,1,0,0.00101,0.9143
+GO:0044211,CTP salvage,4,1,0,0.00135,1
+GO:0032881,regulation of polysaccharide metabolic p...,5,1,0,0.00169,1
+GO:0010675,regulation of cellular carbohydrate meta...,7,1,0,0.00236,1
+GO:0006109,regulation of carbohydrate metabolic pro...,9,1,0,0.00304,1
+GO:0008655,pyrimidine-containing compound salvage,9,1,0,0.00304,1
+GO:0010138,pyrimidine ribonucleotide salvage,9,1,0,0.00304,1
+GO:0032262,pyrimidine nucleotide salvage,9,1,0,0.00304,1
+GO:0044206,UMP salvage,9,1,0,0.00304,1
+GO:0090407,organophosphate biosynthetic process,331,2,0.11,0.00451,1
+GO:0006222,UMP biosynthetic process,15,1,0.01,0.00506,1
+GO:0009173,pyrimidine ribonucleoside monophosphate ...,15,1,0.01,0.00506,1
+GO:0009174,pyrimidine ribonucleoside monophosphate ...,15,1,0.01,0.00506,1
+GO:0046049,UMP metabolic process,15,1,0.01,0.00506,1
+GO:0009129,pyrimidine nucleoside monophosphate meta...,17,1,0.01,0.00574,1
+GO:0009130,pyrimidine nucleoside monophosphate bios...,17,1,0.01,0.00574,1
+GO:0043173,nucleotide salvage,18,1,0.01,0.00607,1
+GO:0006241,CTP biosynthetic process,24,1,0.01,0.00809,1
+GO:0009208,pyrimidine ribonucleoside triphosphate m...,24,1,0.01,0.00809,1
+GO:0009209,pyrimidine ribonucleoside triphosphate b...,24,1,0.01,0.00809,1
+GO:0046036,CTP metabolic process,24,1,0.01,0.00809,1
+GO:0009147,pyrimidine nucleoside triphosphate metab...,25,1,0.01,0.00843,1
+GO:0009148,pyrimidine nucleoside triphosphate biosy...,25,1,0.01,0.00843,1
+GO:0043094,cellular metabolic compound salvage,26,1,0.01,0.00876,1
+GO:0019637,organophosphate metabolic process,512,2,0.17,0.01058,1
+GO:0005982,starch metabolic process,34,1,0.01,0.01145,1
+GO:0009218,pyrimidine ribonucleotide metabolic proc...,35,1,0.01,0.01178,1
+GO:0009220,pyrimidine ribonucleotide biosynthetic p...,35,1,0.01,0.01178,1
+GO:0009736,cytokinin-activated signaling pathway,35,1,0.01,0.01178,1
+GO:0009735,response to cytokinin,36,1,0.01,0.01212,1
+GO:0071368,cellular response to cytokinin stimulus,36,1,0.01,0.01212,1
+GO:0009201,ribonucleoside triphosphate biosynthetic...,42,1,0.01,0.01413,1
+GO:0009142,nucleoside triphosphate biosynthetic pro...,44,1,0.01,0.01479,1
+GO:0006220,pyrimidine nucleotide metabolic process,54,1,0.02,0.01813,1
+GO:0006221,pyrimidine nucleotide biosynthetic proce...,54,1,0.02,0.01813,1
+GO:0009156,ribonucleoside monophosphate biosyntheti...,56,1,0.02,0.0188,1
+GO:0009124,nucleoside monophosphate biosynthetic pr...,59,1,0.02,0.0198,1
+GO:0009161,ribonucleoside monophosphate metabolic p...,59,1,0.02,0.0198,1
+GO:0000160,phosphorelay signal transduction system,65,1,0.02,0.0218,1
+GO:0072528,pyrimidine-containing compound biosynthe...,76,1,0.03,0.02545,1
+GO:0009123,nucleoside monophosphate metabolic proce...,77,1,0.03,0.02578,1
+GO:0072527,pyrimidine-containing compound metabolic...,78,1,0.03,0.02611,1
+GO:1901566,organonitrogen compound biosynthetic pro...,851,2,0.29,0.02812,1
+GO:0032392,DNA geometric change,90,1,0.03,0.03008,1
+GO:0032508,DNA duplex unwinding,90,1,0.03,0.03008,1
+GO:0009108,coenzyme biosynthetic process,112,1,0.04,0.03733,1

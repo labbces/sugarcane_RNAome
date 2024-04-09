@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0007005,mitochondrion organization,67,23,9.18,1.5e-05,0.0679
+GO:0017144,drug metabolic process,231,51,31.65,0.00031,0.6627
+GO:0009156,ribonucleoside monophosphate biosyntheti...,56,17,7.67,0.00096,0.6627
+GO:0000398,mRNA splicing, via spliceosome,97,25,13.29,0.00108,0.6627
+GO:0009123,nucleoside monophosphate metabolic proce...,77,21,10.55,0.00122,0.6627
+GO:0034641,cellular nitrogen compound metabolic pro...,3139,481,430.05,0.00123,0.6627
+GO:0006223,uracil salvage,5,4,0.69,0.00156,0.6627
+GO:0019860,uracil metabolic process,5,4,0.69,0.00156,0.6627
+GO:0043100,pyrimidine nucleobase salvage,5,4,0.69,0.00156,0.6627
+GO:0046107,uracil biosynthetic process,5,4,0.69,0.00156,0.6627
+GO:0009124,nucleoside monophosphate biosynthetic pr...,59,17,8.08,0.00182,0.6627
+GO:0009161,ribonucleoside monophosphate metabolic p...,59,17,8.08,0.00182,0.6627
+GO:0009260,ribonucleotide biosynthetic process,112,27,15.34,0.00205,0.6627
+GO:0046390,ribose phosphate biosynthetic process,112,27,15.34,0.00205,0.6627
+GO:0009165,nucleotide biosynthetic process,165,36,22.61,0.00274,0.8267
+GO:1901293,nucleoside phosphate biosynthetic proces...,166,36,22.74,0.00305,0.8554
+GO:0030149,sphingolipid catabolic process,9,5,1.23,0.00374,0.8554
+GO:0046466,membrane lipid catabolic process,9,5,1.23,0.00374,0.8554
+GO:0046514,ceramide catabolic process,9,5,1.23,0.00374,0.8554
+GO:0051604,protein maturation,68,18,9.32,0.00378,0.8554
+GO:0000377,RNA splicing, via transesterification re...,112,26,15.34,0.00425,0.916
+GO:0000375,RNA splicing, via transesterification re...,113,26,15.48,0.00482,0.9542
+GO:0006139,nucleobase-containing compound metabolic...,2776,422,380.32,0.00499,0.9542
+GO:0044085,cellular component biogenesis,565,99,77.41,0.00506,0.9542
+GO:0072522,purine-containing compound biosynthetic ...,87,21,11.92,0.00601,0.9936
+GO:1901135,carbohydrate derivative metabolic proces...,459,82,62.88,0.00619,0.9936
+GO:0006364,rRNA processing,121,27,16.58,0.00638,0.9936
+GO:0002181,cytoplasmic translation,22,8,3.01,0.00655,0.9936
+GO:0046112,nucleobase biosynthetic process,22,8,3.01,0.00655,0.9936
+GO:0046483,heterocycle metabolic process,2937,443,402.37,0.00685,0.9936
+GO:0016072,rRNA metabolic process,122,27,16.71,0.00715,0.9936
+GO:0009152,purine ribonucleotide biosynthetic proce...,78,19,10.69,0.00787,0.9936
+GO:0006164,purine nucleotide biosynthetic process,84,20,11.51,0.00847,0.9936
+GO:0006627,protein processing involved in protein t...,7,4,0.96,0.0087,0.9936
+GO:0034982,mitochondrial protein processing,7,4,0.96,0.0087,0.9936
+GO:0006807,nitrogen compound metabolic process,6059,875,830.09,0.00874,0.9936
+GO:0010467,gene expression,1459,230,199.88,0.00877,0.9936
+GO:0006677,glycosylceramide metabolic process,4,3,0.55,0.00922,0.9936
+GO:0006687,glycosphingolipid metabolic process,4,3,0.55,0.00922,0.9936
+GO:0019377,glycolipid catabolic process,4,3,0.55,0.00922,0.9936
+GO:0046477,glycosylceramide catabolic process,4,3,0.55,0.00922,0.9936
+GO:0046479,glycosphingolipid catabolic process,4,3,0.55,0.00922,0.9936
+GO:0006839,mitochondrial transport,58,15,7.95,0.00981,1
+GO:0006725,cellular aromatic compound metabolic pro...,3019,452,413.61,0.01048,1
+GO:0006222,UMP biosynthetic process,15,6,2.06,0.01085,1
+GO:0009173,pyrimidine ribonucleoside monophosphate ...,15,6,2.06,0.01085,1
+GO:0009174,pyrimidine ribonucleoside monophosphate ...,15,6,2.06,0.01085,1
+GO:0046049,UMP metabolic process,15,6,2.06,0.01085,1
+GO:1901137,carbohydrate derivative biosynthetic pro...,316,58,43.29,0.01126,1
+GO:1901360,organic cyclic compound metabolic proces...,3088,461,423.06,0.01175,1

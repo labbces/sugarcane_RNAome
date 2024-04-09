@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010155,regulation of proton transport,2,1,0,0.00034,1
+GO:1904062,regulation of cation transmembrane trans...,4,1,0,0.00068,1
+GO:0034765,regulation of ion transmembrane transpor...,10,1,0,0.00169,1
+GO:0034762,regulation of transmembrane transport,11,1,0,0.00186,1
+GO:0043269,regulation of ion transport,16,1,0,0.0027,1
+GO:0051049,regulation of transport,34,1,0.01,0.00574,1
+GO:0032879,regulation of localization,40,1,0.01,0.00675,1
+GO:0018108,peptidyl-tyrosine phosphorylation,67,1,0.01,0.01129,1
+GO:0018212,peptidyl-tyrosine modification,67,1,0.01,0.01129,1
+GO:1902600,proton transmembrane transport,82,1,0.01,0.01381,1
+GO:0015672,monovalent inorganic cation transport,130,1,0.02,0.02185,1
+GO:0098662,inorganic cation transmembrane transport,198,1,0.03,0.03319,1
+GO:0098655,cation transmembrane transport,240,1,0.04,0.04016,1
+GO:0098660,inorganic ion transmembrane transport,242,1,0.04,0.04049,1
+GO:0018193,peptidyl-amino acid modification,251,1,0.04,0.04198,1
+GO:0006812,cation transport,282,1,0.05,0.0471,1
+GO:0034220,ion transmembrane transport,355,1,0.06,0.05911,1
+GO:0006811,ion transport,503,1,0.09,0.08322,1
+GO:0055085,transmembrane transport,533,1,0.09,0.08807,1
+GO:0050794,regulation of cellular process,1288,1,0.22,0.20587,1
+GO:0006810,transport,1376,1,0.23,0.21907,1
+GO:0051234,establishment of localization,1393,1,0.24,0.22161,1
+GO:0051179,localization,1434,1,0.24,0.22771,1
+GO:0006468,protein phosphorylation,1461,1,0.25,0.23172,1
+GO:0050789,regulation of biological process,1512,1,0.26,0.23926,1
+GO:0016310,phosphorylation,1624,1,0.27,0.25568,1
+GO:0065007,biological regulation,1860,1,0.31,0.2897,1
+GO:0006796,phosphate-containing compound metabolic ...,2096,1,0.35,0.32292,1
+GO:0006793,phosphorus metabolic process,2116,1,0.36,0.3257,1
+GO:0006464,cellular protein modification process,2376,1,0.4,0.36131,1
+GO:0036211,protein modification process,2386,1,0.4,0.36266,1
+GO:0043412,macromolecule modification,2670,1,0.45,0.40041,1
+GO:0044267,cellular protein metabolic process,2782,1,0.47,0.41498,1
+GO:0019538,protein metabolic process,3134,1,0.53,0.45961,1
+GO:1901564,organonitrogen compound metabolic proces...,3808,1,0.64,0.54012,1
+GO:0009987,cellular process,9324,2,1.58,0.62098,1
+GO:0044260,cellular macromolecule metabolic process,4575,1,0.77,0.62384,1
+GO:0043170,macromolecule metabolic process,5686,1,0.96,0.7302,1
+GO:0006807,nitrogen compound metabolic process,6059,1,1.02,0.76196,1
+GO:0044237,cellular metabolic process,6863,1,1.16,0.82365,1
+GO:0044238,primary metabolic process,6869,1,1.16,0.82408,1
+GO:0071704,organic substance metabolic process,7289,1,1.23,0.8526,1
+GO:0008152,metabolic process,7686,1,1.3,0.87724,1
+GO:0008150,biological_process,11832,2,2,1,1
+GO:0000002,mitochondrial genome maintenance,3,0,0,1,1
+GO:0000003,reproduction,330,0,0.06,1,1
+GO:0000012,single strand break repair,4,0,0,1,1
+GO:0000018,regulation of DNA recombination,9,0,0,1,1
+GO:0000027,ribosomal large subunit assembly,5,0,0,1,1
+GO:0000028,ribosomal small subunit assembly,4,0,0,1,1

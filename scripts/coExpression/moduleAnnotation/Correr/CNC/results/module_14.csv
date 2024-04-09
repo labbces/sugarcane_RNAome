@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0000002,mitochondrial genome maintenance,3,0,0,1,1
+GO:0000003,reproduction,330,0,0,1,1
+GO:0000012,single strand break repair,4,0,0,1,1
+GO:0000018,regulation of DNA recombination,9,0,0,1,1
+GO:0000027,ribosomal large subunit assembly,5,0,0,1,1
+GO:0000028,ribosomal small subunit assembly,4,0,0,1,1
+GO:0000041,transition metal ion transport,28,0,0,1,1
+GO:0000045,autophagosome assembly,8,0,0,1,1
+GO:0000050,urea cycle,2,0,0,1,1
+GO:0000054,ribosomal subunit export from nucleus,4,0,0,1,1
+GO:0000055,ribosomal large subunit export from nucl...,2,0,0,1,1
+GO:0000056,ribosomal small subunit export from nucl...,2,0,0,1,1
+GO:0000070,mitotic sister chromatid segregation,34,0,0,1,1
+GO:0000075,cell cycle checkpoint,21,0,0,1,1
+GO:0000076,DNA replication checkpoint,5,0,0,1,1
+GO:0000077,DNA damage checkpoint,10,0,0,1,1
+GO:0000079,regulation of cyclin-dependent protein s...,17,0,0,1,1
+GO:0000082,G1/S transition of mitotic cell cycle,6,0,0,1,1
+GO:0000083,regulation of transcription involved in ...,1,0,0,1,1
+GO:0000086,G2/M transition of mitotic cell cycle,7,0,0,1,1
+GO:0000096,sulfur amino acid metabolic process,28,0,0,1,1
+GO:0000097,sulfur amino acid biosynthetic process,23,0,0,1,1
+GO:0000098,sulfur amino acid catabolic process,1,0,0,1,1
+GO:0000103,sulfate assimilation,9,0,0,1,1
+GO:0000105,histidine biosynthetic process,5,0,0,1,1
+GO:0000122,negative regulation of transcription by ...,11,0,0,1,1
+GO:0000154,rRNA modification,20,0,0,1,1
+GO:0000160,phosphorelay signal transduction system,65,0,0,1,1
+GO:0000162,tryptophan biosynthetic process,12,0,0,1,1
+GO:0000165,MAPK cascade,6,0,0,1,1
+GO:0000184,nuclear-transcribed mRNA catabolic proce...,21,0,0,1,1
+GO:0000209,protein polyubiquitination,28,0,0,1,1
+GO:0000212,meiotic spindle organization,5,0,0,1,1
+GO:0000226,microtubule cytoskeleton organization,80,0,0,1,1
+GO:0000244,spliceosomal tri-snRNP complex assembly,8,0,0,1,1
+GO:0000245,spliceosomal complex assembly,8,0,0,1,1
+GO:0000255,allantoin metabolic process,2,0,0,1,1
+GO:0000256,allantoin catabolic process,1,0,0,1,1
+GO:0000266,mitochondrial fission,7,0,0,1,1
+GO:0000271,polysaccharide biosynthetic process,153,0,0,1,1
+GO:0000272,polysaccharide catabolic process,75,0,0,1,1
+GO:0000278,mitotic cell cycle,80,0,0,1,1
+GO:0000280,nuclear division,75,0,0,1,1
+GO:0000281,mitotic cytokinesis,9,0,0,1,1
+GO:0000288,nuclear-transcribed mRNA catabolic proce...,21,0,0,1,1
+GO:0000289,nuclear-transcribed mRNA poly(A) tail sh...,3,0,0,1,1
+GO:0000290,deadenylation-dependent decapping of nuc...,17,0,0,1,1
+GO:0000291,nuclear-transcribed mRNA catabolic proce...,7,0,0,1,1
+GO:0000302,response to reactive oxygen species,26,0,0,1,1
+GO:0000303,response to superoxide,11,0,0,1,1

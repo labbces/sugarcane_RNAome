@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016070,RNA metabolic process,1429,81,53.26,6.2e-05,0.2716
+GO:0006383,transcription by RNA polymerase III,31,7,1.16,0.00012,0.2716
+GO:0010467,gene expression,1459,78,54.38,0.00056,0.8449
+GO:0006396,RNA processing,527,34,19.64,0.00128,1
+GO:0009789,positive regulation of abscisic acid-act...,8,3,0.3,0.0025,1
+GO:0043484,regulation of RNA splicing,8,3,0.3,0.0025,1
+GO:1901421,positive regulation of response to alcoh...,8,3,0.3,0.0025,1
+GO:1905959,positive regulation of cellular response...,8,3,0.3,0.0025,1
+GO:0006384,transcription initiation from RNA polyme...,9,3,0.34,0.00365,1
+GO:0009646,response to absence of light,9,3,0.34,0.00365,1
+GO:0071485,cellular response to absence of light,3,2,0.11,0.00406,1
+GO:0071588,hydrogen peroxide mediated signaling pat...,3,2,0.11,0.00406,1
+GO:1901528,hydrogen peroxide mediated signaling pat...,3,2,0.11,0.00406,1
+GO:0090304,nucleic acid metabolic process,2465,115,91.88,0.0041,1
+GO:0006139,nucleobase-containing compound metabolic...,2776,127,103.47,0.00483,1
+GO:0006725,cellular aromatic compound metabolic pro...,3019,136,112.52,0.00593,1
+GO:0008380,RNA splicing,141,12,5.26,0.00642,1
+GO:0071484,cellular response to light intensity,4,2,0.15,0.00791,1
+GO:0090351,seedling development,12,3,0.45,0.0088,1
+GO:0016071,mRNA metabolic process,282,19,10.51,0.00936,1
+GO:0032774,RNA biosynthetic process,566,32,21.1,0.01232,1
+GO:0000463,maturation of LSU-rRNA from tricistronic...,5,2,0.19,0.01286,1
+GO:0071244,cellular response to carbon dioxide,5,2,0.19,0.01286,1
+GO:1901360,organic cyclic compound metabolic proces...,3088,136,115.1,0.01305,1
+GO:0090305,nucleic acid phosphodiester bond hydroly...,275,18,10.25,0.01478,1
+GO:0010466,negative regulation of peptidase activit...,26,4,0.97,0.01485,1
+GO:0010951,negative regulation of endopeptidase act...,26,4,0.97,0.01485,1
+GO:0045861,negative regulation of proteolysis,26,4,0.97,0.01485,1
+GO:0006351,transcription, DNA-templated,531,30,19.79,0.01523,1
+GO:0071396,cellular response to lipid,104,9,3.88,0.01547,1
+GO:0097659,nucleic acid-templated transcription,556,31,20.72,0.01632,1
+GO:0000373,Group II intron splicing,15,3,0.56,0.01675,1
+GO:0052548,regulation of endopeptidase activity,27,4,1.01,0.01693,1
+GO:0046483,heterocycle metabolic process,2937,129,109.47,0.01743,1
+GO:0010037,response to carbon dioxide,6,2,0.22,0.01882,1
+GO:0010215,cellulose microfibril organization,6,2,0.22,0.01882,1
+GO:0030198,extracellular matrix organization,6,2,0.22,0.01882,1
+GO:0043062,extracellular structure organization,6,2,0.22,0.01882,1
+GO:0070726,cell wall assembly,6,2,0.22,0.01882,1
+GO:0071668,plant-type cell wall assembly,6,2,0.22,0.01882,1
+GO:0090333,regulation of stomatal closure,6,2,0.22,0.01882,1
+GO:0000209,protein polyubiquitination,28,4,1.04,0.01918,1
+GO:0006379,mRNA cleavage,16,3,0.6,0.02006,1
+GO:0042273,ribosomal large subunit biogenesis,16,3,0.6,0.02006,1
+GO:0006397,mRNA processing,205,14,7.64,0.02135,1
+GO:0034641,cellular nitrogen compound metabolic pro...,3139,136,117,0.02215,1
+GO:0030162,regulation of proteolysis,44,5,1.64,0.02312,1
+GO:0006950,response to stress,1961,89,73.09,0.02417,1
+GO:0052547,regulation of peptidase activity,30,4,1.12,0.02423,1
+GO:1901701,cellular response to oxygen-containing c...,151,11,5.63,0.02569,1

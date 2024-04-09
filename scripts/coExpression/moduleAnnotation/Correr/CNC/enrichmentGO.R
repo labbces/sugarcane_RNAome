@@ -3,11 +3,7 @@ library(ggplot2)
 
 rm(list=ls())
 
-# cluster
 setwd("/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Correr/code/updated_filters/CNC/moduleAnnotation/CNC")
-
-# pc - temporary
-setwd("/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/moduleAnnotation/Correr/CNC")
 
 results_path <- "results/"
 
