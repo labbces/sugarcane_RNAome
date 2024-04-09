@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009664,plant-type cell wall organization,20,5,0.75,0.00071,1
+GO:0006559,L-phenylalanine catabolic process,13,4,0.49,0.00108,1
+GO:1902222,erythrose 4-phosphate/phosphoenolpyruvat...,13,4,0.49,0.00108,1
+GO:0010410,hemicellulose metabolic process,32,6,1.2,0.00108,1
+GO:0006558,L-phenylalanine metabolic process,15,4,0.56,0.00194,1
+GO:1902221,erythrose 4-phosphate/phosphoenolpyruvat...,15,4,0.56,0.00194,1
+GO:0010383,cell wall polysaccharide metabolic proce...,36,6,1.35,0.00205,1
+GO:1990937,xylan acetylation,8,3,0.3,0.00257,1
+GO:0010411,xyloglucan metabolic process,9,3,0.34,0.00375,1
+GO:0046271,phenylpropanoid catabolic process,9,3,0.34,0.00375,1
+GO:0046274,lignin catabolic process,9,3,0.34,0.00375,1
+GO:0009074,aromatic amino acid family catabolic pro...,18,4,0.68,0.00397,1
+GO:0007023,post-chaperonin tubulin folding pathway,3,2,0.11,0.00413,1
+GO:0018108,peptidyl-tyrosine phosphorylation,105,10,3.95,0.00613,1
+GO:0018212,peptidyl-tyrosine modification,105,10,3.95,0.00613,1
+GO:0043412,macromolecule modification,3517,157,132.19,0.00828,1
+GO:0042546,cell wall biogenesis,48,6,1.8,0.00882,1
+GO:0016310,phosphorylation,2051,97,77.09,0.00939,1
+GO:0090305,nucleic acid phosphodiester bond hydroly...,384,24,14.43,0.01059,1
+GO:0070972,protein localization to endoplasmic reti...,36,5,1.35,0.01061,1
+GO:0044036,cell wall macromolecule metabolic proces...,50,6,1.88,0.01073,1
+GO:0006468,protein phosphorylation,1800,86,67.65,0.01122,1
+GO:0009658,chloroplast organization,67,7,2.52,0.01266,1
+GO:0055046,microgametogenesis,5,2,0.19,0.01308,1
+GO:0045492,xylan biosynthetic process,14,3,0.53,0.01411,1
+GO:0045491,xylan metabolic process,26,4,0.98,0.0153,1
+GO:0006720,isoprenoid metabolic process,215,15,8.08,0.01603,1
+GO:0009553,embryo sac development,27,4,1.01,0.01744,1
+GO:0006796,phosphate-containing compound metabolic ...,2746,123,103.21,0.01841,1
+GO:0006020,inositol metabolic process,6,2,0.23,0.01913,1
+GO:0008535,respiratory chain complex IV assembly,6,2,0.23,0.01913,1
+GO:0009800,cinnamic acid biosynthetic process,6,2,0.23,0.01913,1
+GO:0033617,mitochondrial cytochrome c oxidase assem...,6,2,0.23,0.01913,1
+GO:0006289,nucleotide-excision repair,73,7,2.74,0.0196,1
+GO:0009072,aromatic amino acid family metabolic pro...,73,7,2.74,0.0196,1
+GO:0045047,protein targeting to ER,28,4,1.05,0.01976,1
+GO:0072599,establishment of protein localization to...,28,4,1.05,0.01976,1
+GO:0006793,phosphorus metabolic process,2780,124,104.49,0.02023,1
+GO:0009987,cellular process,12731,499,478.49,0.02081,1
+GO:0071554,cell wall organization or biogenesis,203,14,7.63,0.02138,1
+GO:0019953,sexual reproduction,29,4,1.09,0.02226,1
+GO:0016054,organic acid catabolic process,76,7,2.86,0.02391,1
+GO:0046395,carboxylic acid catabolic process,76,7,2.86,0.02391,1
+GO:0044703,multi-organism reproductive process,30,4,1.13,0.02494,1
+GO:0090502,RNA phosphodiester bond hydrolysis, endo...,112,9,4.21,0.02524,1
+GO:0009608,response to symbiont,7,2,0.26,0.02612,1
+GO:0009610,response to symbiotic fungus,7,2,0.26,0.02612,1
+GO:0009685,gibberellin metabolic process,7,2,0.26,0.02612,1
+GO:0009803,cinnamic acid metabolic process,7,2,0.26,0.02612,1
+GO:0030838,positive regulation of actin filament po...,46,5,1.73,0.02844,1

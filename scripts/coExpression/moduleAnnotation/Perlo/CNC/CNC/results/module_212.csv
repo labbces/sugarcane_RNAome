@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006903,vesicle targeting,24,2,0.04,0.00089,1
+GO:0051648,vesicle localization,26,2,0.05,0.00104,1
+GO:0051650,establishment of vesicle localization,26,2,0.05,0.00104,1
+GO:0048193,Golgi vesicle transport,134,3,0.25,0.0019,1
+GO:0051346,negative regulation of hydrolase activit...,42,2,0.08,0.00272,1
+GO:0060321,acceptance of pollen,2,1,0,0.00369,1
+GO:0051656,establishment of organelle localization,52,2,0.1,0.00414,1
+GO:0051640,organelle localization,59,2,0.11,0.00529,1
+GO:0043086,negative regulation of catalytic activit...,66,2,0.12,0.00658,1
+GO:0044092,negative regulation of molecular functio...,67,2,0.12,0.00678,1
+GO:0009443,pyridoxal 5'-phosphate salvage,4,1,0.01,0.00737,1
+GO:1905183,negative regulation of protein serine/th...,4,1,0.01,0.00737,1
+GO:0051336,regulation of hydrolase activity,71,2,0.13,0.00758,1
+GO:0019220,regulation of phosphate metabolic proces...,72,2,0.13,0.00779,1
+GO:0051174,regulation of phosphorus metabolic proce...,72,2,0.13,0.00779,1
+GO:0016192,vesicle-mediated transport,432,4,0.8,0.00784,1
+GO:0010605,negative regulation of macromolecule met...,445,4,0.82,0.00869,1
+GO:0030187,melatonin biosynthetic process,5,1,0.01,0.00921,1
+GO:0009892,negative regulation of metabolic process,456,4,0.84,0.00945,1
+GO:0006887,exocytosis,82,2,0.15,0.01001,1
+GO:1901617,organic hydroxy compound biosynthetic pr...,86,2,0.16,0.01096,1
+GO:0010923,negative regulation of phosphatase activ...,6,1,0.01,0.01104,1
+GO:0032515,negative regulation of phosphoprotein ph...,6,1,0.01,0.01104,1
+GO:0032940,secretion by cell,89,2,0.16,0.01171,1
+GO:0051172,negative regulation of nitrogen compound...,261,3,0.48,0.01211,1
+GO:0031399,regulation of protein modification proce...,91,2,0.17,0.01221,1
+GO:0050789,regulation of biological process,2147,9,3.97,0.01287,1
+GO:0006893,Golgi to plasma membrane transport,7,1,0.01,0.01287,1
+GO:0030186,melatonin metabolic process,7,1,0.01,0.01287,1
+GO:0031324,negative regulation of cellular metaboli...,268,3,0.5,0.01301,1
+GO:0032268,regulation of cellular protein metabolic...,269,3,0.5,0.01314,1
+GO:0046903,secretion,95,2,0.18,0.01326,1
+GO:0032259,methylation,504,4,0.93,0.01328,1
+GO:0035305,negative regulation of dephosphorylation,8,1,0.01,0.0147,1
+GO:0035308,negative regulation of protein dephospho...,8,1,0.01,0.0147,1
+GO:0065007,biological regulation,2592,10,4.79,0.01475,1
+GO:0051246,regulation of protein metabolic process,281,3,0.52,0.01476,1
+GO:0032147,activation of protein kinase activity,9,1,0.02,0.01652,1
+GO:0032269,negative regulation of cellular protein ...,111,2,0.21,0.0178,1
+GO:0050790,regulation of catalytic activity,303,3,0.56,0.01803,1
+GO:0051248,negative regulation of protein metabolic...,112,2,0.21,0.0181,1
+GO:0006420,arginyl-tRNA aminoacylation,10,1,0.02,0.01834,1
+GO:0009860,pollen tube growth,10,1,0.02,0.01834,1
+GO:0065009,regulation of molecular function,313,3,0.58,0.01963,1
+GO:0140352,export from cell,124,2,0.23,0.02191,1
+GO:0006892,post-Golgi vesicle-mediated transport,12,1,0.02,0.02196,1
+GO:0006901,vesicle coating,12,1,0.02,0.02196,1
+GO:0009846,pollen germination,12,1,0.02,0.02196,1
+GO:0042816,vitamin B6 metabolic process,12,1,0.02,0.02196,1
+GO:0042819,vitamin B6 biosynthetic process,12,1,0.02,0.02196,1

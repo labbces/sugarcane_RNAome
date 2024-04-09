@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0051443,positive regulation of ubiquitin-protein...,12,3,0.12,0.00022,0.4403
+GO:0031398,positive regulation of protein ubiquitin...,13,3,0.13,0.00029,0.4403
+GO:0051438,regulation of ubiquitin-protein transfer...,13,3,0.13,0.00029,0.4403
+GO:1903322,positive regulation of protein modificat...,14,3,0.14,0.00036,0.4403
+GO:0031396,regulation of protein ubiquitination,18,3,0.19,0.00079,0.7583
+GO:1903320,regulation of protein modification by sm...,19,3,0.2,0.00093,0.7583
+GO:0016106,sesquiterpenoid biosynthetic process,6,2,0.06,0.00155,0.9478
+GO:1904668,positive regulation of ubiquitin protein...,6,2,0.06,0.00155,0.9478
+GO:1904666,regulation of ubiquitin protein ligase a...,7,2,0.07,0.00216,1
+GO:0009768,photosynthesis, light harvesting in phot...,8,2,0.08,0.00286,1
+GO:0006714,sesquiterpenoid metabolic process,11,2,0.11,0.00551,1
+GO:0044093,positive regulation of molecular functio...,69,4,0.71,0.00568,1
+GO:0032270,positive regulation of cellular protein ...,71,4,0.73,0.00628,1
+GO:0031401,positive regulation of protein modificat...,38,3,0.39,0.00705,1
+GO:0051347,positive regulation of transferase activ...,38,3,0.39,0.00705,1
+GO:0051247,positive regulation of protein metabolic...,78,4,0.81,0.00872,1
+GO:0016556,mRNA modification,15,2,0.16,0.01024,1
+GO:0006233,dTDP biosynthetic process,1,1,0.01,0.01035,1
+GO:0009186,deoxyribonucleoside diphosphate metaboli...,1,1,0.01,0.01035,1
+GO:0009189,deoxyribonucleoside diphosphate biosynth...,1,1,0.01,0.01035,1
+GO:0009196,pyrimidine deoxyribonucleoside diphospha...,1,1,0.01,0.01035,1
+GO:0009197,pyrimidine deoxyribonucleoside diphospha...,1,1,0.01,0.01035,1
+GO:0009799,specification of symmetry,1,1,0.01,0.01035,1
+GO:0009855,determination of bilateral symmetry,1,1,0.01,0.01035,1
+GO:0009953,dorsal/ventral pattern formation,1,1,0.01,0.01035,1
+GO:0017156,calcium-ion regulated exocytosis,1,1,0.01,0.01035,1
+GO:0045055,regulated exocytosis,1,1,0.01,0.01035,1
+GO:0046072,dTDP metabolic process,1,1,0.01,0.01035,1
+GO:0048262,determination of dorsal/ventral asymmetr...,1,1,0.01,0.01035,1
+GO:1902298,cell cycle DNA replication maintenance o...,1,1,0.01,0.01035,1
+GO:1990426,mitotic recombination-dependent replicat...,1,1,0.01,0.01035,1
+GO:1990505,mitotic DNA replication maintenance of f...,1,1,0.01,0.01035,1
+GO:0009451,RNA modification,354,9,3.66,0.01154,1
+GO:0045454,cell redox homeostasis,18,2,0.19,0.01462,1
+GO:0031325,positive regulation of cellular metaboli...,249,7,2.58,0.01512,1
+GO:0046940,nucleoside monophosphate phosphorylation,19,2,0.2,0.01623,1
+GO:0034660,ncRNA metabolic process,577,12,5.97,0.017,1
+GO:0002679,respiratory burst involved in defense re...,2,1,0.02,0.0206,1
+GO:0009133,nucleoside diphosphate biosynthetic proc...,2,1,0.02,0.0206,1
+GO:0009138,pyrimidine nucleoside diphosphate metabo...,2,1,0.02,0.0206,1
+GO:0009139,pyrimidine nucleoside diphosphate biosyn...,2,1,0.02,0.0206,1
+GO:0009688,abscisic acid biosynthetic process,2,1,0.02,0.0206,1
+GO:0010115,regulation of abscisic acid biosynthetic...,2,1,0.02,0.0206,1
+GO:0010116,positive regulation of abscisic acid bio...,2,1,0.02,0.0206,1
+GO:0010501,RNA secondary structure unwinding,2,1,0.02,0.0206,1
+GO:0033212,iron import into cell,2,1,0.02,0.0206,1
+GO:0033214,siderophore-dependent iron import into c...,2,1,0.02,0.0206,1
+GO:0043289,apocarotenoid biosynthetic process,2,1,0.02,0.0206,1
+GO:0045730,respiratory burst,2,1,0.02,0.0206,1
+GO:1901678,iron coordination entity transport,2,1,0.02,0.0206,1

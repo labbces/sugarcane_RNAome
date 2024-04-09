@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0001192,maintenance of transcriptional fidelity ...,1,1,0,0.005,1
+GO:0001193,maintenance of transcriptional fidelity ...,1,1,0,0.005,1
+GO:0006857,oligopeptide transport,75,3,0.37,0.0062,1
+GO:0033554,cellular response to stress,722,9,3.6,0.0097,1
+GO:0010167,response to nitrate,2,1,0.01,0.01,1
+GO:0090305,nucleic acid phosphodiester bond hydroly...,384,6,1.92,0.0124,1
+GO:0015706,nitrate transport,3,1,0.01,0.0149,1
+GO:0015783,GDP-fucose transmembrane transport,3,1,0.01,0.0149,1
+GO:0032418,lysosome localization,3,1,0.01,0.0149,1
+GO:0043137,DNA replication, removal of RNA primer,3,1,0.01,0.0149,1
+GO:0051657,maintenance of organelle location,3,1,0.01,0.0149,1
+GO:1902025,nitrate import,3,1,0.01,0.0149,1
+GO:1990849,maintenance of vacuolar location,3,1,0.01,0.0149,1
+GO:0009443,pyridoxal 5'-phosphate salvage,4,1,0.02,0.0198,1
+GO:0043624,cellular protein complex disassembly,44,2,0.22,0.0203,1
+GO:0032984,protein-containing complex disassembly,47,2,0.23,0.023,1
+GO:0070417,cellular response to cold,5,1,0.02,0.0247,1
+GO:0035672,oligopeptide transmembrane transport,53,2,0.26,0.0288,1
+GO:0000002,mitochondrial genome maintenance,6,1,0.03,0.0296,1
+GO:0035442,dipeptide transmembrane transport,6,1,0.03,0.0296,1
+GO:0042126,nitrate metabolic process,6,1,0.03,0.0296,1
+GO:0042128,nitrate assimilation,6,1,0.03,0.0296,1
+GO:0042938,dipeptide transport,6,1,0.03,0.0296,1
+GO:0045737,positive regulation of cyclin-dependent ...,6,1,0.03,0.0296,1
+GO:0090480,purine nucleotide-sugar transmembrane tr...,6,1,0.03,0.0296,1
+GO:1904031,positive regulation of cyclin-dependent ...,6,1,0.03,0.0296,1
+GO:2001057,reactive nitrogen species metabolic proc...,6,1,0.03,0.0296,1
+GO:0006281,DNA repair,484,6,2.42,0.0339,1
+GO:0022411,cellular component disassembly,58,2,0.29,0.034,1
+GO:0042939,tripeptide transport,7,1,0.03,0.0344,1
+GO:0070476,rRNA (guanine-N7)-methylation,7,1,0.03,0.0344,1
+GO:0006011,UDP-glucose metabolic process,8,1,0.04,0.0392,1
+GO:0046505,sulfolipid metabolic process,8,1,0.04,0.0392,1
+GO:0046506,sulfolipid biosynthetic process,8,1,0.04,0.0392,1
+GO:1901698,response to nitrogen compound,64,2,0.32,0.0406,1
+GO:0006950,response to stress,2893,21,14.44,0.0435,1
+GO:0000463,maturation of LSU-rRNA from tricistronic...,9,1,0.04,0.044,1
+GO:0006283,transcription-coupled nucleotide-excisio...,9,1,0.04,0.044,1
+GO:1900864,mitochondrial RNA modification,9,1,0.04,0.044,1
+GO:0006974,cellular response to DNA damage stimulus,517,6,2.58,0.0444,1
+GO:0045787,positive regulation of cell cycle,10,1,0.05,0.0488,1
+GO:0071902,positive regulation of protein serine/th...,10,1,0.05,0.0488,1
+GO:0050832,defense response to fungus,72,2,0.36,0.0502,1
+GO:0006289,nucleotide-excision repair,73,2,0.36,0.0515,1
+GO:0006793,phosphorus metabolic process,2780,20,13.87,0.0529,1
+GO:0010286,heat acclimation,11,1,0.05,0.0536,1
+GO:0071941,nitrogen cycle metabolic process,11,1,0.05,0.0536,1
+GO:0006379,mRNA cleavage,12,1,0.06,0.0583,1
+GO:0009846,pollen germination,12,1,0.06,0.0583,1
+GO:0016036,cellular response to phosphate starvatio...,12,1,0.06,0.0583,1

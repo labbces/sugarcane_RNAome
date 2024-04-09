@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0060320,rejection of self pollen,3,1,0,0.0024,1
+GO:0015833,peptide transport,789,4,0.63,0.0028,1
+GO:0042886,amide transport,794,4,0.64,0.0029,1
+GO:0002221,pattern recognition receptor signaling p...,4,1,0,0.0032,1
+GO:0045037,protein import into chloroplast stroma,4,1,0,0.0032,1
+GO:0016255,attachment of GPI anchor to protein,7,1,0.01,0.0056,1
+GO:0071705,nitrogen compound transport,966,4,0.77,0.0058,1
+GO:0006605,protein targeting,162,2,0.13,0.0072,1
+GO:0045036,protein targeting to chloroplast,11,1,0.01,0.0088,1
+GO:0072596,establishment of protein localization to...,11,1,0.01,0.0088,1
+GO:0072594,establishment of protein localization to...,191,2,0.15,0.0099,1
+GO:0002764,immune response-regulating signaling pat...,13,1,0.01,0.0104,1
+GO:0072598,protein localization to chloroplast,13,1,0.01,0.0104,1
+GO:0071702,organic substance transport,1187,4,0.95,0.0119,1
+GO:0006627,protein processing involved in protein t...,15,1,0.01,0.012,1
+GO:0034982,mitochondrial protein processing,15,1,0.01,0.012,1
+GO:0033365,protein localization to organelle,219,2,0.18,0.0128,1
+GO:0015031,protein transport,735,3,0.59,0.0188,1
+GO:0045184,establishment of protein localization,755,3,0.6,0.0202,1
+GO:0070727,cellular macromolecule localization,781,3,0.63,0.0221,1
+GO:0008104,protein localization,783,3,0.63,0.0223,1
+GO:0050776,regulation of immune response,31,1,0.02,0.0246,1
+GO:0002682,regulation of immune system process,32,1,0.03,0.0253,1
+GO:0033036,macromolecule localization,914,3,0.73,0.0333,1
+GO:0065002,intracellular protein transmembrane tran...,43,1,0.03,0.0339,1
+GO:0051641,cellular localization,947,3,0.76,0.0365,1
+GO:0006886,intracellular protein transport,418,2,0.33,0.0428,1
+GO:0042742,defense response to bacterium,55,1,0.04,0.0432,1
+GO:0071806,protein transmembrane transport,55,1,0.04,0.0432,1
+GO:0006626,protein targeting to mitochondrion,57,1,0.05,0.0447,1
+GO:0070585,protein localization to mitochondrion,59,1,0.05,0.0463,1
+GO:0072655,establishment of protein localization to...,59,1,0.05,0.0463,1
+GO:0006505,GPI anchor metabolic process,60,1,0.05,0.047,1
+GO:0006506,GPI anchor biosynthetic process,60,1,0.05,0.047,1
+GO:0006497,protein lipidation,66,1,0.05,0.0516,1
+GO:0042158,lipoprotein biosynthetic process,66,1,0.05,0.0516,1
+GO:0034613,cellular protein localization,467,2,0.37,0.0523,1
+GO:0042157,lipoprotein metabolic process,69,1,0.06,0.0539,1
+GO:0048544,recognition of pollen,72,1,0.06,0.0562,1
+GO:0050832,defense response to fungus,72,1,0.06,0.0562,1
+GO:0008037,cell recognition,73,1,0.06,0.0569,1
+GO:0016485,protein processing,73,1,0.06,0.0569,1
+GO:0006857,oligopeptide transport,75,1,0.06,0.0585,1
+GO:0009875,pollen-pistil interaction,77,1,0.06,0.06,1
+GO:0006955,immune response,81,1,0.06,0.063,1
+GO:0009247,glycolipid biosynthetic process,81,1,0.06,0.063,1
+GO:0006914,autophagy,82,1,0.07,0.0637,1
+GO:0009620,response to fungus,82,1,0.07,0.0637,1
+GO:0061919,process utilizing autophagic mechanism,82,1,0.07,0.0637,1
+GO:0009617,response to bacterium,83,1,0.07,0.0645,1

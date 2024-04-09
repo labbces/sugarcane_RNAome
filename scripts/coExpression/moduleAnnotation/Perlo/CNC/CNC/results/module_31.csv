@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006623,protein targeting to vacuole,29,1,0.01,0.0071,1
+GO:0031146,SCF-dependent proteasomal ubiquitin-depe...,30,1,0.01,0.0074,1
+GO:0072665,protein localization to vacuole,50,1,0.01,0.0123,1
+GO:0072666,establishment of protein localization to...,50,1,0.01,0.0123,1
+GO:0007034,vacuolar transport,75,1,0.02,0.0184,1
+GO:0000278,mitotic cell cycle,116,1,0.03,0.0283,1
+GO:0043161,proteasome-mediated ubiquitin-dependent ...,124,1,0.03,0.0302,1
+GO:0000226,microtubule cytoskeleton organization,134,1,0.03,0.0326,1
+GO:0010498,proteasomal protein catabolic process,134,1,0.03,0.0326,1
+GO:0009734,auxin-activated signaling pathway,154,1,0.04,0.0374,1
+GO:0071365,cellular response to auxin stimulus,154,1,0.04,0.0374,1
+GO:0006605,protein targeting,162,1,0.04,0.0393,1
+GO:0009733,response to auxin,166,1,0.04,0.0403,1
+GO:0072594,establishment of protein localization to...,191,1,0.05,0.0463,1
+GO:0033365,protein localization to organelle,219,1,0.05,0.0529,1
+GO:0007017,microtubule-based process,234,1,0.06,0.0564,1
+GO:0006511,ubiquitin-dependent protein catabolic pr...,269,1,0.07,0.0647,1
+GO:0019941,modification-dependent protein catabolic...,276,1,0.07,0.0663,1
+GO:0043632,modification-dependent macromolecule cat...,277,1,0.07,0.0665,1
+GO:0007010,cytoskeleton organization,288,1,0.07,0.0691,1
+GO:0051603,proteolysis involved in cellular protein...,300,1,0.07,0.0719,1
+GO:0044257,cellular protein catabolic process,306,1,0.08,0.0733,1
+GO:0007049,cell cycle,313,1,0.08,0.0749,1
+GO:0030163,protein catabolic process,328,1,0.08,0.0784,1
+GO:0009755,hormone-mediated signaling pathway,391,1,0.1,0.0929,1
+GO:0032870,cellular response to hormone stimulus,410,1,0.1,0.0973,1
+GO:0006886,intracellular protein transport,418,1,0.1,0.0991,1
+GO:0071495,cellular response to endogenous stimulus,421,1,0.1,0.0998,1
+GO:1901565,organonitrogen compound catabolic proces...,429,1,0.11,0.1016,1
+GO:0071310,cellular response to organic substance,439,1,0.11,0.1039,1
+GO:0044265,cellular macromolecule catabolic process,458,1,0.11,0.1082,1
+GO:0034613,cellular protein localization,467,1,0.12,0.1102,1
+GO:0009725,response to hormone,508,1,0.13,0.1195,1
+GO:0009719,response to endogenous stimulus,519,1,0.13,0.1219,1
+GO:0009057,macromolecule catabolic process,530,1,0.13,0.1244,1
+GO:0070887,cellular response to chemical stimulus,589,1,0.15,0.1375,1
+GO:0010033,response to organic substance,599,1,0.15,0.1397,1
+GO:0046907,intracellular transport,600,1,0.15,0.1399,1
+GO:0051649,establishment of localization in cell,616,1,0.15,0.1434,1
+GO:0015031,protein transport,735,1,0.18,0.1692,1
+GO:0045184,establishment of protein localization,755,1,0.19,0.1735,1
+GO:0070727,cellular macromolecule localization,781,1,0.19,0.179,1
+GO:0008104,protein localization,783,1,0.19,0.1795,1
+GO:0015833,peptide transport,789,1,0.19,0.1807,1
+GO:0042886,amide transport,794,1,0.2,0.1818,1
+GO:0044248,cellular catabolic process,800,1,0.2,0.1831,1
+GO:0007165,signal transduction,817,1,0.2,0.1867,1
+GO:0023052,signaling,821,1,0.2,0.1875,1
+GO:0006508,proteolysis,878,1,0.22,0.1995,1
+GO:0033036,macromolecule localization,914,1,0.23,0.207,1

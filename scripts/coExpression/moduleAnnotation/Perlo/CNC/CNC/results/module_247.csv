@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0046488,phosphatidylinositol metabolic process,178,15,5.09,0.00019,0.337
+GO:0006661,phosphatidylinositol biosynthetic proces...,146,13,4.17,0.00029,0.337
+GO:0006505,GPI anchor metabolic process,60,8,1.72,0.00029,0.337
+GO:0006506,GPI anchor biosynthetic process,60,8,1.72,0.00029,0.337
+GO:0006650,glycerophospholipid metabolic process,236,17,6.75,0.00046,0.337
+GO:0009247,glycolipid biosynthetic process,81,9,2.32,5e-04,0.337
+GO:0006497,protein lipidation,66,8,1.89,0.00056,0.337
+GO:0042158,lipoprotein biosynthetic process,66,8,1.89,0.00056,0.337
+GO:0046474,glycerophospholipid biosynthetic process,199,15,5.69,0.00062,0.337
+GO:0042157,lipoprotein metabolic process,69,8,1.97,0.00076,0.3558
+GO:0006644,phospholipid metabolic process,316,20,9.03,8e-04,0.3558
+GO:0006664,glycolipid metabolic process,90,9,2.57,0.00107,0.4362
+GO:1903509,liposaccharide metabolic process,91,9,2.6,0.00116,0.4365
+GO:0009628,response to abiotic stimulus,427,24,12.21,0.00133,0.4435
+GO:0046467,membrane lipid biosynthetic process,93,9,2.66,0.00136,0.4435
+GO:0046486,glycerolipid metabolic process,268,17,7.66,0.00188,0.5748
+GO:0046688,response to copper ion,3,2,0.09,0.0024,0.6385
+GO:0045017,glycerolipid biosynthetic process,228,15,6.52,0.0024,0.6385
+GO:0051301,cell division,121,10,3.46,0.00248,0.6385
+GO:0006099,tricarboxylic acid cycle,34,5,0.97,0.00262,0.6409
+GO:0008654,phospholipid biosynthetic process,258,16,7.38,0.00316,0.7361
+GO:0060260,regulation of transcription initiation f...,4,2,0.11,0.00471,0.9601
+GO:0060261,positive regulation of transcription ini...,4,2,0.11,0.00471,0.9601
+GO:2000144,positive regulation of DNA-templated tra...,4,2,0.11,0.00471,0.9601
+GO:0008652,cellular amino acid biosynthetic process,160,11,4.57,0.00634,1
+GO:0019637,organophosphate metabolic process,765,34,21.87,0.00735,1
+GO:0009098,leucine biosynthetic process,5,2,0.14,0.0077,1
+GO:0016540,protein autoprocessing,5,2,0.14,0.0077,1
+GO:0006643,membrane lipid metabolic process,121,9,3.46,0.00794,1
+GO:0009415,response to water,62,6,1.77,0.00841,1
+GO:1901607,alpha-amino acid biosynthetic process,144,10,4.12,0.00844,1
+GO:0009651,response to salt stress,63,6,1.8,0.00908,1
+GO:0006121,mitochondrial electron transport, succin...,6,2,0.17,0.01133,1
+GO:0016053,organic acid biosynthetic process,350,18,10.01,0.01219,1
+GO:0046394,carboxylic acid biosynthetic process,350,18,10.01,0.01219,1
+GO:0007031,peroxisome organization,34,4,0.97,0.01552,1
+GO:0006424,glutamyl-tRNA aminoacylation,7,2,0.2,0.01557,1
+GO:0060919,auxin influx,7,2,0.2,0.01557,1
+GO:0080162,intracellular auxin transport,7,2,0.2,0.01557,1
+GO:1903320,regulation of protein modification by sm...,19,3,0.54,0.016,1
+GO:0007049,cell cycle,313,16,8.95,0.0184,1
+GO:0005992,trehalose biosynthetic process,36,4,1.03,0.01886,1
+GO:0006970,response to osmotic stress,75,6,2.14,0.02026,1
+GO:0090407,organophosphate biosynthetic process,512,23,14.64,0.02229,1
+GO:0005991,trehalose metabolic process,38,4,1.09,0.02261,1
+GO:0048583,regulation of response to stimulus,296,15,8.46,0.02355,1
+GO:0006833,water transport,9,2,0.26,0.0257,1
+GO:0042044,fluid transport,9,2,0.26,0.0257,1
+GO:0065007,biological regulation,2592,90,74.1,0.02598,1
+GO:0009414,response to water deprivation,59,5,1.69,0.02645,1

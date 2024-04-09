@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0031297,replication fork processing,6,2,0.01,5.3e-05,0.2593
+GO:0045005,DNA-dependent DNA replication maintenanc...,16,2,0.03,0.00042,1
+GO:0006259,DNA metabolic process,1188,8,2.27,0.00139,1
+GO:0006260,DNA replication,204,3,0.39,0.00679,1
+GO:0042352,GDP-L-fucose salvage,4,1,0.01,0.00762,1
+GO:0106035,protein maturation by [4Fe-4S] cluster t...,4,1,0.01,0.00762,1
+GO:0042350,GDP-L-fucose biosynthetic process,5,1,0.01,0.00951,1
+GO:0046368,GDP-L-fucose metabolic process,5,1,0.01,0.00951,1
+GO:0090630,activation of GTPase activity,5,1,0.01,0.00951,1
+GO:0006261,DNA-dependent DNA replication,81,2,0.15,0.01042,1
+GO:0006281,DNA repair,484,4,0.92,0.01299,1
+GO:0006974,cellular response to DNA damage stimulus,517,4,0.99,0.0162,1
+GO:0070534,protein K63-linked ubiquitination,9,1,0.02,0.01706,1
+GO:0097428,protein maturation by iron-sulfur cluste...,9,1,0.02,0.01706,1
+GO:0032011,ARF protein signal transduction,10,1,0.02,0.01894,1
+GO:0032012,regulation of ARF protein signal transdu...,10,1,0.02,0.01894,1
+GO:0015074,DNA integration,299,3,0.57,0.01901,1
+GO:0050790,regulation of catalytic activity,303,3,0.58,0.01969,1
+GO:0043547,positive regulation of GTPase activity,11,1,0.02,0.02082,1
+GO:0065009,regulation of molecular function,313,3,0.6,0.02143,1
+GO:0046578,regulation of Ras protein signal transdu...,13,1,0.02,0.02456,1
+GO:0051056,regulation of small GTPase mediated sign...,13,1,0.02,0.02456,1
+GO:0007265,Ras protein signal transduction,14,1,0.03,0.02642,1
+GO:0051345,positive regulation of hydrolase activit...,15,1,0.03,0.02828,1
+GO:0016458,gene silencing,142,2,0.27,0.02995,1
+GO:0031047,gene silencing by RNA,142,2,0.27,0.02995,1
+GO:0043087,regulation of GTPase activity,17,1,0.03,0.03199,1
+GO:0090304,nucleic acid metabolic process,3271,11,6.25,0.0343,1
+GO:0010629,negative regulation of gene expression,378,3,0.72,0.03481,1
+GO:0006139,nucleobase-containing compound metabolic...,3720,12,7.11,0.03527,1
+GO:0033554,cellular response to stress,722,4,1.38,0.04715,1
+GO:0007264,small GTPase mediated signal transductio...,27,1,0.05,0.05035,1
+GO:0009627,systemic acquired resistance,27,1,0.05,0.05035,1
+GO:0043173,nucleotide salvage,27,1,0.05,0.05035,1
+GO:0010605,negative regulation of macromolecule met...,445,3,0.85,0.05222,1
+GO:0000209,protein polyubiquitination,29,1,0.06,0.05398,1
+GO:0009814,defense response, incompatible interacti...,29,1,0.06,0.05398,1
+GO:0046483,heterocycle metabolic process,3959,12,7.56,0.05447,1
+GO:0009892,negative regulation of metabolic process,456,3,0.87,0.05541,1
+GO:0035194,post-transcriptional gene silencing by R...,31,1,0.06,0.0576,1
+GO:0006725,cellular aromatic compound metabolic pro...,4059,12,7.75,0.0644,1
+GO:0009226,nucleotide-sugar biosynthetic process,35,1,0.07,0.06479,1
+GO:0016441,posttranscriptional gene silencing,36,1,0.07,0.06658,1
+GO:0043094,cellular metabolic compound salvage,41,1,0.08,0.07548,1
+GO:1901360,organic cyclic compound metabolic proces...,4161,12,7.95,0.07577,1
+GO:1902531,regulation of intracellular signal trans...,46,1,0.09,0.0843,1
+GO:0006950,response to stress,2893,9,5.53,0.08645,1
+GO:0034641,cellular nitrogen compound metabolic pro...,4249,12,8.12,0.08664,1
+GO:0009225,nucleotide-sugar metabolic process,48,1,0.09,0.08781,1
+GO:0070647,protein modification by small protein co...,570,3,1.09,0.09384,1

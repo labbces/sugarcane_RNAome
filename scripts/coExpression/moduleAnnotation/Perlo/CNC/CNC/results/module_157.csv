@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0002831,regulation of response to biotic stimulu...,63,3,0.19,9e-04,1
+GO:0032101,regulation of response to external stimu...,74,3,0.22,0.0014,1
+GO:0043328,protein transport to vacuole involved in...,21,2,0.06,0.0018,1
+GO:0032511,late endosome to vacuole transport via m...,22,2,0.07,0.002,1
+GO:0043162,ubiquitin-dependent protein catabolic pr...,22,2,0.07,0.002,1
+GO:0031347,regulation of defense response,85,3,0.26,0.0021,1
+GO:0043207,response to external biotic stimulus,800,8,2.42,0.0025,1
+GO:0051707,response to other organism,800,8,2.42,0.0025,1
+GO:0032509,endosome transport via multivesicular bo...,25,2,0.08,0.0026,1
+GO:0044419,interspecies interaction between organis...,813,8,2.45,0.0028,1
+GO:0098542,defense response to other organism,204,4,0.62,0.0033,1
+GO:0009607,response to biotic stimulus,839,8,2.53,0.0034,1
+GO:0071985,multivesicular body sorting pathway,33,2,0.1,0.0044,1
+GO:0045324,late endosome to vacuole transport,34,2,0.1,0.0047,1
+GO:0002833,positive regulation of response to bioti...,35,2,0.11,0.005,1
+GO:0009605,response to external stimulus,895,8,2.7,0.005,1
+GO:0000720,pyrimidine dimer repair by nucleotide-ex...,2,1,0.01,0.006,1
+GO:0042148,strand invasion,2,1,0.01,0.006,1
+GO:0032103,positive regulation of response to exter...,40,2,0.12,0.0065,1
+GO:0031349,positive regulation of defense response,41,2,0.12,0.0068,1
+GO:0080134,regulation of response to stress,135,3,0.41,0.0078,1
+GO:0016444,somatic cell DNA recombination,3,1,0.01,0.009,1
+GO:0006405,RNA export from nucleus,50,2,0.15,0.01,1
+GO:0072665,protein localization to vacuole,50,2,0.15,0.01,1
+GO:0072666,establishment of protein localization to...,50,2,0.15,0.01,1
+GO:0016197,endosomal transport,51,2,0.15,0.0104,1
+GO:0042742,defense response to bacterium,55,2,0.17,0.012,1
+GO:0042538,hyperosmotic salinity response,4,1,0.01,0.012,1
+GO:1900426,positive regulation of defense response ...,4,1,0.01,0.012,1
+GO:0006972,hyperosmotic response,5,1,0.02,0.015,1
+GO:0009651,response to salt stress,63,2,0.19,0.0155,1
+GO:0051168,nuclear export,63,2,0.19,0.0155,1
+GO:0009864,induced systemic resistance, jasmonic ac...,7,1,0.02,0.0209,1
+GO:0006970,response to osmotic stress,75,2,0.23,0.0215,1
+GO:0007034,vacuolar transport,75,2,0.23,0.0215,1
+GO:0050657,nucleic acid transport,81,2,0.24,0.0249,1
+GO:0050658,RNA transport,81,2,0.24,0.0249,1
+GO:0051236,establishment of RNA localization,81,2,0.24,0.0249,1
+GO:0006403,RNA localization,82,2,0.25,0.0254,1
+GO:0009617,response to bacterium,83,2,0.25,0.026,1
+GO:0009682,induced systemic resistance,9,1,0.03,0.0269,1
+GO:1900424,regulation of defense response to bacter...,9,1,0.03,0.0269,1
+GO:0006952,defense response,1938,11,5.85,0.0272,1
+GO:0006290,pyrimidine dimer repair,10,1,0.03,0.0298,1
+GO:0048584,positive regulation of response to stimu...,98,2,0.3,0.0353,1
+GO:0006022,aminoglycan metabolic process,12,1,0.04,0.0356,1
+GO:0006026,aminoglycan catabolic process,12,1,0.04,0.0356,1
+GO:0006030,chitin metabolic process,12,1,0.04,0.0356,1
+GO:0006032,chitin catabolic process,12,1,0.04,0.0356,1
+GO:0046348,amino sugar catabolic process,12,1,0.04,0.0356,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0051172,negative regulation of nitrogen compound...,261,4,0.45,0.00099,1
+GO:0031324,negative regulation of cellular metaboli...,268,4,0.46,0.00109,1
+GO:0006651,diacylglycerol biosynthetic process,1,1,0,0.00173,1
+GO:0046339,diacylglycerol metabolic process,1,1,0,0.00173,1
+GO:0006338,chromatin remodeling,178,3,0.31,0.00347,1
+GO:0048523,negative regulation of cellular process,386,4,0.67,0.0041,1
+GO:0010558,negative regulation of macromolecule bio...,191,3,0.33,0.00423,1
+GO:2000113,negative regulation of cellular macromol...,191,3,0.33,0.00423,1
+GO:0009890,negative regulation of biosynthetic proc...,195,3,0.34,0.00448,1
+GO:0031327,negative regulation of cellular biosynth...,195,3,0.34,0.00448,1
+GO:0007219,Notch signaling pathway,3,1,0.01,0.00517,1
+GO:0006333,chromatin assembly or disassembly,64,2,0.11,0.00542,1
+GO:0031497,chromatin assembly,64,2,0.11,0.00542,1
+GO:0010605,negative regulation of macromolecule met...,445,4,0.77,0.00678,1
+GO:1905183,negative regulation of protein serine/th...,4,1,0.01,0.00688,1
+GO:0009892,negative regulation of metabolic process,456,4,0.79,0.00738,1
+GO:0071103,DNA conformation change,246,3,0.42,0.00852,1
+GO:0006323,DNA packaging,81,2,0.14,0.00855,1
+GO:0010923,negative regulation of phosphatase activ...,6,1,0.01,0.01031,1
+GO:0032515,negative regulation of phosphoprotein ph...,6,1,0.01,0.01031,1
+GO:0035305,negative regulation of dephosphorylation,8,1,0.01,0.01372,1
+GO:0035308,negative regulation of protein dephospho...,8,1,0.01,0.01372,1
+GO:0052863,1-deoxy-D-xylulose 5-phosphate metabolic...,8,1,0.01,0.01372,1
+GO:0052865,1-deoxy-D-xylulose 5-phosphate biosynthe...,8,1,0.01,0.01372,1
+GO:0006259,DNA metabolic process,1188,6,2.05,0.01418,1
+GO:0032269,negative regulation of cellular protein ...,111,2,0.19,0.0156,1
+GO:0051248,negative regulation of protein metabolic...,112,2,0.19,0.01587,1
+GO:0048519,negative regulation of biological proces...,599,4,1.03,0.01861,1
+GO:0045036,protein targeting to chloroplast,11,1,0.02,0.01882,1
+GO:0072596,establishment of protein localization to...,11,1,0.02,0.01882,1
+GO:0045892,negative regulation of transcription, DN...,131,2,0.23,0.02131,1
+GO:1902679,negative regulation of RNA biosynthetic ...,131,2,0.23,0.02131,1
+GO:1903507,negative regulation of nucleic acid-temp...,131,2,0.23,0.02131,1
+GO:0072598,protein localization to chloroplast,13,1,0.02,0.02221,1
+GO:0051253,negative regulation of RNA metabolic pro...,139,2,0.24,0.0238,1
+GO:0010921,regulation of phosphatase activity,15,1,0.03,0.02558,1
+GO:0043666,regulation of phosphoprotein phosphatase...,15,1,0.03,0.02558,1
+GO:0010629,negative regulation of gene expression,378,3,0.65,0.02669,1
+GO:0045934,negative regulation of nucleobase-contai...,150,2,0.26,0.02741,1
+GO:0051276,chromosome organization,683,4,1.18,0.02852,1
+GO:0035304,regulation of protein dephosphorylation,17,1,0.03,0.02894,1
+GO:0010563,negative regulation of phosphorus metabo...,18,1,0.03,0.03062,1
+GO:0045936,negative regulation of phosphate metabol...,18,1,0.03,0.03062,1
+GO:0035303,regulation of dephosphorylation,19,1,0.03,0.03229,1
+GO:0006325,chromatin organization,413,3,0.71,0.03347,1
+GO:0048868,pollen tube development,21,1,0.04,0.03563,1
+GO:0051171,regulation of nitrogen compound metaboli...,742,4,1.28,0.03709,1
+GO:0000290,deadenylation-dependent decapping of nuc...,22,1,0.04,0.0373,1
+GO:0046460,neutral lipid biosynthetic process,24,1,0.04,0.04062,1
+GO:0046463,acylglycerol biosynthetic process,24,1,0.04,0.04062,1

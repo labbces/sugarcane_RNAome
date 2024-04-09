@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0060321,acceptance of pollen,2,1,0,0.00086,1
+GO:0000303,response to superoxide,8,1,0,0.00345,1
+GO:0000305,response to oxygen radical,8,1,0,0.00345,1
+GO:0006801,superoxide metabolic process,8,1,0,0.00345,1
+GO:0019430,removal of superoxide radicals,8,1,0,0.00345,1
+GO:0071450,cellular response to oxygen radical,8,1,0,0.00345,1
+GO:0071451,cellular response to superoxide,8,1,0,0.00345,1
+GO:0034614,cellular response to reactive oxygen spe...,12,1,0.01,0.00517,1
+GO:0000302,response to reactive oxygen species,34,1,0.01,0.01458,1
+GO:0034599,cellular response to oxidative stress,40,1,0.02,0.01713,1
+GO:0072593,reactive oxygen species metabolic proces...,49,1,0.02,0.02095,1
+GO:0062197,cellular response to chemical stress,53,1,0.02,0.02264,1
+GO:0048544,recognition of pollen,72,1,0.03,0.03065,1
+GO:0008037,cell recognition,73,1,0.03,0.03107,1
+GO:0009875,pollen-pistil interaction,77,1,0.03,0.03275,1
+GO:0006887,exocytosis,82,1,0.04,0.03484,1
+GO:0032940,secretion by cell,89,1,0.04,0.03777,1
+GO:0046903,secretion,95,1,0.04,0.04027,1
+GO:0009856,pollination,100,1,0.04,0.04235,1
+GO:0044706,multi-multicellular organism process,101,1,0.04,0.04276,1
+GO:0098869,cellular oxidant detoxification,103,1,0.04,0.04359,1
+GO:1990748,cellular detoxification,108,1,0.05,0.04567,1
+GO:0097237,cellular response to toxic substance,110,1,0.05,0.0465,1
+GO:0006979,response to oxidative stress,120,1,0.05,0.05063,1
+GO:0140352,export from cell,124,1,0.05,0.05228,1
+GO:0007154,cell communication,925,2,0.4,0.05628,1
+GO:0010035,response to inorganic substance,134,1,0.06,0.05639,1
+GO:0051704,multi-organism process,134,1,0.06,0.05639,1
+GO:0098754,detoxification,134,1,0.06,0.05639,1
+GO:0050896,response to stimulus,3963,4,1.71,0.06527,1
+GO:0009636,response to toxic substance,159,1,0.07,0.06661,1
+GO:0007166,cell surface receptor signaling pathway,170,1,0.07,0.07107,1
+GO:1901701,cellular response to oxygen-containing c...,224,1,0.1,0.09272,1
+GO:0006950,response to stress,2893,3,1.25,0.11269,1
+GO:0051716,cellular response to stimulus,1615,2,0.7,0.14844,1
+GO:1901700,response to oxygen-containing compound,390,1,0.17,0.15658,1
+GO:0016192,vesicle-mediated transport,432,1,0.19,0.17212,1
+GO:0000003,reproduction,445,1,0.19,0.17687,1
+GO:0022414,reproductive process,445,1,0.19,0.17687,1
+GO:0006468,protein phosphorylation,1800,2,0.78,0.17732,1
+GO:0006952,defense response,1938,2,0.84,0.19963,1
+GO:0006810,transport,2044,2,0.88,0.21712,1
+GO:0016310,phosphorylation,2051,2,0.88,0.21829,1
+GO:0051234,establishment of localization,2074,2,0.89,0.22212,1
+GO:0070887,cellular response to chemical stimulus,589,1,0.25,0.22803,1
+GO:0051179,localization,2126,2,0.92,0.23083,1
+GO:0032501,multicellular organismal process,636,1,0.27,0.24412,1
+GO:0033554,cellular response to stress,722,1,0.31,0.27283,1
+GO:0015031,protein transport,735,1,0.32,0.27709,1
+GO:0045184,establishment of protein localization,755,1,0.33,0.2836,1

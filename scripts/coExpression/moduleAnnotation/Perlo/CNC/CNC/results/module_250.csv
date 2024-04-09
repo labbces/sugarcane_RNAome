@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006820,anion transport,242,13,4.26,0.00037,1
+GO:0015711,organic anion transport,160,9,2.82,0.00215,1
+GO:0000097,sulfur amino acid biosynthetic process,37,4,0.65,0.00395,1
+GO:0006207,'de novo' pyrimidine nucleobase biosynth...,6,2,0.11,0.00443,1
+GO:0051301,cell division,121,7,2.13,0.00562,1
+GO:0006952,defense response,1938,49,34.15,0.00574,1
+GO:0000096,sulfur amino acid metabolic process,43,4,0.76,0.00679,1
+GO:0006865,amino acid transport,72,5,1.27,0.00878,1
+GO:0006422,aspartyl-tRNA aminoacylation,9,2,0.16,0.01027,1
+GO:0046942,carboxylic acid transport,105,6,1.85,0.01069,1
+GO:0010038,response to metal ion,49,4,0.86,0.01074,1
+GO:0015849,organic acid transport,106,6,1.87,0.01117,1
+GO:0050896,response to stimulus,3963,87,69.83,0.01159,1
+GO:0010044,response to aluminum ion,10,2,0.18,0.01268,1
+GO:0006225,UDP biosynthetic process,1,1,0.02,0.01762,1
+GO:0009188,ribonucleoside diphosphate biosynthetic ...,1,1,0.02,0.01762,1
+GO:0009193,pyrimidine ribonucleoside diphosphate me...,1,1,0.02,0.01762,1
+GO:0009194,pyrimidine ribonucleoside diphosphate bi...,1,1,0.02,0.01762,1
+GO:0010161,red light signaling pathway,1,1,0.02,0.01762,1
+GO:0046048,UDP metabolic process,1,1,0.02,0.01762,1
+GO:0046704,CDP metabolic process,1,1,0.02,0.01762,1
+GO:0046705,CDP biosynthetic process,1,1,0.02,0.01762,1
+GO:0051782,negative regulation of cell division,1,1,0.02,0.01762,1
+GO:0071491,cellular response to red light,1,1,0.02,0.01762,1
+GO:0006950,response to stress,2893,65,50.98,0.01976,1
+GO:0046901,tetrahydrofolylpolyglutamate biosyntheti...,13,2,0.23,0.02123,1
+GO:0006468,protein phosphorylation,1800,43,31.72,0.02367,1
+GO:0006206,pyrimidine nucleobase metabolic process,14,2,0.25,0.02449,1
+GO:0019856,pyrimidine nucleobase biosynthetic proce...,14,2,0.25,0.02449,1
+GO:0046900,tetrahydrofolylpolyglutamate metabolic p...,14,2,0.25,0.02449,1
+GO:0051568,histone H3-K4 methylation,14,2,0.25,0.02449,1
+GO:0043207,response to external biotic stimulus,800,22,14.1,0.02621,1
+GO:0051707,response to other organism,800,22,14.1,0.02621,1
+GO:0009733,response to auxin,166,7,2.93,0.02789,1
+GO:0006535,cysteine biosynthetic process from serin...,15,2,0.26,0.02793,1
+GO:0044419,interspecies interaction between organis...,813,22,14.33,0.03062,1
+GO:0010035,response to inorganic substance,134,6,2.36,0.03143,1
+GO:0006068,ethanol catabolic process,2,1,0.04,0.03493,1
+GO:0006597,spermine biosynthetic process,2,1,0.04,0.03493,1
+GO:0006788,heme oxidation,2,1,0.04,0.03493,1
+GO:0008216,spermidine metabolic process,2,1,0.04,0.03493,1
+GO:0008295,spermidine biosynthetic process,2,1,0.04,0.03493,1
+GO:0009133,nucleoside diphosphate biosynthetic proc...,2,1,0.04,0.03493,1
+GO:0009138,pyrimidine nucleoside diphosphate metabo...,2,1,0.04,0.03493,1
+GO:0009139,pyrimidine nucleoside diphosphate biosyn...,2,1,0.04,0.03493,1
+GO:0015786,UDP-glucose transmembrane transport,2,1,0.04,0.03493,1
+GO:0030307,positive regulation of cell growth,2,1,0.04,0.03493,1
+GO:0034310,primary alcohol catabolic process,2,1,0.04,0.03493,1
+GO:0034477,U6 snRNA 3'-end processing,2,1,0.04,0.03493,1
+GO:0045003,double-strand break repair via synthesis...,2,1,0.04,0.03493,1

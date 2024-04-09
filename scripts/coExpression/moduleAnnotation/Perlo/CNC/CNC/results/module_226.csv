@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0042335,cuticle development,3,2,0.02,0.00011,0.5381
+GO:0006723,cuticle hydrocarbon biosynthetic process,1,1,0.01,0.00598,1
+GO:0010375,stomatal complex patterning,1,1,0.01,0.00598,1
+GO:0033321,homomethionine metabolic process,1,1,0.01,0.00598,1
+GO:0033506,glucosinolate biosynthetic process from ...,1,1,0.01,0.00598,1
+GO:1903227,xanthosine metabolic process,1,1,0.01,0.00598,1
+GO:1903229,xanthosine biosynthetic process,1,1,0.01,0.00598,1
+GO:0060149,negative regulation of posttranscription...,2,1,0.01,0.01192,1
+GO:0060967,negative regulation of gene silencing by...,2,1,0.01,0.01192,1
+GO:0060969,negative regulation of gene silencing,2,1,0.01,0.01192,1
+GO:1900369,negative regulation of RNA interference,2,1,0.01,0.01192,1
+GO:1901659,glycosyl compound biosynthetic process,29,2,0.17,0.01292,1
+GO:0009734,auxin-activated signaling pathway,154,4,0.92,0.01367,1
+GO:0071365,cellular response to auxin stimulus,154,4,0.92,0.01367,1
+GO:0046854,phosphatidylinositol phosphorylation,85,3,0.51,0.01436,1
+GO:0046834,lipid phosphorylation,88,3,0.53,0.01575,1
+GO:0071985,multivesicular body sorting pathway,33,2,0.2,0.01655,1
+GO:0009733,response to auxin,166,4,0.99,0.01753,1
+GO:0048658,anther wall tapetum development,3,1,0.02,0.01782,1
+GO:0098661,inorganic anion transmembrane transport,35,2,0.21,0.01851,1
+GO:0010143,cutin biosynthetic process,4,1,0.02,0.0237,1
+GO:0010440,stomatal lineage progression,4,1,0.02,0.0237,1
+GO:0032106,positive regulation of response to extra...,4,1,0.02,0.0237,1
+GO:0032109,positive regulation of response to nutri...,4,1,0.02,0.0237,1
+GO:0043405,regulation of MAP kinase activity,4,1,0.02,0.0237,1
+GO:0043407,negative regulation of MAP kinase activi...,4,1,0.02,0.0237,1
+GO:0080040,positive regulation of cellular response...,4,1,0.02,0.0237,1
+GO:0140255,regulation of cellular response to phosp...,4,1,0.02,0.0237,1
+GO:1900368,regulation of RNA interference,4,1,0.02,0.0237,1
+GO:1990547,mitochondrial phosphate ion transmembran...,4,1,0.02,0.0237,1
+GO:0072594,establishment of protein localization to...,191,4,1.14,0.02762,1
+GO:0043408,regulation of MAPK cascade,5,1,0.03,0.02953,1
+GO:0043409,negative regulation of MAPK cascade,5,1,0.03,0.02953,1
+GO:0009157,deoxyribonucleoside monophosphate biosyn...,6,1,0.04,0.03533,1
+GO:0009162,deoxyribonucleoside monophosphate metabo...,6,1,0.04,0.03533,1
+GO:0010025,wax biosynthetic process,6,1,0.04,0.03533,1
+GO:0010166,wax metabolic process,6,1,0.04,0.03533,1
+GO:0010584,pollen exine formation,6,1,0.04,0.03533,1
+GO:0035435,phosphate ion transmembrane transport,6,1,0.04,0.03533,1
+GO:1990481,mRNA pseudouridine synthesis,6,1,0.04,0.03533,1
+GO:0009737,response to abscisic acid,124,3,0.74,0.03821,1
+GO:0006886,intracellular protein transport,418,6,2.5,0.03925,1
+GO:0097305,response to alcohol,126,3,0.75,0.03976,1
+GO:0000719,photoreactive repair,7,1,0.04,0.0411,1
+GO:0016144,S-glycoside biosynthetic process,7,1,0.04,0.0411,1
+GO:0019758,glycosinolate biosynthetic process,7,1,0.04,0.0411,1
+GO:0019761,glucosinolate biosynthetic process,7,1,0.04,0.0411,1
+GO:0060147,regulation of posttranscriptional gene s...,7,1,0.04,0.0411,1
+GO:0060966,regulation of gene silencing by RNA,7,1,0.04,0.0411,1
+GO:0060968,regulation of gene silencing,7,1,0.04,0.0411,1

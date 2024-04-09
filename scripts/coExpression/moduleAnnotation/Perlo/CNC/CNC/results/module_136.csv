@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0044419,interspecies interaction between organis...,813,7,1.4,0.00036,0.5112
+GO:0051702,interaction with symbiont,17,2,0.03,0.00038,0.5112
+GO:0009626,plant-type hypersensitive response,22,2,0.04,0.00065,0.5112
+GO:0034050,host programmed cell death induced by sy...,22,2,0.04,0.00065,0.5112
+GO:0044403,symbiotic process,25,2,0.04,0.00084,0.5112
+GO:0006633,fatty acid biosynthetic process,119,3,0.21,0.0011,0.5112
+GO:0000461,endonucleolytic cleavage to generate mat...,1,1,0,0.00173,0.5112
+GO:0090322,regulation of superoxide metabolic proce...,1,1,0,0.00173,0.5112
+GO:1901031,regulation of response to reactive oxyge...,1,1,0,0.00173,0.5112
+GO:1901033,positive regulation of response to react...,1,1,0,0.00173,0.5112
+GO:1901668,regulation of superoxide dismutase activ...,1,1,0,0.00173,0.5112
+GO:1901671,positive regulation of superoxide dismut...,1,1,0,0.00173,0.5112
+GO:1902288,regulation of defense response to oomyce...,1,1,0,0.00173,0.5112
+GO:1902290,positive regulation of defense response ...,1,1,0,0.00173,0.5112
+GO:1904833,positive regulation of removal of supero...,1,1,0,0.00173,0.5112
+GO:2000121,regulation of removal of superoxide radi...,1,1,0,0.00173,0.5112
+GO:0080135,regulation of cellular response to stres...,38,2,0.07,0.00194,0.5112
+GO:0072330,monocarboxylic acid biosynthetic process,145,3,0.25,0.00194,0.5112
+GO:0043207,response to external biotic stimulus,800,6,1.38,0.00209,0.5112
+GO:0051707,response to other organism,800,6,1.38,0.00209,0.5112
+GO:0009607,response to biotic stimulus,839,6,1.45,0.00265,0.6173
+GO:0012501,programmed cell death,48,2,0.08,0.00308,0.6287
+GO:0000388,spliceosome conformational change to rel...,2,1,0,0.00345,0.6287
+GO:0051341,regulation of oxidoreductase activity,2,1,0,0.00345,0.6287
+GO:0051353,positive regulation of oxidoreductase ac...,2,1,0,0.00345,0.6287
+GO:1901672,positive regulation of systemic acquired...,2,1,0,0.00345,0.6287
+GO:0006631,fatty acid metabolic process,178,3,0.31,0.00347,0.6287
+GO:0009605,response to external stimulus,895,6,1.54,0.00366,0.6395
+GO:0006952,defense response,1938,9,3.34,0.00401,0.6764
+GO:0098542,defense response to other organism,204,3,0.35,0.00509,0.8032
+GO:0008219,cell death,62,2,0.11,0.00509,0.8032
+GO:0000393,spliceosomal conformational changes to g...,4,1,0.01,0.00688,0.8857
+GO:0000447,endonucleolytic cleavage in ITS1 to sepa...,4,1,0.01,0.00688,0.8857
+GO:1900407,regulation of cellular response to oxida...,4,1,0.01,0.00688,0.8857
+GO:1900409,positive regulation of cellular response...,4,1,0.01,0.00688,0.8857
+GO:1900426,positive regulation of defense response ...,4,1,0.01,0.00688,0.8857
+GO:1902884,positive regulation of response to oxida...,4,1,0.01,0.00688,0.8857
+GO:2000379,positive regulation of reactive oxygen s...,4,1,0.01,0.00688,0.8857
+GO:0045087,innate immune response,77,2,0.13,0.00775,0.9721
+GO:0006955,immune response,81,2,0.14,0.00855,1
+GO:0010112,regulation of systemic acquired resistan...,5,1,0.01,0.0086,1
+GO:1902882,regulation of response to oxidative stre...,5,1,0.01,0.0086,1
+GO:0000478,endonucleolytic cleavage involved in rRN...,6,1,0.01,0.01031,1
+GO:0000479,endonucleolytic cleavage of tricistronic...,6,1,0.01,0.01031,1
+GO:0002376,immune system process,92,2,0.16,0.01092,1
+GO:0051668,localization within membrane,94,2,0.16,0.01138,1
+GO:0060966,regulation of gene silencing by RNA,7,1,0.01,0.01202,1
+GO:0060968,regulation of gene silencing,7,1,0.01,0.01202,1
+GO:0048584,positive regulation of response to stimu...,98,2,0.17,0.01232,1
+GO:0000303,response to superoxide,8,1,0.01,0.01372,1

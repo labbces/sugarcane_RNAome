@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009617,response to bacterium,83,3,0.2,0.001,1
+GO:0098542,defense response to other organism,204,4,0.49,0.0014,1
+GO:0009266,response to temperature stimulus,101,3,0.24,0.0018,1
+GO:0010216,maintenance of DNA methylation,1,1,0,0.0024,1
+GO:0010424,DNA methylation on cytosine within a CG ...,1,1,0,0.0024,1
+GO:0043928,exonucleolytic catabolism of deadenylate...,1,1,0,0.0024,1
+GO:0090503,RNA phosphodiester bond hydrolysis, exon...,32,2,0.08,0.0027,1
+GO:0042493,response to drug,116,3,0.28,0.0027,1
+GO:0035690,cellular response to drug,33,2,0.08,0.0028,1
+GO:0010035,response to inorganic substance,134,3,0.32,0.004,1
+GO:0032446,protein modification by small protein co...,463,5,1.11,0.0048,1
+GO:0071275,cellular response to aluminum ion,2,1,0,0.0048,1
+GO:0090229,negative regulation of red or far-red li...,2,1,0,0.0048,1
+GO:0009409,response to cold,49,2,0.12,0.0062,1
+GO:0006349,regulation of gene expression by genetic...,3,1,0.01,0.0072,1
+GO:0071514,genetic imprinting,3,1,0.01,0.0072,1
+GO:1900367,positive regulation of defense response ...,3,1,0.01,0.0072,1
+GO:2000068,regulation of defense response to insect,3,1,0.01,0.0072,1
+GO:0042742,defense response to bacterium,55,2,0.13,0.0077,1
+GO:0071407,cellular response to organic cyclic comp...,57,2,0.14,0.0083,1
+GO:0046677,response to antibiotic,59,2,0.14,0.0088,1
+GO:0090501,RNA phosphodiester bond hydrolysis,182,3,0.44,0.0094,1
+GO:0033198,response to ATP,4,1,0.01,0.0096,1
+GO:0042538,hyperosmotic salinity response,4,1,0.01,0.0096,1
+GO:0071318,cellular response to ATP,4,1,0.01,0.0096,1
+GO:0106167,extracellular ATP signaling,4,1,0.01,0.0096,1
+GO:0009651,response to salt stress,63,2,0.15,0.01,1
+GO:0070647,protein modification by small protein co...,570,5,1.37,0.0113,1
+GO:0000289,nuclear-transcribed mRNA poly(A) tail sh...,5,1,0.01,0.012,1
+GO:0000291,nuclear-transcribed mRNA catabolic proce...,5,1,0.01,0.012,1
+GO:0006972,hyperosmotic response,5,1,0.01,0.012,1
+GO:0032447,protein urmylation,5,1,0.01,0.012,1
+GO:0070417,cellular response to cold,5,1,0.01,0.012,1
+GO:0090227,regulation of red or far-red light signa...,5,1,0.01,0.012,1
+GO:0050832,defense response to fungus,72,2,0.17,0.0129,1
+GO:1901700,response to oxygen-containing compound,390,4,0.94,0.0139,1
+GO:0006970,response to osmotic stress,75,2,0.18,0.014,1
+GO:0002213,defense response to insect,6,1,0.01,0.0143,1
+GO:0014074,response to purine-containing compound,6,1,0.01,0.0143,1
+GO:0034227,tRNA thio-modification,6,1,0.01,0.0143,1
+GO:1904668,positive regulation of ubiquitin protein...,6,1,0.01,0.0143,1
+GO:0016071,mRNA metabolic process,406,4,0.98,0.0159,1
+GO:0009620,response to fungus,82,2,0.2,0.0166,1
+GO:0031670,cellular response to nutrient,7,1,0.02,0.0167,1
+GO:0046683,response to organophosphorus,7,1,0.02,0.0167,1
+GO:0071248,cellular response to metal ion,7,1,0.02,0.0167,1
+GO:1904666,regulation of ubiquitin protein ligase a...,7,1,0.02,0.0167,1
+GO:0014070,response to organic cyclic compound,86,2,0.21,0.0181,1
+GO:0009628,response to abiotic stimulus,427,4,1.03,0.0188,1
+GO:0071241,cellular response to inorganic substance,8,1,0.02,0.0191,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0034308,primary alcohol metabolic process,32,2,0.11,0.0054,1
+GO:0101030,tRNA-guanine transglycosylation,2,1,0.01,0.0069,1
+GO:0006168,adenine salvage,3,1,0.01,0.0103,1
+GO:0015783,GDP-fucose transmembrane transport,3,1,0.01,0.0103,1
+GO:0043096,purine nucleobase salvage,3,1,0.01,0.0103,1
+GO:0046083,adenine metabolic process,3,1,0.01,0.0103,1
+GO:0046084,adenine biosynthetic process,3,1,0.01,0.0103,1
+GO:0080006,internode patterning,3,1,0.01,0.0103,1
+GO:0016487,farnesol metabolic process,4,1,0.01,0.0137,1
+GO:0080156,mitochondrial mRNA modification,4,1,0.01,0.0137,1
+GO:0034660,ncRNA metabolic process,577,6,1.99,0.0142,1
+GO:0017144,drug metabolic process,273,4,0.94,0.0145,1
+GO:0022613,ribonucleoprotein complex biogenesis,278,4,0.96,0.0154,1
+GO:0006396,RNA processing,774,7,2.67,0.0166,1
+GO:0006166,purine ribonucleoside salvage,5,1,0.02,0.0171,1
+GO:0009113,purine nucleobase biosynthetic process,5,1,0.02,0.0171,1
+GO:0010222,stem vascular tissue pattern formation,5,1,0.02,0.0171,1
+GO:0043174,nucleoside salvage,5,1,0.02,0.0171,1
+GO:0044209,AMP salvage,5,1,0.02,0.0171,1
+GO:0048831,regulation of shoot system development,61,2,0.21,0.0188,1
+GO:0016560,protein import into peroxisome matrix, d...,6,1,0.02,0.0205,1
+GO:0090480,purine nucleotide-sugar transmembrane tr...,6,1,0.02,0.0205,1
+GO:0006167,AMP biosynthetic process,7,1,0.02,0.0239,1
+GO:0010960,magnesium ion homeostasis,7,1,0.02,0.0239,1
+GO:0046033,AMP metabolic process,7,1,0.02,0.0239,1
+GO:0006364,rRNA processing,189,3,0.65,0.0274,1
+GO:0016072,rRNA metabolic process,190,3,0.66,0.0278,1
+GO:0000462,maturation of SSU-rRNA from tricistronic...,9,1,0.03,0.0306,1
+GO:0006144,purine nucleobase metabolic process,9,1,0.03,0.0306,1
+GO:0006422,aspartyl-tRNA aminoacylation,9,1,0.03,0.0306,1
+GO:0009229,thiamine diphosphate biosynthetic proces...,9,1,0.03,0.0306,1
+GO:0009910,negative regulation of flower developmen...,9,1,0.03,0.0306,1
+GO:0042357,thiamine diphosphate metabolic process,9,1,0.03,0.0306,1
+GO:1900864,mitochondrial RNA modification,9,1,0.03,0.0306,1
+GO:0030490,maturation of SSU-rRNA,10,1,0.03,0.034,1
+GO:0006714,sesquiterpenoid metabolic process,11,1,0.04,0.0373,1
+GO:0009228,thiamine biosynthetic process,11,1,0.04,0.0373,1
+GO:0034309,primary alcohol biosynthetic process,11,1,0.04,0.0373,1
+GO:0036297,interstrand cross-link repair,11,1,0.04,0.0373,1
+GO:0051607,defense response to virus,11,1,0.04,0.0373,1
+GO:0016093,polyprenol metabolic process,12,1,0.04,0.0406,1
+GO:0030091,protein repair,12,1,0.04,0.0406,1
+GO:0034470,ncRNA processing,385,4,1.33,0.0436,1
+GO:0042254,ribosome biogenesis,228,3,0.79,0.044,1
+GO:0000105,histidine biosynthetic process,14,1,0.05,0.0473,1
+GO:0006547,histidine metabolic process,14,1,0.05,0.0473,1
+GO:0009615,response to virus,14,1,0.05,0.0473,1
+GO:0010305,leaf vascular tissue pattern formation,14,1,0.05,0.0473,1
+GO:0052803,imidazole-containing compound metabolic ...,14,1,0.05,0.0473,1
+GO:2000242,negative regulation of reproductive proc...,14,1,0.05,0.0473,1

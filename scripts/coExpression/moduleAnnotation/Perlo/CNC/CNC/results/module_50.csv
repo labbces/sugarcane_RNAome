@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0045926,negative regulation of growth,13,2,0.03,0.00052,1
+GO:0010822,positive regulation of mitochondrion org...,1,1,0,0.00265,1
+GO:0007005,mitochondrion organization,113,3,0.3,0.00331,1
+GO:1902600,proton transmembrane transport,121,3,0.32,0.00401,1
+GO:0010821,regulation of mitochondrion organization,2,1,0.01,0.00529,1
+GO:0023041,neuronal signal transduction,2,1,0.01,0.00529,1
+GO:0030308,negative regulation of cell growth,2,1,0.01,0.00529,1
+GO:0048638,regulation of developmental growth,44,2,0.12,0.00604,1
+GO:0009260,ribonucleotide biosynthetic process,145,3,0.38,0.00664,1
+GO:0046390,ribose phosphate biosynthetic process,146,3,0.39,0.00677,1
+GO:0018345,protein palmitoylation,3,1,0.01,0.00793,1
+GO:0051781,positive regulation of cell division,3,1,0.01,0.00793,1
+GO:0042364,water-soluble vitamin biosynthetic proce...,57,2,0.15,0.00998,1
+GO:0031930,mitochondria-nucleus signaling pathway,4,1,0.01,0.01056,1
+GO:0032043,mitochondrial DNA catabolic process,4,1,0.01,0.01056,1
+GO:0006767,water-soluble vitamin metabolic process,62,2,0.16,0.01172,1
+GO:0009110,vitamin biosynthetic process,62,2,0.16,0.01172,1
+GO:0032042,mitochondrial DNA metabolic process,5,1,0.01,0.01318,1
+GO:0032875,regulation of DNA endoreduplication,5,1,0.01,0.01318,1
+GO:0015672,monovalent inorganic cation transport,187,3,0.5,0.01325,1
+GO:0006766,vitamin metabolic process,67,2,0.18,0.01359,1
+GO:0009156,ribonucleoside monophosphate biosyntheti...,70,2,0.19,0.01477,1
+GO:0000002,mitochondrial genome maintenance,6,1,0.02,0.01579,1
+GO:0009398,FMN biosynthetic process,6,1,0.02,0.01579,1
+GO:0046444,FMN metabolic process,6,1,0.02,0.01579,1
+GO:0009161,ribonucleoside monophosphate metabolic p...,73,2,0.19,0.016,1
+GO:0009124,nucleoside monophosphate biosynthetic pr...,76,2,0.2,0.01726,1
+GO:0046621,negative regulation of organ growth,7,1,0.02,0.0184,1
+GO:0048640,negative regulation of developmental gro...,7,1,0.02,0.0184,1
+GO:0048589,developmental growth,84,2,0.22,0.02084,1
+GO:0006301,postreplication repair,8,1,0.02,0.021,1
+GO:0009165,nucleotide biosynthetic process,225,3,0.6,0.0216,1
+GO:1901617,organic hydroxy compound biosynthetic pr...,86,2,0.23,0.02177,1
+GO:1901293,nucleoside phosphate biosynthetic proces...,229,3,0.61,0.02261,1
+GO:0000244,spliceosomal tri-snRNP complex assembly,9,1,0.02,0.0236,1
+GO:0009229,thiamine diphosphate biosynthetic proces...,9,1,0.02,0.0236,1
+GO:0042357,thiamine diphosphate metabolic process,9,1,0.02,0.0236,1
+GO:0070534,protein K63-linked ubiquitination,9,1,0.02,0.0236,1
+GO:1901615,organic hydroxy compound metabolic proce...,233,3,0.62,0.02365,1
+GO:0032011,ARF protein signal transduction,10,1,0.03,0.02619,1
+GO:0032012,regulation of ARF protein signal transdu...,10,1,0.03,0.02619,1
+GO:0040008,regulation of growth,96,2,0.25,0.02672,1
+GO:0009123,nucleoside monophosphate metabolic proce...,98,2,0.26,0.02776,1
+GO:0009228,thiamine biosynthetic process,11,1,0.03,0.02877,1
+GO:0034309,primary alcohol biosynthetic process,11,1,0.03,0.02877,1
+GO:0035265,organ growth,11,1,0.03,0.02877,1
+GO:0046620,regulation of organ growth,11,1,0.03,0.02877,1
+GO:0090329,regulation of DNA-dependent DNA replicat...,11,1,0.03,0.02877,1
+GO:0010082,regulation of root meristem growth,12,1,0.03,0.03134,1
+GO:0032264,IMP salvage,12,1,0.03,0.03134,1

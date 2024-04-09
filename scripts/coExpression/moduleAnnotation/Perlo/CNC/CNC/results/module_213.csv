@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0051301,cell division,121,3,0.18,0.00073,1
+GO:0048768,root hair cell tip growth,1,1,0,0.00148,1
+GO:0009903,chloroplast avoidance movement,5,1,0.01,0.00737,1
+GO:0010135,ureide metabolic process,5,1,0.01,0.00737,1
+GO:0010136,ureide catabolic process,5,1,0.01,0.00737,1
+GO:0048767,root hair elongation,5,1,0.01,0.00737,1
+GO:0009833,plant-type primary cell wall biogenesis,6,1,0.01,0.00884,1
+GO:0009904,chloroplast accumulation movement,7,1,0.01,0.01031,1
+GO:0046168,glycerol-3-phosphate catabolic process,7,1,0.01,0.01031,1
+GO:0006072,glycerol-3-phosphate metabolic process,8,1,0.01,0.01177,1
+GO:0032968,positive regulation of transcription elo...,8,1,0.01,0.01177,1
+GO:0034243,regulation of transcription elongation f...,8,1,0.01,0.01177,1
+GO:0052646,alditol phosphate metabolic process,8,1,0.01,0.01177,1
+GO:0000281,mitotic cytokinesis,9,1,0.01,0.01323,1
+GO:0009902,chloroplast relocation,9,1,0.01,0.01323,1
+GO:0019750,chloroplast localization,9,1,0.01,0.01323,1
+GO:0031145,anaphase-promoting complex-dependent cat...,9,1,0.01,0.01323,1
+GO:0051644,plastid localization,9,1,0.01,0.01323,1
+GO:0051667,establishment of plastid localization,9,1,0.01,0.01323,1
+GO:0061640,cytoskeleton-dependent cytokinesis,11,1,0.02,0.01615,1
+GO:0071555,cell wall organization,138,2,0.2,0.01753,1
+GO:0080147,root hair cell development,12,1,0.02,0.01761,1
+GO:0006750,glutathione biosynthetic process,13,1,0.02,0.01906,1
+GO:0032786,positive regulation of DNA-templated tra...,13,1,0.02,0.01906,1
+GO:0045229,external encapsulating structure organiz...,147,2,0.22,0.01974,1
+GO:0043248,proteasome assembly,14,1,0.02,0.02051,1
+GO:0009932,cell tip growth,15,1,0.02,0.02196,1
+GO:0010054,trichoblast differentiation,15,1,0.02,0.02196,1
+GO:0048469,cell maturation,15,1,0.02,0.02196,1
+GO:0048764,trichoblast maturation,15,1,0.02,0.02196,1
+GO:0048765,root hair cell differentiation,15,1,0.02,0.02196,1
+GO:0009987,cellular process,12731,23,18.83,0.0223,1
+GO:0010053,root epidermal cell differentiation,16,1,0.02,0.02341,1
+GO:0048588,developmental cell growth,16,1,0.02,0.02341,1
+GO:0019184,nonribosomal peptide biosynthetic proces...,17,1,0.03,0.02486,1
+GO:0090627,plant epidermal cell differentiation,18,1,0.03,0.0263,1
+GO:0006368,transcription elongation from RNA polyme...,19,1,0.03,0.02774,1
+GO:0032784,regulation of DNA-templated transcriptio...,19,1,0.03,0.02774,1
+GO:0000910,cytokinesis,23,1,0.03,0.03349,1
+GO:0071554,cell wall organization or biogenesis,203,2,0.3,0.03587,1
+GO:0000904,cell morphogenesis involved in different...,25,1,0.04,0.03635,1
+GO:0006367,transcription initiation from RNA polyme...,26,1,0.04,0.03777,1
+GO:0071695,anatomical structure maturation,27,1,0.04,0.0392,1
+GO:0006354,DNA-templated transcription, elongation,29,1,0.04,0.04204,1
+GO:0021700,developmental maturation,29,1,0.04,0.04204,1
+GO:0009826,unidimensional cell growth,31,1,0.05,0.04488,1
+GO:0031124,mRNA 3'-end processing,31,1,0.05,0.04488,1
+GO:0007623,circadian rhythm,32,1,0.05,0.04629,1
+GO:0009832,plant-type cell wall biogenesis,32,1,0.05,0.04629,1
+GO:0015693,magnesium ion transport,34,1,0.05,0.04912,1

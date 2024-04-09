@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0045005,DNA-dependent DNA replication maintenanc...,16,2,0.05,0.0011,0.7222
+GO:0018105,peptidyl-serine phosphorylation,21,2,0.06,0.0019,0.7222
+GO:0018209,peptidyl-serine modification,21,2,0.06,0.0019,0.7222
+GO:0016108,tetraterpenoid metabolic process,22,2,0.07,0.0021,0.7222
+GO:0016116,carotenoid metabolic process,22,2,0.07,0.0021,0.7222
+GO:0010605,negative regulation of macromolecule met...,445,6,1.37,0.0024,0.7222
+GO:0009892,negative regulation of metabolic process,456,6,1.4,0.0027,0.7222
+GO:0031167,rRNA methylation,25,2,0.08,0.0027,0.7222
+GO:0016075,rRNA catabolic process,1,1,0,0.0031,0.7222
+GO:0030518,intracellular steroid hormone receptor s...,1,1,0,0.0031,0.7222
+GO:0030520,intracellular estrogen receptor signalin...,1,1,0,0.0031,0.7222
+GO:0033143,regulation of intracellular steroid horm...,1,1,0,0.0031,0.7222
+GO:0033144,negative regulation of intracellular ste...,1,1,0,0.0031,0.7222
+GO:0033146,regulation of intracellular estrogen rec...,1,1,0,0.0031,0.7222
+GO:0033147,negative regulation of intracellular est...,1,1,0,0.0031,0.7222
+GO:0042058,regulation of epidermal growth factor re...,1,1,0,0.0031,0.7222
+GO:0043111,replication fork arrest,1,1,0,0.0031,0.7222
+GO:0045742,positive regulation of epidermal growth ...,1,1,0,0.0031,0.7222
+GO:0048478,replication fork protection,1,1,0,0.0031,0.7222
+GO:1901184,regulation of ERBB signaling pathway,1,1,0,0.0031,0.7222
+GO:1901186,positive regulation of ERBB signaling pa...,1,1,0,0.0031,0.7222
+GO:0000154,rRNA modification,31,2,0.1,0.0041,0.8561
+GO:0006402,mRNA catabolic process,110,3,0.34,0.0047,0.8561
+GO:0010629,negative regulation of gene expression,378,5,1.16,0.006,0.8561
+GO:0000451,rRNA 2'-O-methylation,2,1,0.01,0.0062,0.8561
+GO:0000453,enzyme-directed rRNA 2'-O-methylation,2,1,0.01,0.0062,0.8561
+GO:0007169,transmembrane receptor protein tyrosine ...,2,1,0.01,0.0062,0.8561
+GO:0007173,epidermal growth factor receptor signali...,2,1,0.01,0.0062,0.8561
+GO:0033135,regulation of peptidyl-serine phosphoryl...,2,1,0.01,0.0062,0.8561
+GO:0033138,positive regulation of peptidyl-serine p...,2,1,0.01,0.0062,0.8561
+GO:0034475,U4 snRNA 3'-end processing,2,1,0.01,0.0062,0.8561
+GO:0038127,ERBB signaling pathway,2,1,0.01,0.0062,0.8561
+GO:0055047,generative cell mitosis,2,1,0.01,0.0062,0.8561
+GO:0071028,nuclear mRNA surveillance,2,1,0.01,0.0062,0.8561
+GO:0071051,polyadenylation-dependent snoRNA 3'-end ...,2,1,0.01,0.0062,0.8561
+GO:0006401,RNA catabolic process,122,3,0.38,0.0063,0.8561
+GO:0000076,DNA replication checkpoint,3,1,0.01,0.0092,1
+GO:0008156,negative regulation of DNA replication,3,1,0.01,0.0092,1
+GO:0031126,snoRNA 3'-end processing,3,1,0.01,0.0092,1
+GO:0034661,ncRNA catabolic process,3,1,0.01,0.0092,1
+GO:0071025,RNA surveillance,3,1,0.01,0.0092,1
+GO:0071027,nuclear RNA surveillance,3,1,0.01,0.0092,1
+GO:2000104,negative regulation of DNA-dependent DNA...,3,1,0.01,0.0092,1
+GO:0016458,gene silencing,142,3,0.44,0.0095,1
+GO:0031047,gene silencing by RNA,142,3,0.44,0.0095,1
+GO:0048519,negative regulation of biological proces...,599,6,1.85,0.0099,1
+GO:0034655,nucleobase-containing compound catabolic...,153,3,0.47,0.0116,1
+GO:0010028,xanthophyll cycle,4,1,0.01,0.0123,1
+GO:0016074,snoRNA metabolic process,4,1,0.01,0.0123,1
+GO:0034427,nuclear-transcribed mRNA catabolic proce...,4,1,0.01,0.0123,1

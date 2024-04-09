@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0005985,sucrose metabolic process,49,4,0.5,0.0016,1
+GO:0031667,response to nutrient levels,56,4,0.58,0.0026,1
+GO:0009991,response to extracellular stimulus,61,4,0.63,0.0036,1
+GO:0006526,arginine biosynthetic process,9,2,0.09,0.0036,1
+GO:0032104,regulation of response to extracellular ...,9,2,0.09,0.0036,1
+GO:0032107,regulation of response to nutrient level...,9,2,0.09,0.0036,1
+GO:0005975,carbohydrate metabolic process,735,16,7.56,0.0038,1
+GO:0006525,arginine metabolic process,10,2,0.1,0.0045,1
+GO:0009311,oligosaccharide metabolic process,116,5,1.19,0.007,1
+GO:0032101,regulation of response to external stimu...,74,4,0.76,0.0071,1
+GO:0000911,cytokinesis by cell plate formation,13,2,0.13,0.0076,1
+GO:0007020,microtubule nucleation,13,2,0.13,0.0076,1
+GO:0032103,positive regulation of response to exter...,40,3,0.41,0.008,1
+GO:0009235,cobalamin metabolic process,1,1,0.01,0.0103,1
+GO:0009236,cobalamin biosynthetic process,1,1,0.01,0.0103,1
+GO:0009963,positive regulation of flavonoid biosynt...,1,1,0.01,0.0103,1
+GO:0031221,arabinan metabolic process,1,1,0.01,0.0103,1
+GO:0035884,arabinan biosynthetic process,1,1,0.01,0.0103,1
+GO:0097320,plasma membrane tubulation,1,1,0.01,0.0103,1
+GO:1903525,regulation of membrane tubulation,1,1,0.01,0.0103,1
+GO:1903527,positive regulation of membrane tubulati...,1,1,0.01,0.0103,1
+GO:1903729,regulation of plasma membrane organizati...,1,1,0.01,0.0103,1
+GO:0009100,glycoprotein metabolic process,184,6,1.89,0.012,1
+GO:0046785,microtubule polymerization,17,2,0.17,0.0129,1
+GO:0005984,disaccharide metabolic process,90,4,0.93,0.0139,1
+GO:0031109,microtubule polymerization or depolymeri...,19,2,0.2,0.016,1
+GO:0051656,establishment of organelle localization,52,3,0.54,0.0164,1
+GO:0033554,cellular response to stress,722,14,7.43,0.0171,1
+GO:0006950,response to stress,2893,41,29.77,0.0173,1
+GO:0044262,cellular carbohydrate metabolic process,452,10,4.65,0.0187,1
+GO:0000919,cell plate assembly,2,1,0.02,0.0205,1
+GO:0009920,cell plate formation involved in plant-t...,2,1,0.02,0.0205,1
+GO:0019323,pentose catabolic process,2,1,0.02,0.0205,1
+GO:0019478,D-amino acid catabolic process,2,1,0.02,0.0205,1
+GO:0042450,arginine biosynthetic process via ornith...,2,1,0.02,0.0205,1
+GO:0042843,D-xylose catabolic process,2,1,0.02,0.0205,1
+GO:0070841,inclusion body assembly,2,1,0.02,0.0205,1
+GO:0090083,regulation of inclusion body assembly,2,1,0.02,0.0205,1
+GO:0090084,negative regulation of inclusion body as...,2,1,0.02,0.0205,1
+GO:0097201,negative regulation of transcription fro...,2,1,0.02,0.0205,1
+GO:1902626,assembly of large subunit precursor of p...,2,1,0.02,0.0205,1
+GO:2000904,regulation of starch metabolic process,2,1,0.02,0.0205,1
+GO:0051640,organelle localization,59,3,0.61,0.0228,1
+GO:0000910,cytokinesis,23,2,0.24,0.0231,1
+GO:0009056,catabolic process,1051,18,10.81,0.0231,1
+GO:0006903,vesicle targeting,24,2,0.25,0.025,1
+GO:0009084,glutamine family amino acid biosynthetic...,24,2,0.25,0.025,1
+GO:0005986,sucrose biosynthetic process,25,2,0.26,0.027,1
+GO:0042744,hydrogen peroxide catabolic process,26,2,0.27,0.0291,1
+GO:0051648,vesicle localization,26,2,0.27,0.0291,1

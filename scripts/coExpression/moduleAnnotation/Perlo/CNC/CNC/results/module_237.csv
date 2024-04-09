@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019953,sexual reproduction,29,4,0.46,0.001,1
+GO:0044703,multi-organism reproductive process,30,4,0.47,0.0012,1
+GO:0006552,leucine catabolic process,5,2,0.08,0.0024,1
+GO:0009083,branched-chain amino acid catabolic proc...,6,2,0.09,0.0035,1
+GO:0070592,cell wall polysaccharide biosynthetic pr...,20,3,0.31,0.0036,1
+GO:0044038,cell wall macromolecule biosynthetic pro...,22,3,0.35,0.0047,1
+GO:0070589,cellular component macromolecule biosynt...,22,3,0.35,0.0047,1
+GO:0006551,leucine metabolic process,10,2,0.16,0.0102,1
+GO:0009081,branched-chain amino acid metabolic proc...,29,3,0.46,0.0104,1
+GO:0006531,aspartate metabolic process,1,1,0.02,0.0157,1
+GO:0009712,catechol-containing compound metabolic p...,1,1,0.02,0.0157,1
+GO:0009713,catechol-containing compound biosyntheti...,1,1,0.02,0.0157,1
+GO:0009801,cinnamic acid ester metabolic process,1,1,0.02,0.0157,1
+GO:0009802,cinnamic acid ester biosynthetic process,1,1,0.02,0.0157,1
+GO:0019355,nicotinamide nucleotide biosynthetic pro...,1,1,0.02,0.0157,1
+GO:0034627,'de novo' NAD biosynthetic process,1,1,0.02,0.0157,1
+GO:0034628,'de novo' NAD biosynthetic process from ...,1,1,0.02,0.0157,1
+GO:0046189,phenol-containing compound biosynthetic ...,1,1,0.02,0.0157,1
+GO:0051176,positive regulation of sulfur metabolic ...,1,1,0.02,0.0157,1
+GO:0090431,alkyl caffeate ester biosynthetic proces...,1,1,0.02,0.0157,1
+GO:1901606,alpha-amino acid catabolic process,35,3,0.55,0.0173,1
+GO:1903825,organic acid transmembrane transport,35,3,0.55,0.0173,1
+GO:1905039,carboxylic acid transmembrane transport,35,3,0.55,0.0173,1
+GO:0010383,cell wall polysaccharide metabolic proce...,36,3,0.57,0.0187,1
+GO:0110154,RNA decapping,36,3,0.57,0.0187,1
+GO:0110156,methylguanosine-cap decapping,36,3,0.57,0.0187,1
+GO:0045492,xylan biosynthetic process,14,2,0.22,0.0198,1
+GO:0009063,cellular amino acid catabolic process,38,3,0.6,0.0216,1
+GO:0007205,protein kinase C-activating G protein-co...,17,2,0.27,0.0286,1
+GO:0031086,nuclear-transcribed mRNA catabolic proce...,17,2,0.27,0.0286,1
+GO:0031087,deadenylation-independent decapping of n...,17,2,0.27,0.0286,1
+GO:0006402,mRNA catabolic process,110,5,1.73,0.0298,1
+GO:0006768,biotin metabolic process,2,1,0.03,0.0312,1
+GO:0009102,biotin biosynthetic process,2,1,0.03,0.0312,1
+GO:0010345,suberin biosynthetic process,2,1,0.03,0.0312,1
+GO:0015887,pantothenate transmembrane transport,2,1,0.03,0.0312,1
+GO:0018230,peptidyl-L-cysteine S-palmitoylation,2,1,0.03,0.0312,1
+GO:0018231,peptidyl-S-diacylglycerol-L-cysteine bio...,2,1,0.03,0.0312,1
+GO:0032963,collagen metabolic process,2,1,0.03,0.0312,1
+GO:0098717,pantothenate import across plasma membra...,2,1,0.03,0.0312,1
+GO:0000271,polysaccharide biosynthetic process,191,7,3,0.0315,1
+GO:0045489,pectin biosynthetic process,18,2,0.28,0.0319,1
+GO:0036265,RNA (guanine-N7)-methylation,19,2,0.3,0.0353,1
+GO:0006508,proteolysis,878,21,13.79,0.0367,1
+GO:0000956,nuclear-transcribed mRNA catabolic proce...,81,4,1.27,0.0387,1
+GO:0042546,cell wall biogenesis,48,3,0.75,0.0395,1
+GO:0042732,D-xylose metabolic process,21,2,0.33,0.0424,1
+GO:0006401,RNA catabolic process,122,5,1.92,0.0435,1
+GO:0044036,cell wall macromolecule metabolic proces...,50,3,0.79,0.0438,1
+GO:0006107,oxaloacetate metabolic process,3,1,0.05,0.0464,1

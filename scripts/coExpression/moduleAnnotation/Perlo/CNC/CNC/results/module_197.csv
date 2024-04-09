@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019252,starch biosynthetic process,38,3,0.12,0.00026,0.7705
+GO:0005975,carbohydrate metabolic process,735,9,2.4,0.00056,0.7705
+GO:0005982,starch metabolic process,51,3,0.17,0.00061,0.7705
+GO:0044262,cellular carbohydrate metabolic process,452,7,1.48,0.00063,0.7705
+GO:0032784,regulation of DNA-templated transcriptio...,19,2,0.06,0.00173,1
+GO:0009163,nucleoside biosynthetic process,22,2,0.07,0.00232,1
+GO:0042451,purine nucleoside biosynthetic process,22,2,0.07,0.00232,1
+GO:0042455,ribonucleoside biosynthetic process,22,2,0.07,0.00232,1
+GO:0046129,purine ribonucleoside biosynthetic proce...,22,2,0.07,0.00232,1
+GO:0035523,protein K29-linked deubiquitination,1,1,0,0.00327,1
+GO:0035871,protein K11-linked deubiquitination,1,1,0,0.00327,1
+GO:0060250,germ-line stem-cell niche homeostasis,1,1,0,0.00327,1
+GO:1990167,protein K27-linked deubiquitination,1,1,0,0.00327,1
+GO:1990168,protein K33-linked deubiquitination,1,1,0,0.00327,1
+GO:0006354,DNA-templated transcription, elongation,29,2,0.09,0.00401,1
+GO:1901659,glycosyl compound biosynthetic process,29,2,0.09,0.00401,1
+GO:0009119,ribonucleoside metabolic process,35,2,0.11,0.00581,1
+GO:0046128,purine ribonucleoside metabolic process,35,2,0.11,0.00581,1
+GO:0042278,purine nucleoside metabolic process,36,2,0.12,0.00614,1
+GO:0008284,positive regulation of cell population p...,2,1,0.01,0.00652,1
+GO:0032876,negative regulation of DNA endoreduplica...,2,1,0.01,0.00652,1
+GO:0034637,cellular carbohydrate biosynthetic proce...,238,4,0.78,0.00753,1
+GO:0034404,nucleobase-containing small molecule bio...,41,2,0.13,0.00791,1
+GO:0009116,nucleoside metabolic process,42,2,0.14,0.00829,1
+GO:0006168,adenine salvage,3,1,0.01,0.00977,1
+GO:0008156,negative regulation of DNA replication,3,1,0.01,0.00977,1
+GO:0043096,purine nucleobase salvage,3,1,0.01,0.00977,1
+GO:0046083,adenine metabolic process,3,1,0.01,0.00977,1
+GO:0046084,adenine biosynthetic process,3,1,0.01,0.00977,1
+GO:2000104,negative regulation of DNA-dependent DNA...,3,1,0.01,0.00977,1
+GO:0006511,ubiquitin-dependent protein catabolic pr...,269,4,0.88,0.01144,1
+GO:0009736,cytokinin-activated signaling pathway,50,2,0.16,0.0116,1
+GO:0071368,cellular response to cytokinin stimulus,50,2,0.16,0.0116,1
+GO:0009735,response to cytokinin,51,2,0.17,0.01204,1
+GO:0019941,modification-dependent protein catabolic...,276,4,0.9,0.01248,1
+GO:0043632,modification-dependent macromolecule cat...,277,4,0.9,0.01263,1
+GO:0006097,glyoxylate cycle,4,1,0.01,0.013,1
+GO:0033355,ascorbate glutathione cycle,4,1,0.01,0.013,1
+GO:0045931,positive regulation of mitotic cell cycl...,4,1,0.01,0.013,1
+GO:0046487,glyoxylate metabolic process,4,1,0.01,0.013,1
+GO:0080038,positive regulation of cytokinin-activat...,4,1,0.01,0.013,1
+GO:0009250,glucan biosynthetic process,157,3,0.51,0.01461,1
+GO:0016051,carbohydrate biosynthetic process,290,4,0.95,0.01473,1
+GO:1901657,glycosyl compound metabolic process,58,2,0.19,0.01539,1
+GO:0006166,purine ribonucleoside salvage,5,1,0.02,0.01622,1
+GO:0009113,purine nucleobase biosynthetic process,5,1,0.02,0.01622,1
+GO:0010731,protein glutathionylation,5,1,0.02,0.01622,1
+GO:0032875,regulation of DNA endoreduplication,5,1,0.02,0.01622,1
+GO:0043174,nucleoside salvage,5,1,0.02,0.01622,1
+GO:0044209,AMP salvage,5,1,0.02,0.01622,1

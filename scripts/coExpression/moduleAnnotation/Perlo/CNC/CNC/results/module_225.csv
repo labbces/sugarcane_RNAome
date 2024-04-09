@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0015695,organic cation transport,4,2,0.03,0.00035,0.5707
+GO:0015805,S-adenosyl-L-methionine transport,4,2,0.03,0.00035,0.5707
+GO:1901962,S-adenosyl-L-methionine transmembrane tr...,4,2,0.03,0.00035,0.5707
+GO:0051182,coenzyme transport,7,2,0.05,0.0012,0.998
+GO:0034622,cellular protein-containing complex asse...,283,8,2.18,0.00157,0.998
+GO:0006855,drug transmembrane transport,8,2,0.06,0.0016,0.998
+GO:0043933,protein-containing complex subunit organ...,363,9,2.8,0.00199,0.998
+GO:0042493,response to drug,116,5,0.89,0.00203,0.998
+GO:0000963,mitochondrial RNA processing,9,2,0.07,0.00204,0.998
+GO:0051181,cofactor transport,9,2,0.07,0.00204,0.998
+GO:0065003,protein-containing complex assembly,319,8,2.46,0.00329,1
+GO:0006417,regulation of translation,130,5,1,0.00333,1
+GO:0034248,regulation of cellular amide metabolic p...,132,5,1.02,0.00355,1
+GO:0015893,drug transport,45,3,0.35,0.005,1
+GO:0022607,cellular component assembly,516,10,3.97,0.00657,1
+GO:0046785,microtubule polymerization,17,2,0.13,0.00742,1
+GO:0032119,sequestering of zinc ion,1,1,0.01,0.0077,1
+GO:0043181,vacuolar sequestering,1,1,0.01,0.0077,1
+GO:0070899,mitochondrial tRNA wobble uridine modifi...,1,1,0.01,0.0077,1
+GO:0070900,mitochondrial tRNA modification,1,1,0.01,0.0077,1
+GO:0090646,mitochondrial tRNA processing,1,1,0.01,0.0077,1
+GO:0017148,negative regulation of translation,55,3,0.42,0.00874,1
+GO:0034249,negative regulation of cellular amide me...,56,3,0.43,0.00919,1
+GO:0031109,microtubule polymerization or depolymeri...,19,2,0.15,0.00924,1
+GO:0044786,cell cycle DNA replication,20,2,0.15,0.01021,1
+GO:0032269,negative regulation of cellular protein ...,111,4,0.85,0.01066,1
+GO:0010608,posttranscriptional regulation of gene e...,173,5,1.33,0.01091,1
+GO:0051248,negative regulation of protein metabolic...,112,4,0.86,0.01099,1
+GO:0033108,mitochondrial respiratory chain complex ...,22,2,0.17,0.01229,1
+GO:0072348,sulfur compound transport,22,2,0.17,0.01229,1
+GO:0140053,mitochondrial gene expression,22,2,0.17,0.01229,1
+GO:0015837,amine transport,2,1,0.02,0.01534,1
+GO:0032973,amino acid export across plasma membrane,2,1,0.02,0.01534,1
+GO:0045901,positive regulation of translational elo...,2,1,0.02,0.01534,1
+GO:0051952,regulation of amine transport,2,1,0.02,0.01534,1
+GO:0051955,regulation of amino acid transport,2,1,0.02,0.01534,1
+GO:0080143,regulation of amino acid export,2,1,0.02,0.01534,1
+GO:1903241,U2-type prespliceosome assembly,2,1,0.02,0.01534,1
+GO:1903789,regulation of amino acid transmembrane t...,2,1,0.02,0.01534,1
+GO:0051172,negative regulation of nitrogen compound...,261,6,2.01,0.01565,1
+GO:0000959,mitochondrial RNA metabolic process,25,2,0.19,0.01572,1
+GO:0010558,negative regulation of macromolecule bio...,191,5,1.47,0.01615,1
+GO:2000113,negative regulation of cellular macromol...,191,5,1.47,0.01615,1
+GO:0009890,negative regulation of biosynthetic proc...,195,5,1.5,0.01751,1
+GO:0031327,negative regulation of cellular biosynth...,195,5,1.5,0.01751,1
+GO:0031324,negative regulation of cellular metaboli...,268,6,2.06,0.0176,1
+GO:0032268,regulation of cellular protein metabolic...,269,6,2.07,0.01789,1
+GO:0051258,protein polymerization,74,3,0.57,0.01945,1
+GO:0048193,Golgi vesicle transport,134,4,1.03,0.02,1
+GO:0000373,Group II intron splicing,29,2,0.22,0.02086,1

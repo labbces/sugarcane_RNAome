@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006399,tRNA metabolic process,359,4,0.49,0.0013,1
+GO:0006418,tRNA aminoacylation for protein translat...,171,3,0.23,0.0015,1
+GO:0043038,amino acid activation,183,3,0.25,0.0019,1
+GO:0043039,tRNA aminoacylation,183,3,0.25,0.0019,1
+GO:0006520,cellular amino acid metabolic process,415,4,0.56,0.0021,1
+GO:0019752,carboxylic acid metabolic process,844,5,1.14,0.0047,1
+GO:0043436,oxoacid metabolic process,867,5,1.18,0.0053,1
+GO:0006082,organic acid metabolic process,868,5,1.18,0.0053,1
+GO:0006428,isoleucyl-tRNA aminoacylation,5,1,0.01,0.0068,1
+GO:0006436,tryptophanyl-tRNA aminoacylation,5,1,0.01,0.0068,1
+GO:0006542,glutamine biosynthetic process,5,1,0.01,0.0068,1
+GO:0034660,ncRNA metabolic process,577,4,0.78,0.0069,1
+GO:1902047,polyamine transmembrane transport,7,1,0.01,0.0095,1
+GO:0015846,polyamine transport,8,1,0.01,0.0108,1
+GO:0006420,arginyl-tRNA aminoacylation,10,1,0.01,0.0135,1
+GO:0042023,DNA endoreduplication,12,1,0.02,0.0162,1
+GO:0006412,translation,424,3,0.57,0.0189,1
+GO:0043043,peptide biosynthetic process,447,3,0.61,0.0217,1
+GO:0006108,malate metabolic process,19,1,0.03,0.0255,1
+GO:0044786,cell cycle DNA replication,20,1,0.03,0.0268,1
+GO:0043604,amide biosynthetic process,501,3,0.68,0.0291,1
+GO:0006518,peptide metabolic process,504,3,0.68,0.0296,1
+GO:0006541,glutamine metabolic process,24,1,0.03,0.0321,1
+GO:0009084,glutamine family amino acid biosynthetic...,24,1,0.03,0.0321,1
+GO:0106074,aminoacyl-tRNA metabolism involved in tr...,24,1,0.03,0.0321,1
+GO:0006450,regulation of translational fidelity,26,1,0.04,0.0347,1
+GO:0001172,transcription, RNA-templated,33,1,0.04,0.0438,1
+GO:0006099,tricarboxylic acid cycle,34,1,0.05,0.0451,1
+GO:0043603,cellular amide metabolic process,605,3,0.82,0.0469,1
+GO:0044281,small molecule metabolic process,1515,5,2.05,0.0484,1
+GO:0043414,macromolecule methylation,266,2,0.36,0.0498,1
+GO:0030488,tRNA methylation,42,1,0.06,0.0554,1
+GO:0009064,glutamine family amino acid metabolic pr...,45,1,0.06,0.0593,1
+GO:1901566,organonitrogen compound biosynthetic pro...,1241,4,1.68,0.0825,1
+GO:0009060,aerobic respiration,65,1,0.09,0.0846,1
+GO:0043648,dicarboxylic acid metabolic process,68,1,0.09,0.0883,1
+GO:0045333,cellular respiration,72,1,0.1,0.0932,1
+GO:0006261,DNA-dependent DNA replication,81,1,0.11,0.1043,1
+GO:0006887,exocytosis,82,1,0.11,0.1055,1
+GO:0032940,secretion by cell,89,1,0.12,0.114,1
+GO:0015980,energy derivation by oxidation of organi...,92,1,0.12,0.1176,1
+GO:0046903,secretion,95,1,0.13,0.1212,1
+GO:0009059,macromolecule biosynthetic process,2007,5,2.72,0.1268,1
+GO:0016070,RNA metabolic process,2057,5,2.79,0.137,1
+GO:0032196,transposition,109,1,0.15,0.1379,1
+GO:0071705,nitrogen compound transport,966,3,1.31,0.1399,1
+GO:0001510,RNA methylation,111,1,0.15,0.1402,1
+GO:0006400,tRNA modification,115,1,0.16,0.1449,1
+GO:0032259,methylation,504,2,0.68,0.1481,1
+GO:0006470,protein dephosphorylation,123,1,0.17,0.1542,1

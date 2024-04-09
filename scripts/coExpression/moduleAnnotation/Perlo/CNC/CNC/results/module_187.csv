@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016973,poly(A)+ mRNA export from nucleus,7,1,0,0.0047,1
+GO:0070940,dephosphorylation of RNA polymerase II C...,17,1,0.01,0.0115,1
+GO:0006814,sodium ion transport,20,1,0.01,0.0135,1
+GO:0006897,endocytosis,27,1,0.02,0.0182,1
+GO:0006406,mRNA export from nucleus,31,1,0.02,0.0208,1
+GO:0071427,mRNA-containing ribonucleoprotein comple...,31,1,0.02,0.0208,1
+GO:0034599,cellular response to oxidative stress,40,1,0.03,0.0268,1
+GO:0031503,protein-containing complex localization,41,1,0.03,0.0274,1
+GO:0071426,ribonucleoprotein complex export from nu...,41,1,0.03,0.0274,1
+GO:0071166,ribonucleoprotein complex localization,42,1,0.03,0.0281,1
+GO:0006611,protein export from nucleus,44,1,0.03,0.0294,1
+GO:0006886,intracellular protein transport,418,2,0.28,0.0312,1
+GO:0006405,RNA export from nucleus,50,1,0.03,0.0334,1
+GO:0062197,cellular response to chemical stress,53,1,0.04,0.0354,1
+GO:0034613,cellular protein localization,467,2,0.32,0.0383,1
+GO:0006505,GPI anchor metabolic process,60,1,0.04,0.0399,1
+GO:0006506,GPI anchor biosynthetic process,60,1,0.04,0.0399,1
+GO:0051028,mRNA transport,61,1,0.04,0.0406,1
+GO:0051168,nuclear export,63,1,0.04,0.0419,1
+GO:0006497,protein lipidation,66,1,0.04,0.0438,1
+GO:0042158,lipoprotein biosynthetic process,66,1,0.04,0.0438,1
+GO:0042157,lipoprotein metabolic process,69,1,0.05,0.0458,1
+GO:0030244,cellulose biosynthetic process,79,1,0.05,0.0523,1
+GO:0009247,glycolipid biosynthetic process,81,1,0.05,0.0536,1
+GO:0050657,nucleic acid transport,81,1,0.05,0.0536,1
+GO:0050658,RNA transport,81,1,0.05,0.0536,1
+GO:0051236,establishment of RNA localization,81,1,0.05,0.0536,1
+GO:0006403,RNA localization,82,1,0.06,0.0542,1
+GO:0006664,glycolipid metabolic process,90,1,0.06,0.0594,1
+GO:0030243,cellulose metabolic process,91,1,0.06,0.06,1
+GO:1903509,liposaccharide metabolic process,91,1,0.06,0.06,1
+GO:0046907,intracellular transport,600,2,0.41,0.0602,1
+GO:0046467,membrane lipid biosynthetic process,93,1,0.06,0.0613,1
+GO:0051649,establishment of localization in cell,616,2,0.42,0.063,1
+GO:0098869,cellular oxidant detoxification,103,1,0.07,0.0677,1
+GO:1990748,cellular detoxification,108,1,0.07,0.0708,1
+GO:0051274,beta-glucan biosynthetic process,110,1,0.07,0.0721,1
+GO:0097237,cellular response to toxic substance,110,1,0.07,0.0721,1
+GO:0006979,response to oxidative stress,120,1,0.08,0.0784,1
+GO:0006643,membrane lipid metabolic process,121,1,0.08,0.079,1
+GO:1902600,proton transmembrane transport,121,1,0.08,0.079,1
+GO:0051273,beta-glucan metabolic process,122,1,0.08,0.0797,1
+GO:0006470,protein dephosphorylation,123,1,0.08,0.0803,1
+GO:0006913,nucleocytoplasmic transport,123,1,0.08,0.0803,1
+GO:0051169,nuclear transport,123,1,0.08,0.0803,1
+GO:0009737,response to abscisic acid,124,1,0.08,0.0809,1
+GO:0097305,response to alcohol,126,1,0.09,0.0822,1
+GO:0015031,protein transport,735,2,0.5,0.0859,1
+GO:0098754,detoxification,134,1,0.09,0.0872,1
+GO:0045184,establishment of protein localization,755,2,0.51,0.09,1

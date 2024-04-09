@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0001510,RNA methylation,111,3,0.14,0.00033,1
+GO:0043414,macromolecule methylation,266,3,0.33,0.00404,1
+GO:0006878,cellular copper ion homeostasis,7,1,0.01,0.0086,1
+GO:0019985,translesion synthesis,7,1,0.01,0.0086,1
+GO:0009451,RNA modification,354,3,0.44,0.00891,1
+GO:0006301,postreplication repair,8,1,0.01,0.00982,1
+GO:0006825,copper ion transport,8,1,0.01,0.00982,1
+GO:0000731,DNA synthesis involved in DNA repair,10,1,0.01,0.01226,1
+GO:0046686,response to cadmium ion,12,1,0.01,0.01469,1
+GO:0055070,copper ion homeostasis,13,1,0.02,0.01591,1
+GO:0000165,MAPK cascade,14,1,0.02,0.01712,1
+GO:0023014,signal transduction by protein phosphory...,14,1,0.02,0.01712,1
+GO:0006782,protoporphyrinogen IX biosynthetic proce...,18,1,0.02,0.02196,1
+GO:0043622,cortical microtubule organization,18,1,0.02,0.02196,1
+GO:0046501,protoporphyrinogen IX metabolic process,18,1,0.02,0.02196,1
+GO:0032259,methylation,504,3,0.62,0.02291,1
+GO:0030865,cortical cytoskeleton organization,19,1,0.02,0.02317,1
+GO:0031122,cytoplasmic microtubule organization,19,1,0.02,0.02317,1
+GO:0046777,protein autophosphorylation,20,1,0.02,0.02437,1
+GO:0031167,rRNA methylation,25,1,0.03,0.03038,1
+GO:0006810,transport,2044,6,2.52,0.03212,1
+GO:0007264,small GTPase mediated signal transductio...,27,1,0.03,0.03277,1
+GO:0046916,cellular transition metal ion homeostasi...,27,1,0.03,0.03277,1
+GO:0051234,establishment of localization,2074,6,2.56,0.03423,1
+GO:0035556,intracellular signal transduction,241,2,0.3,0.035,1
+GO:0000154,rRNA modification,31,1,0.04,0.03754,1
+GO:0051179,localization,2126,6,2.62,0.03811,1
+GO:0030001,metal ion transport,255,2,0.31,0.03879,1
+GO:0006383,transcription by RNA polymerase III,35,1,0.04,0.04228,1
+GO:0051716,cellular response to stimulus,1615,5,1.99,0.04229,1
+GO:0006783,heme biosynthetic process,36,1,0.04,0.04346,1
+GO:0042168,heme metabolic process,38,1,0.05,0.04583,1
+GO:0009987,cellular process,12731,19,15.69,0.05043,1
+GO:0030488,tRNA methylation,42,1,0.05,0.05053,1
+GO:0006875,cellular metal ion homeostasis,44,1,0.05,0.05288,1
+GO:0000041,transition metal ion transport,46,1,0.06,0.05522,1
+GO:0009409,response to cold,49,1,0.06,0.05871,1
+GO:0010038,response to metal ion,49,1,0.06,0.05871,1
+GO:0055076,transition metal ion homeostasis,49,1,0.06,0.05871,1
+GO:0030003,cellular cation homeostasis,52,1,0.06,0.0622,1
+GO:0035672,oligopeptide transmembrane transport,53,1,0.07,0.06336,1
+GO:0006779,porphyrin-containing compound biosynthet...,55,1,0.07,0.06567,1
+GO:0006873,cellular ion homeostasis,56,1,0.07,0.06683,1
+GO:0015833,peptide transport,789,3,0.97,0.07049,1
+GO:0042886,amide transport,794,3,0.98,0.07156,1
+GO:0033014,tetrapyrrole biosynthetic process,61,1,0.08,0.07259,1
+GO:0044260,cellular macromolecule metabolic process,5988,11,7.38,0.07596,1
+GO:0007165,signal transduction,817,3,1.01,0.07658,1
+GO:0023052,signaling,821,3,1.01,0.07747,1
+GO:0034470,ncRNA processing,385,2,0.47,0.08055,1

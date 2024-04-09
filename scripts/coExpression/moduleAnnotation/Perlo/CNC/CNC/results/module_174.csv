@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0035418,protein localization to synapse,1,1,0,0.003,1
+GO:0043954,cellular component maintenance,1,1,0,0.003,1
+GO:0097062,dendritic spine maintenance,1,1,0,0.003,1
+GO:1902473,regulation of protein localization to sy...,1,1,0,0.003,1
+GO:1902950,regulation of dendritic spine maintenanc...,1,1,0,0.003,1
+GO:0098661,inorganic anion transmembrane transport,35,2,0.1,0.0048,1
+GO:0097061,dendritic spine organization,2,1,0.01,0.0059,1
+GO:0106027,neuron projection organization,2,1,0.01,0.0059,1
+GO:1902414,protein localization to cell junction,2,1,0.01,0.0059,1
+GO:0002084,protein depalmitoylation,3,1,0.01,0.0088,1
+GO:0031344,regulation of cell projection organizati...,3,1,0.01,0.0088,1
+GO:0035372,protein localization to microtubule,3,1,0.01,0.0088,1
+GO:0036010,protein localization to endosome,3,1,0.01,0.0088,1
+GO:0042159,lipoprotein catabolic process,3,1,0.01,0.0088,1
+GO:0120035,regulation of plasma membrane bounded ce...,3,1,0.01,0.0088,1
+GO:1902816,regulation of protein localization to mi...,3,1,0.01,0.0088,1
+GO:1902817,negative regulation of protein localizat...,3,1,0.01,0.0088,1
+GO:1905666,regulation of protein localization to en...,3,1,0.01,0.0088,1
+GO:1905668,positive regulation of protein localizat...,3,1,0.01,0.0088,1
+GO:0050803,regulation of synapse structure or activ...,4,1,0.01,0.0118,1
+GO:0050807,regulation of synapse organization,4,1,0.01,0.0118,1
+GO:0050808,synapse organization,4,1,0.01,0.0118,1
+GO:0099173,postsynapse organization,4,1,0.01,0.0118,1
+GO:0099175,regulation of postsynapse organization,4,1,0.01,0.0118,1
+GO:1903828,negative regulation of cellular protein ...,4,1,0.01,0.0118,1
+GO:0044380,protein localization to cytoskeleton,5,1,0.01,0.0147,1
+GO:0072698,protein localization to microtubule cyto...,5,1,0.01,0.0147,1
+GO:0098734,macromolecule depalmitoylation,5,1,0.01,0.0147,1
+GO:0120036,plasma membrane bounded cell projection ...,5,1,0.01,0.0147,1
+GO:0034330,cell junction organization,6,1,0.02,0.0176,1
+GO:0009608,response to symbiont,7,1,0.02,0.0205,1
+GO:0009610,response to symbiotic fungus,7,1,0.02,0.0205,1
+GO:0010960,magnesium ion homeostasis,7,1,0.02,0.0205,1
+GO:0015698,inorganic anion transport,80,2,0.24,0.0234,1
+GO:0016120,carotene biosynthetic process,9,1,0.03,0.0263,1
+GO:0030030,cell projection organization,9,1,0.03,0.0263,1
+GO:1903829,positive regulation of cellular protein ...,9,1,0.03,0.0263,1
+GO:0098656,anion transmembrane transport,88,2,0.26,0.0279,1
+GO:0090116,C-5 methylation of cytosine,10,1,0.03,0.0292,1
+GO:0016119,carotene metabolic process,11,1,0.03,0.0321,1
+GO:0032880,regulation of protein localization,11,1,0.03,0.0321,1
+GO:1903827,regulation of cellular protein localizat...,11,1,0.03,0.0321,1
+GO:0006820,anion transport,242,3,0.72,0.0346,1
+GO:0006821,chloride transport,13,1,0.04,0.0378,1
+GO:0016109,tetraterpenoid biosynthetic process,13,1,0.04,0.0378,1
+GO:0016117,carotenoid biosynthetic process,13,1,0.04,0.0378,1
+GO:0032776,DNA methylation on cytosine,13,1,0.04,0.0378,1
+GO:0046246,terpene biosynthetic process,13,1,0.04,0.0378,1
+GO:1902476,chloride transmembrane transport,13,1,0.04,0.0378,1
+GO:0009615,response to virus,14,1,0.04,0.0406,1

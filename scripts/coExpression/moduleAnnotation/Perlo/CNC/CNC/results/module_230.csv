@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006722,triterpenoid metabolic process,81,11,2.2,1.2e-05,0.0294
+GO:0016104,triterpenoid biosynthetic process,81,11,2.2,1.2e-05,0.0294
+GO:0016114,terpenoid biosynthetic process,157,14,4.27,9.9e-05,0.1614
+GO:0006721,terpenoid metabolic process,177,14,4.81,0.00035,0.428
+GO:0008299,isoprenoid biosynthetic process,191,14,5.19,0.00075,0.7338
+GO:0046677,response to antibiotic,59,7,1.6,0.00105,0.8561
+GO:0006720,isoprenoid metabolic process,215,14,5.84,0.0023,1
+GO:0009226,nucleotide-sugar biosynthetic process,35,5,0.95,0.0024,1
+GO:0016554,cytidine to uridine editing,11,3,0.3,0.00279,1
+GO:0071236,cellular response to antibiotic,26,4,0.71,0.005,1
+GO:0006265,DNA topological change,43,5,1.17,0.00596,1
+GO:0018193,peptidyl-amino acid modification,370,19,10.05,0.00619,1
+GO:0071229,cellular response to acid chemical,170,11,4.62,0.00683,1
+GO:0016553,base conversion or substitution editing,15,3,0.41,0.00711,1
+GO:1901701,cellular response to oxygen-containing c...,224,13,6.09,0.00841,1
+GO:0042752,regulation of circadian rhythm,16,3,0.43,0.00857,1
+GO:0090305,nucleic acid phosphodiester bond hydroly...,384,19,10.43,0.00903,1
+GO:0009225,nucleotide-sugar metabolic process,48,5,1.3,0.00949,1
+GO:0000466,maturation of 5.8S rRNA from tricistroni...,17,3,0.46,0.0102,1
+GO:1901700,response to oxygen-containing compound,390,19,10.6,0.01054,1
+GO:0035690,cellular response to drug,33,4,0.9,0.0118,1
+GO:0006865,amino acid transport,72,6,1.96,0.01344,1
+GO:0042493,response to drug,116,8,3.15,0.01383,1
+GO:0000460,maturation of 5.8S rRNA,19,3,0.52,0.01397,1
+GO:0009298,GDP-mannose biosynthetic process,7,2,0.19,0.01413,1
+GO:1900865,chloroplast RNA modification,7,2,0.19,0.01413,1
+GO:0018216,peptidyl-arginine methylation,21,3,0.57,0.01842,1
+GO:0019673,GDP-mannose metabolic process,8,2,0.22,0.0185,1
+GO:0048653,anther development,8,2,0.22,0.0185,1
+GO:0071407,cellular response to organic cyclic comp...,57,5,1.55,0.01906,1
+GO:0009751,response to salicylic acid,38,4,1.03,0.01915,1
+GO:0048827,phyllome development,78,6,2.12,0.01931,1
+GO:0009266,response to temperature stimulus,101,7,2.74,0.02016,1
+GO:0018195,peptidyl-arginine modification,22,3,0.6,0.02091,1
+GO:0000459,exonucleolytic trimming involved in rRNA...,9,2,0.24,0.02337,1
+GO:0000467,exonucleolytic trimming to generate matu...,9,2,0.24,0.02337,1
+GO:0046942,carboxylic acid transport,105,7,2.85,0.02436,1
+GO:0015849,organic acid transport,106,7,2.88,0.0255,1
+GO:0071446,cellular response to salicylic acid stim...,24,3,0.65,0.02641,1
+GO:0006574,valine catabolic process,1,1,0.03,0.02717,1
+GO:0006921,cellular component disassembly involved ...,1,1,0.03,0.02717,1
+GO:0007142,male meiosis II,1,1,0.03,0.02717,1
+GO:0007639,homeostasis of number of meristem cells,1,1,0.03,0.02717,1
+GO:0009616,virus induced gene silencing,1,1,0.03,0.02717,1
+GO:0009720,detection of hormone stimulus,1,1,0.03,0.02717,1
+GO:0009726,detection of endogenous stimulus,1,1,0.03,0.02717,1
+GO:0009729,detection of brassinosteroid stimulus,1,1,0.03,0.02717,1
+GO:0009836,fruit ripening, climacteric,1,1,0.03,0.02717,1
+GO:0010384,cell wall proteoglycan metabolic process,1,1,0.03,0.02717,1
+GO:0010404,cell wall hydroxyproline-rich glycoprote...,1,1,0.03,0.02717,1
