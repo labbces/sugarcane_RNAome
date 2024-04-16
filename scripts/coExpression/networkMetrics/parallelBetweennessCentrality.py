@@ -55,8 +55,8 @@ def betweenness_centrality_parallel(G, output_file, processes=None):
                 bt_c[n] += bt[n]
                 
         for node in bt_c:
-            writer.writerow({'node': node, 'betweenness_centrality': f"{bt_c[node]:.15f}"})
-            
+            writer.writerow({'node': node, 'betweenness_centrality': f"{bt_c[node]:.15f}"})       
+     
         return bt_c
 
 df = pd.read_csv(args.edge_list, sep='\t', usecols=args.columns)
