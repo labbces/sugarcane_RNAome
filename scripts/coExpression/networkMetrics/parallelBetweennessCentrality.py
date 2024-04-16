@@ -48,29 +48,20 @@ def betweenness_centrality_parallel(G, output_file, processes=None):
             ),
         )
         
-        # combine partial solutions and calculate final betweenness centrality
-        bt_c = {}
-        for bt in bt_sc:
-            for node, centrality in bt.items():
-                bt_c[node] = bt_c.get(node, 0) + centrality
-        #        print({'node': node, 'betweenness_centrality': bt_c[node]})       
-        
-        # write final results to output
-        for node, centrality in bt.items():
-            #print({"node": node, "betweenness_centrality": f"{bt_c[node]:.15f}"})
-            writer.writerow({'node': node, 'betweenness_centrality': f"{centrality:.15f}"})
+        # Reduce the partial solutions
+        bt_c = bt_sc[0]
+        for bt in bt_sc[1:]:
+            for n in bt:
+                bt_c[n] += bt[n]
+                
+        for node in bt_c:
+            writer.writerow({'node': node, 'betweenness_centrality': f"{bt_c[node]:.15f}"})
+            
+        return bt_c
 
-#edge_list = "scripts/coExpression/networkMetrics/example/Correr_clusteringSimilarities.tsv"
-#output_file = "out.csv"
-#threads = 2
-#columns = [0,1,3]
 df = pd.read_csv(args.edge_list, sep='\t', usecols=args.columns)
-#print(df)
-#G_my = nx.from_pandas_edgelist(df, source='cluster_1', target='cluster_2', edge_attr='Overlap')
 df.columns = ['source', 'target', 'weight']
 G_my = nx.from_pandas_edgelist(df)
-
-#print(G_my)
 
 for G in [G_my]:
 
@@ -84,16 +75,4 @@ for G in [G_my]:
     print("\tParallel version")
     print(f"\t\tTime: {(time.time() - start):.4F} seconds")
     #print(f"\t\tBetweenness centrality for node out.5.8_1: {bt['out.5.8_1']:.5f}")
-    
-    # non-parallel version
-    #start = time.time()
-    #bt = nx.betweenness_centrality(G)
-    #print("\tNon-Parallel version")
-    #print(f"\t\tTime: {(time.time() - start):.4F} seconds")
-    #print(f"\t\tBetweenness centrality for node out.5.8_1: {bt['out.5.8_1']:.5f}")
-
 print("")
-#print(bt)
-
-#nx.draw(G_my, node_size=100)
-#plt.show()
