@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+
+#RUN
+#snakemake -np -s Snakefile --cores 16
+
+#DAG
+#snakemake -s Snakefile --dag | dot -Tsvg > dag.svg
+
+configfile: "config.yaml"
+
+import pandas as pd
+import yaml
+
+genotypes = pd.read_csv("genotypes.csv")
+parts = pd.read_csv("parts.csv")
+
+tRNAscan = config["tRNAscan"]
+
+rule all:
+	input:
+		expand("../results/{genotype}.part-{part}.trnas", genotype=genotypes, part=parts),
+		expand("../results/{genotype}.part-{part}.stats", genotype=genotypes, part=parts)
+
+rule tRNAscan:
+	input:
+		expand("../data/{{genotype}}.part-{{part}}.fa", genotype=genotypes, part=parts)
+	output:
+		trnas = expand("../results/{{genotype}}.part-{{part}}.trnas", genotype=genotypes, part=parts),
+		stats = expand("../results/{{genotype}}.part-{{part}}.stats", genotype=genotypes, part=parts)
+	threads: 8
+	log:
+		expand("logs/{{genotype}}.part-{{part}}.log", genotype=genotypes, part=parts)
+	shell:
+		"{tRNAscan} -o {output.trnas} -m {output.stats} {input} --thread {threads}"
