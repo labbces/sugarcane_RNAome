@@ -11,4 +11,5 @@ cd $PBS_O_WORKDIR
 source /home/lovelace/proj/proj832/fvperes/miniconda3/etc/profile.d/conda.sh
 conda activate snakemake
 
+# run tRNAscan with 8 cores - 2 jobs simultaneously
 snakemake -p -s Snakefile --cores 16 --rerun-incomplete
