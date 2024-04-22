@@ -28,5 +28,6 @@ The following results represent the percentage of sequences classified as lncRNA
 * [Principal Component Analysis of lncRNAs expression in contrasting genotypes](https://github.com/labbces/sugarcane_RNAome/wiki/Principal-Component-Analysis-of-lncRNAs-expression-in-contrasting-genotypes)
 * [Computing gene pair relationships with Pearson correlation](https://github.com/labbces/sugarcane_RNAome/wiki/Computing-gene-pair-relationships-with-Pearson-correlation)
 * [Analyzing MCL clusterings (effects of Inflation value)](https://github.com/labbces/sugarcane_RNAome/wiki/Analyzing-MCL-clusterings-(effects-of-Inflation-value))
+* [Finding conserved modules of co-expression (complete subgraphs - cliques)](https://github.com/labbces/sugarcane_RNAome/wiki/Finding-conserved-modules-of-co%E2%80%90expression-(complete-subgraphs-%E2%80%90-cliques))
 * [Visualizing co-expressed gene modules in contrasting genotypes](https://github.com/labbces/sugarcane_RNAome/wiki/Visualizing-co%E2%80%90expressed-gene-modules-in-contrasting-genotypes)
 * [Gene Ontology enrichment analysis: exploring biological function of modules](https://github.com/labbces/sugarcane_RNAome/wiki/Gene-Ontology-enrichment-analysis:-exploring-biological-function-of-modules)
