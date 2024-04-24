@@ -13,6 +13,4 @@ min_module_size=5
 awk '{print $1, $2, substr(FILENAME, 8, length(FILENAME)-11)}' clique* | sort -k3n >> ${dataset}_counts_filters_VST_topCV_mcl_formated_cliques.csv
 
 # create sequence with modules from 1 to X modules - filtering modules with less than 5 genes
-seq 1 $modules | grep -vw "$(cut -f3 -d " " ${dataset}_counts_filters_VST_topCV_mcl_formated_cliques.csv | uniq -c | awk "\$1 < $min_module_size {print \$2}")" >> filtered_modules.txt
-
-
+seq 1 $modules | grep -vw "$(cut -f3 -d " " ${dataset}_counts_filters_VST_topCV_mcl_formated_cliques.csv | uniq -c | awk "\$1 < $min_module_size {print \$2}")" >> Correr2020_counts_filters_VST_topCV_mcl_formated_cliques_filtered.csv
