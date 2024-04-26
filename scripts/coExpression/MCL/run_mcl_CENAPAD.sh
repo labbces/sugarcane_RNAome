@@ -23,9 +23,7 @@ for task in "${tasks[@]}"; do
     in=$(ls -1 *_mcl.txt)
     out=pearson_mcl_cv1.2/
 
-    module load mcl/14-137
-
     mkdir $out
-    /usr/bin/time -v mcl $in -I ${num[${m}]} -te $PBS_NUM_PPN --abc -analyze y -o ${out}out.${num[${m}]}
+    mcl $in -I ${num[${m}]} -te $PBS_NUM_PPN --abc -analyze y -o ${out}out.${num[${m}]}
 
 done
