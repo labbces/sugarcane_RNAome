@@ -8,3 +8,6 @@ scripts/coExpression/moduleHeatmap/Hoang/CNC/Hoang2017_counts_filters_VST_CNC_CV
 scripts/coExpression/moduleHeatmap/Hoang/CNC/Hoang2017_counts_filters_VST_CV_classified.txt
 scripts/coExpression/moduleHeatmap/Perlo/CNC/Perlo2022_counts_filters_VST_CNC_CV_above0.6.txt
 scripts/coExpression/moduleHeatmap/Perlo/CNC/Perlo2022_counts_filters_VST_CV_classified.txt
+scripts/coExpression/moduleAnnotation/Correr/CNC/panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv
+scripts/coExpression/moduleAnnotation/Correr/CNC/clusterSize.txt
+scripts/coExpression/moduleAnnotation/Correr/CNC/Correr2020_counts_filters_VST_topCV_mcl_formated_cliques.csv
