@@ -2,140 +2,79 @@ library(topGO)
 library(ggplot2)
 
 rm(list=ls())
+setwd(getwd())
 
-setwd("/Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Hoang/code/updated_filters/CNC/moduleAnnotation/CNC")
-results_path <- "results/"
+args <- commandArgs(trailingOnly = TRUE)                                                 # args from command line
 
-# create recursive dir
-dir.create(results_path, recursive = TRUE)
-
-load_files <- function(){
-  
-  ## read clusters size
-  f1 = paste0("clusterSize.txt")
-  number.clusters <<- read.table(f1, header = F)
-  
-  ## read list of genes for all the network 
-  geneID2GO <<- readMappings(file = "GO_annotations_BP_PPV0.6.tsv")
-  
-  # read genes in graph
-  f2 = "Hoang2017_counts_filters_VST_topCV_mcl_formated_cliques.csv"
-  ##genes_in_graph <- as.data.frame(rownames(read.table(f2, header =F, row.names=1)))
-  
-  # temporary -> dealing with duplicates
-  dados <<- read.table(f2)
-  dados_sem_duplicatas <<- unique(dados[,1])
-  print("loading cliques")
-  genes_in_graph <<- as.data.frame(matrix(dados_sem_duplicatas, ncol = 1))
-  rownames(genes_in_graph) <<- dados_sem_duplicatas
-  # end temporary
-  
-  colnames(genes_in_graph) <<- "gene"
-  
-  # filter background genes to genes in the network
-  geneID2GO_filtered <<- geneID2GO[genes_in_graph[,1]]
-  
-  #geneNames <- names(geneID2GO_filtered)
-  geneNames <<- genes_in_graph$gene
-  
-  # read modules
-  ##dynamicMods <- read.table(file = f2, header = F, row.names=1)
-  
-  # temporary -> dealing with duplicates
-  dados2 <<- read.table(f2)
-  dados_sem_duplicatas2 <<- unique(dados2[,1])
-  print("loading modules")
-  dynamicMods <<- as.data.frame(matrix(dados_sem_duplicatas2, ncol = 1))
-  rownames(dynamicMods) <<- dados_sem_duplicatas2
-  # incluir 3 coluna
-  dynamicMods$module_No <<- dados2[match(rownames(dynamicMods), dados2[,1]), 3]
-  # end temporary
-  
-  ##colnames(dynamicMods) <- "module_No"
+if (length(args) != 3) {                                                                 # verify number of args
+  stop("Invalid number of arguments. Please provide the file names.")
 }
 
-# load things in cluster
-load_files()
+results_path <- "results/"                                                               # output directory 
+dir.create(results_path, recursive = TRUE)                                               # create recursive dir
 
-# make annot fun
-anot_modules <- function(Module_no, results_path){
-  paste0("MODULO:", Module_no,"      ","NODOS:",number.clusters[Module_no,1])
-  #paste0("MODULO:", 1,"      ","NODOS:",number.clusters[1,1])
-  myInterestingGenes <- genes_in_graph[dynamicMods$module_No==Module_no,]
-  #myInterestingGenes <- genes_in_graph[dynamicMods$module_No==1,]
-  geneList <<- as.factor(as.integer(geneNames %in% myInterestingGenes))
+load_files <- function(clusterSize, GO_universe, Cliques){                               # function to load files
+  number_clusters <<- read.table(clusterSize, header = F)                                # read clusters size
+  geneID2GO <<- readMappings(file = GO_universe)                                         # read list of annotated genes for all the network
+  genes_in_graph <<- as.data.frame(read.table(Cliques, header = F))                      # read genes in graph
+  colnames(genes_in_graph) <<- c("gene", "category", "module_No")
+  geneID2GO_filtered <<- geneID2GO[genes_in_graph[,1]]
+  geneNames <<- genes_in_graph$gene
+}
+
+load_files(args[1], args[2], args[3])                                                    # call the load_files function with the provided arguments
+
+anot_modules <- function(Module_no, results_path){                                       # function make annot fun
+  myInterestingGenes <- genes_in_graph$gene[genes_in_graph$module_No==Module_no]         # get interesting genes from each module
+  geneList <- as.factor(as.integer(geneNames %in% myInterestingGenes))
   names(geneList) <- geneNames
   
-  GOdata <<- new("topGOdata",
+  GOdata <- new("topGOdata",                                                             # create GO dataset 
                  ontology = "BP",
                  allGenes = geneList,
                  annot = annFUN.gene2GO,
                  gene2GO = geneID2GO_filtered)
-  allGO=usedGO(GOdata)
-
-  # MIRAR SI DA VALOR Pcorregido el TOP GO
-  # classic ingnora la topologia del go
-  # revisar algoritmos 
   
-  Classic <<- runTest(GOdata, algorithm = "classic", statistic = "fisher")
+  allGO=usedGO(GOdata)
+  
+  Classic <- runTest(GOdata, algorithm = "classic", statistic = "fisher")                                  # run fisher classic
   #resultsWeight01 <- runTest(GOdata, algorithm = "weight01", statistic = "fisher")
   
-  # Make results  table
+  table <- GenTable(GOdata, Classic = Classic, topNodes = length(allGO), orderBy = 'Classic')              # make results  table
   #table <- GenTable(GOdata, Classic = resultClassic, Weight01 = resultsWeight01, topNodes = length(allGO), orderBy = 'Classic')
-  table <- GenTable(GOdata, Classic = Classic, topNodes = length(allGO), orderBy = 'Classic')
   
-  # Replace the values "< 1e-30" with a very small number ( < 1e-30 cannot be corrected with BH)
-  table$Classic[table$Classic == "< 1e-30"] <- 1e-30
-  # Convert the Classic column to numeric
-  table$Classic <- as.numeric(table$Classic)
+  table$Classic[table$Classic == "< 1e-30"] <- 1e-30                                                       # replace the values "< 1e-30" with a very small number ( < 1e-30 cannot be corrected with BH)
+  table$Classic <- as.numeric(table$Classic)                                                               # convert the Classic column to numeric
   
-  # Filter not significant values for classic algorithm
-  ####table1 <- filter(table, Classic < 0.05 )
+  #table1 <- filter(table, Classic < 0.05)                                                                 # filter not significant values for classic algorithm
   
-  # Performing BH correction on our p values FDR
-  ####p.adj <- round(p.adjust(table1$Classic,method="BH"),digits = 4)
+  #p.adj <- round(p.adjust(table1$Classic,method="BH"),digits = 4)                                         # performing BH correction on p values FDR
   p.adj <- round(p.adjust(table$Classic,method="BH"),digits = 4)
   
-  # Create the file with all the statistics from GO analysis
-  ####all_res_final <<- cbind(table1,p.adj)
-  all_res_final <<- cbind(table,p.adj)
-  all_res_final <<- all_res_final[order(all_res_final$p.adj),]
+  #all_res_final <<- cbind(table1,p.adj)                                                                   # create the file with all the statistics from GO analysis
+  all_res_final <- cbind(table,p.adj)
+  all_res_final <- all_res_final[order(all_res_final$p.adj),]                                              # order results
   
-  # Get list of significant GO before multiple testing correction
-  results.table.p = all_res_final[which(all_res_final$Classic <=0.05),]
+  results.table.p = all_res_final[which(all_res_final$Classic <=0.05),]                                    # get list of significant GO before multiple testing correction
+  results.table.bh = all_res_final[which(all_res_final$p.adj  <=0.05),]
   
-  # Get list of significant GO after multiple testing correction
-  results.table.bh = all_res_final[which(all_res_final$p.adj<=0.05),]
-  
-  # Save first top 50 ontolgies sorted by adjusted pvalues
+  # save top 50 ontologies sorted by adjusted pvalues
   write.table(all_res_final[1:50,], file = paste0(results_path, "module_", Module_no, ".csv"), quote=FALSE, row.names=FALSE, sep = ",")
 
-  #### CREATE PLOTS
-  module <- paste0("module_", Module_no)
-  #module <- paste0("module_", 1)
-  
-  # open table 
-  #topGO_all_table <- read.table("../results/enrichment/module_1.csv", sep = ",")
-  topGO_all_table <<- all_res_final
-  colnames(topGO_all_table) <<- c("GO.ID","Term","Annotated","Significant","Expected","Classic","p.adj")
-  
+  module <- paste0("module_", Module_no)                                                                   # create plots for each module
+  topGO_all_table <- all_res_final
+  colnames(topGO_all_table) <- c("GO.ID","Term","Annotated","Significant","Expected","Classic","p.adj")   
   topGO_all_table <- topGO_all_table[order(topGO_all_table$Classic),]
   
-  ntop <- 30
+  ntop <- 30                                                                                               # only plot top 30 out 50 terms
   ggdata <- topGO_all_table[1:ntop,]
-  
-  # Remover valores duplicados da coluna 'Term' # evitar erro por termos duplicados
-  ggdata <- ggdata[!duplicated(ggdata$Term), ]
-  
-  ggdata$Term <- factor(ggdata$Term, levels = rev(ggdata$Term)) # fixes order
-  
-  # Adicionar 0.001 para o log10(1) ser diferente de 0
-  ## ggdata$Classic <- as.numeric(ggdata$Classic) + 0.000001 # dont need this - for ecoli
+  #ggdata <- ggdata[!duplicated(ggdata$Term), ]                                                            # remove duplicated Terms                               
+  #ggdata$Term <- factor(ggdata$Term, levels = rev(ggdata$Term))                                           # fixes order
+  #ggdata$Classic <- as.numeric(ggdata$Classic) + 0.000001                                                 # Add small number for log operations (log10 must be > 0) 
   ggdata
   
-  # Calculate the values for the division points
-  max_y <- max(-log10(ggdata$Classic))  # Calculate the maximum value on the y-axis
-  div_points <- quantile(-log10(ggdata$Classic), probs = c(0.95, 0.5, 0.05))  # Calculate quantiles for dividing the plot
+  max_y <- max(-log10(ggdata$Classic))                                                                     # calculate the maximum value on the y-axis
+  div_points <- quantile(-log10(ggdata$Classic), probs = c(0.95, 0.5, 0.05))                               # calculate quantiles for dividing the plot
   
   ggplot(ggdata,
          aes(x = ggdata$Term, y = -log10(Classic), size = -log10(Classic), fill = -log10(Classic))) +
@@ -149,12 +88,9 @@ anot_modules <- function(Module_no, results_path){
     labs(
       title = module,
       subtitle = 'Top 30 terms ordered by Fisher Exact p-value',
-      #caption = 'Cut-off lines drawn at equivalents of p=0.05, p=0.01, p=0.001') +
       caption = paste('Cut-off lines drawn at equivalents of p =', round(div_points[3], 1), ',', round(div_points[2], 1), ',', round(div_points[1], 1))) +
-    
-    # Draw horizontal lines
-    #geom_hline(yintercept = c(-log10(0.05), -log10(0.01), -log10(0.001)),
-    geom_hline(yintercept = div_points,
+
+    geom_hline(yintercept = div_points,                                                                      # draw vertical lines
                linetype = c("dotted", "longdash", "solid"),
                colour = c("black", "black", "black"),
                size = c(0.5, 1.5, 3)) +
@@ -173,16 +109,14 @@ anot_modules <- function(Module_no, results_path){
       axis.title.x = element_text(size = 12, face = 'bold'),
       axis.title.y = element_text(size = 12, face = 'bold'),
       axis.line = element_line(colour = 'black'),
-      
-      #Legend
-      legend.key = element_blank(), # removes the border
-      legend.key.size = unit(1, "cm"), # Sets overall area/size of the legend
-      legend.text = element_text(size = 14, face = "bold"), # Text size
+
+      legend.key = element_blank(),                                                                          # removes legend the border
+      legend.key.size = unit(1, "cm"),                                                                       # sets overall area/size of the legend
+      legend.text = element_text(size = 14, face = "bold"),                                                  # text size
       title = element_text(size = 14, face = "bold")) +
     
     coord_flip()
   
-
   plot_path <- paste0(results_path, "module_", Module_no, "_GO_30Terms_Fisher", ".png")
   
   ggplot2::ggsave(plot_path,
@@ -191,11 +125,10 @@ anot_modules <- function(Module_no, results_path){
                   width = 12)
 }
 
-#for (i in 1:dim(table(dynamicMods))){
-for (i in 1:250){ # only for the first 40 modules and module has more than 5 genes
-  if(number.clusters[i,1]>=5){
+# iterate over all modules that have more than 5 genes
+for (i in 1:nrow(number_clusters)){                                                                          # for testing: for (i in 1:2){
+  if(number_clusters[i,1]>=5){
     print(i)
-    anot_modules(i,results_path)
-    
+    anot_modules(i, results_path)
   }
 }
