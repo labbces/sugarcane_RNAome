@@ -10,7 +10,7 @@ if (length(args) != 3) {                                                        
   stop("Invalid number of arguments. Please provide the file names.")
 }
 
-results_path <- "results_ordered/"                                                       # output directory 
+results_path <- "results"                                                       # output directory 
 dir.create(results_path, recursive = TRUE)                                               # create recursive dir
 
 load_files <- function(clusterSize, GO_universe, Cliques){                               # function to load files
