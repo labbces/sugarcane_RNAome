@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006457,protein folding,157,37,21.41,5e-04,0.8283
+GO:1901292,nucleoside phosphate catabolic process,7,5,0.95,0.00077,0.8283
+GO:0006626,protein targeting to mitochondrion,26,10,3.55,0.00143,0.8283
+GO:0070585,protein localization to mitochondrion,26,10,3.55,0.00143,0.8283
+GO:0072655,establishment of protein localization to...,26,10,3.55,0.00143,0.8283
+GO:0009608,response to symbiont,11,6,1.5,0.00159,0.8283
+GO:0009610,response to symbiotic fungus,11,6,1.5,0.00159,0.8283
+GO:0009746,response to hexose,8,5,1.09,0.00183,0.8283
+GO:0009749,response to glucose,8,5,1.09,0.00183,0.8283
+GO:0034284,response to monosaccharide,8,5,1.09,0.00183,0.8283
+GO:0009740,gibberellic acid mediated signaling path...,16,7,2.18,0.00321,1
+GO:0010476,gibberellin mediated signaling pathway,16,7,2.18,0.00321,1
+GO:0071370,cellular response to gibberellin stimulu...,16,7,2.18,0.00321,1
+GO:0090150,establishment of protein localization to...,39,12,5.32,0.00443,1
+GO:0030163,protein catabolic process,201,41,27.41,0.00483,1
+GO:1901565,organonitrogen compound catabolic proces...,287,55,39.13,0.00507,1
+GO:0055082,cellular chemical homeostasis,45,13,6.14,0.00567,1
+GO:0042398,cellular modified amino acid biosyntheti...,31,10,4.23,0.0063,1
+GO:0034754,cellular hormone metabolic process,14,6,1.91,0.00718,1
+GO:0000394,RNA splicing, via endonucleolytic cleava...,7,4,0.95,0.00855,1
+GO:0006388,tRNA splicing, via endonucleolytic cleav...,7,4,0.95,0.00855,1
+GO:0007007,inner mitochondrial membrane organizatio...,7,4,0.95,0.00855,1
+GO:0035265,organ growth,7,4,0.95,0.00855,1
+GO:0045039,protein insertion into mitochondrial inn...,7,4,0.95,0.00855,1
+GO:0046620,regulation of organ growth,7,4,0.95,0.00855,1
+GO:0009143,nucleoside triphosphate catabolic proces...,4,3,0.55,0.00909,1
+GO:0046519,sphingoid metabolic process,4,3,0.55,0.00909,1
+GO:0080175,phragmoplast microtubule organization,4,3,0.55,0.00909,1
+GO:2000694,regulation of phragmoplast microtubule o...,4,3,0.55,0.00909,1
+GO:0009968,negative regulation of signal transducti...,28,9,3.82,0.00963,1
+GO:0072657,protein localization to membrane,48,13,6.54,0.01014,1
+GO:0009744,response to sucrose,11,5,1.5,0.0106,1
+GO:0009788,negative regulation of abscisic acid-act...,11,5,1.5,0.0106,1
+GO:0034285,response to disaccharide,11,5,1.5,0.0106,1
+GO:0045927,positive regulation of growth,11,5,1.5,0.0106,1
+GO:1901420,negative regulation of response to alcoh...,11,5,1.5,0.0106,1
+GO:1905958,negative regulation of cellular response...,11,5,1.5,0.0106,1
+GO:0072503,cellular divalent inorganic cation homeo...,15,6,2.05,0.01061,1
+GO:0006465,signal peptide processing,24,8,3.27,0.0114,1
+GO:0071396,cellular response to lipid,104,23,14.18,0.01185,1
+GO:0051668,localization within membrane,49,13,6.68,0.01212,1
+GO:0042886,amide transport,487,84,66.4,0.01231,1
+GO:0010648,negative regulation of cell communicatio...,29,9,3.95,0.01231,1
+GO:0023057,negative regulation of signaling,29,9,3.95,0.01231,1
+GO:0048468,cell development,29,9,3.95,0.01231,1
+GO:0009966,regulation of signal transduction,99,22,13.5,0.0129,1
+GO:0009620,response to fungus,66,16,9,0.01408,1
+GO:0010646,regulation of cell communication,100,22,13.64,0.01447,1
+GO:0023051,regulation of signaling,100,22,13.64,0.01447,1
+GO:0015833,peptide transport,484,83,65.99,0.01469,1

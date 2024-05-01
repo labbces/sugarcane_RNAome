@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009635,response to herbicide,1,1,0,0.0016,0.9052
+GO:0010380,regulation of chlorophyll biosynthetic p...,1,1,0,0.0016,0.9052
+GO:0031279,regulation of cyclase activity,1,1,0,0.0016,0.9052
+GO:0080177,plastoglobule organization,1,1,0,0.0016,0.9052
+GO:0080183,response to photooxidative stress,1,1,0,0.0016,0.9052
+GO:1901562,response to paraquat,1,1,0,0.0016,0.9052
+GO:1902171,regulation of tocopherol cyclase activit...,1,1,0,0.0016,0.9052
+GO:1902326,positive regulation of chlorophyll biosy...,1,1,0,0.0016,0.9052
+GO:0045828,positive regulation of isoprenoid metabo...,2,1,0,0.0032,1
+GO:0090056,regulation of chlorophyll metabolic proc...,2,1,0,0.0032,1
+GO:1901403,positive regulation of tetrapyrrole meta...,2,1,0,0.0032,1
+GO:1901463,regulation of tetrapyrrole biosynthetic ...,2,1,0,0.0032,1
+GO:1901465,positive regulation of tetrapyrrole bios...,2,1,0,0.0032,1
+GO:1904143,positive regulation of carotenoid biosyn...,2,1,0,0.0032,1
+GO:0045834,positive regulation of lipid metabolic p...,3,1,0,0.0047,1
+GO:0046889,positive regulation of lipid biosyntheti...,3,1,0,0.0047,1
+GO:0051194,positive regulation of cofactor metaboli...,3,1,0,0.0047,1
+GO:1901401,regulation of tetrapyrrole metabolic pro...,3,1,0,0.0047,1
+GO:0019747,regulation of isoprenoid metabolic proce...,5,1,0.01,0.0079,1
+GO:0051193,regulation of cofactor metabolic process,5,1,0.01,0.0079,1
+GO:0010114,response to red light,7,1,0.01,0.011,1
+GO:0031540,regulation of anthocyanin biosynthetic p...,7,1,0.01,0.011,1
+GO:0031537,regulation of anthocyanin metabolic proc...,8,1,0.01,0.0126,1
+GO:0016109,tetraterpenoid biosynthetic process,9,1,0.01,0.0141,1
+GO:0016117,carotenoid biosynthetic process,9,1,0.01,0.0141,1
+GO:0046890,regulation of lipid biosynthetic process,9,1,0.01,0.0141,1
+GO:0015995,chlorophyll biosynthetic process,11,1,0.02,0.0173,1
+GO:0007205,protein kinase C-activating G protein-co...,12,1,0.02,0.0188,1
+GO:0009962,regulation of flavonoid biosynthetic pro...,12,1,0.02,0.0188,1
+GO:0016108,tetraterpenoid metabolic process,12,1,0.02,0.0188,1
+GO:0016116,carotenoid metabolic process,12,1,0.02,0.0188,1
+GO:0009718,anthocyanin-containing compound biosynth...,13,1,0.02,0.0204,1
+GO:0007186,G protein-coupled receptor signaling pat...,14,1,0.02,0.0219,1
+GO:0019216,regulation of lipid metabolic process,14,1,0.02,0.0219,1
+GO:0046283,anthocyanin-containing compound metaboli...,17,1,0.03,0.0266,1
+GO:0015994,chlorophyll metabolic process,22,1,0.03,0.0343,1
+GO:0009813,flavonoid biosynthetic process,25,1,0.04,0.0388,1
+GO:0009812,flavonoid metabolic process,26,1,0.04,0.0404,1
+GO:0006779,porphyrin-containing compound biosynthet...,31,1,0.05,0.0479,1
+GO:0033014,tetrapyrrole biosynthetic process,37,1,0.06,0.057,1
+GO:0006778,porphyrin-containing compound metabolic ...,43,1,0.07,0.0659,1
+GO:0033013,tetrapyrrole metabolic process,49,1,0.08,0.0748,1
+GO:0009639,response to red or far red light,51,1,0.08,0.0777,1
+GO:0009658,chloroplast organization,55,1,0.09,0.0836,1
+GO:0030244,cellulose biosynthetic process,55,1,0.09,0.0836,1
+GO:0046148,pigment biosynthetic process,55,1,0.09,0.0836,1
+GO:0009657,plastid organization,62,1,0.1,0.0937,1
+GO:0071669,plant-type cell wall organization or bio...,64,1,0.1,0.0966,1
+GO:0030243,cellulose metabolic process,69,1,0.11,0.1037,1
+GO:0042440,pigment metabolic process,70,1,0.11,0.1052,1
