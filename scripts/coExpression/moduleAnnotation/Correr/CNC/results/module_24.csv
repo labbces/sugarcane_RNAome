@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0051103,DNA ligation involved in DNA repair,4,1,0,0.002,1
+GO:0006266,DNA ligation,5,1,0,0.0025,1
+GO:1902476,chloride transmembrane transport,18,1,0.01,0.009,1
+GO:0006821,chloride transport,20,1,0.01,0.0099,1
+GO:0098661,inorganic anion transmembrane transport,43,1,0.02,0.0213,1
+GO:0015698,inorganic anion transport,70,1,0.03,0.0345,1
+GO:0098656,anion transmembrane transport,90,1,0.04,0.0441,1
+GO:0009734,auxin-activated signaling pathway,112,1,0.06,0.0547,1
+GO:0071365,cellular response to auxin stimulus,113,1,0.06,0.0551,1
+GO:0009733,response to auxin,133,1,0.07,0.0646,1
+GO:0006310,DNA recombination,186,1,0.09,0.0894,1
+GO:0006820,anion transport,206,1,0.1,0.0986,1
+GO:0051716,cellular response to stimulus,1174,2,0.59,0.1098,1
+GO:0098660,inorganic ion transmembrane transport,242,1,0.12,0.115,1
+GO:0009755,hormone-mediated signaling pathway,260,1,0.13,0.1231,1
+GO:0032870,cellular response to hormone stimulus,272,1,0.14,0.1284,1
+GO:0071495,cellular response to endogenous stimulus,278,1,0.14,0.1311,1
+GO:0071310,cellular response to organic substance,290,1,0.14,0.1364,1
+GO:0006281,DNA repair,343,1,0.17,0.1596,1
+GO:0009725,response to hormone,347,1,0.17,0.1613,1
+GO:0009719,response to endogenous stimulus,353,1,0.18,0.1639,1
+GO:0034220,ion transmembrane transport,355,1,0.18,0.1647,1
+GO:0006974,cellular response to DNA damage stimulus,367,1,0.18,0.1699,1
+GO:0010033,response to organic substance,400,1,0.2,0.1839,1
+GO:0070887,cellular response to chemical stimulus,423,1,0.21,0.1936,1
+GO:0033554,cellular response to stress,491,1,0.25,0.2215,1
+GO:0006811,ion transport,503,1,0.25,0.2264,1
+GO:0055085,transmembrane transport,533,1,0.27,0.2384,1
+GO:0007165,signal transduction,620,1,0.31,0.2724,1
+GO:0023052,signaling,622,1,0.31,0.2732,1
+GO:0042221,response to chemical,671,1,0.34,0.2917,1
+GO:0007154,cell communication,695,1,0.35,0.3007,1
+GO:0006259,DNA metabolic process,1024,1,0.51,0.4141,1
+GO:0050896,response to stimulus,2822,2,1.41,0.4299,1
+GO:0050794,regulation of cellular process,1288,1,0.64,0.4937,1
+GO:0006810,transport,1376,1,0.69,0.5181,1
+GO:0051234,establishment of localization,1393,1,0.7,0.5227,1
+GO:0051179,localization,1434,1,0.72,0.5337,1
+GO:0050789,regulation of biological process,1512,1,0.76,0.5539,1
+GO:0065007,biological regulation,1860,1,0.93,0.6356,1
+GO:0006950,response to stress,1961,1,0.98,0.6568,1
+GO:0090304,nucleic acid metabolic process,2465,1,1.23,0.748,1
+GO:0006139,nucleobase-containing compound metabolic...,2776,1,1.39,0.7934,1
+GO:0046483,heterocycle metabolic process,2937,1,1.47,0.8141,1
+GO:0006725,cellular aromatic compound metabolic pro...,3019,1,1.51,0.824,1
+GO:1901360,organic cyclic compound metabolic proces...,3088,1,1.54,0.8319,1
+GO:0034641,cellular nitrogen compound metabolic pro...,3139,1,1.57,0.8376,1
+GO:0044260,cellular macromolecule metabolic process,4575,1,2.29,0.9437,1
+GO:0009987,cellular process,9324,3,4.66,0.9746,1
+GO:0043170,macromolecule metabolic process,5686,1,2.84,0.9787,1
