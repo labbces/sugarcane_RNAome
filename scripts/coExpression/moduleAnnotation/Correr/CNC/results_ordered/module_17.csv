@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019441,tryptophan catabolic process to kynureni...,5,1,0,0.0033,1
+GO:0070189,kynurenine metabolic process,5,1,0,0.0033,1
+GO:0006569,tryptophan catabolic process,6,1,0,0.004,1
+GO:0042436,indole-containing compound catabolic pro...,6,1,0,0.004,1
+GO:0046218,indolalkylamine catabolic process,6,1,0,0.004,1
+GO:0051607,defense response to virus,7,1,0,0.0047,1
+GO:0009310,amine catabolic process,10,1,0.01,0.0066,1
+GO:0009615,response to virus,10,1,0.01,0.0066,1
+GO:0042402,cellular biogenic amine catabolic proces...,10,1,0.01,0.0066,1
+GO:0002252,immune effector process,16,1,0.01,0.0106,1
+GO:0009074,aromatic amino acid family catabolic pro...,17,1,0.01,0.0113,1
+GO:0009742,brassinosteroid mediated signaling pathw...,20,1,0.01,0.0132,1
+GO:0043401,steroid hormone mediated signaling pathw...,20,1,0.01,0.0132,1
+GO:0048545,response to steroid hormone,20,1,0.01,0.0132,1
+GO:0071367,cellular response to brassinosteroid sti...,20,1,0.01,0.0132,1
+GO:0071383,cellular response to steroid hormone sti...,20,1,0.01,0.0132,1
+GO:0006099,tricarboxylic acid cycle,21,1,0.01,0.0139,1
+GO:0006568,tryptophan metabolic process,21,1,0.01,0.0139,1
+GO:0006586,indolalkylamine metabolic process,21,1,0.01,0.0139,1
+GO:0009741,response to brassinosteroid,25,1,0.02,0.0165,1
+GO:0042430,indole-containing compound metabolic pro...,25,1,0.02,0.0165,1
+GO:0042537,benzene-containing compound metabolic pr...,26,1,0.02,0.0172,1
+GO:0071407,cellular response to organic cyclic comp...,38,1,0.03,0.025,1
+GO:1901606,alpha-amino acid catabolic process,39,1,0.03,0.0257,1
+GO:0006576,cellular biogenic amine metabolic proces...,40,1,0.03,0.0263,1
+GO:0009060,aerobic respiration,42,1,0.03,0.0276,1
+GO:0009063,cellular amino acid catabolic process,42,1,0.03,0.0276,1
+GO:0044106,cellular amine metabolic process,43,1,0.03,0.0283,1
+GO:0042180,cellular ketone metabolic process,47,1,0.03,0.0309,1
+GO:0045333,cellular respiration,49,1,0.03,0.0322,1
+GO:0014070,response to organic cyclic compound,50,1,0.03,0.0328,1
+GO:0009072,aromatic amino acid family metabolic pro...,57,1,0.04,0.0373,1
+GO:0009308,amine metabolic process,61,1,0.04,0.0399,1
+GO:0016054,organic acid catabolic process,62,1,0.04,0.0406,1
+GO:0046395,carboxylic acid catabolic process,62,1,0.04,0.0406,1
+GO:0002376,immune system process,65,1,0.04,0.0425,1
+GO:0015980,energy derivation by oxidation of organi...,67,1,0.04,0.0438,1
+GO:0016458,gene silencing,89,1,0.06,0.0578,1
+GO:0031047,gene silencing by RNA,89,1,0.06,0.0578,1
+GO:0071396,cellular response to lipid,104,1,0.07,0.0672,1
+GO:0044282,small molecule catabolic process,113,1,0.08,0.0728,1
+GO:0044270,cellular nitrogen compound catabolic pro...,114,1,0.08,0.0735,1
+GO:0046700,heterocycle catabolic process,115,1,0.08,0.0741,1
+GO:0019439,aromatic compound catabolic process,131,1,0.09,0.084,1
+GO:1901361,organic cyclic compound catabolic proces...,133,1,0.09,0.0852,1
+GO:0033993,response to lipid,140,1,0.09,0.0895,1
+GO:0098542,defense response to other organism,140,1,0.09,0.0895,1
+GO:1901701,cellular response to oxygen-containing c...,151,1,0.1,0.0963,1
+GO:0055114,oxidation-reduction process,156,1,0.1,0.0993,1
+GO:1901605,alpha-amino acid metabolic process,171,1,0.11,0.1084,1

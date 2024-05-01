@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009631,cold acclimation,4,1,0,0.003,1
+GO:0005983,starch catabolic process,11,1,0.01,0.0082,1
+GO:0009608,response to symbiont,11,1,0.01,0.0082,1
+GO:0009610,response to symbiotic fungus,11,1,0.01,0.0082,1
+GO:0009628,response to abiotic stimulus,281,2,0.21,0.0176,1
+GO:0009251,glucan catabolic process,26,1,0.02,0.0193,1
+GO:0009640,photomorphogenesis,26,1,0.02,0.0193,1
+GO:0044247,cellular polysaccharide catabolic proces...,26,1,0.02,0.0193,1
+GO:0009409,response to cold,31,1,0.02,0.023,1
+GO:0005982,starch metabolic process,34,1,0.03,0.0252,1
+GO:0051028,mRNA transport,37,1,0.03,0.0274,1
+GO:0050657,nucleic acid transport,46,1,0.03,0.034,1
+GO:0050658,RNA transport,46,1,0.03,0.034,1
+GO:0051236,establishment of RNA localization,46,1,0.03,0.034,1
+GO:0006403,RNA localization,48,1,0.04,0.0354,1
+GO:0009639,response to red or far red light,51,1,0.04,0.0376,1
+GO:0044275,cellular carbohydrate catabolic process,51,1,0.04,0.0376,1
+GO:0009266,response to temperature stimulus,66,1,0.05,0.0484,1
+GO:0009620,response to fungus,66,1,0.05,0.0484,1
+GO:0043207,response to external biotic stimulus,513,2,0.38,0.0537,1
+GO:0051707,response to other organism,513,2,0.38,0.0537,1
+GO:0000272,polysaccharide catabolic process,75,1,0.06,0.0548,1
+GO:0044419,interspecies interaction between organis...,523,2,0.39,0.0556,1
+GO:0006913,nucleocytoplasmic transport,80,1,0.06,0.0584,1
+GO:0051169,nuclear transport,80,1,0.06,0.0584,1
+GO:0009607,response to biotic stimulus,550,2,0.41,0.0608,1
+GO:0015931,nucleobase-containing compound transport,95,1,0.07,0.069,1
+GO:0009605,response to external stimulus,591,2,0.44,0.0691,1
+GO:0009416,response to light stimulus,125,1,0.09,0.0899,1
+GO:0009314,response to radiation,130,1,0.1,0.0933,1
+GO:0006073,cellular glucan metabolic process,143,1,0.11,0.1022,1
+GO:0044042,glucan metabolic process,143,1,0.11,0.1022,1
+GO:0016052,carbohydrate catabolic process,171,1,0.13,0.1211,1
+GO:0044264,cellular polysaccharide metabolic proces...,183,1,0.14,0.1291,1
+GO:0009791,post-embryonic development,218,1,0.16,0.152,1
+GO:0005976,polysaccharide metabolic process,242,1,0.18,0.1674,1
+GO:0044262,cellular carbohydrate metabolic process,341,1,0.26,0.2284,1
+GO:0007275,multicellular organism development,352,1,0.26,0.2349,1
+GO:0046907,intracellular transport,354,1,0.27,0.2361,1
+GO:0009057,macromolecule catabolic process,362,1,0.27,0.2408,1
+GO:0051649,establishment of localization in cell,366,1,0.27,0.2431,1
+GO:0048856,anatomical structure development,426,1,0.32,0.2775,1
+GO:0015031,protein transport,446,1,0.33,0.2887,1
+GO:0045184,establishment of protein localization,455,1,0.34,0.2936,1
+GO:0032501,multicellular organismal process,458,1,0.34,0.2953,1
+GO:0070727,cellular macromolecule localization,471,1,0.35,0.3024,1
+GO:0008104,protein localization,473,1,0.35,0.3035,1
+GO:0032502,developmental process,475,1,0.36,0.3046,1
+GO:0015833,peptide transport,484,1,0.36,0.3094,1
+GO:0042886,amide transport,487,1,0.36,0.311,1

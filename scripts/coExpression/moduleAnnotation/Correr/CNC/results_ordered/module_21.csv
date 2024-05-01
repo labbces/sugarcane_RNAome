@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006357,regulation of transcription by RNA polym...,177,1,0.03,0.029,1
+GO:0006366,transcription by RNA polymerase II,211,1,0.04,0.035,1
+GO:0006355,regulation of transcription, DNA-templat...,288,1,0.05,0.047,1
+GO:1903506,regulation of nucleic acid-templated tra...,288,1,0.05,0.047,1
+GO:2001141,regulation of RNA biosynthetic process,288,1,0.05,0.047,1
+GO:0051252,regulation of RNA metabolic process,325,1,0.05,0.053,1
+GO:0019219,regulation of nucleobase-containing comp...,351,1,0.06,0.058,1
+GO:2000112,regulation of cellular macromolecule bio...,377,1,0.06,0.062,1
+GO:0010556,regulation of macromolecule biosynthetic...,380,1,0.06,0.062,1
+GO:0031326,regulation of cellular biosynthetic proc...,397,1,0.07,0.065,1
+GO:0009889,regulation of biosynthetic process,408,1,0.07,0.067,1
+GO:0010468,regulation of gene expression,499,1,0.08,0.081,1
+GO:0051171,regulation of nitrogen compound metaboli...,521,1,0.09,0.085,1
+GO:0006351,transcription, DNA-templated,531,1,0.09,0.086,1
+GO:0080090,regulation of primary metabolic process,544,1,0.09,0.089,1
+GO:0097659,nucleic acid-templated transcription,556,1,0.09,0.09,1
+GO:0031323,regulation of cellular metabolic process,558,1,0.09,0.091,1
+GO:0032774,RNA biosynthetic process,566,1,0.09,0.092,1
+GO:0060255,regulation of macromolecule metabolic pr...,639,1,0.11,0.104,1
+GO:0019222,regulation of metabolic process,695,1,0.12,0.112,1
+GO:0034654,nucleobase-containing compound biosynthe...,1024,1,0.17,0.163,1
+GO:0018130,heterocycle biosynthetic process,1155,1,0.19,0.183,1
+GO:0019438,aromatic compound biosynthetic process,1168,1,0.19,0.185,1
+GO:1901362,organic cyclic compound biosynthetic pro...,1246,1,0.21,0.197,1
+GO:0050794,regulation of cellular process,1288,1,0.21,0.203,1
+GO:0044271,cellular nitrogen compound biosynthetic ...,1423,1,0.24,0.223,1
+GO:0016070,RNA metabolic process,1429,1,0.24,0.224,1
+GO:0010467,gene expression,1459,1,0.24,0.228,1
+GO:0034645,cellular macromolecule biosynthetic proc...,1462,1,0.24,0.229,1
+GO:0050789,regulation of biological process,1512,1,0.25,0.236,1
+GO:0009059,macromolecule biosynthetic process,1516,1,0.25,0.236,1
+GO:0065007,biological regulation,1860,1,0.31,0.286,1
+GO:0044249,cellular biosynthetic process,2374,1,0.4,0.356,1
+GO:1901576,organic substance biosynthetic process,2446,1,0.41,0.366,1
+GO:0090304,nucleic acid metabolic process,2465,1,0.41,0.368,1
+GO:0009058,biosynthetic process,2488,1,0.41,0.371,1
+GO:0006139,nucleobase-containing compound metabolic...,2776,1,0.46,0.409,1
+GO:0046483,heterocycle metabolic process,2937,1,0.49,0.429,1
+GO:0006725,cellular aromatic compound metabolic pro...,3019,1,0.5,0.439,1
+GO:1901360,organic cyclic compound metabolic proces...,3088,1,0.51,0.448,1
+GO:0034641,cellular nitrogen compound metabolic pro...,3139,1,0.52,0.454,1
+GO:0044260,cellular macromolecule metabolic process,4575,1,0.76,0.617,1
+GO:0043170,macromolecule metabolic process,5686,1,0.95,0.723,1
+GO:0006807,nitrogen compound metabolic process,6059,1,1.01,0.754,1
+GO:0044237,cellular metabolic process,6863,1,1.14,0.816,1
+GO:0044238,primary metabolic process,6869,1,1.14,0.817,1
+GO:0071704,organic substance metabolic process,7289,1,1.21,0.845,1
+GO:0008152,metabolic process,7686,1,1.28,0.87,1
+GO:0009987,cellular process,9324,1,1.55,0.95,1
+GO:0008150,biological_process,11832,1,1.97,1,1
