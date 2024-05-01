@@ -1,4 +1,6 @@
-## Multi-genotype catalog of sugarcane lncRNAs
+# Multi-genotype analyses of long-ncRNAs in Sugarcane
+
+## Identification of long non-coding RNAs in sugarcane
 * [Predicting putative lncRNAs with CPC2](https://github.com/labbces/sugarcane_RNAome/wiki/Predicting-putative-lncRNAs-with-CPC2)
 * [Predicting putative lncRNAs with PLncPRO](https://github.com/labbces/sugarcane_RNAome/wiki/Predicting-putative-lncRNAs-with-PLncPRO)
 * [Predicting putative lncRNAs with RNAplonc](https://github.com/labbces/sugarcane_RNAome/wiki/Predicting-putative-lncRNAs-with-RNAplonc)
@@ -8,7 +10,7 @@ The following results represent the percentage of sequences classified as lncRNA
 
 ![predicting_lncRNAs_results](https://github.com/labbces/sugarcane_RNAome/blob/main/images/predicting_lncRNAs_results.PNG)
 
-## Similarity of lncRNAs
+## Conserved long non-coding RNAs in the panRNAome
 * [Clustering sequences by identity](https://github.com/labbces/sugarcane_RNAome/wiki/Clustering-sequences-by-identity)
 * [Inference of the pan-ncRNAome](https://github.com/labbces/sugarcane_RNAome/wiki/Inference-of-the-pan%E2%80%90ncRNAome)
 
