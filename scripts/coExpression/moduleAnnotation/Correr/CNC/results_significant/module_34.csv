@@ -1,0 +1,56 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006013,mannose metabolic process,4,3,0.23,0.00071,0.039
+GO:0006537,glutamate biosynthetic process,2,2,0.11,0.00325,0.0419
+GO:0048579,negative regulation of long-day photoper...,2,2,0.11,0.00325,0.0419
+GO:0042026,protein refolding,12,4,0.68,0.00359,0.0419
+GO:0006207,'de novo' pyrimidine nucleobase biosynth...,13,4,0.74,0.00495,0.0419
+GO:0010675,regulation of cellular carbohydrate meta...,7,3,0.4,0.00543,0.0419
+GO:0000244,spliceosomal tri-snRNP complex assembly,8,3,0.46,0.00833,0.0419
+GO:0010207,photosystem II assembly,8,3,0.46,0.00833,0.0419
+GO:0046940,nucleoside monophosphate phosphorylation,15,4,0.86,0.00863,0.0419
+GO:0006428,isoleucyl-tRNA aminoacylation,3,2,0.17,0.00937,0.0419
+GO:0055070,copper ion homeostasis,3,2,0.17,0.00937,0.0419
+GO:0009084,glutamine family amino acid biosynthetic...,16,4,0.91,0.011,0.0419
+GO:0006109,regulation of carbohydrate metabolic pro...,9,3,0.51,0.01197,0.0419
+GO:0009411,response to UV,26,5,1.48,0.01439,0.0419
+GO:0016441,posttranscriptional gene silencing,26,5,1.48,0.01439,0.0419
+GO:0035194,post-transcriptional gene silencing by R...,26,5,1.48,0.01439,0.0419
+GO:0071805,potassium ion transmembrane transport,46,7,2.62,0.01459,0.0419
+GO:0072665,protein localization to vacuole,27,5,1.54,0.01685,0.0419
+GO:0072666,establishment of protein localization to...,27,5,1.54,0.01685,0.0419
+GO:1902074,response to salt,4,2,0.23,0.01804,0.0419
+GO:0006206,pyrimidine nucleobase metabolic process,19,4,1.08,0.02046,0.0419
+GO:0019856,pyrimidine nucleobase biosynthetic proce...,19,4,1.08,0.02046,0.0419
+GO:0031050,dsRNA processing,19,4,1.08,0.02046,0.0419
+GO:0070918,production of small RNA involved in gene...,19,4,1.08,0.02046,0.0419
+GO:0003006,developmental process involved in reprod...,201,19,11.46,0.02092,0.0419
+GO:0000003,reproduction,330,28,18.82,0.02287,0.0419
+GO:0022414,reproductive process,330,28,18.82,0.02287,0.0419
+GO:0048608,reproductive structure development,177,17,10.09,0.02435,0.0419
+GO:0061458,reproductive system development,177,17,10.09,0.02435,0.0419
+GO:0006541,glutamine metabolic process,20,4,1.14,0.02445,0.0419
+GO:0051241,negative regulation of multicellular org...,20,4,1.14,0.02445,0.0419
+GO:0006813,potassium ion transport,51,7,2.91,0.02474,0.0419
+GO:2000242,negative regulation of reproductive proc...,12,3,0.68,0.02759,0.0419
+GO:0006521,regulation of cellular amino acid metabo...,5,2,0.29,0.02893,0.0419
+GO:0006572,tyrosine catabolic process,5,2,0.29,0.02893,0.0419
+GO:0032881,regulation of polysaccharide metabolic p...,5,2,0.29,0.02893,0.0419
+GO:0033238,regulation of cellular amine metabolic p...,5,2,0.29,0.02893,0.0419
+GO:0048586,regulation of long-day photoperiodism, f...,5,2,0.29,0.02893,0.0419
+GO:0006783,heme biosynthetic process,22,4,1.25,0.03375,0.0442
+GO:0046112,nucleobase biosynthetic process,22,4,1.25,0.03375,0.0442
+GO:0030422,production of siRNA involved in RNA inte...,13,3,0.74,0.03438,0.0442
+GO:0072594,establishment of protein localization to...,117,12,6.67,0.03454,0.0442
+GO:0006605,protein targeting,93,10,5.3,0.03872,0.0442
+GO:0042168,heme metabolic process,23,4,1.31,0.03907,0.0442
+GO:0051093,negative regulation of developmental pro...,23,4,1.31,0.03907,0.0442
+GO:0006536,glutamate metabolic process,6,2,0.34,0.04178,0.0442
+GO:0036294,cellular response to decreased oxygen le...,6,2,0.34,0.04178,0.0442
+GO:0043255,regulation of carbohydrate biosynthetic ...,6,2,0.34,0.04178,0.0442
+GO:0048571,long-day photoperiodism,6,2,0.34,0.04178,0.0442
+GO:0048574,long-day photoperiodism, flowering,6,2,0.34,0.04178,0.0442
+GO:0071453,cellular response to oxygen levels,6,2,0.34,0.04178,0.0442
+GO:0071456,cellular response to hypoxia,6,2,0.34,0.04178,0.0442
+GO:0040008,regulation of growth,46,6,2.62,0.04521,0.0469
+GO:0009908,flower development,84,9,4.79,0.04928,0.0494
+GO:0010073,meristem maintenance,47,6,2.68,0.04943,0.0494

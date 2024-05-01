@@ -1,0 +1,129 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016070,RNA metabolic process,1429,81,53.41,7e-05,0.0077
+GO:0006383,transcription by RNA polymerase III,31,7,1.16,0.00012,0.0077
+GO:0010467,gene expression,1459,78,54.53,0.00062,0.0265
+GO:0006396,RNA processing,527,34,19.7,0.00135,0.0307
+GO:0009789,positive regulation of abscisic acid-act...,8,3,0.3,0.00252,0.0307
+GO:0043484,regulation of RNA splicing,8,3,0.3,0.00252,0.0307
+GO:1901421,positive regulation of response to alcoh...,8,3,0.3,0.00252,0.0307
+GO:1905959,positive regulation of cellular response...,8,3,0.3,0.00252,0.0307
+GO:0006139,nucleobase-containing compound metabolic...,2776,129,103.76,0.00285,0.0307
+GO:0090304,nucleic acid metabolic process,2465,116,92.13,0.00328,0.0307
+GO:0006725,cellular aromatic compound metabolic pro...,3019,138,112.84,0.00362,0.0307
+GO:0006384,transcription initiation from RNA polyme...,9,3,0.34,0.00368,0.0307
+GO:0009646,response to absence of light,9,3,0.34,0.00368,0.0307
+GO:0019320,hexose catabolic process,3,2,0.11,0.00408,0.0307
+GO:0071485,cellular response to absence of light,3,2,0.11,0.00408,0.0307
+GO:0071588,hydrogen peroxide mediated signaling pat...,3,2,0.11,0.00408,0.0307
+GO:1901528,hydrogen peroxide mediated signaling pat...,3,2,0.11,0.00408,0.0307
+GO:0008380,RNA splicing,141,12,5.27,0.00656,0.0439
+GO:0046365,monosaccharide catabolic process,4,2,0.15,0.00795,0.0439
+GO:0071484,cellular response to light intensity,4,2,0.15,0.00795,0.0439
+GO:1901360,organic cyclic compound metabolic proces...,3088,138,115.42,0.00833,0.0439
+GO:0090351,seedling development,12,3,0.45,0.00887,0.0439
+GO:0016071,mRNA metabolic process,282,19,10.54,0.00964,0.0439
+GO:0046483,heterocycle metabolic process,2937,131,109.77,0.01116,0.0439
+GO:0032774,RNA biosynthetic process,566,32,21.15,0.01282,0.0439
+GO:0000463,maturation of LSU-rRNA from tricistronic...,5,2,0.19,0.01293,0.0439
+GO:0071244,cellular response to carbon dioxide,5,2,0.19,0.01293,0.0439
+GO:0034641,cellular nitrogen compound metabolic pro...,3139,138,117.32,0.01461,0.0439
+GO:0010466,negative regulation of peptidase activit...,26,4,0.97,0.01499,0.0439
+GO:0010951,negative regulation of endopeptidase act...,26,4,0.97,0.01499,0.0439
+GO:0045861,negative regulation of proteolysis,26,4,0.97,0.01499,0.0439
+GO:0090305,nucleic acid phosphodiester bond hydroly...,275,18,10.28,0.01518,0.0439
+GO:0071396,cellular response to lipid,104,9,3.89,0.01573,0.0439
+GO:0006351,transcription, DNA-templated,531,30,19.85,0.01581,0.0439
+GO:0044237,cellular metabolic process,6863,279,256.51,0.01593,0.0439
+GO:0000373,Group II intron splicing,15,3,0.56,0.01688,0.0439
+GO:0097659,nucleic acid-templated transcription,556,31,20.78,0.01695,0.0439
+GO:0052548,regulation of endopeptidase activity,27,4,1.01,0.01709,0.0439
+GO:0010037,response to carbon dioxide,6,2,0.22,0.01892,0.0439
+GO:0010215,cellulose microfibril organization,6,2,0.22,0.01892,0.0439
+GO:0030198,extracellular matrix organization,6,2,0.22,0.01892,0.0439
+GO:0043062,extracellular structure organization,6,2,0.22,0.01892,0.0439
+GO:0070726,cell wall assembly,6,2,0.22,0.01892,0.0439
+GO:0071668,plant-type cell wall assembly,6,2,0.22,0.01892,0.0439
+GO:0090333,regulation of stomatal closure,6,2,0.22,0.01892,0.0439
+GO:0006950,response to stress,1961,90,73.29,0.01936,0.0439
+GO:0000209,protein polyubiquitination,28,4,1.05,0.01936,0.0439
+GO:0006379,mRNA cleavage,16,3,0.6,0.02021,0.0439
+GO:0042273,ribosomal large subunit biogenesis,16,3,0.6,0.02021,0.0439
+GO:0006397,mRNA processing,205,14,7.66,0.02182,0.0439
+GO:0030162,regulation of proteolysis,44,5,1.64,0.02337,0.0439
+GO:0052547,regulation of peptidase activity,30,4,1.12,0.02445,0.0439
+GO:0006086,acetyl-CoA biosynthetic process from pyr...,7,2,0.26,0.02584,0.0439
+GO:0031056,regulation of histone modification,7,2,0.26,0.02584,0.0439
+GO:0072347,response to anesthetic,7,2,0.26,0.02584,0.0439
+GO:0090332,stomatal closure,7,2,0.26,0.02584,0.0439
+GO:1902275,regulation of chromatin organization,7,2,0.26,0.02584,0.0439
+GO:1901701,cellular response to oxygen-containing c...,151,11,5.64,0.02616,0.0439
+GO:0030488,tRNA methylation,18,3,0.67,0.02787,0.0439
+GO:0071478,cellular response to radiation,32,4,1.2,0.03028,0.0439
+GO:0032269,negative regulation of cellular protein ...,82,7,3.06,0.0334,0.0439
+GO:0006807,nitrogen compound metabolic process,6059,246,226.46,0.03343,0.0439
+GO:0051346,negative regulation of hydrolase activit...,33,4,1.23,0.03347,0.0439
+GO:0006085,acetyl-CoA biosynthetic process,8,2,0.3,0.03361,0.0439
+GO:0009423,chorismate biosynthetic process,8,2,0.3,0.03361,0.0439
+GO:0018342,protein prenylation,8,2,0.3,0.03361,0.0439
+GO:0097354,prenylation,8,2,0.3,0.03361,0.0439
+GO:0006399,tRNA metabolic process,238,15,8.9,0.03377,0.0439
+GO:0051248,negative regulation of protein metabolic...,83,7,3.1,0.03535,0.0439
+GO:0050896,response to stimulus,2822,122,105.48,0.03605,0.0439
+GO:0009642,response to light intensity,20,3,0.75,0.03686,0.0439
+GO:0006338,chromatin remodeling,102,8,3.81,0.03698,0.0439
+GO:0000374,Group III intron splicing,1,1,0.04,0.03738,0.0439
+GO:0006398,mRNA 3'-end processing by stem-loop bind...,1,1,0.04,0.03738,0.0439
+GO:0006434,seryl-tRNA aminoacylation,1,1,0.04,0.03738,0.0439
+GO:0008334,histone mRNA metabolic process,1,1,0.04,0.03738,0.0439
+GO:0010896,regulation of triglyceride catabolic pro...,1,1,0.04,0.03738,0.0439
+GO:0019388,galactose catabolic process,1,1,0.04,0.03738,0.0439
+GO:0019433,triglyceride catabolic process,1,1,0.04,0.03738,0.0439
+GO:0031058,positive regulation of histone modificat...,1,1,0.04,0.03738,0.0439
+GO:0031062,positive regulation of histone methylati...,1,1,0.04,0.03738,0.0439
+GO:0031119,tRNA pseudouridine synthesis,1,1,0.04,0.03738,0.0439
+GO:0031204,posttranslational protein targeting to m...,1,1,0.04,0.03738,0.0439
+GO:0033182,regulation of histone ubiquitination,1,1,0.04,0.03738,0.0439
+GO:0033183,negative regulation of histone ubiquitin...,1,1,0.04,0.03738,0.0439
+GO:0033499,galactose catabolic process via UDP-gala...,1,1,0.04,0.03738,0.0439
+GO:0033522,histone H2A ubiquitination,1,1,0.04,0.03738,0.0439
+GO:0044090,positive regulation of vacuole organizat...,1,1,0.04,0.03738,0.0439
+GO:0046461,neutral lipid catabolic process,1,1,0.04,0.03738,0.0439
+GO:0046464,acylglycerol catabolic process,1,1,0.04,0.03738,0.0439
+GO:0046503,glycerolipid catabolic process,1,1,0.04,0.03738,0.0439
+GO:0061087,positive regulation of histone H3-K27 me...,1,1,0.04,0.03738,0.0439
+GO:0070535,histone H2A K63-linked ubiquitination,1,1,0.04,0.03738,0.0439
+GO:0070898,RNA polymerase III preinitiation complex...,1,1,0.04,0.03738,0.0439
+GO:0071480,cellular response to gamma radiation,1,1,0.04,0.03738,0.0439
+GO:0071481,cellular response to X-ray,1,1,0.04,0.03738,0.0439
+GO:0090207,regulation of triglyceride metabolic pro...,1,1,0.04,0.03738,0.0439
+GO:0098787,mRNA cleavage involved in mRNA processin...,1,1,0.04,0.03738,0.0439
+GO:0098789,pre-mRNA cleavage required for polyadeny...,1,1,0.04,0.03738,0.0439
+GO:1900044,regulation of protein K63-linked ubiquit...,1,1,0.04,0.03738,0.0439
+GO:1900045,negative regulation of protein K63-linke...,1,1,0.04,0.03738,0.0439
+GO:1901314,regulation of histone H2A K63-linked ubi...,1,1,0.04,0.03738,0.0439
+GO:1901315,negative regulation of histone H2A K63-l...,1,1,0.04,0.03738,0.0439
+GO:1902183,regulation of shoot apical meristem deve...,1,1,0.04,0.03738,0.0439
+GO:1902184,negative regulation of shoot apical meri...,1,1,0.04,0.03738,0.0439
+GO:1902914,regulation of protein polyubiquitination,1,1,0.04,0.03738,0.0439
+GO:1902915,negative regulation of protein polyubiqu...,1,1,0.04,0.03738,0.0439
+GO:1903415,flavonoid transport from endoplasmic ret...,1,1,0.04,0.03738,0.0439
+GO:1905269,positive regulation of chromatin organiz...,1,1,0.04,0.03738,0.0439
+GO:0006796,phosphate-containing compound metabolic ...,2096,93,78.34,0.03846,0.0445
+GO:0034660,ncRNA metabolic process,371,21,13.87,0.03862,0.0445
+GO:0046855,inositol phosphate dephosphorylation,35,4,1.31,0.04042,0.0455
+GO:0071545,inositol phosphate catabolic process,35,4,1.31,0.04042,0.0455
+GO:0032268,regulation of cellular protein metabolic...,182,12,6.8,0.04051,0.0455
+GO:0033044,regulation of chromosome organization,21,3,0.78,0.04185,0.0461
+GO:0046417,chorismate metabolic process,9,2,0.34,0.04216,0.0461
+GO:0071241,cellular response to inorganic substance,9,2,0.34,0.04216,0.0461
+GO:0019637,organophosphate metabolic process,512,27,19.14,0.04498,0.0485
+GO:0051716,cellular response to stimulus,1174,55,43.88,0.04594,0.0485
+GO:0006793,phosphorus metabolic process,2116,93,79.09,0.04726,0.0485
+GO:0006952,defense response,1299,60,48.55,0.048,0.0485
+GO:0051246,regulation of protein metabolic process,187,12,6.99,0.0481,0.0485
+GO:0033865,nucleoside bisphosphate metabolic proces...,37,4,1.38,0.04813,0.0485
+GO:0033875,ribonucleoside bisphosphate metabolic pr...,37,4,1.38,0.04813,0.0485
+GO:0034032,purine nucleoside bisphosphate metabolic...,37,4,1.38,0.04813,0.0485
+GO:0046164,alcohol catabolic process,37,4,1.38,0.04813,0.0485
+GO:0046174,polyol catabolic process,37,4,1.38,0.04813,0.0485
+GO:0008033,tRNA processing,127,9,4.75,0.04846,0.0485

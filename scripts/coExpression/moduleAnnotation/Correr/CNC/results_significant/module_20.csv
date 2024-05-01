@@ -1,0 +1,5 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0000398,mRNA splicing, via spliceosome,97,1,0.03,0.032,0.046
+GO:0000377,RNA splicing, via transesterification re...,112,1,0.04,0.037,0.046
+GO:0000375,RNA splicing, via transesterification re...,113,1,0.04,0.037,0.046
+GO:0008380,RNA splicing,141,1,0.05,0.046,0.046
