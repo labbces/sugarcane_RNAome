@@ -10,7 +10,7 @@ if (length(args) != 3) {                                                        
   stop("Invalid number of arguments. Please provide the file names.")
 }
 
-results_path <- "results/"                                                               # output directory 
+results_path <- "results_ordered/"                                                       # output directory 
 dir.create(results_path, recursive = TRUE)                                               # create recursive dir
 
 load_files <- function(clusterSize, GO_universe, Cliques){                               # function to load files
@@ -69,7 +69,7 @@ anot_modules <- function(Module_no, results_path){                              
   ntop <- 30                                                                                               # only plot top 30 out 50 terms
   ggdata <- topGO_all_table[1:ntop,]
   #ggdata <- ggdata[!duplicated(ggdata$Term), ]                                                            # remove duplicated Terms                               
-  #ggdata$Term <- factor(ggdata$Term, levels = rev(ggdata$Term))                                           # fixes order
+  ggdata$Term <- factor(ggdata$Term, levels = ggdata$Term)                                                 # fixes order
   #ggdata$Classic <- as.numeric(ggdata$Classic) + 0.000001                                                 # Add small number for log operations (log10 must be > 0) 
   ggdata
   
@@ -77,7 +77,7 @@ anot_modules <- function(Module_no, results_path){                              
   div_points <- quantile(-log10(ggdata$Classic), probs = c(0.95, 0.5, 0.05))                               # calculate quantiles for dividing the plot
   
   ggplot(ggdata,
-         aes(x = ggdata$Term, y = -log10(Classic), size = -log10(Classic), fill = -log10(Classic))) +
+         aes(x = Term, y = -log10(Classic), size = -log10(Classic), fill = -log10(Classic))) +
     
     expand_limits(y = 1) +
     geom_point(shape = 21) +
