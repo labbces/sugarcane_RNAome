@@ -68,7 +68,7 @@ anot_modules <- function(Module_no, results_path){                              
   
   ntop <- 30                                                                                               # only plot top 30 out 50 terms
   ggdata <- topGO_all_table[1:ntop,]
-  #ggdata <- ggdata[!duplicated(ggdata$Term), ]                                                            # remove duplicated Terms                               
+  ggdata <- ggdata[!duplicated(ggdata$Term), ]                                                             # remove duplicated Terms                               
   ggdata$Term <- factor(ggdata$Term, levels = ggdata$Term)                                                 # fixes order
   #ggdata$Classic <- as.numeric(ggdata$Classic) + 0.000001                                                 # Add small number for log operations (log10 must be > 0) 
   ggdata
