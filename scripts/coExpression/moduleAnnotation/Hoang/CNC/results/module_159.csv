@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0034198,cellular response to amino acid starvati...,1,1,0.02,0.017,1
+GO:0034635,glutathione transport,1,1,0.02,0.017,1
+GO:0070125,mitochondrial translational elongation,1,1,0.02,0.017,1
+GO:1990928,response to amino acid starvation,1,1,0.02,0.017,1
+GO:0006549,isoleucine metabolic process,13,2,0.22,0.019,1
+GO:0009097,isoleucine biosynthetic process,13,2,0.22,0.019,1
+GO:0046901,tetrahydrofolylpolyglutamate biosyntheti...,13,2,0.22,0.019,1
+GO:0046900,tetrahydrofolylpolyglutamate metabolic p...,14,2,0.23,0.022,1
+GO:0032790,ribosome disassembly,2,1,0.03,0.033,1
+GO:0042254,ribosome biogenesis,228,8,3.81,0.038,1
+GO:1901292,nucleoside phosphate catabolic process,19,2,0.32,0.039,1
+GO:0006364,rRNA processing,189,7,3.16,0.04,1
+GO:0016072,rRNA metabolic process,190,7,3.17,0.041,1
+GO:0009396,folic acid-containing compound biosynthe...,20,2,0.33,0.043,1
+GO:0034655,nucleobase-containing compound catabolic...,153,6,2.56,0.044,1
+GO:0009082,branched-chain amino acid biosynthetic p...,21,2,0.35,0.047,1
+GO:0043549,regulation of kinase activity,49,3,0.82,0.048,1
+GO:0006621,protein retention in ER lumen,3,1,0.05,0.049,1
+GO:0009301,snRNA transcription,3,1,0.05,0.049,1
+GO:0042796,snRNA transcription by RNA polymerase II...,3,1,0.05,0.049,1
+GO:0072331,signal transduction by p53 class mediato...,3,1,0.05,0.049,1
+GO:0072332,intrinsic apoptotic signaling pathway by...,3,1,0.05,0.049,1
+GO:0072337,modified amino acid transport,3,1,0.05,0.049,1
+GO:0015995,chlorophyll biosynthetic process,22,2,0.37,0.052,1
+GO:0042559,pteridine-containing compound biosynthet...,22,2,0.37,0.052,1
+GO:0042325,regulation of phosphorylation,53,3,0.89,0.059,1
+GO:0033674,positive regulation of kinase activity,24,2,0.4,0.06,1
+GO:0000160,phosphorelay signal transduction system,89,4,1.49,0.062,1
+GO:0006779,porphyrin-containing compound biosynthet...,55,3,0.92,0.064,1
+GO:0006780,uroporphyrinogen III biosynthetic proces...,4,1,0.07,0.065,1
+GO:0007215,glutamate receptor signaling pathway,4,1,0.07,0.065,1
+GO:0009154,purine ribonucleotide catabolic process,4,1,0.07,0.065,1
+GO:0009261,ribonucleotide catabolic process,4,1,0.07,0.065,1
+GO:0010081,regulation of inflorescence meristem gro...,4,1,0.07,0.065,1
+GO:0010450,inflorescence meristem growth,4,1,0.07,0.065,1
+GO:0016487,farnesol metabolic process,4,1,0.07,0.065,1
+GO:0035235,ionotropic glutamate receptor signaling ...,4,1,0.07,0.065,1
+GO:0035437,maintenance of protein localization in e...,4,1,0.07,0.065,1
+GO:0046502,uroporphyrinogen III metabolic process,4,1,0.07,0.065,1
+GO:0051211,anisotropic cell growth,4,1,0.07,0.065,1
+GO:0098532,histone H3-K27 trimethylation,4,1,0.07,0.065,1
+GO:1990806,ligand-gated ion channel signaling pathw...,4,1,0.07,0.065,1
+GO:0044283,small molecule biosynthetic process,486,13,8.12,0.066,1
+GO:0010562,positive regulation of phosphorus metabo...,27,2,0.45,0.074,1
+GO:0042327,positive regulation of phosphorylation,27,2,0.45,0.074,1
+GO:0045937,positive regulation of phosphate metabol...,27,2,0.45,0.074,1
+GO:0006428,isoleucyl-tRNA aminoacylation,5,1,0.08,0.081,1
+GO:0034389,lipid droplet organization,5,1,0.08,0.081,1
+GO:0040031,snRNA modification,5,1,0.08,0.081,1
+GO:0045736,negative regulation of cyclin-dependent ...,5,1,0.08,0.081,1

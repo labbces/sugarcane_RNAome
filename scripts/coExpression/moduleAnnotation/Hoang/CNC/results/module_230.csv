@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006722,triterpenoid metabolic process,81,11,2.31,1.8e-05,0.044
+GO:0016104,triterpenoid biosynthetic process,81,11,2.31,1.8e-05,0.044
+GO:0016114,terpenoid biosynthetic process,157,15,4.48,4.5e-05,0.0734
+GO:0006721,terpenoid metabolic process,177,15,5.05,0.00018,0.2201
+GO:0008299,isoprenoid biosynthetic process,191,15,5.45,4e-04,0.3914
+GO:0008150,biological_process,16230,499,462.76,0.00072,0.5172
+GO:1901701,cellular response to oxygen-containing c...,224,16,6.39,0.00074,0.5172
+GO:1901700,response to oxygen-containing compound,390,23,11.12,0.00089,0.5442
+GO:0071229,cellular response to acid chemical,170,13,4.85,0.00122,0.6226
+GO:0006720,isoprenoid metabolic process,215,15,6.13,0.00135,0.6226
+GO:0046677,response to antibiotic,59,7,1.68,0.0014,0.6226
+GO:0018193,peptidyl-amino acid modification,370,21,10.55,0.00232,0.9458
+GO:0009226,nucleotide-sugar biosynthetic process,35,5,1,0.00297,1
+GO:0016554,cytidine to uridine editing,11,3,0.31,0.00321,1
+GO:0071310,cellular response to organic substance,439,23,12.52,0.00402,1
+GO:0071495,cellular response to endogenous stimulus,421,22,12,0.00498,1
+GO:0071236,cellular response to antibiotic,26,4,0.74,0.00594,1
+GO:0071396,cellular response to lipid,162,11,4.62,0.00689,1
+GO:0006265,DNA topological change,43,5,1.23,0.0073,1
+GO:0032870,cellular response to hormone stimulus,410,21,11.69,0.00745,1
+GO:0016553,base conversion or substitution editing,15,3,0.43,0.00813,1
+GO:0018208,peptidyl-proline modification,45,5,1.28,0.00885,1
+GO:0043647,inositol phosphate metabolic process,63,6,1.8,0.00901,1
+GO:0046855,inositol phosphate dephosphorylation,46,5,1.31,0.0097,1
+GO:0071545,inositol phosphate catabolic process,46,5,1.31,0.0097,1
+GO:0042752,regulation of circadian rhythm,16,3,0.46,0.00979,1
+GO:0001101,response to acid chemical,267,15,7.61,0.01005,1
+GO:0046942,carboxylic acid transport,105,8,2.99,0.01038,1
+GO:0044282,small molecule catabolic process,149,10,4.25,0.01052,1
+GO:0015849,organic acid transport,106,8,3.02,0.01096,1
+GO:0006928,movement of cell or subcellular componen...,128,9,3.65,0.01118,1
+GO:0009225,nucleotide-sugar metabolic process,48,5,1.37,0.01157,1
+GO:0000466,maturation of 5.8S rRNA from tricistroni...,17,3,0.48,0.01164,1
+GO:0046174,polyol catabolic process,49,5,1.4,0.01259,1
+GO:0046838,phosphorylated carbohydrate dephosphoryl...,50,5,1.43,0.01367,1
+GO:0035690,cellular response to drug,33,4,0.94,0.01391,1
+GO:0016311,dephosphorylation,203,12,5.79,0.01394,1
+GO:0090305,nucleic acid phosphodiester bond hydroly...,384,19,10.95,0.01478,1
+GO:0009298,GDP-mannose biosynthetic process,7,2,0.2,0.0155,1
+GO:1900865,chloroplast RNA modification,7,2,0.2,0.0155,1
+GO:0000460,maturation of 5.8S rRNA,19,3,0.54,0.01591,1
+GO:0044255,cellular lipid metabolic process,808,34,23.04,0.01594,1
+GO:0006865,amino acid transport,72,6,2.05,0.01674,1
+GO:0046164,alcohol catabolic process,53,5,1.51,0.01727,1
+GO:0007018,microtubule-based movement,94,7,2.68,0.01797,1
+GO:0042493,response to drug,116,8,3.31,0.01808,1
+GO:0070887,cellular response to chemical stimulus,589,26,16.79,0.0192,1
+GO:1901616,organic hydroxy compound catabolic proce...,55,5,1.57,0.02,1
+GO:0019673,GDP-mannose metabolic process,8,2,0.23,0.02028,1
+GO:0048653,anther development,8,2,0.23,0.02028,1

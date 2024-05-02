@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0000162,tryptophan biosynthetic process,15,2,0.07,0.0021,1
+GO:0046219,indolalkylamine biosynthetic process,15,2,0.07,0.0021,1
+GO:0006568,tryptophan metabolic process,19,2,0.09,0.0033,1
+GO:0006586,indolalkylamine metabolic process,19,2,0.09,0.0033,1
+GO:0042435,indole-containing compound biosynthetic ...,20,2,0.09,0.0037,1
+GO:0007008,outer mitochondrial membrane organizatio...,1,1,0,0.0045,1
+GO:0045040,protein insertion into mitochondrial out...,1,1,0,0.0045,1
+GO:0042430,indole-containing compound metabolic pro...,27,2,0.12,0.0067,1
+GO:0009309,amine biosynthetic process,30,2,0.14,0.0082,1
+GO:0042401,cellular biogenic amine biosynthetic pro...,30,2,0.14,0.0082,1
+GO:0000578,embryonic axis specification,2,1,0.01,0.0091,1
+GO:0009880,embryonic pattern specification,2,1,0.01,0.0091,1
+GO:0009942,longitudinal axis specification,2,1,0.01,0.0091,1
+GO:0044571,[2Fe-2S] cluster assembly,2,1,0.01,0.0091,1
+GO:1901141,regulation of lignin biosynthetic proces...,2,1,0.01,0.0091,1
+GO:0035520,monoubiquitinated protein deubiquitinati...,3,1,0.01,0.0136,1
+GO:0035521,monoubiquitinated histone deubiquitinati...,3,1,0.01,0.0136,1
+GO:0035522,monoubiquitinated histone H2A deubiquiti...,3,1,0.01,0.0136,1
+GO:0006576,cellular biogenic amine metabolic proces...,42,2,0.19,0.0157,1
+GO:0044106,cellular amine metabolic process,46,2,0.21,0.0186,1
+GO:0009073,aromatic amino acid family biosynthetic ...,48,2,0.22,0.0202,1
+GO:0006657,CDP-choline pathway,5,1,0.02,0.0225,1
+GO:0009798,axis specification,5,1,0.02,0.0225,1
+GO:0032447,protein urmylation,5,1,0.02,0.0225,1
+GO:1900376,regulation of secondary metabolite biosy...,5,1,0.02,0.0225,1
+GO:0006656,phosphatidylcholine biosynthetic process,6,1,0.03,0.027,1
+GO:0016578,histone deubiquitination,6,1,0.03,0.027,1
+GO:0034227,tRNA thio-modification,6,1,0.03,0.027,1
+GO:0009308,amine metabolic process,67,2,0.3,0.0374,1
+GO:0046470,phosphatidylcholine metabolic process,9,1,0.04,0.0402,1
+GO:0009072,aromatic amino acid family metabolic pro...,73,2,0.33,0.0437,1
+GO:0015937,coenzyme A biosynthetic process,10,1,0.05,0.0446,1
+GO:0010286,heat acclimation,11,1,0.05,0.0489,1
+GO:0015936,coenzyme A metabolic process,14,1,0.06,0.0618,1
+GO:2000762,regulation of phenylpropanoid metabolic ...,14,1,0.06,0.0618,1
+GO:0006122,mitochondrial electron transport, ubiqui...,15,1,0.07,0.0661,1
+GO:0002098,tRNA wobble uridine modification,16,1,0.07,0.0704,1
+GO:0009809,lignin biosynthetic process,16,1,0.07,0.0704,1
+GO:0051259,protein complex oligomerization,17,1,0.08,0.0746,1
+GO:0002097,tRNA wobble base modification,20,1,0.09,0.0872,1
+GO:0043455,regulation of secondary metabolic proces...,20,1,0.09,0.0872,1
+GO:0051204,protein insertion into mitochondrial mem...,21,1,0.1,0.0913,1
+GO:0006646,phosphatidylethanolamine biosynthetic pr...,23,1,0.1,0.0996,1
+GO:0019646,aerobic electron transport chain,23,1,0.1,0.0996,1
+GO:0042775,mitochondrial ATP synthesis coupled elec...,23,1,0.1,0.0996,1
+GO:0046337,phosphatidylethanolamine metabolic proce...,23,1,0.1,0.0996,1
+GO:0090151,establishment of protein localization to...,23,1,0.1,0.0996,1
+GO:0007006,mitochondrial membrane organization,24,1,0.11,0.1037,1
+GO:0016102,diterpenoid biosynthetic process,24,1,0.11,0.1037,1
+GO:0006366,transcription by RNA polymerase II,255,3,1.16,0.1105,1

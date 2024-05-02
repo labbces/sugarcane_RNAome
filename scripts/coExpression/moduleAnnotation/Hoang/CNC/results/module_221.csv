@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019374,galactolipid metabolic process,4,2,0.06,0.0014,1
+GO:0043038,amino acid activation,183,8,2.8,0.0074,1
+GO:0043039,tRNA aminoacylation,183,8,2.8,0.0074,1
+GO:0006399,tRNA metabolic process,359,12,5.49,0.0097,1
+GO:0007033,vacuole organization,33,3,0.51,0.0138,1
+GO:0006761,dihydrofolate biosynthetic process,1,1,0.02,0.0153,1
+GO:0042868,antisense RNA metabolic process,1,1,0.02,0.0153,1
+GO:0046452,dihydrofolate metabolic process,1,1,0.02,0.0153,1
+GO:0061951,establishment of protein localization to...,1,1,0.02,0.0153,1
+GO:0071076,RNA 3' uridylation,1,1,0.02,0.0153,1
+GO:0099638,endosome to plasma membrane protein tran...,1,1,0.02,0.0153,1
+GO:1990126,retrograde transport, endosome to plasma...,1,1,0.02,0.0153,1
+GO:0007032,endosome organization,13,2,0.2,0.0163,1
+GO:0006418,tRNA aminoacylation for protein translat...,171,7,2.62,0.0165,1
+GO:0034660,ncRNA metabolic process,577,16,8.83,0.0168,1
+GO:0007019,microtubule depolymerization,2,1,0.03,0.0304,1
+GO:0030050,vesicle transport along actin filament,2,1,0.03,0.0304,1
+GO:0036166,phenotypic switching,2,1,0.03,0.0304,1
+GO:0060964,regulation of gene silencing by miRNA,2,1,0.03,0.0304,1
+GO:0090677,reversible differentiation,2,1,0.03,0.0304,1
+GO:0099515,actin filament-based transport,2,1,0.03,0.0304,1
+GO:0099518,vesicle cytoskeletal trafficking,2,1,0.03,0.0304,1
+GO:0016050,vesicle organization,46,3,0.7,0.0333,1
+GO:0006643,membrane lipid metabolic process,121,5,1.85,0.0386,1
+GO:0009395,phospholipid catabolic process,3,1,0.05,0.0452,1
+GO:0006664,glycolipid metabolic process,90,4,1.38,0.0495,1
+GO:1903509,liposaccharide metabolic process,91,4,1.39,0.0512,1
+GO:0032504,multicellular organism reproduction,24,2,0.37,0.0517,1
+GO:0048609,multicellular organismal reproductive pr...,24,2,0.37,0.0517,1
+GO:0006004,fucose metabolic process,56,3,0.86,0.0544,1
+GO:0051648,vesicle localization,26,2,0.4,0.0597,1
+GO:0051650,establishment of vesicle localization,26,2,0.4,0.0597,1
+GO:0000712,resolution of meiotic recombination inte...,4,1,0.06,0.0598,1
+GO:0006678,glucosylceramide metabolic process,4,1,0.06,0.0598,1
+GO:0006680,glucosylceramide catabolic process,4,1,0.06,0.0598,1
+GO:0007143,female meiotic nuclear division,4,1,0.06,0.0598,1
+GO:0007292,female gamete generation,4,1,0.06,0.0598,1
+GO:0010452,histone H3-K36 methylation,4,1,0.06,0.0598,1
+GO:0016074,snoRNA metabolic process,4,1,0.06,0.0598,1
+GO:0036257,multivesicular body organization,4,1,0.06,0.0598,1
+GO:0043144,snoRNA processing,4,1,0.06,0.0598,1
+GO:0051307,meiotic chromosome separation,4,1,0.06,0.0598,1
+GO:0070973,protein localization to endoplasmic reti...,4,1,0.06,0.0598,1
+GO:0072659,protein localization to plasma membrane,4,1,0.06,0.0598,1
+GO:1900368,regulation of RNA interference,4,1,0.06,0.0598,1
+GO:0006302,double-strand break repair,59,3,0.9,0.0617,1
+GO:0010256,endomembrane system organization,59,3,0.9,0.0617,1
+GO:0006412,translation,424,11,6.49,0.063,1
+GO:0071695,anatomical structure maturation,27,2,0.41,0.0638,1
+GO:0030154,cell differentiation,101,4,1.55,0.0696,1

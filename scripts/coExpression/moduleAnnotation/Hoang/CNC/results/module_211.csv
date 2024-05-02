@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0046176,aldonic acid catabolic process,2,1,0,0.0045,1
+GO:0046177,D-gluconate catabolic process,2,1,0,0.0045,1
+GO:0000041,transition metal ion transport,46,2,0.1,0.0049,1
+GO:0001188,RNA polymerase I preinitiation complex a...,3,1,0.01,0.0068,1
+GO:0019520,aldonic acid metabolic process,3,1,0.01,0.0068,1
+GO:0019521,D-gluconate metabolic process,3,1,0.01,0.0068,1
+GO:0006873,cellular ion homeostasis,56,2,0.13,0.0072,1
+GO:0000712,resolution of meiotic recombination inte...,4,1,0.01,0.0091,1
+GO:0006361,transcription initiation from RNA polyme...,4,1,0.01,0.0091,1
+GO:0009051,pentose-phosphate shunt, oxidative branc...,4,1,0.01,0.0091,1
+GO:0051307,meiotic chromosome separation,4,1,0.01,0.0091,1
+GO:0071596,ubiquitin-dependent protein catabolic pr...,4,1,0.01,0.0091,1
+GO:0046474,glycerophospholipid biosynthetic process,199,3,0.45,0.0105,1
+GO:0055082,cellular chemical homeostasis,69,2,0.16,0.0108,1
+GO:0051570,regulation of histone H3-K9 methylation,5,1,0.01,0.0113,1
+GO:0016485,protein processing,73,2,0.17,0.012,1
+GO:0006863,purine nucleobase transport,6,1,0.01,0.0136,1
+GO:0015851,nucleobase transport,6,1,0.01,0.0136,1
+GO:0015860,purine nucleoside transmembrane transpor...,6,1,0.01,0.0136,1
+GO:0051567,histone H3-K9 methylation,6,1,0.01,0.0136,1
+GO:1904823,purine nucleobase transmembrane transpor...,6,1,0.01,0.0136,1
+GO:0045017,glycerolipid biosynthetic process,228,3,0.52,0.0151,1
+GO:0006878,cellular copper ion homeostasis,7,1,0.02,0.0158,1
+GO:0061647,histone H3-K9 modification,7,1,0.02,0.0158,1
+GO:0072530,purine-containing compound transmembrane...,7,1,0.02,0.0158,1
+GO:0046854,phosphatidylinositol phosphorylation,85,2,0.19,0.0161,1
+GO:0006650,glycerophospholipid metabolic process,236,3,0.54,0.0165,1
+GO:0019725,cellular homeostasis,87,2,0.2,0.0168,1
+GO:0046834,lipid phosphorylation,88,2,0.2,0.0171,1
+GO:0006658,phosphatidylserine metabolic process,8,1,0.02,0.0181,1
+GO:0006659,phosphatidylserine biosynthetic process,8,1,0.02,0.0181,1
+GO:0006825,copper ion transport,8,1,0.02,0.0181,1
+GO:0031060,regulation of histone methylation,8,1,0.02,0.0181,1
+GO:0031399,regulation of protein modification proce...,91,2,0.21,0.0183,1
+GO:0051604,protein maturation,96,2,0.22,0.0202,1
+GO:0008654,phospholipid biosynthetic process,258,3,0.59,0.0209,1
+GO:0050801,ion homeostasis,98,2,0.22,0.021,1
+GO:0071902,positive regulation of protein serine/th...,10,1,0.02,0.0225,1
+GO:0046486,glycerolipid metabolic process,268,3,0.61,0.0231,1
+GO:0046686,response to cadmium ion,12,1,0.03,0.027,1
+GO:0071472,cellular response to salt stress,12,1,0.03,0.027,1
+GO:0006360,transcription by RNA polymerase I,13,1,0.03,0.0292,1
+GO:0015858,nucleoside transport,13,1,0.03,0.0292,1
+GO:0031056,regulation of histone modification,13,1,0.03,0.0292,1
+GO:0055070,copper ion homeostasis,13,1,0.03,0.0292,1
+GO:0070897,transcription preinitiation complex asse...,13,1,0.03,0.0292,1
+GO:0071470,cellular response to osmotic stress,13,1,0.03,0.0292,1
+GO:0071577,zinc ion transmembrane transport,13,1,0.03,0.0292,1
+GO:1901642,nucleoside transmembrane transport,13,1,0.03,0.0292,1
+GO:1902275,regulation of chromatin organization,13,1,0.03,0.0292,1

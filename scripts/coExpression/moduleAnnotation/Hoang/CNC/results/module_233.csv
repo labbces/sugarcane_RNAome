@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0043648,dicarboxylic acid metabolic process,68,7,1.25,0.00025,1
+GO:0006107,oxaloacetate metabolic process,3,2,0.06,0.001,1
+GO:0051302,regulation of cell division,15,3,0.28,0.00237,1
+GO:0006108,malate metabolic process,19,3,0.35,0.00479,1
+GO:0019752,carboxylic acid metabolic process,844,26,15.5,0.00743,1
+GO:0051276,chromosome organization,683,22,12.54,0.00817,1
+GO:0016043,cellular component organization,1845,48,33.89,0.00919,1
+GO:0043436,oxoacid metabolic process,867,26,15.92,0.01028,1
+GO:0006082,organic acid metabolic process,868,26,15.94,0.01043,1
+GO:0005986,sucrose biosynthetic process,25,3,0.46,0.01048,1
+GO:0042398,cellular modified amino acid biosyntheti...,48,4,0.88,0.01155,1
+GO:0009987,cellular process,12731,257,233.83,0.01202,1
+GO:0006777,Mo-molybdopterin cofactor biosynthetic p...,10,2,0.18,0.01374,1
+GO:0019720,Mo-molybdopterin cofactor metabolic proc...,10,2,0.18,0.01374,1
+GO:0043545,molybdopterin cofactor metabolic process,10,2,0.18,0.01374,1
+GO:0051189,prosthetic group metabolic process,10,2,0.18,0.01374,1
+GO:0071840,cellular component organization or bioge...,2063,51,37.89,0.01807,1
+GO:0003018,vascular process in circulatory system,1,1,0.02,0.01837,1
+GO:0006706,steroid catabolic process,1,1,0.02,0.01837,1
+GO:0008217,regulation of blood pressure,1,1,0.02,0.01837,1
+GO:0014072,response to isoquinoline alkaloid,1,1,0.02,0.01837,1
+GO:0016127,sterol catabolic process,1,1,0.02,0.01837,1
+GO:0018315,molybdenum incorporation into molybdenum...,1,1,0.02,0.01837,1
+GO:0035150,regulation of tube size,1,1,0.02,0.01837,1
+GO:0035296,regulation of tube diameter,1,1,0.02,0.01837,1
+GO:0042040,metal incorporation into metallo-molybdo...,1,1,0.02,0.01837,1
+GO:0042573,retinoic acid metabolic process,1,1,0.02,0.01837,1
+GO:0043278,response to morphine,1,1,0.02,0.01837,1
+GO:0043279,response to alkaloid,1,1,0.02,0.01837,1
+GO:0045776,negative regulation of blood pressure,1,1,0.02,0.01837,1
+GO:0061086,negative regulation of histone H3-K27 me...,1,1,0.02,0.01837,1
+GO:0080051,cutin transport,1,1,0.02,0.01837,1
+GO:0097250,mitochondrial respirasome assembly,1,1,0.02,0.01837,1
+GO:0097746,regulation of blood vessel diameter,1,1,0.02,0.01837,1
+GO:1902465,negative regulation of histone H3-K27 tr...,1,1,0.02,0.01837,1
+GO:0001676,long-chain fatty acid metabolic process,12,2,0.22,0.01967,1
+GO:0006750,glutathione biosynthetic process,13,2,0.24,0.02296,1
+GO:0031056,regulation of histone modification,13,2,0.24,0.02296,1
+GO:1902275,regulation of chromatin organization,13,2,0.24,0.02296,1
+GO:0006099,tricarboxylic acid cycle,34,3,0.62,0.02417,1
+GO:0090558,plant epidermis development,38,3,0.7,0.0323,1
+GO:0034637,cellular carbohydrate biosynthetic proce...,238,9,4.37,0.03242,1
+GO:0006091,generation of precursor metabolites and ...,317,11,5.82,0.03327,1
+GO:0032957,inositol trisphosphate metabolic process,16,2,0.29,0.03407,1
+GO:0036092,phosphatidylinositol-3-phosphate biosynt...,16,2,0.29,0.03407,1
+GO:0006996,organelle organization,1384,35,25.42,0.03489,1
+GO:0015833,peptide transport,789,22,14.49,0.03532,1
+GO:0032787,monocarboxylic acid metabolic process,361,12,6.63,0.03571,1
+GO:0006839,mitochondrial transport,99,5,1.82,0.03591,1
+GO:0008150,biological_process,16230,315,298.1,0.03616,1

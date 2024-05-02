@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006434,seryl-tRNA aminoacylation,5,1,0,0.00087,1
+GO:0006418,tRNA aminoacylation for protein translat...,171,1,0.03,0.02958,1
+GO:0043038,amino acid activation,183,1,0.03,0.03163,1
+GO:0043039,tRNA aminoacylation,183,1,0.03,0.03163,1
+GO:0006399,tRNA metabolic process,359,1,0.06,0.06134,1
+GO:0006520,cellular amino acid metabolic process,415,1,0.07,0.07065,1
+GO:0006412,translation,424,1,0.07,0.07214,1
+GO:0043043,peptide biosynthetic process,447,1,0.08,0.07593,1
+GO:0043604,amide biosynthetic process,501,1,0.09,0.0848,1
+GO:0006518,peptide metabolic process,504,1,0.09,0.0853,1
+GO:0034660,ncRNA metabolic process,577,1,0.1,0.09718,1
+GO:0043603,cellular amide metabolic process,605,1,0.11,0.10171,1
+GO:0019752,carboxylic acid metabolic process,844,1,0.15,0.13967,1
+GO:0043436,oxoacid metabolic process,867,1,0.15,0.14326,1
+GO:0006082,organic acid metabolic process,868,1,0.15,0.14341,1
+GO:1901566,organonitrogen compound biosynthetic pro...,1241,1,0.22,0.20005,1
+GO:0044281,small molecule metabolic process,1515,1,0.27,0.23983,1
+GO:0044271,cellular nitrogen compound biosynthetic ...,1899,1,0.33,0.29306,1
+GO:0034645,cellular macromolecule biosynthetic proc...,1959,1,0.34,0.30112,1
+GO:0009059,macromolecule biosynthetic process,2007,1,0.35,0.30752,1
+GO:0016070,RNA metabolic process,2057,1,0.36,0.31413,1
+GO:0010467,gene expression,2170,1,0.38,0.32891,1
+GO:0090304,nucleic acid metabolic process,3271,1,0.57,0.46072,1
+GO:0044249,cellular biosynthetic process,3341,1,0.58,0.46839,1
+GO:1901576,organic substance biosynthetic process,3398,1,0.59,0.47457,1
+GO:0009058,biosynthetic process,3458,1,0.6,0.48101,1
+GO:0006139,nucleobase-containing compound metabolic...,3720,1,0.65,0.50848,1
+GO:0044267,cellular protein metabolic process,3725,1,0.65,0.50899,1
+GO:0046483,heterocycle metabolic process,3959,1,0.69,0.53256,1
+GO:0006725,cellular aromatic compound metabolic pro...,4059,1,0.71,0.54238,1
+GO:1901360,organic cyclic compound metabolic proces...,4161,1,0.73,0.55222,1
+GO:0019538,protein metabolic process,4186,1,0.73,0.55461,1
+GO:0034641,cellular nitrogen compound metabolic pro...,4249,1,0.74,0.56059,1
+GO:1901564,organonitrogen compound metabolic proces...,5084,1,0.89,0.63428,1
+GO:0044260,cellular macromolecule metabolic process,5988,1,1.05,0.70317,1
+GO:0043170,macromolecule metabolic process,7516,1,1.31,0.79693,1
+GO:0006807,nitrogen compound metabolic process,8053,1,1.41,0.82389,1
+GO:0044238,primary metabolic process,9192,1,1.61,0.87212,1
+GO:0044237,cellular metabolic process,9270,1,1.62,0.87501,1
+GO:0071704,organic substance metabolic process,9793,1,1.71,0.89317,1
+GO:0008152,metabolic process,10367,1,1.81,0.91073,1
+GO:0009987,cellular process,12731,1,2.23,0.96141,1
+GO:0008150,biological_process,16230,1,2.84,0.99291,1
+GO:0000002,mitochondrial genome maintenance,6,0,0,1,1
+GO:0000003,reproduction,445,0,0.08,1,1
+GO:0000012,single strand break repair,1,0,0,1,1
+GO:0000018,regulation of DNA recombination,10,0,0,1,1
+GO:0000019,regulation of mitotic recombination,2,0,0,1,1
+GO:0000023,maltose metabolic process,3,0,0,1,1
+GO:0000025,maltose catabolic process,2,0,0,1,1

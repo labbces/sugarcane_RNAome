@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0000423,mitophagy,1,1,0,8.7e-05,0.1064
+GO:0016237,lysosomal microautophagy,1,1,0,8.7e-05,0.1064
+GO:0034727,piecemeal microautophagy of the nucleus,1,1,0,8.7e-05,0.1064
+GO:0061912,selective autophagy,1,1,0,8.7e-05,0.1064
+GO:0034497,protein localization to phagophore assem...,4,1,0,0.00035,0.2854
+GO:0044804,autophagy of nucleus,4,1,0,0.00035,0.2854
+GO:0000422,autophagy of mitochondrion,6,1,0,0.00052,0.318
+GO:0061726,mitochondrion disassembly,6,1,0,0.00052,0.318
+GO:1903008,organelle disassembly,10,1,0,0.00087,0.4729
+GO:0000045,autophagosome assembly,19,1,0,0.00166,0.7382
+GO:1905037,autophagosome organization,19,1,0,0.00166,0.7382
+GO:0016236,macroautophagy,28,1,0,0.00245,0.9988
+GO:0007033,vacuole organization,33,1,0,0.00288,1
+GO:0022411,cellular component disassembly,58,1,0.01,0.00507,1
+GO:0070925,organelle assembly,80,1,0.01,0.00698,1
+GO:0006914,autophagy,82,1,0.01,0.00716,1
+GO:0061919,process utilizing autophagic mechanism,82,1,0.01,0.00716,1
+GO:0007005,mitochondrion organization,113,1,0.01,0.00986,1
+GO:0034613,cellular protein localization,467,1,0.04,0.04043,1
+GO:0022607,cellular component assembly,516,1,0.05,0.04462,1
+GO:0044085,cellular component biogenesis,769,1,0.07,0.06613,1
+GO:0070727,cellular macromolecule localization,781,1,0.07,0.06714,1
+GO:0008104,protein localization,783,1,0.07,0.06731,1
+GO:0044248,cellular catabolic process,800,1,0.07,0.06875,1
+GO:0033036,macromolecule localization,914,1,0.08,0.07834,1
+GO:0051641,cellular localization,947,1,0.08,0.08111,1
+GO:0009056,catabolic process,1051,1,0.09,0.08981,1
+GO:0006996,organelle organization,1384,1,0.12,0.11739,1
+GO:0016043,cellular component organization,1845,1,0.16,0.15486,1
+GO:0071840,cellular component organization or bioge...,2063,1,0.18,0.1723,1
+GO:0051179,localization,2126,1,0.19,0.1773,1
+GO:0044237,cellular metabolic process,9270,1,0.81,0.64645,1
+GO:0008152,metabolic process,10367,1,0.91,0.7012,1
+GO:0009987,cellular process,12731,1,1.11,0.80353,1
+GO:0008150,biological_process,16230,1,1.42,0.91577,1
+GO:0000002,mitochondrial genome maintenance,6,0,0,1,1
+GO:0000003,reproduction,445,0,0.04,1,1
+GO:0000012,single strand break repair,1,0,0,1,1
+GO:0000018,regulation of DNA recombination,10,0,0,1,1
+GO:0000019,regulation of mitotic recombination,2,0,0,1,1
+GO:0000023,maltose metabolic process,3,0,0,1,1
+GO:0000025,maltose catabolic process,2,0,0,1,1
+GO:0000027,ribosomal large subunit assembly,6,0,0,1,1
+GO:0000028,ribosomal small subunit assembly,8,0,0,1,1
+GO:0000032,cell wall mannoprotein biosynthetic proc...,2,0,0,1,1
+GO:0000038,very long-chain fatty acid metabolic pro...,3,0,0,1,1
+GO:0000041,transition metal ion transport,46,0,0,1,1
+GO:0000050,urea cycle,1,0,0,1,1
+GO:0000054,ribosomal subunit export from nucleus,9,0,0,1,1
+GO:0000055,ribosomal large subunit export from nucl...,5,0,0,1,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0033614,chloroplast proton-transporting ATP synt...,1,1,0.01,0.0051,1
+GO:0043461,proton-transporting ATP synthase complex...,1,1,0.01,0.0051,1
+GO:0052779,amino disaccharide metabolic process,1,1,0.01,0.0051,1
+GO:0052781,chitobiose catabolic process,1,1,0.01,0.0051,1
+GO:0052782,amino disaccharide catabolic process,1,1,0.01,0.0051,1
+GO:0017062,respiratory chain complex III assembly,2,1,0.01,0.0102,1
+GO:0034551,mitochondrial respiratory chain complex ...,2,1,0.01,0.0102,1
+GO:0080119,ER body organization,2,1,0.01,0.0102,1
+GO:0070071,proton-transporting two-sector ATPase co...,4,1,0.02,0.0203,1
+GO:0035196,production of miRNAs involved in gene si...,5,1,0.03,0.0253,1
+GO:0051013,microtubule severing,7,1,0.04,0.0353,1
+GO:0009789,positive regulation of abscisic acid-act...,8,1,0.04,0.0402,1
+GO:0035195,gene silencing by miRNA,8,1,0.04,0.0402,1
+GO:1901421,positive regulation of response to alcoh...,8,1,0.04,0.0402,1
+GO:1905959,positive regulation of cellular response...,8,1,0.04,0.0402,1
+GO:0090116,C-5 methylation of cytosine,10,1,0.05,0.05,1
+GO:0072344,rescue of stalled ribosome,11,1,0.06,0.0549,1
+GO:0009738,abscisic acid-activated signaling pathwa...,77,2,0.39,0.0593,1
+GO:0010608,posttranscriptional regulation of gene e...,173,3,0.89,0.0593,1
+GO:0071215,cellular response to abscisic acid stimu...,80,2,0.41,0.0634,1
+GO:0097306,cellular response to alcohol,80,2,0.41,0.0634,1
+GO:0006378,mRNA polyadenylation,13,1,0.07,0.0645,1
+GO:0032776,DNA methylation on cytosine,13,1,0.07,0.0645,1
+GO:0017004,cytochrome complex assembly,18,1,0.09,0.0882,1
+GO:0006108,malate metabolic process,19,1,0.1,0.0929,1
+GO:0031050,dsRNA processing,20,1,0.1,0.0975,1
+GO:0070918,production of small RNA involved in gene...,20,1,0.1,0.0975,1
+GO:0033108,mitochondrial respiratory chain complex ...,22,1,0.11,0.1068,1
+GO:0006305,DNA alkylation,23,1,0.12,0.1113,1
+GO:0006306,DNA methylation,23,1,0.12,0.1113,1
+GO:0010629,negative regulation of gene expression,378,4,1.93,0.1291,1
+GO:0009737,response to abscisic acid,124,2,0.63,0.1327,1
+GO:0097305,response to alcohol,126,2,0.64,0.1362,1
+GO:0009967,positive regulation of signal transducti...,29,1,0.15,0.1383,1
+GO:0009755,hormone-mediated signaling pathway,391,4,2,0.1409,1
+GO:0043631,RNA polyadenylation,30,1,0.15,0.1427,1
+GO:0006417,regulation of translation,130,2,0.67,0.1432,1
+GO:0034248,regulation of cellular amide metabolic p...,132,2,0.68,0.1467,1
+GO:0000184,nuclear-transcribed mRNA catabolic proce...,31,1,0.16,0.1471,1
+GO:0006074,(1->3)-beta-D-glucan metabolic process,31,1,0.16,0.1471,1
+GO:0006075,(1->3)-beta-D-glucan biosynthetic proces...,31,1,0.16,0.1471,1
+GO:0009787,regulation of abscisic acid-activated si...,31,1,0.16,0.1471,1
+GO:0023056,positive regulation of signaling,31,1,0.16,0.1471,1
+GO:0031124,mRNA 3'-end processing,31,1,0.16,0.1471,1
+GO:0035194,post-transcriptional gene silencing by R...,31,1,0.16,0.1471,1
+GO:1901419,regulation of response to alcohol,31,1,0.16,0.1471,1
+GO:1905957,regulation of cellular response to alcoh...,31,1,0.16,0.1471,1
+GO:0032870,cellular response to hormone stimulus,410,4,2.1,0.1589,1
+GO:0030433,ubiquitin-dependent ERAD pathway,34,1,0.17,0.1602,1
+GO:0010647,positive regulation of cell communicatio...,35,1,0.18,0.1645,1

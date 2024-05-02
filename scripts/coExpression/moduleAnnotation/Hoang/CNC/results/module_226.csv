@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0042335,cuticle development,3,2,0.03,0.00028,1
+GO:0006723,cuticle hydrocarbon biosynthetic process,1,1,0.01,0.00966,1
+GO:0010375,stomatal complex patterning,1,1,0.01,0.00966,1
+GO:0033321,homomethionine metabolic process,1,1,0.01,0.00966,1
+GO:0033506,glucosinolate biosynthetic process from ...,1,1,0.01,0.00966,1
+GO:1903227,xanthosine metabolic process,1,1,0.01,0.00966,1
+GO:1903229,xanthosine biosynthetic process,1,1,0.01,0.00966,1
+GO:0060149,negative regulation of posttranscription...,2,1,0.02,0.01924,1
+GO:0060967,negative regulation of gene silencing by...,2,1,0.02,0.01924,1
+GO:0060969,negative regulation of gene silencing,2,1,0.02,0.01924,1
+GO:1900369,negative regulation of RNA interference,2,1,0.02,0.01924,1
+GO:0048658,anther wall tapetum development,3,1,0.03,0.02872,1
+GO:1901659,glycosyl compound biosynthetic process,29,2,0.28,0.03181,1
+GO:0010143,cutin biosynthetic process,4,1,0.04,0.0381,1
+GO:0010440,stomatal lineage progression,4,1,0.04,0.0381,1
+GO:0032106,positive regulation of response to extra...,4,1,0.04,0.0381,1
+GO:0032109,positive regulation of response to nutri...,4,1,0.04,0.0381,1
+GO:0043405,regulation of MAP kinase activity,4,1,0.04,0.0381,1
+GO:0043407,negative regulation of MAP kinase activi...,4,1,0.04,0.0381,1
+GO:0080040,positive regulation of cellular response...,4,1,0.04,0.0381,1
+GO:0140255,regulation of cellular response to phosp...,4,1,0.04,0.0381,1
+GO:1900368,regulation of RNA interference,4,1,0.04,0.0381,1
+GO:1990547,mitochondrial phosphate ion transmembran...,4,1,0.04,0.0381,1
+GO:0071985,multivesicular body sorting pathway,33,2,0.32,0.04035,1
+GO:0098661,inorganic anion transmembrane transport,35,2,0.34,0.0449,1
+GO:0043408,regulation of MAPK cascade,5,1,0.05,0.0474,1
+GO:0043409,negative regulation of MAPK cascade,5,1,0.05,0.0474,1
+GO:0046854,phosphatidylinositol phosphorylation,85,3,0.82,0.04939,1
+GO:0046834,lipid phosphorylation,88,3,0.85,0.05375,1
+GO:0009157,deoxyribonucleoside monophosphate biosyn...,6,1,0.06,0.05661,1
+GO:0009162,deoxyribonucleoside monophosphate metabo...,6,1,0.06,0.05661,1
+GO:0010025,wax biosynthetic process,6,1,0.06,0.05661,1
+GO:0010166,wax metabolic process,6,1,0.06,0.05661,1
+GO:0010584,pollen exine formation,6,1,0.06,0.05661,1
+GO:0035435,phosphate ion transmembrane transport,6,1,0.06,0.05661,1
+GO:1990481,mRNA pseudouridine synthesis,6,1,0.06,0.05661,1
+GO:0009734,auxin-activated signaling pathway,154,4,1.49,0.06264,1
+GO:0071365,cellular response to auxin stimulus,154,4,1.49,0.06264,1
+GO:0000719,photoreactive repair,7,1,0.07,0.06573,1
+GO:0016144,S-glycoside biosynthetic process,7,1,0.07,0.06573,1
+GO:0019758,glycosinolate biosynthetic process,7,1,0.07,0.06573,1
+GO:0019761,glucosinolate biosynthetic process,7,1,0.07,0.06573,1
+GO:0060147,regulation of posttranscriptional gene s...,7,1,0.07,0.06573,1
+GO:0060966,regulation of gene silencing by RNA,7,1,0.07,0.06573,1
+GO:0060968,regulation of gene silencing,7,1,0.07,0.06573,1
+GO:0009650,UV protection,8,1,0.08,0.07476,1
+GO:0010208,pollen wall assembly,8,1,0.08,0.07476,1
+GO:0048653,anther development,8,1,0.08,0.07476,1
+GO:0009733,response to auxin,166,4,1.6,0.07776,1
+GO:0006469,negative regulation of protein kinase ac...,9,1,0.09,0.08371,1

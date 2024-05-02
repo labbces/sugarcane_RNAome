@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006446,regulation of translational initiation,3,1,0.01,0.012,1
+GO:0015783,GDP-fucose transmembrane transport,3,1,0.01,0.012,1
+GO:0070973,protein localization to endoplasmic reti...,4,1,0.02,0.016,1
+GO:1902292,cell cycle DNA replication initiation,4,1,0.02,0.016,1
+GO:1902315,nuclear cell cycle DNA replication initi...,4,1,0.02,0.016,1
+GO:1902975,mitotic DNA replication initiation,4,1,0.02,0.016,1
+GO:0006545,glycine biosynthetic process,6,1,0.02,0.024,1
+GO:0019264,glycine biosynthetic process from serine,6,1,0.02,0.024,1
+GO:0090480,purine nucleotide-sugar transmembrane tr...,6,1,0.02,0.024,1
+GO:1902969,mitotic DNA replication,6,1,0.02,0.024,1
+GO:0051168,nuclear export,63,2,0.25,0.026,1
+GO:0006449,regulation of translational termination,7,1,0.03,0.028,1
+GO:0006544,glycine metabolic process,7,1,0.03,0.028,1
+GO:0016973,poly(A)+ mRNA export from nucleus,7,1,0.03,0.028,1
+GO:0042136,neurotransmitter biosynthetic process,7,1,0.03,0.028,1
+GO:0033260,nuclear DNA replication,8,1,0.03,0.031,1
+GO:0035999,tetrahydrofolate interconversion,8,1,0.03,0.031,1
+GO:0010229,inflorescence development,9,1,0.04,0.035,1
+GO:0006413,translational initiation,77,2,0.31,0.038,1
+GO:0006116,NADH oxidation,10,1,0.04,0.039,1
+GO:0071951,conversion of methionyl-tRNA to N-formyl...,10,1,0.04,0.039,1
+GO:0019988,charged-tRNA amino acid modification,11,1,0.04,0.043,1
+GO:0006734,NADH metabolic process,12,1,0.05,0.047,1
+GO:0034067,protein localization to Golgi apparatus,12,1,0.05,0.047,1
+GO:0045053,protein retention in Golgi apparatus,12,1,0.05,0.047,1
+GO:0001505,regulation of neurotransmitter levels,15,1,0.06,0.058,1
+GO:0042133,neurotransmitter metabolic process,15,1,0.06,0.058,1
+GO:0046653,tetrahydrofolate metabolic process,15,1,0.06,0.058,1
+GO:1902358,sulfate transmembrane transport,15,1,0.06,0.058,1
+GO:0008272,sulfate transport,16,1,0.06,0.062,1
+GO:0006415,translational termination,17,1,0.07,0.066,1
+GO:0019674,NAD metabolic process,17,1,0.07,0.066,1
+GO:0032507,maintenance of protein location in cell,17,1,0.07,0.066,1
+GO:0043244,regulation of protein-containing complex...,17,1,0.07,0.066,1
+GO:0045185,maintenance of protein location,17,1,0.07,0.066,1
+GO:0046940,nucleoside monophosphate phosphorylation,19,1,0.08,0.073,1
+GO:0044786,cell cycle DNA replication,20,1,0.08,0.077,1
+GO:0072348,sulfur compound transport,22,1,0.09,0.084,1
+GO:0006886,intracellular protein transport,418,4,1.66,0.086,1
+GO:0006913,nucleocytoplasmic transport,123,2,0.49,0.086,1
+GO:0051169,nuclear transport,123,2,0.49,0.086,1
+GO:0061077,chaperone-mediated protein folding,23,1,0.09,0.088,1
+GO:0046907,intracellular transport,600,5,2.39,0.091,1
+GO:0006730,one-carbon metabolic process,24,1,0.1,0.091,1
+GO:0051651,maintenance of location in cell,24,1,0.1,0.091,1
+GO:0006563,L-serine metabolic process,25,1,0.1,0.095,1
+GO:0015780,nucleotide-sugar transmembrane transport,26,1,0.1,0.099,1
+GO:0042744,hydrogen peroxide catabolic process,26,1,0.1,0.099,1
+GO:0051649,establishment of localization in cell,616,5,2.45,0.099,1
+GO:0055072,iron ion homeostasis,27,1,0.11,0.102,1

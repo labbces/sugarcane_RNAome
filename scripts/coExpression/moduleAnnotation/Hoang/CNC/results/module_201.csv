@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010929,positive regulation of auxin mediated si...,3,1,0.01,0.0099,1
+GO:0080112,seed growth,3,1,0.01,0.0099,1
+GO:0080113,regulation of seed growth,3,1,0.01,0.0099,1
+GO:0019253,reductive pentose-phosphate cycle,4,1,0.01,0.0132,1
+GO:0019685,photosynthesis, dark reaction,4,1,0.01,0.0132,1
+GO:0000289,nuclear-transcribed mRNA poly(A) tail sh...,5,1,0.02,0.0165,1
+GO:0009143,nucleoside triphosphate catabolic proces...,5,1,0.02,0.0165,1
+GO:0019249,lactate biosynthetic process,5,1,0.02,0.0165,1
+GO:0070536,protein K63-linked deubiquitination,5,1,0.02,0.0165,1
+GO:0009853,photorespiration,6,1,0.02,0.0198,1
+GO:0048280,vesicle fusion with Golgi apparatus,6,1,0.02,0.0198,1
+GO:0080050,regulation of seed development,7,1,0.02,0.023,1
+GO:0006089,lactate metabolic process,9,1,0.03,0.0295,1
+GO:0006906,vesicle fusion,9,1,0.03,0.0295,1
+GO:0009438,methylglyoxal metabolic process,9,1,0.03,0.0295,1
+GO:0032366,intracellular sterol transport,9,1,0.03,0.0295,1
+GO:0051596,methylglyoxal catabolic process,9,1,0.03,0.0295,1
+GO:0061727,methylglyoxal catabolic process to lacta...,9,1,0.03,0.0295,1
+GO:0090174,organelle membrane fusion,9,1,0.03,0.0295,1
+GO:0010928,regulation of auxin mediated signaling p...,10,1,0.03,0.0327,1
+GO:0015918,sterol transport,10,1,0.03,0.0327,1
+GO:0042182,ketone catabolic process,10,1,0.03,0.0327,1
+GO:0015850,organic hydroxy compound transport,11,1,0.04,0.036,1
+GO:0032365,intracellular lipid transport,12,1,0.04,0.0392,1
+GO:0046185,aldehyde catabolic process,12,1,0.04,0.0392,1
+GO:0006821,chloride transport,13,1,0.04,0.0424,1
+GO:1902476,chloride transmembrane transport,13,1,0.04,0.0424,1
+GO:0006771,riboflavin metabolic process,14,1,0.05,0.0456,1
+GO:0009231,riboflavin biosynthetic process,14,1,0.05,0.0456,1
+GO:0044210,'de novo' CTP biosynthetic process,14,1,0.05,0.0456,1
+GO:0042727,flavin-containing compound biosynthetic ...,15,1,0.05,0.0487,1
+GO:0048284,organelle fusion,17,1,0.06,0.055,1
+GO:0070940,dephosphorylation of RNA polymerase II C...,17,1,0.06,0.055,1
+GO:0009629,response to gravity,18,1,0.06,0.0582,1
+GO:0009630,gravitropism,18,1,0.06,0.0582,1
+GO:0015977,carbon fixation,18,1,0.06,0.0582,1
+GO:0030042,actin filament depolymerization,18,1,0.06,0.0582,1
+GO:1901292,nucleoside phosphate catabolic process,19,1,0.06,0.0613,1
+GO:0043161,proteasome-mediated ubiquitin-dependent ...,124,2,0.41,0.0641,1
+GO:0042726,flavin-containing compound metabolic pro...,20,1,0.07,0.0644,1
+GO:0010498,proteasomal protein catabolic process,134,2,0.45,0.0734,1
+GO:0006241,CTP biosynthetic process,24,1,0.08,0.0768,1
+GO:0006541,glutamine metabolic process,24,1,0.08,0.0768,1
+GO:0007030,Golgi organization,24,1,0.08,0.0768,1
+GO:0009208,pyrimidine ribonucleoside triphosphate m...,24,1,0.08,0.0768,1
+GO:0009209,pyrimidine ribonucleoside triphosphate b...,24,1,0.08,0.0768,1
+GO:0009606,tropism,24,1,0.08,0.0768,1
+GO:0046036,CTP metabolic process,24,1,0.08,0.0768,1
+GO:0051261,protein depolymerization,24,1,0.08,0.0768,1
+GO:0009147,pyrimidine nucleoside triphosphate metab...,25,1,0.08,0.0799,1

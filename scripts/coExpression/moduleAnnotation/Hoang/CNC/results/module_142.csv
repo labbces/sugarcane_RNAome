@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019432,triglyceride biosynthetic process,23,2,0.18,0.013,1
+GO:0046460,neutral lipid biosynthetic process,24,2,0.18,0.014,1
+GO:0046463,acylglycerol biosynthetic process,24,2,0.18,0.014,1
+GO:0006641,triglyceride metabolic process,25,2,0.19,0.016,1
+GO:0006638,neutral lipid metabolic process,26,2,0.2,0.017,1
+GO:0006639,acylglycerol metabolic process,26,2,0.2,0.017,1
+GO:0009443,pyridoxal 5'-phosphate salvage,4,1,0.03,0.03,1
+GO:0009445,putrescine metabolic process,5,1,0.04,0.038,1
+GO:0009446,putrescine biosynthetic process,5,1,0.04,0.038,1
+GO:0034389,lipid droplet organization,5,1,0.04,0.038,1
+GO:0043968,histone H2A acetylation,5,1,0.04,0.038,1
+GO:0043967,histone H4 acetylation,6,1,0.05,0.045,1
+GO:0051013,microtubule severing,7,1,0.05,0.052,1
+GO:0018215,protein phosphopantetheinylation,8,1,0.06,0.06,1
+GO:0042364,water-soluble vitamin biosynthetic proce...,57,2,0.44,0.071,1
+GO:0006767,water-soluble vitamin metabolic process,62,2,0.47,0.082,1
+GO:0009110,vitamin biosynthetic process,62,2,0.47,0.082,1
+GO:0006022,aminoglycan metabolic process,12,1,0.09,0.088,1
+GO:0006026,aminoglycan catabolic process,12,1,0.09,0.088,1
+GO:0006030,chitin metabolic process,12,1,0.09,0.088,1
+GO:0006032,chitin catabolic process,12,1,0.09,0.088,1
+GO:0042816,vitamin B6 metabolic process,12,1,0.09,0.088,1
+GO:0042819,vitamin B6 biosynthetic process,12,1,0.09,0.088,1
+GO:0042822,pyridoxal phosphate metabolic process,12,1,0.09,0.088,1
+GO:0042823,pyridoxal phosphate biosynthetic process,12,1,0.09,0.088,1
+GO:0046184,aldehyde biosynthetic process,12,1,0.09,0.088,1
+GO:0046348,amino sugar catabolic process,12,1,0.09,0.088,1
+GO:1901071,glucosamine-containing compound metaboli...,12,1,0.09,0.088,1
+GO:1901072,glucosamine-containing compound cataboli...,12,1,0.09,0.088,1
+GO:0006766,vitamin metabolic process,67,2,0.51,0.093,1
+GO:0006596,polyamine biosynthetic process,14,1,0.11,0.102,1
+GO:0006771,riboflavin metabolic process,14,1,0.11,0.102,1
+GO:0009231,riboflavin biosynthetic process,14,1,0.11,0.102,1
+GO:0042727,flavin-containing compound biosynthetic ...,15,1,0.11,0.109,1
+GO:0070940,dephosphorylation of RNA polymerase II C...,17,1,0.13,0.122,1
+GO:0010119,regulation of stomatal movement,18,1,0.14,0.129,1
+GO:0006887,exocytosis,82,2,0.63,0.13,1
+GO:0006595,polyamine metabolic process,19,1,0.15,0.136,1
+GO:0042726,flavin-containing compound metabolic pro...,20,1,0.15,0.142,1
+GO:0046777,protein autophosphorylation,20,1,0.15,0.142,1
+GO:0032940,secretion by cell,89,2,0.68,0.149,1
+GO:0046903,secretion,95,2,0.73,0.165,1
+GO:0010118,stomatal movement,27,1,0.21,0.187,1
+GO:0006040,amino sugar metabolic process,28,1,0.21,0.194,1
+GO:0000373,Group II intron splicing,29,1,0.22,0.2,1
+GO:0009309,amine biosynthetic process,30,1,0.23,0.206,1
+GO:0042401,cellular biogenic amine biosynthetic pro...,30,1,0.23,0.206,1
+GO:0000184,nuclear-transcribed mRNA catabolic proce...,31,1,0.24,0.212,1
+GO:0019722,calcium-mediated signaling,32,1,0.24,0.218,1
+GO:0019932,second-messenger-mediated signaling,32,1,0.24,0.218,1

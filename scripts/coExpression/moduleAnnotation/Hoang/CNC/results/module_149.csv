@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:1902626,assembly of large subunit precursor of p...,2,1,0.01,0.0053,1
+GO:0000289,nuclear-transcribed mRNA poly(A) tail sh...,5,1,0.01,0.0133,1
+GO:0000463,maturation of LSU-rRNA from tricistronic...,9,1,0.02,0.0238,1
+GO:0006750,glutathione biosynthetic process,13,1,0.03,0.0341,1
+GO:0070475,rRNA base methylation,14,1,0.04,0.0367,1
+GO:0031348,negative regulation of defense response,15,1,0.04,0.0393,1
+GO:0006470,protein dephosphorylation,123,2,0.33,0.0427,1
+GO:0000470,maturation of LSU-rRNA,17,1,0.05,0.0444,1
+GO:0019184,nonribosomal peptide biosynthetic proces...,17,1,0.05,0.0444,1
+GO:0006891,intra-Golgi vesicle-mediated transport,22,1,0.06,0.0571,1
+GO:0006334,nucleosome assembly,25,1,0.07,0.0646,1
+GO:0031167,rRNA methylation,25,1,0.07,0.0646,1
+GO:0000288,nuclear-transcribed mRNA catabolic proce...,29,1,0.08,0.0746,1
+GO:0034728,nucleosome organization,30,1,0.08,0.0771,1
+GO:0042273,ribosomal large subunit biogenesis,30,1,0.08,0.0771,1
+GO:0000154,rRNA modification,31,1,0.08,0.0795,1
+GO:0050779,RNA destabilization,31,1,0.08,0.0795,1
+GO:0061157,mRNA destabilization,31,1,0.08,0.0795,1
+GO:0061014,positive regulation of mRNA catabolic pr...,32,1,0.09,0.082,1
+GO:0090503,RNA phosphodiester bond hydrolysis, exon...,32,1,0.09,0.082,1
+GO:1903313,positive regulation of mRNA metabolic pr...,34,1,0.09,0.0869,1
+GO:0006364,rRNA processing,189,2,0.5,0.0906,1
+GO:0016072,rRNA metabolic process,190,2,0.51,0.0914,1
+GO:0043488,regulation of mRNA stability,38,1,0.1,0.0966,1
+GO:0043487,regulation of RNA stability,39,1,0.1,0.099,1
+GO:0006749,glutathione metabolic process,40,1,0.11,0.1014,1
+GO:0061013,regulation of mRNA catabolic process,40,1,0.11,0.1014,1
+GO:0016311,dephosphorylation,203,2,0.54,0.1022,1
+GO:0031331,positive regulation of cellular cataboli...,47,1,0.13,0.1181,1
+GO:0042398,cellular modified amino acid biosyntheti...,48,1,0.13,0.1205,1
+GO:0005985,sucrose metabolic process,49,1,0.13,0.1228,1
+GO:0006313,transposition, DNA-mediated,49,1,0.13,0.1228,1
+GO:0065004,protein-DNA complex assembly,49,1,0.13,0.1228,1
+GO:1903311,regulation of mRNA metabolic process,49,1,0.13,0.1228,1
+GO:0042254,ribosome biogenesis,228,2,0.61,0.1238,1
+GO:0009896,positive regulation of catabolic process,54,1,0.14,0.1345,1
+GO:0071824,protein-DNA complex subunit organization,54,1,0.14,0.1345,1
+GO:0017148,negative regulation of translation,55,1,0.15,0.1368,1
+GO:0034249,negative regulation of cellular amide me...,56,1,0.15,0.1391,1
+GO:0006333,chromatin assembly or disassembly,64,1,0.17,0.1573,1
+GO:0031329,regulation of cellular catabolic process,64,1,0.17,0.1573,1
+GO:0031497,chromatin assembly,64,1,0.17,0.1573,1
+GO:0043414,macromolecule methylation,266,2,0.71,0.1584,1
+GO:0022618,ribonucleoprotein complex assembly,66,1,0.18,0.1618,1
+GO:0071826,ribonucleoprotein complex subunit organi...,67,1,0.18,0.1641,1
+GO:0022613,ribonucleoprotein complex biogenesis,278,2,0.74,0.1697,1
+GO:0001522,pseudouridine synthesis,70,1,0.19,0.1708,1
+GO:0034622,cellular protein-containing complex asse...,283,2,0.75,0.1744,1
+GO:0015748,organophosphate ester transport,72,1,0.19,0.1752,1
+GO:0006813,potassium ion transport,75,1,0.2,0.1818,1

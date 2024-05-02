@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009773,photosynthetic electron transport in pho...,11,1,0.01,0.012,1
+GO:0006268,DNA unwinding involved in DNA replicatio...,15,1,0.02,0.017,1
+GO:0009767,photosynthetic electron transport chain,17,1,0.02,0.019,1
+GO:0046940,nucleoside monophosphate phosphorylation,19,1,0.02,0.021,1
+GO:0030433,ubiquitin-dependent ERAD pathway,34,1,0.04,0.038,1
+GO:0036503,ERAD pathway,37,1,0.04,0.041,1
+GO:0000724,double-strand break repair via homologou...,41,1,0.05,0.046,1
+GO:0000725,recombinational repair,41,1,0.05,0.046,1
+GO:0045944,positive regulation of transcription by ...,52,1,0.06,0.058,1
+GO:0010243,response to organonitrogen compound,56,1,0.06,0.062,1
+GO:0006302,double-strand break repair,59,1,0.07,0.065,1
+GO:0034219,carbohydrate transmembrane transport,62,1,0.07,0.068,1
+GO:1901698,response to nitrogen compound,64,1,0.07,0.07,1
+GO:0034976,response to endoplasmic reticulum stress,70,1,0.08,0.077,1
+GO:0006355,regulation of transcription, DNA-templat...,408,2,0.46,0.078,1
+GO:1903506,regulation of nucleic acid-templated tra...,408,2,0.46,0.078,1
+GO:2001141,regulation of RNA biosynthetic process,408,2,0.46,0.078,1
+GO:0008643,carbohydrate transport,80,1,0.09,0.087,1
+GO:0006261,DNA-dependent DNA replication,81,1,0.09,0.088,1
+GO:0019684,photosynthesis, light reaction,84,1,0.1,0.091,1
+GO:0022900,electron transport chain,87,1,0.1,0.094,1
+GO:0051252,regulation of RNA metabolic process,457,2,0.52,0.095,1
+GO:0009123,nucleoside monophosphate metabolic proce...,98,1,0.11,0.106,1
+GO:0019219,regulation of nucleobase-containing comp...,497,2,0.57,0.109,1
+GO:0032392,DNA geometric change,124,1,0.14,0.132,1
+GO:0032508,DNA duplex unwinding,124,1,0.14,0.132,1
+GO:0043161,proteasome-mediated ubiquitin-dependent ...,124,1,0.14,0.132,1
+GO:2000112,regulation of cellular macromolecule bio...,559,2,0.64,0.132,1
+GO:0010556,regulation of macromolecule biosynthetic...,560,2,0.64,0.133,1
+GO:0045893,positive regulation of transcription, DN...,129,1,0.15,0.137,1
+GO:1902680,positive regulation of RNA biosynthetic ...,129,1,0.15,0.137,1
+GO:1903508,positive regulation of nucleic acid-temp...,129,1,0.15,0.137,1
+GO:0045892,negative regulation of transcription, DN...,131,1,0.15,0.139,1
+GO:1902679,negative regulation of RNA biosynthetic ...,131,1,0.15,0.139,1
+GO:1903507,negative regulation of nucleic acid-temp...,131,1,0.15,0.139,1
+GO:0031326,regulation of cellular biosynthetic proc...,577,2,0.66,0.139,1
+GO:0009889,regulation of biosynthetic process,583,2,0.66,0.141,1
+GO:0010498,proteasomal protein catabolic process,134,1,0.15,0.142,1
+GO:0051253,negative regulation of RNA metabolic pro...,139,1,0.16,0.147,1
+GO:0010557,positive regulation of macromolecule bio...,145,1,0.16,0.153,1
+GO:0015979,photosynthesis,146,1,0.17,0.153,1
+GO:0031328,positive regulation of cellular biosynth...,150,1,0.17,0.157,1
+GO:0045934,negative regulation of nucleobase-contai...,150,1,0.17,0.157,1
+GO:0009891,positive regulation of biosynthetic proc...,152,1,0.17,0.159,1
+GO:0010628,positive regulation of gene expression,152,1,0.17,0.159,1
+GO:0051254,positive regulation of RNA metabolic pro...,161,1,0.18,0.168,1
+GO:0045935,positive regulation of nucleobase-contai...,168,1,0.19,0.175,1
+GO:0034654,nucleobase-containing compound biosynthe...,1277,3,1.45,0.175,1
+GO:0006364,rRNA processing,189,1,0.21,0.194,1
+GO:0016072,rRNA metabolic process,190,1,0.22,0.195,1

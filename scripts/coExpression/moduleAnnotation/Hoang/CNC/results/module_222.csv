@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006124,ferredoxin metabolic process,1,1,0.01,0.013,1
+GO:0009439,cyanate metabolic process,1,1,0.01,0.013,1
+GO:1900384,regulation of flavonol biosynthetic proc...,1,1,0.01,0.013,1
+GO:0002926,tRNA wobble base 5-methoxycarbonylmethyl...,2,1,0.03,0.026,1
+GO:0042372,phylloquinone biosynthetic process,2,1,0.03,0.026,1
+GO:0042374,phylloquinone metabolic process,2,1,0.03,0.026,1
+GO:0042450,arginine biosynthetic process via ornith...,2,1,0.03,0.026,1
+GO:0090481,pyrimidine nucleotide-sugar transmembran...,20,2,0.26,0.028,1
+GO:0000056,ribosomal small subunit export from nucl...,3,1,0.04,0.039,1
+GO:0006621,protein retention in ER lumen,3,1,0.04,0.039,1
+GO:0032465,regulation of cytokinesis,3,1,0.04,0.039,1
+GO:0042371,vitamin K biosynthetic process,3,1,0.04,0.039,1
+GO:0042373,vitamin K metabolic process,3,1,0.04,0.039,1
+GO:0043044,ATP-dependent chromatin remodeling,3,1,0.04,0.039,1
+GO:0043486,histone exchange,3,1,0.04,0.039,1
+GO:0051554,flavonol metabolic process,3,1,0.04,0.039,1
+GO:0051555,flavonol biosynthetic process,3,1,0.04,0.039,1
+GO:0051643,endoplasmic reticulum localization,3,1,0.04,0.039,1
+GO:0061817,endoplasmic reticulum-plasma membrane te...,3,1,0.04,0.039,1
+GO:0090158,endoplasmic reticulum membrane organizat...,3,1,0.04,0.039,1
+GO:0006397,mRNA processing,293,8,3.87,0.042,1
+GO:0009926,auxin polar transport,25,2,0.33,0.043,1
+GO:0015780,nucleotide-sugar transmembrane transport,26,2,0.34,0.046,1
+GO:0009845,seed germination,27,2,0.36,0.049,1
+GO:0006223,uracil salvage,4,1,0.05,0.052,1
+GO:0006591,ornithine metabolic process,4,1,0.05,0.052,1
+GO:0019860,uracil metabolic process,4,1,0.05,0.052,1
+GO:0035437,maintenance of protein localization in e...,4,1,0.05,0.052,1
+GO:0043100,pyrimidine nucleobase salvage,4,1,0.05,0.052,1
+GO:0046107,uracil biosynthetic process,4,1,0.05,0.052,1
+GO:0051552,flavone metabolic process,4,1,0.05,0.052,1
+GO:0051553,flavone biosynthetic process,4,1,0.05,0.052,1
+GO:0031146,SCF-dependent proteasomal ubiquitin-depe...,30,2,0.4,0.059,1
+GO:0006370,7-methylguanosine mRNA capping,5,1,0.07,0.064,1
+GO:0006577,amino-acid betaine metabolic process,5,1,0.07,0.064,1
+GO:0006578,amino-acid betaine biosynthetic process,5,1,0.07,0.064,1
+GO:0006655,phosphatidylglycerol biosynthetic proces...,5,1,0.07,0.064,1
+GO:0006775,fat-soluble vitamin metabolic process,5,1,0.07,0.064,1
+GO:0009962,regulation of flavonoid biosynthetic pro...,5,1,0.07,0.064,1
+GO:0016094,polyprenol biosynthetic process,5,1,0.07,0.064,1
+GO:0019285,glycine betaine biosynthetic process fro...,5,1,0.07,0.064,1
+GO:0019408,dolichol biosynthetic process,5,1,0.07,0.064,1
+GO:0019695,choline metabolic process,5,1,0.07,0.064,1
+GO:0022406,membrane docking,5,1,0.07,0.064,1
+GO:0031455,glycine betaine metabolic process,5,1,0.07,0.064,1
+GO:0031456,glycine betaine biosynthetic process,5,1,0.07,0.064,1
+GO:0032048,cardiolipin metabolic process,5,1,0.07,0.064,1
+GO:0032049,cardiolipin biosynthetic process,5,1,0.07,0.064,1
+GO:0042362,fat-soluble vitamin biosynthetic process,5,1,0.07,0.064,1
+GO:0043985,histone H4-R3 methylation,5,1,0.07,0.064,1

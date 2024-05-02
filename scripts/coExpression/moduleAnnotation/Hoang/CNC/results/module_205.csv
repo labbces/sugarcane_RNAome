@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0042550,photosystem I stabilization,1,1,0.01,0.0058,1
+GO:0009750,response to fructose,3,1,0.02,0.0173,1
+GO:0018401,peptidyl-proline hydroxylation to 4-hydr...,3,1,0.02,0.0173,1
+GO:0035494,SNARE complex disassembly,3,1,0.02,0.0173,1
+GO:0090306,spindle assembly involved in meiosis,3,1,0.02,0.0173,1
+GO:0000212,meiotic spindle organization,4,1,0.02,0.0231,1
+GO:0009052,pentose-phosphate shunt, non-oxidative b...,4,1,0.02,0.0231,1
+GO:0015713,phosphoglycerate transmembrane transport,4,1,0.02,0.0231,1
+GO:0034497,protein localization to phagophore assem...,4,1,0.02,0.0231,1
+GO:0042873,aldonate transmembrane transport,4,1,0.02,0.0231,1
+GO:0044804,autophagy of nucleus,4,1,0.02,0.0231,1
+GO:0070973,protein localization to endoplasmic reti...,4,1,0.02,0.0231,1
+GO:0000055,ribosomal large subunit export from nucl...,5,1,0.03,0.0287,1
+GO:0000422,autophagy of mitochondrion,6,1,0.03,0.0344,1
+GO:0061726,mitochondrion disassembly,6,1,0.03,0.0344,1
+GO:0051656,establishment of organelle localization,52,2,0.3,0.0368,1
+GO:0022411,cellular component disassembly,58,2,0.34,0.0449,1
+GO:0009749,response to glucose,8,1,0.05,0.0456,1
+GO:0019511,peptidyl-proline hydroxylation,8,1,0.05,0.0456,1
+GO:0051640,organelle localization,59,2,0.34,0.0463,1
+GO:0000054,ribosomal subunit export from nucleus,9,1,0.05,0.0512,1
+GO:0009746,response to hexose,9,1,0.05,0.0512,1
+GO:0010109,regulation of photosynthesis,9,1,0.05,0.0512,1
+GO:0033750,ribosome localization,9,1,0.05,0.0512,1
+GO:0042548,regulation of photosynthesis, light reac...,9,1,0.05,0.0512,1
+GO:0071428,rRNA-containing ribonucleoprotein comple...,9,1,0.05,0.0512,1
+GO:0009233,menaquinone metabolic process,10,1,0.06,0.0567,1
+GO:0009234,menaquinone biosynthetic process,10,1,0.06,0.0567,1
+GO:0009691,cytokinin biosynthetic process,10,1,0.06,0.0567,1
+GO:0034284,response to monosaccharide,10,1,0.06,0.0567,1
+GO:1903008,organelle disassembly,10,1,0.06,0.0567,1
+GO:0018126,protein hydroxylation,11,1,0.06,0.0622,1
+GO:0043467,regulation of generation of precursor me...,11,1,0.06,0.0622,1
+GO:0006901,vesicle coating,12,1,0.07,0.0676,1
+GO:0009690,cytokinin metabolic process,12,1,0.07,0.0676,1
+GO:0048199,vesicle targeting, to, from or within Go...,12,1,0.07,0.0676,1
+GO:0048207,vesicle targeting, rough ER to cis-Golgi,12,1,0.07,0.0676,1
+GO:0048208,COPII vesicle coating,12,1,0.07,0.0676,1
+GO:0009744,response to sucrose,14,1,0.08,0.0784,1
+GO:0034285,response to disaccharide,14,1,0.08,0.0784,1
+GO:0044210,'de novo' CTP biosynthetic process,14,1,0.08,0.0784,1
+GO:0070925,organelle assembly,80,2,0.47,0.0791,1
+GO:0006914,autophagy,82,2,0.48,0.0826,1
+GO:0061919,process utilizing autophagic mechanism,82,2,0.48,0.0826,1
+GO:0010105,negative regulation of ethylene-activate...,15,1,0.09,0.0838,1
+GO:0070298,negative regulation of phosphorelay sign...,15,1,0.09,0.0838,1
+GO:0070727,cellular macromolecule localization,781,8,4.54,0.0859,1
+GO:0008104,protein localization,783,8,4.55,0.0869,1
+GO:0006098,pentose-phosphate shunt,17,1,0.1,0.0944,1
+GO:0043207,response to external biotic stimulus,800,8,4.65,0.0954,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0072331,signal transduction by p53 class mediato...,3,2,0.1,0.0031,1
+GO:0072332,intrinsic apoptotic signaling pathway by...,3,2,0.1,0.0031,1
+GO:0015937,coenzyme A biosynthetic process,10,3,0.33,0.0035,1
+GO:0032543,mitochondrial translation,10,3,0.33,0.0035,1
+GO:0048193,Golgi vesicle transport,134,11,4.36,0.0044,1
+GO:0046352,disaccharide catabolic process,11,3,0.36,0.0047,1
+GO:0006891,intra-Golgi vesicle-mediated transport,22,4,0.72,0.0051,1
+GO:0009313,oligosaccharide catabolic process,12,3,0.39,0.0061,1
+GO:0006903,vesicle targeting,24,4,0.78,0.007,1
+GO:0034660,ncRNA metabolic process,577,30,18.77,0.0083,1
+GO:0051648,vesicle localization,26,4,0.85,0.0094,1
+GO:0051650,establishment of vesicle localization,26,4,0.85,0.0094,1
+GO:0015936,coenzyme A metabolic process,14,3,0.46,0.0095,1
+GO:0009092,homoserine metabolic process,5,2,0.16,0.0099,1
+GO:0016926,protein desumoylation,6,2,0.2,0.0145,1
+GO:0097193,intrinsic apoptotic signaling pathway,6,2,0.2,0.0145,1
+GO:0017144,drug metabolic process,273,16,8.88,0.0175,1
+GO:0090503,RNA phosphodiester bond hydrolysis, exon...,32,4,1.04,0.0194,1
+GO:0006893,Golgi to plasma membrane transport,7,2,0.23,0.0199,1
+GO:0097190,apoptotic signaling pathway,7,2,0.23,0.0199,1
+GO:0006508,proteolysis,878,40,28.57,0.0208,1
+GO:0016072,rRNA metabolic process,190,12,6.18,0.022,1
+GO:0031425,chloroplast RNA processing,19,3,0.62,0.0225,1
+GO:0098876,vesicle-mediated transport to the plasma...,19,3,0.62,0.0225,1
+GO:0006418,tRNA aminoacylation for protein translat...,171,11,5.56,0.0245,1
+GO:0051656,establishment of organelle localization,52,5,1.69,0.0266,1
+GO:0000912,assembly of actomyosin apparatus involve...,1,1,0.03,0.0325,1
+GO:0000914,phragmoplast assembly,1,1,0.03,0.0325,1
+GO:0001192,maintenance of transcriptional fidelity ...,1,1,0.03,0.0325,1
+GO:0001193,maintenance of transcriptional fidelity ...,1,1,0.03,0.0325,1
+GO:0001818,negative regulation of cytokine producti...,1,1,0.03,0.0325,1
+GO:0002532,production of molecular mediator involve...,1,1,0.03,0.0325,1
+GO:0002534,cytokine production involved in inflamma...,1,1,0.03,0.0325,1
+GO:0006123,mitochondrial electron transport, cytoch...,1,1,0.03,0.0325,1
+GO:0006182,cGMP biosynthetic process,1,1,0.03,0.0325,1
+GO:0006954,inflammatory response,1,1,0.03,0.0325,1
+GO:0009090,homoserine biosynthetic process,1,1,0.03,0.0325,1
+GO:0009187,cyclic nucleotide metabolic process,1,1,0.03,0.0325,1
+GO:0009190,cyclic nucleotide biosynthetic process,1,1,0.03,0.0325,1
+GO:0010581,regulation of starch biosynthetic proces...,1,1,0.03,0.0325,1
+GO:0010600,regulation of auxin biosynthetic process,1,1,0.03,0.0325,1
+GO:0010601,positive regulation of auxin biosyntheti...,1,1,0.03,0.0325,1
+GO:0015942,formate metabolic process,1,1,0.03,0.0325,1
+GO:0016075,rRNA catabolic process,1,1,0.03,0.0325,1
+GO:0019379,sulfate assimilation, phosphoadenylyl su...,1,1,0.03,0.0325,1
+GO:0019419,sulfate reduction,1,1,0.03,0.0325,1
+GO:0042183,formate catabolic process,1,1,0.03,0.0325,1
+GO:0042759,long-chain fatty acid biosynthetic proce...,1,1,0.03,0.0325,1
+GO:0045103,intermediate filament-based process,1,1,0.03,0.0325,1
+GO:0045104,intermediate filament cytoskeleton organ...,1,1,0.03,0.0325,1

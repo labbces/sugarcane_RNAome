@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0046825,regulation of protein export from nucleu...,1,1,0,0.0025,1
+GO:2000197,regulation of ribonucleoprotein complex ...,1,1,0,0.0025,1
+GO:2000200,regulation of ribosomal subunit export f...,1,1,0,0.0025,1
+GO:0032239,regulation of nucleobase-containing comp...,2,1,0,0.005,1
+GO:0046822,regulation of nucleocytoplasmic transpor...,2,1,0,0.005,1
+GO:0046831,regulation of RNA export from nucleus,2,1,0,0.005,1
+GO:0090069,regulation of ribosome biogenesis,2,1,0,0.005,1
+GO:0006107,oxaloacetate metabolic process,3,1,0.01,0.0075,1
+GO:0016134,saponin metabolic process,3,1,0.01,0.0075,1
+GO:0033157,regulation of intracellular protein tran...,3,1,0.01,0.0075,1
+GO:0051168,nuclear export,63,2,0.16,0.0108,1
+GO:0000027,ribosomal large subunit assembly,6,1,0.01,0.0149,1
+GO:0016137,glycoside metabolic process,6,1,0.01,0.0149,1
+GO:0048280,vesicle fusion with Golgi apparatus,6,1,0.01,0.0149,1
+GO:0046907,intracellular transport,600,5,1.5,0.0167,1
+GO:0051223,regulation of protein transport,7,1,0.02,0.0173,1
+GO:0090087,regulation of peptide transport,7,1,0.02,0.0173,1
+GO:0051649,establishment of localization in cell,616,5,1.54,0.0185,1
+GO:0009768,photosynthesis, light harvesting in phot...,8,1,0.02,0.0198,1
+GO:0070201,regulation of establishment of protein l...,8,1,0.02,0.0198,1
+GO:0000054,ribosomal subunit export from nucleus,9,1,0.02,0.0222,1
+GO:0006906,vesicle fusion,9,1,0.02,0.0222,1
+GO:0033750,ribosome localization,9,1,0.02,0.0222,1
+GO:0071428,rRNA-containing ribonucleoprotein comple...,9,1,0.02,0.0222,1
+GO:0090174,organelle membrane fusion,9,1,0.02,0.0222,1
+GO:0032386,regulation of intracellular transport,10,1,0.02,0.0247,1
+GO:0032880,regulation of protein localization,11,1,0.03,0.0271,1
+GO:1903827,regulation of cellular protein localizat...,11,1,0.03,0.0271,1
+GO:0003032,detection of oxygen,12,1,0.03,0.0295,1
+GO:0018158,protein oxidation,12,1,0.03,0.0295,1
+GO:0018171,peptidyl-cysteine oxidation,12,1,0.03,0.0295,1
+GO:0070483,detection of hypoxia,12,1,0.03,0.0295,1
+GO:0009593,detection of chemical stimulus,14,1,0.03,0.0343,1
+GO:0006913,nucleocytoplasmic transport,123,2,0.31,0.0378,1
+GO:0051169,nuclear transport,123,2,0.31,0.0378,1
+GO:0018198,peptidyl-cysteine modification,16,1,0.04,0.0392,1
+GO:0048284,organelle fusion,17,1,0.04,0.0416,1
+GO:0015977,carbon fixation,18,1,0.04,0.0439,1
+GO:0042255,ribosome assembly,18,1,0.04,0.0439,1
+GO:0060341,regulation of cellular localization,19,1,0.05,0.0463,1
+GO:0090481,pyrimidine nucleotide-sugar transmembran...,20,1,0.05,0.0487,1
+GO:0015931,nucleobase-containing compound transport,143,2,0.36,0.0496,1
+GO:0051606,detection of stimulus,21,1,0.05,0.0511,1
+GO:0015979,photosynthesis,146,2,0.36,0.0514,1
+GO:0019432,triglyceride biosynthetic process,23,1,0.06,0.0558,1
+GO:0001666,response to hypoxia,24,1,0.06,0.0582,1
+GO:0007030,Golgi organization,24,1,0.06,0.0582,1
+GO:0046460,neutral lipid biosynthetic process,24,1,0.06,0.0582,1
+GO:0046463,acylglycerol biosynthetic process,24,1,0.06,0.0582,1
+GO:0006488,dolichol-linked oligosaccharide biosynth...,25,1,0.06,0.0605,1

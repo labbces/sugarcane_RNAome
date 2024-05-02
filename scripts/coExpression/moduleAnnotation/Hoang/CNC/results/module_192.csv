@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0003018,vascular process in circulatory system,1,1,0,0.0031,1
+GO:0008217,regulation of blood pressure,1,1,0,0.0031,1
+GO:0035150,regulation of tube size,1,1,0,0.0031,1
+GO:0035296,regulation of tube diameter,1,1,0,0.0031,1
+GO:0042573,retinoic acid metabolic process,1,1,0,0.0031,1
+GO:0045776,negative regulation of blood pressure,1,1,0,0.0031,1
+GO:0097746,regulation of blood vessel diameter,1,1,0,0.0031,1
+GO:0003013,circulatory system process,2,1,0.01,0.0062,1
+GO:0006561,proline biosynthetic process,2,1,0.01,0.0062,1
+GO:0008015,blood circulation,2,1,0.01,0.0062,1
+GO:0055129,L-proline biosynthetic process,2,1,0.01,0.0062,1
+GO:0090316,positive regulation of intracellular pro...,2,1,0.01,0.0062,1
+GO:0051049,regulation of transport,45,2,0.14,0.0086,1
+GO:0009772,photosynthetic electron transport in pho...,3,1,0.01,0.0093,1
+GO:0032388,positive regulation of intracellular tra...,3,1,0.01,0.0093,1
+GO:0033157,regulation of intracellular protein tran...,3,1,0.01,0.0093,1
+GO:0001523,retinoid metabolic process,4,1,0.01,0.0124,1
+GO:0003008,system process,4,1,0.01,0.0124,1
+GO:0006560,proline metabolic process,4,1,0.01,0.0124,1
+GO:0048259,regulation of receptor-mediated endocyto...,4,1,0.01,0.0124,1
+GO:2000369,regulation of clathrin-dependent endocyt...,4,1,0.01,0.0124,1
+GO:0032879,regulation of localization,57,2,0.18,0.0136,1
+GO:0006434,seryl-tRNA aminoacylation,5,1,0.02,0.0154,1
+GO:0051222,positive regulation of protein transport,5,1,0.02,0.0154,1
+GO:0090066,regulation of anatomical structure size,62,2,0.19,0.0159,1
+GO:0009651,response to salt stress,63,2,0.2,0.0164,1
+GO:0030100,regulation of endocytosis,6,1,0.02,0.0185,1
+GO:0045737,positive regulation of cyclin-dependent ...,6,1,0.02,0.0185,1
+GO:1904031,positive regulation of cyclin-dependent ...,6,1,0.02,0.0185,1
+GO:1904951,positive regulation of establishment of ...,6,1,0.02,0.0185,1
+GO:0006654,phosphatidic acid biosynthetic process,7,1,0.02,0.0215,1
+GO:0045048,protein insertion into ER membrane,7,1,0.02,0.0215,1
+GO:0046473,phosphatidic acid metabolic process,7,1,0.02,0.0215,1
+GO:0051223,regulation of protein transport,7,1,0.02,0.0215,1
+GO:0090087,regulation of peptide transport,7,1,0.02,0.0215,1
+GO:0006289,nucleotide-excision repair,73,2,0.23,0.0217,1
+GO:0006970,response to osmotic stress,75,2,0.23,0.0228,1
+GO:0006457,protein folding,197,3,0.61,0.0235,1
+GO:0051050,positive regulation of transport,8,1,0.02,0.0246,1
+GO:0070201,regulation of establishment of protein l...,8,1,0.02,0.0246,1
+GO:0048522,positive regulation of cellular process,355,4,1.1,0.0246,1
+GO:0006283,transcription-coupled nucleotide-excisio...,9,1,0.03,0.0276,1
+GO:1903829,positive regulation of cellular protein ...,9,1,0.03,0.0276,1
+GO:0032386,regulation of intracellular transport,10,1,0.03,0.0306,1
+GO:0045787,positive regulation of cell cycle,10,1,0.03,0.0306,1
+GO:0048024,regulation of mRNA splicing, via spliceo...,10,1,0.03,0.0306,1
+GO:0071902,positive regulation of protein serine/th...,10,1,0.03,0.0306,1
+GO:0032880,regulation of protein localization,11,1,0.03,0.0336,1
+GO:1903827,regulation of cellular protein localizat...,11,1,0.03,0.0336,1
+GO:0007029,endoplasmic reticulum organization,12,1,0.04,0.0366,1

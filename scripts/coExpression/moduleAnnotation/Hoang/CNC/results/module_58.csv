@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0051554,flavonol metabolic process,3,1,0,0.00092,1
+GO:0051555,flavonol biosynthetic process,3,1,0,0.00092,1
+GO:0051552,flavone metabolic process,4,1,0,0.00122,1
+GO:0051553,flavone biosynthetic process,4,1,0,0.00122,1
+GO:0009718,anthocyanin-containing compound biosynth...,12,1,0,0.00367,1
+GO:0000105,histidine biosynthetic process,14,1,0,0.00428,1
+GO:0006547,histidine metabolic process,14,1,0,0.00428,1
+GO:0052803,imidazole-containing compound metabolic ...,14,1,0,0.00428,1
+GO:0046283,anthocyanin-containing compound metaboli...,15,1,0,0.00458,1
+GO:0015749,monosaccharide transmembrane transport,17,1,0.01,0.00519,1
+GO:0009813,flavonoid biosynthetic process,23,1,0.01,0.00702,1
+GO:0009812,flavonoid metabolic process,26,1,0.01,0.00793,1
+GO:0009073,aromatic amino acid family biosynthetic ...,48,1,0.01,0.0146,1
+GO:0009699,phenylpropanoid biosynthetic process,48,1,0.01,0.0146,1
+GO:0034219,carbohydrate transmembrane transport,62,1,0.02,0.01883,1
+GO:0009072,aromatic amino acid family metabolic pro...,73,1,0.02,0.02214,1
+GO:0044550,secondary metabolite biosynthetic proces...,75,1,0.02,0.02274,1
+GO:0008643,carbohydrate transport,80,1,0.02,0.02424,1
+GO:0046148,pigment biosynthetic process,86,1,0.03,0.02603,1
+GO:1901617,organic hydroxy compound biosynthetic pr...,86,1,0.03,0.02603,1
+GO:0009698,phenylpropanoid metabolic process,100,1,0.03,0.03022,1
+GO:0042440,pigment metabolic process,107,1,0.03,0.0323,1
+GO:0019748,secondary metabolic process,137,1,0.04,0.0412,1
+GO:1901607,alpha-amino acid biosynthetic process,144,1,0.04,0.04326,1
+GO:0008652,cellular amino acid biosynthetic process,160,1,0.05,0.04797,1
+GO:1901605,alpha-amino acid metabolic process,201,1,0.06,0.05994,1
+GO:1901615,organic hydroxy compound metabolic proce...,233,1,0.07,0.06919,1
+GO:0019438,aromatic compound biosynthetic process,1490,2,0.46,0.07157,1
+GO:1901362,organic cyclic compound biosynthetic pro...,1588,2,0.49,0.08012,1
+GO:0016053,organic acid biosynthetic process,350,1,0.11,0.10236,1
+GO:0046394,carboxylic acid biosynthetic process,350,1,0.11,0.10236,1
+GO:0006520,cellular amino acid metabolic process,415,1,0.13,0.12034,1
+GO:0044283,small molecule biosynthetic process,486,1,0.15,0.13963,1
+GO:0055085,transmembrane transport,712,1,0.22,0.19864,1
+GO:0019752,carboxylic acid metabolic process,844,1,0.26,0.23148,1
+GO:0043436,oxoacid metabolic process,867,1,0.27,0.23708,1
+GO:0006082,organic acid metabolic process,868,1,0.27,0.23732,1
+GO:0044249,cellular biosynthetic process,3341,2,1.02,0.27254,1
+GO:1901576,organic substance biosynthetic process,3398,2,1.04,0.27949,1
+GO:0009058,biosynthetic process,3458,2,1.06,0.28683,1
+GO:0071702,organic substance transport,1187,1,0.36,0.31146,1
+GO:1901566,organonitrogen compound biosynthetic pro...,1241,1,0.38,0.32338,1
+GO:0006725,cellular aromatic compound metabolic pro...,4059,2,1.24,0.36067,1
+GO:0018130,heterocycle biosynthetic process,1465,1,0.45,0.37094,1
+GO:1901360,organic cyclic compound metabolic proces...,4161,2,1.27,0.37318,1
+GO:0044281,small molecule metabolic process,1515,1,0.46,0.38116,1
+GO:0006810,transport,2044,1,0.63,0.48084,1
+GO:0051234,establishment of localization,2074,1,0.63,0.48606,1
+GO:0051179,localization,2126,1,0.65,0.49499,1
+GO:0046483,heterocycle metabolic process,3959,1,1.21,0.73578,1

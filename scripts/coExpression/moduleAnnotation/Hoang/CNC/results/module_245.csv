@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009664,plant-type cell wall organization,20,6,1.86,0.0079,1
+GO:0000019,regulation of mitotic recombination,2,2,0.19,0.0086,1
+GO:0006805,xenobiotic metabolic process,2,2,0.19,0.0086,1
+GO:0009821,alkaloid biosynthetic process,2,2,0.19,0.0086,1
+GO:0010555,response to mannitol,2,2,0.19,0.0086,1
+GO:0033075,isoquinoline alkaloid biosynthetic proce...,2,2,0.19,0.0086,1
+GO:0033076,isoquinoline alkaloid metabolic process,2,2,0.19,0.0086,1
+GO:0045951,positive regulation of mitotic recombina...,2,2,0.19,0.0086,1
+GO:0071272,morphine metabolic process,2,2,0.19,0.0086,1
+GO:0071466,cellular response to xenobiotic stimulus,2,2,0.19,0.0086,1
+GO:0080110,sporopollenin biosynthetic process,2,2,0.19,0.0086,1
+GO:0097295,morphine biosynthetic process,2,2,0.19,0.0086,1
+GO:1901376,organic heteropentacyclic compound metab...,2,2,0.19,0.0086,1
+GO:1901378,organic heteropentacyclic compound biosy...,2,2,0.19,0.0086,1
+GO:2000014,regulation of endosperm development,2,2,0.19,0.0086,1
+GO:0006558,L-phenylalanine metabolic process,15,5,1.39,0.0094,1
+GO:1902221,erythrose 4-phosphate/phosphoenolpyruvat...,15,5,1.39,0.0094,1
+GO:0071951,conversion of methionyl-tRNA to N-formyl...,10,4,0.93,0.0099,1
+GO:0009646,response to absence of light,6,3,0.56,0.0129,1
+GO:0010584,pollen exine formation,6,3,0.56,0.0129,1
+GO:0019988,charged-tRNA amino acid modification,11,4,1.02,0.0144,1
+GO:0009298,GDP-mannose biosynthetic process,7,3,0.65,0.0211,1
+GO:0009685,gibberellin metabolic process,7,3,0.65,0.0211,1
+GO:0006312,mitotic recombination,3,2,0.28,0.0243,1
+GO:0007023,post-chaperonin tubulin folding pathway,3,2,0.28,0.0243,1
+GO:0009410,response to xenobiotic stimulus,3,2,0.28,0.0243,1
+GO:0010241,ent-kaurene oxidation to kaurenoic acid,3,2,0.28,0.0243,1
+GO:0033331,ent-kaurene metabolic process,3,2,0.28,0.0243,1
+GO:0042335,cuticle development,3,2,0.28,0.0243,1
+GO:0045911,positive regulation of DNA recombination,3,2,0.28,0.0243,1
+GO:0009555,pollen development,39,8,3.63,0.0249,1
+GO:0030041,actin filament polymerization,54,10,5.02,0.0256,1
+GO:0030833,regulation of actin filament polymerizat...,54,10,5.02,0.0256,1
+GO:0032271,regulation of protein polymerization,54,10,5.02,0.0256,1
+GO:0006559,L-phenylalanine catabolic process,13,4,1.21,0.0269,1
+GO:1902222,erythrose 4-phosphate/phosphoenolpyruvat...,13,4,1.21,0.0269,1
+GO:0008064,regulation of actin polymerization or de...,55,10,5.11,0.0287,1
+GO:0030832,regulation of actin filament length,55,10,5.11,0.0287,1
+GO:0110053,regulation of actin filament organizatio...,55,10,5.11,0.0287,1
+GO:1902903,regulation of supramolecular fiber organ...,55,10,5.11,0.0287,1
+GO:0009642,response to light intensity,26,6,2.42,0.0291,1
+GO:0000028,ribosomal small subunit assembly,8,3,0.74,0.0314,1
+GO:0010208,pollen wall assembly,8,3,0.74,0.0314,1
+GO:0018215,protein phosphopantetheinylation,8,3,0.74,0.0314,1
+GO:0019673,GDP-mannose metabolic process,8,3,0.74,0.0314,1
+GO:1990937,xylan acetylation,8,3,0.74,0.0314,1
+GO:0032956,regulation of actin cytoskeleton organiz...,56,10,5.21,0.0322,1
+GO:0043254,regulation of protein-containing complex...,56,10,5.21,0.0322,1
+GO:0008154,actin polymerization or depolymerization,64,11,5.95,0.0328,1
+GO:0009072,aromatic amino acid family metabolic pro...,73,12,6.79,0.0361,1

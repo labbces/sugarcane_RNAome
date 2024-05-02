@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0002084,protein depalmitoylation,3,1,0.01,0.011,1
+GO:0010569,regulation of double-strand break repair...,3,1,0.01,0.011,1
+GO:0035372,protein localization to microtubule,3,1,0.01,0.011,1
+GO:0036010,protein localization to endosome,3,1,0.01,0.011,1
+GO:0042159,lipoprotein catabolic process,3,1,0.01,0.011,1
+GO:1902816,regulation of protein localization to mi...,3,1,0.01,0.011,1
+GO:1902817,negative regulation of protein localizat...,3,1,0.01,0.011,1
+GO:1905666,regulation of protein localization to en...,3,1,0.01,0.011,1
+GO:1905668,positive regulation of protein localizat...,3,1,0.01,0.011,1
+GO:2000779,regulation of double-strand break repair,3,1,0.01,0.011,1
+GO:0019374,galactolipid metabolic process,4,1,0.01,0.014,1
+GO:0050803,regulation of synapse structure or activ...,4,1,0.01,0.014,1
+GO:0050807,regulation of synapse organization,4,1,0.01,0.014,1
+GO:0050808,synapse organization,4,1,0.01,0.014,1
+GO:0099173,postsynapse organization,4,1,0.01,0.014,1
+GO:0099175,regulation of postsynapse organization,4,1,0.01,0.014,1
+GO:1903828,negative regulation of cellular protein ...,4,1,0.01,0.014,1
+GO:0044380,protein localization to cytoskeleton,5,1,0.02,0.018,1
+GO:0072698,protein localization to microtubule cyto...,5,1,0.02,0.018,1
+GO:0098734,macromolecule depalmitoylation,5,1,0.02,0.018,1
+GO:0034330,cell junction organization,6,1,0.02,0.021,1
+GO:0070716,mismatch repair involved in maintenance ...,6,1,0.02,0.021,1
+GO:0043007,maintenance of rDNA,8,1,0.03,0.028,1
+GO:0043570,maintenance of DNA repeat elements,8,1,0.03,0.028,1
+GO:0045910,negative regulation of DNA recombination,8,1,0.03,0.028,1
+GO:0000244,spliceosomal tri-snRNP complex assembly,9,1,0.03,0.032,1
+GO:1903829,positive regulation of cellular protein ...,9,1,0.03,0.032,1
+GO:0000018,regulation of DNA recombination,10,1,0.04,0.035,1
+GO:0006282,regulation of DNA repair,10,1,0.04,0.035,1
+GO:0009233,menaquinone metabolic process,10,1,0.04,0.035,1
+GO:0009234,menaquinone biosynthetic process,10,1,0.04,0.035,1
+GO:2001020,regulation of response to DNA damage sti...,10,1,0.04,0.035,1
+GO:0032880,regulation of protein localization,11,1,0.04,0.039,1
+GO:1903827,regulation of cellular protein localizat...,11,1,0.04,0.039,1
+GO:0051053,negative regulation of DNA metabolic pro...,12,1,0.04,0.042,1
+GO:0016925,protein sumoylation,13,1,0.05,0.046,1
+GO:0006429,leucyl-tRNA aminoacylation,14,1,0.05,0.049,1
+GO:0006471,protein ADP-ribosylation,14,1,0.05,0.049,1
+GO:0006743,ubiquinone metabolic process,15,1,0.05,0.052,1
+GO:0006744,ubiquinone biosynthetic process,15,1,0.05,0.052,1
+GO:0045005,DNA-dependent DNA replication maintenanc...,16,1,0.06,0.056,1
+GO:0009637,response to blue light,17,1,0.06,0.059,1
+GO:0000045,autophagosome assembly,19,1,0.07,0.066,1
+GO:0060341,regulation of cellular localization,19,1,0.07,0.066,1
+GO:1905037,autophagosome organization,19,1,0.07,0.066,1
+GO:0090481,pyrimidine nucleotide-sugar transmembran...,20,1,0.07,0.069,1
+GO:0035601,protein deacylation,24,1,0.09,0.083,1
+GO:0000387,spliceosomal snRNP assembly,26,1,0.09,0.089,1
+GO:0015780,nucleotide-sugar transmembrane transport,26,1,0.09,0.089,1
+GO:0098732,macromolecule deacylation,26,1,0.09,0.089,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0080110,sporopollenin biosynthetic process,2,2,0.01,3.8e-05,0.1859
+GO:0010584,pollen exine formation,6,2,0.04,0.00056,1
+GO:0010208,pollen wall assembly,8,2,0.05,0.00103,1
+GO:0010927,cellular component assembly involved in ...,12,2,0.07,0.00239,1
+GO:0032989,cellular component morphogenesis,13,2,0.08,0.00282,1
+GO:0006546,glycine catabolic process,1,1,0.01,0.00617,1
+GO:0019464,glycine decarboxylation via glycine clea...,1,1,0.01,0.00617,1
+GO:0019676,ammonia assimilation cycle,1,1,0.01,0.00617,1
+GO:0042135,neurotransmitter catabolic process,1,1,0.01,0.00617,1
+GO:0009071,serine family amino acid catabolic proce...,2,1,0.01,0.01229,1
+GO:0010555,response to mannitol,2,1,0.01,0.01229,1
+GO:0048646,anatomical structure formation involved ...,29,2,0.18,0.01375,1
+GO:0010088,phloem development,3,1,0.02,0.01839,1
+GO:0009555,pollen development,39,2,0.24,0.0241,1
+GO:0010078,maintenance of root meristem identity,4,1,0.02,0.02444,1
+GO:0010452,histone H3-K36 methylation,4,1,0.02,0.02444,1
+GO:0010074,maintenance of meristem identity,5,1,0.03,0.03046,1
+GO:0090630,activation of GTPase activity,5,1,0.03,0.03046,1
+GO:0048869,cellular developmental process,115,3,0.71,0.03436,1
+GO:0019740,nitrogen utilization,6,1,0.04,0.03643,1
+GO:0006537,glutamate biosynthetic process,7,1,0.04,0.04238,1
+GO:0006544,glycine metabolic process,7,1,0.04,0.04238,1
+GO:0017196,N-terminal peptidyl-methionine acetylati...,7,1,0.04,0.04238,1
+GO:0018206,peptidyl-methionine modification,7,1,0.04,0.04238,1
+GO:0019827,stem cell population maintenance,7,1,0.04,0.04238,1
+GO:0098727,maintenance of cell number,7,1,0.04,0.04238,1
+GO:0006474,N-terminal protein amino acid acetylatio...,8,1,0.05,0.04828,1
+GO:0030835,negative regulation of actin filament de...,8,1,0.05,0.04828,1
+GO:0030837,negative regulation of actin filament po...,8,1,0.05,0.04828,1
+GO:0031333,negative regulation of protein-containin...,8,1,0.05,0.04828,1
+GO:0032272,negative regulation of protein polymeriz...,8,1,0.05,0.04828,1
+GO:0043242,negative regulation of protein-containin...,8,1,0.05,0.04828,1
+GO:0051494,negative regulation of cytoskeleton orga...,8,1,0.05,0.04828,1
+GO:0051693,actin filament capping,8,1,0.05,0.04828,1
+GO:1901880,negative regulation of protein depolymer...,8,1,0.05,0.04828,1
+GO:1902904,negative regulation of supramolecular fi...,8,1,0.05,0.04828,1
+GO:0048229,gametophyte development,60,2,0.37,0.05297,1
+GO:0030834,regulation of actin filament depolymeriz...,9,1,0.06,0.05415,1
+GO:0035725,sodium ion transmembrane transport,9,1,0.06,0.05415,1
+GO:1901879,regulation of protein depolymerization,9,1,0.06,0.05415,1
+GO:2001289,lipid X metabolic process,9,1,0.06,0.05415,1
+GO:0006536,glutamate metabolic process,10,1,0.06,0.05999,1
+GO:0045229,external encapsulating structure organiz...,147,3,0.91,0.06277,1
+GO:0010087,phloem or xylem histogenesis,11,1,0.07,0.06579,1
+GO:0043547,positive regulation of GTPase activity,11,1,0.07,0.06579,1
+GO:0009718,anthocyanin-containing compound biosynth...,12,1,0.07,0.07155,1
+GO:0034762,regulation of transmembrane transport,12,1,0.07,0.07155,1
+GO:0034765,regulation of ion transmembrane transpor...,12,1,0.07,0.07155,1
+GO:0045595,regulation of cell differentiation,13,1,0.08,0.07728,1
+GO:0009653,anatomical structure morphogenesis,165,3,1.02,0.08229,1

@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010035,response to inorganic substance,134,11,3.26,0.00045,1
+GO:0009415,response to water,62,7,1.51,0.00076,1
+GO:0006820,anion transport,242,15,5.89,0.00093,1
+GO:0050896,response to stimulus,3963,123,96.53,0.0021,1
+GO:0051301,cell division,121,9,2.95,0.00286,1
+GO:0006950,response to stress,2893,93,70.47,0.00299,1
+GO:0009414,response to water deprivation,59,6,1.44,0.00307,1
+GO:0043207,response to external biotic stimulus,800,32,19.49,0.00442,1
+GO:0051707,response to other organism,800,32,19.49,0.00442,1
+GO:0044419,interspecies interaction between organis...,813,32,19.8,0.00558,1
+GO:0015711,organic anion transport,160,10,3.9,0.00596,1
+GO:0006865,amino acid transport,72,6,1.75,0.00818,1
+GO:0006207,'de novo' pyrimidine nucleobase biosynth...,6,2,0.15,0.00832,1
+GO:0042126,nitrate metabolic process,6,2,0.15,0.00832,1
+GO:0042128,nitrate assimilation,6,2,0.15,0.00832,1
+GO:2001057,reactive nitrogen species metabolic proc...,6,2,0.15,0.00832,1
+GO:0009607,response to biotic stimulus,839,32,20.44,0.00867,1
+GO:0044272,sulfur compound biosynthetic process,122,8,2.97,0.01009,1
+GO:0006952,defense response,1938,63,47.21,0.01144,1
+GO:0000097,sulfur amino acid biosynthetic process,37,4,0.9,0.01218,1
+GO:0046942,carboxylic acid transport,105,7,2.56,0.01437,1
+GO:0015849,organic acid transport,106,7,2.58,0.01508,1
+GO:0002757,immune response-activating signal transd...,9,2,0.22,0.01903,1
+GO:0002758,innate immune response-activating signal...,9,2,0.22,0.01903,1
+GO:0006422,aspartyl-tRNA aminoacylation,9,2,0.22,0.01903,1
+GO:0009605,response to external stimulus,895,32,21.8,0.02021,1
+GO:0000096,sulfur amino acid metabolic process,43,4,1.05,0.02031,1
+GO:0010044,response to aluminum ion,10,2,0.24,0.02341,1
+GO:0006225,UDP biosynthetic process,1,1,0.02,0.02436,1
+GO:0009188,ribonucleoside diphosphate biosynthetic ...,1,1,0.02,0.02436,1
+GO:0009193,pyrimidine ribonucleoside diphosphate me...,1,1,0.02,0.02436,1
+GO:0009194,pyrimidine ribonucleoside diphosphate bi...,1,1,0.02,0.02436,1
+GO:0009413,response to flooding,1,1,0.02,0.02436,1
+GO:0010161,red light signaling pathway,1,1,0.02,0.02436,1
+GO:0010247,detection of phosphate ion,1,1,0.02,0.02436,1
+GO:0010337,regulation of salicylic acid metabolic p...,1,1,0.02,0.02436,1
+GO:0043928,exonucleolytic catabolism of deadenylate...,1,1,0.02,0.02436,1
+GO:0046048,UDP metabolic process,1,1,0.02,0.02436,1
+GO:0046704,CDP metabolic process,1,1,0.02,0.02436,1
+GO:0046705,CDP biosynthetic process,1,1,0.02,0.02436,1
+GO:0048768,root hair cell tip growth,1,1,0.02,0.02436,1
+GO:0051782,negative regulation of cell division,1,1,0.02,0.02436,1
+GO:0062210,shoot regeneration,1,1,0.02,0.02436,1
+GO:0071491,cellular response to red light,1,1,0.02,0.02436,1
+GO:0090352,regulation of nitrate assimilation,1,1,0.02,0.02436,1
+GO:1903314,regulation of nitrogen cycle metabolic p...,1,1,0.02,0.02436,1
+GO:0006468,protein phosphorylation,1800,57,43.84,0.02506,1
+GO:0071941,nitrogen cycle metabolic process,11,2,0.27,0.02816,1
+GO:0042398,cellular modified amino acid biosyntheti...,48,4,1.17,0.02914,1
+GO:0009409,response to cold,49,4,1.19,0.03114,1

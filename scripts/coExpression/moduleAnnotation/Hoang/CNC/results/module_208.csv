@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009745,sucrose mediated signaling,1,1,0.01,0.0056,1
+GO:0071324,cellular response to disaccharide stimul...,1,1,0.01,0.0056,1
+GO:0071329,cellular response to sucrose stimulus,1,1,0.01,0.0056,1
+GO:0051560,mitochondrial calcium ion homeostasis,3,1,0.02,0.0168,1
+GO:0006569,tryptophan catabolic process,4,1,0.02,0.0224,1
+GO:0019253,reductive pentose-phosphate cycle,4,1,0.02,0.0224,1
+GO:0019441,tryptophan catabolic process to kynureni...,4,1,0.02,0.0224,1
+GO:0019685,photosynthesis, dark reaction,4,1,0.02,0.0224,1
+GO:0042436,indole-containing compound catabolic pro...,4,1,0.02,0.0224,1
+GO:0046218,indolalkylamine catabolic process,4,1,0.02,0.0224,1
+GO:0009756,carbohydrate mediated signaling,5,1,0.03,0.0279,1
+GO:0010182,sugar mediated signaling pathway,5,1,0.03,0.0279,1
+GO:0010731,protein glutathionylation,5,1,0.03,0.0279,1
+GO:1902182,shoot apical meristem development,5,1,0.03,0.0279,1
+GO:0009853,photorespiration,6,1,0.03,0.0334,1
+GO:0070189,kynurenine metabolic process,6,1,0.03,0.0334,1
+GO:0051131,chaperone-mediated protein complex assem...,7,1,0.04,0.0388,1
+GO:0032968,positive regulation of transcription elo...,8,1,0.05,0.0443,1
+GO:0034243,regulation of transcription elongation f...,8,1,0.05,0.0443,1
+GO:0071322,cellular response to carbohydrate stimul...,8,1,0.05,0.0443,1
+GO:0042180,cellular ketone metabolic process,61,2,0.34,0.0466,1
+GO:0006556,S-adenosylmethionine biosynthetic proces...,9,1,0.05,0.0496,1
+GO:0009310,amine catabolic process,9,1,0.05,0.0496,1
+GO:0042402,cellular biogenic amine catabolic proces...,9,1,0.05,0.0496,1
+GO:0009233,menaquinone metabolic process,10,1,0.06,0.055,1
+GO:0009234,menaquinone biosynthetic process,10,1,0.06,0.055,1
+GO:0009911,positive regulation of flower developmen...,10,1,0.06,0.055,1
+GO:0042908,xenobiotic transport,70,2,0.39,0.0595,1
+GO:0046500,S-adenosylmethionine metabolic process,11,1,0.06,0.0603,1
+GO:0009072,aromatic amino acid family metabolic pro...,73,2,0.41,0.064,1
+GO:0032786,positive regulation of DNA-templated tra...,13,1,0.07,0.0709,1
+GO:0000105,histidine biosynthetic process,14,1,0.08,0.0762,1
+GO:0006547,histidine metabolic process,14,1,0.08,0.0762,1
+GO:0006874,cellular calcium ion homeostasis,14,1,0.08,0.0762,1
+GO:0009744,response to sucrose,14,1,0.08,0.0762,1
+GO:0034285,response to disaccharide,14,1,0.08,0.0762,1
+GO:0044210,'de novo' CTP biosynthetic process,14,1,0.08,0.0762,1
+GO:0052803,imidazole-containing compound metabolic ...,14,1,0.08,0.0762,1
+GO:0055074,calcium ion homeostasis,14,1,0.08,0.0762,1
+GO:0016051,carbohydrate biosynthetic process,290,4,1.64,0.0821,1
+GO:2000243,positive regulation of reproductive proc...,16,1,0.09,0.0866,1
+GO:0009074,aromatic amino acid family catabolic pro...,18,1,0.1,0.0969,1
+GO:0015977,carbon fixation,18,1,0.1,0.0969,1
+GO:0043622,cortical microtubule organization,18,1,0.1,0.0969,1
+GO:0005978,glycogen biosynthetic process,19,1,0.11,0.102,1
+GO:0006108,malate metabolic process,19,1,0.11,0.102,1
+GO:0006368,transcription elongation from RNA polyme...,19,1,0.11,0.102,1
+GO:0006568,tryptophan metabolic process,19,1,0.11,0.102,1
+GO:0006586,indolalkylamine metabolic process,19,1,0.11,0.102,1
+GO:0030865,cortical cytoskeleton organization,19,1,0.11,0.102,1
