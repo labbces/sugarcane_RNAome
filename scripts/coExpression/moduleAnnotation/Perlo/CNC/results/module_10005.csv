@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009690,cytokinin metabolic process,5,1,0,9e-04,1
+GO:0009691,cytokinin biosynthetic process,5,1,0,9e-04,1
+GO:0034754,cellular hormone metabolic process,9,1,0,0.0016,1
+GO:0042446,hormone biosynthetic process,26,1,0,0.0047,1
+GO:0042445,hormone metabolic process,51,1,0.01,0.0091,1
+GO:0009308,amine metabolic process,61,1,0.01,0.0109,1
+GO:0010817,regulation of hormone levels,83,1,0.01,0.0148,1
+GO:0065008,regulation of biological quality,435,1,0.08,0.0756,1
+GO:0065007,biological regulation,2036,1,0.37,0.3156,1
+GO:0044249,cellular biosynthetic process,2215,1,0.4,0.339,1
+GO:0046483,heterocycle metabolic process,2228,1,0.4,0.3407,1
+GO:0009058,biosynthetic process,2334,1,0.42,0.3542,1
+GO:0006725,cellular aromatic compound metabolic pro...,2348,1,0.42,0.356,1
+GO:1901564,organonitrogen compound metabolic proces...,3630,1,0.65,0.5023,1
+GO:0006807,nitrogen compound metabolic process,5176,1,0.93,0.642,1
+GO:0044237,cellular metabolic process,6176,1,1.11,0.7142,1
+GO:0071704,organic substance metabolic process,6484,1,1.16,0.7339,1
+GO:0008152,metabolic process,6958,1,1.25,0.7621,1
+GO:0009987,cellular process,8755,1,1.57,0.8482,1
+GO:0008150,biological_process,11487,1,2.06,0.9298,1
+GO:0000002,mitochondrial genome maintenance,1,0,0,1,1
+GO:0000003,reproduction,369,0,0.07,1,1
+GO:0000012,single strand break repair,1,0,0,1,1
+GO:0000018,regulation of DNA recombination,2,0,0,1,1
+GO:0000022,mitotic spindle elongation,1,0,0,1,1
+GO:0000023,maltose metabolic process,2,0,0,1,1
+GO:0000025,maltose catabolic process,1,0,0,1,1
+GO:0000027,ribosomal large subunit assembly,11,0,0,1,1
+GO:0000028,ribosomal small subunit assembly,8,0,0,1,1
+GO:0000032,cell wall mannoprotein biosynthetic proc...,1,0,0,1,1
+GO:0000038,very long-chain fatty acid metabolic pro...,9,0,0,1,1
+GO:0000041,transition metal ion transport,26,0,0,1,1
+GO:0000045,autophagosome assembly,20,0,0,1,1
+GO:0000054,ribosomal subunit export from nucleus,8,0,0,1,1
+GO:0000055,ribosomal large subunit export from nucl...,4,0,0,1,1
+GO:0000056,ribosomal small subunit export from nucl...,3,0,0,1,1
+GO:0000070,mitotic sister chromatid segregation,30,0,0.01,1,1
+GO:0000075,cell cycle checkpoint,10,0,0,1,1
+GO:0000079,regulation of cyclin-dependent protein s...,16,0,0,1,1
+GO:0000082,G1/S transition of mitotic cell cycle,4,0,0,1,1
+GO:0000086,G2/M transition of mitotic cell cycle,3,0,0,1,1
+GO:0000096,sulfur amino acid metabolic process,32,0,0.01,1,1
+GO:0000097,sulfur amino acid biosynthetic process,28,0,0.01,1,1
+GO:0000101,sulfur amino acid transport,1,0,0,1,1
+GO:0000103,sulfate assimilation,7,0,0,1,1
+GO:0000105,histidine biosynthetic process,9,0,0,1,1
+GO:0000122,negative regulation of transcription by ...,10,0,0,1,1
+GO:0000154,rRNA modification,20,0,0,1,1
+GO:0000160,phosphorelay signal transduction system,75,0,0.01,1,1
+GO:0000162,tryptophan biosynthetic process,23,0,0,1,1

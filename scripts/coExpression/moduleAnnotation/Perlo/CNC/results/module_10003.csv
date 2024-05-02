@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0042545,cell wall modification,38,1,0.01,0.012,1
+GO:0045490,pectin catabolic process,38,1,0.01,0.012,1
+GO:0010393,galacturonan metabolic process,67,1,0.02,0.021,1
+GO:0045488,pectin metabolic process,67,1,0.02,0.021,1
+GO:0043086,negative regulation of catalytic activit...,70,1,0.02,0.022,1
+GO:0044092,negative regulation of molecular functio...,73,1,0.02,0.023,1
+GO:0000272,polysaccharide catabolic process,108,1,0.03,0.034,1
+GO:0042737,drug catabolic process,137,1,0.04,0.043,1
+GO:0071555,cell wall organization,203,1,0.07,0.064,1
+GO:0045229,external encapsulating structure organiz...,210,1,0.07,0.066,1
+GO:0016052,carbohydrate catabolic process,223,1,0.07,0.07,1
+GO:0071554,cell wall organization or biogenesis,279,1,0.09,0.087,1
+GO:0050790,regulation of catalytic activity,281,1,0.09,0.087,1
+GO:0065009,regulation of molecular function,295,1,0.1,0.091,1
+GO:0017144,drug metabolic process,319,1,0.1,0.098,1
+GO:0005976,polysaccharide metabolic process,327,1,0.11,0.101,1
+GO:0009057,macromolecule catabolic process,518,1,0.17,0.155,1
+GO:0005975,carbohydrate metabolic process,597,1,0.19,0.177,1
+GO:0043170,macromolecule metabolic process,4815,3,1.55,0.193,1
+GO:0006508,proteolysis,749,1,0.24,0.217,1
+GO:0019538,protein metabolic process,2898,2,0.94,0.239,1
+GO:0044248,cellular catabolic process,843,1,0.27,0.242,1
+GO:1901575,organic substance catabolic process,906,1,0.29,0.257,1
+GO:0009056,catabolic process,1040,1,0.34,0.29,1
+GO:0006468,protein phosphorylation,1108,1,0.36,0.306,1
+GO:0044238,primary metabolic process,6078,3,1.96,0.31,1
+GO:1901564,organonitrogen compound metabolic proces...,3630,2,1.17,0.331,1
+GO:0016310,phosphorylation,1304,1,0.42,0.35,1
+GO:0071704,organic substance metabolic process,6484,3,2.09,0.351,1
+GO:0016043,cellular component organization,1423,1,0.46,0.376,1
+GO:0008152,metabolic process,6958,3,2.25,0.398,1
+GO:0071840,cellular component organization or bioge...,1589,1,0.51,0.41,1
+GO:0006796,phosphate-containing compound metabolic ...,1771,1,0.57,0.446,1
+GO:0006793,phosphorus metabolic process,1790,1,0.58,0.45,1
+GO:0006464,cellular protein modification process,2024,1,0.65,0.493,1
+GO:0036211,protein modification process,2035,1,0.66,0.495,1
+GO:0065007,biological regulation,2036,1,0.66,0.495,1
+GO:0006807,nitrogen compound metabolic process,5176,2,1.67,0.52,1
+GO:0043412,macromolecule modification,2223,1,0.72,0.527,1
+GO:0044267,cellular protein metabolic process,2537,1,0.82,0.576,1
+GO:0044237,cellular metabolic process,6176,2,1.99,0.626,1
+GO:0044260,cellular macromolecule metabolic process,3821,1,1.23,0.735,1
+GO:0008150,biological_process,11487,3,3.71,0.79,1
+GO:0009987,cellular process,8755,2,2.83,0.828,1
+GO:0000002,mitochondrial genome maintenance,1,0,0,1,1
+GO:0000003,reproduction,369,0,0.12,1,1
+GO:0000012,single strand break repair,1,0,0,1,1
+GO:0000018,regulation of DNA recombination,2,0,0,1,1
+GO:0000022,mitotic spindle elongation,1,0,0,1,1
+GO:0000023,maltose metabolic process,2,0,0,1,1

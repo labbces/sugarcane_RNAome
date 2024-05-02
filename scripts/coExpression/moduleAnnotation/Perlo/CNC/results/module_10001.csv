@@ -1,0 +1,51 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006417,regulation of translation,104,1,0.02,0.019,1
+GO:0034248,regulation of cellular amide metabolic p...,106,1,0.02,0.019,1
+GO:0010608,posttranscriptional regulation of gene e...,142,1,0.03,0.025,1
+GO:0032268,regulation of cellular protein metabolic...,236,1,0.04,0.042,1
+GO:0051246,regulation of protein metabolic process,248,1,0.04,0.044,1
+GO:0006412,translation,313,1,0.06,0.055,1
+GO:0043043,peptide biosynthetic process,320,1,0.06,0.056,1
+GO:0043604,amide biosynthetic process,366,1,0.07,0.064,1
+GO:0006518,peptide metabolic process,375,1,0.07,0.065,1
+GO:2000112,regulation of cellular macromolecule bio...,428,1,0.08,0.074,1
+GO:0010556,regulation of macromolecule biosynthetic...,433,1,0.08,0.075,1
+GO:0031326,regulation of cellular biosynthetic proc...,463,1,0.08,0.08,1
+GO:0043603,cellular amide metabolic process,475,1,0.09,0.082,1
+GO:0009889,regulation of biosynthetic process,477,1,0.09,0.083,1
+GO:0010468,regulation of gene expression,541,1,0.1,0.093,1
+GO:0051171,regulation of nitrogen compound metaboli...,599,1,0.11,0.103,1
+GO:0080090,regulation of primary metabolic process,642,1,0.12,0.11,1
+GO:0031323,regulation of cellular metabolic process,692,1,0.12,0.118,1
+GO:0060255,regulation of macromolecule metabolic pr...,717,1,0.13,0.122,1
+GO:0019222,regulation of metabolic process,824,1,0.15,0.139,1
+GO:1901566,organonitrogen compound biosynthetic pro...,886,1,0.16,0.149,1
+GO:0034645,cellular macromolecule biosynthetic proc...,1259,1,0.23,0.206,1
+GO:0044271,cellular nitrogen compound biosynthetic ...,1267,1,0.23,0.208,1
+GO:0009059,macromolecule biosynthetic process,1309,1,0.23,0.214,1
+GO:0010467,gene expression,1437,1,0.26,0.233,1
+GO:0050794,regulation of cellular process,1449,1,0.26,0.234,1
+GO:0050789,regulation of biological process,1701,1,0.31,0.27,1
+GO:0065007,biological regulation,2036,1,0.37,0.316,1
+GO:0044249,cellular biosynthetic process,2215,1,0.4,0.339,1
+GO:1901576,organic substance biosynthetic process,2291,1,0.41,0.349,1
+GO:0009058,biosynthetic process,2334,1,0.42,0.354,1
+GO:0044267,cellular protein metabolic process,2537,1,0.46,0.379,1
+GO:0034641,cellular nitrogen compound metabolic pro...,2538,1,0.46,0.38,1
+GO:0019538,protein metabolic process,2898,1,0.52,0.422,1
+GO:1901564,organonitrogen compound metabolic proces...,3630,1,0.65,0.502,1
+GO:0044260,cellular macromolecule metabolic process,3821,1,0.69,0.522,1
+GO:0043170,macromolecule metabolic process,4815,1,0.86,0.613,1
+GO:0006807,nitrogen compound metabolic process,5176,1,0.93,0.642,1
+GO:0044238,primary metabolic process,6078,1,1.09,0.708,1
+GO:0044237,cellular metabolic process,6176,1,1.11,0.714,1
+GO:0071704,organic substance metabolic process,6484,1,1.16,0.734,1
+GO:0008152,metabolic process,6958,1,1.25,0.762,1
+GO:0009987,cellular process,8755,1,1.57,0.848,1
+GO:0008150,biological_process,11487,1,2.06,0.93,1
+GO:0000002,mitochondrial genome maintenance,1,0,0,1,1
+GO:0000003,reproduction,369,0,0.07,1,1
+GO:0000012,single strand break repair,1,0,0,1,1
+GO:0000018,regulation of DNA recombination,2,0,0,1,1
+GO:0000022,mitotic spindle elongation,1,0,0,1,1
+GO:0000023,maltose metabolic process,2,0,0,1,1
