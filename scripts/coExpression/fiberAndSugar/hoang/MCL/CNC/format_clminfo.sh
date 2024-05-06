@@ -1,1 +1,0 @@
-../../../../MCL/format_clminfo.sh
