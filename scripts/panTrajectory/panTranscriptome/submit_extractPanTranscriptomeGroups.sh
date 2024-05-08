@@ -5,7 +5,7 @@
 #$ -cwd
 #$ -pe smp 1
 
-INFILE=Orthogroups_SugarcanePanTranscriptome_I2.8.tsv
+INFILE=Orthogroups_SugarcanePanTranscriptome_I2.8.GeneCount.tsv
 
 module load Python/3.7.2
-/usr/bin/time -v python3.7 computeOrthogroupStats_0.8.py --orthogroupsFile ${INFILE} --numberSpecies 50 --suffixOut I2.8
+/usr/bin/time -v python3.7 extractPanTranscriptomeGroups.py -i ${INFILE} -p 0.8
