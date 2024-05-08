@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import pandas as pd
 import os
 import argparse
@@ -10,8 +12,8 @@ parser.add_argument("-i", dest="output_file", metavar="output from extractPanTra
 # getting arguments
 args = parser.parse_args()
 output_file = args.output_file
-outfigure_Groups_png="Pan-Transcriptome_Trajectory_Groups_" + "0.9" + "." + os.path.basename(output_file) + ".png"
-outfigure_Genes_png="Pan-Transcriptome_Trajectory_Genes_" + "0.9" + "." + os.path.basename(output_file) + ".png"
+outfigure_Groups_png="Pan-Transcriptome_Trajectory_Groups_" + os.path.basename(output_file) + ".png"
+outfigure_Genes_png="Pan-Transcriptome_Trajectory_Genes_" + os.path.basename(output_file) + ".png"
 
 # generating plots
 data = pd.read_csv(output_file, delimiter="\t")
