@@ -103,30 +103,29 @@ with open(output_file, "w") as write_output_file:
 
             write_output_file.write(str(pan_transcriptome_size)+ "\t"
                                     + str(genes_pan) + "\t"
-                                    + "Pan-transcriptome" + "\t"
+                                    + "pan" + "\t"
                                     + str(number_genotypes) + "\t"
                                     + str(n_sample) + "\n"
                                     + str(hard_core_transcriptome_size) + "\t"
                                     + str(genes_hard_core) + "\t"
-                                    + "Hard-Core-transcriptome" + "\t"
+                                    + "hard-core" + "\t"
                                     + str(number_genotypes) + "\t"
                                     + str(n_sample) + "\n"
                                     + str(soft_core_transcriptome_size) + "\t"
                                     + str(genes_soft_core) + "\t"
-                                    + "Soft-Core-transcriptome" + "\t"
+                                    + "soft-core" + "\t"
                                     + str(number_genotypes) + "\t"
                                     + str(n_sample) + "\n"
                                     + str(accessory_transcriptome_size) + "\t"
                                     + str(genes_accessory) + "\t"
-                                    + "Acc-transcriptome" + "\t"
+                                    + "accessory" + "\t"
                                     + str(number_genotypes) + "\t"
                                     + str(n_sample) + "\n"
                                     + str(exclusive_transcriptome_size) + "\t"
                                     + str(genes_exclusive) + "\t"
-                                    + "Exc-transcriptome" + "\t"
+                                    + "exclusive" + "\t"
                                     + str(number_genotypes) + "\t"
                                     + str(n_sample) + "\n")
-
 
 
 data = pd.read_csv(output_file, delimiter="\t")
