@@ -14,7 +14,7 @@ The following results represent the percentage of sequences classified as lncRNA
 * [Clustering sequences by identity](https://github.com/labbces/sugarcane_RNAome/wiki/Clustering-sequences-by-identity)
 * [Inference of the pan-ncRNAome](https://github.com/labbces/sugarcane_RNAome/wiki/Inference-of-the-pan%E2%80%90ncRNAome)
 
-![pan_ncRNAome.png](https://github.com/labbces/sugarcane_RNAome/blob/main/scripts/panRNAome/pan_ncRNAome.png)
+![panRNAomeGroupsTrajectory_0.8.png](https://github.com/labbces/sugarcane_RNAome/blob/main/scripts/panTrajectory/panRNAome/panRNAomeGroupsTrajectory_0.8.png)
 
 ## Families/classes of lncrnas
 * [Annotation of ncRNAs families](https://github.com/labbces/sugarcane_RNAome/wiki/Annotation-of-ncRNAs-families)
