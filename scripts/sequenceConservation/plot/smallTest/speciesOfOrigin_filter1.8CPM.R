@@ -5,14 +5,15 @@ library(htmlwidgets)
 library(plotly)
 library(dplyr)
 
-rm(list=ls())
+#rm(list=ls())
 
-DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/sequenceConservation/plot/smallTest/"
+#DIR="/home/felipe/Documents/sugarcane_RNAome/scripts/sequenceConservation/plot/smallTest/"
 DIR="/Storage/data1/felipe.peres/Sugarcane_ncRNA/11_lncRNASequenceConservation/GenomicReads/PLOT"
 
 setwd(DIR)
 
 countsOrigin<-read.delim(file = "combined_matrix_100k.sf",header=T,row.names=1)
+countsOrigin<-read.delim(file = "combined_matrix.sf",header=T,row.names=1)
 head(countsOrigin)
 colnames(countsOrigin)
 
@@ -108,7 +109,7 @@ fig <- fig %>% layout(scene = list(xaxis = list(type = "log", title = 'S. barber
                                    yaxis = list(type = "log", title = 'S. officinarum (log10 CPM)'),
                                    zaxis = list(type = "log", title = 'S. spontaneum (log10 CPM)')))
 
-saveWidget(fig, "speciesOfOriginPanRNAome_log10.html")
+#saveWidget(fig, "speciesOfOriginPanRNAome_log10.html")
 
 ############# melhorando plot 3d
 # Criar o gráfico 3D
@@ -136,7 +137,7 @@ fig <- fig %>% layout(
   legend = list(title = list(text = 'Origin'), orientation = 'h', x = 0.5, y = -0.1, xanchor = 'center')
 )
 
-fig
+#fig
 ################### /melhorando plot 3d
 
 ggplot(as.data.frame(countsOrigin),aes(x=Fraction_SBAR)) +
@@ -163,15 +164,28 @@ ggplot(as.data.frame(countsOrigin),aes(x=Fraction_SBAR)) +
 countsOrigin$Origin
 
 # interesting features
-origin <- c("SOFF", "SSPO", "CommonSSPO_SOFF", "Common", "UNK")
+origin_SOFF_SSPO <- c("SOFF", "SSPO", "CommonSSPO_SOFF", "Common", "UNK")
+origin_SOFF_SBAR <- c("SOFF", "SBAR", "CommonSOFF_SBAR", "Common", "UNK")
+origin_SSPO_SBAR <- c("SSPO", "SBAR", "CommonSSPO_SBAR", "Common", "UNK")
+
 #origin <- c("Common")
 
-filtered_origin <- countsOrigin %>%
-  filter(Origin %in% origin)
+# filter for SOFF and SSPO
+filtered_origin_SOFF_SSPO <- countsOrigin %>%
+  filter(Origin %in% origin_SOFF_SSPO)
+filtered_origin_SOFF_SSPO$Origin <- as.factor(filtered_origin_SOFF_SSPO$Origin)
 
-filtered_origin$Origin <- as.factor(filtered_origin$Origin)
+# filter for SOFF and SBAR
+filtered_origin_SOFF_SBAR <- countsOrigin %>%
+  filter(Origin %in% origin_SOFF_SBAR)
+filtered_origin_SOFF_SBAR$Origin <- as.factor(filtered_origin_SOFF_SBAR$Origin)
 
-ggplot(as.data.frame(filtered_origin),aes(x=CPM_SOFF, y=CPM_SSPO)) +
+# filter for SSPO and SBAR
+filtered_origin_SSPO_SBAR <- countsOrigin %>%
+  filter(Origin %in% origin_SSPO_SBAR)
+filtered_origin_SSPO_SBAR$Origin <- as.factor(filtered_origin_SSPO_SBAR$Origin)
+
+ggplot(as.data.frame(filtered_origin_SOFF_SSPO),aes(x=CPM_SOFF, y=CPM_SSPO)) +
   theme_bw()+
   geom_jitter()+
   xlab('Log10 CPM S. spontaneum')+
@@ -200,7 +214,7 @@ dim(countsOrigin)[1]*100/origNumberGenes
 #countsOrigin[which(countsOrigin$log10ratioCPM<=-1),'Origin']<-'S._officinarum'
 #head(countsOrigin)
 
-ggplot(as.data.frame(filtered_origin),aes(x=CPM_SOFF, y=CPM_SSPO)) +
+ggplot(as.data.frame(filtered_origin_SOFF_SSPO),aes(x=CPM_SOFF, y=CPM_SSPO)) +
   theme(text=element_text(size=20))+
   theme_bw()+
   geom_jitter(aes(colour=Origin),alpha=0.1)+
@@ -210,7 +224,8 @@ ggplot(as.data.frame(filtered_origin),aes(x=CPM_SOFF, y=CPM_SSPO)) +
   scale_y_log10()
   #scale_colour_manual(values = "blue")
 
-plot <- ggplot(as.data.frame(filtered_origin), aes(x=CPM_SOFF, y=CPM_SSPO)) +
+# plot SOFF and SSPO
+plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO), aes(x=CPM_SOFF, y=CPM_SSPO)) +
   theme_minimal(base_size = 20) +
   theme(legend.position = "right") +
   geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
@@ -236,7 +251,65 @@ plot <- ggplot(as.data.frame(filtered_origin), aes(x=CPM_SOFF, y=CPM_SSPO)) +
 # save as PNG
 ggsave("common_SOFF_SSPO.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
 # save as SVG
-ggsave("common_SOFF_SSPO.svg", plot = plot, width = 13, height = 11)
+#ggsave("common_SOFF_SSPO.svg", plot = plot, width = 13, height = 11)
+
+# plot SOFF and SBAR
+plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR), aes(x=CPM_SOFF, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "right") +
+  geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
+  scale_color_brewer(palette="Set1") +
+  xlab('Log10 CPM S. officinarum') +
+  ylab('Log10 CPM S. barberi') +
+  ggtitle("Common transcripts between SOFF and SBAR",
+          subtitle = "Visualization of conserved/common transcripts") +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_density2d(size=0.3) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 14)
+  ) +
+  annotate("text", x = 1e+04, y = 1e+00, label = "2D density lines show\nregions of high concentration", 
+           size = 5, hjust = 0, color = "blue") 
+
+# save as PNG
+ggsave("common_SOFF_SBAR.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
+# save as SVG
+#ggsave("common_SOFF_SBAR.svg", plot = plot, width = 13, height = 11)
+
+# plot SSPO and SBAR
+plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR), aes(x=CPM_SSPO, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "right") +
+  geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
+  scale_color_brewer(palette="Set1") +
+  xlab('Log10 CPM S. spontaneum') +
+  ylab('Log10 CPM S. barberi') +
+  ggtitle("Common transcripts between SSPO and SBAR",
+          subtitle = "Visualization of conserved/common transcripts") +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_density2d(size=0.3) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 14)
+  ) +
+  annotate("text", x = 1e+04, y = 1e+00, label = "2D density lines show\nregions of high concentration", 
+           size = 5, hjust = 0, color = "blue") 
+
+# save as PNG
+ggsave("common_SSPO_SBAR.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
+# save as SVG
+#ggsave("common_SSPO_SBAR.svg", plot = plot, width = 13, height = 11)
 
 #write.table(countsOrigin, sep = "\t", file = "speciesOfOriginPanTranscriptome.csv")
 
