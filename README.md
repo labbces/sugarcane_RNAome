@@ -19,7 +19,7 @@ The following results represent the percentage of sequences classified as lncRNA
 ## Families/classes of lncrnas
 * [Annotation of ncRNAs families](https://github.com/labbces/sugarcane_RNAome/wiki/Annotation-of-ncRNAs-families)
 
-![infernal_cpclncrnas_families_48_normalized_annotation.png](https://github.com/labbces/sugarcane_RNAome/blob/main/scripts/runInfernal/plotGraph/ncRNA_consensus/infernal_cpclncrnas_families_48_normalized_annotation.png)
+![infernal_cpclncrnas_families_48_normalized_annotation.png](https://github.com/labbces/sugarcane_RNAome/blob/main/scripts/runInfernal/panRNAomeRfamFamilies.png)
 
 ## Co-expression patterns of lncRNAs
 * [Contrasting genotypes selection](https://github.com/labbces/sugarcane_RNAome/wiki/Contrasting-genotypes-selection)
