@@ -1,0 +1,15 @@
+Family type,Count
+ miRNA,203
+ CD-box,1073
+Plant_SRP,88
+ rRNA,57
+ tRNA,162
+Intron,45
+tmRNA,4
+ HACA-box,266
+ splicing,45
+ ribozyme,7
+ antisense,1
+Metazoa_SRP,2
+enod40,6
+Protozoa_SRP,1

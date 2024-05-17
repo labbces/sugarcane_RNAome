@@ -1,0 +1,14 @@
+Family type,Count
+ miRNA,1325
+ CD-box,2296
+ HACA-box,524
+ tRNA,361
+ splicing,50
+Intron,57
+ leader,5
+ rRNA,15
+Plant_SRP,18
+ antisense,6
+enod40,9
+ riboswitch,4
+Cis-reg,2
