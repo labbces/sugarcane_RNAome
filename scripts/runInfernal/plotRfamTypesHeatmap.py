@@ -25,7 +25,7 @@ def extract_csv_gen_plot(directory_path):
     # normalize each column to scale the colors properly 
     df_norm_col = (combined_df.T-combined_df.T.mean())/combined_df.T.std()
 
-    print(df_norm_col)
+    #print(df_norm_col)
 
     labels = combined_df.T.values # labels for annotation
     
@@ -34,7 +34,7 @@ def extract_csv_gen_plot(directory_path):
 
     plt.figure(figsize=(16, 12))
     g = sns.heatmap(df_norm_col, square=False, linewidth=0, xticklabels=True, yticklabels=True,
-                    annot=labels, fmt='', annot_kws={"size": 6, "weight": "light"},
+                    annot=labels, fmt='', annot_kws={"size": 8, "weight": "light"},
                     cmap="YlGnBu", cbar_kws={'label': 'Normalized Count'})
 
     g.set_yticklabels(g.get_yticklabels(), rotation=0, fontsize=8)
@@ -42,8 +42,8 @@ def extract_csv_gen_plot(directory_path):
     g.set_title('Infernal Rfam family types')
 
     plt.tight_layout()
-    plt.show()
-    plt.savefig('panRNAomeRfamFamilies.png', dpi=300)
+    #plt.show()
+    plt.savefig('panRNAomeRfamFamilies.png', dpi=300)#, bbox_inches='tight')
 
 # Usage
 directory_path = '/home/felipe/Documents/sugarcane_RNAome/scripts/runInfernal/individualGenotypes' 
