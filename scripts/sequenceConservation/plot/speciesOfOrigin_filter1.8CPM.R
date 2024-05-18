@@ -12,19 +12,27 @@ DIR="/Storage/data1/felipe.peres/Sugarcane_ncRNA/11_lncRNASequenceConservation/G
 
 setwd(DIR)
 
-countsOrigin<-read.delim(file = "combined_matrix_100k.sf",header=T,row.names=1)
+#countsOrigin<-read.delim(file = "combined_matrix_100k.sf",header=T,row.names=1)
 countsOrigin<-read.delim(file = "combined_matrix.sf",header=T,row.names=1)
 head(countsOrigin)
 colnames(countsOrigin)
 
+tx2gene <- read.table(file.path(DIR, "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv"), header = FALSE, sep = "\t")
+
+# teste merge
+countsOrigin <- merge(countsOrigin, tx2gene, by.x = "row.names", by.y = "V3")
+colnames(countsOrigin) <- c("Transcript","S._barberi","S._officinarum","S._spontaneum","S._bicolor", "Category", "Gene", "Function")
 #colnames(countsOrigin)<-c('S._barberi','S._officinarum','S._spontaneum')
 origNumberGenes=dim(countsOrigin)[1]
 
 dim(countsOrigin)
 head(countsOrigin)
 
-table(rowSums(countsOrigin)==0)
-countsOrigin<-countsOrigin[!rowSums(countsOrigin)==0,] #remove transcript without reads mapped in both sps
+genomes <- c("S._barberi","S._officinarum","S._spontaneum","S._bicolor")
+#table(rowSums(countsOrigin)==0)
+table(rowSums(countsOrigin[, genomes])==0)
+#countsOrigin<-countsOrigin[!rowSums(countsOrigin)==0,] #remove transcript without reads mapped in both sps
+countsOrigin<-countsOrigin[!rowSums(countsOrigin[, genomes])==0,] #remove transcript without reads mapped in both sps
 
 countsOrigin$CPM_SBAR<-((countsOrigin[,'S._barberi']+0.1)*10e6)/(sum(countsOrigin[,'S._barberi']))
 countsOrigin$CPM_SOFF<-((countsOrigin[,'S._officinarum']+0.1)*10e6)/(sum(countsOrigin[,'S._officinarum']))
@@ -111,6 +119,35 @@ fig <- fig %>% layout(scene = list(xaxis = list(type = "log", title = 'S. barber
 
 #saveWidget(fig, "speciesOfOriginPanRNAome_log10.html")
 
+############# melhorando plot 3d
+# Criar o gráfico 3D
+#fig <- plot_ly(filtered_data, 
+#               x = ~log10_CPM_SSPO, 
+#               y = ~log10_CPM_SOFF, 
+#               z = ~log10_CPM_SBAR, 
+#               color = ~Origin, 
+#               colors = c('#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b'),
+#               marker = list(size = 4, opacity = 0.7))
+#
+#fig <- fig %>% add_markers()
+
+# Melhorar o layout
+fig <- fig %>% layout(
+  title = "Conservação de Transcritos em Três Genomas Diferentes",
+  scene = list(
+    xaxis = list(type = "log", title = 'S. spontaneum (log10 CPM)'),
+    yaxis = list(type = "log", title = 'S. officinarum (log10 CPM)'),
+    zaxis = list(type = "log", title = 'S. barberi (log10 CPM)'),
+    camera = list(
+      eye = list(x = 1.5, y = 1.5, z = 1.5)
+    )
+  ),
+  legend = list(title = list(text = 'Origin'), orientation = 'h', x = 0.5, y = -0.1, xanchor = 'center')
+)
+
+#fig
+################### /melhorando plot 3d
+
 ggplot(as.data.frame(countsOrigin),aes(x=Fraction_SBAR)) +
   theme_bw()+
   geom_histogram(bins=1000)+
@@ -195,7 +232,13 @@ ggplot(as.data.frame(filtered_origin_SOFF_SSPO),aes(x=CPM_SOFF, y=CPM_SSPO)) +
   scale_y_log10()
   #scale_colour_manual(values = "blue")
 
-# plot SOFF and SSPO
+
+
+#################################### SOFF and SSPO
+
+filtered_origin_SOFF_SSPO_coding <- subset(filtered_origin_SOFF_SSPO, Function == "protein-coding")
+filtered_origin_SOFF_SSPO_noncoding <- subset(filtered_origin_SOFF_SSPO, Function == "non-coding")
+
 plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO), aes(x=CPM_SOFF, y=CPM_SSPO)) +
   theme_minimal(base_size = 20) +
   theme(legend.position = "right") +
@@ -215,16 +258,77 @@ plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO), aes(x=CPM_SOFF, y=CPM_S
     axis.text = element_text(size = 14),
     legend.title = element_text(size = 16),
     legend.text = element_text(size = 14)
-  ) +
-  annotate("text", x = 1e+04, y = 1e+00, label = "2D density lines show\nregions of high concentration", 
-           size = 5, hjust = 0, color = "blue") 
+  )
 
 # save as PNG
 ggsave("common_SOFF_SSPO.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
 # save as SVG
 #ggsave("common_SOFF_SSPO.svg", plot = plot, width = 13, height = 11)
 
-# plot SOFF and SBAR
+plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO_coding), aes(x=CPM_SOFF, y=CPM_SSPO)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "right") +
+  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  scale_color_brewer(palette="Set1") +
+  #scale_shape_manual(values = c(15, 16, 17)) +
+  xlab('Log10 CPM S. officinarum') +
+  ylab('Log10 CPM S. spontaneum') +
+  ggtitle("Common transcripts between SOFF and SSPO",
+          subtitle = "Visualization of conserved/common transcripts") +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_density2d(size=0.5) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 14)
+  ) +
+  guides(shape = guide_legend(title = "Function"))
+
+# save as PNG
+ggsave("common_SOFF_SSPO_coding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
+# save as SVG
+#ggsave("common_SOFF_SSPO_coding.svg", plot = plot, width = 13, height = 11)
+
+
+plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO_noncoding), aes(x=CPM_SOFF, y=CPM_SSPO)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "right") +
+  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  scale_color_brewer(palette="Set1") +
+  #scale_shape_manual(values = c(15, 16, 17)) +
+  xlab('Log10 CPM S. officinarum') +
+  ylab('Log10 CPM S. spontaneum') +
+  ggtitle("Common transcripts between SOFF and SSPO",
+          subtitle = "Visualization of conserved/common transcripts") +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_density2d(size=0.5) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 14)
+  ) +
+  guides(shape = guide_legend(title = "Function"))
+
+# save as PNG
+ggsave("common_SOFF_SSPO_noncoding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
+# save as SVG
+#ggsave("common_SOFF_SSPO_noncoding.svg", plot = plot, width = 13, height = 11)
+
+
+
+############################### plot SOFF and SBAR
+
+filtered_origin_SOFF_SBAR_coding <- subset(filtered_origin_SOFF_SBAR, Function == "protein-coding")
+filtered_origin_SOFF_SBAR_noncoding <- subset(filtered_origin_SOFF_SBAR, Function == "non-coding")
+
 plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR), aes(x=CPM_SOFF, y=CPM_SBAR)) +
   theme_minimal(base_size = 20) +
   theme(legend.position = "right") +
@@ -244,16 +348,79 @@ plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR), aes(x=CPM_SOFF, y=CPM_S
     axis.text = element_text(size = 14),
     legend.title = element_text(size = 16),
     legend.text = element_text(size = 14)
-  ) +
-  annotate("text", x = 1e+04, y = 1e+00, label = "2D density lines show\nregions of high concentration", 
-           size = 5, hjust = 0, color = "blue") 
+  )
 
 # save as PNG
 ggsave("common_SOFF_SBAR.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
 # save as SVG
 #ggsave("common_SOFF_SBAR.svg", plot = plot, width = 13, height = 11)
 
-# plot SSPO and SBAR
+
+plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR_coding), aes(x=CPM_SOFF, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "right") +
+  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  scale_color_brewer(palette="Set1") +
+  #scale_shape_manual(values = c(15, 16, 17)) +
+  xlab('Log10 CPM S. officinarum') +
+  ylab('Log10 CPM S. barberi') +
+  ggtitle("Common transcripts between SOFF and SBAR",
+          subtitle = "Visualization of conserved/common transcripts") +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_density2d(size=0.5) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 14)
+  ) +
+  guides(shape = guide_legend(title = "Function"))
+
+# save as PNG
+ggsave("common_SOFF_SBAR_coding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
+# save as SVG
+#ggsave("common_SOFF_SBAR_coding.png", plot = plot, width = 13, height = 11)
+
+
+plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR_noncoding), aes(x=CPM_SOFF, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "right") +
+  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  scale_color_brewer(palette="Set1") +
+  #scale_shape_manual(values = c(15, 16, 17)) +
+  xlab('Log10 CPM S. officinarum') +
+  ylab('Log10 CPM S. barberi') +
+  ggtitle("Common transcripts between SOFF and SBAR",
+          subtitle = "Visualization of conserved/common transcripts") +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_density2d(size=0.5) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 14)
+  ) +
+  guides(shape = guide_legend(title = "Function"))
+
+# save as PNG
+ggsave("common_SOFF_SBAR_noncoding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
+# save as SVG
+#ggsave("common_SOFF_SBAR_noncoding.png", plot = plot, width = 13, height = 11)
+
+
+
+
+#################################### plot SSPO and SBAR
+
+filtered_origin_SSPO_SBAR_coding <- subset(filtered_origin_SSPO_SBAR, Function == "protein-coding")
+filtered_origin_SSPO_SBAR_noncoding <- subset(filtered_origin_SSPO_SBAR, Function == "non-coding")
+
 plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR), aes(x=CPM_SSPO, y=CPM_SBAR)) +
   theme_minimal(base_size = 20) +
   theme(legend.position = "right") +
@@ -273,14 +440,73 @@ plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR), aes(x=CPM_SSPO, y=CPM_S
     axis.text = element_text(size = 14),
     legend.title = element_text(size = 16),
     legend.text = element_text(size = 14)
-  ) +
-  annotate("text", x = 1e+04, y = 1e+00, label = "2D density lines show\nregions of high concentration", 
-           size = 5, hjust = 0, color = "blue") 
+  )
 
 # save as PNG
 ggsave("common_SSPO_SBAR.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
 # save as SVG
 #ggsave("common_SSPO_SBAR.svg", plot = plot, width = 13, height = 11)
+
+
+plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR_coding), aes(x=CPM_SSPO, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "right") +
+  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  scale_color_brewer(palette="Set1") +
+  #scale_shape_manual(values = c(15, 16, 17)) +
+  xlab('Log10 CPM S. spontaneum') +
+  ylab('Log10 CPM S. barberi') +
+  ggtitle("Common transcripts between SSPO and SBAR",
+          subtitle = "Visualization of conserved/common transcripts") +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_density2d(size=0.5) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 14)
+  ) +
+  guides(shape = guide_legend(title = "Function"))
+
+# save as PNG
+ggsave("common_SSPO_SBAR_coding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
+# save as SVG
+#ggsave("common_SSPO_SBAR_coding.png", plot = plot, width = 13, height = 11)
+
+
+plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR_noncoding), aes(x=CPM_SSPO, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "right") +
+  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  scale_color_brewer(palette="Set1") +
+  #scale_shape_manual(values = c(15, 16, 17)) +
+  xlab('Log10 CPM S. spontaneum') +
+  ylab('Log10 CPM S. barberi') +
+  ggtitle("Common transcripts between SSPO and SBAR",
+          subtitle = "Visualization of conserved/common transcripts") +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_density2d(size=0.5) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 14)
+  ) +
+  guides(shape = guide_legend(title = "Function"))
+
+# save as PNG
+ggsave("common_SSPO_SBAR_noncoding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
+# save as SVG
+#ggsave("common_SSPO_SBAR_noncoding.png", plot = plot, width = 13, height = 11)
+
+
+
 
 #write.table(countsOrigin, sep = "\t", file = "speciesOfOriginPanTranscriptome.csv")
 
