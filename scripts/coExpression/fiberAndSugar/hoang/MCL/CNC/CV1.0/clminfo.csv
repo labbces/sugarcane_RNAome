@@ -1,0 +1,11 @@
+clusters,max,ctr,avg,min,DGI,TWI,TWL,sgl,qrt,efficiency,massfrac,areafrac,target-name,source-name
+48,67995,27456.2,12386.9,1759,20,7,19803,0,0,0.47321,0.64244,0.68873,0.04618,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.1.3,
+88,63114,20476.0,6756.5,15,41,11,15454,0,0,0.55787,0.61050,0.64507,0.03444,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.1.8,
+126,61176,18660.2,4718.8,1,67,12,13409,3,7,0.59297,0.59746,0.62898,0.03138,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.2.3,
+179,62705,18307.9,3321.6,1,113,12,13225,14,37,0.60609,0.59323,0.62416,0.03079,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.2.8,
+371,60159,17530.1,1602.6,1,294,12,12758,82,159,0.61666,0.58411,0.61373,0.02948,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.3.3,
+691,58905,17222.7,860.5,1,606,12,12833,201,358,0.62378,0.57931,0.60843,0.02896,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.3.8,
+1156,58385,17139.3,514.3,1,1063,12,13111,419,662,0.62579,0.57411,0.60309,0.02882,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.4.3,
+1598,54444,16520.9,372.1,1,1494,12,13136,643,960,0.63301,0.57191,0.59985,0.02778,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.4.8,
+2103,54174,16569.0,282.7,1,1994,12,13152,957,1383,0.63249,0.57065,0.59868,0.02787,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.5.3,
+2704,57220,17441.9,219.9,1,2598,11,13589,1288,1873,0.63080,0.57656,0.60604,0.02933,Hoang2017_counts_filters_VST_CNC_CV_above_1_mcl.txt,pearson_mcl_cv1.0/out.5.8,
