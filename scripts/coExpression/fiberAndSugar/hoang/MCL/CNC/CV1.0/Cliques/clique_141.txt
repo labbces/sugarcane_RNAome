@@ -1,0 +1,6 @@
+OG1037166	intersection	out.4.8_602, out.5.3_648, out.5.8_1145
+OG880172	disjoint	out.4.8_602, out.5.3_648
+OG2416425	disjoint	out.5.3_648
+OG0116029	disjoint	out.4.8_602, out.5.3_648
+OG1152116	intersection	out.4.8_602, out.5.3_648, out.5.8_1145
+OG0041686	disjoint	out.4.8_602, out.5.3_648

@@ -1,0 +1,6 @@
+OG17279	intersection	out.4.8_581, out.5.3_778, out.5.8_817
+OG2001808	intersection	out.4.8_581, out.5.3_778, out.5.8_817
+OG1652704	disjoint	out.4.8_581, out.5.8_817
+OG794699	intersection	out.4.8_581, out.5.3_778, out.5.8_817
+OG0328082	disjoint	out.4.8_581
+OG0200350	intersection	out.4.8_581, out.5.3_778, out.5.8_817

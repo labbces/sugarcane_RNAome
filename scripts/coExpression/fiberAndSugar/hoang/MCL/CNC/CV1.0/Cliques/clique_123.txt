@@ -1,0 +1,35 @@
+OG500457	disjoint	out.4.8_332
+OG0125763	disjoint	out.5.3_480, out.4.8_332
+OG52198	intersection	out.5.3_480, out.4.8_332, out.5.8_571
+OG3401638	disjoint	out.5.3_480, out.4.8_332
+OG0092864	disjoint	out.4.8_332
+OG546843	disjoint	out.4.8_332
+OG0019449	intersection	out.5.3_480, out.4.8_332, out.5.8_571
+OG1663621	disjoint	out.4.8_332
+OG0065916	disjoint	out.4.8_332
+OG0106279	disjoint	out.4.8_332
+OG1652682	disjoint	out.5.3_480, out.4.8_332
+OG1004669	disjoint	out.4.8_332
+OG3313590	disjoint	out.4.8_332
+OG2295011	disjoint	out.4.8_332
+OG1261584	intersection	out.5.3_480, out.4.8_332, out.5.8_571
+OG0073035	disjoint	out.5.8_571
+OG0203164	disjoint	out.4.8_332
+OG850479	disjoint	out.4.8_332
+OG875753	disjoint	out.4.8_332
+OG0165903	disjoint	out.5.3_480, out.4.8_332
+OG1211022	intersection	out.5.3_480, out.4.8_332, out.5.8_571
+OG0356715	disjoint	out.4.8_332
+OG0193514	disjoint	out.4.8_332
+OG2831811	disjoint	out.4.8_332
+OG0054547	intersection	out.5.3_480, out.4.8_332, out.5.8_571
+OG0543777	intersection	out.5.3_480, out.4.8_332, out.5.8_571
+OG0098419	intersection	out.5.3_480, out.4.8_332, out.5.8_571
+OG2034533	intersection	out.5.3_480, out.4.8_332, out.5.8_571
+OG0216540	disjoint	out.4.8_332
+OG2145971	disjoint	out.4.8_332
+OG2733046	disjoint	out.5.8_571
+OG0131530	disjoint	out.5.3_480, out.5.8_571
+OG0249260	disjoint	out.5.3_480, out.4.8_332
+OG0200550	disjoint	out.4.8_332
+OG172080	disjoint	out.5.3_480, out.4.8_332

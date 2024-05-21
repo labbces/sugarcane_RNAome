@@ -1,0 +1,87 @@
+OG115575	disjoint	out.4.3_234, out.4.8_241
+OG1691357	disjoint	out.4.3_234, out.4.8_241
+OG0301979	disjoint	out.4.3_234, out.4.8_241
+OG0138699	disjoint	out.4.3_234, out.4.8_241
+OG0111269	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG190011	disjoint	out.4.3_234, out.4.8_241
+OG0037688	disjoint	out.4.8_241
+OG2225961	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0117133	disjoint	out.4.8_241
+OG0075486	disjoint	out.4.8_241
+OG698805	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0203398	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG504265	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG124089	disjoint	out.4.8_241
+OG956129	disjoint	out.4.3_234, out.4.8_241
+OG296403	disjoint	out.4.8_241
+OG0362476	disjoint	out.4.3_234, out.4.8_241
+OG2462628	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG3172692	disjoint	out.4.3_234, out.4.8_241
+OG0095870	disjoint	out.4.8_241
+OG872239	disjoint	out.4.8_241
+OG3072111	disjoint	out.4.8_241
+OG1594242	disjoint	out.4.3_234, out.4.8_241
+OG395566	disjoint	out.4.3_234, out.4.8_241
+OG10228	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0042922	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0538836	disjoint	out.4.8_241
+OG0330659	disjoint	out.4.3_234, out.4.8_241
+OG2084205	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG1749773	disjoint	out.4.8_241
+OG346121	disjoint	out.4.3_234, out.4.8_241
+OG1712268	disjoint	out.4.8_241
+OG3119958	disjoint	out.4.8_241
+OG1882462	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG396875	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0151882	disjoint	out.4.3_234, out.4.8_241
+OG2042910	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0489158	disjoint	out.4.3_234, out.4.8_241
+OG3226289	disjoint	out.4.3_234, out.4.8_241
+OG0358172	disjoint	out.4.3_234, out.4.8_241
+OG0370094	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0105057	disjoint	out.4.8_241
+OG0088233	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG701772	disjoint	out.4.8_241
+OG497867	disjoint	out.3.8_214
+OG0122585	disjoint	out.4.8_241
+OG0253817	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG1416720	disjoint	out.4.3_234, out.4.8_241
+OG3364037	disjoint	out.4.3_234, out.4.8_241
+OG2646804	disjoint	out.4.3_234, out.4.8_241
+OG692575	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0477303	disjoint	out.4.3_234, out.4.8_241
+OG0248683	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0466565	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0124966	disjoint	out.4.3_234, out.4.8_241
+OG0200892	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0169094	intersection	out.3.8_214, out.4.3_234, out.4.8_241, out.5.8_2073, out.5.3_1587
+OG282192	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0420514	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG544990	disjoint	out.3.8_214, out.4.3_234
+OG473806	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG59648	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0202314	disjoint	out.4.3_234, out.4.8_241
+OG9267	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0541466	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0032769	disjoint	out.4.3_234, out.4.8_241
+OG503444	disjoint	out.4.3_234, out.4.8_241
+OG1460206	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG2039120	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG705519	disjoint	out.4.3_234, out.4.8_241
+OG1757575	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG846296	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0141689	disjoint	out.4.3_234
+OG0144220	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG2394148	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG2522988	disjoint	out.4.8_241
+OG1159851	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG788831	disjoint	out.4.3_234, out.4.8_241
+OG2216894	disjoint	out.4.3_234, out.4.8_241
+OG304701	disjoint	out.4.8_241
+OG0047310	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0043252	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG1095490	disjoint	out.3.8_214, out.4.3_234, out.4.8_241
+OG0149944	disjoint	out.4.8_241
+OG0057148	disjoint	out.4.3_234, out.4.8_241
+OG0164237	disjoint	out.4.3_234, out.4.8_241
+OG3022199	disjoint	out.3.8_214, out.4.3_234, out.4.8_241

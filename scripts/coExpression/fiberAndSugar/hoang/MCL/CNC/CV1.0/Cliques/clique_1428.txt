@@ -1,0 +1,5 @@
+OG0148563	intersection	out.3.3_220, out.3.8_335, out.5.8_2327, out.5.3_1791, out.4.8_1352, out.4.3_466
+OG2019855	disjoint	out.3.3_220, out.3.8_335, out.4.3_466
+OG1870901	disjoint	out.3.3_220, out.3.8_335, out.4.3_466
+OG32163	disjoint	out.3.8_335, out.4.3_466
+OG838585	disjoint	out.4.3_466

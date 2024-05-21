@@ -1,0 +1,5 @@
+OG384365	disjoint	out.4.8_709, out.5.3_685
+OG0252950	disjoint	out.5.3_685
+OG0113181	disjoint	out.5.3_685
+OG0196477	disjoint	out.4.8_709, out.5.3_685
+OG0191252	intersection	out.4.8_709, out.5.3_685, out.5.8_1530

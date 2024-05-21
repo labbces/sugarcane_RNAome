@@ -1,0 +1,45 @@
+OG2254744	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0548613	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0199567	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG3222196	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0262532	disjoint	out.5.3_360, out.5.8_351
+OG893206	disjoint	out.5.3_360, out.5.8_351
+OG938032	disjoint	out.5.8_351
+OG0349216	disjoint	out.4.8_347
+OG0462534	disjoint	out.5.8_351
+OG0253270	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG199521	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0339102	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG1015478	disjoint	out.5.8_351
+OG0061829	disjoint	out.5.8_351
+OG0032055	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0104980	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG1403326	disjoint	out.5.3_360, out.5.8_351
+OG0253167	disjoint	out.5.8_351
+OG0450803	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0283966	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0492149	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG2300103	disjoint	out.5.3_360
+OG715792	disjoint	out.5.8_351
+OG3269227	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG449391	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG2868452	disjoint	out.5.8_351
+OG1129315	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0031269	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG2276809	disjoint	out.5.3_360, out.5.8_351
+OG0491225	disjoint	out.4.8_347
+OG0132750	disjoint	out.5.8_351
+OG0117201	disjoint	out.5.3_360, out.5.8_351
+OG637632	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG3030941	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG1643281	disjoint	out.5.3_360, out.5.8_351
+OG0466018	disjoint	out.4.8_347, out.5.3_360
+OG2686471	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0322370	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0263325	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0111699	disjoint	out.5.3_360, out.5.8_351
+OG2199170	disjoint	out.5.8_351
+OG1471553	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG0493187	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG784361	intersection	out.4.8_347, out.5.3_360, out.5.8_351
+OG2515770	intersection	out.4.8_347, out.5.3_360, out.5.8_351

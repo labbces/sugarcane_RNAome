@@ -1,0 +1,12 @@
+OG2707235	intersection	out.4.8_514, out.4.3_422, out.5.3_525, out.5.8_595
+OG0550092	disjoint	out.5.3_525, out.5.8_595
+OG0126395	disjoint	out.5.3_525, out.5.8_595
+OG0110042	intersection	out.4.8_514, out.4.3_422, out.5.3_525, out.5.8_595
+OG2214721	disjoint	out.5.3_525, out.5.8_595
+OG3039562	disjoint	out.4.8_514, out.4.3_422, out.5.3_525
+OG163166	disjoint	out.4.8_514, out.4.3_422
+OG1948004	intersection	out.4.8_514, out.4.3_422, out.5.3_525, out.5.8_595
+OG0098646	disjoint	out.4.8_514, out.5.3_525, out.5.8_595
+OG0135414	disjoint	out.5.3_525, out.5.8_595
+OG1053781	intersection	out.4.8_514, out.4.3_422, out.5.3_525, out.5.8_595
+OG2445026	intersection	out.4.8_514, out.4.3_422, out.5.3_525, out.5.8_595

@@ -1,0 +1,10 @@
+OG2147568	disjoint	out.4.3_401
+OG96831	disjoint	out.4.3_401, out.3.8_298
+OG150623	intersection	out.4.3_401, out.3.8_298, out.5.8_1514, out.5.3_1195, out.4.8_978
+OG2091181	disjoint	out.4.3_401
+OG0249603	disjoint	out.4.3_401, out.3.8_298
+OG0488503	disjoint	out.4.3_401, out.3.8_298
+OG0096099	disjoint	out.4.3_401, out.3.8_298
+OG1308436	disjoint	out.3.8_298
+OG0173348	disjoint	out.4.3_401, out.3.8_298
+OG0482923	disjoint	out.4.3_401

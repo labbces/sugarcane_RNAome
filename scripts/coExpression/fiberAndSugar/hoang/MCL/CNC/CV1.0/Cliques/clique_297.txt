@@ -1,0 +1,6 @@
+OG0545748	intersection	out.3.3_243, out.3.8_358, out.4.8_631, out.4.3_535
+OG494263	disjoint	out.3.8_358
+OG2785003	intersection	out.3.3_243, out.3.8_358, out.4.8_631, out.4.3_535
+OG180045	disjoint	out.4.8_631, out.4.3_535
+OG0125498	disjoint	out.4.8_631
+OG0071512	intersection	out.3.3_243, out.3.8_358, out.4.8_631, out.4.3_535

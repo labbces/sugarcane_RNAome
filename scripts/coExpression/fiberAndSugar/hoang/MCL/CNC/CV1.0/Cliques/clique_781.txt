@@ -1,0 +1,6 @@
+OG0176858	disjoint	out.4.8_572, out.4.3_480
+OG0043435	disjoint	out.4.8_572, out.4.3_480
+OG814240	intersection	out.4.8_572, out.4.3_480, out.5.3_1216, out.5.8_1556
+OG0189979	disjoint	out.4.8_572
+OG0050895	disjoint	out.4.8_572, out.4.3_480
+OG2724208	disjoint	out.4.8_572, out.4.3_480

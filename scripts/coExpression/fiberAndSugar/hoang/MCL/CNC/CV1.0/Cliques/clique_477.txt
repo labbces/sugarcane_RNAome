@@ -1,0 +1,5 @@
+OG1333524	disjoint	out.5.8_799, out.5.3_757, out.4.8_662
+OG0067495	intersection	out.5.8_799, out.4.3_629, out.5.3_757, out.4.8_662
+OG2387331	disjoint	out.5.8_799
+OG1144329	disjoint	out.5.8_799, out.5.3_757, out.4.8_662
+OG0545534	intersection	out.5.8_799, out.4.3_629, out.5.3_757, out.4.8_662

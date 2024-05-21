@@ -1,0 +1,5 @@
+OG87465	intersection	out.5.8_809, out.4.3_566, out.5.3_773, out.4.8_726
+OG2644168	disjoint	out.5.8_809
+OG1007660	disjoint	out.5.8_809, out.5.3_773
+OG3263913	intersection	out.5.8_809, out.4.3_566, out.5.3_773, out.4.8_726
+OG0066580	intersection	out.5.8_809, out.4.3_566, out.5.3_773, out.4.8_726

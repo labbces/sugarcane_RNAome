@@ -1,0 +1,6 @@
+OG25708	intersection	out.5.3_805, out.2.8_146, out.5.8_925, out.4.8_694, out.4.3_534, out.3.8_355, out.3.3_207
+OG3061242	intersection	out.5.3_805, out.2.8_146, out.5.8_925, out.4.8_694, out.4.3_534, out.3.8_355, out.3.3_207
+OG0543662	disjoint	out.3.3_207
+OG186298	intersection	out.5.3_805, out.2.8_146, out.5.8_925, out.4.8_694, out.4.3_534, out.3.8_355, out.3.3_207
+OG2582459	intersection	out.5.3_805, out.2.8_146, out.5.8_925, out.4.8_694, out.4.3_534, out.3.8_355, out.3.3_207
+OG0020104	disjoint	out.3.3_207

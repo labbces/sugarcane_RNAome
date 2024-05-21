@@ -1,0 +1,12 @@
+OG3355152	disjoint	out.5.3_512, out.4.8_487
+OG1741390	disjoint	out.5.3_512, out.4.8_487
+OG2363109	disjoint	out.5.3_512, out.4.8_487
+OG0157137	disjoint	out.5.3_512, out.4.8_487
+OG0090509	disjoint	out.5.3_512, out.4.8_487
+OG0166783	disjoint	out.5.3_512, out.4.8_487
+OG0076829	intersection	out.5.3_512, out.4.8_487, out.5.8_1803
+OG0030901	disjoint	out.5.3_512, out.4.8_487
+OG2698438	disjoint	out.5.3_512
+OG0495015	disjoint	out.5.3_512, out.4.8_487
+OG294310	disjoint	out.5.3_512
+OG0088825	disjoint	out.5.3_512, out.4.8_487

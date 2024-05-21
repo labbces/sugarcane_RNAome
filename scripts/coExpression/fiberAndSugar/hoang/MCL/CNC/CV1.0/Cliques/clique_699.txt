@@ -1,0 +1,18 @@
+OG2920465	disjoint	out.4.8_436, out.4.3_363
+OG356892	intersection	out.4.8_436, out.4.3_363, out.3.8_282
+OG2155916	disjoint	out.4.8_436
+OG0200573	intersection	out.4.8_436, out.4.3_363, out.3.8_282
+OG477265	disjoint	out.4.8_436
+OG2299438	intersection	out.4.8_436, out.4.3_363, out.3.8_282
+OG0384020	disjoint	out.3.8_282
+OG0367829	intersection	out.4.8_436, out.4.3_363, out.3.8_282
+OG2609170	intersection	out.4.8_436, out.4.3_363, out.3.8_282
+OG1540846	disjoint	out.4.3_363
+OG2305366	disjoint	out.3.8_282
+OG2736380	disjoint	out.4.8_436
+OG2252350	disjoint	out.4.8_436, out.4.3_363
+OG0049584	disjoint	out.4.8_436, out.4.3_363
+OG0028671	disjoint	out.4.8_436, out.4.3_363
+OG0542244	intersection	out.4.8_436, out.4.3_363, out.3.8_282
+OG0043725	intersection	out.4.8_436, out.4.3_363, out.3.8_282
+OG60371	disjoint	out.4.8_436, out.4.3_363

@@ -1,0 +1,17 @@
+OG180671	disjoint	out.5.3_476
+OG913355	disjoint	out.5.3_476, out.4.8_461
+OG0129794	disjoint	out.5.3_476, out.4.8_461
+OG0328594	disjoint	out.5.3_476
+OG0282634	disjoint	out.5.3_476
+OG1661514	disjoint	out.4.8_461
+OG1959959	disjoint	out.5.3_476, out.4.8_461
+OG0161174	disjoint	out.5.3_476, out.4.8_461
+OG3390087	intersection	out.5.3_476, out.4.8_461, out.4.3_443
+OG581589	intersection	out.5.3_476, out.4.8_461, out.4.3_443
+OG3285363	disjoint	out.5.3_476, out.4.8_461
+OG201854	disjoint	out.5.3_476
+OG685737	intersection	out.5.3_476, out.4.8_461, out.4.3_443
+OG3396253	disjoint	out.5.3_476, out.4.8_461
+OG2012166	intersection	out.5.3_476, out.4.8_461, out.4.3_443
+OG1783257	intersection	out.5.3_476, out.4.8_461, out.4.3_443
+OG148100	intersection	out.5.3_476, out.4.8_461, out.4.3_443

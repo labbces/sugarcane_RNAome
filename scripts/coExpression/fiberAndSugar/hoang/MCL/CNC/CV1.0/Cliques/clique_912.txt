@@ -1,0 +1,5 @@
+OG146230	disjoint	out.5.8_801, out.5.3_699, out.4.8_618
+OG2211892	intersection	out.5.8_801, out.3.8_480, out.5.3_699, out.4.8_618, out.4.3_612
+OG3268915	disjoint	out.5.8_801, out.5.3_699, out.4.8_618
+OG0474917	intersection	out.5.8_801, out.3.8_480, out.5.3_699, out.4.8_618, out.4.3_612
+OG3204437	disjoint	out.5.8_801, out.5.3_699, out.4.8_618, out.4.3_612

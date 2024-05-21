@@ -1,0 +1,4 @@
+OG1632047	disjoint	out.4.8_645
+OG1124876	intersection	out.5.8_943, out.3.8_436, out.5.3_813, out.4.8_645, out.4.3_547
+OG0102248	intersection	out.5.8_943, out.3.8_436, out.5.3_813, out.4.8_645, out.4.3_547
+OG0084125	disjoint	out.5.8_943, out.5.3_813, out.4.8_645, out.4.3_547

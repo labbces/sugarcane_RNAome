@@ -1,0 +1,112 @@
+OG2102679	disjoint	out.4.8_225
+OG2929048	disjoint	out.4.8_225
+OG1451067	disjoint	out.5.3_380
+OG1116200	disjoint	out.4.8_225
+OG2440921	disjoint	out.5.3_380
+OG0056061	disjoint	out.4.8_225
+OG834085	disjoint	out.4.8_225
+OG0164566	disjoint	out.4.8_225
+OG1617700	disjoint	out.4.8_225
+OG281850	disjoint	out.4.8_225
+OG519337	disjoint	out.4.8_225
+OG571313	disjoint	out.4.8_225
+OG2799176	intersection	out.5.3_380, out.4.8_225
+OG3225653	intersection	out.5.3_380, out.4.8_225
+OG2608368	disjoint	out.4.8_225
+OG1506062	disjoint	out.4.8_225
+OG0241731	disjoint	out.4.8_225
+OG1720850	disjoint	out.4.8_225
+OG0168787	intersection	out.5.3_380, out.4.8_225
+OG1299969	intersection	out.5.3_380, out.4.8_225
+OG376566	disjoint	out.4.8_225
+OG2504649	disjoint	out.4.8_225
+OG0095243	disjoint	out.4.8_225
+OG1574150	disjoint	out.4.8_225
+OG2200331	disjoint	out.4.8_225
+OG3284186	disjoint	out.4.8_225
+OG0340314	disjoint	out.4.8_225
+OG228159	disjoint	out.4.8_225
+OG538921	disjoint	out.4.8_225
+OG436864	disjoint	out.4.8_225
+OG0262436	disjoint	out.4.8_225
+OG1927405	disjoint	out.4.8_225
+OG2023885	disjoint	out.4.8_225
+OG1954845	intersection	out.5.3_380, out.4.8_225
+OG3158227	disjoint	out.4.8_225
+OG0085876	disjoint	out.4.8_225
+OG0025012	disjoint	out.5.3_380
+OG0111280	intersection	out.5.3_380, out.4.8_225
+OG0089976	disjoint	out.4.8_225
+OG0112333	intersection	out.5.3_380, out.4.8_225
+OG0086745	disjoint	out.4.8_225
+OG2194238	disjoint	out.5.3_380
+OG918039	disjoint	out.4.8_225
+OG0552749	disjoint	out.4.8_225
+OG0167333	disjoint	out.4.8_225
+OG0039447	disjoint	out.4.8_225
+OG290897	disjoint	out.4.8_225
+OG0203466	disjoint	out.4.8_225
+OG2876159	disjoint	out.4.8_225
+OG2785769	disjoint	out.5.3_380
+OG0203574	disjoint	out.4.8_225
+OG0104093	disjoint	out.4.8_225
+OG0324887	disjoint	out.4.8_225
+OG2675174	disjoint	out.4.8_225
+OG0027539	disjoint	out.5.3_380
+OG755344	disjoint	out.4.8_225
+OG2655392	intersection	out.5.3_380, out.4.8_225
+OG0538101	disjoint	out.4.8_225
+OG3384493	disjoint	out.4.8_225
+OG2886394	disjoint	out.4.8_225
+OG0357006	intersection	out.5.3_380, out.4.8_225
+OG1863792	disjoint	out.4.8_225
+OG0535806	disjoint	out.4.8_225
+OG2401354	disjoint	out.4.8_225
+OG555524	disjoint	out.4.8_225
+OG2880189	disjoint	out.4.8_225
+OG0067040	disjoint	out.4.8_225
+OG0168804	disjoint	out.4.8_225
+OG0562781	intersection	out.5.3_380, out.4.8_225
+OG545655	intersection	out.5.3_380, out.4.8_225
+OG1639557	disjoint	out.4.8_225
+OG1410505	disjoint	out.4.8_225
+OG1423159	disjoint	out.4.8_225
+OG0255986	intersection	out.5.3_380, out.4.8_225
+OG0100945	disjoint	out.4.8_225
+OG0012895	disjoint	out.4.8_225
+OG0072474	disjoint	out.4.8_225
+OG1148166	disjoint	out.4.8_225
+OG1357278	disjoint	out.4.8_225
+OG3111892	disjoint	out.4.8_225
+OG1885584	intersection	out.5.3_380, out.4.8_225
+OG2398825	disjoint	out.4.8_225
+OG347902	disjoint	out.4.8_225
+OG585945	disjoint	out.4.8_225
+OG0167966	disjoint	out.4.8_225
+OG768137	intersection	out.5.3_380, out.4.8_225
+OG0203241	disjoint	out.4.8_225
+OG0099208	disjoint	out.4.8_225
+OG0166927	disjoint	out.4.8_225
+OG0168800	disjoint	out.4.8_225
+OG0144232	intersection	out.5.3_380, out.4.8_225
+OG0110630	disjoint	out.5.3_380
+OG885153	disjoint	out.4.8_225
+OG0492861	disjoint	out.4.8_225
+OG1824938	disjoint	out.4.8_225
+OG0171101	intersection	out.5.3_380, out.4.8_225
+OG0062928	disjoint	out.4.8_225
+OG0035432	disjoint	out.4.8_225
+OG1896069	disjoint	out.4.8_225
+OG0031832	disjoint	out.4.8_225
+OG1175351	intersection	out.5.3_380, out.4.8_225
+OG2960977	intersection	out.5.3_380, out.4.8_225
+OG0065933	intersection	out.5.3_380, out.4.8_225
+OG0305890	disjoint	out.4.8_225
+OG0505566	disjoint	out.5.3_380
+OG0129154	intersection	out.5.3_380, out.4.8_225
+OG3147637	disjoint	out.4.8_225
+OG1969782	intersection	out.5.3_380, out.4.8_225
+OG3343769	disjoint	out.4.8_225
+OG2802062	intersection	out.5.3_380, out.4.8_225
+OG2321784	disjoint	out.4.8_225
+OG0078130	disjoint	out.4.8_225

@@ -1,0 +1,28 @@
+OG1987566	disjoint	out.5.3_412, out.5.8_462
+OG0201363	disjoint	out.5.3_412, out.4.8_408
+OG591866	disjoint	out.5.3_412, out.5.8_462, out.4.8_408
+OG0251052	intersection	out.5.3_412, out.4.3_428, out.5.8_462, out.4.8_408
+OG9654	disjoint	out.5.3_412, out.5.8_462, out.4.8_408
+OG0394148	intersection	out.5.3_412, out.4.3_428, out.5.8_462, out.4.8_408
+OG3130072	disjoint	out.5.3_412
+OG0201030	disjoint	out.5.3_412, out.5.8_462, out.4.8_408
+OG3269264	disjoint	out.5.3_412, out.4.3_428, out.4.8_408
+OG0096403	disjoint	out.5.3_412, out.5.8_462
+OG0254937	disjoint	out.5.3_412, out.5.8_462, out.4.8_408
+OG3134173	intersection	out.5.3_412, out.4.3_428, out.5.8_462, out.4.8_408
+OG829671	disjoint	out.5.8_462
+OG0253226	disjoint	out.5.3_412, out.4.8_408
+OG0324108	disjoint	out.5.3_412, out.4.8_408
+OG436690	disjoint	out.5.3_412, out.5.8_462, out.4.8_408
+OG969402	disjoint	out.5.3_412, out.4.3_428, out.4.8_408
+OG0078184	disjoint	out.5.3_412, out.5.8_462, out.4.8_408
+OG0126050	disjoint	out.5.3_412, out.5.8_462, out.4.8_408
+OG1663754	disjoint	out.5.3_412, out.5.8_462
+OG209099	disjoint	out.5.3_412, out.5.8_462, out.4.8_408
+OG1115678	disjoint	out.5.8_462
+OG0296130	disjoint	out.5.3_412, out.5.8_462, out.4.8_408
+OG1353903	intersection	out.5.3_412, out.4.3_428, out.5.8_462, out.4.8_408
+OG0494297	intersection	out.5.3_412, out.4.3_428, out.5.8_462, out.4.8_408
+OG2835145	disjoint	out.5.8_462
+OG3080351	disjoint	out.5.3_412, out.5.8_462
+OG0358151	disjoint	out.5.3_412

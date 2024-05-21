@@ -1,0 +1,5 @@
+OG0166243	intersection	out.5.8_775, out.4.3_744, out.5.3_736, out.4.8_702
+OG1217778	disjoint	out.5.8_775, out.5.3_736, out.4.8_702
+OG2879954	disjoint	out.5.8_775, out.5.3_736
+OG0069243	disjoint	out.5.8_775
+OG2559395	disjoint	out.5.8_775, out.5.3_736, out.4.8_702

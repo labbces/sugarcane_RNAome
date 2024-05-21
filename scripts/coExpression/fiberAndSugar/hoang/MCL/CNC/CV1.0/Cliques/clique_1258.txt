@@ -1,0 +1,5 @@
+OG0524333	disjoint	out.4.3_492, out.4.8_635
+OG0106621	disjoint	out.4.3_492, out.4.8_635
+OG775473	intersection	out.4.3_492, out.4.8_635, out.5.8_1812, out.5.3_1385
+OG1049845	disjoint	out.4.3_492, out.4.8_635
+OG0164084	disjoint	out.4.3_492, out.4.8_635

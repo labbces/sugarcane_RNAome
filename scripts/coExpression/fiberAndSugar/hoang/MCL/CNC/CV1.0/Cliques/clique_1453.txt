@@ -1,0 +1,6 @@
+OG0090742	intersection	out.3.3_217, out.3.8_348, out.4.3_491, out.5.8_902, out.5.3_880, out.4.8_747
+OG0200064	disjoint	out.3.3_217, out.3.8_348, out.4.3_491
+OG0293573	intersection	out.3.3_217, out.3.8_348, out.4.3_491, out.5.8_902, out.5.3_880, out.4.8_747
+OG0357194	intersection	out.3.3_217, out.3.8_348, out.4.3_491, out.5.8_902, out.5.3_880, out.4.8_747
+OG327656	disjoint	out.5.8_902
+OG2741240	disjoint	out.4.3_491

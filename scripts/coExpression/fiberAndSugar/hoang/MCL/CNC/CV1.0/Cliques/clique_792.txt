@@ -1,0 +1,40 @@
+OG3370988	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG0109650	disjoint	out.4.8_327, out.5.3_351
+OG2849994	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG2693343	disjoint	out.4.3_290
+OG0147900	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG1298010	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG1709539	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG0337137	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG2474341	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG0176280	disjoint	out.4.8_327, out.4.3_290
+OG0484719	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG0076614	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG0563067	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG0363858	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG3125353	disjoint	out.4.8_327, out.5.3_351
+OG1036759	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG705945	intersection	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290, out.5.8_2046
+OG1629721	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG2478217	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG1462712	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG1731577	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG0157909	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG0380988	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG0164341	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG2102554	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG0249808	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG222404	disjoint	out.4.8_327, out.3.8_254, out.5.3_351, out.4.3_290
+OG0180086	disjoint	out.5.3_351
+OG1325441	disjoint	out.5.3_351
+OG1875174	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG393320	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG3285201	disjoint	out.4.8_327, out.5.3_351
+OG1780584	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG0098715	disjoint	out.5.3_351
+OG0072883	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG2199307	disjoint	out.4.8_327, out.5.3_351, out.4.3_290
+OG17130	disjoint	out.4.8_327, out.5.3_351
+OG1261424	disjoint	out.4.8_327, out.5.3_351
+OG886430	disjoint	out.4.8_327, out.5.3_351
+OG2655441	disjoint	out.4.8_327, out.5.3_351, out.4.3_290

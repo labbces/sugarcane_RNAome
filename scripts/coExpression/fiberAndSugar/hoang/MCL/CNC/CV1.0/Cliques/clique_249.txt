@@ -1,0 +1,7 @@
+OG3124043	disjoint	out.4.8_562
+OG482584	disjoint	out.4.8_562
+OG3179375	intersection	out.5.8_861, out.4.8_562, out.5.3_823
+OG673739	disjoint	out.5.8_861
+OG154350	intersection	out.5.8_861, out.4.8_562, out.5.3_823
+OG1522189	intersection	out.5.8_861, out.4.8_562, out.5.3_823
+OG0082483	disjoint	out.4.8_562

@@ -1,0 +1,5 @@
+OG2008366	disjoint	out.4.3_542, out.4.8_641, out.5.3_725
+OG0085991	disjoint	out.4.3_542, out.4.8_641, out.5.3_725
+OG0065746	disjoint	out.4.8_641
+OG0072955	intersection	out.4.3_542, out.4.8_641, out.5.8_1428, out.5.3_725
+OG0330383	disjoint	out.5.3_725

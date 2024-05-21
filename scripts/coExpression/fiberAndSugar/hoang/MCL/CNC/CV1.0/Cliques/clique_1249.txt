@@ -1,0 +1,14 @@
+OG1330489	disjoint	out.4.3_359
+OG2515665	disjoint	out.4.3_359, out.3.8_258
+OG0128368	disjoint	out.4.3_359, out.3.8_258
+OG603589	disjoint	out.4.3_359, out.3.8_258
+OG0181841	disjoint	out.4.3_359, out.3.8_258
+OG2925483	disjoint	out.4.3_359, out.3.8_258
+OG2518904	disjoint	out.4.3_359, out.3.8_258
+OG0164537	disjoint	out.4.3_359, out.3.8_258
+OG0251049	disjoint	out.4.3_359
+OG586056	disjoint	out.4.3_359, out.3.8_258
+OG1888416	disjoint	out.4.3_359, out.3.8_258
+OG2849570	intersection	out.4.3_359, out.3.8_258, out.5.8_1928, out.5.3_1486, out.4.8_1135
+OG0487595	disjoint	out.3.8_258
+OG3259445	disjoint	out.4.3_359, out.3.8_258

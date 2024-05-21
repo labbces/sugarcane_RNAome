@@ -1,0 +1,4 @@
+OG97784	disjoint	out.3.8_354, out.4.3_532, out.4.8_690
+OG296869	intersection	out.3.8_354, out.4.3_532, out.4.8_690, out.5.3_1808, out.5.8_2347
+OG0245961	disjoint	out.3.8_354, out.4.3_532, out.4.8_690
+OG80553	disjoint	out.3.8_354, out.4.3_532, out.4.8_690

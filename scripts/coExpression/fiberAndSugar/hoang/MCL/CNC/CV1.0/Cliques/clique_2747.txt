@@ -1,0 +1,137 @@
+OG456307	disjoint	out.4.8_211
+OG0270973	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2437135	disjoint	out.4.3_200, out.4.8_211
+OG0096432	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0217772	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0271532	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1997803	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1501207	disjoint	out.4.3_200, out.4.8_211
+OG0474017	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2440254	disjoint	out.4.8_211
+OG998058	disjoint	out.4.3_200, out.4.8_211
+OG3023116	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2725270	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0248632	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0549919	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0125263	disjoint	out.4.3_200, out.4.8_211
+OG0084484	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1831098	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0201326	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1895841	intersection	out.3.8_181, out.4.3_200, out.4.8_211, out.5.3_1339, out.5.8_1744
+OG3256139	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0202950	disjoint	out.4.3_200, out.4.8_211
+OG0120149	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0044641	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2577201	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0099845	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0053860	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0480060	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1984619	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1361347	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2864150	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0106484	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG719885	disjoint	out.4.8_211
+OG1400016	disjoint	out.4.3_200, out.4.8_211
+OG634394	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0363779	disjoint	out.4.3_200, out.4.8_211
+OG0201761	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0199656	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2413655	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1435152	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0112444	disjoint	out.3.8_181, out.4.3_200
+OG3060898	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0491946	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0124312	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0157040	disjoint	out.4.3_200
+OG2411305	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2026159	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0042064	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2239905	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG575434	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG3128574	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2219039	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG788470	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG3363888	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0106950	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0166879	disjoint	out.4.3_200, out.4.8_211
+OG0094782	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG30910	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0359596	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0044216	disjoint	out.3.8_181, out.4.3_200
+OG0201334	disjoint	out.4.8_211
+OG1929620	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG516158	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0223065	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG173071	disjoint	out.4.3_200, out.4.8_211
+OG0064638	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2425977	disjoint	out.4.3_200, out.4.8_211
+OG1934118	disjoint	out.4.3_200, out.4.8_211
+OG0491981	disjoint	out.4.8_211
+OG0309283	disjoint	out.4.3_200, out.4.8_211
+OG0338187	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG755345	disjoint	out.4.3_200, out.4.8_211
+OG0206486	disjoint	out.4.3_200, out.4.8_211
+OG0480174	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0479012	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0493899	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG3376863	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0063964	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0237326	disjoint	out.4.3_200, out.4.8_211
+OG0063857	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1285881	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0480207	disjoint	out.3.8_181
+OG2679847	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2792773	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0549049	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0095550	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0025515	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG335913	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0107995	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0090555	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0227781	disjoint	out.4.3_200, out.4.8_211
+OG1515099	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1720230	disjoint	out.4.3_200, out.4.8_211
+OG117463	disjoint	out.4.3_200, out.4.8_211
+OG2491147	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0059308	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1793490	disjoint	out.4.3_200, out.4.8_211
+OG907458	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG432782	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0145004	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0055824	disjoint	out.4.3_200, out.4.8_211
+OG0119489	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1325811	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG3274229	disjoint	out.4.8_211
+OG55429	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG670095	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG688019	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1331329	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG232277	disjoint	out.4.3_200, out.4.8_211
+OG901800	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG443399	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2928561	disjoint	out.4.8_211
+OG0068168	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0168507	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0022170	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0255488	disjoint	out.4.8_211
+OG3254023	disjoint	out.4.3_200, out.4.8_211
+OG2712983	disjoint	out.4.8_211
+OG942254	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG316169	disjoint	out.4.8_211
+OG461512	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2166931	disjoint	out.4.3_200, out.4.8_211
+OG0363414	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG216218	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG3358680	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1417960	disjoint	out.4.3_200, out.4.8_211
+OG1940338	disjoint	out.4.3_200, out.4.8_211
+OG0077574	disjoint	out.4.3_200
+OG1667431	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG2354930	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1269113	disjoint	out.4.3_200, out.4.8_211
+OG0177879	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0065263	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG0009750	disjoint	out.4.3_200, out.4.8_211
+OG0332420	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG1749063	disjoint	out.3.8_181, out.4.3_200, out.4.8_211
+OG116970	disjoint	out.4.3_200, out.4.8_211

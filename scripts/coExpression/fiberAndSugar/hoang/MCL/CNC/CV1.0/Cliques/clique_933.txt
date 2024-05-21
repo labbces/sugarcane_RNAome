@@ -1,0 +1,7 @@
+OG2003905	intersection	out.5.8_828, out.3.8_331, out.5.3_798, out.4.8_684, out.4.3_459
+OG0408448	intersection	out.5.8_828, out.3.8_331, out.5.3_798, out.4.8_684, out.4.3_459
+OG845281	disjoint	out.3.8_331, out.4.3_459
+OG140664	disjoint	out.4.3_459
+OG0474532	intersection	out.5.8_828, out.3.8_331, out.5.3_798, out.4.8_684, out.4.3_459
+OG0047350	disjoint	out.5.8_828
+OG0110092	intersection	out.5.8_828, out.3.8_331, out.5.3_798, out.4.8_684, out.4.3_459

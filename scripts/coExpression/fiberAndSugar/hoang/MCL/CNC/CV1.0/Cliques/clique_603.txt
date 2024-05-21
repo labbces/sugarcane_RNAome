@@ -1,0 +1,5 @@
+OG3067557	disjoint	out.4.3_481, out.4.8_616
+OG0124159	intersection	out.5.8_986, out.4.3_481, out.5.3_842, out.4.8_616
+OG0359217	intersection	out.5.8_986, out.4.3_481, out.5.3_842, out.4.8_616
+OG2271123	intersection	out.5.8_986, out.4.3_481, out.5.3_842, out.4.8_616
+OG2800606	disjoint	out.4.3_481, out.4.8_616

@@ -1,0 +1,43 @@
+OG0052951	disjoint	out.3.8_220
+OG2166442	disjoint	out.5.8_382, out.5.3_371, out.4.8_330, out.4.3_275
+OG2617080	disjoint	out.5.8_382, out.5.3_371
+OG3212743	disjoint	out.5.8_382, out.5.3_371
+OG2147377	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG2283572	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0249812	disjoint	out.3.8_220, out.4.8_330, out.4.3_275
+OG1756473	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG1635851	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG2870531	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0471465	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0202291	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0145113	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG3054509	disjoint	out.5.8_382, out.5.3_371, out.4.8_330, out.4.3_275
+OG0140272	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG1378538	disjoint	out.5.8_382
+OG2101894	disjoint	out.4.8_330, out.4.3_275
+OG0481868	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0053066	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0199480	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0107030	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0474777	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG2576898	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG1840908	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG2982434	disjoint	out.5.8_382, out.5.3_371, out.4.8_330
+OG0334809	disjoint	out.3.8_220, out.4.3_275
+OG0191653	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0199776	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG964960	disjoint	out.5.8_382, out.5.3_371, out.4.8_330, out.4.3_275
+OG956016	disjoint	out.5.8_382, out.5.3_371, out.4.8_330, out.4.3_275
+OG1108866	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0193841	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG2524555	disjoint	out.5.8_382
+OG1968697	disjoint	out.3.8_220, out.4.8_330, out.4.3_275
+OG126029	disjoint	out.3.8_220, out.4.3_275
+OG0137552	disjoint	out.3.8_220, out.4.8_330, out.4.3_275
+OG755161	disjoint	out.3.8_220, out.4.3_275
+OG39717	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG1763774	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG1215253	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG2973936	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG0174854	intersection	out.5.8_382, out.3.8_220, out.5.3_371, out.4.8_330, out.4.3_275
+OG1491673	disjoint	out.3.8_220

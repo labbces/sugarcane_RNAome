@@ -1,0 +1,41 @@
+OG0548664	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG741209	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG0040820	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG0192445	disjoint	out.5.3_366, out.5.8_378
+OG0202465	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG2053832	disjoint	out.5.3_366, out.5.8_378
+OG0145684	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG0192253	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG688743	disjoint	out.5.8_378
+OG1791979	disjoint	out.5.8_378
+OG227558	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG279444	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG424773	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG2829233	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG0079795	disjoint	out.4.3_347, out.4.8_341
+OG1884906	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG2562365	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG1068508	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG0264369	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG0196433	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG0549474	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG2898238	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG2471775	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG673687	disjoint	out.5.3_366, out.5.8_378, out.4.8_341
+OG33007	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG0544838	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG3220555	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG2167269	disjoint	out.4.8_341
+OG2821976	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG0184544	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG1351899	disjoint	out.5.8_378
+OG2988578	disjoint	out.5.3_366, out.5.8_378
+OG880866	disjoint	out.5.3_366, out.5.8_378
+OG1178380	disjoint	out.4.3_347
+OG0111337	intersection	out.5.3_366, out.4.3_347, out.5.8_378, out.4.8_341
+OG16788	disjoint	out.5.8_378
+OG2819082	disjoint	out.5.3_366, out.5.8_378
+OG0090105	disjoint	out.4.8_341
+OG0094701	disjoint	out.5.3_366, out.5.8_378
+OG1168310	disjoint	out.5.3_366, out.4.8_341
+OG0201977	disjoint	out.5.3_366, out.5.8_378

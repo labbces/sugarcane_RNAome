@@ -1,0 +1,13 @@
+OG0081348	disjoint	out.5.8_729
+OG0202410	disjoint	out.5.3_510
+OG1543096	intersection	out.5.3_510, out.5.8_729
+OG2466648	intersection	out.5.3_510, out.5.8_729
+OG0292831	disjoint	out.5.3_510
+OG0087345	disjoint	out.5.3_510
+OG1585750	disjoint	out.5.3_510
+OG2976754	disjoint	out.5.3_510
+OG412589	intersection	out.5.3_510, out.5.8_729
+OG0167779	intersection	out.5.3_510, out.5.8_729
+OG0284240	disjoint	out.5.3_510
+OG0207328	intersection	out.5.3_510, out.5.8_729
+OG0157788	disjoint	out.5.3_510

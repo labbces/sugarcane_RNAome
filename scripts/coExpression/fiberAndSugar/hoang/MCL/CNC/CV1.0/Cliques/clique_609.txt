@@ -1,0 +1,5 @@
+OG0235312	intersection	out.4.3_548, out.4.8_597, out.5.8_850, out.5.3_673
+OG0248407	disjoint	out.4.8_597, out.5.3_673
+OG0039130	intersection	out.4.3_548, out.4.8_597, out.5.8_850, out.5.3_673
+OG0277863	disjoint	out.4.8_597, out.5.8_850, out.5.3_673
+OG0474733	intersection	out.4.3_548, out.4.8_597, out.5.8_850, out.5.3_673

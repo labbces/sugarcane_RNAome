@@ -1,0 +1,7 @@
+OG1652704	disjoint	out.5.3_613
+OG3006191	intersection	out.5.3_613, out.4.8_599, out.5.8_724
+OG0108825	intersection	out.5.3_613, out.4.8_599, out.5.8_724
+OG1059705	intersection	out.5.3_613, out.4.8_599, out.5.8_724
+OG35793	intersection	out.5.3_613, out.4.8_599, out.5.8_724
+OG0328082	disjoint	out.5.3_613, out.5.8_724
+OG2142927	intersection	out.5.3_613, out.4.8_599, out.5.8_724

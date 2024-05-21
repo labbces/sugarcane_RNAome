@@ -1,0 +1,228 @@
+OG2797541	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0143628	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0497870	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0486015	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0139158	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG2254756	disjoint	out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2434721	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0235120	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG2530808	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1324073	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG776001	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG3144105	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1572571	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG527750	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1539834	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1120103	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG220588	disjoint	out.5.8_185
+OG2415259	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0141909	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG1132575	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0068781	disjoint	out.3.8_178, out.4.3_186
+OG0171172	disjoint	out.3.8_178
+OG0088240	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG725096	disjoint	out.5.8_185
+OG186300	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0108809	disjoint	out.3.8_178, out.4.8_188, out.4.3_186
+OG0134548	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG2781419	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG3403766	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG99332	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0440928	disjoint	out.5.8_185, out.5.3_190
+OG1311657	disjoint	out.5.8_185
+OG0142702	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0138250	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG843416	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0360476	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0110461	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG786092	disjoint	out.3.8_178, out.4.3_186
+OG0087273	disjoint	out.5.8_185, out.5.3_190
+OG0291971	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1062908	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG607548	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2333441	disjoint	out.3.8_178, out.4.3_186
+OG1598452	disjoint	out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0291846	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG845206	disjoint	out.5.8_185, out.5.3_190
+OG0049905	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG1449147	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG2975458	disjoint	out.3.8_178
+OG1149622	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG616914	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG2600837	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1996839	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0600092	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0186468	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG3346819	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG2735053	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0166783	disjoint	out.3.8_178
+OG0387253	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0043725	disjoint	out.5.8_185, out.5.3_190
+OG965254	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0227963	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG411435	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG275723	disjoint	out.3.8_178, out.4.8_188, out.4.3_186
+OG3379272	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG2352713	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0395768	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0033762	disjoint	out.3.8_178
+OG1760129	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0103813	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG862001	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2169732	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0078701	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG1853138	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0103459	disjoint	out.3.8_178
+OG170909	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0333864	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0472926	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG3094473	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0075711	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG267416	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2936796	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0132196	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG3400092	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG1892492	disjoint	out.5.8_185, out.5.3_190
+OG1424601	disjoint	out.4.8_188
+OG1525508	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG3147947	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG1652750	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0541866	disjoint	out.3.8_178
+OG1892494	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1110107	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG1637059	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG780223	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG799313	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0143663	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1919181	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG1331246	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG618188	disjoint	out.5.8_185
+OG1727254	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0474401	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG2833998	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG334813	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG726446	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0341380	disjoint	out.5.8_185, out.5.3_190
+OG435674	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0552718	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2108463	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG3086527	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG1713353	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG2517482	disjoint	out.5.8_185, out.5.3_190
+OG270867	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0137441	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1018626	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG569057	disjoint	out.5.8_185
+OG0059744	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG25400	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1816325	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG147666	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0490008	disjoint	out.5.8_185, out.5.3_190
+OG3283080	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0546712	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG2399702	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG3093974	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG2664100	disjoint	out.5.8_185
+OG0057566	disjoint	out.5.8_185, out.5.3_190
+OG751547	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG582723	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1076276	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG3004165	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG3150046	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2212895	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1786738	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0099352	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG812822	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG333120	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0242972	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0366113	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0313040	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG2734079	disjoint	out.5.8_185
+OG1235340	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2222310	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0055425	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG284057	disjoint	out.5.8_185, out.5.3_190
+OG0120322	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG1852797	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2719168	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG2669941	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2542951	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0087716	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG977849	disjoint	out.5.8_185, out.5.3_190
+OG2227760	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0211120	disjoint	out.5.8_185
+OG0572857	disjoint	out.5.8_185
+OG936383	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0200573	disjoint	out.5.8_185, out.5.3_190
+OG1658222	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1728199	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0241741	disjoint	out.5.8_185, out.5.3_190
+OG3244040	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1281226	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0540573	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0028671	disjoint	out.3.8_178
+OG953983	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0545975	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG113869	disjoint	out.3.8_178, out.4.8_188, out.4.3_186
+OG2340626	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG669493	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0194031	disjoint	out.5.8_185
+OG3355152	disjoint	out.3.8_178
+OG0292516	disjoint	out.5.8_185
+OG2020799	disjoint	out.3.8_178
+OG2316087	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG745979	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG354401	disjoint	out.5.8_185, out.5.3_190
+OG0321012	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1555364	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG821215	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG342332	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG3176554	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG879489	disjoint	out.5.8_185, out.5.3_190
+OG511062	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0101943	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG3380583	disjoint	out.5.8_185, out.5.3_190
+OG3065374	disjoint	out.4.8_188, out.4.3_186
+OG3007990	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1930631	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG2305366	disjoint	out.4.8_188, out.4.3_186
+OG850262	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG914406	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0077786	disjoint	out.3.8_178
+OG512983	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0335726	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG3279071	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0072847	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0294014	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG0338070	disjoint	out.5.8_185, out.5.3_190
+OG0255730	disjoint	out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG86688	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG2813389	disjoint	out.5.8_185
+OG2601894	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG3051774	disjoint	out.5.8_185
+OG2363109	disjoint	out.3.8_178
+OG203029	disjoint	out.3.8_178, out.4.3_186
+OG189216	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG1732244	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0111372	disjoint	out.3.8_178
+OG294310	disjoint	out.3.8_178, out.4.8_188, out.4.3_186
+OG1756584	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG3090043	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0252834	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG274960	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG909743	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG782558	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG733529	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG963555	disjoint	out.3.8_178, out.4.3_186
+OG1879801	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1754059	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0077264	disjoint	out.5.8_185
+OG451869	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG326707	disjoint	out.5.8_185, out.5.3_190, out.4.8_188
+OG1996446	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186
+OG0121028	disjoint	out.5.8_185
+OG0109449	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0217647	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG0108406	disjoint	out.3.8_178
+OG2358270	intersection	out.5.8_185, out.3.8_178, out.5.3_190, out.4.8_188, out.4.3_186
+OG1323821	disjoint	out.5.8_185, out.5.3_190, out.4.8_188, out.4.3_186

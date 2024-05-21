@@ -1,0 +1,39 @@
+OG0065398	disjoint	out.5.3_354, out.5.8_371, out.4.8_352
+OG2124912	disjoint	out.5.3_354, out.5.8_371
+OG0479484	disjoint	out.5.8_371
+OG3171577	disjoint	out.5.3_354, out.5.8_371
+OG1105475	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG0032052	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG3203518	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG0263764	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG786961	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG0242116	disjoint	out.5.8_371
+OG0108393	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG129149	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG605502	disjoint	out.5.3_354, out.5.8_371, out.4.8_352
+OG0544234	disjoint	out.5.3_354, out.5.8_371
+OG0358421	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG1057979	disjoint	out.5.3_354, out.5.8_371, out.4.8_352
+OG0263976	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG2807270	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG2052282	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG2284539	disjoint	out.5.3_354, out.4.3_319, out.4.8_352
+OG0253423	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG1843876	disjoint	out.5.3_354, out.5.8_371
+OG0104757	disjoint	out.5.3_354, out.5.8_371, out.4.8_352
+OG1456206	disjoint	out.5.3_354, out.5.8_371
+OG676755	disjoint	out.5.3_354, out.5.8_371, out.4.8_352
+OG1990398	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG2046364	disjoint	out.5.3_354, out.5.8_371, out.4.8_352
+OG0034220	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG2971446	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG1300194	disjoint	out.5.3_354, out.5.8_371, out.4.8_352
+OG2642973	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG0136532	disjoint	out.5.3_354, out.5.8_371, out.4.8_352
+OG0419370	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG1818495	disjoint	out.5.3_354, out.5.8_371
+OG0545645	intersection	out.5.3_354, out.4.3_319, out.5.8_371, out.4.8_352
+OG1615369	disjoint	out.4.3_319
+OG3076685	disjoint	out.5.3_354, out.5.8_371
+OG171146	disjoint	out.5.3_354, out.5.8_371
+OG0166922	disjoint	out.5.3_354, out.5.8_371, out.4.8_352

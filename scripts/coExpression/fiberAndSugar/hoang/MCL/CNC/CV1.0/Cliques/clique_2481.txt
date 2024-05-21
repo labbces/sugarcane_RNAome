@@ -1,0 +1,22 @@
+OG0202649	disjoint	out.3.3_179, out.3.8_240
+OG0370491	disjoint	out.4.3_314, out.3.8_240
+OG3380568	disjoint	out.4.3_314, out.3.8_240
+OG0169963	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG0202669	disjoint	out.4.3_314
+OG0145388	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG0110091	disjoint	out.3.3_179, out.3.8_240
+OG602311	intersection	out.4.3_314, out.3.3_179, out.3.8_240, out.5.8_2234, out.5.3_1710, out.4.8_1290
+OG1305488	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG765868	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG0052579	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG2819588	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG0243363	disjoint	out.4.3_314, out.3.8_240
+OG63968	disjoint	out.4.3_314, out.3.8_240
+OG2253779	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG0288711	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG2885739	disjoint	out.4.3_314
+OG2026835	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG0133480	disjoint	out.4.3_314
+OG3151280	disjoint	out.4.3_314, out.3.8_240
+OG1803428	disjoint	out.4.3_314, out.3.3_179, out.3.8_240
+OG1541161	disjoint	out.4.3_314, out.3.3_179, out.3.8_240

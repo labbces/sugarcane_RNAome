@@ -1,0 +1,33 @@
+OG0108666	disjoint	out.5.8_442, out.5.3_403, out.4.8_351, out.4.3_304
+OG0084532	disjoint	out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0086557	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG1194515	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG744279	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG3136331	disjoint	out.3.8_231
+OG1827303	disjoint	out.5.8_442, out.5.3_403
+OG0030202	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0220917	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG2430610	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0186201	disjoint	out.5.8_442
+OG0546364	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0251502	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0022249	disjoint	out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG1393860	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0031870	disjoint	out.3.8_231, out.4.8_351, out.4.3_304
+OG61333	disjoint	out.5.8_442, out.5.3_403, out.4.8_351, out.4.3_304
+OG1246232	disjoint	out.5.8_442, out.5.3_403
+OG497162	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0329442	disjoint	out.3.8_231, out.4.8_351, out.4.3_304
+OG1295609	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0484296	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0201660	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG1444987	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG2010411	disjoint	out.5.3_403, out.4.8_351
+OG636216	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG0066960	disjoint	out.3.8_231, out.4.8_351, out.4.3_304
+OG0201889	disjoint	out.3.8_231
+OG140327	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG1796602	disjoint	out.3.8_231, out.4.8_351, out.4.3_304
+OG2952151	disjoint	out.5.8_442, out.5.3_403, out.4.8_351
+OG2831792	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304
+OG2960616	intersection	out.5.8_442, out.3.8_231, out.5.3_403, out.4.8_351, out.4.3_304

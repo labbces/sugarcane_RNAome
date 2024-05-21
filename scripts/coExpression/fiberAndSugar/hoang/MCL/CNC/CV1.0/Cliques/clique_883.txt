@@ -1,0 +1,11 @@
+OG963555	disjoint	out.4.8_480
+OG0541866	disjoint	out.4.8_480, out.4.3_403
+OG0171172	disjoint	out.4.8_480, out.4.3_403
+OG2975458	disjoint	out.4.8_480, out.4.3_403
+OG2020799	disjoint	out.4.8_480, out.4.3_403
+OG0033762	disjoint	out.4.8_480, out.4.3_403
+OG0286569	intersection	out.4.8_480, out.4.3_403, out.5.3_1360, out.5.8_1775
+OG1294792	disjoint	out.4.8_480, out.4.3_403
+OG0111372	disjoint	out.4.8_480, out.4.3_403
+OG0077786	disjoint	out.4.8_480, out.4.3_403
+OG128025	disjoint	out.4.8_480

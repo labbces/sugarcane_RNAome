@@ -1,0 +1,13 @@
+OG1166637	intersection	out.4.8_474, out.3.8_294, out.4.3_387, out.5.8_566, out.5.3_535
+OG0094367	intersection	out.4.8_474, out.3.8_294, out.4.3_387, out.5.8_566, out.5.3_535
+OG1279467	disjoint	out.4.8_474, out.4.3_387, out.5.8_566, out.5.3_535
+OG1217666	intersection	out.4.8_474, out.3.8_294, out.4.3_387, out.5.8_566, out.5.3_535
+OG0543279	intersection	out.4.8_474, out.3.8_294, out.4.3_387, out.5.8_566, out.5.3_535
+OG483124	disjoint	out.5.8_566
+OG2814462	disjoint	out.4.8_474, out.3.8_294, out.4.3_387
+OG0054436	disjoint	out.4.8_474, out.4.3_387, out.5.8_566, out.5.3_535
+OG414764	intersection	out.4.8_474, out.3.8_294, out.4.3_387, out.5.8_566, out.5.3_535
+OG0044087	disjoint	out.4.8_474, out.5.8_566, out.5.3_535
+OG0167912	disjoint	out.4.8_474, out.4.3_387, out.5.8_566, out.5.3_535
+OG274711	intersection	out.4.8_474, out.3.8_294, out.4.3_387, out.5.8_566, out.5.3_535
+OG1191765	intersection	out.4.8_474, out.3.8_294, out.4.3_387, out.5.8_566, out.5.3_535

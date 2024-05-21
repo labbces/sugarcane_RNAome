@@ -1,0 +1,5 @@
+OG1468526	intersection	out.5.8_780, out.3.8_405, out.5.3_678, out.4.8_601, out.4.3_551
+OG0320220	disjoint	out.5.8_780, out.5.3_678, out.4.8_601
+OG0143250	disjoint	out.5.8_780, out.5.3_678, out.4.8_601, out.4.3_551
+OG264771	intersection	out.5.8_780, out.3.8_405, out.5.3_678, out.4.8_601, out.4.3_551
+OG0247940	disjoint	out.5.8_780, out.5.3_678, out.4.8_601

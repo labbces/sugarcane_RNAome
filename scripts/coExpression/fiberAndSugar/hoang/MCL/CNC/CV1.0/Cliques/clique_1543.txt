@@ -1,0 +1,6 @@
+OG0165747	disjoint	out.3.3_203, out.3.8_308
+OG0048978	disjoint	out.3.3_203, out.3.8_308
+OG0109307	intersection	out.3.3_203, out.3.8_308, out.4.3_930, out.5.8_2199, out.5.3_1683, out.4.8_1271
+OG0070623	disjoint	out.3.3_203, out.3.8_308
+OG0130270	disjoint	out.3.3_203, out.3.8_308
+OG0020366	disjoint	out.3.3_203, out.3.8_308

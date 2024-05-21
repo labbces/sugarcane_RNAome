@@ -1,0 +1,45 @@
+OG0015331	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG87088	disjoint	out.4.3_260
+OG1756998	disjoint	out.4.3_260
+OG589335	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0054688	disjoint	out.3.8_217, out.4.3_260
+OG0153749	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0252053	disjoint	out.4.3_260
+OG3306922	disjoint	out.4.3_260
+OG1094174	disjoint	out.3.8_217, out.4.3_260
+OG0103441	disjoint	out.3.8_217, out.4.3_260
+OG0060164	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG969035	disjoint	out.4.3_260
+OG2917209	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0159451	disjoint	out.4.3_260
+OG3226405	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG2136359	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG2954384	disjoint	out.3.8_217, out.4.3_260
+OG0341552	disjoint	out.3.8_217, out.4.3_260
+OG0035045	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0165550	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG2694613	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG2442700	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG889123	disjoint	out.3.8_217, out.4.3_260
+OG1144121	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0124002	disjoint	out.3.8_217, out.4.3_260
+OG0493267	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0118678	disjoint	out.4.3_260
+OG0512305	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0328467	disjoint	out.3.8_217, out.4.3_260
+OG0076850	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0088967	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0491492	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG262657	disjoint	out.3.8_217, out.4.3_260
+OG2287703	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG1304804	disjoint	out.3.8_217, out.4.3_260
+OG0142600	disjoint	out.4.3_260
+OG0125722	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG0210903	disjoint	out.3.8_217, out.4.3_260
+OG0080104	disjoint	out.3.8_217, out.4.3_260
+OG0083698	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG2974414	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG21897	disjoint	out.3.3_170, out.3.8_217, out.4.3_260
+OG2011718	disjoint	out.4.3_260
+OG2033120	disjoint	out.3.8_217, out.4.3_260
+OG0483197	intersection	out.3.3_170, out.3.8_217, out.4.3_260, out.5.8_1974, out.5.3_1516, out.4.8_1154

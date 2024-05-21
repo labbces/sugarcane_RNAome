@@ -1,0 +1,29 @@
+OG0252800	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG1511302	disjoint	out.3.3_171, out.4.8_348, out.4.3_302, out.3.8_235
+OG2946982	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG1269066	disjoint	out.5.3_402, out.4.8_348, out.4.3_302
+OG0090499	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0251864	intersection	out.5.8_745, out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG914851	intersection	out.5.8_745, out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0167157	disjoint	out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0541638	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG3031000	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0025743	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0033428	intersection	out.5.8_745, out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0482982	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0099228	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0159787	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG1818050	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0331601	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0198932	disjoint	out.3.3_171
+OG0295952	disjoint	out.5.3_402, out.4.8_348, out.4.3_302
+OG2868480	intersection	out.5.8_745, out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0123300	intersection	out.5.8_745, out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0201669	disjoint	out.5.3_402, out.4.8_348
+OG0173947	intersection	out.5.8_745, out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG808151	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG351216	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG0121444	disjoint	out.4.8_348
+OG620320	disjoint	out.3.3_171, out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG2650978	disjoint	out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235
+OG1298647	disjoint	out.5.3_402, out.4.8_348, out.4.3_302, out.3.8_235

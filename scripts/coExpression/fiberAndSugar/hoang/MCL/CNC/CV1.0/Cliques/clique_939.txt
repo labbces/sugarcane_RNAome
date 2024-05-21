@@ -1,0 +1,17 @@
+OG0067414	intersection	out.5.8_580, out.3.8_250, out.5.3_532, out.4.8_471, out.4.3_368
+OG0062509	intersection	out.5.8_580, out.3.8_250, out.5.3_532, out.4.8_471, out.4.3_368
+OG511610	intersection	out.5.8_580, out.3.8_250, out.5.3_532, out.4.8_471, out.4.3_368
+OG3198036	intersection	out.5.8_580, out.3.8_250, out.5.3_532, out.4.8_471, out.4.3_368
+OG3170261	intersection	out.5.8_580, out.3.8_250, out.5.3_532, out.4.8_471, out.4.3_368
+OG0124137	disjoint	out.3.8_250, out.4.8_471, out.4.3_368
+OG0248911	disjoint	out.5.8_580, out.5.3_532
+OG0249417	disjoint	out.3.8_250, out.4.3_368
+OG385062	intersection	out.5.8_580, out.3.8_250, out.5.3_532, out.4.8_471, out.4.3_368
+OG801502	disjoint	out.3.8_250, out.4.8_471, out.4.3_368
+OG0199165	intersection	out.5.8_580, out.3.8_250, out.5.3_532, out.4.8_471, out.4.3_368
+OG0451563	disjoint	out.5.8_580, out.5.3_532
+OG1385053	disjoint	out.3.8_250
+OG0196124	disjoint	out.3.8_250, out.4.8_471, out.4.3_368
+OG2513971	intersection	out.5.8_580, out.3.8_250, out.5.3_532, out.4.8_471, out.4.3_368
+OG981360	intersection	out.5.8_580, out.3.8_250, out.5.3_532, out.4.8_471, out.4.3_368
+OG0121966	disjoint	out.3.8_250

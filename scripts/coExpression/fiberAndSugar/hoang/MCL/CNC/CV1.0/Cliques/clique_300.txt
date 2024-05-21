@@ -1,0 +1,3 @@
+OG2942971	intersection	out.4.8_870, out.4.3_820, out.5.8_1047, out.5.3_892
+OG2289654	disjoint	out.5.8_1047, out.5.3_892
+OG0152714	disjoint	out.4.8_870, out.5.8_1047, out.5.3_892

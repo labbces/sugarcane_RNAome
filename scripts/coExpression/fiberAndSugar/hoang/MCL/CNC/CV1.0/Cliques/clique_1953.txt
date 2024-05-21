@@ -1,0 +1,5 @@
+OG0459728	disjoint	out.2.8_141
+OG1841051	intersection	out.3.3_258, out.2.8_141, out.5.8_1295, out.5.3_1046, out.4.8_866, out.4.3_666, out.3.8_432
+OG0330010	intersection	out.3.3_258, out.2.8_141, out.5.8_1295, out.5.3_1046, out.4.8_866, out.4.3_666, out.3.8_432
+OG0318024	disjoint	out.2.8_141
+OG0350484	disjoint	out.2.8_141

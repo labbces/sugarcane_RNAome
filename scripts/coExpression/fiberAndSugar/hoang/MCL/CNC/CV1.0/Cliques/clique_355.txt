@@ -1,0 +1,89 @@
+OG3021728	disjoint	out.4.8_264
+OG2230803	disjoint	out.5.3_267
+OG0167650	disjoint	out.4.3_259
+OG0141597	disjoint	out.5.3_267, out.4.8_264
+OG0339618	disjoint	out.5.3_267
+OG132515	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG1778930	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0197390	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG3312642	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG1364842	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG2174868	disjoint	out.5.3_267, out.4.8_264
+OG0093332	disjoint	out.5.3_267
+OG0333410	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG3400734	disjoint	out.5.3_267, out.4.8_264
+OG404927	disjoint	out.5.3_267
+OG1417921	disjoint	out.5.3_267, out.4.8_264
+OG3015873	disjoint	out.5.3_267, out.4.8_264
+OG0107657	disjoint	out.5.3_267, out.4.8_264
+OG2972572	disjoint	out.5.3_267, out.4.8_264
+OG785386	disjoint	out.4.3_259
+OG1314787	disjoint	out.5.3_267
+OG3288027	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG2714264	disjoint	out.5.3_267, out.4.8_264
+OG0250618	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG230522	disjoint	out.5.3_267, out.4.8_264
+OG1629897	disjoint	out.5.3_267
+OG0123557	disjoint	out.5.3_267, out.4.8_264
+OG0027602	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0495627	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG577126	disjoint	out.5.3_267, out.4.8_264
+OG2463111	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0596242	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG3188853	disjoint	out.5.3_267, out.4.8_264
+OG0109397	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG3056052	disjoint	out.5.3_267, out.4.8_264
+OG0141688	disjoint	out.4.3_259
+OG2636989	disjoint	out.5.3_267, out.4.8_264
+OG460389	disjoint	out.5.3_267, out.4.8_264
+OG0140521	disjoint	out.4.3_259
+OG2104199	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG2647803	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG3261655	disjoint	out.5.3_267
+OG827588	disjoint	out.4.3_259
+OG1451159	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0550844	disjoint	out.5.3_267, out.4.8_264
+OG1853321	disjoint	out.4.3_259
+OG2163019	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG143859	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG2141891	disjoint	out.4.3_259
+OG2472017	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG1368455	disjoint	out.5.3_267, out.4.8_264
+OG56177	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG1428232	disjoint	out.5.3_267
+OG3227172	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG1820972	disjoint	out.4.3_259
+OG2610921	disjoint	out.5.3_267, out.4.8_264
+OG11361	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG661333	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0088015	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG2538040	disjoint	out.5.3_267
+OG494541	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0068055	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG596219	disjoint	out.5.3_267, out.4.8_264
+OG0122859	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG1363244	disjoint	out.4.3_259
+OG1052756	disjoint	out.5.3_267
+OG784619	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0232565	disjoint	out.5.3_267, out.4.8_264
+OG732864	disjoint	out.4.3_259
+OG2083022	disjoint	out.5.3_267
+OG1828082	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG68045	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0052903	disjoint	out.5.3_267, out.4.8_264
+OG2643854	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG366370	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG94201	disjoint	out.5.3_267, out.4.8_264
+OG0250253	disjoint	out.5.3_267
+OG3016935	disjoint	out.5.3_267
+OG995200	disjoint	out.5.3_267, out.4.8_264
+OG0191730	disjoint	out.5.3_267
+OG3259953	disjoint	out.5.3_267, out.4.8_264
+OG0210068	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG3248015	disjoint	out.5.3_267, out.4.8_264
+OG0360626	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0238789	disjoint	out.5.3_267, out.4.8_264
+OG1488592	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG0203424	disjoint	out.5.3_267, out.4.8_264
+OG0020886	intersection	out.5.3_267, out.4.8_264, out.4.3_259
+OG935351	disjoint	out.5.3_267, out.4.8_264

@@ -1,0 +1,6 @@
+OG2511018	disjoint	out.5.3_697, out.4.8_620
+OG0083732	disjoint	out.4.8_620
+OG2708321	disjoint	out.5.3_697, out.4.8_620
+OG0243810	disjoint	out.5.3_697, out.4.3_685, out.4.8_620
+OG0147123	intersection	out.5.3_697, out.4.3_685, out.5.8_2353, out.4.8_620
+OG0240356	disjoint	out.5.3_697

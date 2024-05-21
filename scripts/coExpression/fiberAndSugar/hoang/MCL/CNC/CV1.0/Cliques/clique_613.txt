@@ -1,0 +1,4 @@
+OG0338911	intersection	out.4.3_543, out.4.8_642, out.5.8_845, out.5.3_726
+OG1827479	intersection	out.4.3_543, out.4.8_642, out.5.8_845, out.5.3_726
+OG0086080	disjoint	out.4.8_642, out.5.8_845, out.5.3_726
+OG0073304	intersection	out.4.3_543, out.4.8_642, out.5.8_845, out.5.3_726

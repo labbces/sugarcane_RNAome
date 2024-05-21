@@ -1,0 +1,51 @@
+OG2906024	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG1586674	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0099034	disjoint	out.4.8_312, out.4.3_272
+OG1702412	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0491866	disjoint	out.5.8_341, out.5.3_337
+OG0363299	disjoint	out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG2254756	disjoint	out.5.8_341
+OG1576875	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG1191069	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0255332	disjoint	out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0294685	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG1577756	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0202917	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG1191845	disjoint	out.3.3_169, out.3.8_212
+OG1878104	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG2775334	disjoint	out.3.3_169, out.3.8_212
+OG0185076	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0081648	disjoint	out.5.8_341, out.5.3_337, out.4.8_312
+OG2764221	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG639336	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG174385	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0156469	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG549546	disjoint	out.3.3_169, out.3.8_212
+OG2567459	disjoint	out.3.8_212, out.5.3_337, out.4.8_312, out.4.3_272
+OG695220	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0479834	intersection	out.2.8_137, out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG1759008	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0458214	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG3405497	intersection	out.2.8_137, out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG1896329	disjoint	out.2.8_137, out.3.3_169
+OG0217411	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG454349	disjoint	out.5.8_341, out.5.3_337
+OG968195	intersection	out.2.8_137, out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0179911	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG899959	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG3304087	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0077913	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0541110	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG2775547	disjoint	out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG621412	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG2423320	disjoint	out.3.3_169, out.3.8_212
+OG238055	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0116465	disjoint	out.5.8_341, out.5.3_337
+OG1134271	intersection	out.2.8_137, out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0318943	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG2140086	disjoint	out.5.8_341, out.5.3_337, out.4.8_312
+OG3104263	intersection	out.2.8_137, out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG0041256	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG308888	disjoint	out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG326480	disjoint	out.3.3_169, out.3.8_212, out.5.8_341, out.5.3_337, out.4.8_312, out.4.3_272
+OG481409	disjoint	out.2.8_137, out.3.3_169

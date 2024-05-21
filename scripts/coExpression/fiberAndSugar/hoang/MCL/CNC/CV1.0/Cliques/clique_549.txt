@@ -1,0 +1,4 @@
+OG1314550	disjoint	out.5.8_868
+OG2966279	disjoint	out.5.8_868, out.5.3_859, out.4.8_729
+OG0363646	disjoint	out.5.8_868, out.5.3_859, out.4.8_729
+OG0330683	intersection	out.5.8_868, out.4.3_761, out.5.3_859, out.4.8_729

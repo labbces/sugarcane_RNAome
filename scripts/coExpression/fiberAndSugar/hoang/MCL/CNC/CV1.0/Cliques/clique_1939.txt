@@ -1,0 +1,7 @@
+OG2001808	disjoint	out.3.3_201, out.3.8_301, out.4.3_461
+OG1899692	disjoint	out.3.3_201, out.3.8_301, out.5.3_720, out.4.8_638, out.4.3_461
+OG1433941	intersection	out.3.3_201, out.3.8_301, out.5.3_720, out.4.8_638, out.4.3_461, out.5.8_1090
+OG0160939	intersection	out.3.3_201, out.3.8_301, out.5.3_720, out.4.8_638, out.4.3_461, out.5.8_1090
+OG0028998	disjoint	out.3.3_201, out.3.8_301, out.5.3_720, out.4.8_638, out.4.3_461
+OG0328082	disjoint	out.3.3_201, out.3.8_301
+OG0199467	intersection	out.3.3_201, out.3.8_301, out.5.3_720, out.4.8_638, out.4.3_461, out.5.8_1090
