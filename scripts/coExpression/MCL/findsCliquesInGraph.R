@@ -10,12 +10,12 @@ setwd(HOME_DIR)
 
 # cluster similarities
 data <- read.table("../fiberAndSugar/correr/MCL/CNC/clusterSimilarity/Correr_clusteringSimilarities.tsv", header = TRUE, sep = "\t")
-data <- read.table("../fiberAndSugar/hoang/MCL/CNC/clusterSimilarity/Hoang_clusteringSimilarities.tsv", header = TRUE, sep = "\t")
+data <- read.table("/home/felipe/Documents/sugarcane_RNAome/scripts/coExpression/fiberAndSugar/hoang/MCL/CNC/CV1.0/clusterSimilarity/Hoang_clusteringSimilarities.tsv", header = TRUE, sep = "\t")
 data <- read.table("../fiberAndSugar/perlo/MCL/CNC/clusterSimilarity/Perlo_clusteringSimilarities.tsv", header = TRUE, sep = "\t")
 
 # *** Jaccard coefficient ***
-# Filter Jaccard >= 0.5
-jaccard_filtered <- data[which(data$Jaccard>=0.5),]
+# Filter Jaccard >= 0.7
+jaccard_filtered <- data[which(data$Jaccard>=0.7),]
 
 # create Jaccard graph
 graph_jaccard <- graph_from_data_frame(jaccard_filtered, directed = FALSE, vertices = NULL)
@@ -27,7 +27,7 @@ E(graph_jaccard)$weight <- jaccard_filtered$Jaccard
 print(graph_jaccard)
 
 # find cliques
-jaccard_cliques <- weighted_cliques(graph_jaccard, vertex.weights = NULL, min.weight = 0.5, maximal = TRUE)
+jaccard_cliques <- weighted_cliques(graph_jaccard, vertex.weights = NULL, min.weight = 0.7, maximal = TRUE)
 jaccard_cliques
 
 # find largest cliques
@@ -38,8 +38,8 @@ jaccard_largest_cliques
 weighted_clique_num(graph_jaccard)
 
 # *** Overlap coefficient ***
-# Filter Overlap >= 0.5
-overlap_filtered <- data[which(data$Overlap>=0.5),]
+# Filter Overlap >= 0.7
+overlap_filtered <- data[which(data$Overlap>=0.7),]
 
 # # create Overlap graph
 graph_overlap <- graph_from_data_frame(overlap_filtered, directed = FALSE, vertices = NULL)
@@ -51,7 +51,7 @@ E(graph_overlap)$weight <- overlap_filtered$Overlap
 print(graph_overlap)
 
 # find cliques
-overlap_cliques <- weighted_cliques(graph_overlap, vertex.weights = NULL, min.weight = 0.5, maximal = TRUE)
+overlap_cliques <- weighted_cliques(graph_overlap, vertex.weights = NULL, min.weight = 0.7, maximal = TRUE)
 overlap_cliques
 
 # find largest cliques
@@ -78,11 +78,11 @@ save_cliques <- function(cliques, filename) {
 }
 
 # saving jaccard cliques
-save_cliques(jaccard_cliques, "cliques_jaccard.txt")
-save_cliques(jaccard_largest_cliques, "largest_cliques_jaccard.txt")
+save_cliques(jaccard_cliques, "cliques_jaccard_0.7.txt")
+save_cliques(jaccard_largest_cliques, "largest_cliques_jaccard_0.7.txt")
 
 # saving overlap cliques
-save_cliques(overlap_cliques, "cliques_overlap.txt")
-save_cliques(overlap_largest_cliques, "largest_cliques_overlap.txt")
+save_cliques(overlap_cliques, "cliques_overlap_0.7.txt")
+save_cliques(overlap_largest_cliques, "largest_cliques_overlap_0.7.txt")
 
 plot(data)
