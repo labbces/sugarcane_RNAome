@@ -70,7 +70,7 @@ with open(output, "w") as output_file:
                     if jaccard_coefficient > threshold or overlap_coefficient > threshold:
                         output_file.write(f"{filename1}_{idx1}\t{filename2}_{idx2}\t{jaccard_coefficient}\t{overlap_coefficient}\n")
 
-                    progress_percentage = total_calculations / total_combinations * 100
-                    print(f"Similarities coefficient calculated for clusters: {total_calculations}/{total_combinations} - {progress_percentage:.2f}%", end="\r")
+                    #progress_percentage = total_calculations / total_combinations * 100
+                    #print(f"Similarities coefficient calculated for clusters: {total_calculations}/{total_combinations} - {progress_percentage:.2f}%", end="\r")
                     
 print(f'\nResults saved to {output}')
