@@ -4,6 +4,7 @@ library(ggplot2)
 library(htmlwidgets)
 library(plotly)
 library(dplyr)
+library(cowplot)
 
 #rm(list=ls())
 
@@ -104,46 +105,46 @@ countsOrigin$log10_CPM_SOFF <- log10(countsOrigin$CPM_SOFF)
 countsOrigin$log10_CPM_SSPO <- log10(countsOrigin$CPM_SSPO)
 countsOrigin$log10_CPM_SBAR <- log10(countsOrigin$CPM_SBAR)
 
-fig <- plot_ly(countsOrigin[which((countsOrigin$CPM_SOFF > 1.8 |
-                                       countsOrigin$CPM_SSPO > 1.8 |
-                                       countsOrigin$CPM_SBAR > 1.8)),], x = ~log10_CPM_SSPO,
-               y = ~log10_CPM_SOFF,
-               z = ~log10_CPM_SBAR,
-               color = ~Origin)
+#fig <- plot_ly(countsOrigin[which((countsOrigin$CPM_SOFF > 1.8 |
+#                                       countsOrigin$CPM_SSPO > 1.8 |
+#                                       countsOrigin$CPM_SBAR > 1.8)),], x = ~log10_CPM_SSPO,
+#               y = ~log10_CPM_SOFF,
+#               z = ~log10_CPM_SBAR,
+#               color = ~Origin)
+#
+#fig <- fig %>% add_markers()
 
-fig <- fig %>% add_markers()
-
-fig <- fig %>% layout(scene = list(xaxis = list(type = "log", title = 'S. barberi (log10 CPM)'),
-                                   yaxis = list(type = "log", title = 'S. officinarum (log10 CPM)'),
-                                   zaxis = list(type = "log", title = 'S. spontaneum (log10 CPM)')))
+#fig <- fig %>% layout(scene = list(xaxis = list(type = "log", title = 'S. barberi (log10 CPM)'),
+#                                   yaxis = list(type = "log", title = 'S. officinarum (log10 CPM)'),
+#                                   zaxis = list(type = "log", title = 'S. spontaneum (log10 CPM)')))
 
 #saveWidget(fig, "speciesOfOriginPanRNAome_log10.html")
 
 ############# melhorando plot 3d
 # Criar o gráfico 3D
-fig <- plot_ly(filtered_data, 
-               x = ~log10_CPM_SSPO, 
-               y = ~log10_CPM_SOFF, 
-               z = ~log10_CPM_SBAR, 
-               color = ~Origin, 
-               colors = c('#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b'),
-               marker = list(size = 4, opacity = 0.7))
+#fig <- plot_ly(filtered_data, 
+#               x = ~log10_CPM_SSPO, 
+#               y = ~log10_CPM_SOFF, 
+#               z = ~log10_CPM_SBAR, 
+#               color = ~Origin, 
+#               colors = c('#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b'),
+#               marker = list(size = 4, opacity = 0.7))
 
-fig <- fig %>% add_markers()
+#fig <- fig %>% add_markers()
 
 # Melhorar o layout
-fig <- fig %>% layout(
-  title = "Conservação de Transcritos em Três Genomas Diferentes",
-  scene = list(
-    xaxis = list(type = "log", title = 'S. spontaneum (log10 CPM)'),
-    yaxis = list(type = "log", title = 'S. officinarum (log10 CPM)'),
-    zaxis = list(type = "log", title = 'S. barberi (log10 CPM)'),
-    camera = list(
-      eye = list(x = 1.5, y = 1.5, z = 1.5)
-    )
-  ),
-  legend = list(title = list(text = 'Origin'), orientation = 'h', x = 0.5, y = -0.1, xanchor = 'center')
-)
+#fig <- fig %>% layout(
+#  title = "Conservação de Transcritos em Três Genomas Diferentes",
+#  scene = list(
+#    xaxis = list(type = "log", title = 'S. spontaneum (log10 CPM)'),
+#    yaxis = list(type = "log", title = 'S. officinarum (log10 CPM)'),
+#    zaxis = list(type = "log", title = 'S. barberi (log10 CPM)'),
+#    camera = list(
+#      eye = list(x = 1.5, y = 1.5, z = 1.5)
+#    )
+#  ),
+#  legend = list(title = list(text = 'Origin'), orientation = 'h', x = 0.5, y = -0.1, xanchor = 'center')
+#)
 
 #fig
 ################### /melhorando plot 3d
@@ -234,276 +235,763 @@ ggplot(as.data.frame(filtered_origin_SOFF_SSPO),aes(x=CPM_SOFF, y=CPM_SSPO)) +
 
 
 
-#################################### SOFF and SSPO
+#################################### SOFF and SSPO - all transcripts
 
 filtered_origin_SOFF_SSPO_coding <- subset(filtered_origin_SOFF_SSPO, Function == "protein-coding")
 filtered_origin_SOFF_SSPO_noncoding <- subset(filtered_origin_SOFF_SSPO, Function == "non-coding")
 
-plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO), aes(x=CPM_SOFF, y=CPM_SSPO)) +
+# Contagem de transcritos por função
+function_counts <- filtered_origin_SOFF_SSPO %>%
+  group_by(Origin) %>%
+  summarise(Count = n())
+
+# Definir a paleta de cores comum
+color_palette <- scale_fill_brewer(palette = "Set1")
+
+# Gráfico de barras estilizado para as contagens de funções
+bar_plot <- ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
+  geom_bar(stat="identity", position="dodge", width=0.5) +
+  geom_text(aes(label=Count), vjust=-0.5, size=5) +  # Adiciona as contagens em cada barra
   theme_minimal(base_size = 20) +
-  theme(legend.position = "right") +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(size = 0.2, color = "grey")
+  ) +
+  ylab('Transcripts') +
+  xlab(NULL) +  # Remover o rótulo do eixo X
+  color_palette +
+  theme(
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14)
+  )
+
+# Gráfico de dispersão
+scatter_plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO), aes(x=CPM_SOFF, y=CPM_SSPO)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "none") +
   geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
   scale_color_brewer(palette="Set1") +
   xlab('Log10 CPM S. officinarum') +
   ylab('Log10 CPM S. spontaneum') +
-  ggtitle("Common transcripts between SOFF and SSPO",
-          subtitle = "Visualization of conserved/common transcripts") +
   scale_x_log10() +
   scale_y_log10() +
   geom_density2d(size=0.3) +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, size = 18),
     axis.title = element_text(size = 18),
-    axis.text = element_text(size = 14),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 14)
+    axis.text = element_text(size = 14)
   )
 
-# save as PNG
-ggsave("common_SOFF_SSPO.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
-# save as SVG
-#ggsave("common_SOFF_SSPO.svg", plot = plot, width = 13, height = 11)
+# Extrair a legenda do gráfico de dispersão
+legend <- get_legend(
+  scatter_plot + theme(legend.position = "right")
+)
 
-plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO_coding), aes(x=CPM_SOFF, y=CPM_SSPO)) +
+# Remover a legenda do gráfico de dispersão principal
+scatter_plot <- scatter_plot + theme(legend.position = "none")
+
+# Combinar os gráficos lado a lado com a legenda
+combined_plots <- plot_grid(
+  scatter_plot, bar_plot, legend,
+  ncol = 3, rel_widths = c(3, 2, 0.8)  # Ajuste das larguras relativas para evitar sobreposição
+#  align = "h"
+)
+
+# Adicionar o título e subtítulo principal
+title <- ggdraw() + 
+  draw_label("Common transcripts between SOFF and SSPO", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
+  theme(plot.margin = margin(t = 10, b = 20))
+
+# Combinar o título e os gráficos
+final_plot <- plot_grid(
+  title, combined_plots,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+# Salvar a combinação como PNG
+ggsave("common_SOFF_SSPO.png", plot = final_plot, width = 18, height = 11, dpi = 500, bg="white")
+
+
+
+
+
+
+#################################### SOFF and SSPO - coding
+
+# Contagem de transcritos por função
+function_counts <- filtered_origin_SOFF_SSPO_coding %>%
+  group_by(Origin) %>%
+  summarise(Count = n())
+
+# Definir a paleta de cores comum
+color_palette <- scale_fill_brewer(palette = "Set1")
+
+# Gráfico de barras estilizado para as contagens de funções
+bar_plot <- ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
+  geom_bar(stat="identity", position="dodge", width=0.5) +
+  geom_text(aes(label=Count), vjust=-0.5, size=5) +  # Adiciona as contagens em cada barra
   theme_minimal(base_size = 20) +
-  theme(legend.position = "right") +
-  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(size = 0.2, color = "grey")
+  ) +
+  ylab('Transcripts') +
+  xlab(NULL) +  # Remover o rótulo do eixo X
+  color_palette +
+  theme(
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14)
+  )
+
+# Gráfico de dispersão
+scatter_plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO_coding), aes(x=CPM_SOFF, y=CPM_SSPO)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "none") +
+  geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
   scale_color_brewer(palette="Set1") +
-  #scale_shape_manual(values = c(15, 16, 17)) +
   xlab('Log10 CPM S. officinarum') +
   ylab('Log10 CPM S. spontaneum') +
-  ggtitle("Common transcripts between SOFF and SSPO",
-          subtitle = "Visualization of conserved/common transcripts") +
   scale_x_log10() +
   scale_y_log10() +
-  geom_density2d(size=0.5) +
+  geom_density2d(size=0.3) +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, size = 18),
     axis.title = element_text(size = 18),
-    axis.text = element_text(size = 14),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 14)
-  ) +
-  guides(shape = guide_legend(title = "Function"))
+    axis.text = element_text(size = 14)
+  )
 
-# save as PNG
-ggsave("common_SOFF_SSPO_coding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
-# save as SVG
-#ggsave("common_SOFF_SSPO_coding.svg", plot = plot, width = 13, height = 11)
+# Extrair a legenda do gráfico de dispersão
+legend <- get_legend(
+  scatter_plot + theme(legend.position = "right")
+)
+
+# Remover a legenda do gráfico de dispersão principal
+scatter_plot <- scatter_plot + theme(legend.position = "none")
+
+# Combinar os gráficos lado a lado com a legenda
+combined_plots <- plot_grid(
+  scatter_plot, bar_plot, legend,
+  ncol = 3, rel_widths = c(3, 2, 0.8)  # Ajuste das larguras relativas para evitar sobreposição
+  #  align = "h"
+)
+
+# Adicionar o título e subtítulo principal
+title <- ggdraw() + 
+  draw_label("Common coding transcripts between SOFF and SSPO", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
+  theme(plot.margin = margin(t = 10, b = 20))
+
+# Combinar o título e os gráficos
+final_plot <- plot_grid(
+  title, combined_plots,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+# Salvar a combinação como PNG
+ggsave("common_SOFF_SSPO_coding.png", plot = final_plot, width = 18, height = 11, dpi = 500, bg="white")
 
 
-plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO_noncoding), aes(x=CPM_SOFF, y=CPM_SSPO)) +
+
+
+
+
+
+#################################### SOFF and SSPO - non-coding
+
+# Contagem de transcritos por função
+function_counts <- filtered_origin_SOFF_SSPO_noncoding %>%
+  group_by(Origin) %>%
+  summarise(Count = n())
+
+# Definir a paleta de cores comum
+color_palette <- scale_fill_brewer(palette = "Set1")
+
+# Gráfico de barras estilizado para as contagens de funções
+bar_plot <- ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
+  geom_bar(stat="identity", position="dodge", width=0.5) +
+  geom_text(aes(label=Count), vjust=-0.5, size=5) +  # Adiciona as contagens em cada barra
   theme_minimal(base_size = 20) +
-  theme(legend.position = "right") +
-  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(size = 0.2, color = "grey")
+  ) +
+  ylab('Transcripts') +
+  xlab(NULL) +  # Remover o rótulo do eixo X
+  color_palette +
+  theme(
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14)
+  )
+
+# Gráfico de dispersão
+scatter_plot <- ggplot(as.data.frame(filtered_origin_SOFF_SSPO_noncoding), aes(x=CPM_SOFF, y=CPM_SSPO)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "none") +
+  geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
   scale_color_brewer(palette="Set1") +
-  #scale_shape_manual(values = c(15, 16, 17)) +
   xlab('Log10 CPM S. officinarum') +
   ylab('Log10 CPM S. spontaneum') +
-  ggtitle("Common transcripts between SOFF and SSPO",
-          subtitle = "Visualization of conserved/common transcripts") +
   scale_x_log10() +
   scale_y_log10() +
-  geom_density2d(size=0.5) +
+  geom_density2d(size=0.3) +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, size = 18),
     axis.title = element_text(size = 18),
-    axis.text = element_text(size = 14),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 14)
-  ) +
-  guides(shape = guide_legend(title = "Function"))
+    axis.text = element_text(size = 14)
+  )
 
-# save as PNG
-ggsave("common_SOFF_SSPO_noncoding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
-# save as SVG
-#ggsave("common_SOFF_SSPO_noncoding.svg", plot = plot, width = 13, height = 11)
+# Extrair a legenda do gráfico de dispersão
+legend <- get_legend(
+  scatter_plot + theme(legend.position = "right")
+)
+
+# Remover a legenda do gráfico de dispersão principal
+scatter_plot <- scatter_plot + theme(legend.position = "none")
+
+# Combinar os gráficos lado a lado com a legenda
+combined_plots <- plot_grid(
+  scatter_plot, bar_plot, legend,
+  ncol = 3, rel_widths = c(3, 2, 0.8)  # Ajuste das larguras relativas para evitar sobreposição
+  #  align = "h"
+)
+
+# Adicionar o título e subtítulo principal
+title <- ggdraw() + 
+  draw_label("Common non-coding transcripts between SOFF and SSPO", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
+  theme(plot.margin = margin(t = 10, b = 20))
+
+# Combinar o título e os gráficos
+final_plot <- plot_grid(
+  title, combined_plots,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+# Salvar a combinação como PNG
+ggsave("common_SOFF_SSPO_noncoding.png", plot = final_plot, width = 18, height = 11, dpi = 500, bg="white")
 
 
 
-############################### plot SOFF and SBAR
+
+
+
+
+
+
+
+############################### plot SOFF and SBAR - all transcripts
+
 
 filtered_origin_SOFF_SBAR_coding <- subset(filtered_origin_SOFF_SBAR, Function == "protein-coding")
 filtered_origin_SOFF_SBAR_noncoding <- subset(filtered_origin_SOFF_SBAR, Function == "non-coding")
 
-plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR), aes(x=CPM_SOFF, y=CPM_SBAR)) +
+# Contagem de transcritos por função
+function_counts <- filtered_origin_SOFF_SBAR %>%
+  group_by(Origin) %>%
+  summarise(Count = n())
+
+# Definir a paleta de cores comum
+color_palette <- scale_fill_brewer(palette = "Set1")
+
+# Gráfico de barras estilizado para as contagens de funções
+bar_plot <- ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
+  geom_bar(stat="identity", position="dodge", width=0.5) +
+  geom_text(aes(label=Count), vjust=-0.5, size=5) +  # Adiciona as contagens em cada barra
   theme_minimal(base_size = 20) +
-  theme(legend.position = "right") +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(size = 0.2, color = "grey")
+  ) +
+  ylab('Transcripts') +
+  xlab(NULL) +  # Remover o rótulo do eixo X
+  color_palette +
+  theme(
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14)
+  )
+
+# Gráfico de dispersão
+scatter_plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR), aes(x=CPM_SOFF, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "none") +
   geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
   scale_color_brewer(palette="Set1") +
   xlab('Log10 CPM S. officinarum') +
   ylab('Log10 CPM S. barberi') +
-  ggtitle("Common transcripts between SOFF and SBAR",
-          subtitle = "Visualization of conserved/common transcripts") +
   scale_x_log10() +
   scale_y_log10() +
   geom_density2d(size=0.3) +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, size = 18),
     axis.title = element_text(size = 18),
-    axis.text = element_text(size = 14),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 14)
+    axis.text = element_text(size = 14)
   )
 
-# save as PNG
-ggsave("common_SOFF_SBAR.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
-# save as SVG
-#ggsave("common_SOFF_SBAR.svg", plot = plot, width = 13, height = 11)
+# Extrair a legenda do gráfico de dispersão
+legend <- get_legend(
+  scatter_plot + theme(legend.position = "right")
+)
+
+# Remover a legenda do gráfico de dispersão principal
+scatter_plot <- scatter_plot + theme(legend.position = "none")
+
+# Combinar os gráficos lado a lado com a legenda
+combined_plots <- plot_grid(
+  scatter_plot, bar_plot, legend,
+  ncol = 3, rel_widths = c(3, 2, 0.8)  # Ajuste das larguras relativas para evitar sobreposição
+  #  align = "h"
+)
+
+# Adicionar o título e subtítulo principal
+title <- ggdraw() + 
+  draw_label("Common transcripts between SOFF and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
+  theme(plot.margin = margin(t = 10, b = 20))
+
+# Combinar o título e os gráficos
+final_plot <- plot_grid(
+  title, combined_plots,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+# Salvar a combinação como PNG
+ggsave("common_SOFF_SBAR.png", plot = final_plot, width = 18, height = 11, dpi = 500, bg="white")
 
 
-plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR_coding), aes(x=CPM_SOFF, y=CPM_SBAR)) +
+
+
+
+
+#################################### SOFF and SBAR - coding
+
+# Contagem de transcritos por função
+function_counts <- filtered_origin_SOFF_SBAR_coding %>%
+  group_by(Origin) %>%
+  summarise(Count = n())
+
+# Definir a paleta de cores comum
+color_palette <- scale_fill_brewer(palette = "Set1")
+
+# Gráfico de barras estilizado para as contagens de funções
+bar_plot <- ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
+  geom_bar(stat="identity", position="dodge", width=0.5) +
+  geom_text(aes(label=Count), vjust=-0.5, size=5) +  # Adiciona as contagens em cada barra
   theme_minimal(base_size = 20) +
-  theme(legend.position = "right") +
-  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(size = 0.2, color = "grey")
+  ) +
+  ylab('Transcripts') +
+  xlab(NULL) +  # Remover o rótulo do eixo X
+  color_palette +
+  theme(
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14)
+  )
+
+# Gráfico de dispersão
+scatter_plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR_coding), aes(x=CPM_SOFF, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "none") +
+  geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
   scale_color_brewer(palette="Set1") +
-  #scale_shape_manual(values = c(15, 16, 17)) +
   xlab('Log10 CPM S. officinarum') +
   ylab('Log10 CPM S. barberi') +
-  ggtitle("Common transcripts between SOFF and SBAR",
-          subtitle = "Visualization of conserved/common transcripts") +
   scale_x_log10() +
   scale_y_log10() +
-  geom_density2d(size=0.5) +
+  geom_density2d(size=0.3) +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, size = 18),
     axis.title = element_text(size = 18),
-    axis.text = element_text(size = 14),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 14)
-  ) +
-  guides(shape = guide_legend(title = "Function"))
+    axis.text = element_text(size = 14)
+  )
 
-# save as PNG
-ggsave("common_SOFF_SBAR_coding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
-# save as SVG
-#ggsave("common_SOFF_SBAR_coding.png", plot = plot, width = 13, height = 11)
+# Extrair a legenda do gráfico de dispersão
+legend <- get_legend(
+  scatter_plot + theme(legend.position = "right")
+)
+
+# Remover a legenda do gráfico de dispersão principal
+scatter_plot <- scatter_plot + theme(legend.position = "none")
+
+# Combinar os gráficos lado a lado com a legenda
+combined_plots <- plot_grid(
+  scatter_plot, bar_plot, legend,
+  ncol = 3, rel_widths = c(3, 2, 0.8)  # Ajuste das larguras relativas para evitar sobreposição
+  #  align = "h"
+)
+
+# Adicionar o título e subtítulo principal
+title <- ggdraw() + 
+  draw_label("Common coding transcripts between SOFF and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
+  theme(plot.margin = margin(t = 10, b = 20))
+
+# Combinar o título e os gráficos
+final_plot <- plot_grid(
+  title, combined_plots,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+# Salvar a combinação como PNG
+ggsave("common_SOFF_SBAR_coding.png", plot = final_plot, width = 18, height = 11, dpi = 500, bg="white")
 
 
-plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR_noncoding), aes(x=CPM_SOFF, y=CPM_SBAR)) +
+
+
+
+
+
+#################################### SOFF and SBAR - non-coding
+
+# Contagem de transcritos por função
+function_counts <- filtered_origin_SOFF_SBAR_noncoding %>%
+  group_by(Origin) %>%
+  summarise(Count = n())
+
+# Definir a paleta de cores comum
+color_palette <- scale_fill_brewer(palette = "Set1")
+
+# Gráfico de barras estilizado para as contagens de funções
+bar_plot <- ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
+  geom_bar(stat="identity", position="dodge", width=0.5) +
+  geom_text(aes(label=Count), vjust=-0.5, size=5) +  # Adiciona as contagens em cada barra
   theme_minimal(base_size = 20) +
-  theme(legend.position = "right") +
-  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(size = 0.2, color = "grey")
+  ) +
+  ylab('Transcripts') +
+  xlab(NULL) +  # Remover o rótulo do eixo X
+  color_palette +
+  theme(
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14)
+  )
+
+# Gráfico de dispersão
+scatter_plot <- ggplot(as.data.frame(filtered_origin_SOFF_SBAR_noncoding), aes(x=CPM_SOFF, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "none") +
+  geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
   scale_color_brewer(palette="Set1") +
-  #scale_shape_manual(values = c(15, 16, 17)) +
   xlab('Log10 CPM S. officinarum') +
   ylab('Log10 CPM S. barberi') +
-  ggtitle("Common transcripts between SOFF and SBAR",
-          subtitle = "Visualization of conserved/common transcripts") +
   scale_x_log10() +
   scale_y_log10() +
-  geom_density2d(size=0.5) +
+  geom_density2d(size=0.3) +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, size = 18),
     axis.title = element_text(size = 18),
-    axis.text = element_text(size = 14),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 14)
-  ) +
-  guides(shape = guide_legend(title = "Function"))
+    axis.text = element_text(size = 14)
+  )
 
-# save as PNG
-ggsave("common_SOFF_SBAR_noncoding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
-# save as SVG
-#ggsave("common_SOFF_SBAR_noncoding.png", plot = plot, width = 13, height = 11)
+# Extrair a legenda do gráfico de dispersão
+legend <- get_legend(
+  scatter_plot + theme(legend.position = "right")
+)
+
+# Remover a legenda do gráfico de dispersão principal
+scatter_plot <- scatter_plot + theme(legend.position = "none")
+
+# Combinar os gráficos lado a lado com a legenda
+combined_plots <- plot_grid(
+  scatter_plot, bar_plot, legend,
+  ncol = 3, rel_widths = c(3, 2, 0.8)  # Ajuste das larguras relativas para evitar sobreposição
+  #  align = "h"
+)
+
+# Adicionar o título e subtítulo principal
+title <- ggdraw() + 
+  draw_label("Common non-coding transcripts between SOFF and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
+  theme(plot.margin = margin(t = 10, b = 20))
+
+# Combinar o título e os gráficos
+final_plot <- plot_grid(
+  title, combined_plots,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+# Salvar a combinação como PNG
+ggsave("common_SOFF_SBAR_noncoding.png", plot = final_plot, width = 18, height = 11, dpi = 500, bg="white")
 
 
 
 
-#################################### plot SSPO and SBAR
+
+
+
+
+############################### plot SSPO and SBAR - all transcripts
 
 filtered_origin_SSPO_SBAR_coding <- subset(filtered_origin_SSPO_SBAR, Function == "protein-coding")
 filtered_origin_SSPO_SBAR_noncoding <- subset(filtered_origin_SSPO_SBAR, Function == "non-coding")
 
-plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR), aes(x=CPM_SSPO, y=CPM_SBAR)) +
+# Contagem de transcritos por função
+function_counts <- filtered_origin_SSPO_SBAR %>%
+  group_by(Origin) %>%
+  summarise(Count = n())
+
+# Definir a paleta de cores comum
+color_palette <- scale_fill_brewer(palette = "Set1")
+
+# Gráfico de barras estilizado para as contagens de funções
+bar_plot <- ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
+  geom_bar(stat="identity", position="dodge", width=0.5) +
+  geom_text(aes(label=Count), vjust=-0.5, size=5) +  # Adiciona as contagens em cada barra
   theme_minimal(base_size = 20) +
-  theme(legend.position = "right") +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(size = 0.2, color = "grey")
+  ) +
+  ylab('Transcripts') +
+  xlab(NULL) +  # Remover o rótulo do eixo X
+  color_palette +
+  theme(
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14)
+  )
+
+# Gráfico de dispersão
+scatter_plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR), aes(x=CPM_SSPO, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "none") +
   geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
   scale_color_brewer(palette="Set1") +
   xlab('Log10 CPM S. spontaneum') +
   ylab('Log10 CPM S. barberi') +
-  ggtitle("Common transcripts between SSPO and SBAR",
-          subtitle = "Visualization of conserved/common transcripts") +
   scale_x_log10() +
   scale_y_log10() +
   geom_density2d(size=0.3) +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, size = 18),
     axis.title = element_text(size = 18),
-    axis.text = element_text(size = 14),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 14)
+    axis.text = element_text(size = 14)
   )
 
-# save as PNG
-ggsave("common_SSPO_SBAR.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
-# save as SVG
-#ggsave("common_SSPO_SBAR.svg", plot = plot, width = 13, height = 11)
+# Extrair a legenda do gráfico de dispersão
+legend <- get_legend(
+  scatter_plot + theme(legend.position = "right")
+)
+
+# Remover a legenda do gráfico de dispersão principal
+scatter_plot <- scatter_plot + theme(legend.position = "none")
+
+# Combinar os gráficos lado a lado com a legenda
+combined_plots <- plot_grid(
+  scatter_plot, bar_plot, legend,
+  ncol = 3, rel_widths = c(3, 2, 0.8)  # Ajuste das larguras relativas para evitar sobreposição
+  #  align = "h"
+)
+
+# Adicionar o título e subtítulo principal
+title <- ggdraw() + 
+  draw_label("Common transcripts between SSPO and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
+  theme(plot.margin = margin(t = 10, b = 20))
+
+# Combinar o título e os gráficos
+final_plot <- plot_grid(
+  title, combined_plots,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+# Salvar a combinação como PNG
+ggsave("common_SSPO_SBAR.png", plot = final_plot, width = 18, height = 11, dpi = 500, bg="white")
 
 
-plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR_coding), aes(x=CPM_SSPO, y=CPM_SBAR)) +
+
+
+
+
+#################################### SSPO and SBAR - coding
+
+# Contagem de transcritos por função
+function_counts <- filtered_origin_SSPO_SBAR_coding %>%
+  group_by(Origin) %>%
+  summarise(Count = n())
+
+# Definir a paleta de cores comum
+color_palette <- scale_fill_brewer(palette = "Set1")
+
+# Gráfico de barras estilizado para as contagens de funções
+bar_plot <- ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
+  geom_bar(stat="identity", position="dodge", width=0.5) +
+  geom_text(aes(label=Count), vjust=-0.5, size=5) +  # Adiciona as contagens em cada barra
   theme_minimal(base_size = 20) +
-  theme(legend.position = "right") +
-  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(size = 0.2, color = "grey")
+  ) +
+  ylab('Transcripts') +
+  xlab(NULL) +  # Remover o rótulo do eixo X
+  color_palette +
+  theme(
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14)
+  )
+
+# Gráfico de dispersão
+scatter_plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR_coding), aes(x=CPM_SSPO, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "none") +
+  geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
   scale_color_brewer(palette="Set1") +
-  #scale_shape_manual(values = c(15, 16, 17)) +
   xlab('Log10 CPM S. spontaneum') +
   ylab('Log10 CPM S. barberi') +
-  ggtitle("Common transcripts between SSPO and SBAR",
-          subtitle = "Visualization of conserved/common transcripts") +
   scale_x_log10() +
   scale_y_log10() +
-  geom_density2d(size=0.5) +
+  geom_density2d(size=0.3) +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, size = 18),
     axis.title = element_text(size = 18),
-    axis.text = element_text(size = 14),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 14)
-  ) +
-  guides(shape = guide_legend(title = "Function"))
+    axis.text = element_text(size = 14)
+  )
 
-# save as PNG
-ggsave("common_SSPO_SBAR_coding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
-# save as SVG
-#ggsave("common_SSPO_SBAR_coding.png", plot = plot, width = 13, height = 11)
+# Extrair a legenda do gráfico de dispersão
+legend <- get_legend(
+  scatter_plot + theme(legend.position = "right")
+)
+
+# Remover a legenda do gráfico de dispersão principal
+scatter_plot <- scatter_plot + theme(legend.position = "none")
+
+# Combinar os gráficos lado a lado com a legenda
+combined_plots <- plot_grid(
+  scatter_plot, bar_plot, legend,
+  ncol = 3, rel_widths = c(3, 2, 0.8)  # Ajuste das larguras relativas para evitar sobreposição
+  #  align = "h"
+)
+
+# Adicionar o título e subtítulo principal
+title <- ggdraw() + 
+  draw_label("Common coding transcripts between SSPO and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
+  theme(plot.margin = margin(t = 10, b = 20))
+
+# Combinar o título e os gráficos
+final_plot <- plot_grid(
+  title, combined_plots,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+# Salvar a combinação como PNG
+ggsave("common_SSPO_SBAR_coding.png", plot = final_plot, width = 18, height = 11, dpi = 500, bg="white")
 
 
-plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR_noncoding), aes(x=CPM_SSPO, y=CPM_SBAR)) +
+
+
+
+
+
+#################################### SSPO and SBAR - non-coding
+
+# Contagem de transcritos por função
+function_counts <- filtered_origin_SSPO_SBAR_noncoding %>%
+  group_by(Origin) %>%
+  summarise(Count = n())
+
+# Definir a paleta de cores comum
+color_palette <- scale_fill_brewer(palette = "Set1")
+
+# Gráfico de barras estilizado para as contagens de funções
+bar_plot <- ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
+  geom_bar(stat="identity", position="dodge", width=0.5) +
+  geom_text(aes(label=Count), vjust=-0.5, size=5) +  # Adiciona as contagens em cada barra
   theme_minimal(base_size = 20) +
-  theme(legend.position = "right") +
-  geom_jitter(aes(colour=Origin, shape=Function), alpha=0.2, size=1.5) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(size = 0.2, color = "grey")
+  ) +
+  ylab('Transcripts') +
+  xlab(NULL) +  # Remover o rótulo do eixo X
+  color_palette +
+  theme(
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 14)
+  )
+
+# Gráfico de dispersão
+scatter_plot <- ggplot(as.data.frame(filtered_origin_SSPO_SBAR_noncoding), aes(x=CPM_SSPO, y=CPM_SBAR)) +
+  theme_minimal(base_size = 20) +
+  theme(legend.position = "none") +
+  geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
   scale_color_brewer(palette="Set1") +
-  #scale_shape_manual(values = c(15, 16, 17)) +
   xlab('Log10 CPM S. spontaneum') +
   ylab('Log10 CPM S. barberi') +
-  ggtitle("Common transcripts between SSPO and SBAR",
-          subtitle = "Visualization of conserved/common transcripts") +
   scale_x_log10() +
   scale_y_log10() +
-  geom_density2d(size=0.5) +
+  geom_density2d(size=0.3) +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 22, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5, size = 18),
     axis.title = element_text(size = 18),
-    axis.text = element_text(size = 14),
-    legend.title = element_text(size = 16),
-    legend.text = element_text(size = 14)
-  ) +
-  guides(shape = guide_legend(title = "Function"))
+    axis.text = element_text(size = 14)
+  )
 
-# save as PNG
-ggsave("common_SSPO_SBAR_noncoding.png", plot = plot, width = 13, height = 11, dpi = 500, bg="white")
-# save as SVG
-#ggsave("common_SSPO_SBAR_noncoding.png", plot = plot, width = 13, height = 11)
+# Extrair a legenda do gráfico de dispersão
+legend <- get_legend(
+  scatter_plot + theme(legend.position = "right")
+)
+
+# Remover a legenda do gráfico de dispersão principal
+scatter_plot <- scatter_plot + theme(legend.position = "none")
+
+# Combinar os gráficos lado a lado com a legenda
+combined_plots <- plot_grid(
+  scatter_plot, bar_plot, legend,
+  ncol = 3, rel_widths = c(3, 2, 0.8)  # Ajuste das larguras relativas para evitar sobreposição
+  #  align = "h"
+)
+
+# Adicionar o título e subtítulo principal
+title <- ggdraw() + 
+  draw_label("Common non-coding transcripts between SSPO and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
+  theme(plot.margin = margin(t = 10, b = 20))
+
+# Combinar o título e os gráficos
+final_plot <- plot_grid(
+  title, combined_plots,
+  ncol = 1,
+  rel_heights = c(0.1, 1)
+)
+
+# Salvar a combinação como PNG
+ggsave("common_SSPO_SBAR_noncoding.png", plot = final_plot, width = 18, height = 11, dpi = 500, bg="white")
+
+
+
+
+
+
 
 
 
