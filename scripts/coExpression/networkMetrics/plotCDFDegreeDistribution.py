@@ -11,7 +11,11 @@ file_paths_titles = [
     ("Hoang2017_counts_filters_VST_CNC_CV_above1.2_mcl_degree_sorted_updated.tsv", "CDF of degree distribution - Hoang2017 - CV > 1.2")
 ]
 
-colors = {'lncRNA': 'green', 'ncRNA': 'blue', 'protein-coding': 'red'}
+# transcript function
+#colors = {'lncRNA': 'green', 'ncRNA': 'blue', 'protein-coding': 'red'}
+
+# panRNAome category
+colors = {'Exclusive': 'green', 'Accessory': 'blue', 'Soft-core': 'red', 'Hard-core': 'yellow'}
 
 def compute_complementary_cdf(data):
     counts, bin_edges = np.histogram(data, bins=len(data), density=True)
