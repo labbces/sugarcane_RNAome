@@ -11,29 +11,44 @@ file_paths_titles = [
     ("Hoang2017_counts_filters_VST_CNC_CV_above1.2_mcl_degree_sorted_updated.tsv", "Degree distribution - Hoang2017 - CV > 1.2 - {bins} Bins")
 ]
 
-colors = {'lncRNA': 'green', 'ncRNA': 'blue', 'protein-coding': 'red'}
+# transcript function
+#colors = {'lncRNA': 'green', 'ncRNA': 'blue', 'protein-coding': 'red'}
+
+# panRNAome category 
+colors = {'Exclusive': 'green', 'Accessory': 'blue', 'Soft-core': 'red', 'Hard-core': 'yellow'}
 
 bin_sizes = [10, 100, 500, 1000]
 
 for file_path, title_template in file_paths_titles:
     data = pd.read_csv(file_path, delimiter="\t", header=None, names=["Gene", "Degree", "panRNAome classification", "Transcript", "Gene function", "Transcript size", "Transcript function"])
     
+    # filter transcript by function
+    lncrnas = data.loc[data['Transcript function']=='lncRNA']
+    ncrnas = data.loc[data['Transcript function']=='ncRNA']
+    protein_coding = data.loc[data['Transcript function']=='protein-coding']
+    
     plt.figure(figsize=(15, 10))
 
     for i, bins in enumerate(bin_sizes, 1):
         plt.subplot(2, 2, i)
         
-        sns.histplot(data, x='Degree', hue='Transcript function', bins=bins, palette=colors, multiple='stack', edgecolor='black')
+        # plot degree by transcript function
+        #sns.histplot(data, x='Degree', hue='Transcript function', bins=bins, palette=colors, multiple='stack', edgecolor='black')
         
+        # filter and plot degree by transcript function -> focusing on panRNAome categories
+        sns.histplot(lncrnas, x='Degree', hue='panRNAome classification', bins=bins, palette=colors, multiple='stack', edgecolor='black')
+        sns.histplot(ncrnas, x='Degree', hue='panRNAome classification', bins=bins, palette=colors, multiple='stack', edgecolor='black')
+        sns.histplot(protein_coding, x='Degree', hue='panRNAome classification', bins=bins, palette=colors, multiple='stack', edgecolor='black')
+
         plt.title(title_template.format(bins=bins))
         plt.xlabel("Degree")
         plt.ylabel("Nodes")
         plt.grid(True)
 
     plt.tight_layout()
-    #plt.show()
+    plt.show()
 
     output_file = os.path.splitext(file_path)[0] + "_degree_distribution.png"
     
-    plt.savefig(output_file)
-    plt.close()
+    #plt.savefig(output_file)
+    #plt.close()
