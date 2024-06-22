@@ -37,8 +37,8 @@ for file_path, title_template in file_paths_titles:
         
         # filter and plot degree by transcript function -> focusing on panRNAome categories
         sns.histplot(lncrnas, x='Degree', hue='panRNAome classification', bins=bins, palette=colors, multiple='stack', edgecolor='black')
-        sns.histplot(ncrnas, x='Degree', hue='panRNAome classification', bins=bins, palette=colors, multiple='stack', edgecolor='black')
-        sns.histplot(protein_coding, x='Degree', hue='panRNAome classification', bins=bins, palette=colors, multiple='stack', edgecolor='black')
+        #sns.histplot(ncrnas, x='Degree', hue='panRNAome classification', bins=bins, palette=colors, multiple='stack', edgecolor='black')
+        #sns.histplot(protein_coding, x='Degree', hue='panRNAome classification', bins=bins, palette=colors, multiple='stack', edgecolor='black')
 
         plt.title(title_template.format(bins=bins))
         plt.xlabel("Degree")
@@ -46,9 +46,11 @@ for file_path, title_template in file_paths_titles:
         plt.grid(True)
 
     plt.tight_layout()
-    plt.show()
+    #plt.show()
 
-    output_file = os.path.splitext(file_path)[0] + "_degree_distribution.png"
-    
-    #plt.savefig(output_file)
-    #plt.close()
+    # change outname for each version (transcript function and panRNAome category)
+    #output_file = os.path.splitext(file_path)[0] + "_degree_distribution.png"
+    output_file = os.path.splitext(file_path)[0] + "_degree_distribution_lncRNA_category.png"
+
+    plt.savefig(output_file)
+    plt.close()
