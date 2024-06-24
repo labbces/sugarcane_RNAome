@@ -1,62 +1,43 @@
 #!/usr/bin/env python3
 
-with open('proteinCoding_RNA.txt', 'r') as protein_file:
-    protein_coding_genes = set(line.strip() for line in protein_file)
+import pandas as pd
 
-with open('putative_ncRNA_consensus.txt', 'r') as non_coding_file:
-    non_coding_genes = set(line.strip() for line in non_coding_file)
+classification_file = "panTranscriptome_panRNAomeClassificationTable_hyphen.tsv"
+ncRNA_file = "putative_ncRNA_consensus.txt"
+proteinCoding_file = "proteinCoding_RNA.txt"
 
-common_genes = protein_coding_genes.intersection(non_coding_genes)
+with open(ncRNA_file, 'r') as f:
+    ncRNA_transcripts = set(f.read().splitlines())
 
-coding_non_coding = 0
-protein_coding = 0
-non_coding = 0
-unknown = 0
+with open(proteinCoding_file, 'r') as f:
+    proteinCoding_transcripts = set(f.read().splitlines())
 
-classified_genes = {}
+df = pd.read_csv(classification_file, sep='\t', header=None)
+# Soft-core	OG0000000	B1_k25_TRINITY_DN12555_c1_g1_i10
+df.columns = ['Category', 'Gene', 'Transcript']
 
-with open('panTranscriptome_panRNAomeClassificationTable_hyphen.tsv', 'r') as input_file, open('panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv', 'w') as output_file:
-    for line in input_file:
-        gene = line.split('\t')[2].strip()
+gene_classification = {}
 
-        if gene in common_genes:
-            classification = 'protein and non-coding'
-            coding_non_coding += 1 
+for index, row in df.iterrows():
+    gene = row['Gene']
+    transcript = row['Transcript']
+    
+    if transcript in proteinCoding_transcripts and transcript in ncRNA_transcripts:
+        classification = 'protein and non-coding'
+    elif transcript in proteinCoding_transcripts:
+        classification = 'protein-coding'
+    elif transcript in ncRNA_transcripts:
+        classification = 'non-coding'
+    #else:
+    #    classification = 'unknown'
+    
+    if gene not in gene_classification:
+        gene_classification[gene] = classification
+    else:
+        if gene_classification[gene] != classification:
+            gene_classification[gene] = 'protein and non-coding'
 
-        elif gene in protein_coding_genes:
-            classification = 'protein-coding'
-            protein_coding +=1        
+df['Gene_Classification'] = df['Gene'].map(gene_classification)
 
-        elif gene in non_coding_genes:
-            classification = 'non-coding'
-            non_coding += 1
-
-        else:
-            classification = 'unknown'
-            unknown += 1
-        
-        if gene not in classified_genes:
-            classified_genes[gene] = {'classification': classification, 'count': 0}
-      
-        classified_genes[gene]['count'] += 1
-        output_file.write(line.strip() + '\t' + classification + '\n')
-
-def print_metric(classification, label):
-    unique_genes = set(gene for gene, info in classified_genes.items() if info['classification'] == classification)
-    print(f"{label}: {len(unique_genes)}")
-
-print("### FINISHED GROUPS CLASSIFICATION")
-print("\n")
-print_metric('protein and non-coding', 'protein and non-coding sequences')
-print_metric('protein-coding', 'protein-coding sequences')
-print_metric('non-coding', 'non-coding sequences')
-print_metric('unknown', 'unknown sequences')
-
-print('\n')
-print("Total classified genes:", len(classified_genes))
-print("Total lines processed (classified_genes['count']):", sum(info['count'] for info in classified_genes.values()))
-
-print("\n")
-
-total_duplicates = sum(info['count'] -1 for info in classified_genes.values() if info['count'] > 1)
-print(f"Total duplicates: {total_duplicates}")
+output_file = "panTranscriptome_panRNAomeClassificationTable_hyphen_Class.tsv"
+df.to_csv(output_file, sep='\t', index=False, header=False)
