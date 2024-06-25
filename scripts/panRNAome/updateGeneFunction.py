@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 
 import pandas as pd
+import numpy as np
 
 input_file = 'updated_panTranscriptome_panRNAome_Length.tsv'
 df = pd.read_csv(input_file, sep='\t', header=None)
 
 df.columns = ['panRNAome_category', 'gene_name', 'transcript_name', 'gene_function', 'transcript_length', 'transcript_function']
 
+# Ordem de precedência das funções
 function_precedence = {
     'protein and non-coding': 1,
     'protein and lncRNA': 2,
@@ -15,19 +17,26 @@ function_precedence = {
     'lncRNA': 5,
 }
 
+# Função para determinar a função do gene com base nos transcritos
 def determine_gene_function(transcript_functions):
-    # Ordena as funções de acordo com a precedência
-    sorted_functions = sorted(transcript_functions, key=lambda x: function_precedence.get(x, float('inf')))
-    return sorted_functions[0]  # Retorna a função de maior precedência
+    # Filtra valores não nulos e ordena as funções de acordo com a precedência
+    valid_functions = transcript_functions.dropna()
+    sorted_functions = sorted(valid_functions, key=lambda x: function_precedence.get(x, float('inf')))
+    return sorted_functions[0] if sorted_functions else np.nan  # Retorna a função de maior precedência ou NA se estiver vazio
 
 # Agrupamento por gene e determinação da função do gene
 gene_functions = df.groupby('gene_name')['transcript_function'].apply(determine_gene_function).reset_index()
 gene_functions.columns = ['gene_name', 'updated_gene_function']
 
-df = df.drop(columns=['gene_function']).merge(gene_functions, on='gene_name')
-df = df.rename(columns={'updated_gene_function': 'gene_function'})
+# Atualização da coluna de função do gene no dataframe original
+df = df.merge(gene_functions, on='gene_name', how='left')
+df['gene_function'] = df['updated_gene_function']
+df.drop(columns=['updated_gene_function'], inplace=True)
 
-df = df[['panRNAome_category', 'gene_name', 'transcript_name', 'gene_function', 'transcript_length', 'transcript_function']]
+# Convertendo transcript_length para inteiro (removendo ".0" se for inteiro)
+df['transcript_length'] = df['transcript_length'].astype('Int64')  # Utiliza tipo Int64 para manter NA e inteiros
 
+# Salvamento do arquivo atualizado sem cabeçalhos de colunas
 output_file = 'updated_panTranscriptome_panRNAome_GeneFunction_Length.tsv'
-df.to_csv(output_file, sep='\t', header=False, index=False)
+
+df.to_csv(output_file, sep='\t', header=False, index=False, na_rep='NA')
