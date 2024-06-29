@@ -11,6 +11,9 @@ data = pd.read_csv(file_path, sep='\t', header=None, names=['panRNAome category'
 # Extrair o genótipo do nome do transcrito
 data['Genotype'] = data['Transcript'].apply(lambda x: x.split('_')[0])
 
+# Transformar Transcript Size em inteiro
+data['Transcript Size'] = data['Transcript Size'].astype(int)
+
 # 1) Quantos transcritos tem os genes? Qual a distribuição do tamanho deles?
 transcripts_per_gene = data.groupby('Gene')['Transcript'].count()
 transcript_size_distribution = data['Transcript Size']
