@@ -14,18 +14,19 @@ function_precedence = {
     'protein and lncRNA': 2,
     'protein-coding': 3,
     'ncRNA': 4,
-    'lncRNA': 5,
+    'lncRNA': 5
 }
 
 # Função para determinar a função do gene com base nos transcritos
 def determine_gene_function(transcript_functions):
     # Filtra valores não nulos
-    valid_functions = transcript_functions.dropna()
+    valid_functions = set(transcript_functions.dropna())
     
     # Verifica se há transcritos "protein-coding" e "ncRNA"
     if 'protein-coding' in valid_functions and 'ncRNA' in valid_functions:
         return 'protein and non-coding'
     
+    # Ordena as funções de acordo com a precedência
     sorted_functions = sorted(valid_functions, key=lambda x: function_precedence.get(x, float('inf')))
     return sorted_functions[0] if sorted_functions else np.nan  # Retorna a função de maior precedência ou NA se estiver vazio
 
