@@ -19,8 +19,13 @@ function_precedence = {
 
 # Função para determinar a função do gene com base nos transcritos
 def determine_gene_function(transcript_functions):
-    # Filtra valores não nulos e ordena as funções de acordo com a precedência
+    # Filtra valores não nulos
     valid_functions = transcript_functions.dropna()
+    
+    # Verifica se há transcritos "protein-coding" e "ncRNA"
+    if 'protein-coding' in valid_functions and 'ncRNA' in valid_functions:
+        return 'protein and non-coding'
+    
     sorted_functions = sorted(valid_functions, key=lambda x: function_precedence.get(x, float('inf')))
     return sorted_functions[0] if sorted_functions else np.nan  # Retorna a função de maior precedência ou NA se estiver vazio
 
@@ -36,7 +41,5 @@ df.drop(columns=['updated_gene_function'], inplace=True)
 # Convertendo transcript_length para inteiro (removendo ".0" se for inteiro)
 df['transcript_length'] = df['transcript_length'].astype('Int64')  # Utiliza tipo Int64 para manter NA e inteiros
 
-# Salvamento do arquivo atualizado sem cabeçalhos de colunas
 output_file = 'updated_panTranscriptome_panRNAome_GeneFunction_Length.tsv'
-
 df.to_csv(output_file, sep='\t', header=False, index=False, na_rep='NA')
