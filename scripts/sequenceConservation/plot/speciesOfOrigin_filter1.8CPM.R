@@ -551,7 +551,7 @@ combined_plots <- plot_grid(
 
 # Adicionar o título e subtítulo principal
 title <- ggdraw() + 
-  draw_label("Common non-coding transcripts between SOFF and SSPO", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Common lncRNAs between SOFF and SSPO", fontface = 'bold', size = 22, hjust = 0.5) +
   draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
   theme(plot.margin = margin(t = 10, b = 20))
 
@@ -829,7 +829,7 @@ ggsave("common_SOFF_SBAR_noncoding.png", plot = final_plot, width = 18, height =
 
 
 
-#################################### SOFF and SBAR - non-coding
+#################################### SOFF and SBAR - lncRNA
 
 # Contagem de transcritos por função
 function_counts <- filtered_origin_SOFF_SBAR_lncRNA %>%
@@ -892,7 +892,7 @@ combined_plots <- plot_grid(
 
 # Adicionar o título e subtítulo principal
 title <- ggdraw() + 
-  draw_label("Common non-coding transcripts between SOFF and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Common lncRNAs between SOFF and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
   draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
   theme(plot.margin = margin(t = 10, b = 20))
 
@@ -1165,7 +1165,7 @@ ggsave("common_SSPO_SBAR_noncoding.png", plot = final_plot, width = 18, height =
 
 
 
-#################################### SSPO and SBAR - non-coding
+#################################### SSPO and SBAR - lncRNA
 
 # Contagem de transcritos por função
 function_counts <- filtered_origin_SSPO_SBAR_lncRNA %>%
@@ -1228,7 +1228,7 @@ combined_plots <- plot_grid(
 
 # Adicionar o título e subtítulo principal
 title <- ggdraw() + 
-  draw_label("Common non-coding transcripts between SSPO and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
+  draw_label("Common lncRNAs between SSPO and SBAR", fontface = 'bold', size = 22, hjust = 0.5) +
   draw_label("Visualization of conserved/common transcripts", fontface = 'plain', size = 18, hjust = 0.5, vjust = 2) +
   theme(plot.margin = margin(t = 10, b = 20))
 
