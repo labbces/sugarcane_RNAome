@@ -35,22 +35,25 @@ sns.histplot(transcripts_per_gene, bins=50, kde=True)  # Ajustando os bins para 
 plt.title('Distribuição do número de transcritos por gene')
 plt.xlabel('Número de transcritos')
 plt.ylabel('Frequência')
-plt.yscale('log') 
+#plt.xscale('log') 
 
 # Histograma de número de transcritos por função do gene
 plt.subplot(1, 2, 2)
 colors = sns.color_palette('husl', len(transcripts_per_gene_function))
 
-for i, (gene_function, count) in enumerate(transcripts_per_gene_function.items()):
+#for i, (gene_function, count) in enumerate(transcripts_per_gene_function.items()):
     #sns.histplot([count], bins=range(0, transcripts_per_gene_function.max() + 10, 10), color=colors[i], label=gene_function, kde=True)
-    sns.histplot([count], bins=50, color=colors[i], label=gene_function, kde=True)  # Ajustando os bins para 50
+    #sns.histplot([count], bins=50, color=colors[i], label=gene_function, kde=True)  # Ajustando os bins para 50
+
+for gene_function, count in transcripts_per_gene_function.items():
+    #sns.histplot([count], bins=50, color=colors.pop(), label=gene_function, kde=True)
+    sns.histplot(data=data[data['Gene Function'] == gene_function], x='Gene', bins=50, color=colors.pop(), label=gene_function, kde=True)
 
 plt.title('Distribuição do número de transcritos por função do gene')
 plt.xlabel('Número de transcritos')
 plt.ylabel('Frequência')
-plt.yscale('log')
+#plt.xscale('log')
 plt.legend(title='Função do gene', bbox_to_anchor=(1.05, 1), loc='upper left')
-
 plt.tight_layout()
 plt.savefig('transcripts_distribution.png')
 plt.clf()  # Limpar a figura atual
