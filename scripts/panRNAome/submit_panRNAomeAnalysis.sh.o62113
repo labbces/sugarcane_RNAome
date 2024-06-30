@@ -1,0 +1,42 @@
+Número de transcritos por gene: Gene
+OG0000000    654
+OG0000001    566
+OG0000002    528
+OG0000003    493
+OG0000004    491
+            ... 
+OG999995       3
+OG999996       1
+OG999997       2
+OG999998       5
+OG999999       1
+Name: Transcript, Length: 3968803, dtype: int64
+Distribuição do tamanho dos transcritos: 0           309
+1           309
+2           309
+3           317
+4           313
+           ... 
+13481946    304
+13481947    333
+13481948    333
+13481949    500
+13481950    650
+Name: Transcript Size, Length: 13166438, dtype: int64
+Número de transcritos por funçao do gene: Gene Function
+lncRNA                    1694827
+ncRNA                     2842500
+protein and lncRNA        4311632
+protein and non-coding    2318880
+protein-coding            1998599
+Name: Transcript, dtype: int64
+Número de transcritos lncRNAs: 5366686
+Número de genótipos nos genes lncRNAs: 48
+Genótipos presentes nos genes lncRNAs: ['B1' 'B2' 'CP74-2005' 'Co06022' 'Co8021' 'CoV92102' 'F1-Bulk-1'
+ 'F1-Bulk-2' 'FN95-1702' 'GN18' 'GT96-167' 'GUC10' 'GXU-34140' 'GXU-34176'
+ 'KQ08-2850' 'KQB07-23863' 'KQB07-23990' 'KQB07-24619' 'KQB07-24739'
+ 'KQB08-32953' 'KQB09-20432' 'KQB09-20620' 'KQB09-23137' 'LCP85-384'
+ 'MS6847' 'MT11-610' 'Q200' 'Q241' 'QA02-1009' 'QA96-1749' 'QBYN04-26041'
+ 'QC02-402' 'QN05-1460' 'QN05-1509' 'QN05-1743' 'QN05-803' 'QS99-2014'
+ 'RB72454' 'RB855156' 'ROC20' 'ROC22' 'ROC26' 'T1' 'T2' 'TUC717'
+ 'US851008' 'GUC2' 'SP80-3280']
