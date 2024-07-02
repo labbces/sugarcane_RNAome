@@ -1,0 +1,29 @@
+./transferGOToAnnotation.py:38: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  filtered_GO_df['goid'] = 'GO:' + filtered_GO_df['goid']
+	Command being timed: "./transferGOToAnnotation.py"
+	User time (seconds): 928.76
+	System time (seconds): 43.98
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 16:26.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 21694000
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 20311521
+	Voluntary context switches: 9902
+	Involuntary context switches: 926331
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 2535608
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
