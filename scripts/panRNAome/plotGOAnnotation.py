@@ -43,7 +43,7 @@ ax = sns.countplot(data=filtered_gene_df, x='gene_function', hue='Has Gene GO')
 plt.title('Distribuição de ncRNAs com Gene Ontology')
 plt.xlabel('Gene function')
 plt.ylabel('Frequência de genes')
-plt.legend(title='Gene classificado pelo Rfam', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.legend(title='Gene classificado com termo GO', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.xticks(rotation=45)
 plt.tight_layout()
 
