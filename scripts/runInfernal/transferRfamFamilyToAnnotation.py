@@ -20,10 +20,10 @@ transcript_to_rfam = dict(zip(rfam_df['query_name'], rfam_df['target_accession']
 annotation_df['Transcript Rfam family'] = annotation_df['transcript_name'].map(transcript_to_rfam)
 
 # agrupar as Rfam family de todos os transcritos por gene - separados por virgula e.g: RF04085,RF04087,RF04089
-gene_to_rfam = annotation_df.groupby('gene_name')['Transcript Rfam family'].apply(lambda x: ','.join(x.dropna().unique())).to_dict()
+#gene_to_rfam = annotation_df.groupby('gene_name')['Transcript Rfam family'].apply(lambda x: ','.join(x.dropna().unique())).to_dict()
 
 # nova coluna 'Gene Rfam family' ao arquivo de anotação
-annotation_df['Gene Rfam family'] = annotation_df['gene_name'].map(gene_to_rfam)
+#annotation_df['Gene Rfam family'] = annotation_df['gene_name'].map(gene_to_rfam)
 
 # Convertendo transcript_length para inteiro (removendo ".0" se for inteiro)
 annotation_df['transcript_length'] = annotation_df['transcript_length'].astype('Int64')  # Utiliza tipo Int64 para manter NA e inteiros
