@@ -131,7 +131,7 @@ combine_plots <- function(bar_plot, scatter_plot, title_text, subtitle_text) {
 # save plots
 save_plot <- function(plot, filename) {
   #ggsave(filename, plot = plot, width = 18, height = 11, dpi = 500, bg="white")
-  ggsave(filename, plot = plot, device = "svg", width = 18, height = 11, units = "in", dpi = 300)
+  ggsave(filename, plot = plot, device = "svg", width = 18, height = 11, units = "in", dpi = 300, bg="white")
   
 }
 
