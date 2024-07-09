@@ -3,7 +3,11 @@ library(dplyr)
 library(cowplot)
 
 # install ggplot2 additional svglite to save svg files!
-# install.packages('svglite')
+install.packages('svglite')
+
+#install.packages('ggplot2')
+#install.packages('dplyr')
+#install.packages('cowplot')
 
 rm(list=ls())
 
@@ -61,18 +65,24 @@ filter_transcripts <- function(data, function_type) {
 
 # filter transcript by origin
 count_transcripts <- function(data, function_type) {
-  data %>%
-    filter(Function == function_type) %>%
-    group_by(Origin) %>%
-    summarise(Count = n())
+  if (is.null(function_type)) {
+    data %>%
+      group_by(Origin) %>%
+      summarise(Count = n())
+  } else {
+    data %>%
+      filter(Function %in% function_type) %>%
+      group_by(Origin) %>%
+      summarise(Count = n())
+  }
 }
 
 # create histogram by function
 create_bar_plot <- function(data, function_types) {
   function_counts <- count_transcripts(data, function_types)
-  ggplot(function_counts, aes(x=Origin, y=Count, fill=Origin)) +
-    geom_bar(stat="identity", position="dodge", width=0.5) +
-    geom_text(aes(label=Count), vjust=-0.5, size=5) +
+  ggplot(function_counts, aes(x = Origin, y = Count, fill = Origin)) +
+    geom_bar(stat = "identity", position = "dodge", width = 0.5) +
+    geom_text(aes(label = Count), vjust = -0.5, size = 5) +
     scale_fill_manual(values = colors) + 
     theme_minimal(base_size = 20) +
     theme(
@@ -80,15 +90,12 @@ create_bar_plot <- function(data, function_types) {
       axis.text.x = element_text(angle = 45, hjust = 1),
       panel.grid.major.x = element_blank(),
       panel.grid.minor = element_blank(),
-      panel.grid.major.y = element_line(size = 0.2, color = "grey")
-    ) +
-    ylab('Transcripts') +
-    xlab(NULL) +
-    #scale_fill_brewer(palette = "Set1") +
-    theme(
+      panel.grid.major.y = element_line(size = 0.2, color = "grey"),
       axis.title = element_text(size = 18),
       axis.text = element_text(size = 14)
-    )
+    ) +
+    ylab('Transcripts') +
+    xlab(NULL)
 }
 
 # create scatterplot by function
@@ -148,8 +155,8 @@ generate_plots <- function(datasets, function_types, xy_mappings) {
         filter_transcripts(filtered_data, function_types[[function_type]])
       }
       
-      #bar_plot <- create_bar_plot(filtered_subset, function_types)
-      bar_plot <- create_bar_plot(countsOrigin, function_types)
+      #bar_plot <- create_bar_plot(filtered_subset, function_types[[function_type]])  # Use function_types[[function_type]] 
+      bar_plot <- create_bar_plot(countsOrigin, function_types[[function_type]])  # Use function_types[[function_type]]
       scatter_plot <- create_scatter_plot(filtered_subset, xy_columns)
       
       title_text <- paste("Common", function_type, "transcripts between", names(xy_mappings)[i])
@@ -160,7 +167,7 @@ generate_plots <- function(datasets, function_types, xy_mappings) {
       filename <- paste0("common_", names(xy_mappings)[i], "_", function_type, ".svg")    # save as svg
       
       #print(final_plot)
-      #readline(prompt = "")                                                              # press enter in the console to show more plots
+      #readline(prompt = "")  # press enter in the console to show more plots
       
       save_plot(final_plot, filename)
     }
@@ -169,7 +176,6 @@ generate_plots <- function(datasets, function_types, xy_mappings) {
 
 datasets <- list(filtered_origin_SOFF_SSPO, filtered_origin_SOFF_SBAR, filtered_origin_SSPO_SBAR)
 function_types <- list("all" = NULL, "coding" = "protein-coding", "noncoding" = "ncRNA", "lncRNA" = "lncRNA")
-#function_types <- list("lncRNA" = "lncRNA")
 
 xy_mappings <- list(
   filtered_origin_SOFF_SSPO = c("CPM_SOFF", "CPM_SSPO"),
