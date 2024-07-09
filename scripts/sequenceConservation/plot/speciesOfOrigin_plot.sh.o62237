@@ -1,0 +1,138 @@
+                         Transcript S._barberi S._officinarum S._spontaneum
+2       B1_k25_TRINITY_DN0_c0_g1_i3          0          0.000             0
+3       B1_k25_TRINITY_DN0_c0_g1_i6          0          0.000             0
+6     B1_k25_TRINITY_DN100_c0_g1_i1          0          0.000             0
+16 B1_k25_TRINITY_DN100003_c0_g1_i1          0          2.000             0
+26 B1_k25_TRINITY_DN100013_c0_g1_i1          0          0.992             0
+27 B1_k25_TRINITY_DN100013_c0_g1_i1          0          0.992             0
+   S._bicolor EffectiveLength  Category      Gene               Function
+2       0.988        430.9012 Soft-core OG0001204         protein-coding
+3       1.051        583.7522 Soft-core OG0001204         protein-coding
+6       2.517        629.1374 Accessory OG2036235 protein and non-coding
+16      0.000        131.0605 Accessory OG2578261 protein and non-coding
+26      0.000        234.4583 Accessory OG0377750 protein and non-coding
+27      0.000        234.4583 Exclusive OG2913655 protein and non-coding
+   Transcript.Size    Transcript.Function Transcript.Rfam.family Transcript.GO
+2              735         protein-coding                           GO:0006325
+3              906         protein-coding                           GO:0006325
+6              952 protein and non-coding                                     
+16             363                  ncRNA                                     
+26             506 protein and non-coding                                     
+27             506 protein and non-coding                                     
+                 Gene.GO FPKM_SBAR  FPKM_SOFF FPKM_SSPO  FPKM_SBIC
+2  GO:0006338,GO:0006325         0 0.00000000         0 0.04248732
+3  GO:0006338,GO:0006325         0 0.00000000         0 0.03336217
+6                                0 0.00000000         0 0.07413407
+16                               0 0.05896515         0 0.00000000
+26                               0 0.01634870         0 0.00000000
+27                               0 0.01634870         0 0.00000000
+   ratioFPKM_SSPO_vs_SOFF log10ratioFPKM_SSPO_vs_SOFF ratioFPKM_SSPO_vs_SBAR
+2                      NA                          NA                     NA
+3                      NA                          NA                     NA
+6                      NA                          NA                     NA
+16                      0                        -Inf                     NA
+26                      0                        -Inf                     NA
+27                      0                        -Inf                     NA
+   log10ratioFPKM_SSPO_vs_SBAR ratioFPKM_SOFF_vs_SBAR
+2                           NA                     NA
+3                           NA                     NA
+6                           NA                     NA
+16                          NA                    Inf
+26                          NA                    Inf
+27                          NA                    Inf
+   log10ratioFPKM_SOFF_vs_SBAR Fraction_SSPO Fraction_SOFF Fraction_SBAR Origin
+2                           NA            NA            NA            NA    UNK
+3                           NA            NA            NA            NA    UNK
+6                           NA            NA            NA            NA    UNK
+16                         Inf             0             1             0   SOFF
+26                         Inf             0             1             0   SOFF
+27                         Inf             0             1             0   SOFF
+ [1] "Transcript"                  "S._barberi"                 
+ [3] "S._officinarum"              "S._spontaneum"              
+ [5] "S._bicolor"                  "EffectiveLength"            
+ [7] "Category"                    "Gene"                       
+ [9] "Function"                    "Transcript.Size"            
+[11] "Transcript.Function"         "Transcript.Rfam.family"     
+[13] "Transcript.GO"               "Gene.GO"                    
+[15] "FPKM_SBAR"                   "FPKM_SOFF"                  
+[17] "FPKM_SSPO"                   "FPKM_SBIC"                  
+[19] "ratioFPKM_SSPO_vs_SOFF"      "log10ratioFPKM_SSPO_vs_SOFF"
+[21] "ratioFPKM_SSPO_vs_SBAR"      "log10ratioFPKM_SSPO_vs_SBAR"
+[23] "ratioFPKM_SOFF_vs_SBAR"      "log10ratioFPKM_SOFF_vs_SBAR"
+[25] "Fraction_SSPO"               "Fraction_SOFF"              
+[27] "Fraction_SBAR"               "Origin"                     
+[1] 5811575      28
+                         Transcript S._barberi S._officinarum S._spontaneum
+2       B1_k25_TRINITY_DN0_c0_g1_i3          0          0.000             0
+3       B1_k25_TRINITY_DN0_c0_g1_i6          0          0.000             0
+6     B1_k25_TRINITY_DN100_c0_g1_i1          0          0.000             0
+16 B1_k25_TRINITY_DN100003_c0_g1_i1          0          2.000             0
+26 B1_k25_TRINITY_DN100013_c0_g1_i1          0          0.992             0
+27 B1_k25_TRINITY_DN100013_c0_g1_i1          0          0.992             0
+   S._bicolor EffectiveLength  Category      Gene               Function
+2       0.988        430.9012 Soft-core OG0001204         protein-coding
+3       1.051        583.7522 Soft-core OG0001204         protein-coding
+6       2.517        629.1374 Accessory OG2036235 protein and non-coding
+16      0.000        131.0605 Accessory OG2578261 protein and non-coding
+26      0.000        234.4583 Accessory OG0377750 protein and non-coding
+27      0.000        234.4583 Exclusive OG2913655 protein and non-coding
+   Transcript.Size    Transcript.Function Transcript.Rfam.family Transcript.GO
+2              735         protein-coding                           GO:0006325
+3              906         protein-coding                           GO:0006325
+6              952 protein and non-coding                                     
+16             363                  ncRNA                                     
+26             506 protein and non-coding                                     
+27             506 protein and non-coding                                     
+                 Gene.GO FPKM_SBAR  FPKM_SOFF FPKM_SSPO  FPKM_SBIC
+2  GO:0006338,GO:0006325         0 0.00000000         0 0.04248732
+3  GO:0006338,GO:0006325         0 0.00000000         0 0.03336217
+6                                0 0.00000000         0 0.07413407
+16                               0 0.05896515         0 0.00000000
+26                               0 0.01634870         0 0.00000000
+27                               0 0.01634870         0 0.00000000
+   ratioFPKM_SSPO_vs_SOFF log10ratioFPKM_SSPO_vs_SOFF ratioFPKM_SSPO_vs_SBAR
+2                      NA                          NA                     NA
+3                      NA                          NA                     NA
+6                      NA                          NA                     NA
+16                      0                        -Inf                     NA
+26                      0                        -Inf                     NA
+27                      0                        -Inf                     NA
+   log10ratioFPKM_SSPO_vs_SBAR ratioFPKM_SOFF_vs_SBAR
+2                           NA                     NA
+3                           NA                     NA
+6                           NA                     NA
+16                          NA                    Inf
+26                          NA                    Inf
+27                          NA                    Inf
+   log10ratioFPKM_SOFF_vs_SBAR Fraction_SSPO Fraction_SOFF Fraction_SBAR Origin
+2                           NA            NA            NA            NA    UNK
+3                           NA            NA            NA            NA    UNK
+6                           NA            NA            NA            NA    UNK
+16                         Inf             0             1             0   SOFF
+26                         Inf             0             1             0   SOFF
+27                         Inf             0             1             0   SOFF
+
+         Common CommonSOFF_SBAR CommonSSPO_SBAR CommonSSPO_SOFF            SBAR 
+      23.323213        5.179990        9.939371        5.492298        7.201163 
+           SOFF            SSPO             UNK            <NA> 
+      15.407820       20.141356       13.314790        0.000000 
+       10%        20%        50%        80%        90%        99% 
+0.00000000 0.00000000 0.01284126 0.23050897 0.70285584 9.60273767 
+       10%        20%        50%        80%        90%        99% 
+0.00000000 0.00000000 0.01687486 0.28361423 0.85162263 9.07716733 
+       10%        20%        50%        80%        90%        99% 
+0.00000000 0.00000000 0.01824736 0.21306844 0.61736193 9.17933741 
+ [1] "Transcript"                  "S._barberi"                 
+ [3] "S._officinarum"              "S._spontaneum"              
+ [5] "S._bicolor"                  "EffectiveLength"            
+ [7] "Category"                    "Gene"                       
+ [9] "Function"                    "Transcript.Size"            
+[11] "Transcript.Function"         "Transcript.Rfam.family"     
+[13] "Transcript.GO"               "Gene.GO"                    
+[15] "FPKM_SBAR"                   "FPKM_SOFF"                  
+[17] "FPKM_SSPO"                   "FPKM_SBIC"                  
+[19] "ratioFPKM_SSPO_vs_SOFF"      "log10ratioFPKM_SSPO_vs_SOFF"
+[21] "ratioFPKM_SSPO_vs_SBAR"      "log10ratioFPKM_SSPO_vs_SBAR"
+[23] "ratioFPKM_SOFF_vs_SBAR"      "log10ratioFPKM_SOFF_vs_SBAR"
+[25] "Fraction_SSPO"               "Fraction_SOFF"              
+[27] "Fraction_SBAR"               "Origin"                     
