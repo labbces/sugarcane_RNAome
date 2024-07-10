@@ -105,8 +105,8 @@ create_scatter_plot <- function(data, xy_columns) {
     geom_jitter(aes(colour=Origin), alpha=0.2, size=1.5) +
     scale_color_manual(values = colors) + 
     #scale_color_brewer(palette="Set1") +
-    xlab(paste('Log10 FPKM', gsub('FPKM_', '', xy_columns[1]))) +
-    ylab(paste('Log10 FPKM', gsub('FPKM_', '', xy_columns[2]))) +
+    xlab(paste('FPKM', gsub('FPKM_', '', xy_columns[1]))) +
+    ylab(paste('FPKM', gsub('FPKM_', '', xy_columns[2]))) +
     scale_x_log10() +
     scale_y_log10() +
     geom_density2d(size=0.3) +
