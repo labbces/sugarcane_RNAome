@@ -5,9 +5,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#file_path = 'updated_panTranscriptome_panRNAome_GeneFunction_Length.tsv'
-file_path = 'updated_panRNAome_GeneFunction_Length.tsv'
-data = pd.read_csv(file_path, sep='\t', header=None, names=['panRNAome category', 'Gene', 'Transcript', 'Gene Function', 'Transcript Size', 'Transcript Function'])
+file_path = 'updated_panRNAome_GeneFunction_Length_with_Rfam.tsv'
+data = pd.read_csv(file_path, sep='\t', header=None, names=['panRNAome category', 'Gene', 'Transcript', 'Gene Function', 'Transcript Size', 'Transcript Function', 'Transcript Rfam family', 'Gene Rfam family'])
 
 # Extrair o genótipo do nome do transcrito
 data['Genotype'] = data['Transcript'].apply(lambda x: x.split('_')[0])
@@ -64,7 +63,7 @@ plt.xticks(rotation=45, fontsize = 'x-small')
 #for index, value in enumerate(transcripts_per_gene_function.values):
 #    bx.text(index, value, f'{value:,}', ha='center', va='bottom')
 #plt.tight_layout()
-plt.savefig('transcripts_distribution.png')
+#plt.savefig('transcripts_distribution.png')
 plt.clf()  # Limpar a figura atual
 
 plt.figure(figsize=(10, 6))
@@ -73,7 +72,7 @@ plt.title('Distribuição do tamanho dos transcritos')
 plt.xlabel('Tamanho do transcrito')
 plt.ylabel('Frequência')
 plt.tight_layout()
-# plt.show()
+#plt.show()
 plt.savefig('transcript_size_distribution.png')
 plt.clf()  # Limpar a figura atual
 
@@ -92,7 +91,7 @@ plt.figure(figsize=(14, 6))
 
 # Histograma de tamanho dos transcritos ncRNAs
 plt.subplot(1, 2, 1)
-sns.histplot(ncRNA_transcripts['Transcript Size'], kde=True, bins=range(0, ncRNA_transcripts['Transcript Size'].max() + 10, 10))
+##sns.histplot(ncRNA_transcripts['Transcript Size'], kde=True, bins=range(0, ncRNA_transcripts['Transcript Size'].max() + 10, 10))
 plt.title('Distribuição do tamanho dos ncRNAs')
 plt.xlabel('Tamanho do transcrito')
 plt.ylabel('Frequência')
@@ -103,7 +102,7 @@ colors = sns.color_palette('husl', len(ncRNA_categories))
 
 for i, category in enumerate(ncRNA_categories):
     category_data = ncRNA_transcripts[ncRNA_transcripts['Transcript Function'] == category]
-    sns.histplot(category_data['Transcript Size'], kde=True, color=colors[i], label=category, bins=range(0, ncRNA_transcripts['Transcript Size'].max() + 10, 10))
+    ##sns.histplot(category_data['Transcript Size'], kde=True, color=colors[i], label=category, bins=range(0, ncRNA_transcripts['Transcript Size'].max() + 10, 10))
 
 plt.title('Distribuição do tamanho dos ncRNAs')
 plt.xlabel('Tamanho do transcrito')
@@ -111,7 +110,7 @@ plt.ylabel('Frequência')
 plt.legend(title='Categoria de ncRNA', bbox_to_anchor=(1.05, 1), loc='upper left')
 
 plt.tight_layout()
-# plt.show()
+#plt.show()
 plt.savefig('ncRNA_transcripts_size_distribution.png')
 plt.clf()  # Limpar a figura atual
 
@@ -147,11 +146,12 @@ plt.legend(title='Categoria do transcrito')
 plt.savefig('transcript_function_by_genotype.png')
 plt.clf()  # Limpar a figura atual
 
+'''
 # 7) Nos genes como é a distribuição dos transcritos? 
 # Tem transcritos ncRNA junto com lncRNAs? São apenas lncRNAs juntos? Tem transcritos "protein" e "lncRNA" juntos?
 #genes_interesse = data[data['Gene Function'].isin(ncRNA_categories)]
-#all_categories = ['ncRNA', 'lncRNA', 'protein and non-coding', 'protein and lncRNA', 'protein-coding']
-all_categories = ['ncRNA', 'lncRNA', 'protein and non-coding']
+all_categories = ['ncRNA', 'lncRNA', 'protein and non-coding', 'protein and lncRNA', 'protein-coding']
+##all_categories = ['ncRNA', 'lncRNA', 'protein and non-coding']
 genes_interesse = data[data['Gene Function'].isin(all_categories)]
 transcript_function_by_gene_function = genes_interesse.groupby(['Gene Function', 'Transcript Function']).size().unstack(fill_value=0)
 
@@ -165,6 +165,42 @@ plt.xticks(rotation=45)
 # Adicionar anotações com os totais no topo das barras
 for index, value in enumerate(transcripts_per_gene_function.values):
     ax.text(index, value, f'{value:,}', ha='center', va='bottom')
+
+plt.tight_layout()
+plt.legend(title='Categoria do transcrito')
+plt.show()
+#plt.savefig('transcript_function_by_gene_function.png')
+plt.clf()  # Limpar a figura atual
+
+
+'''
+
+# Categorias de interesse
+all_categories = ['ncRNA', 'lncRNA', 'protein and non-coding', 'protein and lncRNA', 'protein-coding']
+
+# Filtrando os genes de interesse
+genes_interesse = data[data['Gene Function'].isin(all_categories)]
+
+# Contando a quantidade de transcritos por Gene e Transcript Function
+transcript_function_by_gene = genes_interesse.groupby(['Gene', 'Transcript Function']).size().unstack(fill_value=0)
+
+# Agrupando por Gene Function para obter as contagens de Transcript Function dentro de cada Gene Function
+gene_function_counts = genes_interesse.groupby(['Gene Function', 'Transcript Function']).size().unstack(fill_value=0)
+
+# Plotando o gráfico de barras empilhadas
+fig, ax = plt.subplots(figsize=(10, 6))
+gene_function_counts.plot(kind='bar', stacked=True, ax=ax)
+
+ax.set_title('Distribuição da categoria dos transcritos por categoria dos grupos')
+ax.set_xlabel('Categoria do grupo')
+ax.set_ylabel('Frequência dos transcritos')
+plt.xticks(rotation=45)
+
+# Adicionar anotações com os totais no topo das barras
+for p in ax.patches:
+    height = p.get_height()
+    if height > 0:
+        ax.annotate(f'{int(height)}', (p.get_x() + p.get_width() / 2, p.get_y() + height), ha='center', va='center', fontsize=8, color='black', xytext=(0, 5), textcoords='offset points')
 
 plt.tight_layout()
 plt.legend(title='Categoria do transcrito')
