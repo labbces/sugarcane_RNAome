@@ -28,16 +28,26 @@ print(f'Distribuição do tamanho dos transcritos: {transcript_size_distribution
 print(f'Número de transcritos por categoria do grupo: {transcripts_per_gene_function}')
 
 # Histograma de número de transcritos por gene
+
+# Calcular a média e a mediana
+mean_transcripts = transcripts_per_gene.mean()
+median_transcripts = transcripts_per_gene.median()
+
 plt.figure(figsize=(10, 6))
-#plt.subplot(1, 2, 1)
 sns.histplot(transcripts_per_gene, bins=range(0, transcripts_per_gene.max() + 10, 10), kde=False)
-#sns.histplot(transcripts_per_gene, bins=50, kde=True)  # Ajustando os bins para 50
 plt.title('Distribuição do número de transcritos por grupo')
 plt.xlabel('Número de transcritos')
 plt.ylabel('Frequência')
 plt.yscale('log') 
-#plt.xticks([3, 30, 100, 300, 500, 700, 900])
 plt.xticks(rotation=45, fontsize = 'x-small')
+
+# Adicionar linhas verticais para média e mediana
+plt.axvline(mean_transcripts, color='r', linestyle='--', linewidth=2, label=f'Média: {mean_transcripts:.2f}')
+plt.axvline(median_transcripts, color='b', linestyle='-', linewidth=2, label=f'Mediana: {median_transcripts:.2f}')
+plt.legend()
+#plt.show()
+plt.savefig('transcripts_distribution.png')
+plt.clf()  # Limpar a figura atual
 
 # Histograma de número de transcritos por função do gene
 ##plt.subplot(1, 2, 2)
@@ -64,7 +74,7 @@ plt.xticks(rotation=45, fontsize = 'x-small')
 #    bx.text(index, value, f'{value:,}', ha='center', va='bottom')
 #plt.tight_layout()
 #plt.savefig('transcripts_distribution.png')
-plt.clf()  # Limpar a figura atual
+#plt.clf()  # Limpar a figura atual
 
 plt.figure(figsize=(10, 6))
 sns.histplot(transcript_size_distribution, kde=True, bins=range(0, transcript_size_distribution.max() + 10, 10))
@@ -91,7 +101,7 @@ plt.figure(figsize=(14, 6))
 
 # Histograma de tamanho dos transcritos ncRNAs
 plt.subplot(1, 2, 1)
-##sns.histplot(ncRNA_transcripts['Transcript Size'], kde=True, bins=range(0, ncRNA_transcripts['Transcript Size'].max() + 10, 10))
+sns.histplot(ncRNA_transcripts['Transcript Size'], kde=True, bins=range(0, ncRNA_transcripts['Transcript Size'].max() + 10, 10))
 plt.title('Distribuição do tamanho dos ncRNAs')
 plt.xlabel('Tamanho do transcrito')
 plt.ylabel('Frequência')
@@ -102,7 +112,7 @@ colors = sns.color_palette('husl', len(ncRNA_categories))
 
 for i, category in enumerate(ncRNA_categories):
     category_data = ncRNA_transcripts[ncRNA_transcripts['Transcript Function'] == category]
-    ##sns.histplot(category_data['Transcript Size'], kde=True, color=colors[i], label=category, bins=range(0, ncRNA_transcripts['Transcript Size'].max() + 10, 10))
+    sns.histplot(category_data['Transcript Size'], kde=True, color=colors[i], label=category, bins=range(0, ncRNA_transcripts['Transcript Size'].max() + 10, 10))
 
 plt.title('Distribuição do tamanho dos ncRNAs')
 plt.xlabel('Tamanho do transcrito')
