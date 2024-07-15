@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-annotation_file = 'updated_panTranscriptome_panRNAome_GeneFunction_Length_with_Rfam.tsv'
+annotation_file = 'updated_panRNAome_GeneFunction_Length_with_Rfam.tsv'
 columns = ['panRNAome_category', 'gene_name', 'transcript_name', 'gene_function', 'transcript_length', 'transcript_function', 'Transcript Rfam family', 'Gene Rfam family']
 annotation_df = pd.read_csv(annotation_file, sep='\t', header=None, names=columns)
 
@@ -41,7 +41,10 @@ filtered_gene_df = gene_df.query('transcript_function == "lncRNA" or transcript_
 
 # plot quantidade de genes com e sem "Gene Rfam family"
 plt.figure(figsize=(14, 8))
-ax = sns.countplot(data=filtered_gene_df, x='transcript_function', hue='Has Transcript Rfam family')
+
+##ax = sns.countplot(data=filtered_gene_df, x='transcript_function', hue='Has Transcript Rfam family')
+ax = sns.countplot(data=gene_df, x='transcript_function', hue='Has Transcript Rfam family')
+
 plt.title('Distribuição de ncRNAs classificados pelo Rfam')
 plt.xlabel('Gene function')
 plt.ylabel('Frequência de transcritos')
