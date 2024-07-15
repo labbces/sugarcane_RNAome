@@ -176,7 +176,7 @@ plt.clf()  # Limpar a figura atual
 '''
 
 # Categorias de interesse
-all_categories = ['ncRNA', 'lncRNA', 'protein and non-coding', 'protein and lncRNA', 'protein-coding']
+all_categories = ['ncRNA', 'lncRNA', 'protein and non-coding']
 
 # Filtrando os genes de interesse
 genes_interesse = data[data['Gene Function'].isin(all_categories)]
