@@ -53,7 +53,7 @@ def extract_csv_gen_plot(directory_path):
 
     g.set_yticklabels(g.get_yticklabels(), rotation=0, fontsize=8)
     g.set_xticklabels(g.get_xticklabels(), rotation=70, fontsize=8)
-    g.set_title('Famílias de RNA do Rfam')
+    #g.set_title('Famílias de RNA do Rfam')
 
     plt.tight_layout()
     plt.show()
