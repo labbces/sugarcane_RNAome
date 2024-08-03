@@ -22,3 +22,6 @@ scripts/sequenceConservation/plot/common_filtered_origin_SOFF_SSPO_noncoding.svg
 scripts/sequenceConservation/plot/common_filtered_origin_SSPO_SBAR_all.svg
 scripts/sequenceConservation/plot/common_filtered_origin_SSPO_SBAR_coding.svg
 scripts/sequenceConservation/plot/common_filtered_origin_SSPO_SBAR_noncoding.svg
+
+# arquivo com cliques de Hoang cv 1.0 (1.5GB)
+scripts/coExpression/fiberAndSugar/hoang/MCL/CNC/CV1.0/Cliques/Hoang2017_counts_filters_VST_topCV_mcl_formated_cliques.csv
