@@ -10,14 +10,12 @@ tx2gene <- read.table(file.path(DIR, "updated_panTranscriptome_panRNAome_GeneFun
 # merge countsOrigin with annotation table
 countsOrigin <- merge(countsOrigin, tx2gene, by.x = "row.names", by.y = "V3")
 colnames(countsOrigin) <- c("Transcript","S._barberi","S._officinarum","S._spontaneum","S._bicolor", "EffectiveLength", "Category", "Gene", "Function", "Transcript Size", "Transcript Function", "Transcript Rfam family", "Transcript GO", "Gene GO")
-#colnames(countsOrigin)<-c('S._barberi','S._officinarum','S._spontaneum', 'S._bicolor', 'EffectiveLength')
 origNumberGenes=dim(countsOrigin)[1]
 
 dim(countsOrigin)
 head(countsOrigin)
 
 genomes <- c("S._barberi","S._officinarum","S._spontaneum","S._bicolor")
-#table(rowSums(countsOrigin)==0)
 table(rowSums(countsOrigin[, genomes])==0)
 countsOrigin<-countsOrigin[!rowSums(countsOrigin[, genomes])==0,]     # remove transcript without reads mapped in both sps
 
@@ -40,34 +38,21 @@ countsOrigin$FPKM_SOFF <- countsToFPKM(counts_SOFF, effLen)
 countsOrigin$FPKM_SSPO <- countsToFPKM(counts_SSPO, effLen)
 countsOrigin$FPKM_SBIC <- countsToFPKM(counts_SBIC, effLen)
 
-#ratio spontanenum vs officinarum - AB
+# ratio spontanenum vs officinarum
 countsOrigin$ratioFPKM_SSPO_vs_SOFF <- countsOrigin$FPKM_SSPO/countsOrigin$FPKM_SOFF
 countsOrigin$log10ratioFPKM_SSPO_vs_SOFF <- round(log10(countsOrigin$FPKM_SSPO/countsOrigin$FPKM_SOFF),2)
 
-#ratio spontanenum vs barberi - AC
+# ratio spontanenum vs barberi
 countsOrigin$ratioFPKM_SSPO_vs_SBAR<-countsOrigin$FPKM_SSPO/countsOrigin$FPKM_SBAR
 countsOrigin$log10ratioFPKM_SSPO_vs_SBAR<-round(log10(countsOrigin$FPKM_SSPO/countsOrigin$FPKM_SBAR),2)
 
-#ratio spontanenum vs sorghum - AD
-#countsOrigin$ratioFPKM_SSPO_vs_SBIC<-countsOrigin$FPKM_SSPO/countsOrigin$FPKM_SBIC
-#countsOrigin$log10ratioFPKM_SSPO_vs_SBIC<-round(log10(countsOrigin$FPKM_SSPO/countsOrigin$FPKM_SBIC),2)
-
-# ratio officinarum vs barberi - BC
+# ratio officinarum vs barberi
 countsOrigin$ratioFPKM_SOFF_vs_SBAR<-countsOrigin$FPKM_SOFF/countsOrigin$FPKM_SBAR
 countsOrigin$log10ratioFPKM_SOFF_vs_SBAR<-round(log10(countsOrigin$FPKM_SOFF/countsOrigin$FPKM_SBAR),2)
-
-#ratio officinarum vs sorghum - BD
-#countsOrigin$ratioFPKM_SOFF_vs_SBIC<-countsOrigin$FPKM_SOFF/countsOrigin$FPKM_SBIC
-#countsOrigin$log10ratioFPKM_SOFF_vs_SBIC<-round(log10(countsOrigin$FPKM_SOFF/countsOrigin$FPKM_SBIC),2)
-
-# ratio barberi vs sorghum - CD
-#countsOrigin$ratioFPKM_SBAR_vs_SBIC<-countsOrigin$FPKM_SBAR/countsOrigin$FPKM_SBIC
-#countsOrigin$log10ratioFPKM_SBAR_vs_SBIC<-round(log10(countsOrigin$FPKM_SBAR/countsOrigin$FPKM_SBIC),2)
 
 countsOrigin$Fraction_SSPO<-round(countsOrigin$FPKM_SSPO/(countsOrigin$FPKM_SOFF+countsOrigin$FPKM_SSPO+countsOrigin$FPKM_SBAR),3)
 countsOrigin$Fraction_SOFF<-round(countsOrigin$FPKM_SOFF/(countsOrigin$FPKM_SOFF+countsOrigin$FPKM_SSPO+countsOrigin$FPKM_SBAR),3)
 countsOrigin$Fraction_SBAR<-round(countsOrigin$FPKM_SBAR/(countsOrigin$FPKM_SOFF+countsOrigin$FPKM_SSPO+countsOrigin$FPKM_SBAR),3)
-#countsOrigin$Fraction_SBIC<-round(countsOrigin$FPKM_SBIC/(countsOrigin$FPKM_SOFF+countsOrigin$FPKM_SSPO+countsOrigin$FPKM_SBAR+countsOrigin$FPKM_SBIC),3)
 
 head(countsOrigin)
 
