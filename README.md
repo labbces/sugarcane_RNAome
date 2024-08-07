@@ -16,6 +16,11 @@ The following results represent the percentage of sequences classified as lncRNA
 
 ![panRNAomeGroupsTrajectory_0.8.png](https://github.com/labbces/sugarcane_RNAome/blob/main/scripts/panTrajectory/panRNAome/panRNAomeGroupsTrajectory_0.8.png)
 
+## Sugarcane lncRNAs origin
+* [Estimating lncRNA origin]()
+
+![sequenceConservation_lncRNA_log10.png](https://github.com/labbces/sugarcane_RNAome/blob/main/scripts/sequenceConservation/plot/sequenceConservation_lncRNA_log10.png)
+
 ## Families/classes of lncrnas
 * [Annotation of ncRNAs families](https://github.com/labbces/sugarcane_RNAome/wiki/Annotation-of-ncRNAs-families)
 
