@@ -6,7 +6,7 @@
 * [Predicting putative lncRNAs with RNAplonc](https://github.com/labbces/sugarcane_RNAome/wiki/Predicting-putative-lncRNAs-with-RNAplonc)
 * [Aggregating the consensus of putative ncRNAs predicted by the 3 tools](https://github.com/labbces/sugarcane_RNAome/wiki/Aggregating-the-consensus-of-putative-ncRNAs-predicted-by-the-3-tools)
 
-The following results represent the percentage of sequences classified as lncRNAs from the 3 softwares used in identifying putative lncRNAs in sugarcane (described in detail above). The `16,237,098 input sequences` originate from `48 sugarcane transcriptomes` that were assembled and analyzed in a previous project, where we conducted inference and annotation of the [sugarcane pan-transcriptome](https://github.com/labbces/SCPT).
+The following results represent the percentage of sequences classified as lncRNAs from the 3 softwares used in identifying putative lncRNAs in sugarcane (described in detail above). The `16,268,762 input sequences` originate from `48 sugarcane transcriptomes` that were assembled and analyzed in a previous project, where we conducted inference and annotation of the [sugarcane pan-transcriptome](https://github.com/labbces/SCPT).
 
 ![predicting_lncRNAs_results](https://github.com/labbces/sugarcane_RNAome/blob/main/images/predicting_lncRNAs_results.PNG)
 
