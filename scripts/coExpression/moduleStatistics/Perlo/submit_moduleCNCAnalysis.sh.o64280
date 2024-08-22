@@ -1,0 +1,19 @@
+    Category       Gene  ... Transcript Category Transcript Rfam family
+0  Soft-core  OG0000000  ...      protein-coding                    NaN
+1  Soft-core  OG0000000  ...      protein-coding                    NaN
+2  Soft-core  OG0000000  ...      protein-coding                    NaN
+3  Soft-core  OG0000000  ...      protein-coding                    NaN
+4  Soft-core  OG0000000  ...      protein-coding                    NaN
+
+[5 rows x 7 columns]
+Index(['Category', 'Gene', 'Transcript', 'Gene Category', 'Transcript Size',
+       'Transcript Category', 'Transcript Rfam family'],
+      dtype='object')
+Category                  object
+Gene                      object
+Transcript                object
+Gene Category             object
+Transcript Size           object
+Transcript Category       object
+Transcript Rfam family    object
+dtype: object
