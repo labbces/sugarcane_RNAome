@@ -1,0 +1,6 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006357,regulation of transcription by RNA polym...,177,1,0.03,0.029,0.047
+GO:0006366,transcription by RNA polymerase II,211,1,0.04,0.035,0.047
+GO:0006355,regulation of transcription, DNA-templat...,288,1,0.05,0.047,0.047
+GO:1903506,regulation of nucleic acid-templated tra...,288,1,0.05,0.047,0.047
+GO:2001141,regulation of RNA biosynthetic process,288,1,0.05,0.047,0.047

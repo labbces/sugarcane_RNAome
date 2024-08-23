@@ -1,0 +1,87 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0000959,mitochondrial RNA metabolic process,19,5,0.82,0.001,0.0458
+GO:0015994,chlorophyll metabolic process,22,5,0.95,0.0021,0.0458
+GO:1900864,mitochondrial RNA modification,7,3,0.3,0.0024,0.0458
+GO:0000963,mitochondrial RNA processing,8,3,0.34,0.0038,0.0458
+GO:0033013,tetrapyrrole metabolic process,49,7,2.11,0.0047,0.0458
+GO:0000079,regulation of cyclin-dependent protein s...,17,4,0.73,0.0052,0.0458
+GO:1904029,regulation of cyclin-dependent protein k...,17,4,0.73,0.0052,0.0458
+GO:0045736,negative regulation of cyclin-dependent ...,9,3,0.39,0.0055,0.0458
+GO:1904030,negative regulation of cyclin-dependent ...,9,3,0.39,0.0055,0.0458
+GO:0006469,negative regulation of protein kinase ac...,10,3,0.43,0.0076,0.0458
+GO:0033673,negative regulation of kinase activity,10,3,0.43,0.0076,0.0458
+GO:0071901,negative regulation of protein serine/th...,10,3,0.43,0.0076,0.0458
+GO:0071900,regulation of protein serine/threonine k...,20,4,0.86,0.0095,0.0458
+GO:0006778,porphyrin-containing compound metabolic ...,43,6,1.85,0.0098,0.0458
+GO:0001933,negative regulation of protein phosphory...,12,3,0.52,0.0131,0.0458
+GO:0042326,negative regulation of phosphorylation,12,3,0.52,0.0131,0.0458
+GO:0051726,regulation of cell cycle,60,7,2.59,0.0142,0.0458
+GO:0048519,negative regulation of biological proces...,405,27,17.46,0.0164,0.0458
+GO:0080156,mitochondrial mRNA modification,5,2,0.22,0.017,0.0458
+GO:0033043,regulation of organelle organization,78,8,3.36,0.0188,0.0458
+GO:0006305,DNA alkylation,14,3,0.6,0.0203,0.0458
+GO:0006306,DNA methylation,14,3,0.6,0.0203,0.0458
+GO:0051348,negative regulation of transferase activ...,14,3,0.6,0.0203,0.0458
+GO:0010639,negative regulation of organelle organiz...,25,4,1.08,0.021,0.0458
+GO:0031400,negative regulation of protein modificat...,25,4,1.08,0.021,0.0458
+GO:0045859,regulation of protein kinase activity,25,4,1.08,0.021,0.0458
+GO:0007015,actin filament organization,81,8,3.49,0.0231,0.0458
+GO:0000373,Group II intron splicing,15,3,0.65,0.0246,0.0458
+GO:0010563,negative regulation of phosphorus metabo...,15,3,0.65,0.0246,0.0458
+GO:0045936,negative regulation of phosphate metabol...,15,3,0.65,0.0246,0.0458
+GO:0055067,monovalent inorganic cation homeostasis,15,3,0.65,0.0246,0.0458
+GO:0030036,actin cytoskeleton organization,82,8,3.54,0.0247,0.0458
+GO:0032269,negative regulation of cellular protein ...,82,8,3.54,0.0247,0.0458
+GO:0002943,tRNA dihydrouridine synthesis,6,2,0.26,0.0248,0.0458
+GO:0035821,modulation of process of other organism,6,2,0.26,0.0248,0.0458
+GO:0055075,potassium ion homeostasis,6,2,0.26,0.0248,0.0458
+GO:0051248,negative regulation of protein metabolic...,83,8,3.58,0.0264,0.0458
+GO:0051129,negative regulation of cellular componen...,27,4,1.16,0.0273,0.0458
+GO:0006725,cellular aromatic compound metabolic pro...,3019,149,130.18,0.0302,0.0458
+GO:0006505,GPI anchor metabolic process,41,5,1.77,0.0305,0.0458
+GO:0006506,GPI anchor biosynthetic process,41,5,1.77,0.0305,0.0458
+GO:0042440,pigment metabolic process,70,7,3.02,0.0307,0.0458
+GO:0043549,regulation of kinase activity,28,4,1.21,0.0308,0.0458
+GO:0051128,regulation of cellular component organiz...,102,9,4.4,0.0318,0.0458
+GO:0046483,heterocycle metabolic process,2937,145,126.64,0.0323,0.0458
+GO:0001932,regulation of protein phosphorylation,29,4,1.25,0.0345,0.0458
+GO:0015979,photosynthesis,88,8,3.79,0.0357,0.0458
+GO:1901360,organic cyclic compound metabolic proces...,3088,151,133.15,0.0386,0.0458
+GO:0140053,mitochondrial gene expression,18,3,0.78,0.0402,0.0458
+GO:0008380,RNA splicing,141,11,6.08,0.0413,0.0458
+GO:0045786,negative regulation of cell cycle,31,4,1.34,0.0428,0.0458
+GO:0006642,triglyceride mobilization,1,1,0.04,0.0431,0.0458
+GO:0006706,steroid catabolic process,1,1,0.04,0.0431,0.0458
+GO:0006849,plasma membrane pyruvate transport,1,1,0.04,0.0431,0.0458
+GO:0010271,regulation of chlorophyll catabolic proc...,1,1,0.04,0.0431,0.0458
+GO:0010959,regulation of metal ion transport,1,1,0.04,0.0431,0.0458
+GO:0016127,sterol catabolic process,1,1,0.04,0.0431,0.0458
+GO:0017121,plasma membrane phospholipid scrambling,1,1,0.04,0.0431,0.0458
+GO:0017157,regulation of exocytosis,1,1,0.04,0.0431,0.0458
+GO:0031538,negative regulation of anthocyanin metab...,1,1,0.04,0.0431,0.0458
+GO:0032889,regulation of vacuole fusion, non-autoph...,1,1,0.04,0.0431,0.0458
+GO:0033354,chlorophyll cycle,1,1,0.04,0.0431,0.0458
+GO:0034756,regulation of iron ion transport,1,1,0.04,0.0431,0.0458
+GO:0034757,negative regulation of iron ion transpor...,1,1,0.04,0.0431,0.0458
+GO:0045903,positive regulation of translational fid...,1,1,0.04,0.0431,0.0458
+GO:0046166,glyceraldehyde-3-phosphate biosynthetic ...,1,1,0.04,0.0431,0.0458
+GO:0051097,negative regulation of helicase activity,1,1,0.04,0.0431,0.0458
+GO:0062125,regulation of mitochondrial gene express...,1,1,0.04,0.0431,0.0458
+GO:0070129,regulation of mitochondrial translation,1,1,0.04,0.0431,0.0458
+GO:0070131,positive regulation of mitochondrial tra...,1,1,0.04,0.0431,0.0458
+GO:0070900,mitochondrial tRNA modification,1,1,0.04,0.0431,0.0458
+GO:0080117,secondary growth,1,1,0.04,0.0431,0.0458
+GO:0080190,lateral growth,1,1,0.04,0.0431,0.0458
+GO:0090646,mitochondrial tRNA processing,1,1,0.04,0.0431,0.0458
+GO:1900865,chloroplast RNA modification,1,1,0.04,0.0431,0.0458
+GO:1901404,regulation of tetrapyrrole catabolic pro...,1,1,0.04,0.0431,0.0458
+GO:1905462,regulation of DNA duplex unwinding,1,1,0.04,0.0431,0.0458
+GO:1905463,negative regulation of DNA duplex unwind...,1,1,0.04,0.0431,0.0458
+GO:1905774,regulation of DNA helicase activity,1,1,0.04,0.0431,0.0458
+GO:1905775,negative regulation of DNA helicase acti...,1,1,0.04,0.0431,0.0458
+GO:0010305,leaf vascular tissue pattern formation,8,2,0.34,0.0437,0.0458
+GO:0032776,DNA methylation on cytosine,8,2,0.34,0.0437,0.0458
+GO:0051017,actin filament bundle assembly,19,3,0.82,0.0462,0.0473
+GO:0061572,actin filament bundle organization,19,3,0.82,0.0462,0.0473
+GO:0042325,regulation of phosphorylation,32,4,1.38,0.0473,0.0479
+GO:0006396,RNA processing,527,31,22.72,0.0488,0.0488
