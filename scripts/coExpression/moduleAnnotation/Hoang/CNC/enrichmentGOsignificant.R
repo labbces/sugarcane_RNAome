@@ -10,7 +10,7 @@ if (length(args) != 3) {                                                        
   stop("Invalid number of arguments. Please provide the file names.")
 }
 
-results_path <- "results"                                                       # output directory 
+results_path <- "results_significant/"                                                   # output directory 
 dir.create(results_path, recursive = TRUE)                                               # create recursive dir
 
 load_files <- function(clusterSize, GO_universe, Cliques){                               # function to load files
@@ -46,30 +46,31 @@ anot_modules <- function(Module_no, results_path){                              
   table$Classic[table$Classic == "< 1e-30"] <- 1e-30                                                       # replace the values "< 1e-30" with a very small number ( < 1e-30 cannot be corrected with BH)
   table$Classic <- as.numeric(table$Classic)                                                               # convert the Classic column to numeric
   
-  #table1 <- filter(table, Classic < 0.05)                                                                 # filter not significant values for classic algorithm
+  table1 <- dplyr::filter(table, Classic < 0.05)                                                           # filter not significant values for classic algorithm
   
-  #p.adj <- round(p.adjust(table1$Classic,method="BH"),digits = 4)                                         # performing BH correction on p values FDR
-  p.adj <- round(p.adjust(table$Classic,method="BH"),digits = 4)
+  p.adj <- round(p.adjust(table1$Classic,method="BH"),digits = 4)                                          # performing BH correction on p values FDR
+  #p.adj <- round(p.adjust(table$Classic,method="BH"),digits = 4)
   
-  #all_res_final <<- cbind(table1,p.adj)                                                                   # create the file with all the statistics from GO analysis
-  all_res_final <- cbind(table,p.adj)
+  all_res_final <<- cbind(table1,p.adj)                                                                    # create the file with all the statistics from GO analysis
+  #all_res_final <- cbind(table,p.adj)
   all_res_final <- all_res_final[order(all_res_final$p.adj),]                                              # order results
   
   results.table.p = all_res_final[which(all_res_final$Classic <=0.05),]                                    # get list of significant GO before multiple testing correction
-  results.table.bh = all_res_final[which(all_res_final$p.adj  <=0.05),]
+  results.table.bh = all_res_final[which(all_res_final$p.adj  <=0.05),]                                    # get list of significant GO after multiple testing correction
   
-  # save top 50 ontologies sorted by adjusted pvalues
-  write.table(all_res_final[1:50,], file = paste0(results_path, "module_", Module_no, ".csv"), quote=FALSE, row.names=FALSE, sep = ",")
+  # save significant ontologies sorted by adjusted pvalues
+  write.table(all_res_final, file = paste0(results_path, "module_", Module_no, ".csv"), quote=FALSE, row.names=FALSE, sep = ",")
 
   module <- paste0("module_", Module_no)                                                                   # create plots for each module
   topGO_all_table <- all_res_final
   colnames(topGO_all_table) <- c("GO.ID","Term","Annotated","Significant","Expected","Classic","p.adj")   
   topGO_all_table <- topGO_all_table[order(topGO_all_table$Classic),]
   
-  ntop <- 30                                                                                               # only plot top 30 out 50 terms
-  ggdata <- topGO_all_table[1:ntop,]
-  ggdata <- ggdata[!duplicated(ggdata$Term), ]                                                             # remove duplicated Terms                               
-  ggdata$Term <- factor(ggdata$Term, levels = rev(ggdata$Term))                                            # fixes order
+  #ntop <- 30                                                                                               # only plot top 30 out 50 terms
+  #ggdata <- topGO_all_table[1:ntop,]
+  ggdata <- topGO_all_table
+  #ggdata <- ggdata[!duplicated(ggdata$Term), ]                                                            # remove duplicated Terms                               
+  #ggdata$Term <- factor(ggdata$Term, levels = rev(ggdata$Term))                                           # fixes order
   #ggdata$Classic <- as.numeric(ggdata$Classic) + 0.000001                                                 # Add small number for log operations (log10 must be > 0) 
   ggdata
   
@@ -77,7 +78,7 @@ anot_modules <- function(Module_no, results_path){                              
   div_points <- quantile(-log10(ggdata$Classic), probs = c(0.95, 0.5, 0.05))                               # calculate quantiles for dividing the plot
   
   ggplot(ggdata,
-         aes(x = Term, y = -log10(Classic), size = -log10(Classic), fill = -log10(Classic))) +
+         aes(x = ggdata$Term, y = -log10(Classic), size = -log10(Classic), fill = -log10(Classic))) +
     
     expand_limits(y = 1) +
     geom_point(shape = 21) +
