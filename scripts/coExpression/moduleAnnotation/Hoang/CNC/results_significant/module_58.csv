@@ -1,0 +1,26 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0051554,flavonol metabolic process,3,1,0,0.00092,0.0076
+GO:0051555,flavonol biosynthetic process,3,1,0,0.00092,0.0076
+GO:0051552,flavone metabolic process,4,1,0,0.00122,0.0076
+GO:0051553,flavone biosynthetic process,4,1,0,0.00122,0.0076
+GO:0009718,anthocyanin-containing compound biosynth...,12,1,0,0.00367,0.0127
+GO:0000105,histidine biosynthetic process,14,1,0,0.00428,0.0127
+GO:0006547,histidine metabolic process,14,1,0,0.00428,0.0127
+GO:0052803,imidazole-containing compound metabolic ...,14,1,0,0.00428,0.0127
+GO:0046283,anthocyanin-containing compound metaboli...,15,1,0,0.00458,0.0127
+GO:0015749,monosaccharide transmembrane transport,17,1,0.01,0.00519,0.013
+GO:0009813,flavonoid biosynthetic process,23,1,0.01,0.00702,0.016
+GO:0009812,flavonoid metabolic process,26,1,0.01,0.00793,0.0165
+GO:0009073,aromatic amino acid family biosynthetic ...,48,1,0.01,0.0146,0.0261
+GO:0009699,phenylpropanoid biosynthetic process,48,1,0.01,0.0146,0.0261
+GO:0034219,carbohydrate transmembrane transport,62,1,0.02,0.01883,0.0314
+GO:0009072,aromatic amino acid family metabolic pro...,73,1,0.02,0.02214,0.0325
+GO:0044550,secondary metabolite biosynthetic proces...,75,1,0.02,0.02274,0.0325
+GO:0008643,carbohydrate transport,80,1,0.02,0.02424,0.0325
+GO:0046148,pigment biosynthetic process,86,1,0.03,0.02603,0.0325
+GO:1901617,organic hydroxy compound biosynthetic pr...,86,1,0.03,0.02603,0.0325
+GO:0009698,phenylpropanoid metabolic process,100,1,0.03,0.03022,0.036
+GO:0042440,pigment metabolic process,107,1,0.03,0.0323,0.0367
+GO:0019748,secondary metabolic process,137,1,0.04,0.0412,0.0448
+GO:1901607,alpha-amino acid biosynthetic process,144,1,0.04,0.04326,0.0451
+GO:0008652,cellular amino acid biosynthetic process,160,1,0.05,0.04797,0.048

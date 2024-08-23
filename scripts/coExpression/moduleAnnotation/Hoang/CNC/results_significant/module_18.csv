@@ -1,0 +1,6 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0046618,drug export,25,1,0.02,0.023,0.041
+GO:1990961,xenobiotic detoxification by transmembra...,25,1,0.02,0.023,0.041
+GO:0140115,export across plasma membrane,35,1,0.03,0.032,0.041
+GO:0009909,regulation of flower development,44,1,0.04,0.04,0.041
+GO:0015893,drug transport,45,1,0.04,0.041,0.041

@@ -1,0 +1,19 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0060320,rejection of self pollen,3,1,0,0.0038,0.0262
+GO:0002221,pattern recognition receptor signaling p...,4,1,0.01,0.0051,0.0262
+GO:0045037,protein import into chloroplast stroma,4,1,0.01,0.0051,0.0262
+GO:0016255,attachment of GPI anchor to protein,7,1,0.01,0.0088,0.0262
+GO:0045036,protein targeting to chloroplast,11,1,0.01,0.0139,0.0262
+GO:0072596,establishment of protein localization to...,11,1,0.01,0.0139,0.0262
+GO:0002764,immune response-regulating signaling pat...,13,1,0.02,0.0164,0.0262
+GO:0072598,protein localization to chloroplast,13,1,0.02,0.0164,0.0262
+GO:0015833,peptide transport,789,4,1,0.0168,0.0262
+GO:0042886,amide transport,794,4,1.01,0.0172,0.0262
+GO:0006605,protein targeting,162,2,0.21,0.0179,0.0262
+GO:0006627,protein processing involved in protein t...,15,1,0.02,0.0189,0.0262
+GO:0034982,mitochondrial protein processing,15,1,0.02,0.0189,0.0262
+GO:0072594,establishment of protein localization to...,191,2,0.24,0.0243,0.0312
+GO:0033365,protein localization to organelle,219,2,0.28,0.0313,0.0364
+GO:0071705,nitrogen compound transport,966,4,1.23,0.0324,0.0364
+GO:0050776,regulation of immune response,31,1,0.04,0.0386,0.0398
+GO:0002682,regulation of immune system process,32,1,0.04,0.0398,0.0398

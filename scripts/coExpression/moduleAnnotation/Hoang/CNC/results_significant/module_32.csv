@@ -1,0 +1,40 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0043408,regulation of MAPK cascade,5,1,0,0.0013,0.016
+GO:0043409,negative regulation of MAPK cascade,5,1,0,0.0013,0.016
+GO:0070417,cellular response to cold,5,1,0,0.0013,0.016
+GO:0001933,negative regulation of protein phosphory...,10,1,0,0.0026,0.016
+GO:0042326,negative regulation of phosphorylation,10,1,0,0.0026,0.016
+GO:0071472,cellular response to salt stress,12,1,0,0.0031,0.016
+GO:0071470,cellular response to osmotic stress,13,1,0,0.0034,0.016
+GO:0000165,MAPK cascade,14,1,0,0.0037,0.016
+GO:0023014,signal transduction by protein phosphory...,14,1,0,0.0037,0.016
+GO:0010563,negative regulation of phosphorus metabo...,18,1,0,0.0047,0.0167
+GO:0045936,negative regulation of phosphate metabol...,18,1,0,0.0047,0.0167
+GO:0034605,cellular response to heat,21,1,0.01,0.0055,0.0179
+GO:1902532,negative regulation of intracellular sig...,23,1,0.01,0.006,0.018
+GO:0031400,negative regulation of protein modificat...,27,1,0.01,0.0071,0.0198
+GO:0009611,response to wounding,43,1,0.01,0.0112,0.0219
+GO:0001932,regulation of protein phosphorylation,44,1,0.01,0.0115,0.0219
+GO:1902531,regulation of intracellular signal trans...,46,1,0.01,0.012,0.0219
+GO:0009409,response to cold,49,1,0.01,0.0128,0.0219
+GO:0009408,response to heat,50,1,0.01,0.013,0.0219
+GO:0042325,regulation of phosphorylation,53,1,0.01,0.0138,0.0219
+GO:0062197,cellular response to chemical stress,53,1,0.01,0.0138,0.0219
+GO:0071214,cellular response to abiotic stimulus,53,1,0.01,0.0138,0.0219
+GO:0104004,cellular response to environmental stimu...,53,1,0.01,0.0138,0.0219
+GO:0009968,negative regulation of signal transducti...,54,1,0.01,0.0141,0.0219
+GO:0010648,negative regulation of cell communicatio...,56,1,0.01,0.0146,0.0219
+GO:0023057,negative regulation of signaling,56,1,0.01,0.0146,0.0219
+GO:0009651,response to salt stress,63,1,0.02,0.0164,0.0237
+GO:0019220,regulation of phosphate metabolic proces...,72,1,0.02,0.0187,0.0251
+GO:0051174,regulation of phosphorus metabolic proce...,72,1,0.02,0.0187,0.0251
+GO:0006970,response to osmotic stress,75,1,0.02,0.0195,0.0254
+GO:0048585,negative regulation of response to stimu...,79,1,0.02,0.0206,0.0259
+GO:0031399,regulation of protein modification proce...,91,1,0.02,0.0236,0.0288
+GO:0009266,response to temperature stimulus,101,1,0.03,0.0262,0.031
+GO:0032269,negative regulation of cellular protein ...,111,1,0.03,0.0288,0.0323
+GO:0051248,negative regulation of protein metabolic...,112,1,0.03,0.029,0.0323
+GO:0006470,protein dephosphorylation,123,1,0.03,0.0318,0.0344
+GO:0009966,regulation of signal transduction,140,1,0.04,0.0362,0.038
+GO:0023051,regulation of signaling,144,1,0.04,0.0372,0.038
+GO:0010646,regulation of cell communication,147,1,0.04,0.038,0.038

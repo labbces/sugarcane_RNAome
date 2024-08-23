@@ -1,0 +1,112 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009298,GDP-mannose biosynthetic process,7,3,0.06,2.4e-05,0.0021
+GO:0019673,GDP-mannose metabolic process,8,3,0.07,3.7e-05,0.0021
+GO:0009646,response to absence of light,6,2,0.05,0.0011,0.0299
+GO:0045596,negative regulation of cell differentiat...,7,2,0.06,0.0016,0.0299
+GO:1905421,regulation of plant organ morphogenesis,9,2,0.08,0.0027,0.0299
+GO:0009226,nucleotide-sugar biosynthetic process,35,3,0.31,0.0037,0.0299
+GO:0022603,regulation of anatomical structure morph...,35,3,0.31,0.0037,0.0299
+GO:0010026,trichome differentiation,12,2,0.11,0.0049,0.0299
+GO:0045595,regulation of cell differentiation,13,2,0.12,0.0057,0.0299
+GO:0006627,protein processing involved in protein t...,15,2,0.13,0.0076,0.0299
+GO:0034982,mitochondrial protein processing,15,2,0.13,0.0076,0.0299
+GO:0042752,regulation of circadian rhythm,16,2,0.14,0.0087,0.0299
+GO:0009828,plant-type cell wall loosening,1,1,0.01,0.0089,0.0299
+GO:0010057,trichoblast fate specification,1,1,0.01,0.0089,0.0299
+GO:0010061,regulation of trichoblast fate specifica...,1,1,0.01,0.0089,0.0299
+GO:0010063,positive regulation of trichoblast fate ...,1,1,0.01,0.0089,0.0299
+GO:0010376,stomatal complex formation,1,1,0.01,0.0089,0.0299
+GO:0010454,negative regulation of cell fate commitm...,1,1,0.01,0.0089,0.0299
+GO:0010455,positive regulation of cell fate commitm...,1,1,0.01,0.0089,0.0299
+GO:0032025,response to cobalt ion,1,1,0.01,0.0089,0.0299
+GO:0033591,response to L-ascorbic acid,1,1,0.01,0.0089,0.0299
+GO:0042659,regulation of cell fate specification,1,1,0.01,0.0089,0.0299
+GO:0042660,positive regulation of cell fate specifi...,1,1,0.01,0.0089,0.0299
+GO:0046680,response to DDT,1,1,0.01,0.0089,0.0299
+GO:0048629,trichome patterning,1,1,0.01,0.0089,0.0299
+GO:0071963,establishment or maintenance of cell pol...,1,1,0.01,0.0089,0.0299
+GO:0090628,plant epidermal cell fate specification,1,1,0.01,0.0089,0.0299
+GO:1900032,regulation of trichome patterning,1,1,0.01,0.0089,0.0299
+GO:1900033,negative regulation of trichome patterni...,1,1,0.01,0.0089,0.0299
+GO:1903888,regulation of plant epidermal cell diffe...,1,1,0.01,0.0089,0.0299
+GO:1903890,positive regulation of plant epidermal c...,1,1,0.01,0.0089,0.0299
+GO:1905423,positive regulation of plant organ morph...,1,1,0.01,0.0089,0.0299
+GO:0009225,nucleotide-sugar metabolic process,48,3,0.43,0.0089,0.0299
+GO:0090626,plant epidermis morphogenesis,17,2,0.15,0.0098,0.032
+GO:0009791,post-embryonic development,341,8,3.03,0.0115,0.0365
+GO:0036265,RNA (guanine-N7)-methylation,19,2,0.17,0.0121,0.0373
+GO:0070585,protein localization to mitochondrion,59,3,0.52,0.0156,0.0378
+GO:0072655,establishment of protein localization to...,59,3,0.52,0.0156,0.0378
+GO:0048194,Golgi vesicle budding,22,2,0.2,0.0161,0.0378
+GO:0090114,COPII-coated vesicle budding,22,2,0.2,0.0161,0.0378
+GO:0000819,sister chromatid segregation,61,3,0.54,0.017,0.0378
+GO:0007062,sister chromatid cohesion,23,2,0.2,0.0176,0.0378
+GO:0000019,regulation of mitotic recombination,2,1,0.02,0.0177,0.0378
+GO:0000301,retrograde transport, vesicle recycling ...,2,1,0.02,0.0177,0.0378
+GO:0010453,regulation of cell fate commitment,2,1,0.02,0.0177,0.0378
+GO:0017085,response to insecticide,2,1,0.02,0.0177,0.0378
+GO:0032978,protein insertion into membrane from inn...,2,1,0.02,0.0177,0.0378
+GO:0032979,protein insertion into mitochondrial inn...,2,1,0.02,0.0177,0.0378
+GO:0045168,cell-cell signaling involved in cell fat...,2,1,0.02,0.0177,0.0378
+GO:0045951,positive regulation of mitotic recombina...,2,1,0.02,0.0177,0.0378
+GO:0097054,L-glutamate biosynthetic process,2,1,0.02,0.0177,0.0378
+GO:2000014,regulation of endosperm development,2,1,0.02,0.0177,0.0378
+GO:0007005,mitochondrion organization,113,4,1,0.0183,0.0383
+GO:0000959,mitochondrial RNA metabolic process,25,2,0.22,0.0206,0.0416
+GO:0050793,regulation of developmental process,176,5,1.56,0.0206,0.0416
+GO:0006900,vesicle budding from membrane,26,2,0.23,0.0222,0.0419
+GO:0009642,response to light intensity,26,2,0.23,0.0222,0.0419
+GO:0071695,anatomical structure maturation,27,2,0.24,0.0238,0.0419
+GO:0006312,mitotic recombination,3,1,0.03,0.0264,0.0419
+GO:0009827,plant-type cell wall modification,3,1,0.03,0.0264,0.0419
+GO:0010244,response to low fluence blue light stimu...,3,1,0.03,0.0264,0.0419
+GO:0010617,circadian regulation of calcium ion osci...,3,1,0.03,0.0264,0.0419
+GO:0031540,regulation of anthocyanin biosynthetic p...,3,1,0.03,0.0264,0.0419
+GO:0033273,response to vitamin,3,1,0.03,0.0264,0.0419
+GO:0045597,positive regulation of cell differentiat...,3,1,0.03,0.0264,0.0419
+GO:0045911,positive regulation of DNA recombination,3,1,0.03,0.0264,0.0419
+GO:0051480,regulation of cytosolic calcium ion conc...,3,1,0.03,0.0264,0.0419
+GO:0061635,regulation of protein complex stability,3,1,0.03,0.0264,0.0419
+GO:0090615,mitochondrial mRNA processing,3,1,0.03,0.0264,0.0419
+GO:1900459,positive regulation of brassinosteroid m...,3,1,0.03,0.0264,0.0419
+GO:0021700,developmental maturation,29,2,0.26,0.0272,0.042
+GO:0009888,tissue development,128,4,1.14,0.0275,0.042
+GO:0048608,reproductive structure development,258,6,2.29,0.028,0.042
+GO:0061458,reproductive system development,258,6,2.29,0.028,0.042
+GO:0098813,nuclear chromosome segregation,78,3,0.69,0.0323,0.0432
+GO:0007623,circadian rhythm,32,2,0.28,0.0327,0.0432
+GO:0051093,negative regulation of developmental pro...,32,2,0.28,0.0327,0.0432
+GO:0048316,seed development,80,3,0.71,0.0344,0.0432
+GO:0009625,response to insect,4,1,0.04,0.035,0.0432
+GO:0009960,endosperm development,4,1,0.04,0.035,0.0432
+GO:0031397,negative regulation of protein ubiquitin...,4,1,0.04,0.035,0.0432
+GO:0043153,entrainment of circadian clock by photop...,4,1,0.04,0.035,0.0432
+GO:0048255,mRNA stabilization,4,1,0.04,0.035,0.0432
+GO:0048497,maintenance of floral organ identity,4,1,0.04,0.035,0.0432
+GO:0090700,maintenance of plant organ identity,4,1,0.04,0.035,0.0432
+GO:1902347,response to strigolactone,4,1,0.04,0.035,0.0432
+GO:1902373,negative regulation of mRNA catabolic pr...,4,1,0.04,0.035,0.0432
+GO:1903321,negative regulation of protein modificat...,4,1,0.04,0.035,0.0432
+GO:2000067,regulation of root morphogenesis,4,1,0.04,0.035,0.0432
+GO:2000379,positive regulation of reactive oxygen s...,4,1,0.04,0.035,0.0432
+GO:0010016,shoot system morphogenesis,36,2,0.32,0.0406,0.0457
+GO:0048511,rhythmic process,36,2,0.32,0.0406,0.0457
+GO:0010154,fruit development,86,3,0.76,0.0412,0.0457
+GO:0014070,response to organic cyclic compound,86,3,0.76,0.0412,0.0457
+GO:0003006,developmental process involved in reprod...,287,6,2.55,0.0435,0.0457
+GO:0006370,7-methylguanosine mRNA capping,5,1,0.04,0.0436,0.0457
+GO:0007163,establishment or maintenance of cell pol...,5,1,0.04,0.0436,0.0457
+GO:0009645,response to low light intensity stimulus,5,1,0.04,0.0436,0.0457
+GO:0009649,entrainment of circadian clock,5,1,0.04,0.0436,0.0457
+GO:0009962,regulation of flavonoid biosynthetic pro...,5,1,0.04,0.0436,0.0457
+GO:0010970,transport along microtubule,5,1,0.04,0.0436,0.0457
+GO:0019853,L-ascorbic acid biosynthetic process,5,1,0.04,0.0436,0.0457
+GO:0072387,flavin adenine dinucleotide metabolic pr...,5,1,0.04,0.0436,0.0457
+GO:0099111,microtubule-based transport,5,1,0.04,0.0436,0.0457
+GO:0106005,RNA 5'-cap (guanine-N7)-methylation,5,1,0.04,0.0436,0.0457
+GO:1901371,regulation of leaf morphogenesis,5,1,0.04,0.0436,0.0457
+GO:0051240,positive regulation of multicellular org...,38,2,0.34,0.0447,0.0459
+GO:0090558,plant epidermis development,38,2,0.34,0.0447,0.0459
+GO:0007059,chromosome segregation,90,3,0.8,0.0462,0.0469
+GO:0048468,cell development,39,2,0.35,0.0469,0.0469
+GO:0051094,positive regulation of developmental pro...,39,2,0.35,0.0469,0.0469

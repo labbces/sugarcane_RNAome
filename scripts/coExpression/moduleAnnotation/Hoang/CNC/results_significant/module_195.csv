@@ -1,0 +1,25 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0101030,tRNA-guanine transglycosylation,2,1,0.01,0.011,0.042
+GO:0034308,primary alcohol metabolic process,32,2,0.18,0.014,0.042
+GO:0006168,adenine salvage,3,1,0.02,0.017,0.042
+GO:0015783,GDP-fucose transmembrane transport,3,1,0.02,0.017,0.042
+GO:0043096,purine nucleobase salvage,3,1,0.02,0.017,0.042
+GO:0046083,adenine metabolic process,3,1,0.02,0.017,0.042
+GO:0046084,adenine biosynthetic process,3,1,0.02,0.017,0.042
+GO:0080006,internode patterning,3,1,0.02,0.017,0.042
+GO:0016487,farnesol metabolic process,4,1,0.02,0.022,0.042
+GO:0080156,mitochondrial mRNA modification,4,1,0.02,0.022,0.042
+GO:0010228,vegetative to reproductive phase transit...,45,2,0.25,0.027,0.042
+GO:0006166,purine ribonucleoside salvage,5,1,0.03,0.028,0.042
+GO:0009113,purine nucleobase biosynthetic process,5,1,0.03,0.028,0.042
+GO:0010222,stem vascular tissue pattern formation,5,1,0.03,0.028,0.042
+GO:0043174,nucleoside salvage,5,1,0.03,0.028,0.042
+GO:0044209,AMP salvage,5,1,0.03,0.028,0.042
+GO:0016560,protein import into peroxisome matrix, d...,6,1,0.03,0.033,0.044
+GO:0090480,purine nucleotide-sugar transmembrane tr...,6,1,0.03,0.033,0.044
+GO:0006167,AMP biosynthetic process,7,1,0.04,0.039,0.0446
+GO:0010960,magnesium ion homeostasis,7,1,0.04,0.039,0.0446
+GO:0046033,AMP metabolic process,7,1,0.04,0.039,0.0446
+GO:0006694,steroid biosynthetic process,59,2,0.33,0.044,0.047
+GO:0048831,regulation of shoot system development,61,2,0.34,0.047,0.047
+GO:0015931,nucleobase-containing compound transport,143,3,0.81,0.047,0.047

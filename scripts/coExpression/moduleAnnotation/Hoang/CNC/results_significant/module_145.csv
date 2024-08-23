@@ -1,0 +1,28 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0015977,carbon fixation,18,2,0.07,0.0023,0.0347
+GO:1902007,regulation of toxin transport,1,1,0,0.004,0.0347
+GO:1902009,positive regulation of toxin transport,1,1,0,0.004,0.0347
+GO:0070647,protein modification by small protein co...,570,7,2.27,0.0077,0.0347
+GO:1901998,toxin transport,2,1,0.01,0.0079,0.0347
+GO:0006099,tricarboxylic acid cycle,34,2,0.14,0.0081,0.0347
+GO:0007186,G protein-coupled receptor signaling pat...,36,2,0.14,0.009,0.0347
+GO:0071596,ubiquitin-dependent protein catabolic pr...,4,1,0.02,0.0158,0.0397
+GO:0071555,cell wall organization,138,3,0.55,0.0178,0.0397
+GO:0098734,macromolecule depalmitoylation,5,1,0.02,0.0197,0.0397
+GO:0045229,external encapsulating structure organiz...,147,3,0.58,0.021,0.0397
+GO:0010215,cellulose microfibril organization,6,1,0.02,0.0236,0.0397
+GO:0030198,extracellular matrix organization,6,1,0.02,0.0236,0.0397
+GO:0043062,extracellular structure organization,6,1,0.02,0.0236,0.0397
+GO:0070726,cell wall assembly,6,1,0.02,0.0236,0.0397
+GO:0071668,plant-type cell wall assembly,6,1,0.02,0.0236,0.0397
+GO:0010027,thylakoid membrane organization,7,1,0.03,0.0275,0.0397
+GO:0009060,aerobic respiration,65,2,0.26,0.0277,0.0397
+GO:0009668,plastid membrane organization,8,1,0.03,0.0314,0.0397
+GO:0051050,positive regulation of transport,8,1,0.03,0.0314,0.0397
+GO:0006865,amino acid transport,72,2,0.29,0.0334,0.0397
+GO:0045333,cellular respiration,72,2,0.29,0.0334,0.0397
+GO:0010196,nonphotochemical quenching,9,1,0.04,0.0353,0.0397
+GO:1990066,energy quenching,9,1,0.04,0.0353,0.0397
+GO:0032446,protein modification by small protein co...,463,5,1.84,0.0376,0.0406
+GO:0042138,meiotic DNA double-strand break formatio...,12,1,0.05,0.0467,0.0474
+GO:0071554,cell wall organization or biogenesis,203,3,0.81,0.0474,0.0474

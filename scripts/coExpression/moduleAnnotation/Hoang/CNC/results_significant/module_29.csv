@@ -1,0 +1,13 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0060321,acceptance of pollen,2,1,0,0.0019,0.0132
+GO:0000303,response to superoxide,8,1,0.01,0.0077,0.0132
+GO:0000305,response to oxygen radical,8,1,0.01,0.0077,0.0132
+GO:0006801,superoxide metabolic process,8,1,0.01,0.0077,0.0132
+GO:0019430,removal of superoxide radicals,8,1,0.01,0.0077,0.0132
+GO:0071450,cellular response to oxygen radical,8,1,0.01,0.0077,0.0132
+GO:0071451,cellular response to superoxide,8,1,0.01,0.0077,0.0132
+GO:0034614,cellular response to reactive oxygen spe...,12,1,0.01,0.0115,0.0173
+GO:0000302,response to reactive oxygen species,34,1,0.03,0.0322,0.0429
+GO:0034599,cellular response to oxidative stress,40,1,0.04,0.0378,0.0454
+GO:0072593,reactive oxygen species metabolic proces...,49,1,0.05,0.0461,0.0498
+GO:0062197,cellular response to chemical stress,53,1,0.05,0.0498,0.0498

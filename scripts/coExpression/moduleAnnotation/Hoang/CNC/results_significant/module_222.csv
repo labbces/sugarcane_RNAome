@@ -1,0 +1,25 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006124,ferredoxin metabolic process,1,1,0.01,0.013,0.0468
+GO:0009439,cyanate metabolic process,1,1,0.01,0.013,0.0468
+GO:1900384,regulation of flavonol biosynthetic proc...,1,1,0.01,0.013,0.0468
+GO:0002926,tRNA wobble base 5-methoxycarbonylmethyl...,2,1,0.03,0.026,0.0468
+GO:0042372,phylloquinone biosynthetic process,2,1,0.03,0.026,0.0468
+GO:0042374,phylloquinone metabolic process,2,1,0.03,0.026,0.0468
+GO:0042450,arginine biosynthetic process via ornith...,2,1,0.03,0.026,0.0468
+GO:0090481,pyrimidine nucleotide-sugar transmembran...,20,2,0.26,0.028,0.0468
+GO:0000056,ribosomal small subunit export from nucl...,3,1,0.04,0.039,0.0468
+GO:0006621,protein retention in ER lumen,3,1,0.04,0.039,0.0468
+GO:0032465,regulation of cytokinesis,3,1,0.04,0.039,0.0468
+GO:0042371,vitamin K biosynthetic process,3,1,0.04,0.039,0.0468
+GO:0042373,vitamin K metabolic process,3,1,0.04,0.039,0.0468
+GO:0043044,ATP-dependent chromatin remodeling,3,1,0.04,0.039,0.0468
+GO:0043486,histone exchange,3,1,0.04,0.039,0.0468
+GO:0051554,flavonol metabolic process,3,1,0.04,0.039,0.0468
+GO:0051555,flavonol biosynthetic process,3,1,0.04,0.039,0.0468
+GO:0051643,endoplasmic reticulum localization,3,1,0.04,0.039,0.0468
+GO:0061817,endoplasmic reticulum-plasma membrane te...,3,1,0.04,0.039,0.0468
+GO:0090158,endoplasmic reticulum membrane organizat...,3,1,0.04,0.039,0.0468
+GO:0006397,mRNA processing,293,8,3.87,0.042,0.0469
+GO:0009926,auxin polar transport,25,2,0.33,0.043,0.0469
+GO:0015780,nucleotide-sugar transmembrane transport,26,2,0.34,0.046,0.048
+GO:0009845,seed germination,27,2,0.36,0.049,0.049

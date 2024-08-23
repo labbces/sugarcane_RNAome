@@ -1,0 +1,178 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:1903530,regulation of secretion by cell,4,2,0.05,0.00078,0.0439
+GO:0051046,regulation of secretion,5,2,0.06,0.0013,0.0439
+GO:0008150,biological_process,16230,208,187.38,0.00242,0.0439
+GO:0009987,cellular process,12731,169,146.98,0.00345,0.0439
+GO:0009553,embryo sac development,27,3,0.31,0.00363,0.0439
+GO:0044275,cellular carbohydrate catabolic process,56,4,0.65,0.00398,0.0439
+GO:0023056,positive regulation of signaling,31,3,0.36,0.00539,0.0439
+GO:0009991,response to extracellular stimulus,61,4,0.7,0.00541,0.0439
+GO:0009561,megagametogenesis,11,2,0.13,0.00682,0.0439
+GO:0035265,organ growth,11,2,0.13,0.00682,0.0439
+GO:0046620,regulation of organ growth,11,2,0.13,0.00682,0.0439
+GO:0000272,polysaccharide catabolic process,66,4,0.76,0.00715,0.0439
+GO:0010647,positive regulation of cell communicatio...,35,3,0.4,0.00758,0.0439
+GO:0016052,carbohydrate catabolic process,196,7,2.26,0.0079,0.0439
+GO:0007267,cell-cell signaling,12,2,0.14,0.00812,0.0439
+GO:1901576,organic substance biosynthetic process,3398,54,39.23,0.00829,0.0439
+GO:0009059,macromolecule biosynthetic process,2007,35,23.17,0.00926,0.0439
+GO:0140029,exocytic process,13,2,0.15,0.00952,0.0439
+GO:0006412,translation,424,11,4.9,0.01067,0.0439
+GO:0045727,positive regulation of translation,14,2,0.16,0.01103,0.0439
+GO:0008653,lipopolysaccharide metabolic process,1,1,0.01,0.01155,0.0439
+GO:0009103,lipopolysaccharide biosynthetic process,1,1,0.01,0.01155,0.0439
+GO:0015790,UDP-xylose transmembrane transport,1,1,0.01,0.01155,0.0439
+GO:0015959,diadenosine polyphosphate metabolic proc...,1,1,0.01,0.01155,0.0439
+GO:0015960,diadenosine polyphosphate biosynthetic p...,1,1,0.01,0.01155,0.0439
+GO:0015965,diadenosine tetraphosphate metabolic pro...,1,1,0.01,0.01155,0.0439
+GO:0015966,diadenosine tetraphosphate biosynthetic ...,1,1,0.01,0.01155,0.0439
+GO:0017157,regulation of exocytosis,1,1,0.01,0.01155,0.0439
+GO:0033467,CMP-keto-3-deoxy-D-manno-octulosonic aci...,1,1,0.01,0.01155,0.0439
+GO:0033468,CMP-keto-3-deoxy-D-manno-octulosonic aci...,1,1,0.01,0.01155,0.0439
+GO:0034260,negative regulation of GTPase activity,1,1,0.01,0.01155,0.0439
+GO:0048144,fibroblast proliferation,1,1,0.01,0.01155,0.0439
+GO:0070150,mitochondrial glycyl-tRNA aminoacylation,1,1,0.01,0.01155,0.0439
+GO:1900871,chloroplast mRNA modification,1,1,0.01,0.01155,0.0439
+GO:1901333,positive regulation of lateral root deve...,1,1,0.01,0.01155,0.0439
+GO:1990074,polyuridylation-dependent mRNA catabolic...,1,1,0.01,0.01155,0.0439
+GO:2000023,regulation of lateral root development,1,1,0.01,0.01155,0.0439
+GO:0009058,biosynthetic process,3458,54,39.92,0.0116,0.0439
+GO:0050794,regulation of cellular process,1760,31,20.32,0.01237,0.0439
+GO:0034250,positive regulation of cellular amide me...,15,2,0.17,0.01263,0.0439
+GO:0022622,root system development,78,4,0.9,0.01271,0.0439
+GO:0048364,root development,78,4,0.9,0.01271,0.0439
+GO:0051247,positive regulation of protein metabolic...,78,4,0.9,0.01271,0.0439
+GO:0044249,cellular biosynthetic process,3341,52,38.57,0.01411,0.0439
+GO:0072657,protein localization to membrane,81,4,0.94,0.01444,0.0439
+GO:0006418,tRNA aminoacylation for protein translat...,171,6,1.97,0.01466,0.0439
+GO:0006518,peptide metabolic process,504,12,5.82,0.01467,0.0439
+GO:0050789,regulation of biological process,2147,36,24.79,0.01476,0.0439
+GO:0051049,regulation of transport,45,3,0.52,0.01511,0.0439
+GO:0043043,peptide biosynthetic process,447,11,5.16,0.01529,0.0439
+GO:0032501,multicellular organismal process,636,14,7.34,0.01639,0.0439
+GO:0051246,regulation of protein metabolic process,281,8,3.24,0.0168,0.0439
+GO:0010015,root morphogenesis,47,3,0.54,0.01698,0.0439
+GO:0006417,regulation of translation,130,5,1.5,0.01761,0.0439
+GO:0045454,cell redox homeostasis,18,2,0.21,0.01799,0.0439
+GO:0034645,cellular macromolecule biosynthetic proc...,1959,33,22.62,0.01818,0.0439
+GO:0034248,regulation of cellular amide metabolic p...,132,5,1.52,0.01868,0.0439
+GO:0044237,cellular metabolic process,9270,124,107.02,0.01936,0.0439
+GO:0032940,secretion by cell,89,4,1.03,0.01974,0.0439
+GO:0043038,amino acid activation,183,6,2.11,0.0198,0.0439
+GO:0043039,tRNA aminoacylation,183,6,2.11,0.0198,0.0439
+GO:0009057,macromolecule catabolic process,530,12,6.12,0.02083,0.0439
+GO:0016070,RNA metabolic process,2057,34,23.75,0.02134,0.0439
+GO:0001501,skeletal system development,2,1,0.02,0.02296,0.0439
+GO:0002793,positive regulation of peptide secretion,2,1,0.02,0.02296,0.0439
+GO:0006904,vesicle docking involved in exocytosis,2,1,0.02,0.02296,0.0439
+GO:0007517,muscle organ development,2,1,0.02,0.02296,0.0439
+GO:0009887,animal organ morphogenesis,2,1,0.02,0.02296,0.0439
+GO:0009939,positive regulation of gibberellic acid ...,2,1,0.02,0.02296,0.0439
+GO:0010227,floral organ abscission,2,1,0.02,0.02296,0.0439
+GO:0010430,fatty acid omega-oxidation,2,1,0.02,0.02296,0.0439
+GO:0030252,growth hormone secretion,2,1,0.02,0.02296,0.0439
+GO:0032024,positive regulation of insulin secretion,2,1,0.02,0.02296,0.0439
+GO:0046887,positive regulation of hormone secretion,2,1,0.02,0.02296,0.0439
+GO:0048278,vesicle docking,2,1,0.02,0.02296,0.0439
+GO:0048644,muscle organ morphogenesis,2,1,0.02,0.02296,0.0439
+GO:0050714,positive regulation of protein secretion,2,1,0.02,0.02296,0.0439
+GO:0051047,positive regulation of secretion,2,1,0.02,0.02296,0.0439
+GO:0060123,regulation of growth hormone secretion,2,1,0.02,0.02296,0.0439
+GO:0060124,positive regulation of growth hormone se...,2,1,0.02,0.02296,0.0439
+GO:0061061,muscle structure development,2,1,0.02,0.02296,0.0439
+GO:0090277,positive regulation of peptide hormone s...,2,1,0.02,0.02296,0.0439
+GO:0090548,response to nitrate starvation,2,1,0.02,0.02296,0.0439
+GO:1903532,positive regulation of secretion by cell,2,1,0.02,0.02296,0.0439
+GO:2000069,regulation of post-embryonic root develo...,2,1,0.02,0.02296,0.0439
+GO:0006298,mismatch repair,53,3,0.61,0.02333,0.0439
+GO:0044248,cellular catabolic process,800,16,9.24,0.024,0.0439
+GO:0046903,secretion,95,4,1.1,0.02441,0.0439
+GO:0017148,negative regulation of translation,55,3,0.63,0.02569,0.0439
+GO:2000280,regulation of root development,22,2,0.25,0.02635,0.0439
+GO:0044238,primary metabolic process,9192,122,106.12,0.02666,0.0439
+GO:0051239,regulation of multicellular organismal p...,145,5,1.67,0.02672,0.0439
+GO:0031667,response to nutrient levels,56,3,0.65,0.02692,0.0439
+GO:0034249,negative regulation of cellular amide me...,56,3,0.65,0.02692,0.0439
+GO:0032879,regulation of localization,57,3,0.66,0.02818,0.0439
+GO:0009251,glucan catabolic process,23,2,0.27,0.02864,0.0439
+GO:0044247,cellular polysaccharide catabolic proces...,23,2,0.27,0.02864,0.0439
+GO:0051726,regulation of cell cycle,101,4,1.17,0.02969,0.0439
+GO:1901566,organonitrogen compound biosynthetic pro...,1241,22,14.33,0.03076,0.0439
+GO:0007275,multicellular organism development,499,11,5.76,0.03107,0.0439
+GO:0044260,cellular macromolecule metabolic process,5988,83,69.13,0.03162,0.0439
+GO:0043604,amide biosynthetic process,501,11,5.78,0.03184,0.0439
+GO:0048229,gametophyte development,60,3,0.69,0.03214,0.0439
+GO:0008152,metabolic process,10367,135,119.69,0.03297,0.0439
+GO:0032259,methylation,504,11,5.82,0.03304,0.0439
+GO:0009734,auxin-activated signaling pathway,154,5,1.78,0.03341,0.0439
+GO:0071365,cellular response to auxin stimulus,154,5,1.78,0.03341,0.0439
+GO:0000038,very long-chain fatty acid metabolic pro...,3,1,0.03,0.03424,0.0439
+GO:0002791,regulation of peptide secretion,3,1,0.03,0.03424,0.0439
+GO:0006432,phenylalanyl-tRNA aminoacylation,3,1,0.03,0.03424,0.0439
+GO:0009395,phospholipid catabolic process,3,1,0.03,0.03424,0.0439
+GO:0009838,abscission,3,1,0.03,0.03424,0.0439
+GO:0009959,negative gravitropism,3,1,0.03,0.03424,0.0439
+GO:0010259,multicellular organism aging,3,1,0.03,0.03424,0.0439
+GO:0010929,positive regulation of auxin mediated si...,3,1,0.03,0.03424,0.0439
+GO:0015706,nitrate transport,3,1,0.03,0.03424,0.0439
+GO:0023061,signal release,3,1,0.03,0.03424,0.0439
+GO:0030072,peptide hormone secretion,3,1,0.03,0.03424,0.0439
+GO:0030073,insulin secretion,3,1,0.03,0.03424,0.0439
+GO:0042761,very long-chain fatty acid biosynthetic ...,3,1,0.03,0.03424,0.0439
+GO:0043137,DNA replication, removal of RNA primer,3,1,0.03,0.03424,0.0439
+GO:0046292,formaldehyde metabolic process,3,1,0.03,0.03424,0.0439
+GO:0046294,formaldehyde catabolic process,3,1,0.03,0.03424,0.0439
+GO:0046622,positive regulation of organ growth,3,1,0.03,0.03424,0.0439
+GO:0046879,hormone secretion,3,1,0.03,0.03424,0.0439
+GO:0046883,regulation of hormone secretion,3,1,0.03,0.03424,0.0439
+GO:0050708,regulation of protein secretion,3,1,0.03,0.03424,0.0439
+GO:0050796,regulation of insulin secretion,3,1,0.03,0.03424,0.0439
+GO:0060866,leaf abscission,3,1,0.03,0.03424,0.0439
+GO:0065001,specification of axis polarity,3,1,0.03,0.03424,0.0439
+GO:0090276,regulation of peptide hormone secretion,3,1,0.03,0.03424,0.0439
+GO:0090306,spindle assembly involved in meiosis,3,1,0.03,0.03424,0.0439
+GO:0090708,specification of plant organ axis polari...,3,1,0.03,0.03424,0.0439
+GO:0110095,cellular detoxification of aldehyde,3,1,0.03,0.03424,0.0439
+GO:0110096,cellular response to aldehyde,3,1,0.03,0.03424,0.0439
+GO:1902025,nitrate import,3,1,0.03,0.03424,0.0439
+GO:1902806,regulation of cell cycle G1/S phase tran...,3,1,0.03,0.03424,0.0439
+GO:2000045,regulation of G1/S transition of mitotic...,3,1,0.03,0.03424,0.0439
+GO:0032268,regulation of cellular protein metabolic...,269,7,3.11,0.03724,0.0474
+GO:0044262,cellular carbohydrate metabolic process,452,10,5.22,0.03793,0.048
+GO:0017144,drug metabolic process,273,7,3.15,0.03981,0.049
+GO:0007154,cell communication,925,17,10.68,0.04066,0.049
+GO:0010467,gene expression,2170,34,25.05,0.04157,0.049
+GO:0070887,cellular response to chemical stimulus,589,12,6.8,0.04169,0.049
+GO:0005976,polysaccharide metabolic process,276,7,3.19,0.04181,0.049
+GO:0009733,response to auxin,166,5,1.92,0.04381,0.049
+GO:0099402,plant organ development,166,5,1.92,0.04381,0.049
+GO:0009967,positive regulation of signal transducti...,29,2,0.33,0.04394,0.049
+GO:0051241,negative regulation of multicellular org...,29,2,0.33,0.04394,0.049
+GO:0000212,meiotic spindle organization,4,1,0.05,0.04539,0.049
+GO:0009443,pyridoxal 5'-phosphate salvage,4,1,0.05,0.04539,0.049
+GO:0009937,regulation of gibberellic acid mediated ...,4,1,0.05,0.04539,0.049
+GO:0010200,response to chitin,4,1,0.05,0.04539,0.049
+GO:0016487,farnesol metabolic process,4,1,0.05,0.04539,0.049
+GO:0034427,nuclear-transcribed mRNA catabolic proce...,4,1,0.05,0.04539,0.049
+GO:0042631,cellular response to water deprivation,4,1,0.05,0.04539,0.049
+GO:0051211,anisotropic cell growth,4,1,0.05,0.04539,0.049
+GO:0070127,tRNA aminoacylation for mitochondrial pr...,4,1,0.05,0.04539,0.049
+GO:0071462,cellular response to water stimulus,4,1,0.05,0.04539,0.049
+GO:0072659,protein localization to plasma membrane,4,1,0.05,0.04539,0.049
+GO:0080038,positive regulation of cytokinin-activat...,4,1,0.05,0.04539,0.049
+GO:1901002,positive regulation of response to salt ...,4,1,0.05,0.04539,0.049
+GO:2000067,regulation of root morphogenesis,4,1,0.05,0.04539,0.049
+GO:1901575,organic substance catabolic process,939,17,10.84,0.04567,0.049
+GO:1905392,plant organ morphogenesis,69,3,0.8,0.04567,0.049
+GO:1901701,cellular response to oxygen-containing c...,224,6,2.59,0.04615,0.0492
+GO:0071704,organic substance metabolic process,9793,127,113.06,0.04677,0.0495
+GO:0005975,carbohydrate metabolic process,735,14,8.49,0.04698,0.0495
+GO:0001522,pseudouridine synthesis,70,3,0.81,0.04733,0.0496
+GO:0071229,cellular response to acid chemical,170,5,1.96,0.04766,0.0496
+GO:0043170,macromolecule metabolic process,7516,100,86.77,0.04792,0.0496
+GO:0032270,positive regulation of cellular protein ...,71,3,0.82,0.04901,0.0496
+GO:0043603,cellular amide metabolic process,605,12,6.98,0.04925,0.0496
+GO:0044271,cellular nitrogen compound biosynthetic ...,1899,30,21.92,0.04934,0.0496
+GO:0009787,regulation of abscisic acid-activated si...,31,2,0.36,0.04958,0.0496
+GO:1901419,regulation of response to alcohol,31,2,0.36,0.04958,0.0496
+GO:1905957,regulation of cellular response to alcoh...,31,2,0.36,0.04958,0.0496

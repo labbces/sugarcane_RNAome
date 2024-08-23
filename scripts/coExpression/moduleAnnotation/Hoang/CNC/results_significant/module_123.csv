@@ -1,0 +1,20 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:2000012,regulation of auxin polar transport,8,2,0.16,0.0098,0.043
+GO:0045038,protein import into chloroplast thylakoi...,1,1,0.02,0.0195,0.043
+GO:0050992,dimethylallyl diphosphate biosynthetic p...,1,1,0.02,0.0195,0.043
+GO:0050993,dimethylallyl diphosphate metabolic proc...,1,1,0.02,0.0195,0.043
+GO:0036092,phosphatidylinositol-3-phosphate biosynt...,16,2,0.31,0.0379,0.043
+GO:0006824,cobalt ion transport,2,1,0.04,0.0385,0.043
+GO:0009939,positive regulation of gibberellic acid ...,2,1,0.04,0.0385,0.043
+GO:0010106,cellular response to iron ion starvation,2,1,0.04,0.0385,0.043
+GO:0033619,membrane protein proteolysis,2,1,0.04,0.0385,0.043
+GO:0043446,cellular alkane metabolic process,2,1,0.04,0.0385,0.043
+GO:0043447,alkane biosynthetic process,2,1,0.04,0.0385,0.043
+GO:0051291,protein heterooligomerization,2,1,0.04,0.0385,0.043
+GO:0055068,cobalt ion homeostasis,2,1,0.04,0.0385,0.043
+GO:0070206,protein trimerization,2,1,0.04,0.0385,0.043
+GO:0070208,protein heterotrimerization,2,1,0.04,0.0385,0.043
+GO:0071484,cellular response to light intensity,2,1,0.04,0.0385,0.043
+GO:1990019,protein storage vacuole organization,2,1,0.04,0.0385,0.043
+GO:0009644,response to high light intensity,17,2,0.33,0.0424,0.0448
+GO:0034976,response to endoplasmic reticulum stress,70,4,1.36,0.0476,0.0476

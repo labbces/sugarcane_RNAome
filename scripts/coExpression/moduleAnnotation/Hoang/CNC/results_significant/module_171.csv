@@ -1,0 +1,38 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006543,glutamine catabolic process,1,1,0.01,0.0057,0.0234
+GO:0045840,positive regulation of mitotic nuclear d...,1,1,0.01,0.0057,0.0234
+GO:0045842,positive regulation of mitotic metaphase...,1,1,0.01,0.0057,0.0234
+GO:0051785,positive regulation of nuclear division,1,1,0.01,0.0057,0.0234
+GO:0051984,positive regulation of chromosome segreg...,1,1,0.01,0.0057,0.0234
+GO:0062033,positive regulation of mitotic sister ch...,1,1,0.01,0.0057,0.0234
+GO:1901970,positive regulation of mitotic sister ch...,1,1,0.01,0.0057,0.0234
+GO:1902101,positive regulation of metaphase/anaphas...,1,1,0.01,0.0057,0.0234
+GO:1905820,positive regulation of chromosome separa...,1,1,0.01,0.0057,0.0234
+GO:0009065,glutamine family amino acid catabolic pr...,3,1,0.02,0.0171,0.0395
+GO:0015800,acidic amino acid transport,3,1,0.02,0.0171,0.0395
+GO:0015804,neutral amino acid transport,3,1,0.02,0.0171,0.0395
+GO:0048235,pollen sperm cell differentiation,3,1,0.02,0.0171,0.0395
+GO:0090068,positive regulation of cell cycle proces...,3,1,0.02,0.0171,0.0395
+GO:1901989,positive regulation of cell cycle phase ...,3,1,0.02,0.0171,0.0395
+GO:1901992,positive regulation of mitotic cell cycl...,3,1,0.02,0.0171,0.0395
+GO:0000266,mitochondrial fission,4,1,0.02,0.0227,0.0419
+GO:0045931,positive regulation of mitotic cell cycl...,4,1,0.02,0.0227,0.0419
+GO:1900426,positive regulation of defense response ...,4,1,0.02,0.0227,0.0419
+GO:0009064,glutamine family amino acid metabolic pr...,45,2,0.26,0.0275,0.0419
+GO:0000737,DNA catabolic process, endonucleolytic,5,1,0.03,0.0283,0.0419
+GO:0006000,fructose metabolic process,5,1,0.03,0.0283,0.0419
+GO:0009903,chloroplast avoidance movement,5,1,0.03,0.0283,0.0419
+GO:0032875,regulation of DNA endoreduplication,5,1,0.03,0.0283,0.0419
+GO:0055046,microgametogenesis,5,1,0.03,0.0283,0.0419
+GO:0051301,cell division,121,3,0.69,0.0325,0.0448
+GO:0009157,deoxyribonucleoside monophosphate biosyn...,6,1,0.03,0.0339,0.0448
+GO:0009162,deoxyribonucleoside monophosphate metabo...,6,1,0.03,0.0339,0.0448
+GO:0006003,fructose 2,6-bisphosphate metabolic proc...,7,1,0.04,0.0394,0.0449
+GO:0006537,glutamate biosynthetic process,7,1,0.04,0.0394,0.0449
+GO:0009904,chloroplast accumulation movement,7,1,0.04,0.0394,0.0449
+GO:0016255,attachment of GPI anchor to protein,7,1,0.04,0.0394,0.0449
+GO:0006094,gluconeogenesis,8,1,0.05,0.0449,0.0449
+GO:0019319,hexose biosynthetic process,8,1,0.05,0.0449,0.0449
+GO:0030968,endoplasmic reticulum unfolded protein r...,8,1,0.05,0.0449,0.0449
+GO:2000012,regulation of auxin polar transport,8,1,0.05,0.0449,0.0449
+GO:2001252,positive regulation of chromosome organi...,8,1,0.05,0.0449,0.0449

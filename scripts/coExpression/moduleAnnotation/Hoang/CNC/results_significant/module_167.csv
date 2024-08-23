@@ -1,0 +1,4 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0005996,monosaccharide metabolic process,165,4,1,0.018,0.041
+GO:1902182,shoot apical meristem development,5,1,0.03,0.03,0.041
+GO:0019318,hexose metabolic process,125,3,0.76,0.041,0.041

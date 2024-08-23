@@ -1,0 +1,22 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006182,cGMP biosynthetic process,1,1,0,0.0033,0.0116
+GO:0009187,cyclic nucleotide metabolic process,1,1,0,0.0033,0.0116
+GO:0009190,cyclic nucleotide biosynthetic process,1,1,0,0.0033,0.0116
+GO:0046068,cGMP metabolic process,1,1,0,0.0033,0.0116
+GO:0052652,cyclic purine nucleotide metabolic proce...,1,1,0,0.0033,0.0116
+GO:0097053,L-kynurenine catabolic process,1,1,0,0.0033,0.0116
+GO:0009877,nodulation,2,1,0.01,0.0066,0.0173
+GO:0097052,L-kynurenine metabolic process,2,1,0.01,0.0066,0.0173
+GO:0072318,clathrin coat disassembly,4,1,0.01,0.0132,0.0277
+GO:0072319,vesicle uncoating,4,1,0.01,0.0132,0.0277
+GO:0070189,kynurenine metabolic process,6,1,0.02,0.0198,0.0378
+GO:0006419,alanyl-tRNA aminoacylation,9,1,0.03,0.0295,0.0445
+GO:0045116,protein neddylation,9,1,0.03,0.0295,0.0445
+GO:0042182,ketone catabolic process,10,1,0.03,0.0327,0.0445
+GO:0034067,protein localization to Golgi apparatus,12,1,0.04,0.0392,0.0445
+GO:0045053,protein retention in Golgi apparatus,12,1,0.04,0.0392,0.0445
+GO:0045292,mRNA cis splicing, via spliceosome,12,1,0.04,0.0392,0.0445
+GO:0051443,positive regulation of ubiquitin-protein...,12,1,0.04,0.0392,0.0445
+GO:0031398,positive regulation of protein ubiquitin...,13,1,0.04,0.0424,0.0445
+GO:0051438,regulation of ubiquitin-protein transfer...,13,1,0.04,0.0424,0.0445
+GO:1903322,positive regulation of protein modificat...,14,1,0.05,0.0456,0.0456

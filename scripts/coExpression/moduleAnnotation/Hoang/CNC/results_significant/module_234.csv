@@ -1,0 +1,146 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006091,generation of precursor metabolites and ...,317,16,7.11,0.0023,0.0441
+GO:0006739,NADP metabolic process,27,4,0.61,0.0029,0.0441
+GO:0006552,leucine catabolic process,5,2,0.11,0.0048,0.0441
+GO:0006098,pentose-phosphate shunt,17,3,0.38,0.006,0.0441
+GO:0009083,branched-chain amino acid catabolic proc...,6,2,0.13,0.0071,0.0441
+GO:0006740,NADPH regeneration,18,3,0.4,0.0071,0.0441
+GO:0008150,biological_process,16230,389,364.11,0.0074,0.0441
+GO:0009987,cellular process,12731,313,285.61,0.0076,0.0441
+GO:0051186,cofactor metabolic process,398,17,8.93,0.0089,0.0441
+GO:0008643,carbohydrate transport,80,6,1.79,0.0092,0.0441
+GO:0051156,glucose 6-phosphate metabolic process,20,3,0.45,0.0096,0.0441
+GO:0016226,iron-sulfur cluster assembly,38,4,0.85,0.0101,0.0441
+GO:0031163,metallo-sulfur cluster assembly,38,4,0.85,0.0101,0.0441
+GO:0055114,oxidation-reduction process,222,11,4.98,0.0119,0.0441
+GO:0034219,carbohydrate transmembrane transport,62,5,1.39,0.0126,0.0441
+GO:0019362,pyridine nucleotide metabolic process,44,4,0.99,0.0167,0.0441
+GO:0046496,nicotinamide nucleotide metabolic proces...,44,4,0.99,0.0167,0.0441
+GO:0032787,monocarboxylic acid metabolic process,361,15,8.1,0.017,0.0441
+GO:0051188,cofactor biosynthetic process,271,12,6.08,0.0199,0.0441
+GO:0006551,leucine metabolic process,10,2,0.22,0.0201,0.0441
+GO:0009806,lignan metabolic process,10,2,0.22,0.0201,0.0441
+GO:0009807,lignan biosynthetic process,10,2,0.22,0.0201,0.0441
+GO:0051276,chromosome organization,683,24,15.32,0.0211,0.0441
+GO:0009699,phenylpropanoid biosynthetic process,48,4,1.08,0.0224,0.0441
+GO:0002082,regulation of oxidative phosphorylation,1,1,0.02,0.0224,0.0441
+GO:0002165,instar larval or pupal development,1,1,0.02,0.0224,0.0441
+GO:0003015,heart process,1,1,0.02,0.0224,0.0441
+GO:0007553,regulation of ecdysteroid metabolic proc...,1,1,0.02,0.0224,0.0441
+GO:0007554,regulation of ecdysteroid biosynthetic p...,1,1,0.02,0.0224,0.0441
+GO:0007610,behavior,1,1,0.02,0.0224,0.0441
+GO:0007626,locomotory behavior,1,1,0.02,0.0224,0.0441
+GO:0008016,regulation of heart contraction,1,1,0.02,0.0224,0.0441
+GO:0008340,determination of adult lifespan,1,1,0.02,0.0224,0.0441
+GO:0008344,adult locomotory behavior,1,1,0.02,0.0224,0.0441
+GO:0010893,positive regulation of steroid biosynthe...,1,1,0.02,0.0224,0.0441
+GO:0015759,beta-glucoside transport,1,1,0.02,0.0224,0.0441
+GO:0019218,regulation of steroid metabolic process,1,1,0.02,0.0224,0.0441
+GO:0019405,alditol catabolic process,1,1,0.02,0.0224,0.0441
+GO:0019563,glycerol catabolic process,1,1,0.02,0.0224,0.0441
+GO:0019896,axonal transport of mitochondrion,1,1,0.02,0.0224,0.0441
+GO:0030534,adult behavior,1,1,0.02,0.0224,0.0441
+GO:0033510,luteolin metabolic process,1,1,0.02,0.0224,0.0441
+GO:0033511,luteolin biosynthetic process,1,1,0.02,0.0224,0.0441
+GO:0034643,establishment of mitochondrion localizat...,1,1,0.02,0.0224,0.0441
+GO:0042946,glucoside transport,1,1,0.02,0.0224,0.0441
+GO:0042948,salicin transport,1,1,0.02,0.0224,0.0441
+GO:0043457,regulation of cellular respiration,1,1,0.02,0.0224,0.0441
+GO:0045455,ecdysteroid metabolic process,1,1,0.02,0.0224,0.0441
+GO:0045456,ecdysteroid biosynthetic process,1,1,0.02,0.0224,0.0441
+GO:0045823,positive regulation of heart contraction,1,1,0.02,0.0224,0.0441
+GO:0045940,positive regulation of steroid metabolic...,1,1,0.02,0.0224,0.0441
+GO:0045966,positive regulation of ecdysteroid metab...,1,1,0.02,0.0224,0.0441
+GO:0045998,positive regulation of ecdysteroid biosy...,1,1,0.02,0.0224,0.0441
+GO:0047497,mitochondrion transport along microtubul...,1,1,0.02,0.0224,0.0441
+GO:0050810,regulation of steroid biosynthetic proce...,1,1,0.02,0.0224,0.0441
+GO:0051646,mitochondrion localization,1,1,0.02,0.0224,0.0441
+GO:0051654,establishment of mitochondrion localizat...,1,1,0.02,0.0224,0.0441
+GO:0051881,regulation of mitochondrial membrane pot...,1,1,0.02,0.0224,0.0441
+GO:0052779,amino disaccharide metabolic process,1,1,0.02,0.0224,0.0441
+GO:0052781,chitobiose catabolic process,1,1,0.02,0.0224,0.0441
+GO:0052782,amino disaccharide catabolic process,1,1,0.02,0.0224,0.0441
+GO:0060047,heart contraction,1,1,0.02,0.0224,0.0441
+GO:0090030,regulation of steroid hormone biosynthet...,1,1,0.02,0.0224,0.0441
+GO:0090031,positive regulation of steroid hormone b...,1,1,0.02,0.0224,0.0441
+GO:0090071,negative regulation of ribosome biogenes...,1,1,0.02,0.0224,0.0441
+GO:1901656,glycoside transport,1,1,0.02,0.0224,0.0441
+GO:1901857,positive regulation of cellular respirat...,1,1,0.02,0.0224,0.0441
+GO:1903522,regulation of blood circulation,1,1,0.02,0.0224,0.0441
+GO:1903524,positive regulation of blood circulation,1,1,0.02,0.0224,0.0441
+GO:1903578,regulation of ATP metabolic process,1,1,0.02,0.0224,0.0441
+GO:1903580,positive regulation of ATP metabolic pro...,1,1,0.02,0.0224,0.0441
+GO:1903715,regulation of aerobic respiration,1,1,0.02,0.0224,0.0441
+GO:1903862,positive regulation of oxidative phospho...,1,1,0.02,0.0224,0.0441
+GO:0032456,endocytic recycling,11,2,0.25,0.0242,0.0441
+GO:0043467,regulation of generation of precursor me...,11,2,0.25,0.0242,0.0441
+GO:0061615,glycolytic process through fructose-6-ph...,28,3,0.63,0.0243,0.0441
+GO:0006354,DNA-templated transcription, elongation,29,3,0.65,0.0266,0.0441
+GO:0009081,branched-chain amino acid metabolic proc...,29,3,0.65,0.0266,0.0441
+GO:0044550,secondary metabolite biosynthetic proces...,75,5,1.68,0.0267,0.0441
+GO:0016054,organic acid catabolic process,76,5,1.7,0.028,0.0441
+GO:0046395,carboxylic acid catabolic process,76,5,1.7,0.028,0.0441
+GO:0007094,mitotic spindle assembly checkpoint,12,2,0.27,0.0286,0.0441
+GO:0016180,snRNA processing,12,2,0.27,0.0286,0.0441
+GO:0031577,spindle checkpoint,12,2,0.27,0.0286,0.0441
+GO:0033046,negative regulation of sister chromatid ...,12,2,0.27,0.0286,0.0441
+GO:0033048,negative regulation of mitotic sister ch...,12,2,0.27,0.0286,0.0441
+GO:0045839,negative regulation of mitotic nuclear d...,12,2,0.27,0.0286,0.0441
+GO:0045841,negative regulation of mitotic metaphase...,12,2,0.27,0.0286,0.0441
+GO:0051985,negative regulation of chromosome segreg...,12,2,0.27,0.0286,0.0441
+GO:0071173,spindle assembly checkpoint,12,2,0.27,0.0286,0.0441
+GO:0071174,mitotic spindle checkpoint,12,2,0.27,0.0286,0.0441
+GO:1902100,negative regulation of metaphase/anaphas...,12,2,0.27,0.0286,0.0441
+GO:1905819,negative regulation of chromosome separa...,12,2,0.27,0.0286,0.0441
+GO:2000816,negative regulation of mitotic sister ch...,12,2,0.27,0.0286,0.0441
+GO:0031124,mRNA 3'-end processing,31,3,0.7,0.0317,0.0473
+GO:0009968,negative regulation of signal transducti...,54,4,1.21,0.0328,0.0473
+GO:0006378,mRNA polyadenylation,13,2,0.29,0.0333,0.0473
+GO:0006750,glutathione biosynthetic process,13,2,0.29,0.0333,0.0473
+GO:0006821,chloride transport,13,2,0.29,0.0333,0.0473
+GO:0008360,regulation of cell shape,13,2,0.29,0.0333,0.0473
+GO:0051784,negative regulation of nuclear division,13,2,0.29,0.0333,0.0473
+GO:1902476,chloride transmembrane transport,13,2,0.29,0.0333,0.0473
+GO:0010648,negative regulation of cell communicatio...,56,4,1.26,0.0368,0.0477
+GO:0023057,negative regulation of signaling,56,4,1.26,0.0368,0.0477
+GO:0072524,pyridine-containing compound metabolic p...,56,4,1.26,0.0368,0.0477
+GO:0008152,metabolic process,10367,253,232.57,0.0371,0.0477
+GO:0090502,RNA phosphodiester bond hydrolysis, endo...,112,6,2.51,0.0406,0.0477
+GO:0010639,negative regulation of organelle organiz...,35,3,0.79,0.0432,0.0477
+GO:0098661,inorganic anion transmembrane transport,35,3,0.79,0.0432,0.0477
+GO:1901606,alpha-amino acid catabolic process,35,3,0.79,0.0432,0.0477
+GO:0006733,oxidoreduction coenzyme metabolic proces...,59,4,1.32,0.0433,0.0477
+GO:0007091,metaphase/anaphase transition of mitotic...,15,2,0.34,0.0435,0.0477
+GO:0030071,regulation of mitotic metaphase/anaphase...,15,2,0.34,0.0435,0.0477
+GO:0044784,metaphase/anaphase transition of cell cy...,15,2,0.34,0.0435,0.0477
+GO:1902099,regulation of metaphase/anaphase transit...,15,2,0.34,0.0435,0.0477
+GO:0003013,circulatory system process,2,1,0.04,0.0444,0.0477
+GO:0006729,tetrahydrobiopterin biosynthetic process,2,1,0.04,0.0444,0.0477
+GO:0008015,blood circulation,2,1,0.04,0.0444,0.0477
+GO:0009861,jasmonic acid and ethylene-dependent sys...,2,1,0.04,0.0444,0.0477
+GO:0010566,regulation of ketone biosynthetic proces...,2,1,0.04,0.0444,0.0477
+GO:0015940,pantothenate biosynthetic process,2,1,0.04,0.0444,0.0477
+GO:0017062,respiratory chain complex III assembly,2,1,0.04,0.0444,0.0477
+GO:0018282,metal incorporation into metallo-sulfur ...,2,1,0.04,0.0444,0.0477
+GO:0018283,iron incorporation into metallo-sulfur c...,2,1,0.04,0.0444,0.0477
+GO:0018344,protein geranylgeranylation,2,1,0.04,0.0444,0.0477
+GO:0032352,positive regulation of hormone metabolic...,2,1,0.04,0.0444,0.0477
+GO:0034551,mitochondrial respiratory chain complex ...,2,1,0.04,0.0444,0.0477
+GO:0042391,regulation of membrane potential,2,1,0.04,0.0444,0.0477
+GO:0046146,tetrahydrobiopterin metabolic process,2,1,0.04,0.0444,0.0477
+GO:0046886,positive regulation of hormone biosynthe...,2,1,0.04,0.0444,0.0477
+GO:0062055,photosynthetic state transition,2,1,0.04,0.0444,0.0477
+GO:0072384,organelle transport along microtubule,2,1,0.04,0.0444,0.0477
+GO:0090069,regulation of ribosome biogenesis,2,1,0.04,0.0444,0.0477
+GO:1900458,negative regulation of brassinosteroid m...,2,1,0.04,0.0444,0.0477
+GO:1903329,regulation of iron-sulfur cluster assemb...,2,1,0.04,0.0444,0.0477
+GO:0072330,monocarboxylic acid biosynthetic process,145,7,3.25,0.0454,0.0484
+GO:0006575,cellular modified amino acid metabolic p...,87,5,1.95,0.0461,0.0486
+GO:0044237,cellular metabolic process,9270,227,207.96,0.0463,0.0486
+GO:0000819,sister chromatid segregation,61,4,1.37,0.048,0.049
+GO:0006338,chromatin remodeling,178,8,3.99,0.048,0.049
+GO:0009809,lignin biosynthetic process,16,2,0.36,0.049,0.049
+GO:0010965,regulation of mitotic sister chromatid s...,16,2,0.36,0.049,0.049
+GO:0033047,regulation of mitotic sister chromatid s...,16,2,0.36,0.049,0.049
+GO:1901991,negative regulation of mitotic cell cycl...,16,2,0.36,0.049,0.049
+GO:1905818,regulation of chromosome separation,16,2,0.36,0.049,0.049

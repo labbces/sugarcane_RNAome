@@ -1,0 +1,99 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006814,sodium ion transport,20,7,1.94,0.002,0.0401
+GO:0048193,Golgi vesicle transport,134,24,13.03,0.0024,0.0401
+GO:1901565,organonitrogen compound catabolic proces...,429,58,41.7,0.0063,0.0401
+GO:0006888,endoplasmic reticulum to Golgi vesicle-m...,84,16,8.17,0.0065,0.0401
+GO:0019941,modification-dependent protein catabolic...,276,40,26.83,0.0069,0.0401
+GO:0043632,modification-dependent macromolecule cat...,277,40,26.93,0.0073,0.0401
+GO:0006511,ubiquitin-dependent protein catabolic pr...,269,39,26.15,0.0075,0.0401
+GO:0000963,mitochondrial RNA processing,9,4,0.87,0.0075,0.0401
+GO:0035725,sodium ion transmembrane transport,9,4,0.87,0.0075,0.0401
+GO:0015672,monovalent inorganic cation transport,187,29,18.18,0.0079,0.0401
+GO:0044257,cellular protein catabolic process,306,43,29.75,0.0089,0.0401
+GO:0002521,leukocyte differentiation,2,2,0.19,0.0094,0.0401
+GO:0002573,myeloid leukocyte differentiation,2,2,0.19,0.0094,0.0401
+GO:0006562,proline catabolic process,2,2,0.19,0.0094,0.0401
+GO:0008544,epidermis development,2,2,0.19,0.0094,0.0401
+GO:0030099,myeloid cell differentiation,2,2,0.19,0.0094,0.0401
+GO:0030224,monocyte differentiation,2,2,0.19,0.0094,0.0401
+GO:0051341,regulation of oxidoreductase activity,2,2,0.19,0.0094,0.0401
+GO:0051353,positive regulation of oxidoreductase ac...,2,2,0.19,0.0094,0.0401
+GO:0060429,epithelium development,2,2,0.19,0.0094,0.0401
+GO:0101030,tRNA-guanine transglycosylation,2,2,0.19,0.0094,0.0401
+GO:1903131,mononuclear cell differentiation,2,2,0.19,0.0094,0.0401
+GO:1903241,U2-type prespliceosome assembly,2,2,0.19,0.0094,0.0401
+GO:0006553,lysine metabolic process,15,5,1.46,0.0113,0.0406
+GO:0006885,regulation of pH,15,5,1.46,0.0113,0.0406
+GO:0009085,lysine biosynthetic process,15,5,1.46,0.0113,0.0406
+GO:0030163,protein catabolic process,328,45,31.89,0.0115,0.0406
+GO:0055069,zinc ion homeostasis,10,4,0.97,0.0116,0.0406
+GO:0030433,ubiquitin-dependent ERAD pathway,34,8,3.31,0.0143,0.0438
+GO:0006882,cellular zinc ion homeostasis,6,3,0.58,0.0146,0.0438
+GO:0010304,PSII associated light-harvesting complex...,6,3,0.58,0.0146,0.0438
+GO:0055067,monovalent inorganic cation homeostasis,16,5,1.56,0.0151,0.0438
+GO:0006890,retrograde vesicle-mediated transport, G...,35,8,3.4,0.017,0.0438
+GO:0036503,ERAD pathway,37,8,3.6,0.0235,0.0438
+GO:0006952,defense response,1938,214,188.4,0.0235,0.0438
+GO:0007166,cell surface receptor signaling pathway,170,25,16.53,0.0238,0.0438
+GO:0022618,ribonucleoprotein complex assembly,66,12,6.42,0.0241,0.0438
+GO:1902600,proton transmembrane transport,121,19,11.76,0.0246,0.0438
+GO:0051603,proteolysis involved in cellular protein...,300,40,29.16,0.025,0.0438
+GO:0009245,lipid A biosynthetic process,18,5,1.75,0.0252,0.0438
+GO:0046493,lipid A metabolic process,18,5,1.75,0.0252,0.0438
+GO:1901269,lipooligosaccharide metabolic process,18,5,1.75,0.0252,0.0438
+GO:1901271,lipooligosaccharide biosynthetic process,18,5,1.75,0.0252,0.0438
+GO:0006950,response to stress,2893,311,281.24,0.0258,0.0438
+GO:0006203,dGTP catabolic process,3,2,0.29,0.0265,0.0438
+GO:0009065,glutamine family amino acid catabolic pr...,3,2,0.29,0.0265,0.0438
+GO:0009146,purine nucleoside triphosphate catabolic...,3,2,0.29,0.0265,0.0438
+GO:0009151,purine deoxyribonucleotide metabolic pro...,3,2,0.29,0.0265,0.0438
+GO:0009155,purine deoxyribonucleotide catabolic pro...,3,2,0.29,0.0265,0.0438
+GO:0009215,purine deoxyribonucleoside triphosphate ...,3,2,0.29,0.0265,0.0438
+GO:0009217,purine deoxyribonucleoside triphosphate ...,3,2,0.29,0.0265,0.0438
+GO:0010942,positive regulation of cell death,3,2,0.29,0.0265,0.0438
+GO:0018026,peptidyl-lysine monomethylation,3,2,0.29,0.0265,0.0438
+GO:0030097,hemopoiesis,3,2,0.29,0.0265,0.0438
+GO:0046070,dGTP metabolic process,3,2,0.29,0.0265,0.0438
+GO:0046386,deoxyribose phosphate catabolic process,3,2,0.29,0.0265,0.0438
+GO:0048534,hematopoietic or lymphoid organ developm...,3,2,0.29,0.0265,0.0438
+GO:0051592,response to calcium ion,3,2,0.29,0.0265,0.0438
+GO:0071277,cellular response to calcium ion,3,2,0.29,0.0265,0.0438
+GO:0071826,ribonucleoprotein complex subunit organi...,67,12,6.51,0.0268,0.0438
+GO:0000959,mitochondrial RNA metabolic process,25,6,2.43,0.0295,0.0471
+GO:0051187,cofactor catabolic process,53,10,5.15,0.0298,0.0471
+GO:0009089,lysine biosynthetic process via diaminop...,13,4,1.26,0.0311,0.0475
+GO:0046451,diaminopimelate metabolic process,13,4,1.26,0.0311,0.0475
+GO:0015994,chlorophyll metabolic process,39,8,3.79,0.0315,0.0475
+GO:0035821,modulation of process of other organism,8,3,0.78,0.0354,0.0496
+GO:0071241,cellular response to inorganic substance,8,3,0.78,0.0354,0.0496
+GO:0090333,regulation of stomatal closure,8,3,0.78,0.0354,0.0496
+GO:0071985,multivesicular body sorting pathway,33,7,3.21,0.0364,0.0496
+GO:0048440,carpel development,14,4,1.36,0.0403,0.0496
+GO:0048467,gynoecium development,14,4,1.36,0.0403,0.0496
+GO:0006865,amino acid transport,72,12,7,0.044,0.0496
+GO:0098655,cation transmembrane transport,340,43,33.05,0.0446,0.0496
+GO:0000462,maturation of SSU-rRNA from tricistronic...,9,3,0.87,0.0493,0.0496
+GO:0006566,threonine metabolic process,9,3,0.87,0.0493,0.0496
+GO:0009088,threonine biosynthetic process,9,3,0.87,0.0493,0.0496
+GO:0019566,arabinose metabolic process,9,3,0.87,0.0493,0.0496
+GO:0030641,regulation of cellular pH,9,3,0.87,0.0493,0.0496
+GO:0046373,L-arabinose metabolic process,9,3,0.87,0.0493,0.0496
+GO:0048513,animal organ development,9,3,0.87,0.0493,0.0496
+GO:0051453,regulation of intracellular pH,9,3,0.87,0.0493,0.0496
+GO:0090332,stomatal closure,9,3,0.87,0.0493,0.0496
+GO:1900864,mitochondrial RNA modification,9,3,0.87,0.0493,0.0496
+GO:0001732,formation of cytoplasmic translation ini...,4,2,0.39,0.0496,0.0496
+GO:0002520,immune system development,4,2,0.39,0.0496,0.0496
+GO:0006560,proline metabolic process,4,2,0.39,0.0496,0.0496
+GO:0009204,deoxyribonucleoside triphosphate catabol...,4,2,0.39,0.0496,0.0496
+GO:0015695,organic cation transport,4,2,0.39,0.0496,0.0496
+GO:0015805,S-adenosyl-L-methionine transport,4,2,0.39,0.0496,0.0496
+GO:0032409,regulation of transporter activity,4,2,0.39,0.0496,0.0496
+GO:0034293,sexual sporulation,4,2,0.39,0.0496,0.0496
+GO:0043934,sporulation,4,2,0.39,0.0496,0.0496
+GO:0048236,plant-type sporogenesis,4,2,0.39,0.0496,0.0496
+GO:0080156,mitochondrial mRNA modification,4,2,0.39,0.0496,0.0496
+GO:0098659,inorganic cation import across plasma me...,4,2,0.39,0.0496,0.0496
+GO:0098719,sodium ion import across plasma membrane,4,2,0.39,0.0496,0.0496
+GO:0099587,inorganic ion import across plasma membr...,4,2,0.39,0.0496,0.0496
+GO:1901962,S-adenosyl-L-methionine transmembrane tr...,4,2,0.39,0.0496,0.0496

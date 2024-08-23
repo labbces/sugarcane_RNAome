@@ -1,0 +1,166 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006666,3-keto-sphinganine metabolic process,4,2,0.1,0.0034,0.0399
+GO:0016477,cell migration,4,2,0.1,0.0034,0.0399
+GO:0030334,regulation of cell migration,4,2,0.1,0.0034,0.0399
+GO:0030336,negative regulation of cell migration,4,2,0.1,0.0034,0.0399
+GO:0040013,negative regulation of locomotion,4,2,0.1,0.0034,0.0399
+GO:0051271,negative regulation of cellular componen...,4,2,0.1,0.0034,0.0399
+GO:2000146,negative regulation of cell motility,4,2,0.1,0.0034,0.0399
+GO:0071554,cell wall organization or biogenesis,203,12,4.94,0.0043,0.0399
+GO:0040012,regulation of locomotion,5,2,0.12,0.0056,0.0399
+GO:0045736,negative regulation of cyclin-dependent ...,5,2,0.12,0.0056,0.0399
+GO:0048870,cell motility,5,2,0.12,0.0056,0.0399
+GO:0051674,localization of cell,5,2,0.12,0.0056,0.0399
+GO:1904030,negative regulation of cyclin-dependent ...,5,2,0.12,0.0056,0.0399
+GO:2000145,regulation of cell motility,5,2,0.12,0.0056,0.0399
+GO:0071555,cell wall organization,138,9,3.36,0.0068,0.0399
+GO:0006677,glycosylceramide metabolic process,6,2,0.15,0.0083,0.0399
+GO:0006687,glycosphingolipid metabolic process,6,2,0.15,0.0083,0.0399
+GO:0019377,glycolipid catabolic process,6,2,0.15,0.0083,0.0399
+GO:0046477,glycosylceramide catabolic process,6,2,0.15,0.0083,0.0399
+GO:0046479,glycosphingolipid catabolic process,6,2,0.15,0.0083,0.0399
+GO:0046519,sphingoid metabolic process,6,2,0.15,0.0083,0.0399
+GO:0051270,regulation of cellular component movemen...,6,2,0.15,0.0083,0.0399
+GO:0010563,negative regulation of phosphorus metabo...,18,3,0.44,0.0089,0.0399
+GO:0045936,negative regulation of phosphate metabol...,18,3,0.44,0.0089,0.0399
+GO:0045229,external encapsulating structure organiz...,147,9,3.58,0.0101,0.0399
+GO:0031109,microtubule polymerization or depolymeri...,19,3,0.46,0.0104,0.0399
+GO:0006665,sphingolipid metabolic process,36,4,0.88,0.0111,0.0399
+GO:0040011,locomotion,8,2,0.19,0.015,0.0399
+GO:0046514,ceramide catabolic process,8,2,0.19,0.015,0.0399
+GO:0033108,mitochondrial respiratory chain complex ...,22,3,0.54,0.0157,0.0399
+GO:0006469,negative regulation of protein kinase ac...,9,2,0.22,0.019,0.0399
+GO:0030149,sphingolipid catabolic process,9,2,0.22,0.019,0.0399
+GO:0033673,negative regulation of kinase activity,9,2,0.22,0.019,0.0399
+GO:0046466,membrane lipid catabolic process,9,2,0.22,0.019,0.0399
+GO:0071901,negative regulation of protein serine/th...,9,2,0.22,0.019,0.0399
+GO:0006189,'de novo' IMP biosynthetic process,24,3,0.58,0.0199,0.0399
+GO:0097502,mannosylation,43,4,1.05,0.0203,0.0399
+GO:0001933,negative regulation of protein phosphory...,10,2,0.24,0.0234,0.0399
+GO:0042326,negative regulation of phosphorylation,10,2,0.24,0.0234,0.0399
+GO:0006007,glucose catabolic process,1,1,0.02,0.0244,0.0399
+GO:0006264,mitochondrial DNA replication,1,1,0.02,0.0244,0.0399
+GO:0006735,NADH regeneration,1,1,0.02,0.0244,0.0399
+GO:0006999,nuclear pore organization,1,1,0.02,0.0244,0.0399
+GO:0007586,digestion,1,1,0.02,0.0244,0.0399
+GO:0007589,body fluid secretion,1,1,0.02,0.0244,0.0399
+GO:0008631,intrinsic apoptotic signaling pathway in...,1,1,0.02,0.0244,0.0399
+GO:0010366,negative regulation of ethylene biosynth...,1,1,0.02,0.0244,0.0399
+GO:0019221,cytokine-mediated signaling pathway,1,1,0.02,0.0244,0.0399
+GO:0019605,butyrate metabolic process,1,1,0.02,0.0244,0.0399
+GO:0022600,digestive system process,1,1,0.02,0.0244,0.0399
+GO:0030157,pancreatic juice secretion,1,1,0.02,0.0244,0.0399
+GO:0030335,positive regulation of cell migration,1,1,0.02,0.0244,0.0399
+GO:0031102,neuron projection regeneration,1,1,0.02,0.0244,0.0399
+GO:0031103,axon regeneration,1,1,0.02,0.0244,0.0399
+GO:0031336,negative regulation of sulfur amino acid...,1,1,0.02,0.0244,0.0399
+GO:0031960,response to corticosteroid,1,1,0.02,0.0244,0.0399
+GO:0032410,negative regulation of transporter activ...,1,1,0.02,0.0244,0.0399
+GO:0032413,negative regulation of ion transmembrane...,1,1,0.02,0.0244,0.0399
+GO:0032891,negative regulation of organic acid tran...,1,1,0.02,0.0244,0.0399
+GO:0032941,secretion by tissue,1,1,0.02,0.0244,0.0399
+GO:0033239,negative regulation of cellular amine me...,1,1,0.02,0.0244,0.0399
+GO:0034763,negative regulation of transmembrane tra...,1,1,0.02,0.0244,0.0399
+GO:0034766,negative regulation of ion transmembrane...,1,1,0.02,0.0244,0.0399
+GO:0036228,protein localization to nuclear inner me...,1,1,0.02,0.0244,0.0399
+GO:0036438,maintenance of lens transparency,1,1,0.02,0.0244,0.0399
+GO:0038146,chemokine (C-X-C motif) ligand 12 signal...,1,1,0.02,0.0244,0.0399
+GO:0044058,regulation of digestive system process,1,1,0.02,0.0244,0.0399
+GO:0045763,negative regulation of cellular amino ac...,1,1,0.02,0.0244,0.0399
+GO:0046459,short-chain fatty acid metabolic process,1,1,0.02,0.0244,0.0399
+GO:0048678,response to axon injury,1,1,0.02,0.0244,0.0399
+GO:0048679,regulation of axon regeneration,1,1,0.02,0.0244,0.0399
+GO:0048680,positive regulation of axon regeneration,1,1,0.02,0.0244,0.0399
+GO:0050878,regulation of body fluid levels,1,1,0.02,0.0244,0.0399
+GO:0051096,positive regulation of helicase activity,1,1,0.02,0.0244,0.0399
+GO:0051175,negative regulation of sulfur metabolic ...,1,1,0.02,0.0244,0.0399
+GO:0051385,response to mineralocorticoid,1,1,0.02,0.0244,0.0399
+GO:0060457,negative regulation of digestive system ...,1,1,0.02,0.0244,0.0399
+GO:0061564,axon development,1,1,0.02,0.0244,0.0399
+GO:0061620,glycolytic process through glucose-6-pho...,1,1,0.02,0.0244,0.0399
+GO:0061621,canonical glycolysis,1,1,0.02,0.0244,0.0399
+GO:0061718,glucose catabolic process to pyruvate,1,1,0.02,0.0244,0.0399
+GO:0070098,chemokine-mediated signaling pathway,1,1,0.02,0.0244,0.0399
+GO:0070570,regulation of neuron projection regenera...,1,1,0.02,0.0244,0.0399
+GO:0070572,positive regulation of neuron projection...,1,1,0.02,0.0244,0.0399
+GO:0090058,metaxylem development,1,1,0.02,0.0244,0.0399
+GO:0090186,regulation of pancreatic juice secretion,1,1,0.02,0.0244,0.0399
+GO:0090188,negative regulation of pancreatic juice ...,1,1,0.02,0.0244,0.0399
+GO:0090435,protein localization to nuclear envelope,1,1,0.02,0.0244,0.0399
+GO:1900909,negative regulation of olefin metabolic ...,1,1,0.02,0.0244,0.0399
+GO:1900912,negative regulation of olefin biosynthet...,1,1,0.02,0.0244,0.0399
+GO:1903036,positive regulation of response to wound...,1,1,0.02,0.0244,0.0399
+GO:1903792,negative regulation of anion transport,1,1,0.02,0.0244,0.0399
+GO:1903960,negative regulation of anion transmembra...,1,1,0.02,0.0244,0.0399
+GO:1904044,response to aldosterone,1,1,0.02,0.0244,0.0399
+GO:1905407,regulation of creatine transmembrane tra...,1,1,0.02,0.0244,0.0399
+GO:1905408,negative regulation of creatine transmem...,1,1,0.02,0.0244,0.0399
+GO:1990868,response to chemokine,1,1,0.02,0.0244,0.0399
+GO:1990869,cellular response to chemokine,1,1,0.02,0.0244,0.0399
+GO:2000033,regulation of seed dormancy process,1,1,0.02,0.0244,0.0399
+GO:2000034,regulation of seed maturation,1,1,0.02,0.0244,0.0399
+GO:2001024,negative regulation of response to drug,1,1,0.02,0.0244,0.0399
+GO:0031400,negative regulation of protein modificat...,27,3,0.66,0.0272,0.044
+GO:0010257,NADH dehydrogenase complex assembly,11,2,0.27,0.0282,0.0447
+GO:0032981,mitochondrial respiratory chain complex ...,11,2,0.27,0.0282,0.0447
+GO:0019953,sexual reproduction,29,3,0.71,0.0329,0.0481
+GO:0009127,purine nucleoside monophosphate biosynth...,50,4,1.22,0.0332,0.0481
+GO:0009168,purine ribonucleoside monophosphate bios...,50,4,1.22,0.0332,0.0481
+GO:0030148,sphingolipid biosynthetic process,12,2,0.29,0.0333,0.0481
+GO:0051348,negative regulation of transferase activ...,12,2,0.29,0.0333,0.0481
+GO:1900034,regulation of cellular response to heat,12,2,0.29,0.0333,0.0481
+GO:0044703,multi-organism reproductive process,30,3,0.73,0.0359,0.0481
+GO:0006915,apoptotic process,13,2,0.32,0.0387,0.0481
+GO:0009126,purine nucleoside monophosphate metaboli...,53,4,1.29,0.0399,0.0481
+GO:0009167,purine ribonucleoside monophosphate meta...,53,4,1.29,0.0399,0.0481
+GO:0070475,rRNA base methylation,14,2,0.34,0.0444,0.0481
+GO:0001894,tissue homeostasis,2,1,0.05,0.0481,0.0481
+GO:0007019,microtubule depolymerization,2,1,0.05,0.0481,0.0481
+GO:0010720,positive regulation of cell development,2,1,0.05,0.0481,0.0481
+GO:0010975,regulation of neuron projection developm...,2,1,0.05,0.0481,0.0481
+GO:0010976,positive regulation of neuron projection...,2,1,0.05,0.0481,0.0481
+GO:0014812,muscle cell migration,2,1,0.05,0.0481,0.0481
+GO:0014909,smooth muscle cell migration,2,1,0.05,0.0481,0.0481
+GO:0014910,regulation of smooth muscle cell migrati...,2,1,0.05,0.0481,0.0481
+GO:0014912,negative regulation of smooth muscle cel...,2,1,0.05,0.0481,0.0481
+GO:0015012,heparan sulfate proteoglycan biosyntheti...,2,1,0.05,0.0481,0.0481
+GO:0015015,heparan sulfate proteoglycan biosyntheti...,2,1,0.05,0.0481,0.0481
+GO:0016139,glycoside catabolic process,2,1,0.05,0.0481,0.0481
+GO:0019320,hexose catabolic process,2,1,0.05,0.0481,0.0481
+GO:0022008,neurogenesis,2,1,0.05,0.0481,0.0481
+GO:0030166,proteoglycan biosynthetic process,2,1,0.05,0.0481,0.0481
+GO:0030182,neuron differentiation,2,1,0.05,0.0481,0.0481
+GO:0030201,heparan sulfate proteoglycan metabolic p...,2,1,0.05,0.0481,0.0481
+GO:0030388,fructose 1,6-bisphosphate metabolic proc...,2,1,0.05,0.0481,0.0481
+GO:0031175,neuron projection development,2,1,0.05,0.0481,0.0481
+GO:0031346,positive regulation of cell projection o...,2,1,0.05,0.0481,0.0481
+GO:0032351,negative regulation of hormone metabolic...,2,1,0.05,0.0481,0.0481
+GO:0032353,negative regulation of hormone biosynthe...,2,1,0.05,0.0481,0.0481
+GO:0034097,response to cytokine,2,1,0.05,0.0481,0.0481
+GO:0040017,positive regulation of locomotion,2,1,0.05,0.0481,0.0481
+GO:0040034,regulation of development, heterochronic,2,1,0.05,0.0481,0.0481
+GO:0043247,telomere maintenance in response to DNA ...,2,1,0.05,0.0481,0.0481
+GO:0045664,regulation of neuron differentiation,2,1,0.05,0.0481,0.0481
+GO:0045666,positive regulation of neuron differenti...,2,1,0.05,0.0481,0.0481
+GO:0048506,regulation of timing of meristematic pha...,2,1,0.05,0.0481,0.0481
+GO:0048510,regulation of timing of transition from ...,2,1,0.05,0.0481,0.0481
+GO:0048666,neuron development,2,1,0.05,0.0481,0.0481
+GO:0048699,generation of neurons,2,1,0.05,0.0481,0.0481
+GO:0048871,multicellular organismal homeostasis,2,1,0.05,0.0481,0.0481
+GO:0050767,regulation of neurogenesis,2,1,0.05,0.0481,0.0481
+GO:0050769,positive regulation of neurogenesis,2,1,0.05,0.0481,0.0481
+GO:0051048,negative regulation of secretion,2,1,0.05,0.0481,0.0481
+GO:0051272,positive regulation of cellular componen...,2,1,0.05,0.0481,0.0481
+GO:0051591,response to cAMP,2,1,0.05,0.0481,0.0481
+GO:0051960,regulation of nervous system development,2,1,0.05,0.0481,0.0481
+GO:0051962,positive regulation of nervous system de...,2,1,0.05,0.0481,0.0481
+GO:0071266,'de novo' L-methionine biosynthetic proc...,2,1,0.05,0.0481,0.0481
+GO:0071320,cellular response to cAMP,2,1,0.05,0.0481,0.0481
+GO:0071345,cellular response to cytokine stimulus,2,1,0.05,0.0481,0.0481
+GO:0097698,telomere maintenance via base-excision r...,2,1,0.05,0.0481,0.0481
+GO:1900087,positive regulation of G1/S transition o...,2,1,0.05,0.0481,0.0481
+GO:1901654,response to ketone,2,1,0.05,0.0481,0.0481
+GO:1902626,assembly of large subunit precursor of p...,2,1,0.05,0.0481,0.0481
+GO:1902808,positive regulation of cell cycle G1/S p...,2,1,0.05,0.0481,0.0481
+GO:1903338,regulation of cell wall organization or ...,2,1,0.05,0.0481,0.0481
+GO:2000147,positive regulation of cell motility,2,1,0.05,0.0481,0.0481

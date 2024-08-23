@@ -1,0 +1,50 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006891,intra-Golgi vesicle-mediated transport,22,3,0.2,0.0011,0.0261
+GO:0006888,endoplasmic reticulum to Golgi vesicle-m...,84,5,0.78,0.0011,0.0261
+GO:0048193,Golgi vesicle transport,134,6,1.25,0.0016,0.0261
+GO:0006890,retrograde vesicle-mediated transport, G...,35,3,0.33,0.0042,0.0461
+GO:0019336,phenol-containing compound catabolic pro...,1,1,0.01,0.0093,0.0461
+GO:1901999,homogentisate metabolic process,1,1,0.01,0.0093,0.0461
+GO:1902000,homogentisate catabolic process,1,1,0.01,0.0093,0.0461
+GO:0006814,sodium ion transport,20,2,0.19,0.0147,0.0461
+GO:0048194,Golgi vesicle budding,22,2,0.2,0.0176,0.0461
+GO:0090114,COPII-coated vesicle budding,22,2,0.2,0.0176,0.0461
+GO:0010205,photoinhibition,2,1,0.02,0.0185,0.0461
+GO:0032008,positive regulation of TOR signaling,2,1,0.02,0.0185,0.0461
+GO:0036102,leukotriene B4 metabolic process,2,1,0.02,0.0185,0.0461
+GO:0043155,negative regulation of photosynthesis, l...,2,1,0.02,0.0185,0.0461
+GO:1904263,positive regulation of TORC1 signaling,2,1,0.02,0.0185,0.0461
+GO:1905156,negative regulation of photosynthesis,2,1,0.02,0.0185,0.0461
+GO:2001300,lipoxin metabolic process,2,1,0.02,0.0185,0.0461
+GO:2001302,lipoxin A4 metabolic process,2,1,0.02,0.0185,0.0461
+GO:0006900,vesicle budding from membrane,26,2,0.24,0.0242,0.0461
+GO:0006572,tyrosine catabolic process,3,1,0.03,0.0277,0.0461
+GO:0006692,prostanoid metabolic process,3,1,0.03,0.0277,0.0461
+GO:0006693,prostaglandin metabolic process,3,1,0.03,0.0277,0.0461
+GO:0018026,peptidyl-lysine monomethylation,3,1,0.03,0.0277,0.0461
+GO:0032006,regulation of TOR signaling,3,1,0.03,0.0277,0.0461
+GO:0033559,unsaturated fatty acid metabolic process,3,1,0.03,0.0277,0.0461
+GO:0038202,TORC1 signaling,3,1,0.03,0.0277,0.0461
+GO:1903432,regulation of TORC1 signaling,3,1,0.03,0.0277,0.0461
+GO:0010466,negative regulation of peptidase activit...,29,2,0.27,0.0297,0.0461
+GO:0010951,negative regulation of endopeptidase act...,29,2,0.27,0.0297,0.0461
+GO:0045861,negative regulation of proteolysis,29,2,0.27,0.0297,0.0461
+GO:0052548,regulation of endopeptidase activity,29,2,0.27,0.0297,0.0461
+GO:0052547,regulation of peptidase activity,30,2,0.28,0.0317,0.0461
+GO:0001732,formation of cytoplasmic translation ini...,4,1,0.04,0.0367,0.0461
+GO:0006691,leukotriene metabolic process,4,1,0.04,0.0367,0.0461
+GO:0019509,L-methionine salvage from methylthioaden...,4,1,0.04,0.0367,0.0461
+GO:0043102,amino acid salvage,4,1,0.04,0.0367,0.0461
+GO:0045037,protein import into chloroplast stroma,4,1,0.04,0.0367,0.0461
+GO:0071267,L-methionine salvage,4,1,0.04,0.0367,0.0461
+GO:1902533,positive regulation of intracellular sig...,4,1,0.04,0.0367,0.0461
+GO:0002181,cytoplasmic translation,33,2,0.31,0.0377,0.0462
+GO:0031324,negative regulation of cellular metaboli...,268,6,2.5,0.04,0.0465
+GO:0071398,cellular response to fatty acid,35,2,0.33,0.042,0.0465
+GO:0006657,CDP-choline pathway,5,1,0.05,0.0457,0.0465
+GO:0009903,chloroplast avoidance movement,5,1,0.05,0.0457,0.0465
+GO:0043985,histone H4-R3 methylation,5,1,0.05,0.0457,0.0465
+GO:0045905,positive regulation of translational ter...,5,1,0.05,0.0457,0.0465
+GO:0070077,histone arginine demethylation,5,1,0.05,0.0457,0.0465
+GO:0070079,histone H4-R3 demethylation,5,1,0.05,0.0457,0.0465
+GO:0009067,aspartate family amino acid biosynthetic...,37,2,0.34,0.0465,0.0465

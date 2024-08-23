@@ -1,0 +1,24 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010200,response to chitin,4,1,0.01,0.0073,0.0485
+GO:0032469,endoplasmic reticulum calcium ion homeos...,5,1,0.01,0.0092,0.0485
+GO:0006741,NADP biosynthetic process,8,1,0.01,0.0146,0.0485
+GO:0031929,TOR signaling,12,1,0.02,0.0218,0.0485
+GO:0000165,MAPK cascade,14,1,0.03,0.0254,0.0485
+GO:0006874,cellular calcium ion homeostasis,14,1,0.03,0.0254,0.0485
+GO:0023014,signal transduction by protein phosphory...,14,1,0.03,0.0254,0.0485
+GO:0055074,calcium ion homeostasis,14,1,0.03,0.0254,0.0485
+GO:0019674,NAD metabolic process,17,1,0.03,0.0308,0.0485
+GO:0016575,histone deacetylation,20,1,0.04,0.0361,0.0485
+GO:0072503,cellular divalent inorganic cation homeo...,20,1,0.04,0.0361,0.0485
+GO:0006476,protein deacetylation,21,1,0.04,0.0379,0.0485
+GO:0019432,triglyceride biosynthetic process,23,1,0.04,0.0414,0.0485
+GO:0019359,nicotinamide nucleotide biosynthetic pro...,24,1,0.04,0.0432,0.0485
+GO:0019363,pyridine nucleotide biosynthetic process,24,1,0.04,0.0432,0.0485
+GO:0035601,protein deacylation,24,1,0.04,0.0432,0.0485
+GO:0046460,neutral lipid biosynthetic process,24,1,0.04,0.0432,0.0485
+GO:0046463,acylglycerol biosynthetic process,24,1,0.04,0.0432,0.0485
+GO:0006641,triglyceride metabolic process,25,1,0.05,0.0449,0.0485
+GO:0006638,neutral lipid metabolic process,26,1,0.05,0.0467,0.0485
+GO:0006639,acylglycerol metabolic process,26,1,0.05,0.0467,0.0485
+GO:0098732,macromolecule deacylation,26,1,0.05,0.0467,0.0485
+GO:0006739,NADP metabolic process,27,1,0.05,0.0485,0.0485

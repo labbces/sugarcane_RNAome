@@ -1,0 +1,12 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0046854,phosphatidylinositol phosphorylation,85,1,0.01,0.011,0.0385
+GO:0046834,lipid phosphorylation,88,1,0.01,0.012,0.0385
+GO:0006661,phosphatidylinositol biosynthetic proces...,146,1,0.02,0.019,0.0385
+GO:0030258,lipid modification,162,1,0.02,0.021,0.0385
+GO:0046488,phosphatidylinositol metabolic process,178,1,0.02,0.023,0.0385
+GO:0046474,glycerophospholipid biosynthetic process,199,1,0.03,0.026,0.0385
+GO:0045017,glycerolipid biosynthetic process,228,1,0.03,0.03,0.0385
+GO:0006650,glycerophospholipid metabolic process,236,1,0.03,0.031,0.0385
+GO:0008654,phospholipid biosynthetic process,258,1,0.03,0.033,0.0385
+GO:0046486,glycerolipid metabolic process,268,1,0.04,0.035,0.0385
+GO:0006644,phospholipid metabolic process,316,1,0.04,0.041,0.041

@@ -1,0 +1,31 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0002757,immune response-activating signal transd...,9,1,0.01,0.013,0.0455
+GO:0002758,innate immune response-activating signal...,9,1,0.01,0.013,0.0455
+GO:0002764,immune response-regulating signaling pat...,13,1,0.02,0.018,0.0455
+GO:0006086,acetyl-CoA biosynthetic process from pyr...,13,1,0.02,0.018,0.0455
+GO:0002218,activation of innate immune response,15,1,0.02,0.021,0.0455
+GO:0002253,activation of immune response,15,1,0.02,0.021,0.0455
+GO:0006085,acetyl-CoA biosynthetic process,15,1,0.02,0.021,0.0455
+GO:0035384,thioester biosynthetic process,15,1,0.02,0.021,0.0455
+GO:0071616,acyl-CoA biosynthetic process,15,1,0.02,0.021,0.0455
+GO:0045089,positive regulation of innate immune res...,17,1,0.02,0.024,0.0455
+GO:0051702,interaction with symbiont,17,1,0.02,0.024,0.0455
+GO:0060548,negative regulation of cell death,18,1,0.03,0.025,0.0455
+GO:0002684,positive regulation of immune system pro...,19,1,0.03,0.026,0.0455
+GO:0050778,positive regulation of immune response,19,1,0.03,0.026,0.0455
+GO:0009626,plant-type hypersensitive response,22,1,0.03,0.03,0.0455
+GO:0034050,host programmed cell death induced by sy...,22,1,0.03,0.03,0.0455
+GO:0008380,RNA splicing,206,2,0.29,0.034,0.0455
+GO:0044403,symbiotic process,25,1,0.03,0.034,0.0455
+GO:0006084,acetyl-CoA metabolic process,26,1,0.04,0.036,0.0455
+GO:0033866,nucleoside bisphosphate biosynthetic pro...,26,1,0.04,0.036,0.0455
+GO:0034030,ribonucleoside bisphosphate biosynthetic...,26,1,0.04,0.036,0.0455
+GO:0034033,purine nucleoside bisphosphate biosynthe...,26,1,0.04,0.036,0.0455
+GO:0045088,regulation of innate immune response,26,1,0.04,0.036,0.0455
+GO:0010941,regulation of cell death,29,1,0.04,0.04,0.0455
+GO:0030048,actin filament-based movement,29,1,0.04,0.04,0.0455
+GO:0006637,acyl-CoA metabolic process,30,1,0.04,0.041,0.0455
+GO:0035383,thioester metabolic process,30,1,0.04,0.041,0.0455
+GO:0050776,regulation of immune response,31,1,0.04,0.043,0.0455
+GO:0002682,regulation of immune system process,32,1,0.04,0.044,0.0455
+GO:0002833,positive regulation of response to bioti...,35,1,0.05,0.048,0.048

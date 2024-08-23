@@ -1,0 +1,32 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0032543,mitochondrial translation,10,2,0.01,6.9e-05,0.0021
+GO:0140053,mitochondrial gene expression,22,2,0.03,0.00035,0.0054
+GO:0000025,maltose catabolic process,2,1,0,0.00253,0.0261
+GO:0000023,maltose metabolic process,3,1,0,0.0038,0.0261
+GO:0019346,transsulfuration,4,1,0.01,0.00506,0.0261
+GO:0050667,homocysteine metabolic process,4,1,0.01,0.00506,0.0261
+GO:0009092,homoserine metabolic process,5,1,0.01,0.00633,0.028
+GO:0046352,disaccharide catabolic process,11,1,0.01,0.01387,0.0358
+GO:0003032,detection of oxygen,12,1,0.02,0.01512,0.0358
+GO:0009313,oligosaccharide catabolic process,12,1,0.02,0.01512,0.0358
+GO:0018158,protein oxidation,12,1,0.02,0.01512,0.0358
+GO:0018171,peptidyl-cysteine oxidation,12,1,0.02,0.01512,0.0358
+GO:0070483,detection of hypoxia,12,1,0.02,0.01512,0.0358
+GO:0006412,translation,424,3,0.54,0.01618,0.0358
+GO:0009593,detection of chemical stimulus,14,1,0.02,0.01761,0.036
+GO:0043043,peptide biosynthetic process,447,3,0.57,0.0186,0.036
+GO:0018198,peptidyl-cysteine modification,16,1,0.02,0.02011,0.0367
+GO:0009086,methionine biosynthetic process,18,1,0.02,0.02259,0.0371
+GO:0006555,methionine metabolic process,19,1,0.02,0.02383,0.0371
+GO:0043604,amide biosynthetic process,501,3,0.64,0.02504,0.0371
+GO:0006518,peptide metabolic process,504,3,0.64,0.02543,0.0371
+GO:0051606,detection of stimulus,21,1,0.03,0.02631,0.0371
+GO:0001666,response to hypoxia,24,1,0.03,0.03001,0.0387
+GO:0006534,cysteine metabolic process,24,1,0.03,0.03001,0.0387
+GO:0036293,response to decreased oxygen levels,26,1,0.03,0.03247,0.0387
+GO:0070482,response to oxygen levels,26,1,0.03,0.03247,0.0387
+GO:0043603,cellular amide metabolic process,605,3,0.77,0.04045,0.0464
+GO:0000097,sulfur amino acid biosynthetic process,37,1,0.05,0.0459,0.0474
+GO:0009067,aspartate family amino acid biosynthetic...,37,1,0.05,0.0459,0.0474
+GO:0009069,serine family amino acid metabolic proce...,37,1,0.05,0.0459,0.0474
+GO:0009066,aspartate family amino acid metabolic pr...,39,1,0.05,0.04833,0.0483

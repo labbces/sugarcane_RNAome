@@ -1,0 +1,133 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0051346,negative regulation of hydrolase activit...,42,15,1,1.9e-14,0
+GO:0010466,negative regulation of peptidase activit...,29,13,0.69,3.2e-14,0
+GO:0010951,negative regulation of endopeptidase act...,29,13,0.69,3.2e-14,0
+GO:0045861,negative regulation of proteolysis,29,13,0.69,3.2e-14,0
+GO:0052548,regulation of endopeptidase activity,29,13,0.69,3.2e-14,0
+GO:0052547,regulation of peptidase activity,30,13,0.71,5.5e-14,0
+GO:0043086,negative regulation of catalytic activit...,66,15,1.57,3.1e-11,0
+GO:0044092,negative regulation of molecular functio...,67,15,1.59,3.9e-11,0
+GO:0051336,regulation of hydrolase activity,71,15,1.69,9.6e-11,0
+GO:0030162,regulation of proteolysis,50,13,1.19,1.1e-10,0
+GO:0032269,negative regulation of cellular protein ...,111,16,2.64,8.4e-09,0
+GO:0051248,negative regulation of protein metabolic...,112,16,2.66,9.6e-09,0
+GO:0009611,response to wounding,43,10,1.02,5e-08,0
+GO:0051172,negative regulation of nitrogen compound...,261,19,6.2,1.7e-05,2e-04
+GO:0031324,negative regulation of cellular metaboli...,268,19,6.36,2.5e-05,2e-04
+GO:0010449,root meristem growth,13,4,0.31,0.00019,0.0016
+GO:0032268,regulation of cellular protein metabolic...,269,17,6.39,0.00026,0.002
+GO:0050790,regulation of catalytic activity,303,18,7.2,0.00037,0.0027
+GO:0051246,regulation of protein metabolic process,281,17,6.67,0.00043,0.003
+GO:0010605,negative regulation of macromolecule met...,445,23,10.57,0.00045,0.003
+GO:0065009,regulation of molecular function,313,18,7.43,0.00054,0.0034
+GO:0009892,negative regulation of metabolic process,456,23,10.83,0.00063,0.0038
+GO:0048523,negative regulation of cellular process,386,20,9.17,0.00101,0.0058
+GO:0090329,regulation of DNA-dependent DNA replicat...,11,3,0.26,0.00191,0.0103
+GO:0006022,aminoglycan metabolic process,12,3,0.28,0.0025,0.0103
+GO:0006026,aminoglycan catabolic process,12,3,0.28,0.0025,0.0103
+GO:0006030,chitin metabolic process,12,3,0.28,0.0025,0.0103
+GO:0006032,chitin catabolic process,12,3,0.28,0.0025,0.0103
+GO:0010082,regulation of root meristem growth,12,3,0.28,0.0025,0.0103
+GO:0046348,amino sugar catabolic process,12,3,0.28,0.0025,0.0103
+GO:1901071,glucosamine-containing compound metaboli...,12,3,0.28,0.0025,0.0103
+GO:1901072,glucosamine-containing compound cataboli...,12,3,0.28,0.0025,0.0103
+GO:0006563,L-serine metabolic process,25,4,0.59,0.00268,0.0107
+GO:0035266,meristem growth,26,4,0.62,0.0031,0.012
+GO:0006275,regulation of DNA replication,13,3,0.31,0.00319,0.012
+GO:0010190,cytochrome b6f complex assembly,4,2,0.09,0.00327,0.012
+GO:0006040,amino sugar metabolic process,28,4,0.66,0.00409,0.0146
+GO:0032259,methylation,504,22,11.97,0.00484,0.0168
+GO:0016101,diterpenoid metabolic process,30,4,0.71,0.00528,0.017
+GO:0032469,endoplasmic reticulum calcium ion homeos...,5,2,0.12,0.00537,0.017
+GO:0032875,regulation of DNA endoreduplication,5,2,0.12,0.00537,0.017
+GO:0080090,regulation of primary metabolic process,766,30,18.19,0.0054,0.017
+GO:0017144,drug metabolic process,273,14,6.48,0.00597,0.0183
+GO:0051171,regulation of nitrogen compound metaboli...,742,29,17.62,0.00635,0.019
+GO:0006545,glycine biosynthetic process,6,2,0.14,0.00792,0.0213
+GO:0019264,glycine biosynthetic process from serine,6,2,0.14,0.00792,0.0213
+GO:0035442,dipeptide transmembrane transport,6,2,0.14,0.00792,0.0213
+GO:0042127,regulation of cell population proliferat...,6,2,0.14,0.00792,0.0213
+GO:0042938,dipeptide transport,6,2,0.14,0.00792,0.0213
+GO:0035672,oligopeptide transmembrane transport,53,5,1.26,0.00833,0.022
+GO:0048519,negative regulation of biological proces...,599,24,14.22,0.00932,0.024
+GO:0031323,regulation of cellular metabolic process,799,30,18.97,0.00952,0.024
+GO:0016998,cell wall macromolecule catabolic proces...,19,3,0.45,0.00972,0.024
+GO:0060255,regulation of macromolecule metabolic pr...,937,34,22.25,0.00982,0.024
+GO:0006544,glycine metabolic process,7,2,0.17,0.01092,0.0245
+GO:0008283,cell population proliferation,7,2,0.17,0.01092,0.0245
+GO:0042136,neurotransmitter biosynthetic process,7,2,0.17,0.01092,0.0245
+GO:0042939,tripeptide transport,7,2,0.17,0.01092,0.0245
+GO:0009069,serine family amino acid metabolic proce...,37,4,0.88,0.01117,0.0245
+GO:0044786,cell cycle DNA replication,20,3,0.47,0.01124,0.0245
+GO:0006508,proteolysis,878,32,20.85,0.01134,0.0245
+GO:0035999,tetrahydrofolate interconversion,8,2,0.19,0.01433,0.0302
+GO:0010075,regulation of meristem growth,22,3,0.52,0.01466,0.0302
+GO:2000280,regulation of root development,22,3,0.52,0.01466,0.0302
+GO:0031407,oxylipin metabolic process,23,3,0.55,0.01656,0.033
+GO:0031408,oxylipin biosynthetic process,23,3,0.55,0.01656,0.033
+GO:0001510,RNA methylation,111,7,2.64,0.01675,0.033
+GO:0016102,diterpenoid biosynthetic process,24,3,0.57,0.0186,0.0337
+GO:0034754,cellular hormone metabolic process,25,3,0.59,0.02078,0.0337
+GO:0016053,organic acid biosynthetic process,350,15,8.31,0.02086,0.0337
+GO:0046394,carboxylic acid biosynthetic process,350,15,8.31,0.02086,0.0337
+GO:0000292,RNA fragment catabolic process,1,1,0.02,0.02375,0.0337
+GO:0001560,regulation of cell growth by extracellul...,1,1,0.02,0.02375,0.0337
+GO:0001906,cell killing,1,1,0.02,0.02375,0.0337
+GO:0010586,miRNA metabolic process,1,1,0.02,0.02375,0.0337
+GO:0010587,miRNA catabolic process,1,1,0.02,0.02375,0.0337
+GO:0019428,allantoin biosynthetic process,1,1,0.02,0.02375,0.0337
+GO:0031032,actomyosin structure organization,1,1,0.02,0.02375,0.0337
+GO:0031640,killing of cells of other organism,1,1,0.02,0.02375,0.0337
+GO:0033197,response to vitamin E,1,1,0.02,0.02375,0.0337
+GO:0034394,protein localization to cell surface,1,1,0.02,0.02375,0.0337
+GO:0035864,response to potassium ion,1,1,0.02,0.02375,0.0337
+GO:0046825,regulation of protein export from nucleu...,1,1,0.02,0.02375,0.0337
+GO:0060250,germ-line stem-cell niche homeostasis,1,1,0.02,0.02375,0.0337
+GO:0070478,nuclear-transcribed mRNA catabolic proce...,1,1,0.02,0.02375,0.0337
+GO:0071731,response to nitric oxide,1,1,0.02,0.02375,0.0337
+GO:0097366,response to bronchodilator,1,1,0.02,0.02375,0.0337
+GO:0110102,chloroplast ribulose bisphosphate carbox...,1,1,0.02,0.02375,0.0337
+GO:1900378,positive regulation of secondary metabol...,1,1,0.02,0.02375,0.0337
+GO:1900704,regulation of siderophore biosynthetic p...,1,1,0.02,0.02375,0.0337
+GO:1900706,positive regulation of siderophore biosy...,1,1,0.02,0.02375,0.0337
+GO:2000197,regulation of ribonucleoprotein complex ...,1,1,0.02,0.02375,0.0337
+GO:2000200,regulation of ribosomal subunit export f...,1,1,0.02,0.02375,0.0337
+GO:0070588,calcium ion transmembrane transport,48,4,1.14,0.02688,0.0377
+GO:0019222,regulation of metabolic process,1015,34,24.1,0.02826,0.0393
+GO:0006816,calcium ion transport,50,4,1.19,0.03066,0.0417
+GO:0044036,cell wall macromolecule metabolic proces...,50,4,1.19,0.03066,0.0417
+GO:0042023,DNA endoreduplication,12,2,0.28,0.03173,0.0423
+GO:0046185,aldehyde catabolic process,12,2,0.28,0.03173,0.0423
+GO:0006857,oligopeptide transport,75,5,1.78,0.03292,0.0435
+GO:0009070,serine family amino acid biosynthetic pr...,30,3,0.71,0.03363,0.0435
+GO:0048509,regulation of meristem development,30,3,0.71,0.03363,0.0435
+GO:0000154,rRNA modification,31,3,0.74,0.03659,0.0469
+GO:0046364,monosaccharide biosynthetic process,13,2,0.31,0.03692,0.0469
+GO:0048507,meristem development,79,5,1.88,0.03986,0.0482
+GO:0098754,detoxification,134,7,3.18,0.04103,0.0482
+GO:0010073,meristem maintenance,55,4,1.31,0.04145,0.0482
+GO:0015698,inorganic anion transport,80,5,1.9,0.04172,0.0482
+GO:0006874,cellular calcium ion homeostasis,14,2,0.33,0.04241,0.0482
+GO:0055074,calcium ion homeostasis,14,2,0.33,0.04241,0.0482
+GO:0044283,small molecule biosynthetic process,486,18,11.54,0.04319,0.0482
+GO:1990748,cellular detoxification,108,6,2.56,0.044,0.0482
+GO:0006437,tyrosyl-tRNA aminoacylation,2,1,0.05,0.04693,0.0482
+GO:0007000,nucleolus organization,2,1,0.05,0.04693,0.0482
+GO:0008284,positive regulation of cell population p...,2,1,0.05,0.04693,0.0482
+GO:0009835,fruit ripening,2,1,0.05,0.04693,0.0482
+GO:0017126,nucleologenesis,2,1,0.05,0.04693,0.0482
+GO:0032239,regulation of nucleobase-containing comp...,2,1,0.05,0.04693,0.0482
+GO:0032876,negative regulation of DNA endoreduplica...,2,1,0.05,0.04693,0.0482
+GO:0036261,7-methylguanosine cap hypermethylation,2,1,0.05,0.04693,0.0482
+GO:0045901,positive regulation of translational elo...,2,1,0.05,0.04693,0.0482
+GO:0046822,regulation of nucleocytoplasmic transpor...,2,1,0.05,0.04693,0.0482
+GO:0046831,regulation of RNA export from nucleus,2,1,0.05,0.04693,0.0482
+GO:0051194,positive regulation of cofactor metaboli...,2,1,0.05,0.04693,0.0482
+GO:0090069,regulation of ribosome biogenesis,2,1,0.05,0.04693,0.0482
+GO:1904276,regulation of wax biosynthetic process,2,1,0.05,0.04693,0.0482
+GO:1904278,positive regulation of wax biosynthetic ...,2,1,0.05,0.04693,0.0482
+GO:0097237,cellular response to toxic substance,110,6,2.61,0.04738,0.0482
+GO:0001505,regulation of neurotransmitter levels,15,2,0.36,0.04818,0.0482
+GO:0034250,positive regulation of cellular amide me...,15,2,0.36,0.04818,0.0482
+GO:0042133,neurotransmitter metabolic process,15,2,0.36,0.04818,0.0482
+GO:0046653,tetrahydrofolate metabolic process,15,2,0.36,0.04818,0.0482

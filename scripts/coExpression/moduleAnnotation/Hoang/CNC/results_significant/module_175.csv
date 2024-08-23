@@ -1,0 +1,66 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006384,transcription initiation from RNA polyme...,11,2,0.06,0.0014,0.0154
+GO:0048571,long-day photoperiodism,13,2,0.07,0.002,0.0154
+GO:0048574,long-day photoperiodism, flowering,13,2,0.07,0.002,0.0154
+GO:0000272,polysaccharide catabolic process,66,3,0.34,0.005,0.0154
+GO:0002128,tRNA nucleoside ribose methylation,1,1,0.01,0.0052,0.0154
+GO:0010155,regulation of proton transport,1,1,0.01,0.0052,0.0154
+GO:0032411,positive regulation of transporter activ...,1,1,0.01,0.0052,0.0154
+GO:0032414,positive regulation of ion transmembrane...,1,1,0.01,0.0052,0.0154
+GO:0033358,UDP-L-arabinose biosynthetic process,1,1,0.01,0.0052,0.0154
+GO:0034764,positive regulation of transmembrane tra...,1,1,0.01,0.0052,0.0154
+GO:0034767,positive regulation of ion transmembrane...,1,1,0.01,0.0052,0.0154
+GO:0043270,positive regulation of ion transport,1,1,0.01,0.0052,0.0154
+GO:0045226,extracellular polysaccharide biosyntheti...,1,1,0.01,0.0052,0.0154
+GO:0045227,capsule polysaccharide biosynthetic proc...,1,1,0.01,0.0052,0.0154
+GO:0045230,capsule organization,1,1,0.01,0.0052,0.0154
+GO:0046379,extracellular polysaccharide metabolic p...,1,1,0.01,0.0052,0.0154
+GO:1904062,regulation of cation transmembrane trans...,1,1,0.01,0.0052,0.0154
+GO:1904064,positive regulation of cation transmembr...,1,1,0.01,0.0052,0.0154
+GO:1904732,regulation of electron transfer activity,1,1,0.01,0.0052,0.0154
+GO:1904734,positive regulation of electron transfer...,1,1,0.01,0.0052,0.0154
+GO:1904959,regulation of cytochrome-c oxidase activ...,1,1,0.01,0.0052,0.0154
+GO:1904960,positive regulation of cytochrome-c oxid...,1,1,0.01,0.0052,0.0154
+GO:0033108,mitochondrial respiratory chain complex ...,22,2,0.11,0.0058,0.0164
+GO:0009251,glucan catabolic process,23,2,0.12,0.0063,0.0164
+GO:0044247,cellular polysaccharide catabolic proces...,23,2,0.12,0.0063,0.0164
+GO:0009312,oligosaccharide biosynthetic process,79,3,0.41,0.0082,0.0205
+GO:0033356,UDP-L-arabinose metabolic process,2,1,0.01,0.0104,0.0233
+GO:0051341,regulation of oxidoreductase activity,2,1,0.01,0.0104,0.0233
+GO:0051353,positive regulation of oxidoreductase ac...,2,1,0.01,0.0104,0.0233
+GO:0006383,transcription by RNA polymerase III,35,2,0.18,0.0143,0.0296
+GO:0005992,trehalose biosynthetic process,36,2,0.19,0.0151,0.0296
+GO:0022898,regulation of transmembrane transporter ...,3,1,0.02,0.0155,0.0296
+GO:0032412,regulation of ion transmembrane transpor...,3,1,0.02,0.0155,0.0296
+GO:0048579,negative regulation of long-day photoper...,3,1,0.02,0.0155,0.0296
+GO:0005991,trehalose metabolic process,38,2,0.2,0.0167,0.0302
+GO:0048573,photoperiodism, flowering,38,2,0.2,0.0167,0.0302
+GO:0009648,photoperiodism,41,2,0.21,0.0193,0.0328
+GO:0032409,regulation of transporter activity,4,1,0.02,0.0207,0.0328
+GO:0035067,negative regulation of histone acetylati...,4,1,0.02,0.0207,0.0328
+GO:1901984,negative regulation of protein acetylati...,4,1,0.02,0.0207,0.0328
+GO:2000757,negative regulation of peptidyl-lysine a...,4,1,0.02,0.0207,0.0328
+GO:0009311,oligosaccharide metabolic process,116,3,0.6,0.0228,0.0348
+GO:0010228,vegetative to reproductive phase transit...,45,2,0.23,0.023,0.0348
+GO:0031057,negative regulation of histone modificat...,5,1,0.03,0.0258,0.0364
+GO:1905268,negative regulation of chromatin organiz...,5,1,0.03,0.0258,0.0364
+GO:0006475,internal protein amino acid acetylation,52,2,0.27,0.0301,0.0364
+GO:0016573,histone acetylation,52,2,0.27,0.0301,0.0364
+GO:0018393,internal peptidyl-lysine acetylation,52,2,0.27,0.0301,0.0364
+GO:0018394,peptidyl-lysine acetylation,52,2,0.27,0.0301,0.0364
+GO:0006882,cellular zinc ion homeostasis,6,1,0.03,0.0308,0.0364
+GO:0008535,respiratory chain complex IV assembly,6,1,0.03,0.0308,0.0364
+GO:0033617,mitochondrial cytochrome c oxidase assem...,6,1,0.03,0.0308,0.0364
+GO:0035065,regulation of histone acetylation,6,1,0.03,0.0308,0.0364
+GO:1901983,regulation of protein acetylation,6,1,0.03,0.0308,0.0364
+GO:2000756,regulation of peptidyl-lysine acetylatio...,6,1,0.03,0.0308,0.0364
+GO:0044275,cellular carbohydrate catabolic process,56,2,0.29,0.0345,0.04
+GO:0048586,regulation of long-day photoperiodism, f...,7,1,0.04,0.0359,0.0409
+GO:0006473,protein acetylation,61,2,0.32,0.0403,0.0443
+GO:0046351,disaccharide biosynthetic process,61,2,0.32,0.0403,0.0443
+GO:0051050,positive regulation of transport,8,1,0.04,0.0409,0.0443
+GO:0043543,protein acylation,64,2,0.33,0.0439,0.0459
+GO:0000462,maturation of SSU-rRNA from tricistronic...,9,1,0.05,0.0459,0.0459
+GO:0002757,immune response-activating signal transd...,9,1,0.05,0.0459,0.0459
+GO:0002758,innate immune response-activating signal...,9,1,0.05,0.0459,0.0459
+GO:2001289,lipid X metabolic process,9,1,0.05,0.0459,0.0459

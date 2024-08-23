@@ -1,0 +1,107 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0097359,UDP-glucosylation,4,2,0.06,0.0014,0.0405
+GO:0051274,beta-glucan biosynthetic process,110,7,1.68,0.0015,0.0405
+GO:0090501,RNA phosphodiester bond hydrolysis,182,9,2.78,0.002,0.0405
+GO:0051273,beta-glucan metabolic process,122,7,1.86,0.0027,0.0405
+GO:0009250,glucan biosynthetic process,157,8,2.4,0.0029,0.0405
+GO:0033692,cellular polysaccharide biosynthetic pro...,176,8,2.69,0.0058,0.0405
+GO:0009225,nucleotide-sugar metabolic process,48,4,0.73,0.0061,0.0405
+GO:0006011,UDP-glucose metabolic process,8,2,0.12,0.0061,0.0405
+GO:0030244,cellulose biosynthetic process,79,5,1.21,0.0072,0.0405
+GO:0000469,cleavage involved in rRNA processing,28,3,0.43,0.0087,0.0405
+GO:0000271,polysaccharide biosynthetic process,191,8,2.92,0.0093,0.0405
+GO:0015969,guanosine tetraphosphate metabolic proce...,10,2,0.15,0.0096,0.0405
+GO:0033865,nucleoside bisphosphate metabolic proces...,55,4,0.84,0.0099,0.0405
+GO:0033875,ribonucleoside bisphosphate metabolic pr...,55,4,0.84,0.0099,0.0405
+GO:0034032,purine nucleoside bisphosphate metabolic...,55,4,0.84,0.0099,0.0405
+GO:0006073,cellular glucan metabolic process,197,8,3.01,0.011,0.0405
+GO:0044042,glucan metabolic process,197,8,3.01,0.011,0.0405
+GO:0034035,purine ribonucleoside bisphosphate metab...,11,2,0.17,0.0117,0.0405
+GO:0030243,cellulose metabolic process,91,5,1.39,0.0129,0.0405
+GO:0007033,vacuole organization,33,3,0.5,0.0137,0.0405
+GO:0000461,endonucleolytic cleavage to generate mat...,1,1,0.02,0.0153,0.0405
+GO:0002029,desensitization of G protein-coupled rec...,1,1,0.02,0.0153,0.0405
+GO:0002031,G protein-coupled receptor internalizati...,1,1,0.02,0.0153,0.0405
+GO:0002090,regulation of receptor internalization,1,1,0.02,0.0153,0.0405
+GO:0002091,negative regulation of receptor internal...,1,1,0.02,0.0153,0.0405
+GO:0008277,regulation of G protein-coupled receptor...,1,1,0.02,0.0153,0.0405
+GO:0022401,negative adaptation of signaling pathway,1,1,0.02,0.0153,0.0405
+GO:0023058,adaptation of signaling pathway,1,1,0.02,0.0153,0.0405
+GO:0030961,peptidyl-arginine hydroxylation,1,1,0.02,0.0153,0.0405
+GO:0031623,receptor internalization,1,1,0.02,0.0153,0.0405
+GO:0045744,negative regulation of G protein-coupled...,1,1,0.02,0.0153,0.0405
+GO:0045745,positive regulation of G protein-coupled...,1,1,0.02,0.0153,0.0405
+GO:0045806,negative regulation of endocytosis,1,1,0.02,0.0153,0.0405
+GO:0048261,negative regulation of receptor-mediated...,1,1,0.02,0.0153,0.0405
+GO:1900186,negative regulation of clathrin-dependen...,1,1,0.02,0.0153,0.0405
+GO:1903069,regulation of ER-associated ubiquitin-de...,1,1,0.02,0.0153,0.0405
+GO:1903071,positive regulation of ER-associated ubi...,1,1,0.02,0.0153,0.0405
+GO:1904020,regulation of G protein-coupled receptor...,1,1,0.02,0.0153,0.0405
+GO:1904021,negative regulation of G protein-coupled...,1,1,0.02,0.0153,0.0405
+GO:2000785,regulation of autophagosome assembly,1,1,0.02,0.0153,0.0405
+GO:0015031,protein transport,735,19,11.22,0.0185,0.0465
+GO:0006353,DNA-templated transcription, termination,37,3,0.56,0.0187,0.0465
+GO:0048468,cell development,39,3,0.6,0.0215,0.0465
+GO:0055086,nucleobase-containing small molecule met...,453,13,6.91,0.0226,0.0465
+GO:0044264,cellular polysaccharide metabolic proces...,225,8,3.43,0.0227,0.0465
+GO:0045184,establishment of protein localization,755,19,11.52,0.0236,0.0465
+GO:0007017,microtubule-based process,234,8,3.57,0.0278,0.0465
+GO:0090502,RNA phosphodiester bond hydrolysis, endo...,112,5,1.71,0.0287,0.0465
+GO:0000025,maltose catabolic process,2,1,0.03,0.0303,0.0465
+GO:0015837,amine transport,2,1,0.03,0.0303,0.0465
+GO:0016241,regulation of macroautophagy,2,1,0.03,0.0303,0.0465
+GO:0019310,inositol catabolic process,2,1,0.03,0.0303,0.0465
+GO:0019433,triglyceride catabolic process,2,1,0.03,0.0303,0.0465
+GO:0032973,amino acid export across plasma membrane,2,1,0.03,0.0303,0.0465
+GO:0043112,receptor metabolic process,2,1,0.03,0.0303,0.0465
+GO:0044088,regulation of vacuole organization,2,1,0.03,0.0303,0.0465
+GO:0046320,regulation of fatty acid oxidation,2,1,0.03,0.0303,0.0465
+GO:0046322,negative regulation of fatty acid oxidat...,2,1,0.03,0.0303,0.0465
+GO:0046461,neutral lipid catabolic process,2,1,0.03,0.0303,0.0465
+GO:0046464,acylglycerol catabolic process,2,1,0.03,0.0303,0.0465
+GO:0046503,glycerolipid catabolic process,2,1,0.03,0.0303,0.0465
+GO:0051952,regulation of amine transport,2,1,0.03,0.0303,0.0465
+GO:0051955,regulation of amino acid transport,2,1,0.03,0.0303,0.0465
+GO:0080143,regulation of amino acid export,2,1,0.03,0.0303,0.0465
+GO:0097052,L-kynurenine metabolic process,2,1,0.03,0.0303,0.0465
+GO:1901562,response to paraquat,2,1,0.03,0.0303,0.0465
+GO:1903789,regulation of amino acid transmembrane t...,2,1,0.03,0.0303,0.0465
+GO:1904821,chloroplast disassembly,2,1,0.03,0.0303,0.0465
+GO:0034637,cellular carbohydrate biosynthetic proce...,238,8,3.63,0.0303,0.0465
+GO:0070727,cellular macromolecule localization,781,19,11.92,0.0318,0.0473
+GO:0008104,protein localization,783,19,11.95,0.0325,0.0473
+GO:0006368,transcription elongation from RNA polyme...,19,2,0.29,0.0335,0.0473
+GO:0090305,nucleic acid phosphodiester bond hydroly...,384,11,5.86,0.0347,0.0473
+GO:0015833,peptide transport,789,19,12.04,0.0347,0.0473
+GO:0016051,carbohydrate biosynthetic process,290,9,4.43,0.0348,0.0473
+GO:0042886,amide transport,794,19,12.12,0.0366,0.0473
+GO:0007007,inner mitochondrial membrane organizatio...,20,2,0.31,0.0368,0.0473
+GO:0045039,protein insertion into mitochondrial inn...,20,2,0.31,0.0368,0.0473
+GO:0010150,leaf senescence,21,2,0.32,0.0403,0.0473
+GO:0051204,protein insertion into mitochondrial mem...,21,2,0.32,0.0403,0.0473
+GO:0051606,detection of stimulus,21,2,0.32,0.0403,0.0473
+GO:0090693,plant organ senescence,22,2,0.34,0.0439,0.0473
+GO:0000023,maltose metabolic process,3,1,0.05,0.0451,0.0473
+GO:0000304,response to singlet oxygen,3,1,0.05,0.0451,0.0473
+GO:0009635,response to herbicide,3,1,0.05,0.0451,0.0473
+GO:0009660,amyloplast organization,3,1,0.05,0.0451,0.0473
+GO:0009827,plant-type cell wall modification,3,1,0.05,0.0451,0.0473
+GO:0010343,singlet oxygen-mediated programmed cell ...,3,1,0.05,0.0451,0.0473
+GO:0010363,regulation of plant-type hypersensitive ...,3,1,0.05,0.0451,0.0473
+GO:0032418,lysosome localization,3,1,0.05,0.0451,0.0473
+GO:0032890,regulation of organic acid transport,3,1,0.05,0.0451,0.0473
+GO:0034051,negative regulation of plant-type hypers...,3,1,0.05,0.0451,0.0473
+GO:0045922,negative regulation of fatty acid metabo...,3,1,0.05,0.0451,0.0473
+GO:0051657,maintenance of organelle location,3,1,0.05,0.0451,0.0473
+GO:0071452,cellular response to singlet oxygen,3,1,0.05,0.0451,0.0473
+GO:0097468,programmed cell death in response to rea...,3,1,0.05,0.0451,0.0473
+GO:1904292,regulation of ERAD pathway,3,1,0.05,0.0451,0.0473
+GO:1904294,positive regulation of ERAD pathway,3,1,0.05,0.0451,0.0473
+GO:1905897,regulation of response to endoplasmic re...,3,1,0.05,0.0451,0.0473
+GO:1905898,positive regulation of response to endop...,3,1,0.05,0.0451,0.0473
+GO:1990849,maintenance of vacuolar location,3,1,0.05,0.0451,0.0473
+GO:0044262,cellular carbohydrate metabolic process,452,12,6.9,0.0458,0.0476
+GO:0006928,movement of cell or subcellular componen...,128,5,1.95,0.0467,0.0481
+GO:0042274,ribosomal small subunit biogenesis,23,2,0.35,0.0476,0.0481
+GO:0090151,establishment of protein localization to...,23,2,0.35,0.0476,0.0481
+GO:0048366,leaf development,54,3,0.82,0.0494,0.0494

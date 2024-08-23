@@ -1,0 +1,29 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006165,nucleoside diphosphate phosphorylation,98,3,0.51,0.015,0.046
+GO:0046939,nucleotide phosphorylation,98,3,0.51,0.015,0.046
+GO:0009132,nucleoside diphosphate metabolic process,111,3,0.58,0.02,0.046
+GO:0000491,small nucleolar ribonucleoprotein comple...,5,1,0.03,0.026,0.046
+GO:0000492,box C/D snoRNP assembly,5,1,0.03,0.026,0.046
+GO:0043408,regulation of MAPK cascade,5,1,0.03,0.026,0.046
+GO:0043409,negative regulation of MAPK cascade,5,1,0.03,0.026,0.046
+GO:0048767,root hair elongation,5,1,0.03,0.026,0.046
+GO:0070417,cellular response to cold,5,1,0.03,0.026,0.046
+GO:0006090,pyruvate metabolic process,123,3,0.64,0.026,0.046
+GO:0009205,purine ribonucleoside triphosphate metab...,129,3,0.67,0.03,0.046
+GO:0009144,purine nucleoside triphosphate metabolic...,132,3,0.69,0.032,0.046
+GO:0009150,purine ribonucleotide metabolic process,240,4,1.25,0.037,0.046
+GO:0009199,ribonucleoside triphosphate metabolic pr...,144,3,0.75,0.039,0.046
+GO:0042793,plastid transcription,8,1,0.04,0.041,0.046
+GO:1990937,xylan acetylation,8,1,0.04,0.041,0.046
+GO:0006163,purine nucleotide metabolic process,250,4,1.3,0.042,0.046
+GO:0009141,nucleoside triphosphate metabolic proces...,150,3,0.78,0.044,0.046
+GO:0072521,purine-containing compound metabolic pro...,254,4,1.32,0.044,0.046
+GO:0000077,DNA damage checkpoint,9,1,0.05,0.046,0.046
+GO:0006183,GTP biosynthetic process,9,1,0.05,0.046,0.046
+GO:0006228,UTP biosynthetic process,9,1,0.05,0.046,0.046
+GO:0009229,thiamine diphosphate biosynthetic proces...,9,1,0.05,0.046,0.046
+GO:0010411,xyloglucan metabolic process,9,1,0.05,0.046,0.046
+GO:0042357,thiamine diphosphate metabolic process,9,1,0.05,0.046,0.046
+GO:0042770,signal transduction in response to DNA d...,9,1,0.05,0.046,0.046
+GO:0046039,GTP metabolic process,9,1,0.05,0.046,0.046
+GO:0046051,UTP metabolic process,9,1,0.05,0.046,0.046

@@ -1,0 +1,9 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009773,photosynthetic electron transport in pho...,11,1,0.01,0.012,0.042
+GO:0006268,DNA unwinding involved in DNA replicatio...,15,1,0.02,0.017,0.042
+GO:0009767,photosynthetic electron transport chain,17,1,0.02,0.019,0.042
+GO:0046940,nucleoside monophosphate phosphorylation,19,1,0.02,0.021,0.042
+GO:0030433,ubiquitin-dependent ERAD pathway,34,1,0.04,0.038,0.046
+GO:0036503,ERAD pathway,37,1,0.04,0.041,0.046
+GO:0000724,double-strand break repair via homologou...,41,1,0.05,0.046,0.046
+GO:0000725,recombinational repair,41,1,0.05,0.046,0.046

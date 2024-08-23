@@ -1,0 +1,36 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019919,peptidyl-arginine methylation, to asymme...,1,1,0,0.0025,0.0219
+GO:0033182,regulation of histone ubiquitination,1,1,0,0.0025,0.0219
+GO:0033184,positive regulation of histone ubiquitin...,1,1,0,0.0025,0.0219
+GO:0035247,peptidyl-arginine omega-N-methylation,1,1,0,0.0025,0.0219
+GO:0006729,tetrahydrobiopterin biosynthetic process,2,1,0,0.005,0.0219
+GO:0032978,protein insertion into membrane from inn...,2,1,0,0.005,0.0219
+GO:0032979,protein insertion into mitochondrial inn...,2,1,0,0.005,0.0219
+GO:0046146,tetrahydrobiopterin metabolic process,2,1,0,0.005,0.0219
+GO:0034311,diol metabolic process,3,1,0.01,0.0075,0.0219
+GO:0034312,diol biosynthetic process,3,1,0.01,0.0075,0.0219
+GO:0035246,peptidyl-arginine N-methylation,3,1,0.01,0.0075,0.0219
+GO:0051123,RNA polymerase II preinitiation complex ...,3,1,0.01,0.0075,0.0219
+GO:0031058,positive regulation of histone modificat...,4,1,0.01,0.0099,0.0248
+GO:1905269,positive regulation of chromatin organiz...,4,1,0.01,0.0099,0.0248
+GO:0034969,histone arginine methylation,6,1,0.01,0.0149,0.0326
+GO:0046173,polyol biosynthetic process,6,1,0.01,0.0149,0.0326
+GO:0006177,GMP biosynthetic process,7,1,0.02,0.0173,0.0356
+GO:0016574,histone ubiquitination,8,1,0.02,0.0198,0.0365
+GO:2001252,positive regulation of chromosome organi...,8,1,0.02,0.0198,0.0365
+GO:0009691,cytokinin biosynthetic process,10,1,0.02,0.0247,0.0412
+GO:0046037,GMP metabolic process,10,1,0.02,0.0247,0.0412
+GO:0009690,cytokinin metabolic process,12,1,0.03,0.0295,0.0414
+GO:0042138,meiotic DNA double-strand break formatio...,12,1,0.03,0.0295,0.0414
+GO:0031056,regulation of histone modification,13,1,0.03,0.0319,0.0414
+GO:0031398,positive regulation of protein ubiquitin...,13,1,0.03,0.0319,0.0414
+GO:0070897,transcription preinitiation complex asse...,13,1,0.03,0.0319,0.0414
+GO:1902275,regulation of chromatin organization,13,1,0.03,0.0319,0.0414
+GO:1903322,positive regulation of protein modificat...,14,1,0.03,0.0343,0.0429
+GO:1901070,guanosine-containing compound biosynthet...,16,1,0.04,0.0392,0.0463
+GO:0009788,negative regulation of abscisic acid-act...,18,1,0.04,0.0439,0.0463
+GO:0031396,regulation of protein ubiquitination,18,1,0.04,0.0439,0.0463
+GO:1901420,negative regulation of response to alcoh...,18,1,0.04,0.0439,0.0463
+GO:1905958,negative regulation of cellular response...,18,1,0.04,0.0439,0.0463
+GO:0006108,malate metabolic process,19,1,0.05,0.0463,0.0463
+GO:1903320,regulation of protein modification by sm...,19,1,0.05,0.0463,0.0463

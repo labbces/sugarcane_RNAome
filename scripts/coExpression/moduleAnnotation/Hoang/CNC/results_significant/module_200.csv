@@ -1,0 +1,33 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0030148,sphingolipid biosynthetic process,12,2,0.11,0.0054,0.0334
+GO:0035966,response to topologically incorrect prot...,13,2,0.12,0.0064,0.0334
+GO:0035967,cellular response to topologically incor...,13,2,0.12,0.0064,0.0334
+GO:0010231,maintenance of seed dormancy,1,1,0.01,0.0094,0.0334
+GO:0090153,regulation of sphingolipid biosynthetic ...,1,1,0.01,0.0094,0.0334
+GO:0090155,negative regulation of sphingolipid bios...,1,1,0.01,0.0094,0.0334
+GO:0097437,maintenance of dormancy,1,1,0.01,0.0094,0.0334
+GO:1900060,negative regulation of ceramide biosynth...,1,1,0.01,0.0094,0.0334
+GO:2000303,regulation of ceramide biosynthetic proc...,1,1,0.01,0.0094,0.0334
+GO:0005978,glycogen biosynthetic process,19,2,0.18,0.0134,0.0395
+GO:0005977,glycogen metabolic process,20,2,0.19,0.0148,0.0395
+GO:0006112,energy reserve metabolic process,20,2,0.19,0.0148,0.0395
+GO:0070370,cellular heat acclimation,2,1,0.02,0.0186,0.0414
+GO:1905038,regulation of membrane lipid metabolic p...,2,1,0.02,0.0186,0.0414
+GO:0061077,chaperone-mediated protein folding,23,2,0.22,0.0194,0.0414
+GO:0010569,regulation of double-strand break repair...,3,1,0.03,0.0278,0.0459
+GO:0051055,negative regulation of lipid biosyntheti...,3,1,0.03,0.0278,0.0459
+GO:2000779,regulation of double-strand break repair,3,1,0.03,0.0278,0.0459
+GO:0006289,nucleotide-excision repair,73,3,0.68,0.0311,0.0459
+GO:0006666,3-keto-sphinganine metabolic process,4,1,0.04,0.0369,0.0459
+GO:0010028,xanthophyll cycle,4,1,0.04,0.0369,0.0459
+GO:0051788,response to misfolded protein,4,1,0.04,0.0369,0.0459
+GO:0071218,cellular response to misfolded protein,4,1,0.04,0.0369,0.0459
+GO:0090110,COPII-coated vesicle cargo loading,4,1,0.04,0.0369,0.0459
+GO:0006665,sphingolipid metabolic process,36,2,0.34,0.0446,0.0459
+GO:0000491,small nucleolar ribonucleoprotein comple...,5,1,0.05,0.0459,0.0459
+GO:0000492,box C/D snoRNP assembly,5,1,0.05,0.0459,0.0459
+GO:0009098,leucine biosynthetic process,5,1,0.05,0.0459,0.0459
+GO:0016122,xanthophyll metabolic process,5,1,0.05,0.0459,0.0459
+GO:0035459,vesicle cargo loading,5,1,0.05,0.0459,0.0459
+GO:0045833,negative regulation of lipid metabolic p...,5,1,0.05,0.0459,0.0459
+GO:0071569,protein ufmylation,5,1,0.05,0.0459,0.0459

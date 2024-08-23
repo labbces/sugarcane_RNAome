@@ -1,0 +1,15 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0032011,ARF protein signal transduction,10,1,0,0.0013,0.005
+GO:0032012,regulation of ARF protein signal transdu...,10,1,0,0.0013,0.005
+GO:0046578,regulation of Ras protein signal transdu...,13,1,0,0.0017,0.005
+GO:0051056,regulation of small GTPase mediated sign...,13,1,0,0.0017,0.005
+GO:0007265,Ras protein signal transduction,14,1,0,0.0018,0.005
+GO:0007264,small GTPase mediated signal transductio...,27,1,0,0.0035,0.0082
+GO:1902531,regulation of intracellular signal trans...,46,1,0.01,0.006,0.012
+GO:0009966,regulation of signal transduction,140,1,0.02,0.0183,0.0269
+GO:0023051,regulation of signaling,144,1,0.02,0.0188,0.0269
+GO:0010646,regulation of cell communication,147,1,0.02,0.0192,0.0269
+GO:0035556,intracellular signal transduction,241,1,0.03,0.0313,0.0398
+GO:0048583,regulation of response to stimulus,296,1,0.04,0.0383,0.0405
+GO:0050790,regulation of catalytic activity,303,1,0.04,0.0392,0.0405
+GO:0065009,regulation of molecular function,313,1,0.04,0.0405,0.0405

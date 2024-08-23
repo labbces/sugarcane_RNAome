@@ -1,0 +1,160 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:1902533,positive regulation of intracellular sig...,4,2,0.05,0.00082,0.0276
+GO:0009967,positive regulation of signal transducti...,29,3,0.34,0.00474,0.0276
+GO:0023056,positive regulation of signaling,31,3,0.37,0.00573,0.0276
+GO:0010647,positive regulation of cell communicatio...,35,3,0.41,0.00806,0.0276
+GO:0022603,regulation of anatomical structure morph...,35,3,0.41,0.00806,0.0276
+GO:0001503,ossification,1,1,0.01,0.01181,0.0276
+GO:0002244,hematopoietic progenitor cell differenti...,1,1,0.01,0.01181,0.0276
+GO:0002367,cytokine production involved in immune r...,1,1,0.01,0.01181,0.0276
+GO:0002371,dendritic cell cytokine production,1,1,0.01,0.01181,0.0276
+GO:0002372,myeloid dendritic cell cytokine producti...,1,1,0.01,0.01181,0.0276
+GO:0002444,myeloid leukocyte mediated immunity,1,1,0.01,0.01181,0.0276
+GO:0002718,regulation of cytokine production involv...,1,1,0.01,0.01181,0.0276
+GO:0002720,positive regulation of cytokine producti...,1,1,0.01,0.01181,0.0276
+GO:0002730,regulation of dendritic cell cytokine pr...,1,1,0.01,0.01181,0.0276
+GO:0002732,positive regulation of dendritic cell cy...,1,1,0.01,0.01181,0.0276
+GO:0002733,regulation of myeloid dendritic cell cyt...,1,1,0.01,0.01181,0.0276
+GO:0002735,positive regulation of myeloid dendritic...,1,1,0.01,0.01181,0.0276
+GO:0002886,regulation of myeloid leukocyte mediated...,1,1,0.01,0.01181,0.0276
+GO:0002888,positive regulation of myeloid leukocyte...,1,1,0.01,0.01181,0.0276
+GO:0007283,spermatogenesis,1,1,0.01,0.01181,0.0276
+GO:0007507,heart development,1,1,0.01,0.01181,0.0276
+GO:0008298,intracellular mRNA localization,1,1,0.01,0.01181,0.0276
+GO:0010002,cardioblast differentiation,1,1,0.01,0.01181,0.0276
+GO:0010770,positive regulation of cell morphogenesi...,1,1,0.01,0.01181,0.0276
+GO:0016358,dendrite development,1,1,0.01,0.01181,0.0276
+GO:0031442,positive regulation of mRNA 3'-end proce...,1,1,0.01,0.01181,0.0276
+GO:0032607,interferon-alpha production,1,1,0.01,0.01181,0.0276
+GO:0032647,regulation of interferon-alpha productio...,1,1,0.01,0.01181,0.0276
+GO:0032727,positive regulation of interferon-alpha ...,1,1,0.01,0.01181,0.0276
+GO:0032990,cell part morphogenesis,1,1,0.01,0.01181,0.0276
+GO:0035051,cardiocyte differentiation,1,1,0.01,0.01181,0.0276
+GO:0044806,G-quadruplex DNA unwinding,1,1,0.01,0.01181,0.0276
+GO:0048667,cell morphogenesis involved in neuron di...,1,1,0.01,0.01181,0.0276
+GO:0048812,neuron projection morphogenesis,1,1,0.01,0.01181,0.0276
+GO:0048813,dendrite morphogenesis,1,1,0.01,0.01181,0.0276
+GO:0048814,regulation of dendrite morphogenesis,1,1,0.01,0.01181,0.0276
+GO:0048858,cell projection morphogenesis,1,1,0.01,0.01181,0.0276
+GO:0048863,stem cell differentiation,1,1,0.01,0.01181,0.0276
+GO:0050773,regulation of dendrite development,1,1,0.01,0.01181,0.0276
+GO:0050775,positive regulation of dendrite morphoge...,1,1,0.01,0.01181,0.0276
+GO:0051890,regulation of cardioblast differentiatio...,1,1,0.01,0.01181,0.0276
+GO:0051891,positive regulation of cardioblast diffe...,1,1,0.01,0.01181,0.0276
+GO:0060996,dendritic spine development,1,1,0.01,0.01181,0.0276
+GO:0060997,dendritic spine morphogenesis,1,1,0.01,0.01181,0.0276
+GO:0060998,regulation of dendritic spine developmen...,1,1,0.01,0.01181,0.0276
+GO:0060999,positive regulation of dendritic spine d...,1,1,0.01,0.01181,0.0276
+GO:0061001,regulation of dendritic spine morphogene...,1,1,0.01,0.01181,0.0276
+GO:0061003,positive regulation of dendritic spine m...,1,1,0.01,0.01181,0.0276
+GO:0061081,positive regulation of myeloid leukocyte...,1,1,0.01,0.01181,0.0276
+GO:0061082,myeloid leukocyte cytokine production,1,1,0.01,0.01181,0.0276
+GO:0061158,3'-UTR-mediated mRNA destabilization,1,1,0.01,0.01181,0.0276
+GO:0090669,telomerase RNA stabilization,1,1,0.01,0.01181,0.0276
+GO:0120039,plasma membrane bounded cell projection ...,1,1,0.01,0.01181,0.0276
+GO:1900006,positive regulation of dendrite developm...,1,1,0.01,0.01181,0.0276
+GO:1900151,regulation of nuclear-transcribed mRNA c...,1,1,0.01,0.01181,0.0276
+GO:1900153,positive regulation of nuclear-transcrib...,1,1,0.01,0.01181,0.0276
+GO:1901532,regulation of hematopoietic progenitor c...,1,1,0.01,0.01181,0.0276
+GO:1901534,positive regulation of hematopoietic pro...,1,1,0.01,0.01181,0.0276
+GO:1903706,regulation of hemopoiesis,1,1,0.01,0.01181,0.0276
+GO:1903708,positive regulation of hemopoiesis,1,1,0.01,0.01181,0.0276
+GO:1903842,response to arsenite ion,1,1,0.01,0.01181,0.0276
+GO:1903843,cellular response to arsenite ion,1,1,0.01,0.01181,0.0276
+GO:1904580,regulation of intracellular mRNA localiz...,1,1,0.01,0.01181,0.0276
+GO:1904582,positive regulation of intracellular mRN...,1,1,0.01,0.01181,0.0276
+GO:1905207,regulation of cardiocyte differentiation,1,1,0.01,0.01181,0.0276
+GO:1905209,positive regulation of cardiocyte differ...,1,1,0.01,0.01181,0.0276
+GO:2000736,regulation of stem cell differentiation,1,1,0.01,0.01181,0.0276
+GO:2000738,positive regulation of stem cell differe...,1,1,0.01,0.01181,0.0276
+GO:0022604,regulation of cell morphogenesis,20,2,0.24,0.02294,0.0309
+GO:0000917,division septum assembly,2,1,0.02,0.02348,0.0309
+GO:0001819,positive regulation of cytokine producti...,2,1,0.02,0.02348,0.0309
+GO:0002440,production of molecular mediator of immu...,2,1,0.02,0.02348,0.0309
+GO:0002443,leukocyte mediated immunity,2,1,0.02,0.02348,0.0309
+GO:0002699,positive regulation of immune effector p...,2,1,0.02,0.02348,0.0309
+GO:0002700,regulation of production of molecular me...,2,1,0.02,0.02348,0.0309
+GO:0002702,positive regulation of production of mol...,2,1,0.02,0.02348,0.0309
+GO:0002703,regulation of leukocyte mediated immunit...,2,1,0.02,0.02348,0.0309
+GO:0002705,positive regulation of leukocyte mediate...,2,1,0.02,0.02348,0.0309
+GO:0007249,I-kappaB kinase/NF-kappaB signaling,2,1,0.02,0.02348,0.0309
+GO:0010264,myo-inositol hexakisphosphate biosynthet...,2,1,0.02,0.02348,0.0309
+GO:0010501,RNA secondary structure unwinding,2,1,0.02,0.02348,0.0309
+GO:0010720,positive regulation of cell development,2,1,0.02,0.02348,0.0309
+GO:0010769,regulation of cell morphogenesis involve...,2,1,0.02,0.02348,0.0309
+GO:0010975,regulation of neuron projection developm...,2,1,0.02,0.02348,0.0309
+GO:0010976,positive regulation of neuron projection...,2,1,0.02,0.02348,0.0309
+GO:0022008,neurogenesis,2,1,0.02,0.02348,0.0309
+GO:0030182,neuron differentiation,2,1,0.02,0.02348,0.0309
+GO:0031175,neuron projection development,2,1,0.02,0.02348,0.0309
+GO:0031346,positive regulation of cell projection o...,2,1,0.02,0.02348,0.0309
+GO:0031440,regulation of mRNA 3'-end processing,2,1,0.02,0.02348,0.0309
+GO:0032008,positive regulation of TOR signaling,2,1,0.02,0.02348,0.0309
+GO:0032206,positive regulation of telomere maintena...,2,1,0.02,0.02348,0.0309
+GO:0032479,regulation of type I interferon producti...,2,1,0.02,0.02348,0.0309
+GO:0032481,positive regulation of type I interferon...,2,1,0.02,0.02348,0.0309
+GO:0032606,type I interferon production,2,1,0.02,0.02348,0.0309
+GO:0032954,regulation of cytokinetic process,2,1,0.02,0.02348,0.0309
+GO:0032955,regulation of division septum assembly,2,1,0.02,0.02348,0.0309
+GO:0032958,inositol phosphate biosynthetic process,2,1,0.02,0.02348,0.0309
+GO:0033517,myo-inositol hexakisphosphate metabolic ...,2,1,0.02,0.02348,0.0309
+GO:0043122,regulation of I-kappaB kinase/NF-kappaB ...,2,1,0.02,0.02348,0.0309
+GO:0043123,positive regulation of I-kappaB kinase/N...,2,1,0.02,0.02348,0.0309
+GO:0043330,response to exogenous dsRNA,2,1,0.02,0.02348,0.0309
+GO:0043331,response to dsRNA,2,1,0.02,0.02348,0.0309
+GO:0045664,regulation of neuron differentiation,2,1,0.02,0.02348,0.0309
+GO:0045666,positive regulation of neuron differenti...,2,1,0.02,0.02348,0.0309
+GO:0045995,regulation of embryonic development,2,1,0.02,0.02348,0.0309
+GO:0048666,neuron development,2,1,0.02,0.02348,0.0309
+GO:0048699,generation of neurons,2,1,0.02,0.02348,0.0309
+GO:0050767,regulation of neurogenesis,2,1,0.02,0.02348,0.0309
+GO:0050769,positive regulation of neurogenesis,2,1,0.02,0.02348,0.0309
+GO:0051014,actin filament severing,2,1,0.02,0.02348,0.0309
+GO:0051960,regulation of nervous system development,2,1,0.02,0.02348,0.0309
+GO:0051962,positive regulation of nervous system de...,2,1,0.02,0.02348,0.0309
+GO:0071243,cellular response to arsenic-containing ...,2,1,0.02,0.02348,0.0309
+GO:0072359,circulatory system development,2,1,0.02,0.02348,0.0309
+GO:0090529,cell septum assembly,2,1,0.02,0.02348,0.0309
+GO:0097061,dendritic spine organization,2,1,0.02,0.02348,0.0309
+GO:0106027,neuron projection organization,2,1,0.02,0.02348,0.0309
+GO:1901891,regulation of cell septum assembly,2,1,0.02,0.02348,0.0309
+GO:1904263,positive regulation of TORC1 signaling,2,1,0.02,0.02348,0.0309
+GO:1904358,positive regulation of telomere maintena...,2,1,0.02,0.02348,0.0309
+GO:0016579,protein deubiquitination,98,4,1.16,0.02897,0.0374
+GO:0048584,positive regulation of response to stimu...,98,4,1.16,0.02897,0.0374
+GO:0045934,negative regulation of nucleobase-contai...,150,5,1.77,0.03293,0.0389
+GO:0070646,protein modification by small protein re...,104,4,1.23,0.03493,0.0389
+GO:0001816,cytokine production,3,1,0.04,0.03501,0.0389
+GO:0001817,regulation of cytokine production,3,1,0.04,0.03501,0.0389
+GO:0002697,regulation of immune effector process,3,1,0.04,0.03501,0.0389
+GO:0008645,hexose transmembrane transport,3,1,0.04,0.03501,0.0389
+GO:0030097,hemopoiesis,3,1,0.04,0.03501,0.0389
+GO:0031344,regulation of cell projection organizati...,3,1,0.04,0.03501,0.0389
+GO:0032006,regulation of TOR signaling,3,1,0.04,0.03501,0.0389
+GO:0032465,regulation of cytokinesis,3,1,0.04,0.03501,0.0389
+GO:0038202,TORC1 signaling,3,1,0.04,0.03501,0.0389
+GO:0045597,positive regulation of cell differentiat...,3,1,0.04,0.03501,0.0389
+GO:0046208,spermine catabolic process,3,1,0.04,0.03501,0.0389
+GO:0048534,hematopoietic or lymphoid organ developm...,3,1,0.04,0.03501,0.0389
+GO:0050685,positive regulation of mRNA processing,3,1,0.04,0.03501,0.0389
+GO:0051513,regulation of monopolar cell growth,3,1,0.04,0.03501,0.0389
+GO:0060284,regulation of cell development,3,1,0.04,0.03501,0.0389
+GO:0090228,positive regulation of red or far-red li...,3,1,0.04,0.03501,0.0389
+GO:0120035,regulation of plasma membrane bounded ce...,3,1,0.04,0.03501,0.0389
+GO:1903432,regulation of TORC1 signaling,3,1,0.04,0.03501,0.0389
+GO:0002100,tRNA wobble adenosine to inosine editing,4,1,0.05,0.0464,0.0464
+GO:0002520,immune system development,4,1,0.05,0.0464,0.0464
+GO:0006382,adenosine to inosine editing,4,1,0.05,0.0464,0.0464
+GO:0007399,nervous system development,4,1,0.05,0.0464,0.0464
+GO:0031509,subtelomeric heterochromatin assembly,4,1,0.05,0.0464,0.0464
+GO:0032506,cytokinetic process,4,1,0.05,0.0464,0.0464
+GO:0042814,monopolar cell growth,4,1,0.05,0.0464,0.0464
+GO:0050803,regulation of synapse structure or activ...,4,1,0.05,0.0464,0.0464
+GO:0050807,regulation of synapse organization,4,1,0.05,0.0464,0.0464
+GO:0050808,synapse organization,4,1,0.05,0.0464,0.0464
+GO:0060260,regulation of transcription initiation f...,4,1,0.05,0.0464,0.0464
+GO:0060261,positive regulation of transcription ini...,4,1,0.05,0.0464,0.0464
+GO:0098532,histone H3-K27 trimethylation,4,1,0.05,0.0464,0.0464
+GO:0099173,postsynapse organization,4,1,0.05,0.0464,0.0464
+GO:0099175,regulation of postsynapse organization,4,1,0.05,0.0464,0.0464
+GO:2000144,positive regulation of DNA-templated tra...,4,1,0.05,0.0464,0.0464

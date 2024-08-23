@@ -1,0 +1,28 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006651,diacylglycerol biosynthetic process,1,1,0,0.0033,0.0374
+GO:0046339,diacylglycerol metabolic process,1,1,0,0.0033,0.0374
+GO:0007219,Notch signaling pathway,3,1,0.01,0.0098,0.0374
+GO:0051172,negative regulation of nitrogen compound...,261,4,0.86,0.0107,0.0374
+GO:0031324,negative regulation of cellular metaboli...,268,4,0.88,0.0117,0.0374
+GO:1905183,negative regulation of protein serine/th...,4,1,0.01,0.0131,0.0374
+GO:0006333,chromatin assembly or disassembly,64,2,0.21,0.0188,0.0374
+GO:0031497,chromatin assembly,64,2,0.21,0.0188,0.0374
+GO:0010923,negative regulation of phosphatase activ...,6,1,0.02,0.0195,0.0374
+GO:0032515,negative regulation of phosphoprotein ph...,6,1,0.02,0.0195,0.0374
+GO:0006338,chromatin remodeling,178,3,0.58,0.0208,0.0374
+GO:0010558,negative regulation of macromolecule bio...,191,3,0.63,0.025,0.0374
+GO:2000113,negative regulation of cellular macromol...,191,3,0.63,0.025,0.0374
+GO:0035305,negative regulation of dephosphorylation,8,1,0.03,0.0259,0.0374
+GO:0035308,negative regulation of protein dephospho...,8,1,0.03,0.0259,0.0374
+GO:0052863,1-deoxy-D-xylulose 5-phosphate metabolic...,8,1,0.03,0.0259,0.0374
+GO:0052865,1-deoxy-D-xylulose 5-phosphate biosynthe...,8,1,0.03,0.0259,0.0374
+GO:0009890,negative regulation of biosynthetic proc...,195,3,0.64,0.0263,0.0374
+GO:0031327,negative regulation of cellular biosynth...,195,3,0.64,0.0263,0.0374
+GO:0006323,DNA packaging,81,2,0.27,0.0291,0.0393
+GO:0045036,protein targeting to chloroplast,11,1,0.04,0.0355,0.0436
+GO:0072596,establishment of protein localization to...,11,1,0.04,0.0355,0.0436
+GO:0048523,negative regulation of cellular process,386,4,1.27,0.0381,0.0447
+GO:0072598,protein localization to chloroplast,13,1,0.04,0.0418,0.047
+GO:0071103,DNA conformation change,246,3,0.81,0.0472,0.0481
+GO:0010921,regulation of phosphatase activity,15,1,0.05,0.0481,0.0481
+GO:0043666,regulation of phosphoprotein phosphatase...,15,1,0.05,0.0481,0.0481

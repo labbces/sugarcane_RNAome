@@ -1,0 +1,72 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0015808,L-alanine transport,1,1,0,0.0045,0.0266
+GO:0015812,gamma-aminobutyric acid transport,1,1,0,0.0045,0.0266
+GO:0015813,L-glutamate transmembrane transport,1,1,0,0.0045,0.0266
+GO:0018131,oxazole or thiazole biosynthetic process,1,1,0,0.0045,0.0266
+GO:0032328,alanine transport,1,1,0,0.0045,0.0266
+GO:0046484,oxazole or thiazole metabolic process,1,1,0,0.0045,0.0266
+GO:0051938,L-glutamate import,1,1,0,0.0045,0.0266
+GO:0052837,thiazole biosynthetic process,1,1,0,0.0045,0.0266
+GO:0052838,thiazole metabolic process,1,1,0,0.0045,0.0266
+GO:0062034,L-pipecolic acid biosynthetic process,1,1,0,0.0045,0.0266
+GO:1902022,L-lysine transport,1,1,0,0.0045,0.0266
+GO:1903401,L-lysine transmembrane transport,1,1,0,0.0045,0.0266
+GO:0006836,neurotransmitter transport,2,1,0.01,0.009,0.0376
+GO:0006968,cellular defense response,2,1,0.01,0.009,0.0376
+GO:0015807,L-amino acid transport,2,1,0.01,0.009,0.0376
+GO:0043090,amino acid import,2,1,0.01,0.009,0.0376
+GO:1902475,L-alpha-amino acid transmembrane transpo...,2,1,0.01,0.009,0.0376
+GO:0015800,acidic amino acid transport,3,1,0.01,0.0135,0.0421
+GO:0015804,neutral amino acid transport,3,1,0.01,0.0135,0.0421
+GO:0018023,peptidyl-lysine trimethylation,3,1,0.01,0.0135,0.0421
+GO:0045892,negative regulation of transcription, DN...,131,3,0.59,0.0215,0.0421
+GO:1902679,negative regulation of RNA biosynthetic ...,131,3,0.59,0.0215,0.0421
+GO:1903507,negative regulation of nucleic acid-temp...,131,3,0.59,0.0215,0.0421
+GO:0006000,fructose metabolic process,5,1,0.02,0.0223,0.0421
+GO:0006577,amino-acid betaine metabolic process,5,1,0.02,0.0223,0.0421
+GO:0006578,amino-acid betaine biosynthetic process,5,1,0.02,0.0223,0.0421
+GO:0019285,glycine betaine biosynthetic process fro...,5,1,0.02,0.0223,0.0421
+GO:0019695,choline metabolic process,5,1,0.02,0.0223,0.0421
+GO:0031455,glycine betaine metabolic process,5,1,0.02,0.0223,0.0421
+GO:0031456,glycine betaine biosynthetic process,5,1,0.02,0.0223,0.0421
+GO:0042350,GDP-L-fucose biosynthetic process,5,1,0.02,0.0223,0.0421
+GO:0046368,GDP-L-fucose metabolic process,5,1,0.02,0.0223,0.0421
+GO:0097164,ammonium ion metabolic process,5,1,0.02,0.0223,0.0421
+GO:0051253,negative regulation of RNA metabolic pro...,139,3,0.63,0.025,0.0421
+GO:0009157,deoxyribonucleoside monophosphate biosyn...,6,1,0.03,0.0267,0.0421
+GO:0009162,deoxyribonucleoside monophosphate metabo...,6,1,0.03,0.0267,0.0421
+GO:0032780,negative regulation of ATPase activity,6,1,0.03,0.0267,0.0421
+GO:0044205,'de novo' UMP biosynthetic process,6,1,0.03,0.0267,0.0421
+GO:0048280,vesicle fusion with Golgi apparatus,6,1,0.03,0.0267,0.0421
+GO:0051097,negative regulation of helicase activity,6,1,0.03,0.0267,0.0421
+GO:0051103,DNA ligation involved in DNA repair,6,1,0.03,0.0267,0.0421
+GO:1905462,regulation of DNA duplex unwinding,6,1,0.03,0.0267,0.0421
+GO:1905463,negative regulation of DNA duplex unwind...,6,1,0.03,0.0267,0.0421
+GO:1905774,regulation of DNA helicase activity,6,1,0.03,0.0267,0.0421
+GO:1905775,negative regulation of DNA helicase acti...,6,1,0.03,0.0267,0.0421
+GO:0071407,cellular response to organic cyclic comp...,57,2,0.26,0.0273,0.0421
+GO:0045934,negative regulation of nucleobase-contai...,150,3,0.68,0.0304,0.0433
+GO:0006003,fructose 2,6-bisphosphate metabolic proc...,7,1,0.03,0.0311,0.0433
+GO:0006266,DNA ligation,7,1,0.03,0.0311,0.0433
+GO:0006424,glutamyl-tRNA aminoacylation,7,1,0.03,0.0311,0.0433
+GO:0051095,regulation of helicase activity,7,1,0.03,0.0311,0.0433
+GO:0006855,drug transmembrane transport,8,1,0.04,0.0355,0.0458
+GO:0015689,molybdate ion transport,8,1,0.04,0.0355,0.0458
+GO:0019511,peptidyl-proline hydroxylation,8,1,0.04,0.0355,0.0458
+GO:0019673,GDP-mannose metabolic process,8,1,0.04,0.0355,0.0458
+GO:0006835,dicarboxylic acid transport,9,1,0.04,0.0398,0.0479
+GO:0006906,vesicle fusion,9,1,0.04,0.0398,0.0479
+GO:0043462,regulation of ATPase activity,9,1,0.04,0.0398,0.0479
+GO:0090174,organelle membrane fusion,9,1,0.04,0.0398,0.0479
+GO:0050832,defense response to fungus,72,2,0.32,0.0419,0.0482
+GO:0005983,starch catabolic process,10,1,0.05,0.0441,0.0482
+GO:0009691,cytokinin biosynthetic process,10,1,0.05,0.0441,0.0482
+GO:0036294,cellular response to decreased oxygen le...,10,1,0.05,0.0441,0.0482
+GO:0071453,cellular response to oxygen levels,10,1,0.05,0.0441,0.0482
+GO:0071456,cellular response to hypoxia,10,1,0.05,0.0441,0.0482
+GO:0009124,nucleoside monophosphate biosynthetic pr...,76,2,0.34,0.0462,0.0495
+GO:0009228,thiamine biosynthetic process,11,1,0.05,0.0485,0.0495
+GO:0018126,protein hydroxylation,11,1,0.05,0.0485,0.0495
+GO:0034309,primary alcohol biosynthetic process,11,1,0.05,0.0485,0.0495
+GO:0072527,pyrimidine-containing compound metabolic...,79,2,0.36,0.0495,0.0495
+GO:0072528,pyrimidine-containing compound biosynthe...,79,2,0.36,0.0495,0.0495

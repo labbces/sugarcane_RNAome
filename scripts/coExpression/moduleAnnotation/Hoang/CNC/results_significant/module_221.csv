@@ -1,0 +1,27 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019374,galactolipid metabolic process,4,2,0.06,0.0014,0.0291
+GO:0043038,amino acid activation,183,8,2.8,0.0074,0.0291
+GO:0043039,tRNA aminoacylation,183,8,2.8,0.0074,0.0291
+GO:0006399,tRNA metabolic process,359,12,5.49,0.0097,0.0291
+GO:0007033,vacuole organization,33,3,0.51,0.0138,0.0291
+GO:0006761,dihydrofolate biosynthetic process,1,1,0.02,0.0153,0.0291
+GO:0042868,antisense RNA metabolic process,1,1,0.02,0.0153,0.0291
+GO:0046452,dihydrofolate metabolic process,1,1,0.02,0.0153,0.0291
+GO:0061951,establishment of protein localization to...,1,1,0.02,0.0153,0.0291
+GO:0071076,RNA 3' uridylation,1,1,0.02,0.0153,0.0291
+GO:0099638,endosome to plasma membrane protein tran...,1,1,0.02,0.0153,0.0291
+GO:1990126,retrograde transport, endosome to plasma...,1,1,0.02,0.0153,0.0291
+GO:0007032,endosome organization,13,2,0.2,0.0163,0.0291
+GO:0006418,tRNA aminoacylation for protein translat...,171,7,2.62,0.0165,0.0291
+GO:0034660,ncRNA metabolic process,577,16,8.83,0.0168,0.0291
+GO:0007019,microtubule depolymerization,2,1,0.03,0.0304,0.0359
+GO:0030050,vesicle transport along actin filament,2,1,0.03,0.0304,0.0359
+GO:0036166,phenotypic switching,2,1,0.03,0.0304,0.0359
+GO:0060964,regulation of gene silencing by miRNA,2,1,0.03,0.0304,0.0359
+GO:0090677,reversible differentiation,2,1,0.03,0.0304,0.0359
+GO:0099515,actin filament-based transport,2,1,0.03,0.0304,0.0359
+GO:0099518,vesicle cytoskeletal trafficking,2,1,0.03,0.0304,0.0359
+GO:0016050,vesicle organization,46,3,0.7,0.0333,0.0376
+GO:0006643,membrane lipid metabolic process,121,5,1.85,0.0386,0.0418
+GO:0009395,phospholipid catabolic process,3,1,0.05,0.0452,0.047
+GO:0006664,glycolipid metabolic process,90,4,1.38,0.0495,0.0495

@@ -1,0 +1,135 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006722,triterpenoid metabolic process,81,11,2.31,1.8e-05,0.0012
+GO:0016104,triterpenoid biosynthetic process,81,11,2.31,1.8e-05,0.0012
+GO:0016114,terpenoid biosynthetic process,157,15,4.48,4.5e-05,0.002
+GO:0006721,terpenoid metabolic process,177,15,5.05,0.00018,0.006
+GO:0008299,isoprenoid biosynthetic process,191,15,5.45,4e-04,0.0107
+GO:0008150,biological_process,16230,499,462.76,0.00072,0.0142
+GO:1901701,cellular response to oxygen-containing c...,224,16,6.39,0.00074,0.0142
+GO:1901700,response to oxygen-containing compound,390,23,11.12,0.00089,0.0149
+GO:0071229,cellular response to acid chemical,170,13,4.85,0.00122,0.0171
+GO:0006720,isoprenoid metabolic process,215,15,6.13,0.00135,0.0171
+GO:0046677,response to antibiotic,59,7,1.68,0.0014,0.0171
+GO:0018193,peptidyl-amino acid modification,370,21,10.55,0.00232,0.0259
+GO:0009226,nucleotide-sugar biosynthetic process,35,5,1,0.00297,0.0306
+GO:0016554,cytidine to uridine editing,11,3,0.31,0.00321,0.0307
+GO:0071310,cellular response to organic substance,439,23,12.52,0.00402,0.0354
+GO:0071495,cellular response to endogenous stimulus,421,22,12,0.00498,0.0354
+GO:0071236,cellular response to antibiotic,26,4,0.74,0.00594,0.0354
+GO:0071396,cellular response to lipid,162,11,4.62,0.00689,0.0354
+GO:0006265,DNA topological change,43,5,1.23,0.0073,0.0354
+GO:0032870,cellular response to hormone stimulus,410,21,11.69,0.00745,0.0354
+GO:0016553,base conversion or substitution editing,15,3,0.43,0.00813,0.0354
+GO:0018208,peptidyl-proline modification,45,5,1.28,0.00885,0.0354
+GO:0043647,inositol phosphate metabolic process,63,6,1.8,0.00901,0.0354
+GO:0046855,inositol phosphate dephosphorylation,46,5,1.31,0.0097,0.0354
+GO:0071545,inositol phosphate catabolic process,46,5,1.31,0.0097,0.0354
+GO:0042752,regulation of circadian rhythm,16,3,0.46,0.00979,0.0354
+GO:0001101,response to acid chemical,267,15,7.61,0.01005,0.0354
+GO:0046942,carboxylic acid transport,105,8,2.99,0.01038,0.0354
+GO:0044282,small molecule catabolic process,149,10,4.25,0.01052,0.0354
+GO:0015849,organic acid transport,106,8,3.02,0.01096,0.0354
+GO:0006928,movement of cell or subcellular componen...,128,9,3.65,0.01118,0.0354
+GO:0009225,nucleotide-sugar metabolic process,48,5,1.37,0.01157,0.0354
+GO:0000466,maturation of 5.8S rRNA from tricistroni...,17,3,0.48,0.01164,0.0354
+GO:0046174,polyol catabolic process,49,5,1.4,0.01259,0.0354
+GO:0046838,phosphorylated carbohydrate dephosphoryl...,50,5,1.43,0.01367,0.0354
+GO:0035690,cellular response to drug,33,4,0.94,0.01391,0.0354
+GO:0016311,dephosphorylation,203,12,5.79,0.01394,0.0354
+GO:0090305,nucleic acid phosphodiester bond hydroly...,384,19,10.95,0.01478,0.0354
+GO:0009298,GDP-mannose biosynthetic process,7,2,0.2,0.0155,0.0354
+GO:1900865,chloroplast RNA modification,7,2,0.2,0.0155,0.0354
+GO:0000460,maturation of 5.8S rRNA,19,3,0.54,0.01591,0.0354
+GO:0044255,cellular lipid metabolic process,808,34,23.04,0.01594,0.0354
+GO:0006865,amino acid transport,72,6,2.05,0.01674,0.0354
+GO:0046164,alcohol catabolic process,53,5,1.51,0.01727,0.0354
+GO:0007018,microtubule-based movement,94,7,2.68,0.01797,0.0354
+GO:0042493,response to drug,116,8,3.31,0.01808,0.0354
+GO:0070887,cellular response to chemical stimulus,589,26,16.79,0.0192,0.0354
+GO:1901616,organic hydroxy compound catabolic proce...,55,5,1.57,0.02,0.0354
+GO:0019673,GDP-mannose metabolic process,8,2,0.23,0.02028,0.0354
+GO:0048653,anther development,8,2,0.23,0.02028,0.0354
+GO:0009987,cellular process,12731,389,363,0.02041,0.0354
+GO:0000413,protein peptidyl-prolyl isomerization,37,4,1.05,0.02054,0.0354
+GO:0018216,peptidyl-arginine methylation,21,3,0.6,0.02094,0.0354
+GO:0019751,polyol metabolic process,98,7,2.79,0.02206,0.0354
+GO:0009751,response to salicylic acid,38,4,1.08,0.02245,0.0354
+GO:0009738,abscisic acid-activated signaling pathwa...,77,6,2.2,0.02259,0.0354
+GO:0071407,cellular response to organic cyclic comp...,57,5,1.63,0.02299,0.0354
+GO:0033993,response to lipid,218,12,6.22,0.023,0.0354
+GO:0010033,response to organic substance,599,26,17.08,0.0231,0.0354
+GO:0018195,peptidyl-arginine modification,22,3,0.63,0.02374,0.0354
+GO:0006952,defense response,1938,70,55.26,0.02384,0.0354
+GO:0048827,phyllome development,78,6,2.22,0.0239,0.0354
+GO:0022411,cellular component disassembly,58,5,1.65,0.02459,0.0354
+GO:0009719,response to endogenous stimulus,519,23,14.8,0.02548,0.0354
+GO:0009266,response to temperature stimulus,101,7,2.88,0.02553,0.0354
+GO:0000459,exonucleolytic trimming involved in rRNA...,9,2,0.26,0.02559,0.0354
+GO:0000467,exonucleolytic trimming to generate matu...,9,2,0.26,0.02559,0.0354
+GO:0016570,histone modification,197,11,5.62,0.02623,0.0354
+GO:0071215,cellular response to abscisic acid stimu...,80,6,2.28,0.02668,0.0354
+GO:0097306,cellular response to alcohol,80,6,2.28,0.02668,0.0354
+GO:0006574,valine catabolic process,1,1,0.03,0.02851,0.0354
+GO:0006921,cellular component disassembly involved ...,1,1,0.03,0.02851,0.0354
+GO:0007142,male meiosis II,1,1,0.03,0.02851,0.0354
+GO:0007639,homeostasis of number of meristem cells,1,1,0.03,0.02851,0.0354
+GO:0009616,virus induced gene silencing,1,1,0.03,0.02851,0.0354
+GO:0009720,detection of hormone stimulus,1,1,0.03,0.02851,0.0354
+GO:0009726,detection of endogenous stimulus,1,1,0.03,0.02851,0.0354
+GO:0009729,detection of brassinosteroid stimulus,1,1,0.03,0.02851,0.0354
+GO:0009836,fruit ripening, climacteric,1,1,0.03,0.02851,0.0354
+GO:0010384,cell wall proteoglycan metabolic process,1,1,0.03,0.02851,0.0354
+GO:0010404,cell wall hydroxyproline-rich glycoprote...,1,1,0.03,0.02851,0.0354
+GO:0010409,extensin metabolic process,1,1,0.03,0.02851,0.0354
+GO:0030262,apoptotic nuclear changes,1,1,0.03,0.02851,0.0354
+GO:0030263,apoptotic chromosome condensation,1,1,0.03,0.02851,0.0354
+GO:0030473,nuclear migration along microtubule,1,1,0.03,0.02851,0.0354
+GO:0033614,chloroplast proton-transporting ATP synt...,1,1,0.03,0.02851,0.0354
+GO:0039692,single stranded viral RNA replication vi...,1,1,0.03,0.02851,0.0354
+GO:0039694,viral RNA genome replication,1,1,0.03,0.02851,0.0354
+GO:0043461,proton-transporting ATP synthase complex...,1,1,0.03,0.02851,0.0354
+GO:0044003,modulation by symbiont of host process,1,1,0.03,0.02851,0.0354
+GO:0045070,positive regulation of viral genome repl...,1,1,0.03,0.02851,0.0354
+GO:0045091,regulation of single stranded viral RNA ...,1,1,0.03,0.02851,0.0354
+GO:0045870,positive regulation of single stranded v...,1,1,0.03,0.02851,0.0354
+GO:0048524,positive regulation of viral process,1,1,0.03,0.02851,0.0354
+GO:0048872,homeostasis of number of cells,1,1,0.03,0.02851,0.0354
+GO:0048873,homeostasis of number of cells within a ...,1,1,0.03,0.02851,0.0354
+GO:0051817,modulation of process of other organism ...,1,1,0.03,0.02851,0.0354
+GO:0052018,modulation by symbiont of RNA levels in ...,1,1,0.03,0.02851,0.0354
+GO:0052249,modulation of RNA levels in other organi...,1,1,0.03,0.02851,0.0354
+GO:0070301,cellular response to hydrogen peroxide,1,1,0.03,0.02851,0.0354
+GO:0072697,protein localization to cell cortex,1,1,0.03,0.02851,0.0354
+GO:0072699,protein localization to cortical microtu...,1,1,0.03,0.02851,0.0354
+GO:0090436,leaf pavement cell development,1,1,0.03,0.02851,0.0354
+GO:0097194,execution phase of apoptosis,1,1,0.03,0.02851,0.0354
+GO:0098586,cellular response to virus,1,1,0.03,0.02851,0.0354
+GO:1901527,abscisic acid-activated signaling pathwa...,1,1,0.03,0.02851,0.0354
+GO:1901703,protein localization involved in auxin p...,1,1,0.03,0.02851,0.0354
+GO:1903902,positive regulation of viral life cycle,1,1,0.03,0.02851,0.0354
+GO:0044238,primary metabolic process,9192,286,262.09,0.02928,0.036
+GO:0071446,cellular response to salicylic acid stim...,24,3,0.68,0.02992,0.0364
+GO:0044237,cellular metabolic process,9270,288,264.31,0.03067,0.037
+GO:0031125,rRNA 3'-end processing,10,2,0.29,0.03139,0.0372
+GO:0090116,C-5 methylation of cytosine,10,2,0.29,0.03139,0.0372
+GO:0009755,hormone-mediated signaling pathway,391,18,11.15,0.03247,0.0382
+GO:0009725,response to hormone,508,22,14.48,0.03533,0.0412
+GO:0014070,response to organic cyclic compound,86,6,2.45,0.03627,0.0418
+GO:0007017,microtubule-based process,234,12,6.67,0.0368,0.0418
+GO:0048438,floral whorl development,26,3,0.74,0.03687,0.0418
+GO:0071704,organic substance metabolic process,9793,302,279.22,0.03712,0.0418
+GO:0018126,protein hydroxylation,11,2,0.31,0.03765,0.042
+GO:0043086,negative regulation of catalytic activit...,66,5,1.88,0.03995,0.0442
+GO:0015711,organic anion transport,160,9,4.56,0.04023,0.0442
+GO:0006807,nitrogen compound metabolic process,8053,251,229.61,0.04179,0.0452
+GO:0044092,negative regulation of molecular functio...,67,5,1.91,0.0422,0.0452
+GO:0017182,peptidyl-diphthamide metabolic process,12,2,0.34,0.04434,0.0452
+GO:0017183,peptidyl-diphthamide biosynthetic proces...,12,2,0.34,0.04434,0.0452
+GO:0034762,regulation of transmembrane transport,12,2,0.34,0.04434,0.0452
+GO:0034765,regulation of ion transmembrane transpor...,12,2,0.34,0.04434,0.0452
+GO:0048443,stamen development,12,2,0.34,0.04434,0.0452
+GO:0048466,androecium development,12,2,0.34,0.04434,0.0452
+GO:1900247,regulation of cytoplasmic translational ...,12,2,0.34,0.04434,0.0452
+GO:0000469,cleavage involved in rRNA processing,28,3,0.8,0.04457,0.0452
+GO:0008152,metabolic process,10367,317,295.59,0.04775,0.0481
+GO:0006950,response to stress,2893,97,82.49,0.04929,0.0493

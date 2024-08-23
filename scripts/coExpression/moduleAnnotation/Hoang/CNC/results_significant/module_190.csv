@@ -1,0 +1,22 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0001510,RNA methylation,111,3,0.21,0.0012,0.0252
+GO:0006878,cellular copper ion homeostasis,7,1,0.01,0.0131,0.0432
+GO:0019985,translesion synthesis,7,1,0.01,0.0131,0.0432
+GO:0043414,macromolecule methylation,266,3,0.5,0.0136,0.0432
+GO:0006301,postreplication repair,8,1,0.02,0.0149,0.0432
+GO:0006825,copper ion transport,8,1,0.02,0.0149,0.0432
+GO:0000731,DNA synthesis involved in DNA repair,10,1,0.02,0.0186,0.0432
+GO:0046686,response to cadmium ion,12,1,0.02,0.0223,0.0432
+GO:0055070,copper ion homeostasis,13,1,0.02,0.0242,0.0432
+GO:0000165,MAPK cascade,14,1,0.03,0.026,0.0432
+GO:0023014,signal transduction by protein phosphory...,14,1,0.03,0.026,0.0432
+GO:0009451,RNA modification,354,3,0.67,0.0288,0.0432
+GO:0006782,protoporphyrinogen IX biosynthetic proce...,18,1,0.03,0.0333,0.0432
+GO:0043622,cortical microtubule organization,18,1,0.03,0.0333,0.0432
+GO:0046501,protoporphyrinogen IX metabolic process,18,1,0.03,0.0333,0.0432
+GO:0030865,cortical cytoskeleton organization,19,1,0.04,0.0351,0.0432
+GO:0031122,cytoplasmic microtubule organization,19,1,0.04,0.0351,0.0432
+GO:0046777,protein autophosphorylation,20,1,0.04,0.037,0.0432
+GO:0031167,rRNA methylation,25,1,0.05,0.046,0.0496
+GO:0007264,small GTPase mediated signal transductio...,27,1,0.05,0.0496,0.0496
+GO:0046916,cellular transition metal ion homeostasi...,27,1,0.05,0.0496,0.0496

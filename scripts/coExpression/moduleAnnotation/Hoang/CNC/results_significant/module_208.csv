@@ -1,0 +1,25 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009745,sucrose mediated signaling,1,1,0.01,0.0056,0.0448
+GO:0071324,cellular response to disaccharide stimul...,1,1,0.01,0.0056,0.0448
+GO:0071329,cellular response to sucrose stimulus,1,1,0.01,0.0056,0.0448
+GO:0051560,mitochondrial calcium ion homeostasis,3,1,0.02,0.0168,0.0478
+GO:0006569,tryptophan catabolic process,4,1,0.02,0.0224,0.0478
+GO:0019253,reductive pentose-phosphate cycle,4,1,0.02,0.0224,0.0478
+GO:0019441,tryptophan catabolic process to kynureni...,4,1,0.02,0.0224,0.0478
+GO:0019685,photosynthesis, dark reaction,4,1,0.02,0.0224,0.0478
+GO:0042436,indole-containing compound catabolic pro...,4,1,0.02,0.0224,0.0478
+GO:0046218,indolalkylamine catabolic process,4,1,0.02,0.0224,0.0478
+GO:0009756,carbohydrate mediated signaling,5,1,0.03,0.0279,0.0478
+GO:0010182,sugar mediated signaling pathway,5,1,0.03,0.0279,0.0478
+GO:0010731,protein glutathionylation,5,1,0.03,0.0279,0.0478
+GO:1902182,shoot apical meristem development,5,1,0.03,0.0279,0.0478
+GO:0009853,photorespiration,6,1,0.03,0.0334,0.0496
+GO:0070189,kynurenine metabolic process,6,1,0.03,0.0334,0.0496
+GO:0051131,chaperone-mediated protein complex assem...,7,1,0.04,0.0388,0.0496
+GO:0032968,positive regulation of transcription elo...,8,1,0.05,0.0443,0.0496
+GO:0034243,regulation of transcription elongation f...,8,1,0.05,0.0443,0.0496
+GO:0071322,cellular response to carbohydrate stimul...,8,1,0.05,0.0443,0.0496
+GO:0042180,cellular ketone metabolic process,61,2,0.34,0.0466,0.0496
+GO:0006556,S-adenosylmethionine biosynthetic proces...,9,1,0.05,0.0496,0.0496
+GO:0009310,amine catabolic process,9,1,0.05,0.0496,0.0496
+GO:0042402,cellular biogenic amine catabolic proces...,9,1,0.05,0.0496,0.0496

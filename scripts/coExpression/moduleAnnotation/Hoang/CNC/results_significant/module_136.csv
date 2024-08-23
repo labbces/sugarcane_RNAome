@@ -1,0 +1,73 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0051702,interaction with symbiont,17,2,0.04,0.00087,0.0133
+GO:0009626,plant-type hypersensitive response,22,2,0.06,0.00146,0.0133
+GO:0034050,host programmed cell death induced by sy...,22,2,0.06,0.00146,0.0133
+GO:0044403,symbiotic process,25,2,0.06,0.00189,0.0133
+GO:0000461,endonucleolytic cleavage to generate mat...,1,1,0,0.00258,0.0133
+GO:0090322,regulation of superoxide metabolic proce...,1,1,0,0.00258,0.0133
+GO:1901031,regulation of response to reactive oxyge...,1,1,0,0.00258,0.0133
+GO:1901033,positive regulation of response to react...,1,1,0,0.00258,0.0133
+GO:1901668,regulation of superoxide dismutase activ...,1,1,0,0.00258,0.0133
+GO:1901671,positive regulation of superoxide dismut...,1,1,0,0.00258,0.0133
+GO:1902288,regulation of defense response to oomyce...,1,1,0,0.00258,0.0133
+GO:1902290,positive regulation of defense response ...,1,1,0,0.00258,0.0133
+GO:1904833,positive regulation of removal of supero...,1,1,0,0.00258,0.0133
+GO:2000121,regulation of removal of superoxide radi...,1,1,0,0.00258,0.0133
+GO:0006633,fatty acid biosynthetic process,119,3,0.31,0.00361,0.0173
+GO:0080135,regulation of cellular response to stres...,38,2,0.1,0.00433,0.0177
+GO:0044419,interspecies interaction between organis...,813,7,2.1,0.00479,0.0177
+GO:0000388,spliceosome conformational change to rel...,2,1,0.01,0.00515,0.0177
+GO:0051341,regulation of oxidoreductase activity,2,1,0.01,0.00515,0.0177
+GO:0051353,positive regulation of oxidoreductase ac...,2,1,0.01,0.00515,0.0177
+GO:1901672,positive regulation of systemic acquired...,2,1,0.01,0.00515,0.0177
+GO:0072330,monocarboxylic acid biosynthetic process,145,3,0.37,0.00626,0.0205
+GO:0012501,programmed cell death,48,2,0.12,0.00684,0.0214
+GO:0000393,spliceosomal conformational changes to g...,4,1,0.01,0.01028,0.0247
+GO:0000447,endonucleolytic cleavage in ITS1 to sepa...,4,1,0.01,0.01028,0.0247
+GO:1900407,regulation of cellular response to oxida...,4,1,0.01,0.01028,0.0247
+GO:1900409,positive regulation of cellular response...,4,1,0.01,0.01028,0.0247
+GO:1900426,positive regulation of defense response ...,4,1,0.01,0.01028,0.0247
+GO:1902884,positive regulation of response to oxida...,4,1,0.01,0.01028,0.0247
+GO:2000379,positive regulation of reactive oxygen s...,4,1,0.01,0.01028,0.0247
+GO:0006631,fatty acid metabolic process,178,3,0.46,0.01096,0.0252
+GO:0008219,cell death,62,2,0.16,0.01121,0.0252
+GO:0010112,regulation of systemic acquired resistan...,5,1,0.01,0.01284,0.0272
+GO:1902882,regulation of response to oxidative stre...,5,1,0.01,0.01284,0.0272
+GO:0000478,endonucleolytic cleavage involved in rRN...,6,1,0.02,0.01538,0.0293
+GO:0000479,endonucleolytic cleavage of tricistronic...,6,1,0.02,0.01538,0.0293
+GO:0098542,defense response to other organism,204,3,0.53,0.01577,0.0293
+GO:0043207,response to external biotic stimulus,800,6,2.06,0.01682,0.0293
+GO:0051707,response to other organism,800,6,2.06,0.01682,0.0293
+GO:0045087,innate immune response,77,2,0.2,0.01692,0.0293
+GO:0060966,regulation of gene silencing by RNA,7,1,0.02,0.01792,0.0293
+GO:0060968,regulation of gene silencing,7,1,0.02,0.01792,0.0293
+GO:0006955,immune response,81,2,0.21,0.01861,0.0293
+GO:0000303,response to superoxide,8,1,0.02,0.02046,0.0293
+GO:0000305,response to oxygen radical,8,1,0.02,0.02046,0.0293
+GO:0006801,superoxide metabolic process,8,1,0.02,0.02046,0.0293
+GO:0019430,removal of superoxide radicals,8,1,0.02,0.02046,0.0293
+GO:0035821,modulation of process of other organism,8,1,0.02,0.02046,0.0293
+GO:0071450,cellular response to oxygen radical,8,1,0.02,0.02046,0.0293
+GO:0071451,cellular response to superoxide,8,1,0.02,0.02046,0.0293
+GO:0009607,response to biotic stimulus,839,6,2.16,0.02074,0.0293
+GO:0000462,maturation of SSU-rRNA from tricistronic...,9,1,0.02,0.02299,0.0311
+GO:1900424,regulation of defense response to bacter...,9,1,0.02,0.02299,0.0311
+GO:0002376,immune system process,92,2,0.24,0.02361,0.0311
+GO:0051668,localization within membrane,94,2,0.24,0.02458,0.0311
+GO:0006282,regulation of DNA repair,10,1,0.03,0.02551,0.0311
+GO:0030490,maturation of SSU-rRNA,10,1,0.03,0.02551,0.0311
+GO:0031125,rRNA 3'-end processing,10,1,0.03,0.02551,0.0311
+GO:2001020,regulation of response to DNA damage sti...,10,1,0.03,0.02551,0.0311
+GO:0048584,positive regulation of response to stimu...,98,2,0.25,0.02655,0.0319
+GO:0009605,response to external stimulus,895,6,2.31,0.02741,0.0324
+GO:0032456,endocytic recycling,11,1,0.03,0.02802,0.0325
+GO:0034614,cellular response to reactive oxygen spe...,12,1,0.03,0.03053,0.0349
+GO:2000377,regulation of reactive oxygen species me...,14,1,0.04,0.03553,0.04
+GO:0000466,maturation of 5.8S rRNA from tricistroni...,17,1,0.04,0.04298,0.0469
+GO:0045089,positive regulation of innate immune res...,17,1,0.04,0.04298,0.0469
+GO:0080134,regulation of response to stress,135,2,0.35,0.04757,0.0479
+GO:0000460,maturation of 5.8S rRNA,19,1,0.05,0.04792,0.0479
+GO:0002684,positive regulation of immune system pro...,19,1,0.05,0.04792,0.0479
+GO:0006108,malate metabolic process,19,1,0.05,0.04792,0.0479
+GO:0050778,positive regulation of immune response,19,1,0.05,0.04792,0.0479
+GO:0098876,vesicle-mediated transport to the plasma...,19,1,0.05,0.04792,0.0479

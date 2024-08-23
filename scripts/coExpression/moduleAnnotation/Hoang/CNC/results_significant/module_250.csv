@@ -1,0 +1,95 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010035,response to inorganic substance,134,11,3.26,0.00045,0.0291
+GO:0009415,response to water,62,7,1.51,0.00076,0.0291
+GO:0006820,anion transport,242,15,5.89,0.00093,0.0291
+GO:0050896,response to stimulus,3963,123,96.53,0.0021,0.0412
+GO:0051301,cell division,121,9,2.95,0.00286,0.0412
+GO:0006950,response to stress,2893,93,70.47,0.00299,0.0412
+GO:0009414,response to water deprivation,59,6,1.44,0.00307,0.0412
+GO:0043207,response to external biotic stimulus,800,32,19.49,0.00442,0.0462
+GO:0051707,response to other organism,800,32,19.49,0.00442,0.0462
+GO:0044419,interspecies interaction between organis...,813,32,19.8,0.00558,0.0479
+GO:0015711,organic anion transport,160,10,3.9,0.00596,0.0479
+GO:0006865,amino acid transport,72,6,1.75,0.00818,0.0479
+GO:0006207,'de novo' pyrimidine nucleobase biosynth...,6,2,0.15,0.00832,0.0479
+GO:0042126,nitrate metabolic process,6,2,0.15,0.00832,0.0479
+GO:0042128,nitrate assimilation,6,2,0.15,0.00832,0.0479
+GO:2001057,reactive nitrogen species metabolic proc...,6,2,0.15,0.00832,0.0479
+GO:0009607,response to biotic stimulus,839,32,20.44,0.00867,0.0479
+GO:0044272,sulfur compound biosynthetic process,122,8,2.97,0.01009,0.0481
+GO:0006952,defense response,1938,63,47.21,0.01144,0.0481
+GO:0000097,sulfur amino acid biosynthetic process,37,4,0.9,0.01218,0.0481
+GO:0046942,carboxylic acid transport,105,7,2.56,0.01437,0.0481
+GO:0015849,organic acid transport,106,7,2.58,0.01508,0.0481
+GO:0002757,immune response-activating signal transd...,9,2,0.22,0.01903,0.0481
+GO:0002758,innate immune response-activating signal...,9,2,0.22,0.01903,0.0481
+GO:0006422,aspartyl-tRNA aminoacylation,9,2,0.22,0.01903,0.0481
+GO:0009605,response to external stimulus,895,32,21.8,0.02021,0.0481
+GO:0000096,sulfur amino acid metabolic process,43,4,1.05,0.02031,0.0481
+GO:0010044,response to aluminum ion,10,2,0.24,0.02341,0.0481
+GO:0006225,UDP biosynthetic process,1,1,0.02,0.02436,0.0481
+GO:0009188,ribonucleoside diphosphate biosynthetic ...,1,1,0.02,0.02436,0.0481
+GO:0009193,pyrimidine ribonucleoside diphosphate me...,1,1,0.02,0.02436,0.0481
+GO:0009194,pyrimidine ribonucleoside diphosphate bi...,1,1,0.02,0.02436,0.0481
+GO:0009413,response to flooding,1,1,0.02,0.02436,0.0481
+GO:0010161,red light signaling pathway,1,1,0.02,0.02436,0.0481
+GO:0010247,detection of phosphate ion,1,1,0.02,0.02436,0.0481
+GO:0010337,regulation of salicylic acid metabolic p...,1,1,0.02,0.02436,0.0481
+GO:0043928,exonucleolytic catabolism of deadenylate...,1,1,0.02,0.02436,0.0481
+GO:0046048,UDP metabolic process,1,1,0.02,0.02436,0.0481
+GO:0046704,CDP metabolic process,1,1,0.02,0.02436,0.0481
+GO:0046705,CDP biosynthetic process,1,1,0.02,0.02436,0.0481
+GO:0048768,root hair cell tip growth,1,1,0.02,0.02436,0.0481
+GO:0051782,negative regulation of cell division,1,1,0.02,0.02436,0.0481
+GO:0062210,shoot regeneration,1,1,0.02,0.02436,0.0481
+GO:0071491,cellular response to red light,1,1,0.02,0.02436,0.0481
+GO:0090352,regulation of nitrate assimilation,1,1,0.02,0.02436,0.0481
+GO:1903314,regulation of nitrogen cycle metabolic p...,1,1,0.02,0.02436,0.0481
+GO:0006468,protein phosphorylation,1800,57,43.84,0.02506,0.0481
+GO:0071941,nitrogen cycle metabolic process,11,2,0.27,0.02816,0.0481
+GO:0042398,cellular modified amino acid biosyntheti...,48,4,1.17,0.02914,0.0481
+GO:0009409,response to cold,49,4,1.19,0.03114,0.0481
+GO:0010038,response to metal ion,49,4,1.19,0.03114,0.0481
+GO:0051188,cofactor biosynthetic process,271,12,6.6,0.03454,0.0481
+GO:0009266,response to temperature stimulus,101,6,2.46,0.03706,0.0481
+GO:0002764,immune response-regulating signaling pat...,13,2,0.32,0.03868,0.0481
+GO:0006360,transcription by RNA polymerase I,13,2,0.32,0.03868,0.0481
+GO:0006750,glutathione biosynthetic process,13,2,0.32,0.03868,0.0481
+GO:0046901,tetrahydrofolylpolyglutamate biosyntheti...,13,2,0.32,0.03868,0.0481
+GO:0009826,unidimensional cell growth,31,3,0.76,0.03901,0.0481
+GO:0009738,abscisic acid-activated signaling pathwa...,77,5,1.88,0.03978,0.0481
+GO:0007623,circadian rhythm,32,3,0.78,0.04229,0.0481
+GO:0006790,sulfur compound metabolic process,219,10,5.33,0.04275,0.0481
+GO:0009725,response to hormone,508,19,12.37,0.04391,0.0481
+GO:0006206,pyrimidine nucleobase metabolic process,14,2,0.34,0.04441,0.0481
+GO:0019856,pyrimidine nucleobase biosynthetic proce...,14,2,0.34,0.04441,0.0481
+GO:0046900,tetrahydrofolylpolyglutamate metabolic p...,14,2,0.34,0.04441,0.0481
+GO:0048440,carpel development,14,2,0.34,0.04441,0.0481
+GO:0048467,gynoecium development,14,2,0.34,0.04441,0.0481
+GO:0051568,histone H3-K4 methylation,14,2,0.34,0.04441,0.0481
+GO:0120009,intermembrane lipid transfer,14,2,0.34,0.04441,0.0481
+GO:0042742,defense response to bacterium,55,4,1.34,0.0448,0.0481
+GO:0007165,signal transduction,817,28,19.9,0.04481,0.0481
+GO:0015698,inorganic anion transport,80,5,1.95,0.04567,0.0481
+GO:0071215,cellular response to abscisic acid stimu...,80,5,1.95,0.04567,0.0481
+GO:0097306,cellular response to alcohol,80,5,1.95,0.04567,0.0481
+GO:0007154,cell communication,925,31,22.53,0.04633,0.0481
+GO:0023052,signaling,821,28,20,0.04711,0.0481
+GO:0016049,cell growth,56,4,1.36,0.04736,0.0481
+GO:0006068,ethanol catabolic process,2,1,0.05,0.04812,0.0481
+GO:0006597,spermine biosynthetic process,2,1,0.05,0.04812,0.0481
+GO:0006788,heme oxidation,2,1,0.05,0.04812,0.0481
+GO:0008216,spermidine metabolic process,2,1,0.05,0.04812,0.0481
+GO:0008295,spermidine biosynthetic process,2,1,0.05,0.04812,0.0481
+GO:0009133,nucleoside diphosphate biosynthetic proc...,2,1,0.05,0.04812,0.0481
+GO:0009138,pyrimidine nucleoside diphosphate metabo...,2,1,0.05,0.04812,0.0481
+GO:0009139,pyrimidine nucleoside diphosphate biosyn...,2,1,0.05,0.04812,0.0481
+GO:0010113,negative regulation of systemic acquired...,2,1,0.05,0.04812,0.0481
+GO:0015786,UDP-glucose transmembrane transport,2,1,0.05,0.04812,0.0481
+GO:0030307,positive regulation of cell growth,2,1,0.05,0.04812,0.0481
+GO:0034310,primary alcohol catabolic process,2,1,0.05,0.04812,0.0481
+GO:0034477,U6 snRNA 3'-end processing,2,1,0.05,0.04812,0.0481
+GO:0045003,double-strand break repair via synthesis...,2,1,0.05,0.04812,0.0481
+GO:0070072,vacuolar proton-transporting V-type ATPa...,2,1,0.05,0.04812,0.0481
+GO:0080182,histone H3-K4 trimethylation,2,1,0.05,0.04812,0.0481
+GO:0080183,response to photooxidative stress,2,1,0.05,0.04812,0.0481

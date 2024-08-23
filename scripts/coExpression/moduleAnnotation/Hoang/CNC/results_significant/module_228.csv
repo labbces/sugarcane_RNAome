@@ -1,0 +1,61 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0090333,regulation of stomatal closure,8,2,0.08,0.0026,0.0414
+GO:0016579,protein deubiquitination,98,5,0.96,0.0027,0.0414
+GO:0090332,stomatal closure,9,2,0.09,0.0033,0.0414
+GO:0070646,protein modification by small protein re...,104,5,1.01,0.0035,0.0414
+GO:0006233,dTDP biosynthetic process,1,1,0.01,0.0098,0.0414
+GO:0009186,deoxyribonucleoside diphosphate metaboli...,1,1,0.01,0.0098,0.0414
+GO:0009189,deoxyribonucleoside diphosphate biosynth...,1,1,0.01,0.0098,0.0414
+GO:0009196,pyrimidine deoxyribonucleoside diphospha...,1,1,0.01,0.0098,0.0414
+GO:0009197,pyrimidine deoxyribonucleoside diphospha...,1,1,0.01,0.0098,0.0414
+GO:0033388,putrescine biosynthetic process from arg...,1,1,0.01,0.0098,0.0414
+GO:0046072,dTDP metabolic process,1,1,0.01,0.0098,0.0414
+GO:0080178,5-carbamoylmethyl uridine residue modifi...,1,1,0.01,0.0098,0.0414
+GO:0002098,tRNA wobble uridine modification,16,2,0.16,0.0104,0.0414
+GO:0010119,regulation of stomatal movement,18,2,0.18,0.0131,0.0414
+GO:0002097,tRNA wobble base modification,20,2,0.2,0.016,0.0414
+GO:0009133,nucleoside diphosphate biosynthetic proc...,2,1,0.02,0.0194,0.0414
+GO:0009138,pyrimidine nucleoside diphosphate metabo...,2,1,0.02,0.0194,0.0414
+GO:0009139,pyrimidine nucleoside diphosphate biosyn...,2,1,0.02,0.0194,0.0414
+GO:0031119,tRNA pseudouridine synthesis,2,1,0.02,0.0194,0.0414
+GO:0048530,fruit morphogenesis,2,1,0.02,0.0194,0.0414
+GO:0051501,diterpene phytoalexin metabolic process,2,1,0.02,0.0194,0.0414
+GO:0051502,diterpene phytoalexin biosynthetic proce...,2,1,0.02,0.0194,0.0414
+GO:0052314,phytoalexin metabolic process,2,1,0.02,0.0194,0.0414
+GO:0052315,phytoalexin biosynthetic process,2,1,0.02,0.0194,0.0414
+GO:0060962,regulation of ribosomal protein gene tra...,2,1,0.02,0.0194,0.0414
+GO:0006220,pyrimidine nucleotide metabolic process,60,3,0.59,0.0208,0.0414
+GO:0006221,pyrimidine nucleotide biosynthetic proce...,60,3,0.59,0.0208,0.0414
+GO:0006241,CTP biosynthetic process,24,2,0.23,0.0227,0.0414
+GO:0009208,pyrimidine ribonucleoside triphosphate m...,24,2,0.23,0.0227,0.0414
+GO:0009209,pyrimidine ribonucleoside triphosphate b...,24,2,0.23,0.0227,0.0414
+GO:0046036,CTP metabolic process,24,2,0.23,0.0227,0.0414
+GO:0010876,lipid localization,111,4,1.08,0.0235,0.0414
+GO:0009147,pyrimidine nucleoside triphosphate metab...,25,2,0.24,0.0245,0.0414
+GO:0009148,pyrimidine nucleoside triphosphate biosy...,25,2,0.24,0.0245,0.0414
+GO:0009812,flavonoid metabolic process,26,2,0.25,0.0264,0.0414
+GO:0010118,stomatal movement,27,2,0.26,0.0283,0.0414
+GO:0009219,pyrimidine deoxyribonucleotide metabolic...,3,1,0.03,0.029,0.0414
+GO:0009221,pyrimidine deoxyribonucleotide biosynthe...,3,1,0.03,0.029,0.0414
+GO:0009265,2'-deoxyribonucleotide biosynthetic proc...,3,1,0.03,0.029,0.0414
+GO:0031538,negative regulation of anthocyanin metab...,3,1,0.03,0.029,0.0414
+GO:0046385,deoxyribose phosphate biosynthetic proce...,3,1,0.03,0.029,0.0414
+GO:0051123,RNA polymerase II preinitiation complex ...,3,1,0.03,0.029,0.0414
+GO:0090305,nucleic acid phosphodiester bond hydroly...,384,8,3.74,0.0353,0.048
+GO:0072507,divalent inorganic cation homeostasis,31,2,0.3,0.0366,0.048
+GO:0009263,deoxyribonucleotide biosynthetic process,4,1,0.04,0.0384,0.048
+GO:0010200,response to chitin,4,1,0.04,0.0384,0.048
+GO:0031397,negative regulation of protein ubiquitin...,4,1,0.04,0.0384,0.048
+GO:1903321,negative regulation of protein modificat...,4,1,0.04,0.0384,0.048
+GO:0072527,pyrimidine-containing compound metabolic...,79,3,0.77,0.0421,0.0488
+GO:0072528,pyrimidine-containing compound biosynthe...,79,3,0.77,0.0421,0.0488
+GO:0006434,seryl-tRNA aminoacylation,5,1,0.05,0.0478,0.0488
+GO:0009445,putrescine metabolic process,5,1,0.05,0.0478,0.0488
+GO:0009446,putrescine biosynthetic process,5,1,0.05,0.0478,0.0488
+GO:0009624,response to nematode,5,1,0.05,0.0478,0.0488
+GO:0016094,polyprenol biosynthetic process,5,1,0.05,0.0478,0.0488
+GO:0019408,dolichol biosynthetic process,5,1,0.05,0.0478,0.0488
+GO:0032469,endoplasmic reticulum calcium ion homeos...,5,1,0.05,0.0478,0.0488
+GO:0009218,pyrimidine ribonucleotide metabolic proc...,36,2,0.35,0.048,0.0488
+GO:0009220,pyrimidine ribonucleotide biosynthetic p...,36,2,0.35,0.048,0.0488
+GO:0006511,ubiquitin-dependent protein catabolic pr...,269,6,2.62,0.0488,0.0488

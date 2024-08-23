@@ -1,0 +1,11 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016255,attachment of GPI anchor to protein,7,1,0.01,0.0091,0.0356
+GO:0002943,tRNA dihydrouridine synthesis,12,1,0.02,0.0156,0.0356
+GO:0000105,histidine biosynthetic process,14,1,0.02,0.0182,0.0356
+GO:0006547,histidine metabolic process,14,1,0.02,0.0182,0.0356
+GO:0052803,imidazole-containing compound metabolic ...,14,1,0.02,0.0182,0.0356
+GO:2000022,regulation of jasmonic acid mediated sig...,17,1,0.02,0.0221,0.0356
+GO:0048194,Golgi vesicle budding,22,1,0.03,0.0285,0.0356
+GO:0090114,COPII-coated vesicle budding,22,1,0.03,0.0285,0.0356
+GO:0006900,vesicle budding from membrane,26,1,0.03,0.0336,0.0373
+GO:0001172,transcription, RNA-templated,33,1,0.04,0.0424,0.0424

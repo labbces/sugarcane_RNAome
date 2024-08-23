@@ -1,0 +1,23 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:1903649,regulation of cytoplasmic transport,5,1,0,0.002,0.0136
+GO:2000641,regulation of early endosome to late end...,5,1,0,0.002,0.0136
+GO:0000028,ribosomal small subunit assembly,8,1,0,0.0031,0.0136
+GO:0045022,early endosome to late endosome transpor...,8,1,0,0.0031,0.0136
+GO:0098927,vesicle-mediated transport between endos...,8,1,0,0.0031,0.0136
+GO:0032386,regulation of intracellular transport,10,1,0,0.0039,0.0143
+GO:0007032,endosome organization,13,1,0.01,0.0051,0.016
+GO:0060627,regulation of vesicle-mediated transport,15,1,0.01,0.0059,0.0162
+GO:0042255,ribosome assembly,18,1,0.01,0.0071,0.0165
+GO:0060341,regulation of cellular localization,19,1,0.01,0.0075,0.0165
+GO:0042274,ribosomal small subunit biogenesis,23,1,0.01,0.009,0.018
+GO:0016482,cytosolic transport,29,1,0.01,0.0114,0.0198
+GO:0016192,vesicle-mediated transport,432,2,0.17,0.0117,0.0198
+GO:0051049,regulation of transport,45,1,0.02,0.0176,0.0264
+GO:0016050,vesicle organization,46,1,0.02,0.018,0.0264
+GO:0046907,intracellular transport,600,2,0.24,0.0219,0.0266
+GO:0032879,regulation of localization,57,1,0.02,0.0222,0.0266
+GO:0010256,endomembrane system organization,59,1,0.02,0.023,0.0266
+GO:0051649,establishment of localization in cell,616,2,0.24,0.023,0.0266
+GO:0022618,ribonucleoprotein complex assembly,66,1,0.03,0.0257,0.0273
+GO:0071826,ribonucleoprotein complex subunit organi...,67,1,0.03,0.0261,0.0273
+GO:0070925,organelle assembly,80,1,0.03,0.0311,0.0311

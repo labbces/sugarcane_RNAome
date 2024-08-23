@@ -1,0 +1,108 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0005985,sucrose metabolic process,49,4,0.54,0.0021,0.041
+GO:0031667,response to nutrient levels,56,4,0.62,0.0034,0.041
+GO:0005975,carbohydrate metabolic process,735,17,8.13,0.0035,0.041
+GO:0006526,arginine biosynthetic process,9,2,0.1,0.0042,0.041
+GO:0032104,regulation of response to extracellular ...,9,2,0.1,0.0042,0.041
+GO:0032107,regulation of response to nutrient level...,9,2,0.1,0.0042,0.041
+GO:0006950,response to stress,2893,47,32.01,0.0043,0.041
+GO:0009991,response to extracellular stimulus,61,4,0.67,0.0047,0.041
+GO:0006525,arginine metabolic process,10,2,0.11,0.0052,0.041
+GO:0010020,chloroplast fission,11,2,0.12,0.0063,0.041
+GO:0043572,plastid fission,11,2,0.12,0.0063,0.041
+GO:0030245,cellulose catabolic process,12,2,0.13,0.0075,0.041
+GO:0051275,beta-glucan catabolic process,12,2,0.13,0.0075,0.041
+GO:0008150,biological_process,16230,197,179.57,0.008,0.041
+GO:0000911,cytokinesis by cell plate formation,13,2,0.14,0.0088,0.041
+GO:0007020,microtubule nucleation,13,2,0.14,0.0088,0.041
+GO:0032101,regulation of response to external stimu...,74,4,0.82,0.0092,0.041
+GO:0009311,oligosaccharide metabolic process,116,5,1.28,0.0095,0.041
+GO:0032103,positive regulation of response to exter...,40,3,0.44,0.0098,0.041
+GO:1905393,plant organ formation,14,2,0.15,0.0102,0.041
+GO:0009235,cobalamin metabolic process,1,1,0.01,0.0111,0.041
+GO:0009236,cobalamin biosynthetic process,1,1,0.01,0.0111,0.041
+GO:0009963,positive regulation of flavonoid biosynt...,1,1,0.01,0.0111,0.041
+GO:0031221,arabinan metabolic process,1,1,0.01,0.0111,0.041
+GO:0035884,arabinan biosynthetic process,1,1,0.01,0.0111,0.041
+GO:0097320,plasma membrane tubulation,1,1,0.01,0.0111,0.041
+GO:1903525,regulation of membrane tubulation,1,1,0.01,0.0111,0.041
+GO:1903527,positive regulation of membrane tubulati...,1,1,0.01,0.0111,0.041
+GO:1903729,regulation of plasma membrane organizati...,1,1,0.01,0.0111,0.041
+GO:0044262,cellular carbohydrate metabolic process,452,11,5,0.0123,0.0428
+GO:0048285,organelle fission,124,5,1.37,0.0124,0.0428
+GO:0046785,microtubule polymerization,17,2,0.19,0.0149,0.0457
+GO:0033554,cellular response to stress,722,15,7.99,0.015,0.0457
+GO:0009100,glycoprotein metabolic process,184,6,2.04,0.0168,0.0457
+GO:0005984,disaccharide metabolic process,90,4,1,0.0178,0.0457
+GO:0031109,microtubule polymerization or depolymeri...,19,2,0.21,0.0184,0.0457
+GO:0050896,response to stimulus,3963,57,43.85,0.0197,0.0457
+GO:0051656,establishment of organelle localization,52,3,0.58,0.0199,0.0457
+GO:0000919,cell plate assembly,2,1,0.02,0.022,0.0457
+GO:0009920,cell plate formation involved in plant-t...,2,1,0.02,0.022,0.0457
+GO:0019323,pentose catabolic process,2,1,0.02,0.022,0.0457
+GO:0019478,D-amino acid catabolic process,2,1,0.02,0.022,0.0457
+GO:0042450,arginine biosynthetic process via ornith...,2,1,0.02,0.022,0.0457
+GO:0042843,D-xylose catabolic process,2,1,0.02,0.022,0.0457
+GO:0070841,inclusion body assembly,2,1,0.02,0.022,0.0457
+GO:0090083,regulation of inclusion body assembly,2,1,0.02,0.022,0.0457
+GO:0090084,negative regulation of inclusion body as...,2,1,0.02,0.022,0.0457
+GO:0097201,negative regulation of transcription fro...,2,1,0.02,0.022,0.0457
+GO:1902626,assembly of large subunit precursor of p...,2,1,0.02,0.022,0.0457
+GO:2000904,regulation of starch metabolic process,2,1,0.02,0.022,0.0457
+GO:1901607,alpha-amino acid biosynthetic process,144,5,1.59,0.0222,0.0457
+GO:0044275,cellular carbohydrate catabolic process,56,3,0.62,0.0241,0.0457
+GO:1901605,alpha-amino acid metabolic process,201,6,2.22,0.0247,0.0457
+GO:0009056,catabolic process,1051,19,11.63,0.025,0.0457
+GO:0000910,cytokinesis,23,2,0.25,0.0265,0.0457
+GO:0009251,glucan catabolic process,23,2,0.25,0.0265,0.0457
+GO:0044247,cellular polysaccharide catabolic proces...,23,2,0.25,0.0265,0.0457
+GO:0051640,organelle localization,59,3,0.65,0.0276,0.0457
+GO:0006903,vesicle targeting,24,2,0.27,0.0287,0.0457
+GO:0009084,glutamine family amino acid biosynthetic...,24,2,0.27,0.0287,0.0457
+GO:0005986,sucrose biosynthetic process,25,2,0.28,0.0309,0.0457
+GO:0034219,carbohydrate transmembrane transport,62,3,0.69,0.0314,0.0457
+GO:0017144,drug metabolic process,273,7,3.02,0.0328,0.0457
+GO:0006432,phenylalanyl-tRNA aminoacylation,3,1,0.03,0.0328,0.0457
+GO:0006692,prostanoid metabolic process,3,1,0.03,0.0328,0.0457
+GO:0006693,prostaglandin metabolic process,3,1,0.03,0.0328,0.0457
+GO:0032781,positive regulation of ATPase activity,3,1,0.03,0.0328,0.0457
+GO:0033559,unsaturated fatty acid metabolic process,3,1,0.03,0.0328,0.0457
+GO:0042572,retinol metabolic process,3,1,0.03,0.0328,0.0457
+GO:0043618,regulation of transcription from RNA pol...,3,1,0.03,0.0328,0.0457
+GO:0043620,regulation of DNA-templated transcriptio...,3,1,0.03,0.0328,0.0457
+GO:0080006,internode patterning,3,1,0.03,0.0328,0.0457
+GO:1990641,response to iron ion starvation,3,1,0.03,0.0328,0.0457
+GO:0008652,cellular amino acid biosynthetic process,160,5,1.77,0.0329,0.0457
+GO:0042744,hydrogen peroxide catabolic process,26,2,0.29,0.0333,0.0457
+GO:0051648,vesicle localization,26,2,0.29,0.0333,0.0457
+GO:0051650,establishment of vesicle localization,26,2,0.29,0.0333,0.0457
+GO:0009553,embryo sac development,27,2,0.3,0.0357,0.0457
+GO:0042176,regulation of protein catabolic process,28,2,0.31,0.0382,0.0457
+GO:0006310,DNA recombination,225,6,2.49,0.0396,0.0457
+GO:0048646,anatomical structure formation involved ...,29,2,0.32,0.0407,0.0457
+GO:0006486,protein glycosylation,170,5,1.88,0.041,0.0457
+GO:0043413,macromolecule glycosylation,170,5,1.88,0.041,0.0457
+GO:0009605,response to external stimulus,895,16,9.9,0.0412,0.0457
+GO:0034976,response to endoplasmic reticulum stress,70,3,0.77,0.0426,0.0457
+GO:0042743,hydrogen peroxide metabolic process,30,2,0.33,0.0433,0.0457
+GO:0001523,retinoid metabolic process,4,1,0.04,0.0435,0.0457
+GO:0006591,ornithine metabolic process,4,1,0.04,0.0435,0.0457
+GO:0007009,plasma membrane organization,4,1,0.04,0.0435,0.0457
+GO:0009237,siderophore metabolic process,4,1,0.04,0.0435,0.0457
+GO:0019290,siderophore biosynthetic process,4,1,0.04,0.0435,0.0457
+GO:0019509,L-methionine salvage from methylthioaden...,4,1,0.04,0.0435,0.0457
+GO:0032106,positive regulation of response to extra...,4,1,0.04,0.0435,0.0457
+GO:0032109,positive regulation of response to nutri...,4,1,0.04,0.0435,0.0457
+GO:0042256,mature ribosome assembly,4,1,0.04,0.0435,0.0457
+GO:0043102,amino acid salvage,4,1,0.04,0.0435,0.0457
+GO:0046365,monosaccharide catabolic process,4,1,0.04,0.0435,0.0457
+GO:0071267,L-methionine salvage,4,1,0.04,0.0435,0.0457
+GO:0080040,positive regulation of cellular response...,4,1,0.04,0.0435,0.0457
+GO:0140255,regulation of cellular response to phosp...,4,1,0.04,0.0435,0.0457
+GO:1903189,glyoxal metabolic process,4,1,0.04,0.0435,0.0457
+GO:0009101,glycoprotein biosynthetic process,173,5,1.91,0.0436,0.0457
+GO:0051301,cell division,121,4,1.34,0.0456,0.0472
+GO:0019321,pentose metabolic process,31,2,0.34,0.0459,0.0472
+GO:0051273,beta-glucan metabolic process,122,4,1.35,0.0468,0.0477
+GO:0009832,plant-type cell wall biogenesis,32,2,0.35,0.0487,0.0487
+GO:0017001,antibiotic catabolic process,32,2,0.35,0.0487,0.0487

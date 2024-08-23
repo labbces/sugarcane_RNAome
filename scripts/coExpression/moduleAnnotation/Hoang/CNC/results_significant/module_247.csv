@@ -1,0 +1,184 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0046488,phosphatidylinositol metabolic process,178,21,8.41,0.00011,0.0174
+GO:0006661,phosphatidylinositol biosynthetic proces...,146,18,6.9,0.00019,0.0174
+GO:0006505,GPI anchor metabolic process,60,10,2.84,0.00047,0.0215
+GO:0006506,GPI anchor biosynthetic process,60,10,2.84,0.00047,0.0215
+GO:0006650,glycerophospholipid metabolic process,236,23,11.16,0.00086,0.0264
+GO:0006497,protein lipidation,66,10,3.12,0.00101,0.0264
+GO:0042158,lipoprotein biosynthetic process,66,10,3.12,0.00101,0.0264
+GO:0046474,glycerophospholipid biosynthetic process,199,20,9.41,0.00125,0.0267
+GO:0042157,lipoprotein metabolic process,69,10,3.26,0.00144,0.0267
+GO:0009247,glycolipid biosynthetic process,81,11,3.83,0.00146,0.0267
+GO:0051301,cell division,121,14,5.72,0.00174,0.0285
+GO:0009409,response to cold,49,8,2.32,0.00195,0.0285
+GO:0046486,glycerolipid metabolic process,268,24,12.67,0.00213,0.0285
+GO:0019637,organophosphate metabolic process,765,54,36.16,0.00224,0.0285
+GO:0002764,immune response-regulating signaling pat...,13,4,0.61,0.00252,0.0285
+GO:0006275,regulation of DNA replication,13,4,0.61,0.00252,0.0285
+GO:0009651,response to salt stress,63,9,2.98,0.00271,0.0285
+GO:0045017,glycerolipid biosynthetic process,228,21,10.78,0.0028,0.0285
+GO:0016255,attachment of GPI anchor to protein,7,3,0.33,0.00319,0.0307
+GO:0006664,glycolipid metabolic process,90,11,4.25,0.00342,0.0313
+GO:1903509,liposaccharide metabolic process,91,11,4.3,0.00373,0.0325
+GO:0046467,membrane lipid biosynthetic process,93,11,4.4,0.00441,0.0354
+GO:0006644,phospholipid metabolic process,316,26,14.94,0.00452,0.0354
+GO:0006099,tricarboxylic acid cycle,34,6,1.61,0.00475,0.0354
+GO:0009119,ribonucleoside metabolic process,35,6,1.65,0.00551,0.0354
+GO:0046128,purine ribonucleoside metabolic process,35,6,1.65,0.00551,0.0354
+GO:0031167,rRNA methylation,25,5,1.18,0.00564,0.0354
+GO:0042278,purine nucleoside metabolic process,36,6,1.7,0.00635,0.0354
+GO:0008156,negative regulation of DNA replication,3,2,0.14,0.00649,0.0354
+GO:0046688,response to copper ion,3,2,0.14,0.00649,0.0354
+GO:2000104,negative regulation of DNA-dependent DNA...,3,2,0.14,0.00649,0.0354
+GO:0044265,cellular macromolecule catabolic process,458,34,21.65,0.00654,0.0354
+GO:0006183,GTP biosynthetic process,9,3,0.43,0.00714,0.0354
+GO:0006228,UTP biosynthetic process,9,3,0.43,0.00714,0.0354
+GO:0046039,GTP metabolic process,9,3,0.43,0.00714,0.0354
+GO:0046051,UTP metabolic process,9,3,0.43,0.00714,0.0354
+GO:0090407,organophosphate biosynthetic process,512,37,24.2,0.00717,0.0354
+GO:0009057,macromolecule catabolic process,530,38,25.05,0.00735,0.0354
+GO:1901575,organic substance catabolic process,939,61,44.39,0.00757,0.0355
+GO:0009415,response to water,62,8,2.93,0.00854,0.0389
+GO:0006970,response to osmotic stress,75,9,3.55,0.00871,0.0389
+GO:0022412,cellular process involved in reproductio...,10,3,0.47,0.00985,0.0424
+GO:1901068,guanosine-containing compound metabolic ...,29,5,1.37,0.01078,0.0424
+GO:1903320,regulation of protein modification by sm...,19,4,0.9,0.0109,0.0424
+GO:0010035,response to inorganic substance,134,13,6.33,0.01102,0.0424
+GO:0008654,phospholipid biosynthetic process,258,21,12.2,0.01121,0.0424
+GO:0009056,catabolic process,1051,66,49.68,0.01152,0.0424
+GO:0009628,response to abiotic stimulus,427,31,20.19,0.01227,0.0424
+GO:0002221,pattern recognition receptor signaling p...,4,2,0.19,0.01257,0.0424
+GO:0045931,positive regulation of mitotic cell cycl...,4,2,0.19,0.01257,0.0424
+GO:0060260,regulation of transcription initiation f...,4,2,0.19,0.01257,0.0424
+GO:0060261,positive regulation of transcription ini...,4,2,0.19,0.01257,0.0424
+GO:2000144,positive regulation of DNA-templated tra...,4,2,0.19,0.01257,0.0424
+GO:0007276,gamete generation,11,3,0.52,0.01307,0.0424
+GO:0048232,male gamete generation,11,3,0.52,0.01307,0.0424
+GO:0090329,regulation of DNA-dependent DNA replicat...,11,3,0.52,0.01307,0.0424
+GO:0030163,protein catabolic process,328,25,15.51,0.01325,0.0424
+GO:0009116,nucleoside metabolic process,42,6,1.99,0.01346,0.0424
+GO:0006090,pyruvate metabolic process,123,12,5.81,0.01367,0.0424
+GO:0000154,rRNA modification,31,5,1.47,0.01428,0.0436
+GO:0051603,proteolysis involved in cellular protein...,300,23,14.18,0.01596,0.046
+GO:0009132,nucleoside diphosphate metabolic process,111,11,5.25,0.01597,0.046
+GO:0071472,cellular response to salt stress,12,3,0.57,0.01682,0.046
+GO:0006511,ubiquitin-dependent protein catabolic pr...,269,21,12.72,0.01722,0.046
+GO:0071407,cellular response to organic cyclic comp...,57,7,2.69,0.01744,0.046
+GO:0006165,nucleoside diphosphate phosphorylation,98,10,4.63,0.01745,0.046
+GO:0046939,nucleotide phosphorylation,98,10,4.63,0.01745,0.046
+GO:0048584,positive regulation of response to stimu...,98,10,4.63,0.01745,0.046
+GO:0009163,nucleoside biosynthetic process,22,4,1.04,0.01838,0.046
+GO:0042451,purine nucleoside biosynthetic process,22,4,1.04,0.01838,0.046
+GO:0042455,ribonucleoside biosynthetic process,22,4,1.04,0.01838,0.046
+GO:0046129,purine ribonucleoside biosynthetic proce...,22,4,1.04,0.01838,0.046
+GO:0044257,cellular protein catabolic process,306,23,14.47,0.01967,0.046
+GO:0009150,purine ribonucleotide metabolic process,240,19,11.35,0.0199,0.046
+GO:0009098,leucine biosynthetic process,5,2,0.24,0.02029,0.046
+GO:0016540,protein autoprocessing,5,2,0.24,0.02029,0.046
+GO:0032875,regulation of DNA endoreduplication,5,2,0.24,0.02029,0.046
+GO:0070417,cellular response to cold,5,2,0.24,0.02029,0.046
+GO:0009414,response to water deprivation,59,7,2.79,0.02077,0.046
+GO:0035966,response to topologically incorrect prot...,13,3,0.61,0.02111,0.046
+GO:0035967,cellular response to topologically incor...,13,3,0.61,0.02111,0.046
+GO:0071470,cellular response to osmotic stress,13,3,0.61,0.02111,0.046
+GO:0072598,protein localization to chloroplast,13,3,0.61,0.02111,0.046
+GO:0009266,response to temperature stimulus,101,10,4.77,0.02113,0.046
+GO:0030258,lipid modification,162,14,7.66,0.02172,0.0468
+GO:0019941,modification-dependent protein catabolic...,276,21,13.05,0.0222,0.0472
+GO:0043632,modification-dependent macromolecule cat...,277,21,13.09,0.02299,0.0481
+GO:0044283,small molecule biosynthetic process,486,33,22.97,0.0242,0.0481
+GO:0048583,regulation of response to stimulus,296,22,13.99,0.02477,0.0481
+GO:0006189,'de novo' IMP biosynthetic process,24,4,1.13,0.02479,0.0481
+GO:0007049,cell cycle,313,23,14.8,0.02481,0.0481
+GO:0005992,trehalose biosynthetic process,36,5,1.7,0.02612,0.0481
+GO:0051649,establishment of localization in cell,616,40,29.12,0.02694,0.0481
+GO:0046907,intracellular transport,600,39,28.36,0.02825,0.0481
+GO:0006643,membrane lipid metabolic process,121,11,5.72,0.02831,0.0481
+GO:0006163,purine nucleotide metabolic process,250,19,11.82,0.02884,0.0481
+GO:0006121,mitochondrial electron transport, succin...,6,2,0.28,0.0295,0.0481
+GO:0031537,regulation of anthocyanin metabolic proc...,6,2,0.28,0.0295,0.0481
+GO:0046283,anthocyanin-containing compound metaboli...,15,3,0.71,0.03131,0.0481
+GO:2000142,regulation of DNA-templated transcriptio...,15,3,0.71,0.03131,0.0481
+GO:0005991,trehalose metabolic process,38,5,1.8,0.03221,0.0481
+GO:0009812,flavonoid metabolic process,26,4,1.23,0.03239,0.0481
+GO:0006260,DNA replication,204,16,9.64,0.03314,0.0481
+GO:0072521,purine-containing compound metabolic pro...,254,19,12.01,0.03315,0.0481
+GO:1901565,organonitrogen compound catabolic proces...,429,29,20.28,0.03461,0.0481
+GO:1901070,guanosine-containing compound biosynthet...,16,3,0.76,0.03721,0.0481
+GO:0071214,cellular response to abiotic stimulus,53,6,2.51,0.03818,0.0481
+GO:0104004,cellular response to environmental stimu...,53,6,2.51,0.03818,0.0481
+GO:0009152,purine ribonucleotide biosynthetic proce...,112,10,5.29,0.03942,0.0481
+GO:0006424,glutamyl-tRNA aminoacylation,7,2,0.33,0.04002,0.0481
+GO:0051084,'de novo' posttranslational protein fold...,7,2,0.33,0.04002,0.0481
+GO:0051085,chaperone cofactor-dependent protein ref...,7,2,0.33,0.04002,0.0481
+GO:0060919,auxin influx,7,2,0.33,0.04002,0.0481
+GO:0071248,cellular response to metal ion,7,2,0.33,0.04002,0.0481
+GO:0080162,intracellular auxin transport,7,2,0.33,0.04002,0.0481
+GO:0008652,cellular amino acid biosynthetic process,160,13,7.56,0.04046,0.0481
+GO:1901607,alpha-amino acid biosynthetic process,144,12,6.81,0.04058,0.0481
+GO:0043401,steroid hormone mediated signaling pathw...,28,4,1.32,0.04121,0.0481
+GO:0071383,cellular response to steroid hormone sti...,28,4,1.32,0.04121,0.0481
+GO:0009205,purine ribonucleoside triphosphate metab...,129,11,6.1,0.04224,0.0481
+GO:0031349,positive regulation of defense response,41,5,1.94,0.04288,0.0481
+GO:0034404,nucleobase-containing small molecule bio...,41,5,1.94,0.04288,0.0481
+GO:0015749,monosaccharide transmembrane transport,17,3,0.8,0.04364,0.0481
+GO:0042742,defense response to bacterium,55,6,2.6,0.04458,0.0481
+GO:0051246,regulation of protein metabolic process,281,20,13.28,0.04565,0.0481
+GO:0009967,positive regulation of signal transducti...,29,4,1.37,0.04608,0.0481
+GO:0048545,response to steroid hormone,29,4,1.37,0.04608,0.0481
+GO:1901659,glycosyl compound biosynthetic process,29,4,1.37,0.04608,0.0481
+GO:0006543,glutamine catabolic process,1,1,0.05,0.04727,0.0481
+GO:0006592,ornithine biosynthetic process,1,1,0.05,0.04727,0.0481
+GO:0006651,diacylglycerol biosynthetic process,1,1,0.05,0.04727,0.0481
+GO:0009717,isoflavonoid biosynthetic process,1,1,0.05,0.04727,0.0481
+GO:0010216,maintenance of DNA methylation,1,1,0.05,0.04727,0.0481
+GO:0010424,DNA methylation on cytosine within a CG ...,1,1,0.05,0.04727,0.0481
+GO:0018923,limonene metabolic process,1,1,0.05,0.04727,0.0481
+GO:0030518,intracellular steroid hormone receptor s...,1,1,0.05,0.04727,0.0481
+GO:0030520,intracellular estrogen receptor signalin...,1,1,0.05,0.04727,0.0481
+GO:0032007,negative regulation of TOR signaling,1,1,0.05,0.04727,0.0481
+GO:0033143,regulation of intracellular steroid horm...,1,1,0.05,0.04727,0.0481
+GO:0033144,negative regulation of intracellular ste...,1,1,0.05,0.04727,0.0481
+GO:0033146,regulation of intracellular estrogen rec...,1,1,0.05,0.04727,0.0481
+GO:0033147,negative regulation of intracellular est...,1,1,0.05,0.04727,0.0481
+GO:0033233,regulation of protein sumoylation,1,1,0.05,0.04727,0.0481
+GO:0033235,positive regulation of protein sumoylati...,1,1,0.05,0.04727,0.0481
+GO:0034086,maintenance of sister chromatid cohesion,1,1,0.05,0.04727,0.0481
+GO:0034090,maintenance of meiotic sister chromatid ...,1,1,0.05,0.04727,0.0481
+GO:0035523,protein K29-linked deubiquitination,1,1,0.05,0.04727,0.0481
+GO:0035871,protein K11-linked deubiquitination,1,1,0.05,0.04727,0.0481
+GO:0042058,regulation of epidermal growth factor re...,1,1,0.05,0.04727,0.0481
+GO:0043111,replication fork arrest,1,1,0.05,0.04727,0.0481
+GO:0045742,positive regulation of epidermal growth ...,1,1,0.05,0.04727,0.0481
+GO:0045840,positive regulation of mitotic nuclear d...,1,1,0.05,0.04727,0.0481
+GO:0045842,positive regulation of mitotic metaphase...,1,1,0.05,0.04727,0.0481
+GO:0046250,limonene biosynthetic process,1,1,0.05,0.04727,0.0481
+GO:0046287,isoflavonoid metabolic process,1,1,0.05,0.04727,0.0481
+GO:0046339,diacylglycerol metabolic process,1,1,0.05,0.04727,0.0481
+GO:0048478,replication fork protection,1,1,0.05,0.04727,0.0481
+GO:0048830,adventitious root development,1,1,0.05,0.04727,0.0481
+GO:0050982,detection of mechanical stimulus,1,1,0.05,0.04727,0.0481
+GO:0051457,maintenance of protein location in nucle...,1,1,0.05,0.04727,0.0481
+GO:0051785,positive regulation of nuclear division,1,1,0.05,0.04727,0.0481
+GO:0051984,positive regulation of chromosome segreg...,1,1,0.05,0.04727,0.0481
+GO:0060250,germ-line stem-cell niche homeostasis,1,1,0.05,0.04727,0.0481
+GO:0062033,positive regulation of mitotic sister ch...,1,1,0.05,0.04727,0.0481
+GO:0071712,ER-associated misfolded protein cataboli...,1,1,0.05,0.04727,0.0481
+GO:0080178,5-carbamoylmethyl uridine residue modifi...,1,1,0.05,0.04727,0.0481
+GO:0090610,bundle sheath cell fate specification,1,1,0.05,0.04727,0.0481
+GO:1901184,regulation of ERBB signaling pathway,1,1,0.05,0.04727,0.0481
+GO:1901186,positive regulation of ERBB signaling pa...,1,1,0.05,0.04727,0.0481
+GO:1901970,positive regulation of mitotic sister ch...,1,1,0.05,0.04727,0.0481
+GO:1902101,positive regulation of metaphase/anaphas...,1,1,0.05,0.04727,0.0481
+GO:1902446,regulation of shade avoidance,1,1,0.05,0.04727,0.0481
+GO:1902448,positive regulation of shade avoidance,1,1,0.05,0.04727,0.0481
+GO:1903182,regulation of SUMO transferase activity,1,1,0.05,0.04727,0.0481
+GO:1903755,positive regulation of SUMO transferase ...,1,1,0.05,0.04727,0.0481
+GO:1904262,negative regulation of TORC1 signaling,1,1,0.05,0.04727,0.0481
+GO:1904659,glucose transmembrane transport,1,1,0.05,0.04727,0.0481
+GO:1905820,positive regulation of chromosome separa...,1,1,0.05,0.04727,0.0481
+GO:1990167,protein K27-linked deubiquitination,1,1,0.05,0.04727,0.0481
+GO:1990168,protein K33-linked deubiquitination,1,1,0.05,0.04727,0.0481
+GO:0046854,phosphatidylinositol phosphorylation,85,8,4.02,0.04758,0.0481
+GO:0070647,protein modification by small protein co...,570,36,26.95,0.04818,0.0484
+GO:0009144,purine nucleoside triphosphate metabolic...,132,11,6.24,0.04851,0.0485

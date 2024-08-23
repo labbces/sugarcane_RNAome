@@ -1,0 +1,13 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019432,triglyceride biosynthetic process,23,2,0.18,0.013,0.034
+GO:0046460,neutral lipid biosynthetic process,24,2,0.18,0.014,0.034
+GO:0046463,acylglycerol biosynthetic process,24,2,0.18,0.014,0.034
+GO:0006641,triglyceride metabolic process,25,2,0.19,0.016,0.034
+GO:0006638,neutral lipid metabolic process,26,2,0.2,0.017,0.034
+GO:0006639,acylglycerol metabolic process,26,2,0.2,0.017,0.034
+GO:0009443,pyridoxal 5'-phosphate salvage,4,1,0.03,0.03,0.0415
+GO:0009445,putrescine metabolic process,5,1,0.04,0.038,0.0415
+GO:0009446,putrescine biosynthetic process,5,1,0.04,0.038,0.0415
+GO:0034389,lipid droplet organization,5,1,0.04,0.038,0.0415
+GO:0043968,histone H2A acetylation,5,1,0.04,0.038,0.0415
+GO:0043967,histone H4 acetylation,6,1,0.05,0.045,0.045

@@ -1,0 +1,20 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0031297,replication fork processing,6,2,0.02,0.00013,0.0025
+GO:0045005,DNA-dependent DNA replication maintenanc...,16,2,0.05,0.00105,0.01
+GO:0042352,GDP-L-fucose salvage,4,1,0.01,0.01202,0.0404
+GO:0106035,protein maturation by [4Fe-4S] cluster t...,4,1,0.01,0.01202,0.0404
+GO:0042350,GDP-L-fucose biosynthetic process,5,1,0.02,0.015,0.0404
+GO:0046368,GDP-L-fucose metabolic process,5,1,0.02,0.015,0.0404
+GO:0090630,activation of GTPase activity,5,1,0.02,0.015,0.0404
+GO:0006260,DNA replication,204,3,0.62,0.02383,0.0404
+GO:0006261,DNA-dependent DNA replication,81,2,0.24,0.02494,0.0404
+GO:0006259,DNA metabolic process,1188,8,3.58,0.02621,0.0404
+GO:0070534,protein K63-linked ubiquitination,9,1,0.03,0.02684,0.0404
+GO:0097428,protein maturation by iron-sulfur cluste...,9,1,0.03,0.02684,0.0404
+GO:0032011,ARF protein signal transduction,10,1,0.03,0.02977,0.0404
+GO:0032012,regulation of ARF protein signal transdu...,10,1,0.03,0.02977,0.0404
+GO:0043547,positive regulation of GTPase activity,11,1,0.03,0.0327,0.0414
+GO:0046578,regulation of Ras protein signal transdu...,13,1,0.04,0.03853,0.0431
+GO:0051056,regulation of small GTPase mediated sign...,13,1,0.04,0.03853,0.0431
+GO:0007265,Ras protein signal transduction,14,1,0.04,0.04144,0.0437
+GO:0051345,positive regulation of hydrolase activit...,15,1,0.05,0.04433,0.0443

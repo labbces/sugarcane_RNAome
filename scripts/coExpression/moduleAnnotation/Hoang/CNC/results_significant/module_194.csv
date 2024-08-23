@@ -1,0 +1,36 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0015696,ammonium transport,1,1,0.01,0.0061,0.0356
+GO:0060623,regulation of chromosome condensation,1,1,0.01,0.0061,0.0356
+GO:0070932,histone H3 deacetylation,1,1,0.01,0.0061,0.0356
+GO:0072488,ammonium transmembrane transport,1,1,0.01,0.0061,0.0356
+GO:1905821,positive regulation of chromosome conden...,1,1,0.01,0.0061,0.0356
+GO:1990619,histone H3-K9 deacetylation,1,1,0.01,0.0061,0.0356
+GO:0019310,inositol catabolic process,2,1,0.01,0.0121,0.0494
+GO:0010019,chloroplast-nucleus signaling pathway,3,1,0.02,0.0181,0.0494
+GO:0010187,negative regulation of seed germination,3,1,0.02,0.0181,0.0494
+GO:0032544,plastid translation,3,1,0.02,0.0181,0.0494
+GO:0007076,mitotic chromosome condensation,4,1,0.02,0.0241,0.0494
+GO:0010588,cotyledon vascular tissue pattern format...,4,1,0.02,0.0241,0.0494
+GO:0019287,isopentenyl diphosphate biosynthetic pro...,4,1,0.02,0.0241,0.0494
+GO:0031930,mitochondria-nucleus signaling pathway,4,1,0.02,0.0241,0.0494
+GO:0048826,cotyledon morphogenesis,4,1,0.02,0.0241,0.0494
+GO:0010048,vernalization response,5,1,0.03,0.03,0.0494
+GO:0006020,inositol metabolic process,6,1,0.04,0.0359,0.0494
+GO:0048598,embryonic morphogenesis,6,1,0.04,0.0359,0.0494
+GO:1900055,regulation of leaf senescence,6,1,0.04,0.0359,0.0494
+GO:0006913,nucleocytoplasmic transport,123,3,0.75,0.0392,0.0494
+GO:0051169,nuclear transport,123,3,0.75,0.0392,0.0494
+GO:0048825,cotyledon development,7,1,0.04,0.0418,0.0494
+GO:0051013,microtubule severing,7,1,0.04,0.0418,0.0494
+GO:1900865,chloroplast RNA modification,7,1,0.04,0.0418,0.0494
+GO:0048366,leaf development,54,2,0.33,0.0427,0.0494
+GO:0000303,response to superoxide,8,1,0.05,0.0476,0.0494
+GO:0000305,response to oxygen radical,8,1,0.05,0.0476,0.0494
+GO:0006801,superoxide metabolic process,8,1,0.05,0.0476,0.0494
+GO:0019430,removal of superoxide radicals,8,1,0.05,0.0476,0.0494
+GO:0035821,modulation of process of other organism,8,1,0.05,0.0476,0.0494
+GO:0071450,cellular response to oxygen radical,8,1,0.05,0.0476,0.0494
+GO:0071451,cellular response to superoxide,8,1,0.05,0.0476,0.0494
+GO:2001252,positive regulation of chromosome organi...,8,1,0.05,0.0476,0.0494
+GO:0010638,positive regulation of organelle organiz...,58,2,0.35,0.0486,0.0494
+GO:0018205,peptidyl-lysine modification,135,3,0.82,0.0494,0.0494

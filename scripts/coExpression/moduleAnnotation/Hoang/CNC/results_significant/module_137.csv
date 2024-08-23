@@ -1,0 +1,16 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0033614,chloroplast proton-transporting ATP synt...,1,1,0.01,0.0051,0.0153
+GO:0043461,proton-transporting ATP synthase complex...,1,1,0.01,0.0051,0.0153
+GO:0052779,amino disaccharide metabolic process,1,1,0.01,0.0051,0.0153
+GO:0052781,chitobiose catabolic process,1,1,0.01,0.0051,0.0153
+GO:0052782,amino disaccharide catabolic process,1,1,0.01,0.0051,0.0153
+GO:0017062,respiratory chain complex III assembly,2,1,0.01,0.0102,0.0191
+GO:0034551,mitochondrial respiratory chain complex ...,2,1,0.01,0.0102,0.0191
+GO:0080119,ER body organization,2,1,0.01,0.0102,0.0191
+GO:0070071,proton-transporting two-sector ATPase co...,4,1,0.02,0.0203,0.0338
+GO:0035196,production of miRNAs involved in gene si...,5,1,0.03,0.0253,0.0379
+GO:0051013,microtubule severing,7,1,0.04,0.0353,0.0402
+GO:0009789,positive regulation of abscisic acid-act...,8,1,0.04,0.0402,0.0402
+GO:0035195,gene silencing by miRNA,8,1,0.04,0.0402,0.0402
+GO:1901421,positive regulation of response to alcoh...,8,1,0.04,0.0402,0.0402
+GO:1905959,positive regulation of cellular response...,8,1,0.04,0.0402,0.0402

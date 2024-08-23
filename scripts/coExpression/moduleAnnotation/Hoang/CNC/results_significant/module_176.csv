@@ -1,0 +1,21 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0042572,retinol metabolic process,3,1,0.01,0.0082,0.0343
+GO:0001523,retinoid metabolic process,4,1,0.01,0.011,0.0343
+GO:0018027,peptidyl-lysine dimethylation,4,1,0.01,0.011,0.0343
+GO:0031930,mitochondria-nucleus signaling pathway,4,1,0.01,0.011,0.0343
+GO:0036123,histone H3-K9 dimethylation,4,1,0.01,0.011,0.0343
+GO:0000289,nuclear-transcribed mRNA poly(A) tail sh...,5,1,0.01,0.0137,0.0343
+GO:0032469,endoplasmic reticulum calcium ion homeos...,5,1,0.01,0.0137,0.0343
+GO:0032875,regulation of DNA endoreduplication,5,1,0.01,0.0137,0.0343
+GO:0051567,histone H3-K9 methylation,6,1,0.02,0.0164,0.0364
+GO:0061647,histone H3-K9 modification,7,1,0.02,0.0191,0.0382
+GO:0019725,cellular homeostasis,87,2,0.24,0.0241,0.0421
+GO:0090329,regulation of DNA-dependent DNA replicat...,11,1,0.03,0.0299,0.0421
+GO:0010082,regulation of root meristem growth,12,1,0.03,0.0326,0.0421
+GO:0042023,DNA endoreduplication,12,1,0.03,0.0326,0.0421
+GO:0006275,regulation of DNA replication,13,1,0.04,0.0352,0.0421
+GO:0010449,root meristem growth,13,1,0.04,0.0352,0.0421
+GO:0006874,cellular calcium ion homeostasis,14,1,0.04,0.0379,0.0421
+GO:0055074,calcium ion homeostasis,14,1,0.04,0.0379,0.0421
+GO:2000022,regulation of jasmonic acid mediated sig...,17,1,0.05,0.0458,0.0482
+GO:0045454,cell redox homeostasis,18,1,0.05,0.0485,0.0485

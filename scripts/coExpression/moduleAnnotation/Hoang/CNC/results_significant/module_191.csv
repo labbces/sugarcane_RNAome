@@ -1,0 +1,22 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006418,tRNA aminoacylation for protein translat...,171,3,0.36,0.0056,0.0291
+GO:0043038,amino acid activation,183,3,0.38,0.0067,0.0291
+GO:0043039,tRNA aminoacylation,183,3,0.38,0.0067,0.0291
+GO:0006399,tRNA metabolic process,359,4,0.75,0.0067,0.0291
+GO:0006428,isoleucyl-tRNA aminoacylation,5,1,0.01,0.0105,0.0291
+GO:0006436,tryptophanyl-tRNA aminoacylation,5,1,0.01,0.0105,0.0291
+GO:0006542,glutamine biosynthetic process,5,1,0.01,0.0105,0.0291
+GO:0006520,cellular amino acid metabolic process,415,4,0.87,0.0111,0.0291
+GO:1902047,polyamine transmembrane transport,7,1,0.01,0.0146,0.0341
+GO:0015846,polyamine transport,8,1,0.02,0.0167,0.0351
+GO:0006420,arginyl-tRNA aminoacylation,10,1,0.02,0.0208,0.0397
+GO:0042023,DNA endoreduplication,12,1,0.03,0.0249,0.0436
+GO:0019752,carboxylic acid metabolic process,844,5,1.77,0.0313,0.0455
+GO:0034660,ncRNA metabolic process,577,4,1.21,0.0326,0.0455
+GO:0043436,oxoacid metabolic process,867,5,1.82,0.0346,0.0455
+GO:0006082,organic acid metabolic process,868,5,1.82,0.0347,0.0455
+GO:0006108,malate metabolic process,19,1,0.04,0.0392,0.0481
+GO:0044786,cell cycle DNA replication,20,1,0.04,0.0412,0.0481
+GO:0006541,glutamine metabolic process,24,1,0.05,0.0492,0.0492
+GO:0009084,glutamine family amino acid biosynthetic...,24,1,0.05,0.0492,0.0492
+GO:0106074,aminoacyl-tRNA metabolism involved in tr...,24,1,0.05,0.0492,0.0492

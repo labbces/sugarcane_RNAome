@@ -1,0 +1,27 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0003341,cilium movement,1,1,0,0.0046,0.0399
+GO:0003352,regulation of cilium movement,1,1,0,0.0046,0.0399
+GO:0060632,regulation of microtubule-based movement,1,1,0,0.0046,0.0399
+GO:0042795,snRNA transcription by RNA polymerase II,2,1,0.01,0.0092,0.0474
+GO:0019252,starch biosynthetic process,38,2,0.18,0.0134,0.0474
+GO:0009301,snRNA transcription,3,1,0.01,0.0138,0.0474
+GO:0042796,snRNA transcription by RNA polymerase II...,3,1,0.01,0.0138,0.0474
+GO:0007076,mitotic chromosome condensation,4,1,0.02,0.0184,0.0474
+GO:0016094,polyprenol biosynthetic process,5,1,0.02,0.023,0.0474
+GO:0019408,dolichol biosynthetic process,5,1,0.02,0.023,0.0474
+GO:0005982,starch metabolic process,51,2,0.24,0.0234,0.0474
+GO:0006414,translational elongation,52,2,0.24,0.0243,0.0474
+GO:0051270,regulation of cellular component movemen...,6,1,0.03,0.0275,0.0474
+GO:0098781,ncRNA transcription,6,1,0.03,0.0275,0.0474
+GO:0000719,photoreactive repair,7,1,0.03,0.032,0.0474
+GO:0034219,carbohydrate transmembrane transport,62,2,0.29,0.0336,0.0474
+GO:0009650,UV protection,8,1,0.04,0.0365,0.0474
+GO:0015740,C4-dicarboxylate transport,8,1,0.04,0.0365,0.0474
+GO:0015743,malate transport,8,1,0.04,0.0365,0.0474
+GO:0019348,dolichol metabolic process,8,1,0.04,0.0365,0.0474
+GO:0006835,dicarboxylic acid transport,9,1,0.04,0.041,0.0478
+GO:0006486,protein glycosylation,170,3,0.79,0.0447,0.0478
+GO:0043413,macromolecule glycosylation,170,3,0.79,0.0447,0.0478
+GO:0006290,pyrimidine dimer repair,10,1,0.05,0.0454,0.0478
+GO:0009101,glycoprotein biosynthetic process,173,3,0.8,0.0466,0.0478
+GO:0055085,transmembrane transport,712,7,3.3,0.0478,0.0478

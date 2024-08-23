@@ -1,0 +1,61 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0000912,assembly of actomyosin apparatus involve...,1,1,0,0.0031,0.0404
+GO:0000914,phragmoplast assembly,1,1,0,0.0031,0.0404
+GO:1902407,assembly of actomyosin apparatus involve...,1,1,0,0.0031,0.0404
+GO:0007000,nucleolus organization,2,1,0.01,0.0062,0.0404
+GO:0017126,nucleologenesis,2,1,0.01,0.0062,0.0404
+GO:1902410,mitotic cytokinetic process,2,1,0.01,0.0062,0.0404
+GO:0007015,actin filament organization,120,3,0.37,0.0062,0.0404
+GO:0030036,actin cytoskeleton organization,135,3,0.42,0.0086,0.0404
+GO:0007602,phototransduction,4,1,0.01,0.0124,0.0404
+GO:0009585,red, far-red light phototransduction,4,1,0.01,0.0124,0.0404
+GO:0032506,cytokinetic process,4,1,0.01,0.0124,0.0404
+GO:1905499,trichome papilla formation,4,1,0.01,0.0124,0.0404
+GO:0097435,supramolecular fiber organization,158,3,0.49,0.0131,0.0404
+GO:0030029,actin filament-based process,160,3,0.5,0.0136,0.0404
+GO:0009583,detection of light stimulus,5,1,0.02,0.0154,0.0404
+GO:0055062,phosphate ion homeostasis,5,1,0.02,0.0154,0.0404
+GO:0055083,monovalent inorganic anion homeostasis,5,1,0.02,0.0154,0.0404
+GO:0072505,divalent inorganic anion homeostasis,5,1,0.02,0.0154,0.0404
+GO:0072506,trivalent inorganic anion homeostasis,5,1,0.02,0.0154,0.0404
+GO:0006851,mitochondrial calcium ion transmembrane ...,6,1,0.02,0.0185,0.0404
+GO:0009581,detection of external stimulus,6,1,0.02,0.0185,0.0404
+GO:0009582,detection of abiotic stimulus,6,1,0.02,0.0185,0.0404
+GO:0010091,trichome branching,6,1,0.02,0.0185,0.0404
+GO:0030031,cell projection assembly,6,1,0.02,0.0185,0.0404
+GO:0055081,anion homeostasis,7,1,0.02,0.0215,0.0404
+GO:0030835,negative regulation of actin filament de...,8,1,0.02,0.0246,0.0404
+GO:0030837,negative regulation of actin filament po...,8,1,0.02,0.0246,0.0404
+GO:0031333,negative regulation of protein-containin...,8,1,0.02,0.0246,0.0404
+GO:0032272,negative regulation of protein polymeriz...,8,1,0.02,0.0246,0.0404
+GO:0043242,negative regulation of protein-containin...,8,1,0.02,0.0246,0.0404
+GO:0051494,negative regulation of cytoskeleton orga...,8,1,0.02,0.0246,0.0404
+GO:0051693,actin filament capping,8,1,0.02,0.0246,0.0404
+GO:1901880,negative regulation of protein depolymer...,8,1,0.02,0.0246,0.0404
+GO:1902904,negative regulation of supramolecular fi...,8,1,0.02,0.0246,0.0404
+GO:0000281,mitotic cytokinesis,9,1,0.03,0.0276,0.0404
+GO:0000459,exonucleolytic trimming involved in rRNA...,9,1,0.03,0.0276,0.0404
+GO:0000467,exonucleolytic trimming to generate matu...,9,1,0.03,0.0276,0.0404
+GO:0010218,response to far red light,9,1,0.03,0.0276,0.0404
+GO:0030030,cell projection organization,9,1,0.03,0.0276,0.0404
+GO:0030834,regulation of actin filament depolymeriz...,9,1,0.03,0.0276,0.0404
+GO:1901879,regulation of protein depolymerization,9,1,0.03,0.0276,0.0404
+GO:0009911,positive regulation of flower developmen...,10,1,0.03,0.0306,0.0411
+GO:0010090,trichome morphogenesis,10,1,0.03,0.0306,0.0411
+GO:0031125,rRNA 3'-end processing,10,1,0.03,0.0306,0.0411
+GO:0009755,hormone-mediated signaling pathway,391,4,1.21,0.0334,0.0411
+GO:0010017,red or far-red light signaling pathway,11,1,0.03,0.0336,0.0411
+GO:0010239,chloroplast mRNA processing,11,1,0.03,0.0336,0.0411
+GO:0061640,cytoskeleton-dependent cytokinesis,11,1,0.03,0.0336,0.0411
+GO:0071489,cellular response to red or far red ligh...,11,1,0.03,0.0336,0.0411
+GO:0010026,trichome differentiation,12,1,0.04,0.0366,0.0424
+GO:0010927,cellular component assembly involved in ...,12,1,0.04,0.0366,0.0424
+GO:0032870,cellular response to hormone stimulus,410,4,1.27,0.0387,0.0424
+GO:0000911,cytokinesis by cell plate formation,13,1,0.04,0.0396,0.0424
+GO:0010114,response to red light,13,1,0.04,0.0396,0.0424
+GO:0016925,protein sumoylation,13,1,0.04,0.0396,0.0424
+GO:0032989,cellular component morphogenesis,13,1,0.04,0.0396,0.0424
+GO:0071495,cellular response to endogenous stimulus,421,4,1.31,0.042,0.0441
+GO:0044210,'de novo' CTP biosynthetic process,14,1,0.04,0.0426,0.0441
+GO:0071310,cellular response to organic substance,439,4,1.36,0.0477,0.0485
+GO:2000243,positive regulation of reproductive proc...,16,1,0.05,0.0486,0.0486

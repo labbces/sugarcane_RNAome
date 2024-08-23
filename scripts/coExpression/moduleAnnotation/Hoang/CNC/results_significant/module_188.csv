@@ -1,0 +1,25 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0008285,negative regulation of cell population p...,2,1,0,0.0034,0.0317
+GO:0060260,regulation of transcription initiation f...,4,1,0.01,0.0068,0.0317
+GO:0060261,positive regulation of transcription ini...,4,1,0.01,0.0068,0.0317
+GO:2000144,positive regulation of DNA-templated tra...,4,1,0.01,0.0068,0.0317
+GO:0018342,protein prenylation,5,1,0.01,0.0085,0.0317
+GO:0097354,prenylation,5,1,0.01,0.0085,0.0317
+GO:0042127,regulation of cell population proliferat...,6,1,0.01,0.0102,0.0317
+GO:0006480,N-terminal protein amino acid methylatio...,7,1,0.01,0.0119,0.0317
+GO:0008283,cell population proliferation,7,1,0.01,0.0119,0.0317
+GO:0010101,post-embryonic root morphogenesis,9,1,0.02,0.0152,0.0332
+GO:0010102,lateral root morphogenesis,9,1,0.02,0.0152,0.0332
+GO:0048527,lateral root development,12,1,0.02,0.0203,0.0377
+GO:0048528,post-embryonic root development,13,1,0.02,0.022,0.0377
+GO:0090697,post-embryonic plant organ morphogenesis,13,1,0.02,0.022,0.0377
+GO:0031365,N-terminal protein amino acid modificati...,15,1,0.03,0.0253,0.0379
+GO:2000142,regulation of DNA-templated transcriptio...,15,1,0.03,0.0253,0.0379
+GO:0090696,post-embryonic plant organ development,17,1,0.03,0.0286,0.0404
+GO:0045454,cell redox homeostasis,18,1,0.03,0.0303,0.0404
+GO:0045732,positive regulation of protein catabolic...,22,1,0.04,0.0369,0.0453
+GO:0034314,Arp2/3 complex-mediated actin nucleation,24,1,0.04,0.0402,0.0453
+GO:0048518,positive regulation of biological proces...,451,3,0.77,0.0413,0.0453
+GO:0090698,post-embryonic plant morphogenesis,25,1,0.04,0.0418,0.0453
+GO:0006367,transcription initiation from RNA polyme...,26,1,0.04,0.0434,0.0453
+GO:0042176,regulation of protein catabolic process,28,1,0.05,0.0467,0.0467

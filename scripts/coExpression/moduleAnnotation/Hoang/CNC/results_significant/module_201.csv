@@ -1,0 +1,32 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010929,positive regulation of auxin mediated si...,3,1,0.01,0.0099,0.0461
+GO:0080112,seed growth,3,1,0.01,0.0099,0.0461
+GO:0080113,regulation of seed growth,3,1,0.01,0.0099,0.0461
+GO:0019253,reductive pentose-phosphate cycle,4,1,0.01,0.0132,0.0461
+GO:0019685,photosynthesis, dark reaction,4,1,0.01,0.0132,0.0461
+GO:0000289,nuclear-transcribed mRNA poly(A) tail sh...,5,1,0.02,0.0165,0.0461
+GO:0009143,nucleoside triphosphate catabolic proces...,5,1,0.02,0.0165,0.0461
+GO:0019249,lactate biosynthetic process,5,1,0.02,0.0165,0.0461
+GO:0070536,protein K63-linked deubiquitination,5,1,0.02,0.0165,0.0461
+GO:0009853,photorespiration,6,1,0.02,0.0198,0.0461
+GO:0048280,vesicle fusion with Golgi apparatus,6,1,0.02,0.0198,0.0461
+GO:0080050,regulation of seed development,7,1,0.02,0.023,0.0461
+GO:0006089,lactate metabolic process,9,1,0.03,0.0295,0.0461
+GO:0006906,vesicle fusion,9,1,0.03,0.0295,0.0461
+GO:0009438,methylglyoxal metabolic process,9,1,0.03,0.0295,0.0461
+GO:0032366,intracellular sterol transport,9,1,0.03,0.0295,0.0461
+GO:0051596,methylglyoxal catabolic process,9,1,0.03,0.0295,0.0461
+GO:0061727,methylglyoxal catabolic process to lacta...,9,1,0.03,0.0295,0.0461
+GO:0090174,organelle membrane fusion,9,1,0.03,0.0295,0.0461
+GO:0010928,regulation of auxin mediated signaling p...,10,1,0.03,0.0327,0.0461
+GO:0015918,sterol transport,10,1,0.03,0.0327,0.0461
+GO:0042182,ketone catabolic process,10,1,0.03,0.0327,0.0461
+GO:0015850,organic hydroxy compound transport,11,1,0.04,0.036,0.0471
+GO:0032365,intracellular lipid transport,12,1,0.04,0.0392,0.0471
+GO:0046185,aldehyde catabolic process,12,1,0.04,0.0392,0.0471
+GO:0006821,chloride transport,13,1,0.04,0.0424,0.0471
+GO:1902476,chloride transmembrane transport,13,1,0.04,0.0424,0.0471
+GO:0006771,riboflavin metabolic process,14,1,0.05,0.0456,0.0471
+GO:0009231,riboflavin biosynthetic process,14,1,0.05,0.0456,0.0471
+GO:0044210,'de novo' CTP biosynthetic process,14,1,0.05,0.0456,0.0471
+GO:0042727,flavin-containing compound biosynthetic ...,15,1,0.05,0.0487,0.0487

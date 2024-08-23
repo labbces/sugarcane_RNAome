@@ -1,0 +1,45 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010081,regulation of inflorescence meristem gro...,4,1,0,0.0012,0.0231
+GO:0010450,inflorescence meristem growth,4,1,0,0.0012,0.0231
+GO:0010080,regulation of floral meristem growth,7,1,0,0.0021,0.0231
+GO:0010451,floral meristem growth,7,1,0,0.0021,0.0231
+GO:0010229,inflorescence development,9,1,0,0.0028,0.0237
+GO:0010082,regulation of root meristem growth,12,1,0,0.0037,0.0237
+GO:0010449,root meristem growth,13,1,0,0.004,0.0237
+GO:0010305,leaf vascular tissue pattern formation,14,1,0,0.0043,0.0237
+GO:0010051,xylem and phloem pattern formation,19,1,0.01,0.0058,0.0267
+GO:0010075,regulation of meristem growth,22,1,0.01,0.0067,0.0267
+GO:2000280,regulation of root development,22,1,0.01,0.0067,0.0267
+GO:0007030,Golgi organization,24,1,0.01,0.0073,0.0267
+GO:0035266,meristem growth,26,1,0.01,0.0079,0.0267
+GO:0003002,regionalization,29,1,0.01,0.0088,0.0267
+GO:0048509,regulation of meristem development,30,1,0.01,0.0091,0.0267
+GO:0007389,pattern specification process,38,1,0.01,0.0116,0.03
+GO:0009640,photomorphogenesis,38,1,0.01,0.0116,0.03
+GO:0009909,regulation of flower development,44,1,0.01,0.0134,0.031
+GO:0048638,regulation of developmental growth,44,1,0.01,0.0134,0.031
+GO:0010015,root morphogenesis,47,1,0.01,0.0143,0.0315
+GO:0009639,response to red or far red light,54,1,0.02,0.0164,0.0326
+GO:0010073,meristem maintenance,55,1,0.02,0.0167,0.0326
+GO:0009793,embryo development ending in seed dorman...,59,1,0.02,0.0179,0.0326
+GO:0010256,endomembrane system organization,59,1,0.02,0.0179,0.0326
+GO:0048831,regulation of shoot system development,61,1,0.02,0.0185,0.0326
+GO:0009790,embryo development,64,1,0.02,0.0194,0.0328
+GO:1905392,plant organ morphogenesis,69,1,0.02,0.0209,0.0333
+GO:0022622,root system development,78,1,0.02,0.0236,0.0333
+GO:0048364,root development,78,1,0.02,0.0236,0.0333
+GO:2000241,regulation of reproductive process,78,1,0.02,0.0236,0.0333
+GO:0048507,meristem development,79,1,0.02,0.0239,0.0333
+GO:0048316,seed development,80,1,0.02,0.0242,0.0333
+GO:0048589,developmental growth,84,1,0.03,0.0254,0.0336
+GO:0010154,fruit development,86,1,0.03,0.026,0.0336
+GO:0040008,regulation of growth,96,1,0.03,0.029,0.0358
+GO:0048580,regulation of post-embryonic development,97,1,0.03,0.0293,0.0358
+GO:0009908,flower development,110,1,0.03,0.0332,0.0395
+GO:0090567,reproductive shoot system development,115,1,0.04,0.0347,0.0402
+GO:0009888,tissue development,128,1,0.04,0.0385,0.0433
+GO:2000026,regulation of multicellular organismal d...,131,1,0.04,0.0394,0.0433
+GO:0040007,growth,144,1,0.04,0.0433,0.0457
+GO:0051239,regulation of multicellular organismal p...,145,1,0.04,0.0436,0.0457
+GO:0009653,anatomical structure morphogenesis,165,1,0.05,0.0494,0.0497
+GO:0099402,plant organ development,166,1,0.05,0.0497,0.0497

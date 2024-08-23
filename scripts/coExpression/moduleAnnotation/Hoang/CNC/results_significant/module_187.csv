@@ -1,0 +1,13 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0016973,poly(A)+ mRNA export from nucleus,7,1,0.01,0.007,0.0469
+GO:0070940,dephosphorylation of RNA polymerase II C...,17,1,0.02,0.017,0.0469
+GO:0006814,sodium ion transport,20,1,0.02,0.02,0.0469
+GO:0006897,endocytosis,27,1,0.03,0.027,0.0469
+GO:0006406,mRNA export from nucleus,31,1,0.03,0.031,0.0469
+GO:0071427,mRNA-containing ribonucleoprotein comple...,31,1,0.03,0.031,0.0469
+GO:0034599,cellular response to oxidative stress,40,1,0.04,0.039,0.0469
+GO:0031503,protein-containing complex localization,41,1,0.04,0.04,0.0469
+GO:0071426,ribonucleoprotein complex export from nu...,41,1,0.04,0.04,0.0469
+GO:0071166,ribonucleoprotein complex localization,42,1,0.04,0.041,0.0469
+GO:0006611,protein export from nucleus,44,1,0.04,0.043,0.0469
+GO:0006405,RNA export from nucleus,50,1,0.05,0.049,0.049

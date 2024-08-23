@@ -1,0 +1,25 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0055070,copper ion homeostasis,13,1,0,0.0034,0.0319
+GO:0006606,protein import into nucleus,27,1,0.01,0.0071,0.0319
+GO:0034504,protein localization to nucleus,28,1,0.01,0.0073,0.0319
+GO:0051170,import into nucleus,29,1,0.01,0.0076,0.0319
+GO:0055076,transition metal ion homeostasis,49,1,0.01,0.0128,0.0319
+GO:0015031,protein transport,735,2,0.19,0.0142,0.0319
+GO:0045184,establishment of protein localization,755,2,0.2,0.0149,0.0319
+GO:0070727,cellular macromolecule localization,781,2,0.2,0.0159,0.0319
+GO:0008104,protein localization,783,2,0.21,0.016,0.0319
+GO:0015833,peptide transport,789,2,0.21,0.0163,0.0319
+GO:0042886,amide transport,794,2,0.21,0.0165,0.0319
+GO:0055065,metal ion homeostasis,74,1,0.02,0.0193,0.0319
+GO:0033036,macromolecule localization,914,2,0.24,0.0215,0.0319
+GO:0017038,protein import,83,1,0.02,0.0216,0.0319
+GO:0055080,cation homeostasis,87,1,0.02,0.0226,0.0319
+GO:0051641,cellular localization,947,2,0.25,0.023,0.0319
+GO:0071705,nitrogen compound transport,966,2,0.25,0.0239,0.0319
+GO:0098771,inorganic ion homeostasis,92,1,0.02,0.0239,0.0319
+GO:0050801,ion homeostasis,98,1,0.03,0.0254,0.0321
+GO:0006913,nucleocytoplasmic transport,123,1,0.03,0.0318,0.0353
+GO:0051169,nuclear transport,123,1,0.03,0.0318,0.0353
+GO:0048878,chemical homeostasis,125,1,0.03,0.0324,0.0353
+GO:0071702,organic substance transport,1187,2,0.31,0.0351,0.0366
+GO:0072594,establishment of protein localization to...,191,1,0.05,0.0491,0.0491

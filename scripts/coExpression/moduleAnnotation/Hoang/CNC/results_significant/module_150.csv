@@ -1,0 +1,33 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019310,inositol catabolic process,2,1,0,0.0036,0.0259
+GO:0034085,establishment of sister chromatid cohesi...,4,1,0.01,0.0072,0.0259
+GO:0034087,establishment of mitotic sister chromati...,4,1,0.01,0.0072,0.0259
+GO:0043388,positive regulation of DNA binding,4,1,0.01,0.0072,0.0259
+GO:0061780,mitotic cohesin loading,4,1,0.01,0.0072,0.0259
+GO:0071168,protein localization to chromatin,4,1,0.01,0.0072,0.0259
+GO:0071921,cohesin loading,4,1,0.01,0.0072,0.0259
+GO:0019853,L-ascorbic acid biosynthetic process,5,1,0.01,0.0089,0.0259
+GO:0034502,protein localization to chromosome,5,1,0.01,0.0089,0.0259
+GO:0051099,positive regulation of binding,5,1,0.01,0.0089,0.0259
+GO:0051101,regulation of DNA binding,5,1,0.01,0.0089,0.0259
+GO:0006020,inositol metabolic process,6,1,0.01,0.0107,0.0263
+GO:0051098,regulation of binding,6,1,0.01,0.0107,0.0263
+GO:0019852,L-ascorbic acid metabolic process,9,1,0.02,0.016,0.0341
+GO:1901336,lactone biosynthetic process,9,1,0.02,0.016,0.0341
+GO:0009834,plant-type secondary cell wall biogenesi...,13,1,0.02,0.0231,0.0387
+GO:0046364,monosaccharide biosynthetic process,13,1,0.02,0.0231,0.0387
+GO:1901334,lactone metabolic process,13,1,0.02,0.0231,0.0387
+GO:0045492,xylan biosynthetic process,14,1,0.03,0.0248,0.0387
+GO:0006438,valyl-tRNA aminoacylation,15,1,0.03,0.0266,0.0387
+GO:0007064,mitotic sister chromatid cohesion,15,1,0.03,0.0266,0.0387
+GO:1902358,sulfate transmembrane transport,15,1,0.03,0.0266,0.0387
+GO:0008272,sulfate transport,16,1,0.03,0.0283,0.0394
+GO:0070592,cell wall polysaccharide biosynthetic pr...,20,1,0.04,0.0353,0.0442
+GO:0005996,monosaccharide metabolic process,165,2,0.3,0.0353,0.0442
+GO:0044038,cell wall macromolecule biosynthetic pro...,22,1,0.04,0.0387,0.0442
+GO:0070589,cellular component macromolecule biosynt...,22,1,0.04,0.0387,0.0442
+GO:0072348,sulfur compound transport,22,1,0.04,0.0387,0.0442
+GO:0007062,sister chromatid cohesion,23,1,0.04,0.0405,0.0447
+GO:0106074,aminoacyl-tRNA metabolism involved in tr...,24,1,0.04,0.0422,0.045
+GO:0006450,regulation of translational fidelity,26,1,0.05,0.0456,0.0456
+GO:0045491,xylan metabolic process,26,1,0.05,0.0456,0.0456

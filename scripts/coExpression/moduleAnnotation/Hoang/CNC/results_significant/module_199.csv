@@ -1,0 +1,19 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009854,oxidative photosynthetic carbon pathway,2,1,0.01,0.0073,0.0453
+GO:0000266,mitochondrial fission,4,1,0.01,0.0146,0.0453
+GO:0006851,mitochondrial calcium ion transmembrane ...,6,1,0.02,0.0218,0.0453
+GO:0009853,photorespiration,6,1,0.02,0.0218,0.0453
+GO:0010390,histone monoubiquitination,6,1,0.02,0.0218,0.0453
+GO:0032204,regulation of telomere maintenance,6,1,0.02,0.0218,0.0453
+GO:0048544,recognition of pollen,72,2,0.26,0.0289,0.0453
+GO:0016574,histone ubiquitination,8,1,0.03,0.029,0.0453
+GO:0008037,cell recognition,73,2,0.27,0.0296,0.0453
+GO:0006513,protein monoubiquitination,9,1,0.03,0.0326,0.0453
+GO:0016559,peroxisome fission,9,1,0.03,0.0326,0.0453
+GO:0045116,protein neddylation,9,1,0.03,0.0326,0.0453
+GO:0009875,pollen-pistil interaction,77,2,0.28,0.0327,0.0453
+GO:0032543,mitochondrial translation,10,1,0.04,0.0361,0.0464
+GO:0051443,positive regulation of ubiquitin-protein...,12,1,0.04,0.0432,0.0467
+GO:0009834,plant-type secondary cell wall biogenesi...,13,1,0.05,0.0467,0.0467
+GO:0031398,positive regulation of protein ubiquitin...,13,1,0.05,0.0467,0.0467
+GO:0051438,regulation of ubiquitin-protein transfer...,13,1,0.05,0.0467,0.0467

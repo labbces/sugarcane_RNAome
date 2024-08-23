@@ -1,0 +1,96 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:2000031,regulation of salicylic acid mediated si...,16,2,0.07,0.0024,0.0225
+GO:2001038,regulation of cellular response to drug,16,2,0.07,0.0024,0.0225
+GO:2001023,regulation of response to drug,17,2,0.08,0.0027,0.0225
+GO:0009863,salicylic acid mediated signaling pathwa...,22,2,0.1,0.0045,0.0225
+GO:0008637,apoptotic mitochondrial changes,1,1,0,0.0045,0.0225
+GO:0010823,negative regulation of mitochondrion org...,1,1,0,0.0045,0.0225
+GO:0035794,positive regulation of mitochondrial mem...,1,1,0,0.0045,0.0225
+GO:0035795,negative regulation of mitochondrial mem...,1,1,0,0.0045,0.0225
+GO:0046902,regulation of mitochondrial membrane per...,1,1,0,0.0045,0.0225
+GO:0050829,defense response to Gram-negative bacter...,1,1,0,0.0045,0.0225
+GO:0090559,regulation of membrane permeability,1,1,0,0.0045,0.0225
+GO:0097345,mitochondrial outer membrane permeabiliz...,1,1,0,0.0045,0.0225
+GO:1901028,regulation of mitochondrial outer membra...,1,1,0,0.0045,0.0225
+GO:1901029,negative regulation of mitochondrial out...,1,1,0,0.0045,0.0225
+GO:1902108,regulation of mitochondrial membrane per...,1,1,0,0.0045,0.0225
+GO:1902110,positive regulation of mitochondrial mem...,1,1,0,0.0045,0.0225
+GO:1902686,mitochondrial outer membrane permeabiliz...,1,1,0,0.0045,0.0225
+GO:1905709,negative regulation of membrane permeabi...,1,1,0,0.0045,0.0225
+GO:1905710,positive regulation of membrane permeabi...,1,1,0,0.0045,0.0225
+GO:0071446,cellular response to salicylic acid stim...,24,2,0.11,0.0053,0.0252
+GO:0071236,cellular response to antibiotic,26,2,0.12,0.0062,0.027
+GO:0010821,regulation of mitochondrion organization,2,1,0.01,0.0091,0.027
+GO:0019370,leukotriene biosynthetic process,2,1,0.01,0.0091,0.027
+GO:0046456,icosanoid biosynthetic process,2,1,0.01,0.0091,0.027
+GO:0070453,regulation of heme biosynthetic process,2,1,0.01,0.0091,0.027
+GO:0080151,positive regulation of salicylic acid me...,2,1,0.01,0.0091,0.027
+GO:1901463,regulation of tetrapyrrole biosynthetic ...,2,1,0.01,0.0091,0.027
+GO:1901748,leukotriene D4 metabolic process,2,1,0.01,0.0091,0.027
+GO:1901750,leukotriene D4 biosynthetic process,2,1,0.01,0.0091,0.027
+GO:2001025,positive regulation of response to drug,2,1,0.01,0.0091,0.027
+GO:2001040,positive regulation of cellular response...,2,1,0.01,0.0091,0.027
+GO:2001234,negative regulation of apoptotic signali...,2,1,0.01,0.0091,0.027
+GO:0035690,cellular response to drug,33,2,0.15,0.0099,0.0285
+GO:0006869,lipid transport,101,3,0.46,0.011,0.0307
+GO:0048583,regulation of response to stimulus,296,5,1.35,0.0114,0.0309
+GO:0009751,response to salicylic acid,38,2,0.17,0.0129,0.0315
+GO:0043066,negative regulation of apoptotic process,3,1,0.01,0.0136,0.0315
+GO:0051643,endoplasmic reticulum localization,3,1,0.01,0.0136,0.0315
+GO:0061817,endoplasmic reticulum-plasma membrane te...,3,1,0.01,0.0136,0.0315
+GO:0090158,endoplasmic reticulum membrane organizat...,3,1,0.01,0.0136,0.0315
+GO:2001233,regulation of apoptotic signaling pathwa...,3,1,0.01,0.0136,0.0315
+GO:0010876,lipid localization,111,3,0.5,0.0142,0.0316
+GO:0006749,glutathione metabolic process,40,2,0.18,0.0143,0.0316
+GO:0042493,response to drug,116,3,0.53,0.016,0.0345
+GO:0006691,leukotriene metabolic process,4,1,0.02,0.0181,0.0366
+GO:0033355,ascorbate glutathione cycle,4,1,0.02,0.0181,0.0366
+GO:1901401,regulation of tetrapyrrole metabolic pro...,4,1,0.02,0.0181,0.0366
+GO:0012501,programmed cell death,48,2,0.22,0.0202,0.0398
+GO:0006808,regulation of nitrogen utilization,5,1,0.02,0.0225,0.0398
+GO:0010252,auxin homeostasis,5,1,0.02,0.0225,0.0398
+GO:0010731,protein glutathionylation,5,1,0.02,0.0225,0.0398
+GO:0022406,membrane docking,5,1,0.02,0.0225,0.0398
+GO:0140056,organelle localization by membrane tethe...,5,1,0.02,0.0225,0.0398
+GO:0051187,cofactor catabolic process,53,2,0.24,0.0243,0.0398
+GO:0061024,membrane organization,139,3,0.63,0.0256,0.0398
+GO:0042742,defense response to bacterium,55,2,0.25,0.026,0.0398
+GO:0009966,regulation of signal transduction,140,3,0.64,0.0261,0.0398
+GO:0006751,glutathione catabolic process,6,1,0.03,0.027,0.0398
+GO:0015908,fatty acid transport,6,1,0.03,0.027,0.0398
+GO:0019740,nitrogen utilization,6,1,0.03,0.027,0.0398
+GO:0043069,negative regulation of programmed cell d...,6,1,0.03,0.027,0.0398
+GO:0043171,peptide catabolic process,6,1,0.03,0.027,0.0398
+GO:0045332,phospholipid translocation,6,1,0.03,0.027,0.0398
+GO:0051051,negative regulation of transport,6,1,0.03,0.027,0.0398
+GO:0006518,peptide metabolic process,504,6,2.29,0.0276,0.0398
+GO:0071407,cellular response to organic cyclic comp...,57,2,0.26,0.0278,0.0398
+GO:0023051,regulation of signaling,144,3,0.65,0.0281,0.0398
+GO:0010646,regulation of cell communication,147,3,0.67,0.0296,0.0408
+GO:0046677,response to antibiotic,59,2,0.27,0.0296,0.0408
+GO:0006431,methionyl-tRNA aminoacylation,7,1,0.03,0.0314,0.0409
+GO:0042219,cellular modified amino acid catabolic p...,7,1,0.03,0.0314,0.0409
+GO:0042981,regulation of apoptotic process,7,1,0.03,0.0314,0.0409
+GO:0097190,apoptotic signaling pathway,7,1,0.03,0.0314,0.0409
+GO:0008219,cell death,62,2,0.28,0.0325,0.0417
+GO:0044273,sulfur compound catabolic process,8,1,0.04,0.0358,0.0453
+GO:0000272,polysaccharide catabolic process,66,2,0.3,0.0364,0.0455
+GO:0006566,threonine metabolic process,9,1,0.04,0.0402,0.0455
+GO:0006690,icosanoid metabolic process,9,1,0.04,0.0402,0.0455
+GO:0009088,threonine biosynthetic process,9,1,0.04,0.0402,0.0455
+GO:0019852,L-ascorbic acid metabolic process,9,1,0.04,0.0402,0.0455
+GO:0032104,regulation of response to extracellular ...,9,1,0.04,0.0402,0.0455
+GO:0032107,regulation of response to nutrient level...,9,1,0.04,0.0402,0.0455
+GO:0035725,sodium ion transmembrane transport,9,1,0.04,0.0402,0.0455
+GO:1900424,regulation of defense response to bacter...,9,1,0.04,0.0402,0.0455
+GO:0042737,drug catabolic process,71,2,0.32,0.0416,0.0465
+GO:0006418,tRNA aminoacylation for protein translat...,171,3,0.78,0.0432,0.0468
+GO:0006420,arginyl-tRNA aminoacylation,10,1,0.05,0.0446,0.0468
+GO:0036294,cellular response to decreased oxygen le...,10,1,0.05,0.0446,0.0468
+GO:0071453,cellular response to oxygen levels,10,1,0.05,0.0446,0.0468
+GO:0071456,cellular response to hypoxia,10,1,0.05,0.0446,0.0468
+GO:0032101,regulation of response to external stimu...,74,2,0.34,0.0448,0.0468
+GO:0009773,photosynthetic electron transport in pho...,11,1,0.05,0.0489,0.0489
+GO:0042545,cell wall modification,11,1,0.05,0.0489,0.0489
+GO:0045490,pectin catabolic process,11,1,0.05,0.0489,0.0489
+GO:1901570,fatty acid derivative biosynthetic proce...,11,1,0.05,0.0489,0.0489

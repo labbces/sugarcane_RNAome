@@ -1,0 +1,22 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0044210,'de novo' CTP biosynthetic process,14,1,0,0.0043,0.0199
+GO:0006241,CTP biosynthetic process,24,1,0.01,0.0073,0.0199
+GO:0006541,glutamine metabolic process,24,1,0.01,0.0073,0.0199
+GO:0009208,pyrimidine ribonucleoside triphosphate m...,24,1,0.01,0.0073,0.0199
+GO:0009209,pyrimidine ribonucleoside triphosphate b...,24,1,0.01,0.0073,0.0199
+GO:0046036,CTP metabolic process,24,1,0.01,0.0073,0.0199
+GO:0009147,pyrimidine nucleoside triphosphate metab...,25,1,0.01,0.0076,0.0199
+GO:0009148,pyrimidine nucleoside triphosphate biosy...,25,1,0.01,0.0076,0.0199
+GO:0009218,pyrimidine ribonucleotide metabolic proc...,36,1,0.01,0.011,0.0231
+GO:0009220,pyrimidine ribonucleotide biosynthetic p...,36,1,0.01,0.011,0.0231
+GO:0009064,glutamine family amino acid metabolic pr...,45,1,0.01,0.0137,0.025
+GO:0009201,ribonucleoside triphosphate biosynthetic...,50,1,0.02,0.0152,0.025
+GO:0009142,nucleoside triphosphate biosynthetic pro...,51,1,0.02,0.0155,0.025
+GO:0006220,pyrimidine nucleotide metabolic process,60,1,0.02,0.0182,0.0255
+GO:0006221,pyrimidine nucleotide biosynthetic proce...,60,1,0.02,0.0182,0.0255
+GO:0072527,pyrimidine-containing compound metabolic...,79,1,0.02,0.0239,0.0295
+GO:0072528,pyrimidine-containing compound biosynthe...,79,1,0.02,0.0239,0.0295
+GO:0009199,ribonucleoside triphosphate metabolic pr...,144,1,0.04,0.0433,0.045
+GO:0009260,ribonucleotide biosynthetic process,145,1,0.04,0.0436,0.045
+GO:0046390,ribose phosphate biosynthetic process,146,1,0.04,0.0439,0.045
+GO:0009141,nucleoside triphosphate metabolic proces...,150,1,0.05,0.045,0.045

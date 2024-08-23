@@ -1,0 +1,90 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0072331,signal transduction by p53 class mediato...,3,2,0.1,0.0031,0.0434
+GO:0072332,intrinsic apoptotic signaling pathway by...,3,2,0.1,0.0031,0.0434
+GO:0015937,coenzyme A biosynthetic process,10,3,0.33,0.0035,0.0434
+GO:0032543,mitochondrial translation,10,3,0.33,0.0035,0.0434
+GO:0048193,Golgi vesicle transport,134,11,4.36,0.0044,0.0434
+GO:0046352,disaccharide catabolic process,11,3,0.36,0.0047,0.0434
+GO:0006891,intra-Golgi vesicle-mediated transport,22,4,0.72,0.0051,0.0434
+GO:0009313,oligosaccharide catabolic process,12,3,0.39,0.0061,0.0434
+GO:0006903,vesicle targeting,24,4,0.78,0.007,0.0434
+GO:0034660,ncRNA metabolic process,577,30,18.77,0.0083,0.0434
+GO:0051648,vesicle localization,26,4,0.85,0.0094,0.0434
+GO:0051650,establishment of vesicle localization,26,4,0.85,0.0094,0.0434
+GO:0015936,coenzyme A metabolic process,14,3,0.46,0.0095,0.0434
+GO:0009092,homoserine metabolic process,5,2,0.16,0.0099,0.0434
+GO:0016926,protein desumoylation,6,2,0.2,0.0145,0.0434
+GO:0097193,intrinsic apoptotic signaling pathway,6,2,0.2,0.0145,0.0434
+GO:0017144,drug metabolic process,273,16,8.88,0.0175,0.0434
+GO:0090503,RNA phosphodiester bond hydrolysis, exon...,32,4,1.04,0.0194,0.0434
+GO:0006893,Golgi to plasma membrane transport,7,2,0.23,0.0199,0.0434
+GO:0097190,apoptotic signaling pathway,7,2,0.23,0.0199,0.0434
+GO:0006508,proteolysis,878,40,28.57,0.0208,0.0434
+GO:0016072,rRNA metabolic process,190,12,6.18,0.022,0.0434
+GO:0031425,chloroplast RNA processing,19,3,0.62,0.0225,0.0434
+GO:0098876,vesicle-mediated transport to the plasma...,19,3,0.62,0.0225,0.0434
+GO:0006418,tRNA aminoacylation for protein translat...,171,11,5.56,0.0245,0.0434
+GO:0051656,establishment of organelle localization,52,5,1.69,0.0266,0.0434
+GO:0000912,assembly of actomyosin apparatus involve...,1,1,0.03,0.0325,0.0434
+GO:0000914,phragmoplast assembly,1,1,0.03,0.0325,0.0434
+GO:0001192,maintenance of transcriptional fidelity ...,1,1,0.03,0.0325,0.0434
+GO:0001193,maintenance of transcriptional fidelity ...,1,1,0.03,0.0325,0.0434
+GO:0001818,negative regulation of cytokine producti...,1,1,0.03,0.0325,0.0434
+GO:0002532,production of molecular mediator involve...,1,1,0.03,0.0325,0.0434
+GO:0002534,cytokine production involved in inflamma...,1,1,0.03,0.0325,0.0434
+GO:0006123,mitochondrial electron transport, cytoch...,1,1,0.03,0.0325,0.0434
+GO:0006182,cGMP biosynthetic process,1,1,0.03,0.0325,0.0434
+GO:0006954,inflammatory response,1,1,0.03,0.0325,0.0434
+GO:0009090,homoserine biosynthetic process,1,1,0.03,0.0325,0.0434
+GO:0009187,cyclic nucleotide metabolic process,1,1,0.03,0.0325,0.0434
+GO:0009190,cyclic nucleotide biosynthetic process,1,1,0.03,0.0325,0.0434
+GO:0010581,regulation of starch biosynthetic proces...,1,1,0.03,0.0325,0.0434
+GO:0010600,regulation of auxin biosynthetic process,1,1,0.03,0.0325,0.0434
+GO:0010601,positive regulation of auxin biosyntheti...,1,1,0.03,0.0325,0.0434
+GO:0015942,formate metabolic process,1,1,0.03,0.0325,0.0434
+GO:0016075,rRNA catabolic process,1,1,0.03,0.0325,0.0434
+GO:0019379,sulfate assimilation, phosphoadenylyl su...,1,1,0.03,0.0325,0.0434
+GO:0019419,sulfate reduction,1,1,0.03,0.0325,0.0434
+GO:0042183,formate catabolic process,1,1,0.03,0.0325,0.0434
+GO:0042759,long-chain fatty acid biosynthetic proce...,1,1,0.03,0.0325,0.0434
+GO:0045103,intermediate filament-based process,1,1,0.03,0.0325,0.0434
+GO:0045104,intermediate filament cytoskeleton organ...,1,1,0.03,0.0325,0.0434
+GO:0046068,cGMP metabolic process,1,1,0.03,0.0325,0.0434
+GO:0050727,regulation of inflammatory response,1,1,0.03,0.0325,0.0434
+GO:0050728,negative regulation of inflammatory resp...,1,1,0.03,0.0325,0.0434
+GO:0052652,cyclic purine nucleotide metabolic proce...,1,1,0.03,0.0325,0.0434
+GO:0070932,histone H3 deacetylation,1,1,0.03,0.0325,0.0434
+GO:0080037,negative regulation of cytokinin-activat...,1,1,0.03,0.0325,0.0434
+GO:0090354,regulation of auxin metabolic process,1,1,0.03,0.0325,0.0434
+GO:0090355,positive regulation of auxin metabolic p...,1,1,0.03,0.0325,0.0434
+GO:0097053,L-kynurenine catabolic process,1,1,0.03,0.0325,0.0434
+GO:1900015,regulation of cytokine production involv...,1,1,0.03,0.0325,0.0434
+GO:1900016,negative regulation of cytokine producti...,1,1,0.03,0.0325,0.0434
+GO:1902407,assembly of actomyosin apparatus involve...,1,1,0.03,0.0325,0.0434
+GO:1990619,histone H3-K9 deacetylation,1,1,0.03,0.0325,0.0434
+GO:0000281,mitotic cytokinesis,9,2,0.29,0.0327,0.0434
+GO:0000459,exonucleolytic trimming involved in rRNA...,9,2,0.29,0.0327,0.0434
+GO:0000467,exonucleolytic trimming to generate matu...,9,2,0.29,0.0327,0.0434
+GO:0005987,sucrose catabolic process,9,2,0.29,0.0327,0.0434
+GO:0140053,mitochondrial gene expression,22,3,0.72,0.0333,0.0436
+GO:0043038,amino acid activation,183,11,5.95,0.0375,0.0471
+GO:0043039,tRNA aminoacylation,183,11,5.95,0.0375,0.0471
+GO:0042364,water-soluble vitamin biosynthetic proce...,57,5,1.85,0.0376,0.0471
+GO:0006420,arginyl-tRNA aminoacylation,10,2,0.33,0.04,0.0481
+GO:0031125,rRNA 3'-end processing,10,2,0.33,0.04,0.0481
+GO:0071951,conversion of methionyl-tRNA to N-formyl...,10,2,0.33,0.04,0.0481
+GO:0035601,protein deacylation,24,3,0.78,0.0418,0.0489
+GO:0051261,protein depolymerization,24,3,0.78,0.0418,0.0489
+GO:0051640,organelle localization,59,5,1.92,0.0426,0.049
+GO:0048608,reproductive structure development,258,14,8.39,0.0436,0.049
+GO:0061458,reproductive system development,258,14,8.39,0.0436,0.049
+GO:0016192,vesicle-mediated transport,432,21,14.06,0.0451,0.049
+GO:0006364,rRNA processing,189,11,6.15,0.0455,0.049
+GO:0043628,ncRNA 3'-end processing,25,3,0.81,0.0464,0.049
+GO:0009260,ribonucleotide biosynthetic process,145,9,4.72,0.0477,0.049
+GO:0044283,small molecule biosynthetic process,486,23,15.81,0.0479,0.049
+GO:0010239,chloroplast mRNA processing,11,2,0.36,0.0479,0.049
+GO:0019988,charged-tRNA amino acid modification,11,2,0.36,0.0479,0.049
+GO:0061640,cytoskeleton-dependent cytokinesis,11,2,0.36,0.0479,0.049
+GO:0003006,developmental process involved in reprod...,287,15,9.34,0.0494,0.0495
+GO:0046390,ribose phosphate biosynthetic process,146,9,4.75,0.0495,0.0495

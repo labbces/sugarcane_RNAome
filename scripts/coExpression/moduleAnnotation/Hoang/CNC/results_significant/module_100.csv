@@ -1,0 +1,26 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009910,negative regulation of flower developmen...,9,1,0,0.0024,0.0375
+GO:2000242,negative regulation of reproductive proc...,14,1,0,0.0037,0.0375
+GO:0048581,negative regulation of post-embryonic de...,17,1,0,0.0045,0.0375
+GO:0051241,negative regulation of multicellular org...,29,1,0.01,0.0076,0.042
+GO:0051093,negative regulation of developmental pro...,32,1,0.01,0.0084,0.042
+GO:0009909,regulation of flower development,44,1,0.01,0.0115,0.0479
+GO:0048831,regulation of shoot system development,61,1,0.02,0.0159,0.0491
+GO:2000241,regulation of reproductive process,78,1,0.02,0.0203,0.0491
+GO:0048580,regulation of post-embryonic development,97,1,0.03,0.0252,0.0491
+GO:0009908,flower development,110,1,0.03,0.0285,0.0491
+GO:0090567,reproductive shoot system development,115,1,0.03,0.0298,0.0491
+GO:0045892,negative regulation of transcription, DN...,131,1,0.03,0.0339,0.0491
+GO:1902679,negative regulation of RNA biosynthetic ...,131,1,0.03,0.0339,0.0491
+GO:1903507,negative regulation of nucleic acid-temp...,131,1,0.03,0.0339,0.0491
+GO:2000026,regulation of multicellular organismal d...,131,1,0.03,0.0339,0.0491
+GO:0000398,mRNA splicing, via spliceosome,138,1,0.04,0.0357,0.0491
+GO:0051253,negative regulation of RNA metabolic pro...,139,1,0.04,0.0359,0.0491
+GO:0051239,regulation of multicellular organismal p...,145,1,0.04,0.0375,0.0491
+GO:0045934,negative regulation of nucleobase-contai...,150,1,0.04,0.0387,0.0491
+GO:0000375,RNA splicing, via transesterification re...,167,1,0.04,0.043,0.0491
+GO:0000377,RNA splicing, via transesterification re...,167,1,0.04,0.043,0.0491
+GO:0050793,regulation of developmental process,176,1,0.05,0.0453,0.0491
+GO:0048367,shoot system development,178,1,0.05,0.0458,0.0491
+GO:0010558,negative regulation of macromolecule bio...,191,1,0.05,0.0491,0.0491
+GO:2000113,negative regulation of cellular macromol...,191,1,0.05,0.0491,0.0491

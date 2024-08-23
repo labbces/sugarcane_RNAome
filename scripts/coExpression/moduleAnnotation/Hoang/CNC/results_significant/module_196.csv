@@ -1,0 +1,16 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0001192,maintenance of transcriptional fidelity ...,1,1,0.01,0.0085,0.0329
+GO:0001193,maintenance of transcriptional fidelity ...,1,1,0.01,0.0085,0.0329
+GO:0010167,response to nitrate,2,1,0.02,0.017,0.0329
+GO:0060321,acceptance of pollen,2,1,0.02,0.017,0.0329
+GO:0015706,nitrate transport,3,1,0.03,0.0254,0.0329
+GO:0015783,GDP-fucose transmembrane transport,3,1,0.03,0.0254,0.0329
+GO:0032418,lysosome localization,3,1,0.03,0.0254,0.0329
+GO:0043137,DNA replication, removal of RNA primer,3,1,0.03,0.0254,0.0329
+GO:0051657,maintenance of organelle location,3,1,0.03,0.0254,0.0329
+GO:1902025,nitrate import,3,1,0.03,0.0254,0.0329
+GO:1990849,maintenance of vacuolar location,3,1,0.03,0.0254,0.0329
+GO:0006857,oligopeptide transport,75,3,0.64,0.0263,0.0329
+GO:0009443,pyridoxal 5'-phosphate salvage,4,1,0.03,0.0337,0.0389
+GO:0070417,cellular response to cold,5,1,0.04,0.0419,0.0449
+GO:0034599,cellular response to oxidative stress,40,2,0.34,0.0457,0.0457

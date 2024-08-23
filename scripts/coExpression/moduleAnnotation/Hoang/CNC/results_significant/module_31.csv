@@ -1,0 +1,6 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006623,protein targeting to vacuole,29,1,0.02,0.018,0.0375
+GO:0031146,SCF-dependent proteasomal ubiquitin-depe...,30,1,0.02,0.018,0.0375
+GO:0072665,protein localization to vacuole,50,1,0.03,0.03,0.0375
+GO:0072666,establishment of protein localization to...,50,1,0.03,0.03,0.0375
+GO:0007034,vacuolar transport,75,1,0.05,0.045,0.045

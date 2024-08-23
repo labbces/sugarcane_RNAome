@@ -1,0 +1,28 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010597,green leaf volatile biosynthetic process,4,1,0.01,0.01,0.0458
+GO:0019372,lipoxygenase pathway,4,1,0.01,0.01,0.0458
+GO:0043405,regulation of MAP kinase activity,4,1,0.01,0.01,0.0458
+GO:0043407,negative regulation of MAP kinase activi...,4,1,0.01,0.01,0.0458
+GO:0006631,fatty acid metabolic process,178,3,0.47,0.011,0.0458
+GO:0043408,regulation of MAPK cascade,5,1,0.01,0.013,0.0458
+GO:0043409,negative regulation of MAPK cascade,5,1,0.01,0.013,0.0458
+GO:0006469,negative regulation of protein kinase ac...,9,1,0.02,0.023,0.0458
+GO:0006690,icosanoid metabolic process,9,1,0.02,0.023,0.0458
+GO:0033673,negative regulation of kinase activity,9,1,0.02,0.023,0.0458
+GO:0071901,negative regulation of protein serine/th...,9,1,0.02,0.023,0.0458
+GO:0001933,negative regulation of protein phosphory...,10,1,0.03,0.026,0.0458
+GO:0009806,lignan metabolic process,10,1,0.03,0.026,0.0458
+GO:0009807,lignan biosynthetic process,10,1,0.03,0.026,0.0458
+GO:0042326,negative regulation of phosphorylation,10,1,0.03,0.026,0.0458
+GO:0016554,cytidine to uridine editing,11,1,0.03,0.028,0.0458
+GO:0051348,negative regulation of transferase activ...,12,1,0.03,0.031,0.0458
+GO:0006360,transcription by RNA polymerase I,13,1,0.03,0.034,0.0458
+GO:0006750,glutathione biosynthetic process,13,1,0.03,0.034,0.0458
+GO:0000165,MAPK cascade,14,1,0.04,0.036,0.0458
+GO:0023014,signal transduction by protein phosphory...,14,1,0.04,0.036,0.0458
+GO:0016553,base conversion or substitution editing,15,1,0.04,0.039,0.0458
+GO:0006633,fatty acid biosynthetic process,119,2,0.31,0.039,0.0458
+GO:0019184,nonribosomal peptide biosynthetic proces...,17,1,0.04,0.044,0.046
+GO:0010563,negative regulation of phosphorus metabo...,18,1,0.05,0.046,0.046
+GO:0045936,negative regulation of phosphate metabol...,18,1,0.05,0.046,0.046
+GO:1901568,fatty acid derivative metabolic process,18,1,0.05,0.046,0.046

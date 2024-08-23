@@ -1,0 +1,45 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006271,DNA strand elongation involved in DNA re...,6,2,0.15,0.0087,0.0476
+GO:0022616,DNA strand elongation,6,2,0.15,0.0087,0.0476
+GO:0035195,gene silencing by miRNA,8,2,0.2,0.0157,0.0476
+GO:0000380,alternative mRNA splicing, via spliceoso...,9,2,0.22,0.0198,0.0476
+GO:0043647,inositol phosphate metabolic process,63,5,1.57,0.0202,0.0476
+GO:0006404,RNA import into nucleus,1,1,0.02,0.0249,0.0476
+GO:0010234,anther wall tapetum cell fate specificat...,1,1,0.02,0.0249,0.0476
+GO:0043953,protein transport by the Tat complex,1,1,0.02,0.0249,0.0476
+GO:0048448,stamen morphogenesis,1,1,0.02,0.0249,0.0476
+GO:0048455,stamen formation,1,1,0.02,0.0249,0.0476
+GO:0048654,anther morphogenesis,1,1,0.02,0.0249,0.0476
+GO:0048655,anther wall tapetum morphogenesis,1,1,0.02,0.0249,0.0476
+GO:0048656,anther wall tapetum formation,1,1,0.02,0.0249,0.0476
+GO:0048657,anther wall tapetum cell differentiation,1,1,0.02,0.0249,0.0476
+GO:0051316,attachment of spindle microtubules to ki...,1,1,0.02,0.0249,0.0476
+GO:0051455,monopolar spindle attachment to meiosis ...,1,1,0.02,0.0249,0.0476
+GO:0051754,meiotic sister chromatid cohesion, centr...,1,1,0.02,0.0249,0.0476
+GO:0061015,snRNA import into nucleus,1,1,0.02,0.0249,0.0476
+GO:0070601,centromeric sister chromatid cohesion,1,1,0.02,0.0249,0.0476
+GO:0071076,RNA 3' uridylation,1,1,0.02,0.0249,0.0476
+GO:1900262,regulation of DNA-directed DNA polymeras...,1,1,0.02,0.0249,0.0476
+GO:1900264,positive regulation of DNA-directed DNA ...,1,1,0.02,0.0249,0.0476
+GO:1901527,abscisic acid-activated signaling pathwa...,1,1,0.02,0.0249,0.0476
+GO:0046855,inositol phosphate dephosphorylation,46,4,1.14,0.0272,0.0479
+GO:0071545,inositol phosphate catabolic process,46,4,1.14,0.0272,0.0479
+GO:0046856,phosphatidylinositol dephosphorylation,47,4,1.17,0.0291,0.0491
+GO:0046839,phospholipid dephosphorylation,48,4,1.19,0.0312,0.0491
+GO:0046174,polyol catabolic process,49,4,1.22,0.0333,0.0491
+GO:0046838,phosphorylated carbohydrate dephosphoryl...,50,4,1.24,0.0355,0.0491
+GO:0046164,alcohol catabolic process,53,4,1.32,0.0426,0.0491
+GO:1901616,organic hydroxy compound catabolic proce...,55,4,1.37,0.0478,0.0491
+GO:0000301,retrograde transport, vesicle recycling ...,2,1,0.05,0.0491,0.0491
+GO:0006528,asparagine metabolic process,2,1,0.05,0.0491,0.0491
+GO:0006529,asparagine biosynthetic process,2,1,0.05,0.0491,0.0491
+GO:0010315,auxin efflux,2,1,0.05,0.0491,0.0491
+GO:0048449,floral organ formation,2,1,0.05,0.0491,0.0491
+GO:0051030,snRNA transport,2,1,0.05,0.0491,0.0491
+GO:0051501,diterpene phytoalexin metabolic process,2,1,0.05,0.0491,0.0491
+GO:0051502,diterpene phytoalexin biosynthetic proce...,2,1,0.05,0.0491,0.0491
+GO:0052314,phytoalexin metabolic process,2,1,0.05,0.0491,0.0491
+GO:0052315,phytoalexin biosynthetic process,2,1,0.05,0.0491,0.0491
+GO:0060964,regulation of gene silencing by miRNA,2,1,0.05,0.0491,0.0491
+GO:0070370,cellular heat acclimation,2,1,0.05,0.0491,0.0491
+GO:2000573,positive regulation of DNA biosynthetic ...,2,1,0.05,0.0491,0.0491

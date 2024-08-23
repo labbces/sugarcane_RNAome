@@ -1,0 +1,21 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0042550,photosystem I stabilization,1,1,0.01,0.0058,0.0385
+GO:0009750,response to fructose,3,1,0.02,0.0173,0.0385
+GO:0018401,peptidyl-proline hydroxylation to 4-hydr...,3,1,0.02,0.0173,0.0385
+GO:0035494,SNARE complex disassembly,3,1,0.02,0.0173,0.0385
+GO:0090306,spindle assembly involved in meiosis,3,1,0.02,0.0173,0.0385
+GO:0000212,meiotic spindle organization,4,1,0.02,0.0231,0.0385
+GO:0009052,pentose-phosphate shunt, non-oxidative b...,4,1,0.02,0.0231,0.0385
+GO:0015713,phosphoglycerate transmembrane transport,4,1,0.02,0.0231,0.0385
+GO:0034497,protein localization to phagophore assem...,4,1,0.02,0.0231,0.0385
+GO:0042873,aldonate transmembrane transport,4,1,0.02,0.0231,0.0385
+GO:0044804,autophagy of nucleus,4,1,0.02,0.0231,0.0385
+GO:0070973,protein localization to endoplasmic reti...,4,1,0.02,0.0231,0.0385
+GO:0000055,ribosomal large subunit export from nucl...,5,1,0.03,0.0287,0.0442
+GO:0000422,autophagy of mitochondrion,6,1,0.03,0.0344,0.0459
+GO:0061726,mitochondrion disassembly,6,1,0.03,0.0344,0.0459
+GO:0051656,establishment of organelle localization,52,2,0.3,0.0368,0.046
+GO:0022411,cellular component disassembly,58,2,0.34,0.0449,0.0463
+GO:0009749,response to glucose,8,1,0.05,0.0456,0.0463
+GO:0019511,peptidyl-proline hydroxylation,8,1,0.05,0.0456,0.0463
+GO:0051640,organelle localization,59,2,0.34,0.0463,0.0463

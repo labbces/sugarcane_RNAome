@@ -1,0 +1,57 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010676,positive regulation of cellular carbohyd...,1,1,0,0.0027,0.0126
+GO:0010981,regulation of cell wall macromolecule me...,1,1,0,0.0027,0.0126
+GO:0034406,cell wall beta-glucan metabolic process,1,1,0,0.0027,0.0126
+GO:0034410,cell wall beta-glucan biosynthetic proce...,1,1,0,0.0027,0.0126
+GO:0045913,positive regulation of carbohydrate meta...,1,1,0,0.0027,0.0126
+GO:0052324,plant-type cell wall cellulose biosynthe...,1,1,0,0.0027,0.0126
+GO:0052541,plant-type cell wall cellulose metabolic...,1,1,0,0.0027,0.0126
+GO:1902066,regulation of cell wall pectin metabolic...,1,1,0,0.0027,0.0126
+GO:1903340,positive regulation of cell wall organiz...,1,1,0,0.0027,0.0126
+GO:2001008,positive regulation of cellulose biosynt...,1,1,0,0.0027,0.0126
+GO:2001009,regulation of plant-type cell wall cellu...,1,1,0,0.0027,0.0126
+GO:2001011,positive regulation of plant-type cell w...,1,1,0,0.0027,0.0126
+GO:1901672,positive regulation of systemic acquired...,2,1,0.01,0.0053,0.0212
+GO:1903338,regulation of cell wall organization or ...,2,1,0.01,0.0053,0.0212
+GO:0052546,cell wall pectin metabolic process,4,1,0.01,0.0106,0.0371
+GO:1905499,trichome papilla formation,4,1,0.01,0.0106,0.0371
+GO:0006434,seryl-tRNA aminoacylation,5,1,0.01,0.0133,0.0371
+GO:0010112,regulation of systemic acquired resistan...,5,1,0.01,0.0133,0.0371
+GO:0010091,trichome branching,6,1,0.02,0.0159,0.0371
+GO:0030031,cell projection assembly,6,1,0.02,0.0159,0.0371
+GO:0032922,circadian regulation of gene expression,6,1,0.02,0.0159,0.0371
+GO:0032950,regulation of beta-glucan metabolic proc...,6,1,0.02,0.0159,0.0371
+GO:0032951,regulation of beta-glucan biosynthetic p...,6,1,0.02,0.0159,0.0371
+GO:2001006,regulation of cellulose biosynthetic pro...,6,1,0.02,0.0159,0.0371
+GO:0010962,regulation of glucan biosynthetic proces...,7,1,0.02,0.0185,0.0384
+GO:0032885,regulation of polysaccharide biosyntheti...,7,1,0.02,0.0185,0.0384
+GO:0048586,regulation of long-day photoperiodism, f...,7,1,0.02,0.0185,0.0384
+GO:0032881,regulation of polysaccharide metabolic p...,8,1,0.02,0.0211,0.0404
+GO:0006566,threonine metabolic process,9,1,0.02,0.0238,0.0404
+GO:0009088,threonine biosynthetic process,9,1,0.02,0.0238,0.0404
+GO:0030030,cell projection organization,9,1,0.02,0.0238,0.0404
+GO:0043255,regulation of carbohydrate biosynthetic ...,9,1,0.02,0.0238,0.0404
+GO:0070534,protein K63-linked ubiquitination,9,1,0.02,0.0238,0.0404
+GO:0006109,regulation of carbohydrate metabolic pro...,10,1,0.03,0.0264,0.0411
+GO:0010090,trichome morphogenesis,10,1,0.03,0.0264,0.0411
+GO:0010675,regulation of cellular carbohydrate meta...,10,1,0.03,0.0264,0.0411
+GO:0000245,spliceosomal complex assembly,11,1,0.03,0.029,0.0434
+GO:0010026,trichome differentiation,12,1,0.03,0.0316,0.0434
+GO:0010927,cellular component assembly involved in ...,12,1,0.03,0.0316,0.0434
+GO:0009089,lysine biosynthetic process via diaminop...,13,1,0.03,0.0341,0.0434
+GO:0032989,cellular component morphogenesis,13,1,0.03,0.0341,0.0434
+GO:0046451,diaminopimelate metabolic process,13,1,0.03,0.0341,0.0434
+GO:0048571,long-day photoperiodism,13,1,0.03,0.0341,0.0434
+GO:0048574,long-day photoperiodism, flowering,13,1,0.03,0.0341,0.0434
+GO:0006471,protein ADP-ribosylation,14,1,0.04,0.0367,0.0457
+GO:0006553,lysine metabolic process,15,1,0.04,0.0393,0.046
+GO:0009085,lysine biosynthetic process,15,1,0.04,0.0393,0.046
+GO:0016024,CDP-diacylglycerol biosynthetic process,16,1,0.04,0.0419,0.046
+GO:0046341,CDP-diacylglycerol metabolic process,16,1,0.04,0.0419,0.046
+GO:0031086,nuclear-transcribed mRNA catabolic proce...,17,1,0.05,0.0444,0.046
+GO:0031087,deadenylation-independent decapping of n...,17,1,0.05,0.0444,0.046
+GO:0045089,positive regulation of innate immune res...,17,1,0.05,0.0444,0.046
+GO:0090626,plant epidermis morphogenesis,17,1,0.05,0.0444,0.046
+GO:2000022,regulation of jasmonic acid mediated sig...,17,1,0.05,0.0444,0.046
+GO:0002684,positive regulation of immune system pro...,19,1,0.05,0.0495,0.0495
+GO:0050778,positive regulation of immune response,19,1,0.05,0.0495,0.0495

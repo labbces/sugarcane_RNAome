@@ -1,0 +1,45 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009644,response to high light intensity,17,2,0.08,0.0029,0.0352
+GO:0006610,ribosomal protein import into nucleus,1,1,0,0.0048,0.0352
+GO:0007079,mitotic chromosome movement towards spin...,1,1,0,0.0048,0.0352
+GO:0030953,astral microtubule organization,1,1,0,0.0048,0.0352
+GO:0031291,Ran protein signal transduction,1,1,0,0.0048,0.0352
+GO:0051305,chromosome movement towards spindle pole,1,1,0,0.0048,0.0352
+GO:0051261,protein depolymerization,24,2,0.11,0.0058,0.0365
+GO:0009642,response to light intensity,26,2,0.12,0.0068,0.0374
+GO:0034477,U6 snRNA 3'-end processing,2,1,0.01,0.0095,0.0384
+GO:0051017,actin filament bundle assembly,31,2,0.15,0.0096,0.0384
+GO:0061572,actin filament bundle organization,31,2,0.15,0.0096,0.0384
+GO:0043624,cellular protein complex disassembly,44,2,0.21,0.0187,0.0449
+GO:0034472,snRNA 3'-end processing,4,1,0.02,0.0189,0.0449
+GO:0050000,chromosome localization,4,1,0.02,0.0189,0.0449
+GO:0051303,establishment of chromosome localization,4,1,0.02,0.0189,0.0449
+GO:0072318,clathrin coat disassembly,4,1,0.02,0.0189,0.0449
+GO:0072319,vesicle uncoating,4,1,0.02,0.0189,0.0449
+GO:0032984,protein-containing complex disassembly,47,2,0.22,0.0212,0.0449
+GO:0009423,chorismate biosynthetic process,6,1,0.03,0.0283,0.0449
+GO:0010206,photosystem II repair,6,1,0.03,0.0283,0.0449
+GO:0022411,cellular component disassembly,58,2,0.28,0.0313,0.0449
+GO:0006571,tyrosine biosynthetic process,7,1,0.03,0.0329,0.0449
+GO:0006505,GPI anchor metabolic process,60,2,0.29,0.0333,0.0449
+GO:0006506,GPI anchor biosynthetic process,60,2,0.29,0.0333,0.0449
+GO:0030835,negative regulation of actin filament de...,8,1,0.04,0.0375,0.0449
+GO:0030837,negative regulation of actin filament po...,8,1,0.04,0.0375,0.0449
+GO:0031333,negative regulation of protein-containin...,8,1,0.04,0.0375,0.0449
+GO:0032272,negative regulation of protein polymeriz...,8,1,0.04,0.0375,0.0449
+GO:0043242,negative regulation of protein-containin...,8,1,0.04,0.0375,0.0449
+GO:0046417,chorismate metabolic process,8,1,0.04,0.0375,0.0449
+GO:0051494,negative regulation of cytoskeleton orga...,8,1,0.04,0.0375,0.0449
+GO:0051693,actin filament capping,8,1,0.04,0.0375,0.0449
+GO:1901880,negative regulation of protein depolymer...,8,1,0.04,0.0375,0.0449
+GO:1902904,negative regulation of supramolecular fi...,8,1,0.04,0.0375,0.0449
+GO:0006497,protein lipidation,66,2,0.31,0.0396,0.0449
+GO:0042158,lipoprotein biosynthetic process,66,2,0.31,0.0396,0.0449
+GO:0097435,supramolecular fiber organization,158,3,0.75,0.0399,0.0449
+GO:0030029,actin filament-based process,160,3,0.76,0.0412,0.0449
+GO:0009095,aromatic amino acid family biosynthetic ...,9,1,0.04,0.0421,0.0449
+GO:0030834,regulation of actin filament depolymeriz...,9,1,0.04,0.0421,0.0449
+GO:1901879,regulation of protein depolymerization,9,1,0.04,0.0421,0.0449
+GO:0042157,lipoprotein metabolic process,69,2,0.33,0.0429,0.0449
+GO:0006116,NADH oxidation,10,1,0.05,0.0467,0.0467
+GO:0006570,tyrosine metabolic process,10,1,0.05,0.0467,0.0467

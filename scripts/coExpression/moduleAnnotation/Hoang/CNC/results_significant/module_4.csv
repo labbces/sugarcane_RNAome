@@ -1,0 +1,7 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009134,nucleoside diphosphate catabolic process,8,1,0,0.0031,0.0186
+GO:1901292,nucleoside phosphate catabolic process,19,1,0.01,0.0075,0.0225
+GO:0034404,nucleobase-containing small molecule bio...,41,1,0.02,0.016,0.032
+GO:0000272,polysaccharide catabolic process,66,1,0.03,0.0257,0.0349
+GO:0046434,organophosphate catabolic process,75,1,0.03,0.0291,0.0349
+GO:0009132,nucleoside diphosphate metabolic process,111,1,0.04,0.0429,0.0429

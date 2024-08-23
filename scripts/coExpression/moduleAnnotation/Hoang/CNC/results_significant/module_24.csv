@@ -1,0 +1,5 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006434,seryl-tRNA aminoacylation,5,1,0,0.00087,0.0035
+GO:0006418,tRNA aminoacylation for protein translat...,171,1,0.03,0.02958,0.0316
+GO:0043038,amino acid activation,183,1,0.03,0.03163,0.0316
+GO:0043039,tRNA aminoacylation,183,1,0.03,0.03163,0.0316

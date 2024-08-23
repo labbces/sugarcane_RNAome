@@ -1,0 +1,26 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006446,regulation of translational initiation,3,1,0.01,0.012,0.0456
+GO:0015783,GDP-fucose transmembrane transport,3,1,0.01,0.012,0.0456
+GO:0070973,protein localization to endoplasmic reti...,4,1,0.02,0.016,0.0456
+GO:1902292,cell cycle DNA replication initiation,4,1,0.02,0.016,0.0456
+GO:1902315,nuclear cell cycle DNA replication initi...,4,1,0.02,0.016,0.0456
+GO:1902975,mitotic DNA replication initiation,4,1,0.02,0.016,0.0456
+GO:0006545,glycine biosynthetic process,6,1,0.02,0.024,0.0456
+GO:0019264,glycine biosynthetic process from serine,6,1,0.02,0.024,0.0456
+GO:0090480,purine nucleotide-sugar transmembrane tr...,6,1,0.02,0.024,0.0456
+GO:1902969,mitotic DNA replication,6,1,0.02,0.024,0.0456
+GO:0051168,nuclear export,63,2,0.25,0.026,0.0456
+GO:0006449,regulation of translational termination,7,1,0.03,0.028,0.0456
+GO:0006544,glycine metabolic process,7,1,0.03,0.028,0.0456
+GO:0016973,poly(A)+ mRNA export from nucleus,7,1,0.03,0.028,0.0456
+GO:0042136,neurotransmitter biosynthetic process,7,1,0.03,0.028,0.0456
+GO:0033260,nuclear DNA replication,8,1,0.03,0.031,0.0456
+GO:0035999,tetrahydrofolate interconversion,8,1,0.03,0.031,0.0456
+GO:0010229,inflorescence development,9,1,0.04,0.035,0.0464
+GO:0006413,translational initiation,77,2,0.31,0.038,0.0464
+GO:0006116,NADH oxidation,10,1,0.04,0.039,0.0464
+GO:0071951,conversion of methionyl-tRNA to N-formyl...,10,1,0.04,0.039,0.0464
+GO:0019988,charged-tRNA amino acid modification,11,1,0.04,0.043,0.047
+GO:0006734,NADH metabolic process,12,1,0.05,0.047,0.047
+GO:0034067,protein localization to Golgi apparatus,12,1,0.05,0.047,0.047
+GO:0045053,protein retention in Golgi apparatus,12,1,0.05,0.047,0.047

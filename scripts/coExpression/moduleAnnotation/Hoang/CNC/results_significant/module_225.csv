@@ -1,0 +1,65 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0015695,organic cation transport,4,2,0.05,0.001,0.0213
+GO:0015805,S-adenosyl-L-methionine transport,4,2,0.05,0.001,0.0213
+GO:1901962,S-adenosyl-L-methionine transmembrane tr...,4,2,0.05,0.001,0.0213
+GO:0051182,coenzyme transport,7,2,0.09,0.0036,0.0408
+GO:0006855,drug transmembrane transport,8,2,0.11,0.0047,0.0408
+GO:0034622,cellular protein-containing complex asse...,283,10,3.77,0.0049,0.0408
+GO:0000963,mitochondrial RNA processing,9,2,0.12,0.006,0.0408
+GO:0051181,cofactor transport,9,2,0.12,0.006,0.0408
+GO:0000245,spliceosomal complex assembly,11,2,0.15,0.009,0.0408
+GO:0043933,protein-containing complex subunit organ...,363,11,4.84,0.0099,0.0408
+GO:0065003,protein-containing complex assembly,319,10,4.25,0.0109,0.0408
+GO:0016109,tetraterpenoid biosynthetic process,13,2,0.17,0.0126,0.0408
+GO:0016117,carotenoid biosynthetic process,13,2,0.17,0.0126,0.0408
+GO:0032119,sequestering of zinc ion,1,1,0.01,0.0133,0.0408
+GO:0043181,vacuolar sequestering,1,1,0.01,0.0133,0.0408
+GO:0070899,mitochondrial tRNA wobble uridine modifi...,1,1,0.01,0.0133,0.0408
+GO:0070900,mitochondrial tRNA modification,1,1,0.01,0.0133,0.0408
+GO:0090646,mitochondrial tRNA processing,1,1,0.01,0.0133,0.0408
+GO:0002098,tRNA wobble uridine modification,16,2,0.21,0.0188,0.0408
+GO:0042493,response to drug,116,5,1.55,0.0197,0.0408
+GO:0046785,microtubule polymerization,17,2,0.23,0.0211,0.0408
+GO:0015893,drug transport,45,3,0.6,0.0221,0.0408
+GO:0031109,microtubule polymerization or depolymeri...,19,2,0.25,0.0261,0.0408
+GO:0015837,amine transport,2,1,0.03,0.0265,0.0408
+GO:0032973,amino acid export across plasma membrane,2,1,0.03,0.0265,0.0408
+GO:0045901,positive regulation of translational elo...,2,1,0.03,0.0265,0.0408
+GO:0051952,regulation of amine transport,2,1,0.03,0.0265,0.0408
+GO:0051955,regulation of amino acid transport,2,1,0.03,0.0265,0.0408
+GO:0080143,regulation of amino acid export,2,1,0.03,0.0265,0.0408
+GO:1903241,U2-type prespliceosome assembly,2,1,0.03,0.0265,0.0408
+GO:1903789,regulation of amino acid transmembrane t...,2,1,0.03,0.0265,0.0408
+GO:0002097,tRNA wobble base modification,20,2,0.27,0.0288,0.0408
+GO:0044786,cell cycle DNA replication,20,2,0.27,0.0288,0.0408
+GO:0006417,regulation of translation,130,5,1.73,0.0304,0.0408
+GO:0034248,regulation of cellular amide metabolic p...,132,5,1.76,0.0322,0.0408
+GO:0016108,tetraterpenoid metabolic process,22,2,0.29,0.0344,0.0408
+GO:0016116,carotenoid metabolic process,22,2,0.29,0.0344,0.0408
+GO:0033108,mitochondrial respiratory chain complex ...,22,2,0.29,0.0344,0.0408
+GO:0072348,sulfur compound transport,22,2,0.29,0.0344,0.0408
+GO:0140053,mitochondrial gene expression,22,2,0.29,0.0344,0.0408
+GO:0017148,negative regulation of translation,55,3,0.73,0.0371,0.0408
+GO:0034249,negative regulation of cellular amide me...,56,3,0.75,0.0388,0.0408
+GO:0006203,dGTP catabolic process,3,1,0.04,0.0395,0.0408
+GO:0007035,vacuolar acidification,3,1,0.04,0.0395,0.0408
+GO:0009146,purine nucleoside triphosphate catabolic...,3,1,0.04,0.0395,0.0408
+GO:0009151,purine deoxyribonucleotide metabolic pro...,3,1,0.04,0.0395,0.0408
+GO:0009155,purine deoxyribonucleotide catabolic pro...,3,1,0.04,0.0395,0.0408
+GO:0009215,purine deoxyribonucleoside triphosphate ...,3,1,0.04,0.0395,0.0408
+GO:0009217,purine deoxyribonucleoside triphosphate ...,3,1,0.04,0.0395,0.0408
+GO:0010942,positive regulation of cell death,3,1,0.04,0.0395,0.0408
+GO:0018026,peptidyl-lysine monomethylation,3,1,0.04,0.0395,0.0408
+GO:0032890,regulation of organic acid transport,3,1,0.04,0.0395,0.0408
+GO:0034552,respiratory chain complex II assembly,3,1,0.04,0.0395,0.0408
+GO:0034553,mitochondrial respiratory chain complex ...,3,1,0.04,0.0395,0.0408
+GO:0035627,ceramide transport,3,1,0.04,0.0395,0.0408
+GO:0045851,pH reduction,3,1,0.04,0.0395,0.0408
+GO:0046070,dGTP metabolic process,3,1,0.04,0.0395,0.0408
+GO:0046386,deoxyribose phosphate catabolic process,3,1,0.04,0.0395,0.0408
+GO:0051452,intracellular pH reduction,3,1,0.04,0.0395,0.0408
+GO:0052746,inositol phosphorylation,3,1,0.04,0.0395,0.0408
+GO:0070070,proton-transporting V-type ATPase comple...,3,1,0.04,0.0395,0.0408
+GO:1902389,ceramide 1-phosphate transport,3,1,0.04,0.0395,0.0408
+GO:0000959,mitochondrial RNA metabolic process,25,2,0.33,0.0435,0.0442
+GO:0022607,cellular component assembly,516,12,6.88,0.0451,0.0451

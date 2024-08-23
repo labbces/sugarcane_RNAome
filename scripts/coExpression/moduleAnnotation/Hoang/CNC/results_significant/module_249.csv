@@ -1,0 +1,140 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0048522,positive regulation of cellular process,355,25,11.27,0.00019,0.0264
+GO:0045935,positive regulation of nucleobase-contai...,168,14,5.33,0.00097,0.041
+GO:0031325,positive regulation of cellular metaboli...,249,18,7.91,0.00107,0.041
+GO:0051254,positive regulation of RNA metabolic pro...,161,13,5.11,0.00193,0.041
+GO:0009893,positive regulation of metabolic process,266,18,8.45,0.00222,0.041
+GO:0010604,positive regulation of macromolecule met...,248,17,7.87,0.00254,0.041
+GO:0045860,positive regulation of protein kinase ac...,19,4,0.6,0.00267,0.041
+GO:0048518,positive regulation of biological proces...,451,26,14.32,0.0027,0.041
+GO:0031328,positive regulation of cellular biosynth...,150,12,4.76,0.00306,0.041
+GO:0071902,positive regulation of protein serine/th...,10,3,0.32,0.00324,0.041
+GO:0009891,positive regulation of biosynthetic proc...,152,12,4.83,0.00341,0.041
+GO:0001934,positive regulation of protein phosphory...,21,4,0.67,0.00392,0.041
+GO:0051173,positive regulation of nitrogen compound...,240,16,7.62,0.00439,0.041
+GO:0000266,mitochondrial fission,4,2,0.13,0.00579,0.041
+GO:1905499,trichome papilla formation,4,2,0.13,0.00579,0.041
+GO:0033674,positive regulation of kinase activity,24,4,0.76,0.00645,0.041
+GO:0010557,positive regulation of macromolecule bio...,145,11,4.6,0.00665,0.041
+GO:0045893,positive regulation of transcription, DN...,129,10,4.1,0.00815,0.041
+GO:1902680,positive regulation of RNA biosynthetic ...,129,10,4.1,0.00815,0.041
+GO:1903508,positive regulation of nucleic acid-temp...,129,10,4.1,0.00815,0.041
+GO:0000289,nuclear-transcribed mRNA poly(A) tail sh...,5,2,0.16,0.00944,0.041
+GO:0019249,lactate biosynthetic process,5,2,0.16,0.00944,0.041
+GO:0010562,positive regulation of phosphorus metabo...,27,4,0.86,0.00989,0.041
+GO:0042327,positive regulation of phosphorylation,27,4,0.86,0.00989,0.041
+GO:0045937,positive regulation of phosphate metabol...,27,4,0.86,0.00989,0.041
+GO:0030244,cellulose biosynthetic process,79,7,2.51,0.01271,0.041
+GO:0010091,trichome branching,6,2,0.19,0.01387,0.041
+GO:0030031,cell projection assembly,6,2,0.19,0.01387,0.041
+GO:0045737,positive regulation of cyclin-dependent ...,6,2,0.19,0.01387,0.041
+GO:1904031,positive regulation of cyclin-dependent ...,6,2,0.19,0.01387,0.041
+GO:0006955,immune response,81,7,2.57,0.01445,0.041
+GO:0002831,regulation of response to biotic stimulu...,63,6,2,0.01472,0.041
+GO:0070940,dephosphorylation of RNA polymerase II C...,17,3,0.54,0.01554,0.041
+GO:1900150,regulation of defense response to fungus,17,3,0.54,0.01554,0.041
+GO:0050776,regulation of immune response,31,4,0.98,0.01605,0.041
+GO:0044089,positive regulation of cellular componen...,48,5,1.52,0.01768,0.041
+GO:0002682,regulation of immune system process,32,4,1.02,0.0179,0.041
+GO:0031347,regulation of defense response,85,7,2.7,0.01842,0.041
+GO:0051276,chromosome organization,683,32,21.68,0.01899,0.041
+GO:0006313,transposition, DNA-mediated,49,5,1.56,0.01919,0.041
+GO:1903311,regulation of mRNA metabolic process,49,5,1.56,0.01919,0.041
+GO:0072665,protein localization to vacuole,50,5,1.59,0.02078,0.041
+GO:0072666,establishment of protein localization to...,50,5,1.59,0.02078,0.041
+GO:0006898,receptor-mediated endocytosis,19,3,0.6,0.02114,0.041
+GO:0072583,clathrin-dependent endocytosis,19,3,0.6,0.02114,0.041
+GO:0010628,positive regulation of gene expression,152,10,4.83,0.02345,0.041
+GO:0051274,beta-glucan biosynthetic process,110,8,3.49,0.02401,0.041
+GO:0030243,cellulose metabolic process,91,7,2.89,0.02573,0.041
+GO:0071103,DNA conformation change,246,14,7.81,0.02603,0.041
+GO:0006996,organelle organization,1384,57,43.94,0.02676,0.041
+GO:0006886,intracellular protein transport,418,21,13.27,0.02679,0.041
+GO:0002376,immune system process,92,7,2.92,0.02712,0.041
+GO:0043328,protein transport to vacuole involved in...,21,3,0.67,0.02769,0.041
+GO:0006310,DNA recombination,225,13,7.14,0.02806,0.041
+GO:0019219,regulation of nucleobase-containing comp...,497,24,15.78,0.02845,0.041
+GO:0032101,regulation of response to external stimu...,74,6,2.35,0.03006,0.041
+GO:0006089,lactate metabolic process,9,2,0.29,0.03125,0.041
+GO:0009438,methylglyoxal metabolic process,9,2,0.29,0.03125,0.041
+GO:0019566,arabinose metabolic process,9,2,0.29,0.03125,0.041
+GO:0030030,cell projection organization,9,2,0.29,0.03125,0.041
+GO:0046373,L-arabinose metabolic process,9,2,0.29,0.03125,0.041
+GO:0051596,methylglyoxal catabolic process,9,2,0.29,0.03125,0.041
+GO:0061727,methylglyoxal catabolic process to lacta...,9,2,0.29,0.03125,0.041
+GO:0032511,late endosome to vacuole transport via m...,22,3,0.7,0.03132,0.041
+GO:0043162,ubiquitin-dependent protein catabolic pr...,22,3,0.7,0.03132,0.041
+GO:0031401,positive regulation of protein modificat...,38,4,1.21,0.03168,0.041
+GO:0051347,positive regulation of transferase activ...,38,4,1.21,0.03168,0.041
+GO:0000012,single strand break repair,1,1,0.03,0.03175,0.041
+GO:0000472,endonucleolytic cleavage to generate mat...,1,1,0.03,0.03175,0.041
+GO:0000480,endonucleolytic cleavage in 5'-ETS of tr...,1,1,0.03,0.03175,0.041
+GO:0000967,rRNA 5'-end processing,1,1,0.03,0.03175,0.041
+GO:0001731,formation of translation preinitiation c...,1,1,0.03,0.03175,0.041
+GO:0007063,regulation of sister chromatid cohesion,1,1,0.03,0.03175,0.041
+GO:0009595,detection of biotic stimulus,1,1,0.03,0.03175,0.041
+GO:0009661,chromoplast organization,1,1,0.03,0.03175,0.041
+GO:0010676,positive regulation of cellular carbohyd...,1,1,0.03,0.03175,0.041
+GO:0010981,regulation of cell wall macromolecule me...,1,1,0.03,0.03175,0.041
+GO:0016045,detection of bacterium,1,1,0.03,0.03175,0.041
+GO:0016123,xanthophyll biosynthetic process,1,1,0.03,0.03175,0.041
+GO:0032438,melanosome organization,1,1,0.03,0.03175,0.041
+GO:0033059,cellular pigmentation,1,1,0.03,0.03175,0.041
+GO:0033306,phytol metabolic process,1,1,0.03,0.03175,0.041
+GO:0033363,secretory granule organization,1,1,0.03,0.03175,0.041
+GO:0034406,cell wall beta-glucan metabolic process,1,1,0.03,0.03175,0.041
+GO:0034410,cell wall beta-glucan biosynthetic proce...,1,1,0.03,0.03175,0.041
+GO:0043132,NAD transport,1,1,0.03,0.03175,0.041
+GO:0043473,pigmentation,1,1,0.03,0.03175,0.041
+GO:0044211,CTP salvage,1,1,0.03,0.03175,0.041
+GO:0045913,positive regulation of carbohydrate meta...,1,1,0.03,0.03175,0.041
+GO:0046950,cellular ketone body metabolic process,1,1,0.03,0.03175,0.041
+GO:0046951,ketone body biosynthetic process,1,1,0.03,0.03175,0.041
+GO:0048753,pigment granule organization,1,1,0.03,0.03175,0.041
+GO:0052324,plant-type cell wall cellulose biosynthe...,1,1,0.03,0.03175,0.041
+GO:0052541,plant-type cell wall cellulose metabolic...,1,1,0.03,0.03175,0.041
+GO:0060155,platelet dense granule organization,1,1,0.03,0.03175,0.041
+GO:0098543,detection of other organism,1,1,0.03,0.03175,0.041
+GO:0098581,detection of external biotic stimulus,1,1,0.03,0.03175,0.041
+GO:1902066,regulation of cell wall pectin metabolic...,1,1,0.03,0.03175,0.041
+GO:1902224,ketone body metabolic process,1,1,0.03,0.03175,0.041
+GO:1903173,fatty alcohol metabolic process,1,1,0.03,0.03175,0.041
+GO:1903232,melanosome assembly,1,1,0.03,0.03175,0.041
+GO:1903340,positive regulation of cell wall organiz...,1,1,0.03,0.03175,0.041
+GO:1904143,positive regulation of carotenoid biosyn...,1,1,0.03,0.03175,0.041
+GO:2000622,regulation of nuclear-transcribed mRNA c...,1,1,0.03,0.03175,0.041
+GO:2001008,positive regulation of cellulose biosynt...,1,1,0.03,0.03175,0.041
+GO:2001009,regulation of plant-type cell wall cellu...,1,1,0.03,0.03175,0.041
+GO:2001011,positive regulation of plant-type cell w...,1,1,0.03,0.03175,0.041
+GO:0006970,response to osmotic stress,75,6,2.38,0.03184,0.041
+GO:0006366,transcription by RNA polymerase II,255,14,8.1,0.03383,0.0431
+GO:0045087,innate immune response,77,6,2.44,0.03558,0.0449
+GO:0051252,regulation of RNA metabolic process,457,22,14.51,0.03582,0.0449
+GO:0044265,cellular macromolecule catabolic process,458,22,14.54,0.03655,0.0454
+GO:0061013,regulation of mRNA catabolic process,40,4,1.27,0.03734,0.0454
+GO:0010090,trichome morphogenesis,10,2,0.32,0.03825,0.0454
+GO:0042182,ketone catabolic process,10,2,0.32,0.03825,0.0454
+GO:0045787,positive regulation of cell cycle,10,2,0.32,0.03825,0.0454
+GO:0048024,regulation of mRNA splicing, via spliceo...,10,2,0.32,0.03825,0.0454
+GO:0034314,Arp2/3 complex-mediated actin nucleation,24,3,0.76,0.0393,0.0459
+GO:0070076,histone lysine demethylation,24,3,0.76,0.0393,0.0459
+GO:0045859,regulation of protein kinase activity,41,4,1.3,0.04037,0.0468
+GO:0051273,beta-glucan metabolic process,122,8,3.87,0.04081,0.0469
+GO:0072594,establishment of protein localization to...,191,11,6.06,0.04192,0.0478
+GO:0006488,dolichol-linked oligosaccharide biosynth...,25,3,0.79,0.04364,0.048
+GO:0032509,endosome transport via multivesicular bo...,25,3,0.79,0.04364,0.048
+GO:0034613,cellular protein localization,467,22,14.83,0.04366,0.048
+GO:0032535,regulation of cellular component size,61,5,1.94,0.04408,0.048
+GO:0032392,DNA geometric change,124,8,3.94,0.04422,0.048
+GO:0032508,DNA duplex unwinding,124,8,3.94,0.04422,0.048
+GO:0010020,chloroplast fission,11,2,0.35,0.04579,0.0485
+GO:0043572,plastid fission,11,2,0.35,0.04579,0.0485
+GO:1901570,fatty acid derivative biosynthetic proce...,11,2,0.35,0.04579,0.0485
+GO:0009620,response to fungus,82,6,2.6,0.04613,0.0485
+GO:0043085,positive regulation of catalytic activit...,62,5,1.97,0.04675,0.0485
+GO:0090066,regulation of anatomical structure size,62,5,1.97,0.04675,0.0485
+GO:0033365,protein localization to organelle,219,12,6.95,0.04757,0.0485
+GO:0031326,regulation of cellular biosynthetic proc...,577,26,18.32,0.04758,0.0485
+GO:0045088,regulation of innate immune response,26,3,0.83,0.0482,0.0485
+GO:0061025,membrane fusion,26,3,0.83,0.0482,0.0485
+GO:0009651,response to salt stress,63,5,2,0.04951,0.0495

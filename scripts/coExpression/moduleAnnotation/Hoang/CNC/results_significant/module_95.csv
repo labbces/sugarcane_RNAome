@@ -1,0 +1,32 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0010207,photosystem II assembly,13,2,0.12,0.0058,0.0399
+GO:0010191,mucilage metabolic process,1,1,0.01,0.009,0.0399
+GO:0010192,mucilage biosynthetic process,1,1,0.01,0.009,0.0399
+GO:0010214,seed coat development,1,1,0.01,0.009,0.0399
+GO:0010253,UDP-rhamnose biosynthetic process,1,1,0.01,0.009,0.0399
+GO:0010952,positive regulation of peptidase activit...,1,1,0.01,0.009,0.0399
+GO:0033478,UDP-rhamnose metabolic process,1,1,0.01,0.009,0.0399
+GO:0010315,auxin efflux,2,1,0.02,0.0178,0.044
+GO:0033962,cytoplasmic mRNA processing body assembl...,2,1,0.02,0.0178,0.044
+GO:0006084,acetyl-CoA metabolic process,26,2,0.23,0.0226,0.044
+GO:0042549,photosystem II stabilization,3,1,0.03,0.0267,0.044
+GO:0051123,RNA polymerase II preinitiation complex ...,3,1,0.03,0.0267,0.044
+GO:0051554,flavonol metabolic process,3,1,0.03,0.0267,0.044
+GO:0051555,flavonol biosynthetic process,3,1,0.03,0.0267,0.044
+GO:0006637,acyl-CoA metabolic process,30,2,0.27,0.0295,0.044
+GO:0035383,thioester metabolic process,30,2,0.27,0.0295,0.044
+GO:0006465,signal peptide processing,32,2,0.29,0.0333,0.044
+GO:0006352,DNA-templated transcription, initiation,80,3,0.72,0.0353,0.044
+GO:0000447,endonucleolytic cleavage in ITS1 to sepa...,4,1,0.04,0.0354,0.044
+GO:0051552,flavone metabolic process,4,1,0.04,0.0354,0.044
+GO:0051553,flavone biosynthetic process,4,1,0.04,0.0354,0.044
+GO:0140115,export across plasma membrane,35,2,0.31,0.0392,0.044
+GO:0019684,photosynthesis, light reaction,84,3,0.75,0.0399,0.044
+GO:0046148,pigment biosynthetic process,86,3,0.77,0.0423,0.044
+GO:1901617,organic hydroxy compound biosynthetic pr...,86,3,0.77,0.0423,0.044
+GO:0000055,ribosomal large subunit export from nucl...,5,1,0.04,0.044,0.044
+GO:0006655,phosphatidylglycerol biosynthetic proces...,5,1,0.04,0.044,0.044
+GO:0009113,purine nucleobase biosynthetic process,5,1,0.04,0.044,0.044
+GO:0032048,cardiolipin metabolic process,5,1,0.04,0.044,0.044
+GO:0032049,cardiolipin biosynthetic process,5,1,0.04,0.044,0.044
+GO:0046471,phosphatidylglycerol metabolic process,5,1,0.04,0.044,0.044

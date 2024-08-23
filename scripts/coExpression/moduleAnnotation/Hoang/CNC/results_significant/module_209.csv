@@ -1,0 +1,23 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0007010,cytoskeleton organization,288,4,0.86,0.011,0.049
+GO:0097435,supramolecular fiber organization,158,3,0.47,0.012,0.049
+GO:0010081,regulation of inflorescence meristem gro...,4,1,0.01,0.012,0.049
+GO:0010450,inflorescence meristem growth,4,1,0.01,0.012,0.049
+GO:0000027,ribosomal large subunit assembly,6,1,0.02,0.018,0.049
+GO:0051493,regulation of cytoskeleton organization,73,2,0.22,0.02,0.049
+GO:0010080,regulation of floral meristem growth,7,1,0.02,0.021,0.049
+GO:0010451,floral meristem growth,7,1,0.02,0.021,0.049
+GO:0048589,developmental growth,84,2,0.25,0.026,0.049
+GO:0010229,inflorescence development,9,1,0.03,0.026,0.049
+GO:0032147,activation of protein kinase activity,9,1,0.03,0.026,0.049
+GO:0007017,microtubule-based process,234,3,0.7,0.033,0.049
+GO:0010082,regulation of root meristem growth,12,1,0.04,0.035,0.049
+GO:0010449,root meristem growth,13,1,0.04,0.038,0.049
+GO:0071586,CAAX-box protein processing,13,1,0.04,0.038,0.049
+GO:0080120,CAAX-box protein maturation,13,1,0.04,0.038,0.049
+GO:0010305,leaf vascular tissue pattern formation,14,1,0.04,0.041,0.049
+GO:0009932,cell tip growth,15,1,0.04,0.044,0.049
+GO:0048588,developmental cell growth,16,1,0.05,0.047,0.049
+GO:0060236,regulation of mitotic spindle organizati...,16,1,0.05,0.047,0.049
+GO:0090224,regulation of spindle organization,16,1,0.05,0.047,0.049
+GO:0070507,regulation of microtubule cytoskeleton o...,17,1,0.05,0.049,0.049

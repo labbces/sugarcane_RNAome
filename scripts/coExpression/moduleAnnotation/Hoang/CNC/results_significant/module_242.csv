@@ -1,0 +1,90 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0019684,photosynthesis, light reaction,84,23,12.07,0.0014,0.0297
+GO:0009416,response to light stimulus,196,44,28.17,0.0015,0.0297
+GO:0007166,cell surface receptor signaling pathway,170,39,24.43,0.0018,0.0297
+GO:0009314,response to radiation,200,44,28.74,0.0023,0.0297
+GO:0015979,photosynthesis,146,34,20.98,0.0026,0.0297
+GO:0009687,abscisic acid metabolic process,3,3,0.43,0.003,0.0297
+GO:0042439,ethanolamine-containing compound metabol...,3,3,0.43,0.003,0.0297
+GO:0043288,apocarotenoid metabolic process,3,3,0.43,0.003,0.0297
+GO:0070291,N-acylethanolamine metabolic process,3,3,0.43,0.003,0.0297
+GO:0009765,photosynthesis, light harvesting,46,14,6.61,0.004,0.0356
+GO:0016106,sesquiterpenoid biosynthetic process,6,4,0.86,0.005,0.039
+GO:0050779,RNA destabilization,31,10,4.45,0.0092,0.039
+GO:0061157,mRNA destabilization,31,10,4.45,0.0092,0.039
+GO:0015977,carbon fixation,18,7,2.59,0.0093,0.039
+GO:1902644,tertiary alcohol metabolic process,4,3,0.57,0.0106,0.039
+GO:0050896,response to stimulus,3963,616,569.49,0.0114,0.039
+GO:0061014,positive regulation of mRNA catabolic pr...,32,10,4.6,0.0117,0.039
+GO:0031331,positive regulation of cellular cataboli...,47,13,6.75,0.013,0.039
+GO:0006714,sesquiterpenoid metabolic process,11,5,1.58,0.0133,0.039
+GO:0009267,cellular response to starvation,28,9,4.02,0.0135,0.039
+GO:0006952,defense response,1938,312,278.49,0.0136,0.039
+GO:0009411,response to UV,38,11,5.46,0.0152,0.039
+GO:0007165,signal transduction,817,139,117.4,0.0176,0.039
+GO:0009896,positive regulation of catabolic process,54,14,7.76,0.0181,0.039
+GO:0006099,tricarboxylic acid cycle,34,10,4.89,0.0181,0.039
+GO:1903313,positive regulation of mRNA metabolic pr...,34,10,4.89,0.0181,0.039
+GO:0009650,UV protection,8,4,1.15,0.0184,0.039
+GO:0009768,photosynthesis, light harvesting in phot...,8,4,1.15,0.0184,0.039
+GO:0052863,1-deoxy-D-xylulose 5-phosphate metabolic...,8,4,1.15,0.0184,0.039
+GO:0052865,1-deoxy-D-xylulose 5-phosphate biosynthe...,8,4,1.15,0.0184,0.039
+GO:0006563,L-serine metabolic process,25,8,3.59,0.02,0.039
+GO:0016036,cellular response to phosphate starvatio...,12,5,1.72,0.0201,0.039
+GO:0051443,positive regulation of ubiquitin-protein...,12,5,1.72,0.0201,0.039
+GO:0023052,signaling,821,139,117.98,0.0204,0.039
+GO:0009304,tRNA transcription,2,2,0.29,0.0206,0.039
+GO:0009688,abscisic acid biosynthetic process,2,2,0.29,0.0206,0.039
+GO:0010115,regulation of abscisic acid biosynthetic...,2,2,0.29,0.0206,0.039
+GO:0010116,positive regulation of abscisic acid bio...,2,2,0.29,0.0206,0.039
+GO:0042148,strand invasion,2,2,0.29,0.0206,0.039
+GO:0042797,tRNA transcription by RNA polymerase III,2,2,0.29,0.0206,0.039
+GO:0043289,apocarotenoid biosynthetic process,2,2,0.29,0.0206,0.039
+GO:1901998,toxin transport,2,2,0.29,0.0206,0.039
+GO:1902645,tertiary alcohol biosynthetic process,2,2,0.29,0.0206,0.039
+GO:1902930,regulation of alcohol biosynthetic proce...,2,2,0.29,0.0206,0.039
+GO:1902932,positive regulation of alcohol biosynthe...,2,2,0.29,0.0206,0.039
+GO:1905613,regulation of developmental vegetative g...,2,2,0.29,0.0206,0.039
+GO:1905615,positive regulation of developmental veg...,2,2,0.29,0.0206,0.039
+GO:0009070,serine family amino acid biosynthetic pr...,30,9,4.31,0.0215,0.0399
+GO:0034502,protein localization to chromosome,5,3,0.72,0.0236,0.042
+GO:0048639,positive regulation of developmental gro...,5,3,0.72,0.0236,0.042
+GO:0007154,cell communication,925,154,132.92,0.0261,0.045
+GO:0009767,photosynthetic electron transport chain,17,6,2.44,0.0263,0.045
+GO:0018205,peptidyl-lysine modification,135,28,19.4,0.0273,0.0451
+GO:0010114,response to red light,13,5,1.87,0.0288,0.0451
+GO:0031398,positive regulation of protein ubiquitin...,13,5,1.87,0.0288,0.0451
+GO:0051438,regulation of ubiquitin-protein transfer...,13,5,1.87,0.0288,0.0451
+GO:0045116,protein neddylation,9,4,1.29,0.0294,0.0451
+GO:0097428,protein maturation by iron-sulfur cluste...,9,4,1.29,0.0294,0.0451
+GO:0006091,generation of precursor metabolites and ...,317,58,45.55,0.0299,0.0451
+GO:0051716,cellular response to stimulus,1615,258,232.08,0.0319,0.0461
+GO:0019722,calcium-mediated signaling,32,9,4.6,0.0323,0.0461
+GO:0019932,second-messenger-mediated signaling,32,9,4.6,0.0323,0.0461
+GO:0010638,positive regulation of organelle organiz...,58,14,8.33,0.0326,0.0461
+GO:0031396,regulation of protein ubiquitination,18,6,2.59,0.0347,0.0473
+GO:0031329,regulation of cellular catabolic process,64,15,9.2,0.0352,0.0473
+GO:0051173,positive regulation of nitrogen compound...,240,45,34.49,0.0354,0.0473
+GO:0043488,regulation of mRNA stability,38,10,5.46,0.0382,0.0473
+GO:0019725,cellular homeostasis,87,19,12.5,0.0385,0.0473
+GO:0042594,response to starvation,33,9,4.74,0.0389,0.0473
+GO:0009639,response to red or far red light,54,13,7.76,0.0393,0.0473
+GO:1903322,positive regulation of protein modificat...,14,5,2.01,0.0397,0.0473
+GO:0031325,positive regulation of cellular metaboli...,249,46,35.78,0.0421,0.0473
+GO:0006545,glycine biosynthetic process,6,3,0.86,0.0423,0.0473
+GO:0010223,secondary shoot formation,6,3,0.86,0.0423,0.0473
+GO:0010304,PSII associated light-harvesting complex...,6,3,0.86,0.0423,0.0473
+GO:0010346,shoot axis formation,6,3,0.86,0.0423,0.0473
+GO:0019264,glycine biosynthetic process from serine,6,3,0.86,0.0423,0.0473
+GO:0031297,replication fork processing,6,3,0.86,0.0423,0.0473
+GO:0080186,developmental vegetative growth,6,3,0.86,0.0423,0.0473
+GO:0006290,pyrimidine dimer repair,10,4,1.44,0.0435,0.0473
+GO:1903320,regulation of protein modification by sm...,19,6,2.73,0.0447,0.0473
+GO:0017148,negative regulation of translation,55,13,7.9,0.045,0.0473
+GO:0043487,regulation of RNA stability,39,10,5.6,0.045,0.0473
+GO:0051094,positive regulation of developmental pro...,39,10,5.6,0.045,0.0473
+GO:0048518,positive regulation of biological proces...,451,78,64.81,0.0452,0.0473
+GO:0034314,Arp2/3 complex-mediated actin nucleation,24,7,3.45,0.0468,0.0478
+GO:0000288,nuclear-transcribed mRNA catabolic proce...,29,8,4.17,0.0471,0.0478
+GO:0006479,protein methylation,124,25,17.82,0.0478,0.0478
+GO:0008213,protein alkylation,124,25,17.82,0.0478,0.0478

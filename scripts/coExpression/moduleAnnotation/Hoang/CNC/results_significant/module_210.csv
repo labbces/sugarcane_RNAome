@@ -1,0 +1,39 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009859,pollen hydration,1,1,0,0.0047,0.0298
+GO:0015801,aromatic amino acid transport,1,1,0,0.0047,0.0298
+GO:0080144,amino acid homeostasis,1,1,0,0.0047,0.0298
+GO:0089709,L-histidine transmembrane transport,1,1,0,0.0047,0.0298
+GO:0089718,amino acid import across plasma membrane,1,1,0,0.0047,0.0298
+GO:1903810,L-histidine import across plasma membran...,1,1,0,0.0047,0.0298
+GO:0031124,mRNA 3'-end processing,31,2,0.15,0.0094,0.0298
+GO:0015807,L-amino acid transport,2,1,0.01,0.0094,0.0298
+GO:0019499,cyanide metabolic process,2,1,0.01,0.0094,0.0298
+GO:0043090,amino acid import,2,1,0.01,0.0094,0.0298
+GO:0045117,azole transmembrane transport,2,1,0.01,0.0094,0.0298
+GO:1902475,L-alpha-amino acid transmembrane transpo...,2,1,0.01,0.0094,0.0298
+GO:0042149,cellular response to glucose starvation,3,1,0.01,0.0141,0.0356
+GO:0051781,positive regulation of cell division,3,1,0.01,0.0141,0.0356
+GO:0006569,tryptophan catabolic process,4,1,0.02,0.0188,0.0356
+GO:0019441,tryptophan catabolic process to kynureni...,4,1,0.02,0.0188,0.0356
+GO:0031120,snRNA pseudouridine synthesis,4,1,0.02,0.0188,0.0356
+GO:0042436,indole-containing compound catabolic pro...,4,1,0.02,0.0188,0.0356
+GO:0046218,indolalkylamine catabolic process,4,1,0.02,0.0188,0.0356
+GO:0015893,drug transport,45,2,0.21,0.0192,0.0356
+GO:0051301,cell division,121,3,0.57,0.0197,0.0356
+GO:0040031,snRNA modification,5,1,0.02,0.0234,0.0404
+GO:0034968,histone lysine methylation,54,2,0.26,0.027,0.0413
+GO:0031118,rRNA pseudouridine synthesis,6,1,0.03,0.028,0.0413
+GO:0070189,kynurenine metabolic process,6,1,0.03,0.028,0.0413
+GO:0016458,gene silencing,142,3,0.67,0.0298,0.0413
+GO:0031047,gene silencing by RNA,142,3,0.67,0.0298,0.0413
+GO:0055081,anion homeostasis,7,1,0.03,0.0326,0.0413
+GO:0098739,import across plasma membrane,7,1,0.03,0.0326,0.0413
+GO:0106004,tRNA (guanine-N7)-methylation,7,1,0.03,0.0326,0.0413
+GO:0031123,RNA 3'-end processing,61,2,0.29,0.0338,0.0414
+GO:0018022,peptidyl-lysine methylation,63,2,0.3,0.0358,0.0425
+GO:0006855,drug transmembrane transport,8,1,0.04,0.0372,0.0428
+GO:0006833,water transport,9,1,0.04,0.0417,0.0428
+GO:0009310,amine catabolic process,9,1,0.04,0.0417,0.0428
+GO:0042044,fluid transport,9,1,0.04,0.0417,0.0428
+GO:0042402,cellular biogenic amine catabolic proces...,9,1,0.04,0.0417,0.0428
+GO:0098657,import into cell,10,1,0.05,0.0462,0.0462
