@@ -1,8 +1,0 @@
-GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
-GO:0051103,DNA ligation involved in DNA repair,4,1,0,0.002,0.0088
-GO:0006266,DNA ligation,5,1,0,0.0025,0.0088
-GO:1902476,chloride transmembrane transport,18,1,0.01,0.009,0.0173
-GO:0006821,chloride transport,20,1,0.01,0.0099,0.0173
-GO:0098661,inorganic anion transmembrane transport,43,1,0.02,0.0213,0.0298
-GO:0015698,inorganic anion transport,70,1,0.03,0.0345,0.0403
-GO:0098656,anion transmembrane transport,90,1,0.04,0.0441,0.0441

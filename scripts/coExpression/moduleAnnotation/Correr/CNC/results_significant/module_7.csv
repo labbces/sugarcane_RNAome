@@ -1,4 +1,0 @@
-GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
-GO:0006862,nucleotide transport,27,1,0,0.0045,0.0135
-GO:0015748,organophosphate ester transport,58,1,0.01,0.0096,0.0144
-GO:0015931,nucleobase-containing compound transport,95,1,0.02,0.0158,0.0158
