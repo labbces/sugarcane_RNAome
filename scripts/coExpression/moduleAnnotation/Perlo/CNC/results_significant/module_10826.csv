@@ -1,0 +1,20 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0042542,response to hydrogen peroxide,26,1,0,0.0019,0.0166
+GO:0051259,protein complex oligomerization,27,1,0,0.0019,0.0166
+GO:0000302,response to reactive oxygen species,56,1,0,0.004,0.0166
+GO:0046677,response to antibiotic,57,1,0,0.0041,0.0166
+GO:0009408,response to heat,76,1,0.01,0.0054,0.0166
+GO:0009651,response to salt stress,77,1,0.01,0.0055,0.0166
+GO:0006970,response to osmotic stress,85,1,0.01,0.0061,0.0166
+GO:0042493,response to drug,104,1,0.01,0.0074,0.0176
+GO:0009266,response to temperature stimulus,130,1,0.01,0.0093,0.0196
+GO:0010035,response to inorganic substance,150,1,0.01,0.0107,0.0203
+GO:0006979,response to oxidative stress,183,1,0.01,0.0131,0.0226
+GO:0006457,protein folding,222,1,0.02,0.0159,0.0235
+GO:0009636,response to toxic substance,225,1,0.02,0.0161,0.0235
+GO:0065003,protein-containing complex assembly,298,1,0.02,0.0213,0.0289
+GO:0043933,protein-containing complex subunit organ...,342,1,0.02,0.0244,0.029
+GO:1901700,response to oxygen-containing compound,342,1,0.02,0.0244,0.029
+GO:0009628,response to abiotic stimulus,417,1,0.03,0.0297,0.0332
+GO:0022607,cellular component assembly,466,1,0.03,0.0332,0.035
+GO:0044085,cellular component biogenesis,681,1,0.05,0.0483,0.0483

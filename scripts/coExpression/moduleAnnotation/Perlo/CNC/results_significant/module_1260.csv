@@ -1,0 +1,16 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0070716,mismatch repair involved in maintenance ...,1,1,0,0.0015,0.0225
+GO:0045005,DNA-dependent DNA replication maintenanc...,3,1,0,0.0045,0.0225
+GO:0006970,response to osmotic stress,85,2,0.13,0.0073,0.0225
+GO:0007009,plasma membrane organization,5,1,0.01,0.0075,0.0225
+GO:0007155,cell adhesion,6,1,0.01,0.009,0.0225
+GO:0022610,biological adhesion,6,1,0.01,0.009,0.0225
+GO:0006298,mismatch repair,7,1,0.01,0.0105,0.0225
+GO:0071470,cellular response to osmotic stress,14,1,0.02,0.0209,0.0346
+GO:0006950,response to stress,2347,8,3.54,0.0222,0.0346
+GO:0009607,response to biotic stimulus,723,4,1.09,0.0231,0.0346
+GO:0034605,cellular response to heat,24,1,0.04,0.0356,0.0444
+GO:0006754,ATP biosynthetic process,28,1,0.04,0.0414,0.0444
+GO:0015985,energy coupled proton transport, down el...,28,1,0.04,0.0414,0.0444
+GO:0015986,ATP synthesis coupled proton transport,28,1,0.04,0.0414,0.0444
+GO:0006261,DNA-dependent DNA replication,33,1,0.05,0.0486,0.0486

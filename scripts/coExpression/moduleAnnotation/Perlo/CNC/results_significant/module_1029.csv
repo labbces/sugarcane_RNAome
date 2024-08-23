@@ -1,0 +1,11 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0070716,mismatch repair involved in maintenance ...,1,1,0,0.00014,0.0014
+GO:0045005,DNA-dependent DNA replication maintenanc...,3,1,0,0.00043,0.0022
+GO:0006298,mismatch repair,7,1,0,0.001,0.0033
+GO:0006261,DNA-dependent DNA replication,33,1,0,0.00473,0.0114
+GO:0032392,DNA geometric change,48,1,0.01,0.00687,0.0114
+GO:0032508,DNA duplex unwinding,48,1,0.01,0.00687,0.0114
+GO:0006260,DNA replication,111,1,0.02,0.01584,0.0226
+GO:0071103,DNA conformation change,127,1,0.02,0.0181,0.0226
+GO:0006281,DNA repair,230,1,0.03,0.0326,0.034
+GO:0006974,cellular response to DNA damage stimulus,240,1,0.03,0.034,0.034

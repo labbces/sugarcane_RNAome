@@ -1,0 +1,122 @@
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0009408,response to heat,76,14,0.14,7.8e-25,0
+GO:0009266,response to temperature stimulus,130,15,0.25,2.5e-23,0
+GO:0042542,response to hydrogen peroxide,26,10,0.05,1.3e-21,0
+GO:0051259,protein complex oligomerization,27,9,0.05,7.2e-19,0
+GO:0009628,response to abiotic stimulus,417,17,0.79,1.3e-18,0
+GO:0006970,response to osmotic stress,85,11,0.16,7.4e-18,0
+GO:0000302,response to reactive oxygen species,56,10,0.11,8.4e-18,0
+GO:0046677,response to antibiotic,57,10,0.11,1e-17,0
+GO:0009651,response to salt stress,77,10,0.15,2.5e-16,0
+GO:0010035,response to inorganic substance,150,11,0.29,4.7e-15,0
+GO:0042493,response to drug,104,10,0.2,5.7e-15,0
+GO:0006457,protein folding,222,11,0.42,3.6e-13,0
+GO:0009636,response to toxic substance,225,11,0.43,4.2e-13,0
+GO:1901700,response to oxygen-containing compound,342,12,0.65,1.6e-12,0
+GO:0006979,response to oxidative stress,183,10,0.35,1.8e-12,0
+GO:0042221,response to chemical,896,15,1.7,7.2e-11,0
+GO:0030007,cellular potassium ion homeostasis,6,4,0.01,1.7e-10,0
+GO:0055075,potassium ion homeostasis,6,4,0.01,1.7e-10,0
+GO:0030004,cellular monovalent inorganic cation hom...,11,4,0.02,3.8e-09,0
+GO:0050896,response to stimulus,3200,23,6.08,4.4e-09,0
+GO:0065003,protein-containing complex assembly,298,9,0.57,4.7e-09,0
+GO:0055067,monovalent inorganic cation homeostasis,14,4,0.03,1.1e-08,0
+GO:0043933,protein-containing complex subunit organ...,342,9,0.65,1.6e-08,0
+GO:0022607,cellular component assembly,466,9,0.89,2.2e-07,0
+GO:0006875,cellular metal ion homeostasis,29,4,0.06,2.7e-07,0
+GO:0030003,cellular cation homeostasis,32,4,0.06,4e-07,0
+GO:0006873,cellular ion homeostasis,33,4,0.06,4.6e-07,0
+GO:0071805,potassium ion transmembrane transport,36,4,0.07,6.6e-07,0
+GO:0055082,cellular chemical homeostasis,38,4,0.07,8.2e-07,0
+GO:0006813,potassium ion transport,40,4,0.08,1e-06,0
+GO:0055065,metal ion homeostasis,47,4,0.09,2e-06,0
+GO:0055080,cation homeostasis,53,4,0.1,3.2e-06,0
+GO:0030322,stabilization of membrane potential,2,2,0,3.5e-06,0
+GO:0042391,regulation of membrane potential,2,2,0,3.5e-06,0
+GO:0051602,response to electrical stimulus,2,2,0,3.5e-06,0
+GO:0071257,cellular response to electrical stimulus,2,2,0,3.5e-06,0
+GO:0097623,potassium ion export across plasma membr...,2,2,0,3.5e-06,0
+GO:0098659,inorganic cation import across plasma me...,2,2,0,3.5e-06,0
+GO:0099587,inorganic ion import across plasma membr...,2,2,0,3.5e-06,0
+GO:1990573,potassium ion import across plasma membr...,2,2,0,3.5e-06,0
+GO:0006950,response to stress,2347,16,4.46,4.4e-06,0
+GO:0044085,cellular component biogenesis,681,9,1.29,5e-06,0
+GO:0098771,inorganic ion homeostasis,61,4,0.12,5.6e-06,0
+GO:0019725,cellular homeostasis,68,4,0.13,8.7e-06,0
+GO:0050801,ion homeostasis,70,4,0.13,9.7e-06,0
+GO:0098739,import across plasma membrane,3,2,0.01,1.1e-05,0
+GO:0009765,photosynthesis, light harvesting,25,3,0.05,1.4e-05,0
+GO:0048878,chemical homeostasis,86,4,0.16,2.2e-05,1e-04
+GO:0008150,biological_process,11487,37,21.84,2.4e-05,1e-04
+GO:0009987,cellular process,8755,31,16.65,4.2e-05,1e-04
+GO:0098657,import into cell,6,2,0.01,5.3e-05,1e-04
+GO:0030001,metal ion transport,126,4,0.24,9.8e-05,2e-04
+GO:0019684,photosynthesis, light reaction,50,3,0.1,0.00012,3e-04
+GO:0015672,monovalent inorganic cation transport,147,4,0.28,0.00018,4e-04
+GO:0010029,regulation of seed germination,12,2,0.02,0.00023,5e-04
+GO:1900140,regulation of seedling development,12,2,0.02,0.00023,5e-04
+GO:0042592,homeostatic process,162,4,0.31,0.00026,6e-04
+GO:0015979,photosynthesis,80,3,0.15,0.00048,0.001
+GO:0098662,inorganic cation transmembrane transport,192,4,0.37,0.00049,0.001
+GO:0098655,cation transmembrane transport,213,4,0.41,0.00072,0.0015
+GO:0098660,inorganic ion transmembrane transport,223,4,0.42,0.00086,0.0017
+GO:0009845,seed germination,23,2,0.04,0.00087,0.0017
+GO:0090351,seedling development,23,2,0.04,0.00087,0.0017
+GO:0034605,cellular response to heat,24,2,0.05,0.00095,0.0018
+GO:0140115,export across plasma membrane,24,2,0.05,0.00095,0.0018
+GO:0006812,cation transport,249,4,0.47,0.00129,0.0024
+GO:0016043,cellular component organization,1423,9,2.71,0.00133,0.0024
+GO:0000413,protein peptidyl-prolyl isomerization,37,2,0.07,0.00226,0.004
+GO:0071840,cellular component organization or bioge...,1589,9,3.02,0.00283,0.005
+GO:0071214,cellular response to abiotic stimulus,42,2,0.08,0.00291,0.005
+GO:0104004,cellular response to environmental stimu...,42,2,0.08,0.00291,0.005
+GO:0009873,ethylene-activated signaling pathway,43,2,0.08,0.00305,0.005
+GO:0018208,peptidyl-proline modification,43,2,0.08,0.00305,0.005
+GO:0071369,cellular response to ethylene stimulus,43,2,0.08,0.00305,0.005
+GO:0034220,ion transmembrane transport,316,4,0.6,0.00307,0.005
+GO:0009723,response to ethylene,52,2,0.1,0.00443,0.0071
+GO:0009645,response to low light intensity stimulus,3,1,0.01,0.00569,0.0084
+GO:0010167,response to nitrate,3,1,0.01,0.00569,0.0084
+GO:0046203,spermidine catabolic process,3,1,0.01,0.00569,0.0084
+GO:0046208,spermine catabolic process,3,1,0.01,0.00569,0.0084
+GO:1903601,thermospermine metabolic process,3,1,0.01,0.00569,0.0084
+GO:1903602,thermospermine catabolic process,3,1,0.01,0.00569,0.0084
+GO:0048580,regulation of post-embryonic development,68,2,0.13,0.00746,0.0108
+GO:0006598,polyamine catabolic process,4,1,0.01,0.00758,0.0108
+GO:0009768,photosynthesis, light harvesting in phot...,4,1,0.01,0.00758,0.0108
+GO:0000160,phosphorelay signal transduction system,75,2,0.14,0.00901,0.0127
+GO:0006811,ion transport,432,4,0.82,0.00916,0.0127
+GO:0065008,regulation of biological quality,435,4,0.83,0.00938,0.0129
+GO:0140352,export from cell,77,2,0.15,0.00948,0.0129
+GO:0055085,transmembrane transport,452,4,0.86,0.01069,0.0144
+GO:0009310,amine catabolic process,6,1,0.01,0.01136,0.0149
+GO:0042402,cellular biogenic amine catabolic proces...,6,1,0.01,0.01136,0.0149
+GO:0008215,spermine metabolic process,7,1,0.01,0.01324,0.017
+GO:0008216,spermidine metabolic process,7,1,0.01,0.01324,0.017
+GO:0009407,toxin catabolic process,9,1,0.02,0.01699,0.0214
+GO:0009644,response to high light intensity,9,1,0.02,0.01699,0.0214
+GO:2000026,regulation of multicellular organismal d...,108,2,0.21,0.01803,0.0225
+GO:0006633,fatty acid biosynthetic process,110,2,0.21,0.01866,0.023
+GO:0006091,generation of precursor metabolites and ...,314,3,0.6,0.02192,0.0268
+GO:0051716,cellular response to stimulus,1180,6,2.24,0.02398,0.029
+GO:0051239,regulation of multicellular organismal p...,134,2,0.25,0.02694,0.0323
+GO:0009642,response to light intensity,16,1,0.03,0.03,0.0356
+GO:0006357,regulation of transcription by RNA polym...,143,2,0.27,0.03037,0.0357
+GO:0046855,inositol phosphate dephosphorylation,17,1,0.03,0.03185,0.0367
+GO:0071545,inositol phosphate catabolic process,17,1,0.03,0.03185,0.0367
+GO:0072330,monocarboxylic acid biosynthetic process,149,2,0.28,0.03275,0.0374
+GO:0043647,inositol phosphate metabolic process,18,1,0.03,0.03369,0.0381
+GO:0009404,toxin metabolic process,19,1,0.04,0.03553,0.0394
+GO:0061077,chaperone-mediated protein folding,19,1,0.04,0.03553,0.0394
+GO:0065007,biological regulation,2036,8,3.87,0.03742,0.0412
+GO:0006595,polyamine metabolic process,21,1,0.04,0.03919,0.0427
+GO:0046174,polyol catabolic process,22,1,0.04,0.04102,0.0443
+GO:0006631,fatty acid metabolic process,172,2,0.33,0.04249,0.0452
+GO:0046838,phosphorylated carbohydrate dephosphoryl...,23,1,0.04,0.04285,0.0452
+GO:0050793,regulation of developmental process,173,2,0.33,0.04294,0.0452
+GO:0009739,response to gibberellin,24,1,0.05,0.04467,0.0466
+GO:0009725,response to hormone,426,3,0.81,0.04737,0.0487
+GO:0046164,alcohol catabolic process,26,1,0.05,0.0483,0.0487
+GO:0046839,phospholipid dephosphorylation,26,1,0.05,0.0483,0.0487
+GO:0046856,phosphatidylinositol dephosphorylation,26,1,0.05,0.0483,0.0487
+GO:0009719,response to endogenous stimulus,435,3,0.83,0.04985,0.0498
