@@ -1,1 +1,3 @@
-../../../moduleAnnotation/CNC/results/module_19130.csv
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0006468,protein phosphorylation,1108,1,0.04,0.04,0.047
+GO:0016310,phosphorylation,1304,1,0.05,0.047,0.047

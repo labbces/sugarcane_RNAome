@@ -1,1 +1,28 @@
-../../../moduleAnnotation/CNC/results/module_13147.csv
+GO.ID,Term,Annotated,Significant,Expected,Classic,p.adj
+GO:0045892,negative regulation of transcription, DN...,99,1,0.01,0.011,0.0459
+GO:1902679,negative regulation of RNA biosynthetic ...,99,1,0.01,0.011,0.0459
+GO:1903507,negative regulation of nucleic acid-temp...,99,1,0.01,0.011,0.0459
+GO:0051253,negative regulation of RNA metabolic pro...,109,1,0.01,0.012,0.0459
+GO:0045934,negative regulation of nucleobase-contai...,112,1,0.01,0.012,0.0459
+GO:0022900,electron transport chain,119,1,0.01,0.013,0.0459
+GO:2000113,negative regulation of cellular macromol...,155,1,0.02,0.017,0.0459
+GO:0010558,negative regulation of macromolecule bio...,156,1,0.02,0.017,0.0459
+GO:0031327,negative regulation of cellular biosynth...,162,1,0.02,0.017,0.0459
+GO:0009890,negative regulation of biosynthetic proc...,163,1,0.02,0.017,0.0459
+GO:0051172,negative regulation of nitrogen compound...,212,1,0.02,0.023,0.0459
+GO:0031324,negative regulation of cellular metaboli...,228,1,0.02,0.024,0.0459
+GO:0055114,oxidation-reduction process,262,1,0.03,0.028,0.0459
+GO:0010629,negative regulation of gene expression,265,1,0.03,0.028,0.0459
+GO:0006355,regulation of transcription, DNA-templat...,301,1,0.03,0.032,0.0459
+GO:1903506,regulation of nucleic acid-templated tra...,301,1,0.03,0.032,0.0459
+GO:2001141,regulation of RNA biosynthetic process,301,1,0.03,0.032,0.0459
+GO:0048523,negative regulation of cellular process,303,1,0.03,0.032,0.0459
+GO:0006091,generation of precursor metabolites and ...,314,1,0.03,0.033,0.0459
+GO:0010605,negative regulation of macromolecule met...,324,1,0.03,0.034,0.0459
+GO:0009892,negative regulation of metabolic process,339,1,0.04,0.036,0.0463
+GO:0051252,regulation of RNA metabolic process,354,1,0.04,0.038,0.0466
+GO:0019219,regulation of nucleobase-containing comp...,381,1,0.04,0.04,0.047
+GO:2000112,regulation of cellular macromolecule bio...,428,1,0.05,0.045,0.0488
+GO:0010556,regulation of macromolecule biosynthetic...,433,1,0.05,0.046,0.0488
+GO:0048519,negative regulation of biological proces...,447,1,0.05,0.047,0.0488
+GO:0031326,regulation of cellular biosynthetic proc...,463,1,0.05,0.049,0.049
