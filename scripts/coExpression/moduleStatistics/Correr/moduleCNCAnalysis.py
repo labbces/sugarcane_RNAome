@@ -45,6 +45,10 @@ A_filtered = A[A['Module'].isin(B['Module'])]
 
 # agrupar por modulo e contar as categorias de genes (protein, protein and non-coding, ncRNA, lncRNA)
 result = A_filtered.merge(C[['Gene', 'Gene Category']], on='Gene')
+
+# remover genes duplicados (contar cada gene apenas uma vez)
+result = result.drop_duplicates(subset='Gene')
+
 summary = result.groupby('Module').agg(
     Genes=('Gene', 'count'),
     Genes_coding=('Gene Category', lambda x: (x == 'protein-coding').sum()),
