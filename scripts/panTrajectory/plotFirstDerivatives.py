@@ -4,16 +4,16 @@ import matplotlib.pyplot as plt
 from statsmodels.nonparametric.smoothers_lowess import lowess
 import statsmodels.api as sm
 
-PanGeneCount = "panTrajectory/panRNAome/panRNAomeTrajectoryTable_0.8.tsv"                                                   # panRNAome
-#PanGeneCount = "panTrajectory/panTranscriptome/panTranscriptomeTrajectoryTable_I2.8.tsv"                                     # pan-transcriptome
+#PanGeneCount = "panTrajectory/panRNAome/panRNAomeTrajectoryTable_0.8.tsv"                                                   # panRNAome
+PanGeneCount = "panTrajectory/panTranscriptome/panTranscriptomeTrajectoryTable_I2.8.tsv"                                     # pan-transcriptome
 df = pd.read_csv(f"{PanGeneCount}", sep='\t', header=0)
 
 # Filtrar e agrupar os dados
 df_pan = df[df['Classification'] == 'pan'].groupby('NumberGenotypes').agg({'NumberGenes': 'mean', 'NumberGroups': 'mean'}).reset_index()
 
 # Adicionar nova linha com total de genótipos, genes e grupos
-new_row = pd.DataFrame({'NumberGenotypes': [48], 'NumberGenes': [8392174], 'NumberGroups': [3407188]})        # panRNAome
-#new_row = pd.DataFrame({'NumberGenotypes': [50], 'NumberGenes': [5089777], 'NumberGroups': [600931]})          # pan-transcriptome
+#new_row = pd.DataFrame({'NumberGenotypes': [48], 'NumberGenes': [8392174], 'NumberGroups': [3407188]})        # panRNAome
+new_row = pd.DataFrame({'NumberGenotypes': [50], 'NumberGenes': [5089777], 'NumberGroups': [600931]})          # pan-transcriptome
 
 df_pan = pd.concat([df_pan, new_row], ignore_index=True)
 
@@ -79,13 +79,13 @@ smoothed85, bottom85, top85 = lowess_with_confidence_bounds(dGroups_dGenotypes['
 
 # Plotar os resultados
 plt.figure(figsize=(14, 7))
-plt.plot(dGroups_dGenotypes['NumberGenotypes'], dGroups_dGenotypes['dGroups'], 'o', label='Data Points')
+plt.plot(dGroups_dGenotypes['NumberGenotypes'], dGroups_dGenotypes['dGroups'], 'o', label='dx/dy')
 plt.plot(eval_x, smoothed, 'r-', label='LOWESS')
 
 # Preencher a área do intervalo de confiança
 plt.fill_between(eval_x, bottom, top, color='r', alpha=0.2, label='95% IC')
-plt.fill_between(eval_x, bottom90, top90, color='g', alpha=0.2, label='90% IC')
-plt.fill_between(eval_x, bottom85, top85, color='b', alpha=0.2, label='85% IC')
+#plt.fill_between(eval_x, bottom90, top90, color='g', alpha=0.2, label='90% IC')
+#plt.fill_between(eval_x, bottom85, top85, color='b', alpha=0.2, label='85% IC')
 
 plt.xlabel('Genótipos')
 plt.ylabel('dx/dy')
@@ -93,7 +93,8 @@ plt.legend()
 plt.grid(True)
 plt.xticks(np.arange(dGroups_dGenotypes['NumberGenotypes'].min(), dGroups_dGenotypes['NumberGenotypes'].max() + 1, 1))
 plt.tight_layout()
-plt.savefig("panRNAomeGroupsTrajectory_0.8_firstDerivative_ic.png", dpi=300) 
+#plt.savefig("panRNAomeGroupsTrajectory_0.8_firstDerivative_ic95.png", dpi=300) 
+plt.savefig("panTranscriptomeGroupsTrajectory_I2.8_firstDerivative_ic95.png", dpi=300)
 plt.show()
 
 '''
