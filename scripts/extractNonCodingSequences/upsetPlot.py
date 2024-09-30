@@ -38,11 +38,12 @@ comb_intersection_length_list = np.array(comb_intersection_length_list)
 comb_list_list = comb_list_list[comb_intersection_length_list != 0]
 comb_intersection_length_list = comb_intersection_length_list[comb_intersection_length_list != 0]
 
+print(sorted(comb_intersection_length_list,reverse=True))
 # criando uma serie de membros que indica o tamanho da intersecao entre os diferentes conjuntos
 mem_series = upsetplot.from_memberships(comb_list_list, data=comb_intersection_length_list)
 
 # plot
-upsetplot.plot(mem_series, orientation='horizontal',sort_by='cardinality', show_counts=True, totals_plot_elements=False, show_percentages=False)
+upsetplot.plot(mem_series, orientation='horizontal',sort_by='cardinality', show_counts=False, totals_plot_elements=False, show_percentages=False)
 
 plt.grid(False)
 
