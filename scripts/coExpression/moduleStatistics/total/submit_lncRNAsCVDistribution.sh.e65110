@@ -1,0 +1,69 @@
+	Command being timed: "./lncRNAsCVDistribution.py -lncRNAs Hoang_lncRNAs.tsv -CV /Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Hoang/code/updated_filters/CNC/Hoang2017_counts_filters_VST_CV.txt -out Hoang_lncRNAs_CV_Distribution.png"
+	User time (seconds): 7.96
+	System time (seconds): 15.08
+	Percent of CPU this job got: 269%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 404568
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 215275
+	Voluntary context switches: 6144
+	Involuntary context switches: 191736
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 256
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "./lncRNAsCVDistribution.py -lncRNAs Correr_lncRNAs.tsv -CV /Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Correr/code/updated_filters/CNC/Correr2020_counts_filters_VST_CV.txt -out Correr_lncRNAs_CV_Distribution.png"
+	User time (seconds): 6.59
+	System time (seconds): 13.24
+	Percent of CPU this job got: 359%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 533264
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 313797
+	Voluntary context switches: 1984
+	Involuntary context switches: 741
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 248
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "./lncRNAsCVDistribution.py -lncRNAs Perlo_lncRNAs.tsv -CV /Storage/data1/felipe.peres/Sugarcane_ncRNA/9_Fiber_and_Sugar/co-expression/Perlo/code/updated_filters/CNC/Perlo2022_counts_filters_VST_CV.txt -out Perlo_lncRNAs_CV_Distribution.png"
+	User time (seconds): 7.46
+	System time (seconds): 13.33
+	Percent of CPU this job got: 348%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 624412
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 354535
+	Voluntary context switches: 1986
+	Involuntary context switches: 212670
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 240
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

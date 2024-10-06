@@ -1,0 +1,30 @@
+Média do CV: 1.3525
+Mediana do CV: 1.3190
+Desvio padrão do CV: 0.1332
+Valor mínimo do CV: 1.2000
+Valor máximo do CV: 2.7418
+Quartis do CV: 
+0.25    1.246788
+0.50    1.318993
+0.75    1.413687
+Name: CV, dtype: float64
+Média do CV: 2.2138
+Mediana do CV: 2.1877
+Desvio padrão do CV: 0.1833
+Valor mínimo do CV: 2.0000
+Valor máximo do CV: 3.0536
+Quartis do CV: 
+0.25    2.082314
+0.50    2.187688
+0.75    2.320883
+Name: CV, dtype: float64
+Média do CV: 0.7268
+Mediana do CV: 0.6946
+Desvio padrão do CV: 0.1159
+Valor mínimo do CV: 0.6000
+Valor máximo do CV: 1.6361
+Quartis do CV: 
+0.25    0.641805
+0.50    0.694623
+0.75    0.776021
+Name: CV, dtype: float64
