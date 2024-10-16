@@ -120,12 +120,6 @@ filtered_internode <- mutate(internode_table, adjusted = p.adjust(internode_tabl
 
 filtered_interaction <- mutate(interaction_table, adjusted = p.adjust(interaction_table$pvalue, method = "bonferroni")) %>% mutate(interaction_table, fdr = p.adjust(interaction_table$pvalue, method = "fdr")) %>% filter(adjusted  < 0.05 & abs(rho) > 0.6)
 
-#filtered <- filter(table, pvalue < 0.01 & abs(rho) > 0.7)
-#write.table(filtered_condition, "../../results/perNCONDITION/module_nitrogen_condition_correlation_fdr_0.5.csv", row.names = F, quote = F) 
-#write.table(filtered_genotype, "../../results/perNCONDITION/module_genotype_correlation_fdr_0.5.csv", row.names = F, quote = F)
-#write.table(filtered_leaf_segment, "../../results/perNCONDITION/module_leaf_segment_fdr_0.5.csv", row.names = F, quote = F)
-# Write tables
-
 write.table(filtered_genotype, "genotype_bonferroni_005_rho_06.txt", row.names = F, quote = F, col.names = T)
 write.table(filtered_week, "week_bonferroni_005_rho_06.txt", row.names = F, quote = F, col.names = T)
 write.table(filtered_internode, "internode_bonferroni_005_rho_06.txt", row.names = F, quote = F, col.names = T)
