@@ -107,33 +107,21 @@ filtered_fiber <- mutate(fiber_table, adjusted = p.adjust(fiber_table$pvalue, me
 
 filtered_brix <- mutate(brix_table, adjusted = p.adjust(brix_table$pvalue, method = "bonferroni")) %>% mutate(brix_table, fdr = p.adjust(brix_table$pvalue, method = "fdr")) %>% filter(adjusted < 0.05 & abs(rho) > 0.7)
 
-#filtered <- filter(table, pvalue < 0.01 & abs(rho) > 0.7)
-#write.table(filtered_condition, "../../results/perNCONDITION/module_nitrogen_condition_correlation_fdr_0.5.csv", row.names = F, quote = F) 
-#write.table(filtered_genotype, "../../results/perNCONDITION/module_genotype_correlation_fdr_0.5.csv", row.names = F, quote = F)
-#write.table(filtered_leaf_segment, "../../results/perNCONDITION/module_leaf_segment_fdr_0.5.csv", row.names = F, quote = F)
-# Write tables
+write.table(filtered_genotype, "genotype_bonferroni_005_rho_07.txt", row.names = F, quote = F, col.names = T)
+write.table(filtered_condition, "condition_bonferroni_005_rho_07.txt", row.names = F, quote = F, col.names = T)
+write.table(filtered_interaction, "interaction_bonferroni_005_rho_07.txt", row.names = F, quote = F, col.names = T)
+write.table(filtered_fiber, "fiber_bonferroni_005_rho_07.txt", row.names = F, quote = F, col.names = T)
+write.table(filtered_brix, "brix_bonferroni_005_rho_07.txt", row.names = F, quote = F, col.names = T)
 
-write.table(filtered_condition$module, "../../results/perNCONDITION/correlation/condtition_bonferroni_005.txt", row.names = F, quote = F, col.names = F)
-write.table(filtered_genotype$module, "../../results/perNCONDITION/correlation/genotype_bonferroni_005.txt", row.names = F, quote = F, col.names = F)
-write.table(filtered_pepcase$module, "../../results/perNCONDITION/correlation/pepcase_bonferroni_005.txt", row.names = F, quote = F, col.names = F)
-write.table(filtered_rubisco$module, "../../results/perNCONDITION/correlation/rubisco_bonferroni_005.txt", row.names = F, quote = F, col.names = F)
-write.table(filtered_total_clorophyl$module, "../../results/perNCONDITION/correlation/total_clorophyll_bonferroni_005.txt", row.names = F, quote = F, col.names = F)
-write.table(filtered_clorophyl_a$module, "../../results/perNCONDITION/correlation/clorophyll_a_bonferroni_005.txt", row.names = F, quote = F, col.names = F)
-write.table(filtered_clorophyl_b$module, "../../results/perNCONDITION/correlation/clorophyll_b_bonferroni_005.txt", row.names = F, quote = F, col.names = F)
-
-## fix to run in server
-# activate R-env in conda and run as is
-setwd("/Storage/data1/jorge.munoz/NRGSC.new/networks/results/perNCONDITION/correlation")
 library(ggVennDiagram)
 library(ggplot2)
-df1 <- read.table("total_clorophyll_bonferroni_005.txt", col.names = "Module")
-df2 <- read.table("clorophyll_a_bonferroni_005.txt", col.names = "Module")
-df3 <- read.table("clorophyll_b_bonferroni_005.txt", col.names = "Module")
-df4 <- read.table("condtition_bonferroni_005.txt", col.names = "Module")
-df5 <- read.table("genotype_bonferroni_005.txt", col.names = "Module")
-df6 <- read.table("pepcase_bonferroni_005.txt", col.names = "Module")
-df7 <- read.table("rubisco_bonferroni_005.txt", col.names = "Module")
 
-all <- list(total_chlorophyll = df1$Module, chlorophyll_a = df2$Module, chlorophyll_b = df3$Module, nitrogen_condition = df4$Module, genotype = df5$Module, pepcase = df6$Module, rubisco = df7$Module)
+df1 <- read.table("genotype_bonferroni_005_rho_07.txt", header = True)
+df2 <- read.table("condition_bonferroni_005_rho_07.txt", header = True)
+df3 <- read.table("interaction_bonferroni_005_rho_07.txt", header = True)
+df4 <- read.table("fiber_bonferroni_005_rho_07.txt", header = True)
+df5 <- read.table("brix_bonferroni_005_rho_07.txt", header = True)
+
+all <- list(genotype = df1$module, replicate = df2$module, internode = df3$Module, interaction = df4$module, df5$module)
 all_upset_plot <- ggVennDiagram(all, force_upset = T ,order.set.by = "none", nintersects = 17)
 ggsave("upsetplot_correlations.png", all_upset_plot, "png", dpi = 300)
