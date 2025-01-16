@@ -1,14 +1,16 @@
 # Table Documentation
 
-This document provides a detailed description of the columns present in the table.
+This document provides a detailed description of the columns present in the table AAAAAA.
 
-It encapsulates the main results derived from the master's thesis titled "Multi-genotype analyses of long-ncRNA in Sugarcane", authored by Felipe Vaz Peres. The data presented in this table highlights key findings from the study, focusing on the identification, classification, and functional characterization of non-coding RNAs and long non-coding RNAs (lncRNAs) across 48 sugarcane genotypes present in the Sugarcane Pan-Transcriptome.
+It encapsulates the main results derived from the master's thesis titled "Multi-genotype analyses of long-ncRNA in Sugarcane", authored by Felipe Vaz Peres. 
+
+The data presented in this table highlights key findings from the study, focusing on the identification, classification, and functional characterization of non-coding RNAs and long non-coding RNAs (lncRNAs) across 48 sugarcane genotypes present in the Sugarcane Pan-Transcriptome.
 
 ## Columns Description
 
 ### 1. **Pan Category**
    - **Description**: This column categorizes the gene based on its presence across different species in the pan-transcriptome. It helps in understanding the conservation and distribution of the gene across the sugarcane pan-transcriptome. 
-   - **Possible Values**: Hard-core, Soft-core, Accessory and Exclusive.
+   - **Possible Values**: Hard-core, Soft-core, Accessory, Exclusive.
 
 ### 2. **Gene**
    - **Description**: This column lists the gene identifier. In the context of this project, a gene is defined as a cluster of transcripts grouped using **MMSeqs2** with the following parameters: `-s 5.7 --cov-mode 2 --cluster-mode 2 -c 0.8 --min-seq-id 0.8`.
@@ -16,7 +18,7 @@ It encapsulates the main results derived from the master's thesis titled "Multi-
 
 ### 3. **Transcript**
    - **Description**: This column lists the transcript identifier.
-   - **Possible Values**: Transcript names or IDs (e.g., `B1_k25_TRINITY_DN12555_c1_g1_i10`).
+   - **Possible Values**: Transcript IDs (e.g., `B1_k25_TRINITY_DN12555_c1_g1_i10`).
 
 ### 4. **Gene Category**
    - **Description**: This column categorizes the gene based on the functional role of its grouped transcripts. If a gene consists exclusively of long non-coding RNAs, it is categorized as **lncRNA**. If the gene contains both protein-coding and non-coding transcripts, it is categorized as **protein and non-coding**. 
@@ -43,7 +45,7 @@ It encapsulates the main results derived from the master's thesis titled "Multi-
    - **Possible Values**: GO terms (e.g., `GO:0090227,GO:0048519,GO:0090229,GO:0080113,GO:0048523,GO:0009741,GO:2000030`).
 
 ### 10. **GO (Guilt by association)**
-   - **Description**: This column lists GO terms inferred for the lncRNAs and ncRNAs genes (and also their transcripts) based on "guilt by association." This means that the gene is assigned GO terms based on its co-expression with protein-coding genes that have known functions. Each term linked to the gene is comma separated.
+   - **Description**: This column lists GO terms inferred for the lncRNAs and ncRNAs genes (and also their transcripts) based on "guilt by association". This means that the gene is assigned GO terms based on its co-expression with protein-coding genes that have known functions. Each term linked to the gene is comma separated.
    - **Possible Values**: GO terms (e.g., `GO:0009733,GO:0009725,GO:0009719,GO:0010033,GO:0042221`).
 
 ## Example Row
