@@ -1,8 +1,10 @@
 # Table Documentation
 
-This document provides a detailed description of the columns present in the table AAAAAA.
+This document provides a detailed description of the columns present in the table sugarcane-panRNAome.tar.gz.
 
-It encapsulates the main results derived from the master's thesis titled "Multi-genotype analyses of long-ncRNA in Sugarcane", authored by Felipe Vaz Peres. 
+**md5sum:** c88e8b7cd3326f5253afc6cfff832de7  sugarcane-panRNAome.tar.gz
+
+It encapsulates the main results derived from the master's thesis "Multi-genotype analyses of long-ncRNA in Sugarcane", authored by Felipe Vaz Peres. 
 
 The data presented in this table highlights key findings from the study, focusing on the identification, classification, and functional characterization of non-coding RNAs and long non-coding RNAs (lncRNAs) across 48 sugarcane genotypes present in the Sugarcane Pan-Transcriptome.
 
