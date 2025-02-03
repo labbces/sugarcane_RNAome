@@ -39,6 +39,10 @@ Developed as part of a master's thesis at [Center for Nuclear Energy in Agricult
   * [Visualizing co-expressed gene modules in contrasting genotypes](https://github.com/labbces/sugarcane_RNAome/wiki/Visualizing-co%E2%80%90expressed-gene-modules-in-contrasting-genotypes)
   * [Gene Ontology enrichment analysis: exploring biological function of modules](https://github.com/labbces/sugarcane_RNAome/wiki/Gene-Ontology-enrichment-analysis:-exploring-biological-function-of-modules)
 
+## Financial Support
+
+This research was supported by Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), process number: 130748/2022-6
+
 ## Citation
 ```bash
 @article {,
