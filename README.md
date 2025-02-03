@@ -9,7 +9,7 @@ Developed as part of a master's thesis at [Center for Nuclear Energy in Agricult
 
 ## Approach and Methods
 
-* How can we explore publicly available RNA-Seq data for sugarcane, and what nc/lncRNAs can be identified from this data?
+* *How can we explore publicly available RNA-Seq data for sugarcane to identify nc/lncRNAs?*
   * [Predicting putative lncRNAs with CPC2](https://github.com/labbces/sugarcane_RNAome/wiki/Predicting-putative-lncRNAs-with-CPC2)
   * [Predicting putative lncRNAs with PLncPRO](https://github.com/labbces/sugarcane_RNAome/wiki/Predicting-putative-lncRNAs-with-PLncPRO)
   * [Predicting putative lncRNAs with RNAplonc](https://github.com/labbces/sugarcane_RNAome/wiki/Predicting-putative-lncRNAs-with-RNAplonc)
