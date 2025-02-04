@@ -20,7 +20,7 @@ This study focuses on characterizing non-coding RNAs (ncRNAs) and long non-codin
   * [Clustering sequences by identity](https://github.com/labbces/sugarcane_RNAome/wiki/Clustering-sequences-by-identity)
   * [Inference of the pan-RNAome](https://github.com/labbces/sugarcane_RNAome/wiki/Inference-of-the-pan%E2%80%90ncRNAome)
 
-* *What is the probable origin of the lncRNAs in modern sugarcane hybrids, and how do they trace back to the ancestral species the Saccharum complex?*
+* *What is the probable origin of the lncRNAs in modern sugarcane hybrids, and how do they trace back to the parental species in the Saccharum complex?*
   * [Estimating lncRNA origin](https://github.com/labbces/sugarcane_RNAome/wiki/Estimating-lncRNA-origin)
 
 * *What are the expression and co-expression patterns of nc/lncRNAs in sugarcane across different conditions, and how can co-expression networks be utilized to annotate and infer the functional roles of these nc/lncRNAs?*
