@@ -41,6 +41,10 @@ This study focuses on characterizing non-coding RNAs (ncRNAs) and long non-codin
 
 This research was supported by Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), process number: 130748/2022-6
 
+## Data Availability
+
+To access the data generated in this study, please refer to the data section [here](https://github.com/labbces/sugarcane_RNAome/tree/main/data).
+
 ## Citation
 ```bash
 @article {,
