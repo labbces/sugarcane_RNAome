@@ -1,11 +1,9 @@
 # Multi-genotype analyses of long-ncRNAs in Sugarcane
 
-This work addresses gaps in the understanding of non-coding RNAs (ncRNAs) and long non-coding RNAs (lncRNAs) in sugarcane, providing a comprehensive exploration of the variability and functional roles of these transcripts. 
+This study focuses on characterizing non-coding RNAs (ncRNAs) and long non-coding RNAs (lncRNAs) in sugarcane, addressing gaps in understanding their variability, conservation, co-expression patterns, and functional roles. By leveraging publicly available RNA-Seq data and co-expression networks, this work provides a comprehensive exploration of these transcripts, offering insights into their potential biological functions.
 
-Developed as part of a master's thesis at [Center for Nuclear Energy in Agriculture - University of São Paulo](http://www.cena.usp.br/) in 2024, conducted in the [Computational, Evolutionary and Systems Biology Laboratory](https://labbces.cena.usp.br/), this research leveraged publicly available RNA-Seq data to characterize nc/lncRNAs in sugarcane, uncovering their classification, conservation, co-expression patterns, and potential functions.
-
->[!NOTE] 
->This repository serves as a resource for accessing the code, technical decisions, and results generated during the study.
+>[!NOTE]
+>This repository serves as a resource for accessing the code, technical decisions, and results from the master's thesis **"Multi-genotype analyses of long-ncRNAs in sugarcane"**, conducted at the [Center for Nuclear Energy in Agriculture - University of São Paulo](http://www.cena.usp.br/) in 2024. The research was carried out in the [Computational, Evolutionary, and Systems Biology Laboratory](https://labbces.cena.usp.br/).
 
 ## Approach and Methods
 
